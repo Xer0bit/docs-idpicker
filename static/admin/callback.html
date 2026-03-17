@@ -2,9 +2,19 @@
 <html>
 <head><meta charset="utf-8"/></head>
 <body>
-<p>Returning to CMS...</p>
+<p>Authorizing...</p>
 <script>
-  window.location.replace("/admin/");
+  (function() {
+    if (window.opener) {
+      window.opener.postMessage(
+        "authorization:github:success:" + window.location.hash.slice(1),
+        window.location.origin
+      );
+      window.close();
+    } else {
+      window.location.replace("/admin/");
+    }
+  })();
 </script>
 </body>
 </html>

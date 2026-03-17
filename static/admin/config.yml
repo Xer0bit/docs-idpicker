@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Xer0bit/docs-idpicker
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+  site_domain: stellular-sundae-c9bc25.netlify.app
 
 media_folder: "static/images"
 public_folder: "/images"

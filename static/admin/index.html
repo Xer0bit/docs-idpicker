@@ -10,6 +10,7 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
+      // Explicitly link the widget to the Netlify instance for cross-domain auth
       window.netlifyIdentity.on("init", function(user) {
         if (!user) {
           window.netlifyIdentity.on("login", function() {
@@ -17,6 +18,8 @@
           });
         }
       });
+      // Corrects "Failed to load settings" by targeting the Identity endpoint
+      window.netlifyIdentity.setSiteURL('https://stellular-sundae-c9bc25.netlify.app');
     }
   </script>
 </body>

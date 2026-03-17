@@ -4,7 +4,7 @@ backend:
   branch: main
   base_url: https://api.netlify.com
   auth_endpoint: auth
-  site_domain: 390a568b-294b-41bf-8384-39c3998601a1.netlify.app
+  site_domain: stellular-sundae-c9bc25.netlify.app
 
 media_folder: "static/images"
 public_folder: "/images"

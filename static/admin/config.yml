@@ -2,9 +2,8 @@ backend:
   name: github
   repo: Xer0bit/docs-idpicker
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
-  site_domain: stellular-sundae-c9bc25.netlify.app
+  auth_type: implicit
+  app_id: 0v23li2Dw59A0xpVUYdp
 
 media_folder: "static/images"
 public_folder: "/images"

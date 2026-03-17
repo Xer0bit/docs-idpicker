@@ -10,9 +10,6 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
-      // Corrected call: access the .widget object
-      window.netlifyIdentity.widget.setSiteURL('https://stellular-sundae-c9bc25.netlify.app');
-
       window.netlifyIdentity.on("init", function(user) {
         if (!user) {
           window.netlifyIdentity.on("login", function() {
@@ -20,6 +17,9 @@
           });
         }
       });
+
+      // Ensure widget state is initialized before Decap auth events fire.
+      window.netlifyIdentity.init();
     }
   </script>
 </body>

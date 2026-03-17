@@ -1,9 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-  # Remove base_url and auth_endpoint when using git-gateway
-  # site_domain remains as the Netlify URL to identify the Identity instance
-  site_domain: stellular-sundae-c9bc25.netlify.app
 
 media_folder: "static/images"
 public_folder: "/images"

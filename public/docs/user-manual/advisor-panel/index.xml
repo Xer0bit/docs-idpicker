@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advisor Panel on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/user-manual/advisor-panel/</link>
+    <description>Recent content in Advisor Panel on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/user-manual/advisor-panel/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

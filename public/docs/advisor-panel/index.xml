@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advisor Panel on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/</link>
+    <description>Recent content in Advisor Panel on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/advisor-panel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advisor Login and Dashboard</title>
+      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid>
+      <description>&lt;h2 id=&#34;advisor-login&#34;&gt;Advisor Login&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open advisor login URL from &lt;a href=&#34;../getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter advisor credentials.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;dashboard-navigation&#34;&gt;Dashboard Navigation&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Review assigned student groups.&lt;/li&gt;&#xA;&lt;li&gt;Open student profile summary.&lt;/li&gt;&#xA;&lt;li&gt;Check alerts, pending actions, and activity timeline.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/advisor-login.png&#34; alt=&#34;Advisor Login Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add advisor login and dashboard screenshots.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sub-Advisor Management</title>
+      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid>
+      <description>&lt;h2 id=&#34;create-sub-advisor&#34;&gt;Create Sub-Advisor&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Advisor Settings or Team Management.&lt;/li&gt;&#xA;&lt;li&gt;Click Create Sub-Advisor.&lt;/li&gt;&#xA;&lt;li&gt;Fill required fields: name, email, scope, and assigned student group.&lt;/li&gt;&#xA;&lt;li&gt;Save and send invitation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;manage-permissions&#34;&gt;Manage Permissions&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sub-advisor record.&lt;/li&gt;&#xA;&lt;li&gt;Configure visibility scope.&lt;/li&gt;&#xA;&lt;li&gt;Save and test effective access.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;deactivate-sub-advisor&#34;&gt;Deactivate Sub-Advisor&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sub-advisor account.&lt;/li&gt;&#xA;&lt;li&gt;Set status to inactive.&lt;/li&gt;&#xA;&lt;li&gt;Verify access is revoked.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png&#34; alt=&#34;Sub-Advisor Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add form screenshot and permission matrix screenshot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

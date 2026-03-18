@@ -1,10 +1,13 @@
 {
   "scripts": {
+    "cms": "hugo server",
+    "cms:backend": "npx decap-server",
     "dev": "hugo server",
     "build": "hugo --gc --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
+    "decap-server": "^3.5.2",
     "postcss": "^8.5.8",
     "postcss-cli": "^11.0.1"
   }

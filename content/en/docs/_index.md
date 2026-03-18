@@ -1,6 +1,30 @@
 ---
-title: "Documentation"
-description: "IDPicker Documentation"
+title: "IDPicker User Manual"
+description: "Complete step-by-step guide to use IDPicker"
+weight: 10
 ---
 
-Welcome to IDPicker documentation.
+This manual explains exactly how to use the IDPicker platform from login to advanced workflows.
+
+## What You Will Find
+
+- Exact access URLs and entry points
+- Login and account setup flow
+- Student panel workflows from start to finish
+- Advisor panel operations, including sub-advisor setup
+- Parent panel workflows
+- Linked student vs individual student behavior
+- Screenshot placeholders for every major step
+
+## Navigation
+
+1. Product Scope and Roles
+2. Getting Started (URLs and Login)
+3. Student Panel Complete Guide
+4. Advisor Panel Complete Guide
+5. Parent Panel Complete Guide
+6. Help and Troubleshooting
+
+![IDPicker Platform Overview Placeholder](/images/user-manual/product/platform-overview.png)
+
+Image placeholder: Add a high-level platform diagram showing Student, Advisor, and Parent panels and navigation paths.

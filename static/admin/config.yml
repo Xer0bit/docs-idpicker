@@ -1,0 +1,84 @@
+local_backend: true
+
+backend:
+  name: github
+  repo: Xer0bit/docs-idpicker
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "manual_home"
+    label: "Manual Home"
+    files:
+      - file: "content/en/docs/_index.md"
+        label: "Documentation Home"
+        name: "docs_home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string", required: false }
+          - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "getting_started"
+    label: "Getting Started"
+    folder: "content/en/docs/getting-started"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "student_panel"
+    label: "Student Panel"
+    folder: "content/en/docs/student-panel"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "advisor_panel"
+    label: "Advisor Panel"
+    folder: "content/en/docs/advisor-panel"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "parent_panel"
+    label: "Parent Panel"
+    folder: "content/en/docs/parent-panel"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "help_pages"
+    label: "Help"
+    folder: "content/en/docs/help"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }

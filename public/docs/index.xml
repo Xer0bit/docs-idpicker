@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on IDPicker Docs</title>
+    <title>IDPicker User Manual on IDPicker Docs</title>
     <link>http://localhost:1313/docs-idpicker/docs/</link>
-    <description>Recent content in Documentation on IDPicker Docs</description>
+    <description>Recent content in IDPicker User Manual on IDPicker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="http://localhost:1313/docs-idpicker/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Getting Started</title>
-      <link>http://localhost:1313/docs-idpicker/docs/getting-started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/getting-started/</guid>
-      <description>&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;This is your first documentation page. Edit it from the CMS at /admin.&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parent Panel on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/parent-panel/</link>
+    <description>Recent content in Parent Panel on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/parent-panel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linked Student Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/linked-student-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/linked-student-guide/</guid>
+      <description>&lt;h2 id=&#34;parent-access-flow&#34;&gt;Parent Access Flow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Parent receives invite.&lt;/li&gt;&#xA;&lt;li&gt;Parent activates account.&lt;/li&gt;&#xA;&lt;li&gt;Linked student appears in parent dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-parents-can-view&#34;&gt;What Parents Can View&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Progress summary&lt;/li&gt;&#xA;&lt;li&gt;Milestone completion&lt;/li&gt;&#xA;&lt;li&gt;Selected recommendation insights&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-parents-cannot-edit&#34;&gt;What Parents Cannot Edit&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Student-only private settings&lt;/li&gt;&#xA;&lt;li&gt;Restricted assessment configuration&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/parent-panel/linked-student-view.png&#34; alt=&#34;Linked Student Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add parent dashboard with linked student card and progress widgets.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

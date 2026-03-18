@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Student Panel on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/student-panel/</link>
+    <description>Recent content in Student Panel on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/student-panel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>01. Authentication Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/01-authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/01-authentication/</guid>
+      <description>&lt;h2 id=&#34;login-with-email-and-password&#34;&gt;Login with Email and Password&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &lt;a href=&#34;../getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Visit the Main Platform Login URL.&lt;/li&gt;&#xA;&lt;li&gt;Enter email and password.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;li&gt;Verify dashboard load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/auth-login-email.png&#34; alt=&#34;Student Login Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot of student login form and success redirect.&lt;/p&gt;&#xA;&lt;h2 id=&#34;login-with-google-oauth&#34;&gt;Login with Google OAuth&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;On login page, click Continue with Google.&lt;/li&gt;&#xA;&lt;li&gt;Select account and approve access.&lt;/li&gt;&#xA;&lt;li&gt;Verify redirect to Student Dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/auth-login-google.png&#34; alt=&#34;Google OAuth Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot sequence for OAuth start and dashboard redirect.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>02. Dashboard Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/02-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/02-dashboard/</guid>
+      <description>&lt;h2 id=&#34;dashboard-purpose&#34;&gt;Dashboard Purpose&lt;/h2&gt;&#xA;&lt;p&gt;The dashboard centralizes mentor access, assessments, reports, and upgrade flow.&lt;/p&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log in as student.&lt;/li&gt;&#xA;&lt;li&gt;Review top cards and pillar widgets.&lt;/li&gt;&#xA;&lt;li&gt;Open AI Mentor from dashboard CTA.&lt;/li&gt;&#xA;&lt;li&gt;Open each core pillar and confirm page navigation.&lt;/li&gt;&#xA;&lt;li&gt;Open reports and subscription CTA.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/dashboard-overview.png&#34; alt=&#34;Dashboard Overview Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add full dashboard screenshot with numbered annotations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>03. Assessment Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/03-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/03-assessment/</guid>
+      <description>&lt;h2 id=&#34;start-an-assessment&#34;&gt;Start an Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Assessments from dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Begin questionnaire.&lt;/li&gt;&#xA;&lt;li&gt;Answer all required questions.&lt;/li&gt;&#xA;&lt;li&gt;Submit and wait for processing.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;resume-interrupted-session&#34;&gt;Resume Interrupted Session&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Return to Assessments.&lt;/li&gt;&#xA;&lt;li&gt;Select Resume.&lt;/li&gt;&#xA;&lt;li&gt;Continue from the last unanswered item.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;view-results&#34;&gt;View Results&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open completed assessment card.&lt;/li&gt;&#xA;&lt;li&gt;Review summary and details.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/assessment-flow.png&#34; alt=&#34;Assessment Flow Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshots for start, in-progress, and completed states.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>04. Recommendation Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/04-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/04-recommendations/</guid>
+      <description>&lt;h2 id=&#34;view-recommendations&#34;&gt;View Recommendations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Complete assessment.&lt;/li&gt;&#xA;&lt;li&gt;Open Recommendations section.&lt;/li&gt;&#xA;&lt;li&gt;Review suggested career paths and rationale.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;download-recommendation-report&#34;&gt;Download Recommendation Report&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Download Recommendations.&lt;/li&gt;&#xA;&lt;li&gt;Save file locally.&lt;/li&gt;&#xA;&lt;li&gt;Verify downloaded content opens correctly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/recommendations.png&#34; alt=&#34;Recommendations Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add recommendation list and download button screenshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>05. Personality Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/05-personality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/05-personality/</guid>
+      <description>&lt;h2 id=&#34;open-personality-results&#34;&gt;Open Personality Results&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Navigate to Personality section.&lt;/li&gt;&#xA;&lt;li&gt;Open latest completed assessment.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;interpret-radar-chart&#34;&gt;Interpret Radar Chart&lt;/h2&gt;&#xA;&lt;p&gt;Review trait values such as:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Social Adaptability&lt;/li&gt;&#xA;&lt;li&gt;Emotional Regulation&lt;/li&gt;&#xA;&lt;li&gt;Cognitive Flexibility&lt;/li&gt;&#xA;&lt;li&gt;Achievement Motivation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/personality-chart.png&#34; alt=&#34;Personality Chart Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add radar chart screenshot with trait labels and score values.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>06. AI Mentorship Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/06-ai-mentorship/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/06-ai-mentorship/</guid>
+      <description>&lt;h2 id=&#34;start-mentor-chat&#34;&gt;Start Mentor Chat&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From dashboard, click Engage Your Mentor.&lt;/li&gt;&#xA;&lt;li&gt;Type your question.&lt;/li&gt;&#xA;&lt;li&gt;Continue conversation with follow-up prompts.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;get-guided-advice&#34;&gt;Get Guided Advice&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Guided Advice from mentor panel.&lt;/li&gt;&#xA;&lt;li&gt;Review step-by-step recommendations.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/ai-mentor-chat.png&#34; alt=&#34;Mentor Chat Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add chat screenshot with example mentor response.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>07. University Search Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/07-university-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/07-university-search/</guid>
+      <description>&lt;h2 id=&#34;search-programs&#34;&gt;Search Programs&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open University Search.&lt;/li&gt;&#xA;&lt;li&gt;Enter university or program keyword.&lt;/li&gt;&#xA;&lt;li&gt;Review matching results.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;filter-results&#34;&gt;Filter Results&lt;/h2&gt;&#xA;&lt;p&gt;Use filters for:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Field of study&lt;/li&gt;&#xA;&lt;li&gt;Degree type&lt;/li&gt;&#xA;&lt;li&gt;Language&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;open-program-details&#34;&gt;Open Program Details&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click a program card.&lt;/li&gt;&#xA;&lt;li&gt;Review tuition, duration, country, and language.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/university-search.png&#34; alt=&#34;University Search Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot with active filters and result cards.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>08. Resources Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/08-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/08-resources/</guid>
+      <description>&lt;h2 id=&#34;access-shared-resources&#34;&gt;Access Shared Resources&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Resources from navigation.&lt;/li&gt;&#xA;&lt;li&gt;Browse advisor-shared files.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;find-specific-material&#34;&gt;Find Specific Material&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use search by title/description/file name.&lt;/li&gt;&#xA;&lt;li&gt;Apply filters by type, size, and visibility.&lt;/li&gt;&#xA;&lt;li&gt;Sort results as needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;open-or-download-file&#34;&gt;Open or Download File&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click resource item.&lt;/li&gt;&#xA;&lt;li&gt;Open preview or download.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/resources-list.png&#34; alt=&#34;Resources Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add resources page screenshot with filters and counters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>09. Help Center Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/09-help-center/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/09-help-center/</guid>
+      <description>&lt;h2 id=&#34;submit-a-ticket&#34;&gt;Submit a Ticket&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Help Center.&lt;/li&gt;&#xA;&lt;li&gt;Click Submit New Ticket.&lt;/li&gt;&#xA;&lt;li&gt;Fill subject, category, priority, description.&lt;/li&gt;&#xA;&lt;li&gt;Submit and note ticket ID.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;track-existing-tickets&#34;&gt;Track Existing Tickets&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open My Tickets.&lt;/li&gt;&#xA;&lt;li&gt;Check status updates.&lt;/li&gt;&#xA;&lt;li&gt;Open ticket for details.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/help-center.png&#34; alt=&#34;Help Center Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add ticket submission and My Tickets screenshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>10. Subscription Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/10-subscription/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/10-subscription/</guid>
+      <description>&lt;h2 id=&#34;upgrade-plan&#34;&gt;Upgrade Plan&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Upgrade from dashboard or restricted feature prompt.&lt;/li&gt;&#xA;&lt;li&gt;Compare plans.&lt;/li&gt;&#xA;&lt;li&gt;Select desired tier.&lt;/li&gt;&#xA;&lt;li&gt;Complete payment/confirmation flow.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/subscription-plans.png&#34; alt=&#34;Subscription Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add plan comparison and upgrade button screenshot.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>11. Account and Settings Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/11-account-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/11-account-settings/</guid>
+      <description>&lt;h2 id=&#34;profile-updates&#34;&gt;Profile Updates&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Settings.&lt;/li&gt;&#xA;&lt;li&gt;Edit profile fields.&lt;/li&gt;&#xA;&lt;li&gt;Save changes.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Password and Security.&lt;/li&gt;&#xA;&lt;li&gt;Change password.&lt;/li&gt;&#xA;&lt;li&gt;Confirm with current credentials.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;account-deletion&#34;&gt;Account Deletion&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Delete Account.&lt;/li&gt;&#xA;&lt;li&gt;Confirm action.&lt;/li&gt;&#xA;&lt;li&gt;Verify logout and account removal.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;parent-access&#34;&gt;Parent Access&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Invite parent/guardian.&lt;/li&gt;&#xA;&lt;li&gt;Review linked access.&lt;/li&gt;&#xA;&lt;li&gt;Remove access when needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/settings-page.png&#34; alt=&#34;Settings Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add settings page screenshot with profile and security sections.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>12. Language Guide</title>
+      <link>http://localhost:1313/docs-idpicker/docs/student-panel/12-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/12-language/</guid>
+      <description>&lt;h2 id=&#34;change-language&#34;&gt;Change Language&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open language switch from header.&lt;/li&gt;&#xA;&lt;li&gt;Select EN or TR.&lt;/li&gt;&#xA;&lt;li&gt;Confirm all labels update instantly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;validate-language-state&#34;&gt;Validate Language State&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Navigate to a different page.&lt;/li&gt;&#xA;&lt;li&gt;Confirm selected language persists.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/language-switch.png&#34; alt=&#34;Language Switch Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add before/after screenshots for EN and TR mode.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

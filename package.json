@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "docs:stack:up": "cd ops/docs-platform && docker-compose --env-file .env up -d db wikijs",
+    "docs:stack:up:prod": "cd ops/docs-platform && docker-compose --env-file .env --profile prod up -d",
+    "docs:stack:down": "cd ops/docs-platform && docker-compose --env-file .env down",
+    "docs:stack:logs": "cd ops/docs-platform && docker-compose --env-file .env logs -f wikijs db"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",

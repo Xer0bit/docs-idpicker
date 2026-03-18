@@ -1,4 +1,0 @@
-{$DOCS_DOMAIN} {
-  encode zstd gzip
-  reverse_proxy wikijs:3000
-}

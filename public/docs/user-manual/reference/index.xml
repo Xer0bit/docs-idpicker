@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/user-manual/reference/</link>
+    <description>Recent content in Reference on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/user-manual/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configuration Reference</title>
+      <link>http://localhost:1313/docs-idpicker/docs/user-manual/reference/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/user-manual/reference/configuration/</guid>
+      <description>&lt;h2 id=&#34;configuration-keys&#34;&gt;Configuration Keys&lt;/h2&gt;&#xA;&lt;p&gt;Document each key, type, default, and description.&lt;/p&gt;&#xA;&lt;h2 id=&#34;example-config&#34;&gt;Example Config&lt;/h2&gt;&#xA;&lt;p&gt;Provide a complete configuration example.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

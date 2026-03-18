@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation on IDPicker Docs</title>
+    <link>http://localhost:1313/docs-idpicker/docs/user-manual/installation/</link>
+    <description>Recent content in Installation on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/docs-idpicker/docs/user-manual/installation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>System Requirements</title>
+      <link>http://localhost:1313/docs-idpicker/docs/user-manual/installation/requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/user-manual/installation/requirements/</guid>
+      <description>&lt;h2 id=&#34;minimum-requirements&#34;&gt;Minimum Requirements&lt;/h2&gt;&#xA;&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;&#xA;&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/docs-idpicker/docs/user-manual/installation/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs-idpicker/docs/user-manual/installation/setup/</guid>
+      <description>&lt;h2 id=&#34;install-steps&#34;&gt;Install Steps&lt;/h2&gt;&#xA;&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configure-settings&#34;&gt;Configure Settings&lt;/h2&gt;&#xA;&lt;p&gt;Describe required configuration values.&lt;/p&gt;&#xA;&lt;h2 id=&#34;validate-installation&#34;&gt;Validate Installation&lt;/h2&gt;&#xA;&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

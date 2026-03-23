@@ -1,7 +1,7 @@
 ---
 title: "08. Resources Guide"
 description: "How to find, filter, and download learning materials shared by your advisor"
-weight: 128
+weight: 28
 draft: false
 ---
 

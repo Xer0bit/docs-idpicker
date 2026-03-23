@@ -1,7 +1,7 @@
 ---
 title: "13. Certificates and Application Documents"
 description: "Detailed click-by-click certificates and document workflow"
-weight: 133
+weight: 33
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Students and Bulk Import"
 description: "How to search your student roster, review profiles, and perform bulk imports from Excel"
-weight: 132
+weight: 32
 draft: false
 ---
 

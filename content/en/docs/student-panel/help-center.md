@@ -1,7 +1,7 @@
 ---
 title: "09. Help Center Guide"
 description: "How to create support tickets and get help when things go wrong"
-weight: 129
+weight: 29
 draft: false
 ---
 

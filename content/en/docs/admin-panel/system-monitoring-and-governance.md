@@ -1,7 +1,7 @@
 ---
 title: "System Monitoring and Governance"
 description: "How to check service health, read realtime logs, and manage free-use policies"
-weight: 157
+weight: 57
 draft: false
 ---
 

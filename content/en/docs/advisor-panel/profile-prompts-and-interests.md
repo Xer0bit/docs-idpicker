@@ -1,7 +1,7 @@
 ---
 title: "Profile, Prompts, and Interests"
 description: "Detailed click-by-click advisor configuration workflows"
-weight: 141
+weight: 38
 draft: false
 ---
 

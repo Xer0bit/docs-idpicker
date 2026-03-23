@@ -1,7 +1,7 @@
 ---
 title: "12. Language Guide"
 description: "Detailed click-by-click language switching walkthrough"
-weight: 132
+weight: 32
 draft: false
 ---
 

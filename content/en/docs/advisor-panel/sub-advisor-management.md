@@ -1,7 +1,7 @@
 ---
 title: "Sub-Advisor Management"
 description: "How to invite sub-advisors, delegate your workload, and restrict their permissions"
-weight: 139
+weight: 40
 draft: false
 ---
 

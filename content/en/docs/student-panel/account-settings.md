@@ -1,7 +1,7 @@
 ---
 title: "11. Account and Settings Guide"
 description: "Detailed click-by-click profile and settings walkthrough"
-weight: 131
+weight: 31
 draft: false
 ---
 

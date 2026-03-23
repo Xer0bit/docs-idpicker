@@ -1,7 +1,7 @@
 ---
 title: "IDPicker User Manual"
 description: "Complete step-by-step guide to use IDPicker"
-weight: 10
+weight: 5
 ---
 
 This manual explains exactly how to use the IDPicker platform from login to advanced workflows.

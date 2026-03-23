@@ -1,7 +1,7 @@
 ---
 title: "10. Subscription Guide"
 description: "Detailed guide to limits, quotas, and upgrade paths"
-weight: 130
+weight: 30
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Support, Notifications, and Approvals"
 description: "How to handle incoming support tickets, broadcast global alerts, and manage admission gates"
-weight: 156
+weight: 56
 draft: false
 ---
 

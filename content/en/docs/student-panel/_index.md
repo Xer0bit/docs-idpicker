@@ -1,7 +1,7 @@
 ---
 title: "Student Panel"
 description: "Complete student user manual for all core features"
-weight: 12
+weight: 20
 ---
 
 The Student Panel is the main workspace for students in IDPicker.

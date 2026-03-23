@@ -1,7 +1,7 @@
 ---
 title: "Prompts, Translations, and Content"
 description: "How to edit the AI system prompts and localize the platform interface text"
-weight: 155
+weight: 55
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Resources Management"
 description: "How to upload files, build a library, and share documents securely with your students"
-weight: 135
+weight: 39
 draft: false
 ---
 

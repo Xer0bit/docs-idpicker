@@ -1,7 +1,7 @@
 ---
 title: "Linked Student Guide"
 description: "How to connect with your child's account and understand what data you can access"
-weight: 142
+weight: 44
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Admin Panel"
 description: "Complete click-by-click administration manual"
-weight: 15
+weight: 50
 ---
 
 The Admin Panel is the central control surface for platform operations, governance, content configuration, and quality monitoring.

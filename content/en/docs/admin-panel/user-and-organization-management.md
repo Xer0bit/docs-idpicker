@@ -1,7 +1,7 @@
 ---
 title: "User and Organization Management"
 description: "How to provision new organizations, audit user accounts, and safely delete records"
-weight: 152
+weight: 52
 draft: false
 ---
 

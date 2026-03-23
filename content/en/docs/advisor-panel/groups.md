@@ -1,7 +1,7 @@
 ---
 title: "Groups Management"
 description: "How to organize your students into cohorts for easier assignment and communication"
-weight: 133
+weight: 36
 draft: false
 ---
 

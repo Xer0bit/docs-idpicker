@@ -1,7 +1,7 @@
 ---
 title: "Advisor Panel"
 description: "Complete click-by-click advisor operations manual"
-weight: 13
+weight: 30
 ---
 
 Use this section as the primary operational manual for advisor and sub-advisor workflows.

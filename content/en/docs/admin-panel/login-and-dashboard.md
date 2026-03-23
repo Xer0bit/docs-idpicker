@@ -1,7 +1,7 @@
 ---
 title: "Admin Login and Dashboard"
 description: "How to access the super-admin portal, review global KPIs, and monitor platform health"
-weight: 151
+weight: 51
 draft: false
 ---
 

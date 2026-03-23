@@ -1,7 +1,7 @@
 ---
 title: "Product Scope and Roles"
 description: "IDPicker panel architecture, actor model, and account types"
-weight: 11
+weight: 60
 ---
 
 This section defines how IDPicker is structured across user roles and panel responsibilities.

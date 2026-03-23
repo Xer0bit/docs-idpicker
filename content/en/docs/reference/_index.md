@@ -1,7 +1,7 @@
 ---
 title: "Reference"
 description: "Reference information for advanced users"
-weight: 50
+weight: 90
 ---
 
 Detailed reference material for features, settings, and limits.

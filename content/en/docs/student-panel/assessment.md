@@ -1,7 +1,7 @@
 ---
 title: "03. Assessment Guide"
 description: "How to take, resume, and review self-assessments to unlock your platform recommendations"
-weight: 123
+weight: 23
 draft: false
 ---
 

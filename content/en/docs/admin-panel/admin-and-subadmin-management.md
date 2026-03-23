@@ -1,7 +1,7 @@
 ---
 title: "Admin and Subadmin Management"
 description: "How to govern internal platform access and manage subadmin permission scopes"
-weight: 153
+weight: 53
 draft: false
 ---
 

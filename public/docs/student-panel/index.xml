@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Student Panel on IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/</link><description>Recent content in Student Panel on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/docs/student-panel/index.xml" rel="self" type="application/rss+xml"/><item><title>01. Authentication Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/01-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/01-authentication/</guid><description>&lt;p&gt;Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Student Panel on IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/</link><description>Recent content in Student Panel on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/docs/student-panel/index.xml" rel="self" type="application/rss+xml"/><item><title>01. Authentication Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/authentication/</guid><description>&lt;p&gt;Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="before-you-begin"&gt;Before You Begin&lt;/h2&gt;
 &lt;p&gt;Make sure you have:&lt;/p&gt;
@@ -9,7 +9,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id="sign-in-with-email-and-password"&gt;Sign In with Email and Password&lt;/h2&gt;
-&lt;p&gt;This is the fastest path for returning students.&lt;/p&gt;</description></item><item><title>02. Dashboard Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/02-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/02-dashboard/</guid><description>&lt;p&gt;The Dashboard is the first thing you see after logging in. It gives you a bird&amp;rsquo;s-eye view of everything that needs your attention — assessments, notifications, forms, invitations, and program recommendations.&lt;/p&gt;
+&lt;p&gt;This is the fastest path for returning students.&lt;/p&gt;</description></item><item><title>02. Dashboard Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/dashboard/</guid><description>&lt;p&gt;The Dashboard is the first thing you see after logging in. It gives you a bird&amp;rsquo;s-eye view of everything that needs your attention — assessments, notifications, forms, invitations, and program recommendations.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="what-you-see-on-the-dashboard"&gt;What You See on the Dashboard&lt;/h2&gt;
 &lt;p&gt;When you land on the dashboard, you will see several content blocks:&lt;/p&gt;
@@ -56,7 +56,7 @@
 &lt;/table&gt;
 &lt;hr&gt;
 &lt;h2 id="your-first-5-actions-after-logging-in"&gt;Your First 5 Actions After Logging In&lt;/h2&gt;
-&lt;p&gt;Follow this sequence whenever you start a new session for maximum efficiency:&lt;/p&gt;</description></item><item><title>03. Assessment Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/03-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/03-assessment/</guid><description>&lt;p&gt;Assessments are the core of IDPicker. Completing them unlocks your personalized career paths, university recommendations, and personality insights.&lt;/p&gt;
+&lt;p&gt;Follow this sequence whenever you start a new session for maximum efficiency:&lt;/p&gt;</description></item><item><title>03. Assessment Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assessment/</guid><description>&lt;p&gt;Assessments are the core of IDPicker. Completing them unlocks your personalized career paths, university recommendations, and personality insights.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="starting-a-new-assessment"&gt;Starting a New Assessment&lt;/h2&gt;
 &lt;ol&gt;
@@ -72,7 +72,7 @@
 &lt;li&gt;Repeat until all questions are answered, then click &lt;strong&gt;Submit&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!&lt;/p&gt;</description></item><item><title>04. Recommendation Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/04-recommendations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/04-recommendations/</guid><description>&lt;p&gt;Once you complete your core assessments, IDPicker&amp;rsquo;s AI generates a highly personalized list of recommendations. This guide explains how to use them to make informed decisions about your future.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!&lt;/p&gt;</description></item><item><title>04. Recommendation Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/recommendations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/recommendations/</guid><description>&lt;p&gt;Once you complete your core assessments, IDPicker&amp;rsquo;s AI generates a highly personalized list of recommendations. This guide explains how to use them to make informed decisions about your future.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="exploring-your-recommendations"&gt;Exploring Your Recommendations&lt;/h2&gt;
 &lt;ol&gt;
@@ -82,7 +82,7 @@
 &lt;li&gt;Click into any recommendation to open the detailed view, which explains &lt;em&gt;why&lt;/em&gt; the AI believes this is a strong match for your specific assessment results.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Keep a personal shortlist of the options that excite you the most to discuss later with your Advisor or AI Mentor!&lt;/p&gt;</description></item><item><title>05. Personality Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/05-personality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/05-personality/</guid><description>&lt;p&gt;The Personality module visualizes your psychological traits and provides actionable advice on how to leverage your natural strengths.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Keep a personal shortlist of the options that excite you the most to discuss later with your Advisor or AI Mentor!&lt;/p&gt;</description></item><item><title>05. Personality Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/personality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/personality/</guid><description>&lt;p&gt;The Personality module visualizes your psychological traits and provides actionable advice on how to leverage your natural strengths.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="prerequisite-complete-the-assessment"&gt;Prerequisite: Complete the Assessment!&lt;/h2&gt;
 &lt;p&gt;Before you can see your personality breakdown, you must complete the Personality self-assessment.&lt;/p&gt;
@@ -93,7 +93,7 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id="reading-your-radar-chart"&gt;Reading Your Radar Chart&lt;/h2&gt;
-&lt;p&gt;Once unlocked, the first thing you will see is your interactive &lt;strong&gt;Radar Chart&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>06. AI Mentorship Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/06-ai-mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/06-ai-mentorship/</guid><description>&lt;p&gt;The Mentor Hub is your central communication space. Here, you can seek advice from specialized AI personalities or chat directly with your assigned human advisor.&lt;/p&gt;
+&lt;p&gt;Once unlocked, the first thing you will see is your interactive &lt;strong&gt;Radar Chart&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>06. AI Mentorship Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/ai-mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/ai-mentorship/</guid><description>&lt;p&gt;The Mentor Hub is your central communication space. Here, you can seek advice from specialized AI personalities or chat directly with your assigned human advisor.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="starting-a-chat-with-an-ai-mentor"&gt;Starting a Chat with an AI Mentor&lt;/h2&gt;
 &lt;p&gt;IDPicker provides multiple AI personalities, each tuned for specific types of advice (e.g., strict academic planning, empathetic career counseling, technical skills building).&lt;/p&gt;
@@ -106,7 +106,7 @@
 &lt;li&gt;The AI will respond in real-time, contextually aware of your personality and recommendation profile!&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Quota Warning:&lt;/strong&gt; Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!&lt;/p&gt;</description></item><item><title>07. University Search Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/07-university-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/07-university-search/</guid><description>&lt;p&gt;The University Search module is your comprehensive database for discovering higher education programs worldwide. This guide explains how to use the search engine efficiently to build your target list.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Quota Warning:&lt;/strong&gt; Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!&lt;/p&gt;</description></item><item><title>07. University Search Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/university-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/university-search/</guid><description>&lt;p&gt;The University Search module is your comprehensive database for discovering higher education programs worldwide. This guide explains how to use the search engine efficiently to build your target list.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="basic-keyword-search"&gt;Basic Keyword Search&lt;/h2&gt;
 &lt;ol&gt;
@@ -119,7 +119,7 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id="power-filtering"&gt;Power Filtering&lt;/h2&gt;
-&lt;p&gt;To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).&lt;/p&gt;</description></item><item><title>08. Resources Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/08-resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/08-resources/</guid><description>&lt;p&gt;The Resources module acts as your personal digital library. Whenever your advisor, school, or organization shares a helpful document, spreadsheet, or PDF, it lands here.&lt;/p&gt;
+&lt;p&gt;To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).&lt;/p&gt;</description></item><item><title>08. Resources Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/</guid><description>&lt;p&gt;The Resources module acts as your personal digital library. Whenever your advisor, school, or organization shares a helpful document, spreadsheet, or PDF, it lands here.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="browsing-the-resource-library"&gt;Browsing the Resource Library&lt;/h2&gt;
 &lt;ol&gt;
@@ -128,7 +128,7 @@
 &lt;li&gt;You will immediately see files that are explicitly assigned to you, as well as globally visible files shared by your organization.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="searching-by-keyword"&gt;Searching by Keyword&lt;/h3&gt;
-&lt;p&gt;Know exactly what you are looking for?&lt;/p&gt;</description></item><item><title>09. Help Center Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/09-help-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/09-help-center/</guid><description>&lt;p&gt;Sometimes things break or you encounter a feature you do not understand. The Help Center is your direct line to the IDPicker platform support team.&lt;/p&gt;
+&lt;p&gt;Know exactly what you are looking for?&lt;/p&gt;</description></item><item><title>09. Help Center Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/help-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/help-center/</guid><description>&lt;p&gt;Sometimes things break or you encounter a feature you do not understand. The Help Center is your direct line to the IDPicker platform support team.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="opening-a-new-support-ticket"&gt;Opening a New Support Ticket&lt;/h2&gt;
 &lt;ol&gt;
@@ -146,7 +146,7 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id="how-to-write-a-ticket-that-gets-fixed-fast"&gt;How to Write a Ticket That Gets Fixed Fast&lt;/h2&gt;
-&lt;p&gt;The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:&lt;/p&gt;</description></item><item><title>10. Subscription Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/10-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/10-subscription/</guid><description>&lt;p&gt;This guide explains how students identify free-plan limits and use upgrade paths.&lt;/p&gt;
+&lt;p&gt;The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:&lt;/p&gt;</description></item><item><title>10. Subscription Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/subscription/</guid><description>&lt;p&gt;This guide explains how students identify free-plan limits and use upgrade paths.&lt;/p&gt;
 &lt;h2 id="understand-feature-limits"&gt;Understand Feature Limits&lt;/h2&gt;
 &lt;p&gt;Free-plan limits can apply to:&lt;/p&gt;
 &lt;ul&gt;
@@ -166,7 +166,7 @@
 &lt;li&gt;Click Upgrade or equivalent CTA.&lt;/li&gt;
 &lt;li&gt;Follow the presented flow for plan upgrade.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Note:&lt;/p&gt;</description></item><item><title>11. Account and Settings Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/11-account-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/11-account-settings/</guid><description>&lt;p&gt;This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.&lt;/p&gt;
+&lt;p&gt;Note:&lt;/p&gt;</description></item><item><title>11. Account and Settings Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/account-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/account-settings/</guid><description>&lt;p&gt;This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.&lt;/p&gt;
 &lt;h2 id="a-edit-profile-click-by-click"&gt;A) Edit Profile (Click-by-Click)&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In sidebar, click Profile.&lt;/li&gt;
@@ -208,7 +208,7 @@
 &lt;li&gt;Click Send/Request Link.&lt;/li&gt;
 &lt;li&gt;Wait for confirmation.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Possible outcomes:&lt;/p&gt;</description></item><item><title>12. Language Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/12-language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/12-language/</guid><description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;
+&lt;p&gt;Possible outcomes:&lt;/p&gt;</description></item><item><title>12. Language Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/language/</guid><description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;
 &lt;h2 id="switch-language-normal-case"&gt;Switch Language (Normal Case)&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open sidebar.&lt;/li&gt;
@@ -227,7 +227,7 @@
 &lt;li&gt;Page reloads with selected language.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="validation-checklist"&gt;Validation Checklist&lt;/h2&gt;
-&lt;p&gt;After language switch, verify:&lt;/p&gt;</description></item><item><title>13. Certificates and Application Documents</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/13-certificates-and-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/13-certificates-and-documents/</guid><description>&lt;p&gt;This guide covers two high-value student workflows: earned certificates and application document submission.&lt;/p&gt;
+&lt;p&gt;After language switch, verify:&lt;/p&gt;</description></item><item><title>13. Certificates and Application Documents</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/certificates-and-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/certificates-and-documents/</guid><description>&lt;p&gt;This guide covers two high-value student workflows: earned certificates and application document submission.&lt;/p&gt;
 &lt;h2 id="a-certificates-click-by-click"&gt;A) Certificates (Click-by-Click)&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In sidebar, click Certificates.&lt;/li&gt;
@@ -266,7 +266,7 @@
 &lt;li&gt;Continue until all steps are complete.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="d-review-status-and-fix-invalid-files"&gt;D) Review Status and Fix Invalid Files&lt;/h2&gt;
-&lt;p&gt;Each document may show:&lt;/p&gt;</description></item><item><title>14. Assigned Forms Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/14-assigned-forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/14-assigned-forms/</guid><description>&lt;p&gt;Assigned forms are organization/advisor forms that students complete from dashboard or direct link.&lt;/p&gt;
+&lt;p&gt;Each document may show:&lt;/p&gt;</description></item><item><title>14. Assigned Forms Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/</guid><description>&lt;p&gt;Assigned forms are organization/advisor forms that students complete from dashboard or direct link.&lt;/p&gt;
 &lt;h2 id="open-assigned-form-from-dashboard"&gt;Open Assigned Form from Dashboard&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Open Dashboard.&lt;/li&gt;

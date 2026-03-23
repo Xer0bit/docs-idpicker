@@ -1,7 +1,7 @@
 ---
 title: "02. Dashboard Guide"
 description: "Understanding every block on the student dashboard and how to use them effectively"
-weight: 122
+weight: 22
 draft: false
 ---
 

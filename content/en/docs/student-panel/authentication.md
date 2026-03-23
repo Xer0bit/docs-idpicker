@@ -1,7 +1,7 @@
 ---
 title: "01. Authentication Guide"
 description: "How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs"
-weight: 121
+weight: 21
 draft: false
 ---
 

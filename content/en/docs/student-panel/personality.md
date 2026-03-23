@@ -1,7 +1,7 @@
 ---
 title: "05. Personality Guide"
 description: "How to read your psychological radar chart and trait breakdowns"
-weight: 125
+weight: 25
 draft: false
 ---
 

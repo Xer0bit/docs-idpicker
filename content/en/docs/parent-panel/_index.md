@@ -1,7 +1,7 @@
 ---
 title: "Parent Panel"
 description: "Complete click-by-click parent operations manual"
-weight: 14
+weight: 40
 ---
 
 The Parent Panel allows guardians to link student accounts, monitor progress, review recommendations, and communicate with advisor workflows.

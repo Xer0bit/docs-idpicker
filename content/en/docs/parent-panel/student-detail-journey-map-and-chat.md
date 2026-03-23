@@ -1,7 +1,7 @@
 ---
 title: "Student Detail, Journey Map, and Advisor Chat"
 description: "How to monitor your child's progress, export their Journey Map, and communicate with advisors"
-weight: 144
+weight: 45
 draft: false
 ---
 

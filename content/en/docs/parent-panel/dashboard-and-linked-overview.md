@@ -1,7 +1,7 @@
 ---
 title: "Dashboard and Linked Overview"
 description: "How to interpret your main parent dashboard and navigate multiple linked children"
-weight: 143
+weight: 42
 draft: false
 ---
 

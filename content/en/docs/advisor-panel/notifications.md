@@ -1,7 +1,7 @@
 ---
 title: "Notifications"
 description: "How to compose, target, and broadcast announcements to your student cohorts"
-weight: 137
+weight: 37
 draft: false
 ---
 

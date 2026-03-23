@@ -1,7 +1,7 @@
 ---
 title: "06. AI Mentorship Guide"
 description: "How to chat with specialized AI Mentor personalities and your human Advisor"
-weight: 126
+weight: 26
 draft: false
 ---
 

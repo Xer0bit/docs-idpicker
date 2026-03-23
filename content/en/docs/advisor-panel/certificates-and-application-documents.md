@@ -1,7 +1,7 @@
 ---
 title: "Certificates and Application Documents"
 description: "Detailed click-by-click advisor document and credential workflows"
-weight: 138
+weight: 33
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Advisor Login and Dashboard"
 description: "How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview"
-weight: 131
+weight: 31
 draft: false
 ---
 

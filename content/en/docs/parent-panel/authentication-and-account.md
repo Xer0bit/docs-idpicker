@@ -1,7 +1,7 @@
 ---
 title: "Authentication and Account"
 description: "How parents sign in, register, and recover access to their dashboard"
-weight: 141
+weight: 41
 draft: false
 ---
 

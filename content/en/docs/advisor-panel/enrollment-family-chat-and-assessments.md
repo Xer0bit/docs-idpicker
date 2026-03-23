@@ -1,7 +1,7 @@
 ---
 title: "Enrollment, Family Chat, and Assessments"
 description: "How to handle incoming requests, chat with parents, and configure custom assessments"
-weight: 140
+weight: 34
 draft: false
 ---
 

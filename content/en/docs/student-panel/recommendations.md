@@ -1,7 +1,7 @@
 ---
 title: "04. Recommendation Guide"
 description: "How to interpret your AI-driven career and university recommendations"
-weight: 124
+weight: 24
 draft: false
 ---
 

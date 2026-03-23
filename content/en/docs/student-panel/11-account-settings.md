@@ -1,34 +1,86 @@
 ---
 title: "11. Account and Settings Guide"
-description: "Manage profile, security, and support options"
+description: "Detailed click-by-click profile and settings walkthrough"
 weight: 131
 draft: false
 ---
 
-## Profile Updates
+This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.
 
-1. Open Settings.
-2. Edit profile fields.
-3. Save changes.
+## A) Edit Profile (Click-by-Click)
 
-## Security
+1. In sidebar, click Profile.
+2. Click Edit Profile.
+3. Update fields as needed:
+   - First name
+   - Last name
+   - Bio
+   - Location
+   - Job title
+   - Gender
+   - Instagram URL
+   - X URL
+4. Click Save.
+5. Wait for success confirmation.
 
-1. Open Password and Security.
-2. Change password.
-3. Confirm with current credentials.
+If save fails:
 
-## Account Deletion
+- Recheck required fields and URL formats.
+- Retry once after page refresh.
 
-1. Open Delete Account.
-2. Confirm action.
-3. Verify logout and account removal.
+## B) Switch Recommendation Track from Settings
 
-## Parent Access
+1. In sidebar, click Settings.
+2. Locate Guidance Track section.
+3. Click switch action (Career/University).
+4. Wait for saved confirmation.
+5. Open Recommendations and confirm new mode.
 
-1. Invite parent/guardian.
-2. Review linked access.
-3. Remove access when needed.
+## C) Link Parent Account
+
+1. Stay on Settings page.
+2. Locate Parent Linking section.
+3. Click parent email input.
+4. Enter parent email.
+5. Click Send/Request Link.
+6. Wait for confirmation.
+
+Possible outcomes:
+
+- Linked immediately
+- Pending until parent-side confirmation flow
+
+## D) Remove Parent Access
+
+1. In Parent Links list, locate linked parent row.
+2. Click Unlink.
+3. Confirm action.
+4. Verify parent is removed from linked list.
+
+## E) Delete Student Account (High Risk)
+
+1. In Settings, open Delete Account area.
+2. Click Delete Account.
+3. Read warning carefully.
+4. Enter required confirmation word exactly.
+5. Click final delete confirmation.
+6. Wait for logout/redirect.
+
+Best practice:
+
+- Export/save anything needed before deletion.
+
+## Common Student Questions
+
+Q: Parent link request sent but not linked yet.
+A: Link may stay pending until parent confirmation path is completed.
+
+Q: Track switched in settings but recommendations unchanged.
+A: Re-open Recommendations or refresh once.
+
+Q: Delete button did not proceed.
+A: Confirmation word is strict; type exactly as shown.
 
 ![Settings Placeholder](/images/user-manual/student-panel/settings-page.png)
 
-Image placeholder: Add settings page screenshot with profile and security sections.
+Image placeholder: Settings sections for track switch, parent link, and delete account.

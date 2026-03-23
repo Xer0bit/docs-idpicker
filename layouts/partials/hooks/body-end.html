@@ -1,0 +1,155 @@
+{{ if .RawContent }}
+{{/* Embed page markdown as base64 so special characters can't break the script */}}
+<script id="llm-raw-md" type="text/plain" style="display:none">{{ .RawContent | base64Encode }}</script>
+
+<style>
+/* ── Page meta bar ─────────────────────────────────────────────────────── */
+.page-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+.page-meta-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+.page-meta-bar__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #F1F5F9;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* ── LLM Copy Button ───────────────────────────────────────────────────── */
+.btn-copy-llm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.45rem;
+  border: 1.5px solid #DDD6FE;
+  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FD 100%);
+  color: #5B45E5;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1), 0 1px 2px rgba(91,69,229,0.06);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-copy-llm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.18s;
+}
+.btn-copy-llm:hover {
+  border-color: #A78BFA;
+  color: #4338CA;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91,69,229,0.18);
+}
+.btn-copy-llm:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1);
+}
+.btn-copy-llm.state--copied {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border-color: #6EE7B7;
+  color: #065F46;
+  box-shadow: 0 1px 3px rgba(16,185,129,0.1);
+  transform: none;
+}
+.btn-copy-llm svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+.btn-copy-llm:hover svg { transform: translateY(-1px); }
+</style>
+
+<script>
+(function () {
+  const COPY_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+  const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+  const DOC_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+
+  function injectBar() {
+    const rawEl  = document.getElementById('llm-raw-md');
+    const h1     = document.querySelector('.td-content > h1');
+    if (!rawEl || !h1) return;
+
+    // ─── Build the meta bar ───────────────────────────────────────────────
+    const bar = document.createElement('div');
+    bar.className = 'page-meta-bar';
+
+    // Left side – "Docs" pill badge
+    const left = document.createElement('div');
+    left.className = 'page-meta-bar__left';
+    left.innerHTML = `<span class="page-meta-bar__pill">${DOC_ICON} &nbsp;Documentation</span>`;
+    bar.appendChild(left);
+
+    // Right side – Copy for LLM button
+    const btn = document.createElement('button');
+    btn.className = 'btn-copy-llm';
+    btn.type = 'button';
+    btn.title = 'Copy this page as Markdown for pasting into an LLM (Claude, GPT, Gemini…)';
+    btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+
+    btn.addEventListener('click', function () {
+      try {
+        const encoded   = rawEl.textContent.trim();
+        const markdown  = atob(encoded);
+        const payload   = `<!-- Source: ${window.location.href} -->\n\n${markdown}`;
+
+        navigator.clipboard.writeText(payload).then(function () {
+          btn.innerHTML = CHECK_ICON + ' &nbsp;Copied!';
+          btn.classList.add('state--copied');
+          setTimeout(function () {
+            btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+            btn.classList.remove('state--copied');
+          }, 2200);
+        }).catch(function (err) {
+          console.warn('[LLM Copy] clipboard write failed:', err);
+        });
+      } catch (e) {
+        console.error('[LLM Copy] failed', e);
+      }
+    });
+
+    bar.appendChild(btn);
+
+    // Insert the bar just before the H1
+    h1.parentNode.insertBefore(bar, h1);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectBar);
+  } else {
+    injectBar();
+  }
+})();
+</script>
+{{ end }}

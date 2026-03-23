@@ -1,366 +1,340 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/</link><description>Recent content on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/overview/</guid><description>&lt;p&gt;IDPicker helps students evaluate strengths, explore academic and career options, and get guided recommendations.&lt;/p&gt;
-&lt;h2 id="primary-user-roles"&gt;Primary User Roles&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Student&lt;/li&gt;
-&lt;li&gt;Advisor&lt;/li&gt;
-&lt;li&gt;Parent&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="panel-entry-points"&gt;Panel Entry Points&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Student Panel: main user learning and recommendation workspace&lt;/li&gt;
-&lt;li&gt;Advisor Panel: supervision, student support, and sub-advisor administration&lt;/li&gt;
-&lt;li&gt;Parent Panel: visibility for linked students&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="student-account-types"&gt;Student Account Types&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Linked Student: account linked to parent visibility model&lt;/li&gt;
-&lt;li&gt;Individual Student: independent account with direct access only&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/getting-started/platform-entry-points.png" alt="Platform Entry Points Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot or diagram showing where each role signs in.&lt;/p&gt;</description></item><item><title>Quick Start</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/</guid><description>&lt;h2 id="step-1-open-the-login-page"&gt;Step 1: Open the Login Page&lt;/h2&gt;
-&lt;p&gt;Use the correct login URL for your environment.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/getting-started/login-page.png" alt="Login URL Page Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot of login page with visible URL in browser bar.&lt;/p&gt;
-&lt;h2 id="step-2-sign-in"&gt;Step 2: Sign In&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Enter email/username.&lt;/li&gt;
-&lt;li&gt;Enter password.&lt;/li&gt;
-&lt;li&gt;Click Sign In.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;For OAuth login, click the provider button (for example Google) if enabled.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/getting-started/sign-in-form.png" alt="Sign In Form Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot of filled sign-in form (mask sensitive data).&lt;/p&gt;
-&lt;h2 id="step-3-create-first-item"&gt;Step 3: Create First Item&lt;/h2&gt;
-&lt;p&gt;After login, open Dashboard and start the first guided workflow:&lt;/p&gt;</description></item><item><title>Access URLs</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/</guid><description>&lt;p&gt;Use this page as the single source of truth for platform URLs.&lt;/p&gt;
-&lt;h2 id="production-urls"&gt;Production URLs&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Purpose&lt;/th&gt;
- &lt;th&gt;URL&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;Main Platform Login&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://app.idpicker.com/login"&gt;https://app.idpicker.com/login&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Student Panel&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://app.idpicker.com/student/dashboard"&gt;https://app.idpicker.com/student/dashboard&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Advisor Panel&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://app.idpicker.com/advisor/dashboard"&gt;https://app.idpicker.com/advisor/dashboard&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Parent Panel&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://app.idpicker.com/parent/dashboard"&gt;https://app.idpicker.com/parent/dashboard&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Help Center&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://app.idpicker.com/help-center"&gt;https://app.idpicker.com/help-center&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="stagingtest-urls"&gt;Staging/Test URLs&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Purpose&lt;/th&gt;
- &lt;th&gt;URL&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;API Base&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://testapi.idpicker.com/api"&gt;https://testapi.idpicker.com/api&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;Language Preference API&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://testapi.idpicker.com/api/set-language-preference/"&gt;https://testapi.idpicker.com/api/set-language-preference/&lt;/a&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="url-validation-checklist"&gt;URL Validation Checklist&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Login URL is reachable.&lt;/li&gt;
-&lt;li&gt;Role-based panel redirects are correct.&lt;/li&gt;
-&lt;li&gt;Unauthorized role access is blocked.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/getting-started/url-registry.png" alt="URL Registry Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot of browser tabs showing each panel URL after login.&lt;/p&gt;</description></item><item><title>System Requirements</title><link>https://xer0bit.github.io/docs-idpicker/docs/installation/requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/installation/requirements/</guid><description>&lt;h2 id="minimum-requirements"&gt;Minimum Requirements&lt;/h2&gt;
-&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;
-&lt;h2 id="supported-platforms"&gt;Supported Platforms&lt;/h2&gt;
-&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;
-&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
-&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description></item><item><title>Setup</title><link>https://xer0bit.github.io/docs-idpicker/docs/installation/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/installation/setup/</guid><description>&lt;h2 id="install-steps"&gt;Install Steps&lt;/h2&gt;
-&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;
-&lt;h2 id="configure-settings"&gt;Configure Settings&lt;/h2&gt;
-&lt;p&gt;Describe required configuration values.&lt;/p&gt;
-&lt;h2 id="validate-installation"&gt;Validate Installation&lt;/h2&gt;
-&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description></item><item><title>Common Tasks</title><link>https://xer0bit.github.io/docs-idpicker/docs/usage/common-tasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/usage/common-tasks/</guid><description>&lt;h2 id="task-1"&gt;Task 1&lt;/h2&gt;
-&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;
-&lt;h2 id="task-2"&gt;Task 2&lt;/h2&gt;
-&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;
-&lt;h2 id="task-3"&gt;Task 3&lt;/h2&gt;
-&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;</description></item><item><title>Best Practices</title><link>https://xer0bit.github.io/docs-idpicker/docs/usage/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/usage/best-practices/</guid><description>&lt;h2 id="recommended-workflow"&gt;Recommended Workflow&lt;/h2&gt;
-&lt;p&gt;Explain the preferred sequence of actions.&lt;/p&gt;
-&lt;h2 id="security-tips"&gt;Security Tips&lt;/h2&gt;
-&lt;p&gt;List secure usage guidelines.&lt;/p&gt;
-&lt;h2 id="performance-tips"&gt;Performance Tips&lt;/h2&gt;
-&lt;p&gt;Describe ways to keep usage efficient.&lt;/p&gt;</description></item><item><title>Configuration Reference</title><link>https://xer0bit.github.io/docs-idpicker/docs/reference/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/reference/configuration/</guid><description>&lt;h2 id="configuration-keys"&gt;Configuration Keys&lt;/h2&gt;
-&lt;p&gt;Document each key, type, default, and description.&lt;/p&gt;
-&lt;h2 id="example-config"&gt;Example Config&lt;/h2&gt;
-&lt;p&gt;Provide a complete configuration example.&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://xer0bit.github.io/docs-idpicker/docs/help/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/help/troubleshooting/</guid><description>&lt;h2 id="problem-cannot-sign-in"&gt;Problem: Cannot Sign In&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Possible causes&lt;/li&gt;
-&lt;li&gt;Resolution steps&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="problem-feature-not-working"&gt;Problem: Feature Not Working&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Possible causes&lt;/li&gt;
-&lt;li&gt;Resolution steps&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="problem-slow-performance"&gt;Problem: Slow Performance&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Possible causes&lt;/li&gt;
-&lt;li&gt;Resolution steps&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>FAQ</title><link>https://xer0bit.github.io/docs-idpicker/docs/help/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/help/faq/</guid><description>&lt;h2 id="question-1"&gt;Question 1&lt;/h2&gt;
-&lt;p&gt;Answer.&lt;/p&gt;
-&lt;h2 id="question-2"&gt;Question 2&lt;/h2&gt;
-&lt;p&gt;Answer.&lt;/p&gt;
-&lt;h2 id="question-3"&gt;Question 3&lt;/h2&gt;
-&lt;p&gt;Answer.&lt;/p&gt;</description></item><item><title>01. Authentication Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/01-authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/01-authentication/</guid><description>&lt;h2 id="login-with-email-and-password"&gt;Login with Email and Password&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open &lt;a href="../getting-started/access-urls/"&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Visit the Main Platform Login URL.&lt;/li&gt;
-&lt;li&gt;Enter email and password.&lt;/li&gt;
-&lt;li&gt;Click Sign In.&lt;/li&gt;
-&lt;li&gt;Verify dashboard load.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/auth-login-email.png" alt="Student Login Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot of student login form and success redirect.&lt;/p&gt;
-&lt;h2 id="login-with-google-oauth"&gt;Login with Google OAuth&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;On login page, click Continue with Google.&lt;/li&gt;
-&lt;li&gt;Select account and approve access.&lt;/li&gt;
-&lt;li&gt;Verify redirect to Student Dashboard.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/auth-login-google.png" alt="Google OAuth Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot sequence for OAuth start and dashboard redirect.&lt;/p&gt;</description></item><item><title>02. Dashboard Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/02-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/02-dashboard/</guid><description>&lt;h2 id="dashboard-purpose"&gt;Dashboard Purpose&lt;/h2&gt;
-&lt;p&gt;The dashboard centralizes mentor access, assessments, reports, and upgrade flow.&lt;/p&gt;
-&lt;h2 id="steps"&gt;Steps&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Log in as student.&lt;/li&gt;
-&lt;li&gt;Review top cards and pillar widgets.&lt;/li&gt;
-&lt;li&gt;Open AI Mentor from dashboard CTA.&lt;/li&gt;
-&lt;li&gt;Open each core pillar and confirm page navigation.&lt;/li&gt;
-&lt;li&gt;Open reports and subscription CTA.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/dashboard-overview.png" alt="Dashboard Overview Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add full dashboard screenshot with numbered annotations.&lt;/p&gt;</description></item><item><title>03. Assessment Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/03-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/03-assessment/</guid><description>&lt;h2 id="start-an-assessment"&gt;Start an Assessment&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Assessments from dashboard.&lt;/li&gt;
-&lt;li&gt;Begin questionnaire.&lt;/li&gt;
-&lt;li&gt;Answer all required questions.&lt;/li&gt;
-&lt;li&gt;Submit and wait for processing.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="resume-interrupted-session"&gt;Resume Interrupted Session&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Return to Assessments.&lt;/li&gt;
-&lt;li&gt;Select Resume.&lt;/li&gt;
-&lt;li&gt;Continue from the last unanswered item.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="view-results"&gt;View Results&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open completed assessment card.&lt;/li&gt;
-&lt;li&gt;Review summary and details.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/assessment-flow.png" alt="Assessment Flow Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshots for start, in-progress, and completed states.&lt;/p&gt;</description></item><item><title>04. Recommendation Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/04-recommendations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/04-recommendations/</guid><description>&lt;h2 id="view-recommendations"&gt;View Recommendations&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Complete assessment.&lt;/li&gt;
-&lt;li&gt;Open Recommendations section.&lt;/li&gt;
-&lt;li&gt;Review suggested career paths and rationale.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="download-recommendation-report"&gt;Download Recommendation Report&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Click Download Recommendations.&lt;/li&gt;
-&lt;li&gt;Save file locally.&lt;/li&gt;
-&lt;li&gt;Verify downloaded content opens correctly.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/recommendations.png" alt="Recommendations Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add recommendation list and download button screenshot.&lt;/p&gt;</description></item><item><title>05. Personality Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/05-personality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/05-personality/</guid><description>&lt;h2 id="open-personality-results"&gt;Open Personality Results&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Navigate to Personality section.&lt;/li&gt;
-&lt;li&gt;Open latest completed assessment.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="interpret-radar-chart"&gt;Interpret Radar Chart&lt;/h2&gt;
-&lt;p&gt;Review trait values such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Social Adaptability&lt;/li&gt;
-&lt;li&gt;Emotional Regulation&lt;/li&gt;
-&lt;li&gt;Cognitive Flexibility&lt;/li&gt;
-&lt;li&gt;Achievement Motivation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/personality-chart.png" alt="Personality Chart Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add radar chart screenshot with trait labels and score values.&lt;/p&gt;</description></item><item><title>06. AI Mentorship Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/06-ai-mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/06-ai-mentorship/</guid><description>&lt;h2 id="start-mentor-chat"&gt;Start Mentor Chat&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;From dashboard, click Engage Your Mentor.&lt;/li&gt;
-&lt;li&gt;Type your question.&lt;/li&gt;
-&lt;li&gt;Continue conversation with follow-up prompts.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="get-guided-advice"&gt;Get Guided Advice&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Guided Advice from mentor panel.&lt;/li&gt;
-&lt;li&gt;Review step-by-step recommendations.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/ai-mentor-chat.png" alt="Mentor Chat Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add chat screenshot with example mentor response.&lt;/p&gt;</description></item><item><title>07. University Search Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/07-university-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/07-university-search/</guid><description>&lt;h2 id="search-programs"&gt;Search Programs&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open University Search.&lt;/li&gt;
-&lt;li&gt;Enter university or program keyword.&lt;/li&gt;
-&lt;li&gt;Review matching results.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="filter-results"&gt;Filter Results&lt;/h2&gt;
-&lt;p&gt;Use filters for:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Field of study&lt;/li&gt;
-&lt;li&gt;Degree type&lt;/li&gt;
-&lt;li&gt;Language&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="open-program-details"&gt;Open Program Details&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Click a program card.&lt;/li&gt;
-&lt;li&gt;Review tuition, duration, country, and language.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/university-search.png" alt="University Search Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add screenshot with active filters and result cards.&lt;/p&gt;</description></item><item><title>08. Resources Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/08-resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/08-resources/</guid><description>&lt;h2 id="access-shared-resources"&gt;Access Shared Resources&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Resources from navigation.&lt;/li&gt;
-&lt;li&gt;Browse advisor-shared files.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="find-specific-material"&gt;Find Specific Material&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Use search by title/description/file name.&lt;/li&gt;
-&lt;li&gt;Apply filters by type, size, and visibility.&lt;/li&gt;
-&lt;li&gt;Sort results as needed.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="open-or-download-file"&gt;Open or Download File&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Click resource item.&lt;/li&gt;
-&lt;li&gt;Open preview or download.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/resources-list.png" alt="Resources Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add resources page screenshot with filters and counters.&lt;/p&gt;</description></item><item><title>09. Help Center Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/09-help-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/09-help-center/</guid><description>&lt;h2 id="submit-a-ticket"&gt;Submit a Ticket&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Help Center.&lt;/li&gt;
-&lt;li&gt;Click Submit New Ticket.&lt;/li&gt;
-&lt;li&gt;Fill subject, category, priority, description.&lt;/li&gt;
-&lt;li&gt;Submit and note ticket ID.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="track-existing-tickets"&gt;Track Existing Tickets&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open My Tickets.&lt;/li&gt;
-&lt;li&gt;Check status updates.&lt;/li&gt;
-&lt;li&gt;Open ticket for details.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/help-center.png" alt="Help Center Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add ticket submission and My Tickets screenshot.&lt;/p&gt;</description></item><item><title>10. Subscription Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/10-subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/10-subscription/</guid><description>&lt;h2 id="upgrade-plan"&gt;Upgrade Plan&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Click Upgrade from dashboard or restricted feature prompt.&lt;/li&gt;
-&lt;li&gt;Compare plans.&lt;/li&gt;
-&lt;li&gt;Select desired tier.&lt;/li&gt;
-&lt;li&gt;Complete payment/confirmation flow.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/subscription-plans.png" alt="Subscription Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add plan comparison and upgrade button screenshot.&lt;/p&gt;</description></item><item><title>11. Account and Settings Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/11-account-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/11-account-settings/</guid><description>&lt;h2 id="profile-updates"&gt;Profile Updates&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Settings.&lt;/li&gt;
-&lt;li&gt;Edit profile fields.&lt;/li&gt;
-&lt;li&gt;Save changes.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="security"&gt;Security&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Password and Security.&lt;/li&gt;
-&lt;li&gt;Change password.&lt;/li&gt;
-&lt;li&gt;Confirm with current credentials.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="account-deletion"&gt;Account Deletion&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Delete Account.&lt;/li&gt;
-&lt;li&gt;Confirm action.&lt;/li&gt;
-&lt;li&gt;Verify logout and account removal.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="parent-access"&gt;Parent Access&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Invite parent/guardian.&lt;/li&gt;
-&lt;li&gt;Review linked access.&lt;/li&gt;
-&lt;li&gt;Remove access when needed.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/settings-page.png" alt="Settings Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add settings page screenshot with profile and security sections.&lt;/p&gt;</description></item><item><title>12. Language Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/12-language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/12-language/</guid><description>&lt;h2 id="change-language"&gt;Change Language&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open language switch from header.&lt;/li&gt;
-&lt;li&gt;Select EN or TR.&lt;/li&gt;
-&lt;li&gt;Confirm all labels update instantly.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="validate-language-state"&gt;Validate Language State&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Navigate to a different page.&lt;/li&gt;
-&lt;li&gt;Confirm selected language persists.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/language-switch.png" alt="Language Switch Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add before/after screenshots for EN and TR mode.&lt;/p&gt;</description></item><item><title>Advisor Login and Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid><description>&lt;h2 id="advisor-login"&gt;Advisor Login&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open advisor login URL from &lt;a href="../getting-started/access-urls/"&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Enter advisor credentials.&lt;/li&gt;
-&lt;li&gt;Click Sign In.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="dashboard-navigation"&gt;Dashboard Navigation&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Review assigned student groups.&lt;/li&gt;
-&lt;li&gt;Open student profile summary.&lt;/li&gt;
-&lt;li&gt;Check alerts, pending actions, and activity timeline.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/advisor-login.png" alt="Advisor Login Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add advisor login and dashboard screenshots.&lt;/p&gt;</description></item><item><title>Sub-Advisor Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid><description>&lt;h2 id="create-sub-advisor"&gt;Create Sub-Advisor&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Advisor Settings or Team Management.&lt;/li&gt;
-&lt;li&gt;Click Create Sub-Advisor.&lt;/li&gt;
-&lt;li&gt;Fill required fields: name, email, scope, and assigned student group.&lt;/li&gt;
-&lt;li&gt;Save and send invitation.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="manage-permissions"&gt;Manage Permissions&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open sub-advisor record.&lt;/li&gt;
-&lt;li&gt;Configure visibility scope.&lt;/li&gt;
-&lt;li&gt;Save and test effective access.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="deactivate-sub-advisor"&gt;Deactivate Sub-Advisor&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Open sub-advisor account.&lt;/li&gt;
-&lt;li&gt;Set status to inactive.&lt;/li&gt;
-&lt;li&gt;Verify access is revoked.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-Advisor Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add form screenshot and permission matrix screenshot.&lt;/p&gt;</description></item><item><title>Linked Student Guide</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/linked-student-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/linked-student-guide/</guid><description>&lt;h2 id="parent-access-flow"&gt;Parent Access Flow&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Parent receives invite.&lt;/li&gt;
-&lt;li&gt;Parent activates account.&lt;/li&gt;
-&lt;li&gt;Linked student appears in parent dashboard.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="what-parents-can-view"&gt;What Parents Can View&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Progress summary&lt;/li&gt;
-&lt;li&gt;Milestone completion&lt;/li&gt;
-&lt;li&gt;Selected recommendation insights&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="what-parents-cannot-edit"&gt;What Parents Cannot Edit&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Student-only private settings&lt;/li&gt;
-&lt;li&gt;Restricted assessment configuration&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/parent-panel/linked-student-view.png" alt="Linked Student Placeholder"&gt;&lt;/p&gt;
-&lt;p&gt;Image placeholder: Add parent dashboard with linked student card and progress widgets.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDPicker Docs</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on IDPicker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/docs/getting-started/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/overview/</guid>
+      <description>&lt;p&gt;IDPicker helps students evaluate strengths, explore academic and career options, and get guided recommendations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;primary-user-roles&#34;&gt;Primary User Roles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Student&lt;/li&gt;&#xA;&lt;li&gt;Advisor&lt;/li&gt;&#xA;&lt;li&gt;Parent&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;panel-entry-points&#34;&gt;Panel Entry Points&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Student Panel: main user learning and recommendation workspace&lt;/li&gt;&#xA;&lt;li&gt;Advisor Panel: supervision, student support, and sub-advisor administration&lt;/li&gt;&#xA;&lt;li&gt;Parent Panel: visibility for linked students&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;student-account-types&#34;&gt;Student Account Types&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linked Student: account linked to parent visibility model&lt;/li&gt;&#xA;&lt;li&gt;Individual Student: independent account with direct access only&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/user-manual/getting-started/platform-entry-points.png&#34; alt=&#34;Platform Entry Points Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot or diagram showing where each role signs in.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick Start</title>
+      <link>http://localhost:1313/docs/getting-started/quick-start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/quick-start/</guid>
+      <description>&lt;h2 id=&#34;step-1-open-the-login-page&#34;&gt;Step 1: Open the Login Page&lt;/h2&gt;&#xA;&lt;p&gt;Use the correct login URL for your environment.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/user-manual/getting-started/login-page.png&#34; alt=&#34;Login URL Page Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot of login page with visible URL in browser bar.&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-2-sign-in&#34;&gt;Step 2: Sign In&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Enter email/username.&lt;/li&gt;&#xA;&lt;li&gt;Enter password.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;For OAuth login, click the provider button (for example Google) if enabled.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/user-manual/getting-started/sign-in-form.png&#34; alt=&#34;Sign In Form Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot of filled sign-in form (mask sensitive data).&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-3-create-first-item&#34;&gt;Step 3: Create First Item&lt;/h2&gt;&#xA;&lt;p&gt;After login, open Dashboard and start the first guided workflow:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Access URLs</title>
+      <link>http://localhost:1313/docs/getting-started/access-urls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/getting-started/access-urls/</guid>
+      <description>&lt;p&gt;Use this page as the single source of truth for platform URLs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;production-urls&#34;&gt;Production URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;          &lt;th&gt;URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Main Platform Login&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/login&#34;&gt;https://app.idpicker.com/login&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/student/dashboard&#34;&gt;https://app.idpicker.com/student/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/advisor/dashboard&#34;&gt;https://app.idpicker.com/advisor/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/parent/dashboard&#34;&gt;https://app.idpicker.com/parent/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Help Center&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/help-center&#34;&gt;https://app.idpicker.com/help-center&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;stagingtest-urls&#34;&gt;Staging/Test URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;          &lt;th&gt;URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;API Base&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://testapi.idpicker.com/api&#34;&gt;https://testapi.idpicker.com/api&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Language Preference API&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://testapi.idpicker.com/api/set-language-preference/&#34;&gt;https://testapi.idpicker.com/api/set-language-preference/&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;url-validation-checklist&#34;&gt;URL Validation Checklist&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Login URL is reachable.&lt;/li&gt;&#xA;&lt;li&gt;Role-based panel redirects are correct.&lt;/li&gt;&#xA;&lt;li&gt;Unauthorized role access is blocked.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/user-manual/getting-started/url-registry.png&#34; alt=&#34;URL Registry Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot of browser tabs showing each panel URL after login.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>System Requirements</title>
+      <link>http://localhost:1313/docs/installation/requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/installation/requirements/</guid>
+      <description>&lt;h2 id=&#34;minimum-requirements&#34;&gt;Minimum Requirements&lt;/h2&gt;&#xA;&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;&#xA;&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Setup</title>
+      <link>http://localhost:1313/docs/installation/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/installation/setup/</guid>
+      <description>&lt;h2 id=&#34;install-steps&#34;&gt;Install Steps&lt;/h2&gt;&#xA;&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configure-settings&#34;&gt;Configure Settings&lt;/h2&gt;&#xA;&lt;p&gt;Describe required configuration values.&lt;/p&gt;&#xA;&lt;h2 id=&#34;validate-installation&#34;&gt;Validate Installation&lt;/h2&gt;&#xA;&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Common Tasks</title>
+      <link>http://localhost:1313/docs/usage/common-tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/common-tasks/</guid>
+      <description>&lt;h2 id=&#34;task-1&#34;&gt;Task 1&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;&#xA;&lt;h2 id=&#34;task-2&#34;&gt;Task 2&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;&#xA;&lt;h2 id=&#34;task-3&#34;&gt;Task 3&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Best Practices</title>
+      <link>http://localhost:1313/docs/usage/best-practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/usage/best-practices/</guid>
+      <description>&lt;h2 id=&#34;recommended-workflow&#34;&gt;Recommended Workflow&lt;/h2&gt;&#xA;&lt;p&gt;Explain the preferred sequence of actions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;security-tips&#34;&gt;Security Tips&lt;/h2&gt;&#xA;&lt;p&gt;List secure usage guidelines.&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance-tips&#34;&gt;Performance Tips&lt;/h2&gt;&#xA;&lt;p&gt;Describe ways to keep usage efficient.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Configuration Reference</title>
+      <link>http://localhost:1313/docs/reference/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/reference/configuration/</guid>
+      <description>&lt;p&gt;This page documents high-impact configuration values used across IDPicker modules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-core-environment-variables&#34;&gt;1. Core Environment Variables&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Typical Value (Local)&lt;/th&gt;&#xA;          &lt;th&gt;Used By&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NEXT_PUBLIC_API_BASE_URL&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:8000/api&lt;/td&gt;&#xA;          &lt;td&gt;Student, Advisor, Parent, Admin dashboards&lt;/td&gt;&#xA;          &lt;td&gt;Base API URL for frontend requests&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NODE_ENV&lt;/td&gt;&#xA;          &lt;td&gt;development / production&lt;/td&gt;&#xA;          &lt;td&gt;All frontends&lt;/td&gt;&#xA;          &lt;td&gt;Runtime mode and behavior switches&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Notes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Frontends append role-specific paths in API clients where needed.&lt;/li&gt;&#xA;&lt;li&gt;Some shared endpoints remove role suffix at runtime in client helper logic.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-local-frontend-dev-urls&#34;&gt;2. Local Frontend Dev URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;App&lt;/th&gt;&#xA;          &lt;th&gt;Typical Local URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student module frontend&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Admin dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3001&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3002&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3003&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;3-authentication-cookies-frontend&#34;&gt;3. Authentication Cookies (Frontend)&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Role&lt;/th&gt;&#xA;          &lt;th&gt;Cookie Name&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student&lt;/td&gt;&#xA;          &lt;td&gt;authToken&lt;/td&gt;&#xA;          &lt;td&gt;Student API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor&lt;/td&gt;&#xA;          &lt;td&gt;authTokenAdvisor&lt;/td&gt;&#xA;          &lt;td&gt;Advisor API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent&lt;/td&gt;&#xA;          &lt;td&gt;authTokenParent&lt;/td&gt;&#xA;          &lt;td&gt;Parent API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Admin&lt;/td&gt;&#xA;          &lt;td&gt;authTokenAdmin&lt;/td&gt;&#xA;          &lt;td&gt;Admin API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Operational notes:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/docs/help/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/help/troubleshooting/</guid>
+      <description>&lt;p&gt;Use these playbooks when users report blocked workflows.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playbook-1-cannot-sign-in&#34;&gt;Playbook 1: Cannot Sign In&lt;/h2&gt;&#xA;&lt;p&gt;Symptoms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Invalid credentials error&lt;/li&gt;&#xA;&lt;li&gt;Redirect loop to login&lt;/li&gt;&#xA;&lt;li&gt;Role mismatch message&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Checks:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm correct role URL.&lt;/li&gt;&#xA;&lt;li&gt;Confirm account exists and is active.&lt;/li&gt;&#xA;&lt;li&gt;Confirm email verification status.&lt;/li&gt;&#xA;&lt;li&gt;Clear cookies and retry login.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Escalate when:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple users fail with same error pattern.&lt;/li&gt;&#xA;&lt;li&gt;Login endpoint responds with server errors.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;playbook-2-form-cannot-submit&#34;&gt;Playbook 2: Form Cannot Submit&lt;/h2&gt;&#xA;&lt;p&gt;Symptoms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Submit button fails silently&lt;/li&gt;&#xA;&lt;li&gt;Validation error persists&lt;/li&gt;&#xA;&lt;li&gt;Response not saved&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Checks:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/docs/help/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/help/faq/</guid>
+      <description>&lt;h2 id=&#34;access-and-accounts&#34;&gt;Access and Accounts&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-i-cannot-log-in-what-should-i-check-first&#34;&gt;1. I cannot log in. What should I check first?&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm you are using the correct panel URL for your role.&lt;/li&gt;&#xA;&lt;li&gt;Re-enter username/email and password carefully.&lt;/li&gt;&#xA;&lt;li&gt;Check whether your email verification is pending.&lt;/li&gt;&#xA;&lt;li&gt;Use password reset if you suspect credential mismatch.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-why-do-i-get-redirected-back-to-login&#34;&gt;2. Why do I get redirected back to login?&lt;/h3&gt;&#xA;&lt;p&gt;Most common causes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Expired or invalid auth cookie&lt;/li&gt;&#xA;&lt;li&gt;Wrong role token used on another panel&lt;/li&gt;&#xA;&lt;li&gt;Backend session/token invalidation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Fix:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>01. Authentication Guide</title>
+      <link>http://localhost:1313/docs/student-panel/01-authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/01-authentication/</guid>
+      <description>&lt;p&gt;This guide explains exactly how a student signs in, registers, verifies email, and recovers account access.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-you-need-before-starting&#34;&gt;What You Need Before Starting&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Student login URL from &lt;a href=&#34;../getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Valid email address&lt;/li&gt;&#xA;&lt;li&gt;Stable internet connection&lt;/li&gt;&#xA;&lt;li&gt;Access to your email inbox (and spam folder)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;a-sign-in-with-email-and-password-click-by-click&#34;&gt;A) Sign In with Email and Password (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the student login page.&lt;/li&gt;&#xA;&lt;li&gt;Click the Email field.&lt;/li&gt;&#xA;&lt;li&gt;Type your registered email.&lt;/li&gt;&#xA;&lt;li&gt;Click the Password field.&lt;/li&gt;&#xA;&lt;li&gt;Type your password.&lt;/li&gt;&#xA;&lt;li&gt;Optional: Click the eye icon to reveal password and verify typing.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;li&gt;Wait for redirect.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Expected result:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>02. Dashboard Guide</title>
+      <link>http://localhost:1313/docs/student-panel/02-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/02-dashboard/</guid>
+      <description>&lt;p&gt;The dashboard is the student home screen. This guide explains where to click first and how to use each block.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-dashboard&#34;&gt;Open Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in successfully.&lt;/li&gt;&#xA;&lt;li&gt;Wait for automatic redirect to dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Confirm left sidebar is visible.&lt;/li&gt;&#xA;&lt;li&gt;Confirm core widgets/cards are loaded.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;recommended-first-5-clicks-after-login&#34;&gt;Recommended First 5 Clicks After Login&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Notifications preview to check latest updates.&lt;/li&gt;&#xA;&lt;li&gt;Click Assigned Forms section and open pending form (if any).&lt;/li&gt;&#xA;&lt;li&gt;Click Resume/Continue assessment prompt (if shown).&lt;/li&gt;&#xA;&lt;li&gt;Click Recommendations from sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Return to dashboard and check promoted/random programs.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;dashboard-blocks-and-how-to-use-them&#34;&gt;Dashboard Blocks and How to Use Them&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-assessment-reports-block&#34;&gt;1) Assessment Reports Block&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locate assessment report area.&lt;/li&gt;&#xA;&lt;li&gt;If report exists, click view/download action.&lt;/li&gt;&#xA;&lt;li&gt;If locked or unavailable, complete required assessments first.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-assigned-forms-block&#34;&gt;2) Assigned Forms Block&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locate Assigned Forms.&lt;/li&gt;&#xA;&lt;li&gt;Click open form on a pending entry.&lt;/li&gt;&#xA;&lt;li&gt;Complete in dedicated form page.&lt;/li&gt;&#xA;&lt;li&gt;Return to dashboard after submit.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;3-organization-invitations-block&#34;&gt;3) Organization Invitations Block&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open invitation card.&lt;/li&gt;&#xA;&lt;li&gt;Review organization name and context.&lt;/li&gt;&#xA;&lt;li&gt;Click Accept or Decline.&lt;/li&gt;&#xA;&lt;li&gt;Wait for confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;4-notifications-block&#34;&gt;4) Notifications Block&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Review unread indicator.&lt;/li&gt;&#xA;&lt;li&gt;Click relevant notification-driven module.&lt;/li&gt;&#xA;&lt;li&gt;Return and continue through remaining items.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;5-program-discovery-blocks&#34;&gt;5) Program Discovery Blocks&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Promoted programs: prioritized highlights.&lt;/li&gt;&#xA;&lt;li&gt;Random programs: exploratory cards.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click a program card.&lt;/li&gt;&#xA;&lt;li&gt;Review core fields.&lt;/li&gt;&#xA;&lt;li&gt;Continue exploration in University Search for filtering.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;incomplete-assessment-resume-flow&#34;&gt;Incomplete Assessment Resume Flow&lt;/h2&gt;&#xA;&lt;p&gt;When shown:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>03. Assessment Guide</title>
+      <link>http://localhost:1313/docs/student-panel/03-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/03-assessment/</guid>
+      <description>&lt;p&gt;This guide explains how students start, continue, submit, and review assessments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-self-assessment&#34;&gt;Open Self Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From sidebar, click Self Assessment.&lt;/li&gt;&#xA;&lt;li&gt;Wait for cards to load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm default cards (Personality and Career) are visible.&lt;/li&gt;&#xA;&lt;li&gt;Check for organization/platform custom cards if assigned.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;start-a-new-assessment&#34;&gt;Start a New Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click the card you want (for example Personality).&lt;/li&gt;&#xA;&lt;li&gt;Click Start.&lt;/li&gt;&#xA;&lt;li&gt;Read question instructions.&lt;/li&gt;&#xA;&lt;li&gt;Select or type answer.&lt;/li&gt;&#xA;&lt;li&gt;Click Next to continue.&lt;/li&gt;&#xA;&lt;li&gt;Repeat until all required questions are completed.&lt;/li&gt;&#xA;&lt;li&gt;Click Submit.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;continue-an-incomplete-assessment&#34;&gt;Continue an Incomplete Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Return to Self Assessment list.&lt;/li&gt;&#xA;&lt;li&gt;Find card showing Continue state.&lt;/li&gt;&#xA;&lt;li&gt;Click Continue.&lt;/li&gt;&#xA;&lt;li&gt;Resume from saved position.&lt;/li&gt;&#xA;&lt;li&gt;Complete and submit.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;retake-an-assessment&#34;&gt;Retake an Assessment&lt;/h2&gt;&#xA;&lt;p&gt;If retake is allowed:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>04. Recommendation Guide</title>
+      <link>http://localhost:1313/docs/student-panel/04-recommendations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/04-recommendations/</guid>
+      <description>&lt;p&gt;This guide explains how students use recommendations, switch guidance track, and download reports.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-recommendations&#34;&gt;Open Recommendations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Recommendations.&lt;/li&gt;&#xA;&lt;li&gt;Wait for profile-based track to load.&lt;/li&gt;&#xA;&lt;li&gt;Read page header to confirm active mode:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Career Recommendations&lt;/li&gt;&#xA;&lt;li&gt;University Recommendations&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;understand-active-track&#34;&gt;Understand Active Track&lt;/h2&gt;&#xA;&lt;p&gt;Track is usually determined by profile data:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Grade 9-12 tends to map to Career track.&lt;/li&gt;&#xA;&lt;li&gt;University-level or unknown fallback tends to map to University track.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;use-recommendation-list-click-by-click&#34;&gt;Use Recommendation List (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Scroll through recommendation cards/list.&lt;/li&gt;&#xA;&lt;li&gt;Open each recommendation detail.&lt;/li&gt;&#xA;&lt;li&gt;Compare options using your assessment outcomes.&lt;/li&gt;&#xA;&lt;li&gt;Save or note top choices externally if needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;switch-guidance-track&#34;&gt;Switch Guidance Track&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Scroll to Guidance Track section.&lt;/li&gt;&#xA;&lt;li&gt;Click switch action:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Switch to Career&lt;/li&gt;&#xA;&lt;li&gt;Switch to University&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Wait for save confirmation.&lt;/li&gt;&#xA;&lt;li&gt;Re-check header and recommendation content.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;download-full-report-when-available&#34;&gt;Download Full Report (When Available)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm Download Report button is visible.&lt;/li&gt;&#xA;&lt;li&gt;Click Download My Report.&lt;/li&gt;&#xA;&lt;li&gt;Wait for preparation state to finish.&lt;/li&gt;&#xA;&lt;li&gt;New tab opens with generated report link.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;If button is not visible:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>05. Personality Guide</title>
+      <link>http://localhost:1313/docs/student-panel/05-personality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/05-personality/</guid>
+      <description>&lt;p&gt;This guide explains exactly how students read personality results and export reports.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisite-check&#34;&gt;Prerequisite Check&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Personality.&lt;/li&gt;&#xA;&lt;li&gt;If assessment is incomplete, you will see a completion prompt.&lt;/li&gt;&#xA;&lt;li&gt;Click Complete Assessment and finish personality self-assessment first.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;open-personality-analysis&#34;&gt;Open Personality Analysis&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;After completion, return to Personality.&lt;/li&gt;&#xA;&lt;li&gt;Wait for loading to finish.&lt;/li&gt;&#xA;&lt;li&gt;Confirm radar chart is visible.&lt;/li&gt;&#xA;&lt;li&gt;Confirm trait cards are visible below chart.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;read-radar-chart-click-by-click&#34;&gt;Read Radar Chart (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Hover each radar axis point.&lt;/li&gt;&#xA;&lt;li&gt;Identify stronger and weaker dimensions.&lt;/li&gt;&#xA;&lt;li&gt;Cross-check chart with trait card scores.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;read-trait-cards&#34;&gt;Read Trait Cards&lt;/h2&gt;&#xA;&lt;p&gt;For each card:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>06. AI Mentorship Guide</title>
+      <link>http://localhost:1313/docs/student-panel/06-ai-mentorship/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/06-ai-mentorship/</guid>
+      <description>&lt;p&gt;Mentor area includes AI mentor personalities and advisor chat (if advisor is linked).&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-mentor-hub&#34;&gt;Open Mentor Hub&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Mentor.&lt;/li&gt;&#xA;&lt;li&gt;Wait for mentor cards to load.&lt;/li&gt;&#xA;&lt;li&gt;Check quota indicator (if visible).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;start-chat-with-ai-mentor-click-by-click&#34;&gt;Start Chat with AI Mentor (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Browse mentor cards.&lt;/li&gt;&#xA;&lt;li&gt;Click Select/Open on preferred mentor.&lt;/li&gt;&#xA;&lt;li&gt;Chat screen opens.&lt;/li&gt;&#xA;&lt;li&gt;Click message input.&lt;/li&gt;&#xA;&lt;li&gt;Type your question.&lt;/li&gt;&#xA;&lt;li&gt;Click send action.&lt;/li&gt;&#xA;&lt;li&gt;Continue follow-up prompts.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;return-to-mentor-list&#34;&gt;Return to Mentor List&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In chat view, click Back to Mentors.&lt;/li&gt;&#xA;&lt;li&gt;Select another mentor if needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;open-advisor-chat-if-linked&#34;&gt;Open Advisor Chat (If Linked)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In mentor main page, locate advisor section.&lt;/li&gt;&#xA;&lt;li&gt;Check advisor summary (name, unread count, last message info).&lt;/li&gt;&#xA;&lt;li&gt;Click advisor chat action.&lt;/li&gt;&#xA;&lt;li&gt;Continue conversation.&lt;/li&gt;&#xA;&lt;li&gt;Use back action to return.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;If advisor section says no advisor:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>07. University Search Guide</title>
+      <link>http://localhost:1313/docs/student-panel/07-university-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/07-university-search/</guid>
+      <description>&lt;p&gt;This guide explains exactly how students search, filter, and compare universities/programs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-university-search&#34;&gt;Open University Search&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click University Search.&lt;/li&gt;&#xA;&lt;li&gt;Wait for filter panel and results area to load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm default result set appears.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;basic-search-keyword&#34;&gt;Basic Search (Keyword)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click search input.&lt;/li&gt;&#xA;&lt;li&gt;Type university or program keyword.&lt;/li&gt;&#xA;&lt;li&gt;Pause briefly (search is debounced).&lt;/li&gt;&#xA;&lt;li&gt;Review refreshed results.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;filter-search-click-by-click&#34;&gt;Filter Search (Click-by-Click)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;category-filter&#34;&gt;Category filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Category dropdown.&lt;/li&gt;&#xA;&lt;li&gt;Select one category.&lt;/li&gt;&#xA;&lt;li&gt;Wait for results refresh.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;degree-filter&#34;&gt;Degree filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Degree dropdown.&lt;/li&gt;&#xA;&lt;li&gt;Select degree type.&lt;/li&gt;&#xA;&lt;li&gt;Wait for results refresh.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;language-filter&#34;&gt;Language filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Language dropdown.&lt;/li&gt;&#xA;&lt;li&gt;Select instruction language.&lt;/li&gt;&#xA;&lt;li&gt;Wait for results refresh.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;page-size&#34;&gt;Page size&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Page Size.&lt;/li&gt;&#xA;&lt;li&gt;Choose 6, 12, or 24.&lt;/li&gt;&#xA;&lt;li&gt;Results repaginate automatically.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;pagination-and-load-more-behavior&#34;&gt;Pagination and Load More Behavior&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Scroll through current page results.&lt;/li&gt;&#xA;&lt;li&gt;Use pagination/load action to fetch next set.&lt;/li&gt;&#xA;&lt;li&gt;Continue until target programs are found.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Important:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>08. Resources Guide</title>
+      <link>http://localhost:1313/docs/student-panel/08-resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/08-resources/</guid>
+      <description>&lt;p&gt;This guide explains how students find and download advisor-shared learning resources.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-resources&#34;&gt;Open Resources&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Resources.&lt;/li&gt;&#xA;&lt;li&gt;Wait for resource list/grid to load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm cards or rows are visible.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;search-resources-by-keyword&#34;&gt;Search Resources by Keyword&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click search input.&lt;/li&gt;&#xA;&lt;li&gt;Type keyword from title, description, or file name.&lt;/li&gt;&#xA;&lt;li&gt;Review filtered list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;filter-and-sort-click-by-click&#34;&gt;Filter and Sort (Click-by-Click)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;file-type-filter&#34;&gt;File type filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click File Type filter.&lt;/li&gt;&#xA;&lt;li&gt;Select a type.&lt;/li&gt;&#xA;&lt;li&gt;Verify list narrows.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;size-filter&#34;&gt;Size filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Size filter.&lt;/li&gt;&#xA;&lt;li&gt;Select Small/Medium/Large.&lt;/li&gt;&#xA;&lt;li&gt;Verify list updates.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;visibility-filter&#34;&gt;Visibility filter&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Visibility filter.&lt;/li&gt;&#xA;&lt;li&gt;Choose All / Visible / Assigned.&lt;/li&gt;&#xA;&lt;li&gt;Verify list updates.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;sort&#34;&gt;Sort&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Sort dropdown.&lt;/li&gt;&#xA;&lt;li&gt;Choose date/name/size order.&lt;/li&gt;&#xA;&lt;li&gt;Verify ordering refresh.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;view-mode&#34;&gt;View mode&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Grid or List toggle.&lt;/li&gt;&#xA;&lt;li&gt;Confirm presentation changes.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;download-a-resource&#34;&gt;Download a Resource&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locate target resource card/row.&lt;/li&gt;&#xA;&lt;li&gt;Click Download.&lt;/li&gt;&#xA;&lt;li&gt;Wait for browser download start.&lt;/li&gt;&#xA;&lt;li&gt;Confirm file appears in downloads folder.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;if-download-fails&#34;&gt;If Download Fails&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Retry download once.&lt;/li&gt;&#xA;&lt;li&gt;Refresh page and retry.&lt;/li&gt;&#xA;&lt;li&gt;Confirm session is still active.&lt;/li&gt;&#xA;&lt;li&gt;Open Help Center ticket if persistent.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-student-questions&#34;&gt;Common Student Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: I cannot find file shared by advisor.&#xA;A: Check visibility filter and search by exact file name.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>09. Help Center Guide</title>
+      <link>http://localhost:1313/docs/student-panel/09-help-center/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/09-help-center/</guid>
+      <description>&lt;p&gt;Help Center is where students create support tickets and track responses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-help-center&#34;&gt;Open Help Center&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Help Center.&lt;/li&gt;&#xA;&lt;li&gt;Wait for page to load tabs.&lt;/li&gt;&#xA;&lt;li&gt;Confirm New Ticket and My Tickets tabs are visible.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;create-ticket-click-by-click&#34;&gt;Create Ticket (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Ensure New Ticket tab is selected.&lt;/li&gt;&#xA;&lt;li&gt;Click Subject input and type issue title.&lt;/li&gt;&#xA;&lt;li&gt;Click Category dropdown and select category.&lt;/li&gt;&#xA;&lt;li&gt;Click Priority dropdown and select urgency.&lt;/li&gt;&#xA;&lt;li&gt;Click Description and write detailed issue context.&lt;/li&gt;&#xA;&lt;li&gt;Click Submit.&lt;/li&gt;&#xA;&lt;li&gt;Wait for success confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;category-and-priority-guidance&#34;&gt;Category and Priority Guidance&lt;/h2&gt;&#xA;&lt;p&gt;Category:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>10. Subscription Guide</title>
+      <link>http://localhost:1313/docs/student-panel/10-subscription/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/10-subscription/</guid>
+      <description>&lt;p&gt;This guide explains how students identify free-plan limits and use upgrade paths.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understand-feature-limits&#34;&gt;Understand Feature Limits&lt;/h2&gt;&#xA;&lt;p&gt;Free-plan limits can apply to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mentor chat usage&lt;/li&gt;&#xA;&lt;li&gt;Assessment/recommendation usage counters&lt;/li&gt;&#xA;&lt;li&gt;Full report download availability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;where-students-see-limit-signals&#34;&gt;Where Students See Limit Signals&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open a quota-sensitive module (Mentor, Assessments, Recommendations).&lt;/li&gt;&#xA;&lt;li&gt;Locate quota indicator or blocked state.&lt;/li&gt;&#xA;&lt;li&gt;Read remaining usage and limit label.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;upgrade-flow-from-feature-context&#34;&gt;Upgrade Flow from Feature Context&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Reach a gated/limited action.&lt;/li&gt;&#xA;&lt;li&gt;Click Upgrade or equivalent CTA.&lt;/li&gt;&#xA;&lt;li&gt;Follow the presented flow for plan upgrade.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Note:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>11. Account and Settings Guide</title>
+      <link>http://localhost:1313/docs/student-panel/11-account-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/11-account-settings/</guid>
+      <description>&lt;p&gt;This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-edit-profile-click-by-click&#34;&gt;A) Edit Profile (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Profile.&lt;/li&gt;&#xA;&lt;li&gt;Click Edit Profile.&lt;/li&gt;&#xA;&lt;li&gt;Update fields as needed:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First name&lt;/li&gt;&#xA;&lt;li&gt;Last name&lt;/li&gt;&#xA;&lt;li&gt;Bio&lt;/li&gt;&#xA;&lt;li&gt;Location&lt;/li&gt;&#xA;&lt;li&gt;Job title&lt;/li&gt;&#xA;&lt;li&gt;Gender&lt;/li&gt;&#xA;&lt;li&gt;Instagram URL&lt;/li&gt;&#xA;&lt;li&gt;X URL&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click Save.&lt;/li&gt;&#xA;&lt;li&gt;Wait for success confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;If save fails:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Recheck required fields and URL formats.&lt;/li&gt;&#xA;&lt;li&gt;Retry once after page refresh.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;b-switch-recommendation-track-from-settings&#34;&gt;B) Switch Recommendation Track from Settings&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Settings.&lt;/li&gt;&#xA;&lt;li&gt;Locate Guidance Track section.&lt;/li&gt;&#xA;&lt;li&gt;Click switch action (Career/University).&lt;/li&gt;&#xA;&lt;li&gt;Wait for saved confirmation.&lt;/li&gt;&#xA;&lt;li&gt;Open Recommendations and confirm new mode.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-link-parent-account&#34;&gt;C) Link Parent Account&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Stay on Settings page.&lt;/li&gt;&#xA;&lt;li&gt;Locate Parent Linking section.&lt;/li&gt;&#xA;&lt;li&gt;Click parent email input.&lt;/li&gt;&#xA;&lt;li&gt;Enter parent email.&lt;/li&gt;&#xA;&lt;li&gt;Click Send/Request Link.&lt;/li&gt;&#xA;&lt;li&gt;Wait for confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Possible outcomes:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Advisor Login and Dashboard</title>
+      <link>http://localhost:1313/docs/advisor-panel/login-and-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/login-and-dashboard/</guid>
+      <description>&lt;p&gt;This guide covers advisor access, role-based session behavior, and first dashboard checks.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-advisor-login-click-by-click&#34;&gt;A) Advisor Login (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open advisor login URL from &lt;a href=&#34;../getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click Email field and enter advisor email.&lt;/li&gt;&#xA;&lt;li&gt;Click Password field and enter password.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;li&gt;Wait for session initialization.&lt;/li&gt;&#xA;&lt;li&gt;Confirm redirect to dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Expected result:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Advisor session is loaded with role and permission set.&lt;/li&gt;&#xA;&lt;li&gt;User lands on advisor dashboard.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;If login fails:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Re-check email/password.&lt;/li&gt;&#xA;&lt;li&gt;Confirm account status is active.&lt;/li&gt;&#xA;&lt;li&gt;Use request/reset password flow if needed.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;b-first-time-password-setup&#34;&gt;B) First-Time Password Setup&lt;/h2&gt;&#xA;&lt;p&gt;For invited advisors/sub-advisors:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>12. Language Guide</title>
+      <link>http://localhost:1313/docs/student-panel/12-language/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/12-language/</guid>
+      <description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;&#xA;&lt;h2 id=&#34;switch-language-normal-case&#34;&gt;Switch Language (Normal Case)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Click language switcher.&lt;/li&gt;&#xA;&lt;li&gt;Select target language.&lt;/li&gt;&#xA;&lt;li&gt;Wait for UI text refresh.&lt;/li&gt;&#xA;&lt;li&gt;Navigate to another page to confirm persistence.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;switch-language-during-in-progress-assessment&#34;&gt;Switch Language During In-Progress Assessment&lt;/h2&gt;&#xA;&lt;p&gt;If an assessment is in progress, a confirmation dialog can appear.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select new language.&lt;/li&gt;&#xA;&lt;li&gt;Read warning: in-progress assessment may be reset.&lt;/li&gt;&#xA;&lt;li&gt;Click Cancel to keep current language and progress.&lt;/li&gt;&#xA;&lt;li&gt;Or click Confirm to switch language and reset in-progress state.&lt;/li&gt;&#xA;&lt;li&gt;Page reloads with selected language.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;validation-checklist&#34;&gt;Validation Checklist&lt;/h2&gt;&#xA;&lt;p&gt;After language switch, verify:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Students and Bulk Import</title>
+      <link>http://localhost:1313/docs/advisor-panel/students-and-bulk-import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/students-and-bulk-import/</guid>
+      <description>&lt;p&gt;This guide covers student search/filter, profile access, group assignment, and bulk import.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-students-list&#34;&gt;A) Open Students List&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in as advisor.&lt;/li&gt;&#xA;&lt;li&gt;In sidebar, click Students.&lt;/li&gt;&#xA;&lt;li&gt;Wait for student table/cards to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-search-and-filter-students-click-by-click&#34;&gt;B) Search and Filter Students (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click search input.&lt;/li&gt;&#xA;&lt;li&gt;Type name or email keyword.&lt;/li&gt;&#xA;&lt;li&gt;Apply filters as needed (groups, chat status, assessment signals, date, location, etc.).&lt;/li&gt;&#xA;&lt;li&gt;Apply sorting (name, email, joined date, and other available fields).&lt;/li&gt;&#xA;&lt;li&gt;Review narrowed result list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-open-student-detail&#34;&gt;C) Open Student Detail&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click a student row/card.&lt;/li&gt;&#xA;&lt;li&gt;Open student detail page.&lt;/li&gt;&#xA;&lt;li&gt;Review profile and activity context.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-update-student-group-membership&#34;&gt;D) Update Student Group Membership&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From Students list, open group assignment action.&lt;/li&gt;&#xA;&lt;li&gt;Check/uncheck target groups.&lt;/li&gt;&#xA;&lt;li&gt;Save membership update.&lt;/li&gt;&#xA;&lt;li&gt;Confirm changes in student row/detail.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-bulk-import-students-from-excel&#34;&gt;E) Bulk Import Students from Excel&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In Students page, click Bulk Students/Import.&lt;/li&gt;&#xA;&lt;li&gt;Upload .xlsx or .xls file.&lt;/li&gt;&#xA;&lt;li&gt;Wait for preview parsing.&lt;/li&gt;&#xA;&lt;li&gt;Validate required columns exist:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;email&lt;/li&gt;&#xA;&lt;li&gt;first_name&lt;/li&gt;&#xA;&lt;li&gt;last_name&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Select rows to import.&lt;/li&gt;&#xA;&lt;li&gt;Click Bulk Create/Import.&lt;/li&gt;&#xA;&lt;li&gt;Wait for success summary.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;import-validation-notes&#34;&gt;Import Validation Notes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Max file size is limited.&lt;/li&gt;&#xA;&lt;li&gt;Invalid file type is rejected.&lt;/li&gt;&#xA;&lt;li&gt;Rows with missing required fields are skipped or flagged.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Import file uploaded but no preview appears.&#xA;A: Confirm Excel format and header names match expected fields.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>13. Certificates and Application Documents</title>
+      <link>http://localhost:1313/docs/student-panel/13-certificates-and-documents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/13-certificates-and-documents/</guid>
+      <description>&lt;p&gt;This guide covers two high-value student workflows: earned certificates and application document submission.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-certificates-click-by-click&#34;&gt;A) Certificates (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Certificates.&lt;/li&gt;&#xA;&lt;li&gt;Wait for cards to load.&lt;/li&gt;&#xA;&lt;li&gt;Use search input to find by template/subject/issuer.&lt;/li&gt;&#xA;&lt;li&gt;Use filter tabs: All, Certificate, Badge.&lt;/li&gt;&#xA;&lt;li&gt;Click a certificate card to open detail dialog.&lt;/li&gt;&#xA;&lt;li&gt;Review:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Template name&lt;/li&gt;&#xA;&lt;li&gt;Subject&lt;/li&gt;&#xA;&lt;li&gt;Issuer&lt;/li&gt;&#xA;&lt;li&gt;Issue date&lt;/li&gt;&#xA;&lt;li&gt;Status&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click Copy ID to copy verification identifier.&lt;/li&gt;&#xA;&lt;li&gt;If download link exists, click Download.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-application-documents-setup&#34;&gt;B) Application Documents Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Application Documents.&lt;/li&gt;&#xA;&lt;li&gt;First-time users: choose nationality (Turkish/International).&lt;/li&gt;&#xA;&lt;li&gt;Collection is created.&lt;/li&gt;&#xA;&lt;li&gt;Wait for step categories and requirements to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-upload-documents-by-step-click-by-click&#34;&gt;C) Upload Documents by Step (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select step/category tab.&lt;/li&gt;&#xA;&lt;li&gt;Select required document type.&lt;/li&gt;&#xA;&lt;li&gt;Choose file from device.&lt;/li&gt;&#xA;&lt;li&gt;Add optional notes.&lt;/li&gt;&#xA;&lt;li&gt;Click Upload.&lt;/li&gt;&#xA;&lt;li&gt;Repeat for all required items in current step.&lt;/li&gt;&#xA;&lt;li&gt;Mark step complete when requirements are satisfied.&lt;/li&gt;&#xA;&lt;li&gt;Continue until all steps are complete.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-review-status-and-fix-invalid-files&#34;&gt;D) Review Status and Fix Invalid Files&lt;/h2&gt;&#xA;&lt;p&gt;Each document may show:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Groups Management</title>
+      <link>http://localhost:1313/docs/advisor-panel/groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/groups/</guid>
+      <description>&lt;p&gt;Groups help advisors organize students into cohorts for assignment and communication.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-groups&#34;&gt;A) Open Groups&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Groups.&lt;/li&gt;&#xA;&lt;li&gt;Wait for groups list to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-create-group-click-by-click&#34;&gt;B) Create Group (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Create Group.&lt;/li&gt;&#xA;&lt;li&gt;Enter group name.&lt;/li&gt;&#xA;&lt;li&gt;Enter optional description.&lt;/li&gt;&#xA;&lt;li&gt;Select student members.&lt;/li&gt;&#xA;&lt;li&gt;Click Save.&lt;/li&gt;&#xA;&lt;li&gt;Confirm new group appears in list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-edit-group&#34;&gt;C) Edit Group&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open target group.&lt;/li&gt;&#xA;&lt;li&gt;Click Edit.&lt;/li&gt;&#xA;&lt;li&gt;Update name/description/members.&lt;/li&gt;&#xA;&lt;li&gt;Save changes.&lt;/li&gt;&#xA;&lt;li&gt;Confirm updated values in list/detail.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-delete-group&#34;&gt;D) Delete Group&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open group actions.&lt;/li&gt;&#xA;&lt;li&gt;Click Delete.&lt;/li&gt;&#xA;&lt;li&gt;Confirm deletion prompt.&lt;/li&gt;&#xA;&lt;li&gt;Verify group is removed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-best-practice-for-group-strategy&#34;&gt;E) Best Practice for Group Strategy&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create groups by grade, track, or campaign objective.&lt;/li&gt;&#xA;&lt;li&gt;Keep names consistent and searchable.&lt;/li&gt;&#xA;&lt;li&gt;Review membership regularly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: I cannot add a student to group.&#xA;A: Check permission scope or reload student source list.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>14. Assigned Forms Guide</title>
+      <link>http://localhost:1313/docs/student-panel/14-assigned-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/student-panel/14-assigned-forms/</guid>
+      <description>&lt;p&gt;Assigned forms are organization/advisor forms that students complete from dashboard or direct link.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-assigned-form-from-dashboard&#34;&gt;Open Assigned Form from Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Locate Assigned Forms block.&lt;/li&gt;&#xA;&lt;li&gt;Click Open Form on pending item.&lt;/li&gt;&#xA;&lt;li&gt;Wait for form page to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;understand-form-header&#34;&gt;Understand Form Header&lt;/h2&gt;&#xA;&lt;p&gt;At top, you may see:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Organization banner image&lt;/li&gt;&#xA;&lt;li&gt;Form title&lt;/li&gt;&#xA;&lt;li&gt;Form description&lt;/li&gt;&#xA;&lt;li&gt;Editability state&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;complete-form-fields-click-by-click&#34;&gt;Complete Form Fields (Click-by-Click)&lt;/h2&gt;&#xA;&lt;p&gt;For each field:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Read label and required indicator.&lt;/li&gt;&#xA;&lt;li&gt;Click input control.&lt;/li&gt;&#xA;&lt;li&gt;Enter/select response.&lt;/li&gt;&#xA;&lt;li&gt;Continue to next field.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Supported field patterns include text, textarea, number, email, dropdown, radio, checkbox, date/time/datetime, and rating.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forms and Responses</title>
+      <link>http://localhost:1313/docs/advisor-panel/forms-and-responses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/forms-and-responses/</guid>
+      <description>&lt;p&gt;This guide covers managing advisor forms, publication state, and responses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-forms-module&#34;&gt;A) Open Forms Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Forms.&lt;/li&gt;&#xA;&lt;li&gt;Wait for forms list and summary counters.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-search-and-filter-forms&#34;&gt;B) Search and Filter Forms&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use search input for form title/metadata.&lt;/li&gt;&#xA;&lt;li&gt;Filter by status (draft, published, archived, all).&lt;/li&gt;&#xA;&lt;li&gt;Review counts (total forms, published forms, total responses).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-create-new-form&#34;&gt;C) Create New Form&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Create New Form.&lt;/li&gt;&#xA;&lt;li&gt;Enter title and description.&lt;/li&gt;&#xA;&lt;li&gt;Add/edit form fields in builder.&lt;/li&gt;&#xA;&lt;li&gt;Save as draft.&lt;/li&gt;&#xA;&lt;li&gt;Publish when ready.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-manage-existing-forms&#34;&gt;D) Manage Existing Forms&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open form from list.&lt;/li&gt;&#xA;&lt;li&gt;Edit structure/content if still editable.&lt;/li&gt;&#xA;&lt;li&gt;Publish/unpublish per workflow.&lt;/li&gt;&#xA;&lt;li&gt;Delete form using action menu and confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-review-responses&#34;&gt;E) Review Responses&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open form.&lt;/li&gt;&#xA;&lt;li&gt;Click Responses.&lt;/li&gt;&#xA;&lt;li&gt;Review respondent list and submitted answers.&lt;/li&gt;&#xA;&lt;li&gt;Open individual response detail for deeper review.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;f-preview-form&#34;&gt;F) Preview Form&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open form actions.&lt;/li&gt;&#xA;&lt;li&gt;Click Preview.&lt;/li&gt;&#xA;&lt;li&gt;Validate visual and field behavior before distribution.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Response count does not update immediately.&#xA;A: Refresh list and confirm responses endpoint load completed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resources Management</title>
+      <link>http://localhost:1313/docs/advisor-panel/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/resources/</guid>
+      <description>&lt;p&gt;Resources lets advisors upload, organize, and assign files to students.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-resources&#34;&gt;A) Open Resources&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Resources.&lt;/li&gt;&#xA;&lt;li&gt;Wait for resource list/grid.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-upload-a-resource-click-by-click&#34;&gt;B) Upload a Resource (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Upload Resource.&lt;/li&gt;&#xA;&lt;li&gt;Choose file from local device.&lt;/li&gt;&#xA;&lt;li&gt;Enter metadata (name/description/category as available).&lt;/li&gt;&#xA;&lt;li&gt;Select visibility/assignment mode.&lt;/li&gt;&#xA;&lt;li&gt;Click Upload.&lt;/li&gt;&#xA;&lt;li&gt;Confirm item appears in list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-filter-and-sort-resources&#34;&gt;C) Filter and Sort Resources&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Use search input (filename/title).&lt;/li&gt;&#xA;&lt;li&gt;Apply file-type filter.&lt;/li&gt;&#xA;&lt;li&gt;Apply size and visibility filters.&lt;/li&gt;&#xA;&lt;li&gt;Choose sort mode (date/name/size).&lt;/li&gt;&#xA;&lt;li&gt;Toggle list/grid view if needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-assign-resource-to-students&#34;&gt;D) Assign Resource to Students&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open resource actions.&lt;/li&gt;&#xA;&lt;li&gt;Click Assign to Students.&lt;/li&gt;&#xA;&lt;li&gt;Select one or more students.&lt;/li&gt;&#xA;&lt;li&gt;Save assignment.&lt;/li&gt;&#xA;&lt;li&gt;Confirm visibility reflects assignment mode.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-delete-resource&#34;&gt;E) Delete Resource&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open resource actions.&lt;/li&gt;&#xA;&lt;li&gt;Click Delete.&lt;/li&gt;&#xA;&lt;li&gt;Confirm modal.&lt;/li&gt;&#xA;&lt;li&gt;Verify resource is removed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Upload failed unexpectedly.&#xA;A: Verify file size/type limits and retry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Support Tickets</title>
+      <link>http://localhost:1313/docs/advisor-panel/support-tickets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/support-tickets/</guid>
+      <description>&lt;p&gt;Support Tickets page helps advisors track and resolve student-reported issues.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-support-tickets&#34;&gt;A) Open Support Tickets&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Support Tickets.&lt;/li&gt;&#xA;&lt;li&gt;Wait for ticket list and summary cards.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-filter-and-prioritize&#34;&gt;B) Filter and Prioritize&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Filter by status (pending, in_progress, resolved, closed).&lt;/li&gt;&#xA;&lt;li&gt;Filter by priority (low, medium, high, urgent).&lt;/li&gt;&#xA;&lt;li&gt;Sort list for triage order.&lt;/li&gt;&#xA;&lt;li&gt;Open most urgent unresolved tickets first.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-review-ticket-details&#34;&gt;C) Review Ticket Details&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click ticket row/card.&lt;/li&gt;&#xA;&lt;li&gt;Read subject and full description.&lt;/li&gt;&#xA;&lt;li&gt;Check user details and timestamps.&lt;/li&gt;&#xA;&lt;li&gt;Identify category and visibility context.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-update-ticket-status&#34;&gt;D) Update Ticket Status&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open status control.&lt;/li&gt;&#xA;&lt;li&gt;Set new status (for example in_progress).&lt;/li&gt;&#xA;&lt;li&gt;Save update.&lt;/li&gt;&#xA;&lt;li&gt;Confirm status badge changed in list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-add-resolution-message&#34;&gt;E) Add Resolution Message&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open resolution input.&lt;/li&gt;&#xA;&lt;li&gt;Write clear resolution notes.&lt;/li&gt;&#xA;&lt;li&gt;Save and mark resolved when done.&lt;/li&gt;&#xA;&lt;li&gt;Close ticket when finalized.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Status changed but not persisted.&#xA;A: Reopen ticket and verify update request succeeded.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Notifications</title>
+      <link>http://localhost:1313/docs/advisor-panel/notifications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/notifications/</guid>
+      <description>&lt;p&gt;Notifications allows advisors to send targeted announcements to students.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-notifications&#34;&gt;A) Open Notifications&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Notifications.&lt;/li&gt;&#xA;&lt;li&gt;Wait for notification history list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-create-new-notification-click-by-click&#34;&gt;B) Create New Notification (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Create Notification.&lt;/li&gt;&#xA;&lt;li&gt;Enter title.&lt;/li&gt;&#xA;&lt;li&gt;Enter message body.&lt;/li&gt;&#xA;&lt;li&gt;Choose target type:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All students&lt;/li&gt;&#xA;&lt;li&gt;Selected users&lt;/li&gt;&#xA;&lt;li&gt;Selected groups&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;If users/groups selected, choose recipients.&lt;/li&gt;&#xA;&lt;li&gt;Click Send/Create.&lt;/li&gt;&#xA;&lt;li&gt;Confirm new notification appears in history.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-review-delivery-summary&#34;&gt;C) Review Delivery Summary&lt;/h2&gt;&#xA;&lt;p&gt;In notification list, verify:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Target type&lt;/li&gt;&#xA;&lt;li&gt;Created date/time&lt;/li&gt;&#xA;&lt;li&gt;Total recipients&lt;/li&gt;&#xA;&lt;li&gt;Read count&lt;/li&gt;&#xA;&lt;li&gt;Unread count&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;d-filter-history&#34;&gt;D) Filter History&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Apply target-type filters.&lt;/li&gt;&#xA;&lt;li&gt;Search for a title or campaign keyword.&lt;/li&gt;&#xA;&lt;li&gt;Review historical effectiveness.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Notification sent to wrong audience.&#xA;A: Recheck target type and recipient selection before sending.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Certificates and Application Documents</title>
+      <link>http://localhost:1313/docs/advisor-panel/certificates-and-application-documents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/certificates-and-application-documents/</guid>
+      <description>&lt;p&gt;This guide covers advisor certificate operations and application document review.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-certificates-workflow&#34;&gt;A) Certificates Workflow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, open Certificates.&lt;/li&gt;&#xA;&lt;li&gt;Review available certificate templates/items.&lt;/li&gt;&#xA;&lt;li&gt;Open template/detail.&lt;/li&gt;&#xA;&lt;li&gt;Configure issuance data as needed.&lt;/li&gt;&#xA;&lt;li&gt;Send/issue certificate to selected student(s).&lt;/li&gt;&#xA;&lt;li&gt;Confirm status (sent, pending, failed or equivalent).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-application-documents-overview&#34;&gt;B) Application Documents Overview&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, open Application Documents.&lt;/li&gt;&#xA;&lt;li&gt;Review student collections list.&lt;/li&gt;&#xA;&lt;li&gt;Filter by status and review state.&lt;/li&gt;&#xA;&lt;li&gt;Open a student collection detail.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-review-student-documents-click-by-click&#34;&gt;C) Review Student Documents (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open specific step/category in student collection.&lt;/li&gt;&#xA;&lt;li&gt;Open uploaded file metadata and preview/download.&lt;/li&gt;&#xA;&lt;li&gt;Set review status:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Verified&lt;/li&gt;&#xA;&lt;li&gt;Invalid&lt;/li&gt;&#xA;&lt;li&gt;Pending (if re-evaluation needed)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;If invalid, provide reason/comment.&lt;/li&gt;&#xA;&lt;li&gt;Save review outcome.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-collection-level-status-updates&#34;&gt;D) Collection-Level Status Updates&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Review completion progress.&lt;/li&gt;&#xA;&lt;li&gt;If complete and valid, move toward approval state.&lt;/li&gt;&#xA;&lt;li&gt;If missing/invalid files remain, return with revision request.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Student uploaded file but not visible.&#xA;A: Refresh collection detail and verify step filter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sub-Advisor Management</title>
+      <link>http://localhost:1313/docs/advisor-panel/sub-advisor-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/sub-advisor-management/</guid>
+      <description>&lt;p&gt;This guide explains how advisors create sub-advisors, assign permissions, and validate delegated access.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-sub-advisor-area&#34;&gt;A) Open Sub-Advisor Area&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in as advisor.&lt;/li&gt;&#xA;&lt;li&gt;Open sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Click Sub-Advisor or Sub-Advisors module.&lt;/li&gt;&#xA;&lt;li&gt;Wait for list and permission context to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-create-sub-advisor-click-by-click&#34;&gt;B) Create Sub-Advisor (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click Create Sub-Advisor.&lt;/li&gt;&#xA;&lt;li&gt;Fill required fields:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Full name&lt;/li&gt;&#xA;&lt;li&gt;Email&lt;/li&gt;&#xA;&lt;li&gt;Assigned scope/group access&lt;/li&gt;&#xA;&lt;li&gt;Permission set&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Review selected permissions carefully.&lt;/li&gt;&#xA;&lt;li&gt;Click Save/Create.&lt;/li&gt;&#xA;&lt;li&gt;Confirm invitation/account provisioning success.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-configure-permissions&#34;&gt;C) Configure Permissions&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sub-advisor record from list.&lt;/li&gt;&#xA;&lt;li&gt;Edit permission matrix (module/action level, if available).&lt;/li&gt;&#xA;&lt;li&gt;Adjust student/group visibility scope.&lt;/li&gt;&#xA;&lt;li&gt;Save changes.&lt;/li&gt;&#xA;&lt;li&gt;Verify effective access with test sign-in.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-validate-restricted-visibility&#34;&gt;D) Validate Restricted Visibility&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in as sub-advisor account.&lt;/li&gt;&#xA;&lt;li&gt;Open Students and Groups modules.&lt;/li&gt;&#xA;&lt;li&gt;Confirm only authorized cohorts are visible.&lt;/li&gt;&#xA;&lt;li&gt;Confirm restricted actions are hidden/disabled where expected.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-deactivate-or-revoke-access&#34;&gt;E) Deactivate or Revoke Access&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sub-advisor account.&lt;/li&gt;&#xA;&lt;li&gt;Change status to inactive (or revoke access action).&lt;/li&gt;&#xA;&lt;li&gt;Save change.&lt;/li&gt;&#xA;&lt;li&gt;Verify sub-advisor can no longer access protected modules.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Sub-advisor cannot see any students.&#xA;A: Check group/visibility assignment in permission scope.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Enrollment, Family Chat, and Assessments</title>
+      <link>http://localhost:1313/docs/advisor-panel/enrollment-family-chat-and-assessments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/enrollment-family-chat-and-assessments/</guid>
+      <description>&lt;p&gt;This guide combines operational modules often handled together by advisors.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-enrollment-requests&#34;&gt;A) Enrollment Requests&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Enrollment Requests.&lt;/li&gt;&#xA;&lt;li&gt;Wait for request list to load.&lt;/li&gt;&#xA;&lt;li&gt;Open a request detail.&lt;/li&gt;&#xA;&lt;li&gt;Review requester and related context.&lt;/li&gt;&#xA;&lt;li&gt;Click Approve or Deny.&lt;/li&gt;&#xA;&lt;li&gt;Confirm status update in list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-family-chat&#34;&gt;B) Family Chat&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Family Chat.&lt;/li&gt;&#xA;&lt;li&gt;Choose chat scope/tab (student or parent context).&lt;/li&gt;&#xA;&lt;li&gt;Open conversation.&lt;/li&gt;&#xA;&lt;li&gt;Type response in message input.&lt;/li&gt;&#xA;&lt;li&gt;Click Send.&lt;/li&gt;&#xA;&lt;li&gt;Confirm message appears in thread.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-student-chat-module&#34;&gt;C) Student Chat Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Students Chat page if separate route is available.&lt;/li&gt;&#xA;&lt;li&gt;Select student thread.&lt;/li&gt;&#xA;&lt;li&gt;Continue support/guidance conversation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-assessments-management&#34;&gt;D) Assessments Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Assessments.&lt;/li&gt;&#xA;&lt;li&gt;Review available assessment items/templates.&lt;/li&gt;&#xA;&lt;li&gt;Create or adopt assessment depending on current flow.&lt;/li&gt;&#xA;&lt;li&gt;Configure metadata and visibility.&lt;/li&gt;&#xA;&lt;li&gt;Publish or assign according to process.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Enrollment action button is disabled.&#xA;A: Confirm permission level and request status compatibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Authentication and Account</title>
+      <link>http://localhost:1313/docs/parent-panel/authentication-and-account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/parent-panel/authentication-and-account/</guid>
+      <description>&lt;p&gt;This guide covers parent login, registration, verification, setup-password, and reset-password flows.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-parent-login-click-by-click&#34;&gt;A) Parent Login (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open parent login URL from &lt;a href=&#34;../getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click email/username input.&lt;/li&gt;&#xA;&lt;li&gt;Enter your parent account email.&lt;/li&gt;&#xA;&lt;li&gt;Click password input.&lt;/li&gt;&#xA;&lt;li&gt;Enter password.&lt;/li&gt;&#xA;&lt;li&gt;Optional: Click eye icon to reveal password.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;li&gt;Wait for redirect to &lt;code&gt;/dashboard&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Expected result:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Parent auth token cookie is set.&lt;/li&gt;&#xA;&lt;li&gt;Parent dashboard loads.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;b-parent-registration-click-by-click&#34;&gt;B) Parent Registration (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Register page.&lt;/li&gt;&#xA;&lt;li&gt;Fill email.&lt;/li&gt;&#xA;&lt;li&gt;Fill full name.&lt;/li&gt;&#xA;&lt;li&gt;Fill password.&lt;/li&gt;&#xA;&lt;li&gt;Enable consent checkbox.&lt;/li&gt;&#xA;&lt;li&gt;Click Register.&lt;/li&gt;&#xA;&lt;li&gt;Verify toast/confirmation message about email verification.&lt;/li&gt;&#xA;&lt;li&gt;Return to login.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-verify-email&#34;&gt;C) Verify Email&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open verification link from email.&lt;/li&gt;&#xA;&lt;li&gt;Wait for auto-verification.&lt;/li&gt;&#xA;&lt;li&gt;On success, parent is redirected to dashboard.&lt;/li&gt;&#xA;&lt;li&gt;If token invalid/expired, use resend verification.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-setup-password-from-invitation-link&#34;&gt;D) Setup Password from Invitation Link&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open setup-password URL with token.&lt;/li&gt;&#xA;&lt;li&gt;Wait for token validation.&lt;/li&gt;&#xA;&lt;li&gt;Enter new password (minimum length requirement applies).&lt;/li&gt;&#xA;&lt;li&gt;Confirm password.&lt;/li&gt;&#xA;&lt;li&gt;Submit.&lt;/li&gt;&#xA;&lt;li&gt;Return to login and sign in.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-request-password-reset&#34;&gt;E) Request Password Reset&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open login reset-password page.&lt;/li&gt;&#xA;&lt;li&gt;Enter parent email.&lt;/li&gt;&#xA;&lt;li&gt;Click Send Reset Link.&lt;/li&gt;&#xA;&lt;li&gt;Check inbox/spam folder.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;f-complete-password-reset&#34;&gt;F) Complete Password Reset&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open reset link with token.&lt;/li&gt;&#xA;&lt;li&gt;Enter new password.&lt;/li&gt;&#xA;&lt;li&gt;Confirm password.&lt;/li&gt;&#xA;&lt;li&gt;Submit reset.&lt;/li&gt;&#xA;&lt;li&gt;Log in with updated password.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-parent-questions&#34;&gt;Common Parent Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Login returns parents-only error.&#xA;A: Credentials belong to non-parent role; use correct parent account.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Profile, Prompts, and Interests</title>
+      <link>http://localhost:1313/docs/advisor-panel/profile-prompts-and-interests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/advisor-panel/profile-prompts-and-interests/</guid>
+      <description>&lt;p&gt;This guide covers advisor profile settings and advanced content/configuration modules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-profile-management&#34;&gt;A) Profile Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Profile.&lt;/li&gt;&#xA;&lt;li&gt;Review personal and organization details.&lt;/li&gt;&#xA;&lt;li&gt;Click Edit.&lt;/li&gt;&#xA;&lt;li&gt;Update text fields (name, bio, contact, organization data where available).&lt;/li&gt;&#xA;&lt;li&gt;Upload avatar/banner if supported.&lt;/li&gt;&#xA;&lt;li&gt;Click Save.&lt;/li&gt;&#xA;&lt;li&gt;Confirm updated preview.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-prompts-module&#34;&gt;B) Prompts Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Prompts.&lt;/li&gt;&#xA;&lt;li&gt;Open prompt list by category/subcategory.&lt;/li&gt;&#xA;&lt;li&gt;Select prompt template to edit.&lt;/li&gt;&#xA;&lt;li&gt;Update content carefully.&lt;/li&gt;&#xA;&lt;li&gt;Validate syntax/placeholders.&lt;/li&gt;&#xA;&lt;li&gt;Save changes.&lt;/li&gt;&#xA;&lt;li&gt;Reopen to confirm version/state.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-interests-module&#34;&gt;C) Interests Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Interests.&lt;/li&gt;&#xA;&lt;li&gt;Review student interest records and statuses.&lt;/li&gt;&#xA;&lt;li&gt;Open detail for a student/entry.&lt;/li&gt;&#xA;&lt;li&gt;Update status or related metadata if action is available.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify list refresh.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Keep prompt edits versioned and reviewed before broad usage.&lt;/li&gt;&#xA;&lt;li&gt;Use profile info that matches advisor organization branding.&lt;/li&gt;&#xA;&lt;li&gt;Process interests updates consistently to support recommendation quality.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-advisor-questions&#34;&gt;Common Advisor Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Prompt save failed.&#xA;A: Check placeholder syntax and retry with valid template format.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linked Student Guide</title>
+      <link>http://localhost:1313/docs/parent-panel/linked-student-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/parent-panel/linked-student-guide/</guid>
+      <description>&lt;p&gt;This guide explains how parents link students, open student details, and unlink when needed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-link-a-student-by-email-click-by-click&#34;&gt;A) Link a Student by Email (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in to Parent Dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Find the Link Student form on dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Click Student Email input.&lt;/li&gt;&#xA;&lt;li&gt;Enter student&amp;rsquo;s registered email.&lt;/li&gt;&#xA;&lt;li&gt;Click Send Link Request.&lt;/li&gt;&#xA;&lt;li&gt;Wait for one of these outcomes:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;linked&lt;/code&gt;: student appears immediately in dashboard list.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pending&lt;/code&gt;: request registered, awaiting matching student-side action.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-open-linked-student&#34;&gt;B) Open Linked Student&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In dashboard linked-student cards, click View Student.&lt;/li&gt;&#xA;&lt;li&gt;Open &lt;code&gt;/dashboard/{studentId}&lt;/code&gt; detail page.&lt;/li&gt;&#xA;&lt;li&gt;Review summary sections (progress, recommendations, assessments, mentor/advisor activity).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-refresh-linked-data&#34;&gt;C) Refresh Linked Data&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click refresh action in parent dashboard or student detail page.&lt;/li&gt;&#xA;&lt;li&gt;Wait for latest API data to load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm unread counts and progress values update.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-unlink-student&#34;&gt;D) Unlink Student&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open linked student detail.&lt;/li&gt;&#xA;&lt;li&gt;Find unlink/remove access action.&lt;/li&gt;&#xA;&lt;li&gt;Confirm unlink prompt.&lt;/li&gt;&#xA;&lt;li&gt;Return to dashboard and verify student card is removed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-parents-can-view&#34;&gt;What Parents Can View&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Progress summary&lt;/li&gt;&#xA;&lt;li&gt;Milestone completion&lt;/li&gt;&#xA;&lt;li&gt;Selected recommendation insights&lt;/li&gt;&#xA;&lt;li&gt;Journey map preview/download&lt;/li&gt;&#xA;&lt;li&gt;Advisor unread indicators and parent-advisor messaging context&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;what-parents-cannot-edit&#34;&gt;What Parents Cannot Edit&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Student-only private settings&lt;/li&gt;&#xA;&lt;li&gt;Restricted assessment configuration&lt;/li&gt;&#xA;&lt;li&gt;Student account credentials/profile ownership fields&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;common-parent-questions&#34;&gt;Common Parent Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: I sent link request but student does not appear.&#xA;A: Link may be pending; ask student to complete corresponding link step.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dashboard and Linked Overview</title>
+      <link>http://localhost:1313/docs/parent-panel/dashboard-and-linked-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/parent-panel/dashboard-and-linked-overview/</guid>
+      <description>&lt;p&gt;Parent dashboard is the main overview for all linked children.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-parent-dashboard&#34;&gt;A) Open Parent Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Log in as parent.&lt;/li&gt;&#xA;&lt;li&gt;Wait for dashboard home to load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm linked children cards are visible (or empty state if none).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-understand-dashboard-blocks&#34;&gt;B) Understand Dashboard Blocks&lt;/h2&gt;&#xA;&lt;p&gt;Typical sections include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Linked children summary cards&lt;/li&gt;&#xA;&lt;li&gt;Progress and completion snapshots&lt;/li&gt;&#xA;&lt;li&gt;Recommendation and advisor activity indicators&lt;/li&gt;&#xA;&lt;li&gt;Link-student request form&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;c-link-student-from-dashboard&#34;&gt;C) Link Student from Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Find Link Student form.&lt;/li&gt;&#xA;&lt;li&gt;Enter student email.&lt;/li&gt;&#xA;&lt;li&gt;Submit request.&lt;/li&gt;&#xA;&lt;li&gt;If linked instantly, select student card.&lt;/li&gt;&#xA;&lt;li&gt;If pending, wait for student-side completion.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-open-student-card&#34;&gt;D) Open Student Card&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click linked student card.&lt;/li&gt;&#xA;&lt;li&gt;Navigate to student detail page.&lt;/li&gt;&#xA;&lt;li&gt;Review student-specific information.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-refresh-parent-snapshot-data&#34;&gt;E) Refresh Parent Snapshot Data&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click refresh action.&lt;/li&gt;&#xA;&lt;li&gt;Wait for loading states to complete.&lt;/li&gt;&#xA;&lt;li&gt;Confirm summary values are updated.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;f-legacy-students-route-note&#34;&gt;F) Legacy Students Route Note&lt;/h2&gt;&#xA;&lt;p&gt;If &lt;code&gt;/dashboard/students&lt;/code&gt; is opened directly, parent app redirects back to &lt;code&gt;/dashboard&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Student Detail, Journey Map, and Advisor Chat</title>
+      <link>http://localhost:1313/docs/parent-panel/student-detail-journey-map-and-chat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/parent-panel/student-detail-journey-map-and-chat/</guid>
+      <description>&lt;p&gt;This guide covers the parent child-detail page, journey-map outputs, and advisor chat context.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-student-detail&#34;&gt;A) Open Student Detail&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From parent dashboard, click linked student card.&lt;/li&gt;&#xA;&lt;li&gt;Open &lt;code&gt;/dashboard/{studentId}&lt;/code&gt; page.&lt;/li&gt;&#xA;&lt;li&gt;Confirm student header (name/avatar/basic profile) appears.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-review-progress-and-insights&#34;&gt;B) Review Progress and Insights&lt;/h2&gt;&#xA;&lt;p&gt;In student detail, review:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Assessment progress and completion indicators&lt;/li&gt;&#xA;&lt;li&gt;Recommendations summary&lt;/li&gt;&#xA;&lt;li&gt;Mentor and advisor activity&lt;/li&gt;&#xA;&lt;li&gt;Premium/subscription status context&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;c-journey-map-preview-click-by-click&#34;&gt;C) Journey Map Preview (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Journey Map section.&lt;/li&gt;&#xA;&lt;li&gt;Select data point filters:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;demographics&lt;/li&gt;&#xA;&lt;li&gt;education&lt;/li&gt;&#xA;&lt;li&gt;psychological&lt;/li&gt;&#xA;&lt;li&gt;career&lt;/li&gt;&#xA;&lt;li&gt;social&lt;/li&gt;&#xA;&lt;li&gt;family&lt;/li&gt;&#xA;&lt;li&gt;health&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click Preview.&lt;/li&gt;&#xA;&lt;li&gt;Review returned structured preview.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-journey-map-download&#34;&gt;D) Journey Map Download&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Keep selected data points.&lt;/li&gt;&#xA;&lt;li&gt;Click Download/Generate Journey Map.&lt;/li&gt;&#xA;&lt;li&gt;Wait for map link generation.&lt;/li&gt;&#xA;&lt;li&gt;Open generated map link in browser.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;e-advisor-chat-indicators-and-access&#34;&gt;E) Advisor Chat Indicators and Access&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Locate advisor chat panel/button in student detail.&lt;/li&gt;&#xA;&lt;li&gt;Check unread count badge.&lt;/li&gt;&#xA;&lt;li&gt;Open parent-advisor chat if available.&lt;/li&gt;&#xA;&lt;li&gt;Read thread and send message if enabled in panel.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;f-subscription-plans-view&#34;&gt;F) Subscription Plans View&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open subscription area on child detail.&lt;/li&gt;&#xA;&lt;li&gt;Review available plans and selected plan state.&lt;/li&gt;&#xA;&lt;li&gt;Continue purchase flow when enabled in deployment.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-parent-questions&#34;&gt;Common Parent Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Journey map preview is empty.&#xA;A: Ensure at least one data point is selected.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parent Forms</title>
+      <link>http://localhost:1313/docs/parent-panel/forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/parent-panel/forms/</guid>
+      <description>&lt;p&gt;Parent panel supports dynamic form responses through &lt;code&gt;/form/{responseId}&lt;/code&gt; routes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-open-parent-form&#34;&gt;A) Open Parent Form&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open form link from dashboard, notification, or direct URL.&lt;/li&gt;&#xA;&lt;li&gt;Wait for form load.&lt;/li&gt;&#xA;&lt;li&gt;Confirm form title/description is visible.&lt;/li&gt;&#xA;&lt;li&gt;If organization banner exists, review context section at top.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-fill-form-fields-click-by-click&#34;&gt;B) Fill Form Fields (Click-by-Click)&lt;/h2&gt;&#xA;&lt;p&gt;For each question:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Read label and required marker.&lt;/li&gt;&#xA;&lt;li&gt;Enter/select answer according to field type.&lt;/li&gt;&#xA;&lt;li&gt;Continue until all required fields are complete.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Supported field types include:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Admin Login and Dashboard</title>
+      <link>http://localhost:1313/docs/admin-panel/login-and-dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/login-and-dashboard/</guid>
+      <description>&lt;h2 id=&#34;admin-login-click-by-click&#34;&gt;Admin Login (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Admin dashboard login URL.&lt;/li&gt;&#xA;&lt;li&gt;Enter username or email.&lt;/li&gt;&#xA;&lt;li&gt;Enter password.&lt;/li&gt;&#xA;&lt;li&gt;Click Sign In.&lt;/li&gt;&#xA;&lt;li&gt;Wait for redirect to dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Expected result:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Admin auth cookie is set.&lt;/li&gt;&#xA;&lt;li&gt;Dashboard loads KPI cards and recent activity.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;password-reset&#34;&gt;Password Reset&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open reset-password route.&lt;/li&gt;&#xA;&lt;li&gt;Enter account email.&lt;/li&gt;&#xA;&lt;li&gt;Submit reset request.&lt;/li&gt;&#xA;&lt;li&gt;Open reset link from inbox.&lt;/li&gt;&#xA;&lt;li&gt;Set new password.&lt;/li&gt;&#xA;&lt;li&gt;Log in again.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;dashboard-first-checks&#34;&gt;Dashboard First Checks&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm KPI cards load.&lt;/li&gt;&#xA;&lt;li&gt;Check recent assessments table.&lt;/li&gt;&#xA;&lt;li&gt;Review registration trend chart.&lt;/li&gt;&#xA;&lt;li&gt;Verify system activity panel updates.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;token-usage-and-activity&#34;&gt;Token Usage and Activity&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open token usage section.&lt;/li&gt;&#xA;&lt;li&gt;Select date range/interval.&lt;/li&gt;&#xA;&lt;li&gt;Review input/output token trends.&lt;/li&gt;&#xA;&lt;li&gt;Cross-check spikes with logs module.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Login works but dashboard widgets are empty.&#xA;A: Wait for API load and refresh once; verify API base URL and token validity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>User and Organization Management</title>
+      <link>http://localhost:1313/docs/admin-panel/user-and-organization-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/user-and-organization-management/</guid>
+      <description>&lt;h2 id=&#34;student-management&#34;&gt;Student Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Student Management.&lt;/li&gt;&#xA;&lt;li&gt;Use search by name/email.&lt;/li&gt;&#xA;&lt;li&gt;Apply filters and sorting.&lt;/li&gt;&#xA;&lt;li&gt;Expand student row for full detail.&lt;/li&gt;&#xA;&lt;li&gt;Review verification, premium, and activity counters.&lt;/li&gt;&#xA;&lt;li&gt;Use delete action only after confirmation review.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;parent-management&#34;&gt;Parent Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Parent Management.&lt;/li&gt;&#xA;&lt;li&gt;Search/filter parents.&lt;/li&gt;&#xA;&lt;li&gt;Open parent detail.&lt;/li&gt;&#xA;&lt;li&gt;Edit parent profile fields if needed.&lt;/li&gt;&#xA;&lt;li&gt;Link parent to student or unlink relationship.&lt;/li&gt;&#xA;&lt;li&gt;Send invite when required.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;organization-management&#34;&gt;Organization Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Organization Management.&lt;/li&gt;&#xA;&lt;li&gt;Click Create Organization.&lt;/li&gt;&#xA;&lt;li&gt;Fill organization profile and primary admin details.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify organization appears in list.&lt;/li&gt;&#xA;&lt;li&gt;Edit, export, or delete based on policy.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;safety-checklist-before-deletion&#34;&gt;Safety Checklist Before Deletion&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm no active dependencies.&lt;/li&gt;&#xA;&lt;li&gt;Export relevant records if needed.&lt;/li&gt;&#xA;&lt;li&gt;Use confirmation dialogs carefully.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Parent linked but student still missing.&#xA;A: Refresh relation list and verify student account exists in same environment.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Admin and Subadmin Management</title>
+      <link>http://localhost:1313/docs/admin-panel/admin-and-subadmin-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/admin-and-subadmin-management/</guid>
+      <description>&lt;h2 id=&#34;create-admin-user&#34;&gt;Create Admin User&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Admin Management.&lt;/li&gt;&#xA;&lt;li&gt;Click Add Admin.&lt;/li&gt;&#xA;&lt;li&gt;Fill identity fields (email, username, first/last name).&lt;/li&gt;&#xA;&lt;li&gt;Set temporary password.&lt;/li&gt;&#xA;&lt;li&gt;Choose role.&lt;/li&gt;&#xA;&lt;li&gt;Save and confirm creation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;edit-admin-profile&#34;&gt;Edit Admin Profile&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open admin row detail.&lt;/li&gt;&#xA;&lt;li&gt;Update identity fields.&lt;/li&gt;&#xA;&lt;li&gt;Save updates.&lt;/li&gt;&#xA;&lt;li&gt;Confirm list refresh reflects changes.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;permission-assignment&#34;&gt;Permission Assignment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open permission panel for target admin.&lt;/li&gt;&#xA;&lt;li&gt;Set feature scopes per module:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;write&lt;/li&gt;&#xA;&lt;li&gt;read&lt;/li&gt;&#xA;&lt;li&gt;none&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Set organization-level scope where applicable.&lt;/li&gt;&#xA;&lt;li&gt;Save permissions.&lt;/li&gt;&#xA;&lt;li&gt;Ask user to relogin if permissions do not refresh immediately.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;subadmin-self-view&#34;&gt;Subadmin Self View&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Subadmin page.&lt;/li&gt;&#xA;&lt;li&gt;Review effective permission summary.&lt;/li&gt;&#xA;&lt;li&gt;Use refresh permissions action to sync latest grants.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Admin can see module but cannot perform action.&#xA;A: Verify action-level permission is write, not read.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assessments and Forms</title>
+      <link>http://localhost:1313/docs/admin-panel/assessments-and-forms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/assessments-and-forms/</guid>
+      <description>&lt;h2 id=&#34;assessments-module&#34;&gt;Assessments Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Assessments.&lt;/li&gt;&#xA;&lt;li&gt;Review existing assessments.&lt;/li&gt;&#xA;&lt;li&gt;Click Create Assessment.&lt;/li&gt;&#xA;&lt;li&gt;Add title and description.&lt;/li&gt;&#xA;&lt;li&gt;Add questions and select question types.&lt;/li&gt;&#xA;&lt;li&gt;Configure options and required fields.&lt;/li&gt;&#xA;&lt;li&gt;Save and test.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Supported assessment question patterns include rating, multiple choice, short answer, and yes/no.&lt;/p&gt;&#xA;&lt;h2 id=&#34;assessment-upload-flow&#34;&gt;Assessment Upload Flow&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Upload action.&lt;/li&gt;&#xA;&lt;li&gt;Select CSV/XLSX file.&lt;/li&gt;&#xA;&lt;li&gt;Validate import preview/errors.&lt;/li&gt;&#xA;&lt;li&gt;Confirm import.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;forms-module&#34;&gt;Forms Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Forms list.&lt;/li&gt;&#xA;&lt;li&gt;Create or open existing form.&lt;/li&gt;&#xA;&lt;li&gt;Edit form structure/content.&lt;/li&gt;&#xA;&lt;li&gt;Save draft or publish.&lt;/li&gt;&#xA;&lt;li&gt;Open responses view to review submissions.&lt;/li&gt;&#xA;&lt;li&gt;Open individual response detail when needed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Imported assessment has broken options.&#xA;A: Verify file schema and option label columns before import.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Prompts, Translations, and Content</title>
+      <link>http://localhost:1313/docs/admin-panel/prompts-translations-and-content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/prompts-translations-and-content/</guid>
+      <description>&lt;h2 id=&#34;prompts-management&#34;&gt;Prompts Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Prompts.&lt;/li&gt;&#xA;&lt;li&gt;Select category.&lt;/li&gt;&#xA;&lt;li&gt;Select subcategory.&lt;/li&gt;&#xA;&lt;li&gt;Open target prompt template.&lt;/li&gt;&#xA;&lt;li&gt;Edit text in editor.&lt;/li&gt;&#xA;&lt;li&gt;Validate syntax.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify version update.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;prompt-quality-checks&#34;&gt;Prompt Quality Checks&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm variable placeholders are valid.&lt;/li&gt;&#xA;&lt;li&gt;Review lint/syntax errors.&lt;/li&gt;&#xA;&lt;li&gt;Review diff between previous and current versions.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;translations-management&#34;&gt;Translations Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Translations.&lt;/li&gt;&#xA;&lt;li&gt;Filter by namespace and locale.&lt;/li&gt;&#xA;&lt;li&gt;Search by key or value.&lt;/li&gt;&#xA;&lt;li&gt;Edit existing translation.&lt;/li&gt;&#xA;&lt;li&gt;Create missing translation keys where needed.&lt;/li&gt;&#xA;&lt;li&gt;Save and validate in target UI route.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;mentor-personality-and-interests&#34;&gt;Mentor Personality and Interests&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Mentor Personality.&lt;/li&gt;&#xA;&lt;li&gt;Edit localized mentor fields and expertise arrays.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify list updates.&lt;/li&gt;&#xA;&lt;li&gt;Open Interests module.&lt;/li&gt;&#xA;&lt;li&gt;Review status queue and update where allowed.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Prompt save fails with template error.&#xA;A: Fix invalid placeholder/template syntax and retry.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Support, Notifications, and Approvals</title>
+      <link>http://localhost:1313/docs/admin-panel/support-notifications-and-approvals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/support-notifications-and-approvals/</guid>
+      <description>&lt;h2 id=&#34;support-tickets&#34;&gt;Support Tickets&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Support Tickets.&lt;/li&gt;&#xA;&lt;li&gt;Filter by status and priority.&lt;/li&gt;&#xA;&lt;li&gt;Open ticket detail.&lt;/li&gt;&#xA;&lt;li&gt;Update status.&lt;/li&gt;&#xA;&lt;li&gt;Add resolution message.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify status transition.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;notifications&#34;&gt;Notifications&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Notifications.&lt;/li&gt;&#xA;&lt;li&gt;Click Create Notification.&lt;/li&gt;&#xA;&lt;li&gt;Enter title and message.&lt;/li&gt;&#xA;&lt;li&gt;Select target type (all, users, groups).&lt;/li&gt;&#xA;&lt;li&gt;Select recipients if needed.&lt;/li&gt;&#xA;&lt;li&gt;Send and verify history entry.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;demo-approvals-and-admission-criteria&#34;&gt;Demo Approvals and Admission Criteria&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Demo Approvals queue.&lt;/li&gt;&#xA;&lt;li&gt;Review request details.&lt;/li&gt;&#xA;&lt;li&gt;Approve or reject with notes where required.&lt;/li&gt;&#xA;&lt;li&gt;Open Admission Criteria module.&lt;/li&gt;&#xA;&lt;li&gt;Edit or review criteria entries.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify publishing/active state.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Ticket transitions fail silently.&#xA;A: Reopen ticket and check required resolution fields before save.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>System Monitoring and Governance</title>
+      <link>http://localhost:1313/docs/admin-panel/system-monitoring-and-governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/admin-panel/system-monitoring-and-governance/</guid>
+      <description>&lt;h2 id=&#34;status-module&#34;&gt;Status Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Status page.&lt;/li&gt;&#xA;&lt;li&gt;Review service health blocks.&lt;/li&gt;&#xA;&lt;li&gt;Identify degraded components.&lt;/li&gt;&#xA;&lt;li&gt;Correlate with recent alerts.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;realtime-logs&#34;&gt;Realtime Logs&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Realtime Logs.&lt;/li&gt;&#xA;&lt;li&gt;Start live stream view.&lt;/li&gt;&#xA;&lt;li&gt;Filter by level/source if available.&lt;/li&gt;&#xA;&lt;li&gt;Track suspicious error bursts.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;free-use-management&#34;&gt;Free-Use Management&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Free Use Management.&lt;/li&gt;&#xA;&lt;li&gt;Review current quota/limit values.&lt;/li&gt;&#xA;&lt;li&gt;Update limits according to policy.&lt;/li&gt;&#xA;&lt;li&gt;Save and verify effect on applicable feature gates.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;certificates-and-application-documents&#34;&gt;Certificates and Application Documents&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Certificates.&lt;/li&gt;&#xA;&lt;li&gt;Review issuance queue/status.&lt;/li&gt;&#xA;&lt;li&gt;Open Application Documents.&lt;/li&gt;&#xA;&lt;li&gt;Review document validations and statuses.&lt;/li&gt;&#xA;&lt;li&gt;Apply review decisions and notes.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;common-questions&#34;&gt;Common Questions&lt;/h2&gt;&#xA;&lt;p&gt;Q: Logs show spikes but dashboard looks normal.&#xA;A: Compare time windows and cross-check token usage metrics.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

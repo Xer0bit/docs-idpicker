@@ -1,73 +1,73 @@
 ---
 title: "Student Panel"
-description: "Complete feature-by-feature guide for student users"
+description: "Complete student user manual for all core features"
 weight: 12
 ---
 
-The Student Panel is the main workspace for students. Follow these guides in order.
+The Student Panel is the main workspace for students in IDPicker.
 
-## Complete Usage Sequence
+This section is written for real product behavior in the current student module implementation. Use it as the primary guide for onboarding, daily usage, and troubleshooting.
+
+## Who Should Use This Guide
+
+- Students using IDPicker for career and university guidance
+- Advisors onboarding students and validating student journeys
+- QA and support teams verifying student-facing flows
+
+## Suggested Reading Order
 
 1. Authentication and login
-2. Dashboard navigation
-3. Assessments
-4. Recommendations
-5. Personality results
-6. AI Mentorship
-7. University Search
+2. Dashboard overview
+3. Self-assessment and completion
+4. Recommendations and track switching
+5. Personality analysis and report
+6. AI mentor and advisor chat
+7. University search
 8. Resources
-9. Help Center
-10. Subscription
-11. Account and Settings
-12. Language switch
+9. Help center
+10. Subscription and premium limits
+11. Profile and settings
+12. Language switching
+13. Certificates and application documents
+14. Assigned forms
 
-## Student Panel Feature Slots (1-40)
+## Core Features & Responsibilities
 
-Use this table to map your internal feature IDs to live UI labels.
+This documentation covers:
 
-| Slot | Status | Notes |
-|---|---|---|
-| 1 | Documented | Add exact feature name |
-| 2 | Documented | Add exact feature name |
-| 3 | Documented | Add exact feature name |
-| 4 | Documented | Add exact feature name |
-| 5 | Documented | Add exact feature name |
-| 6 | Documented | Add exact feature name |
-| 7 | Documented | Add exact feature name |
-| 8 | Documented | Add exact feature name |
-| 9 | Documented | Add exact feature name |
-| 10 | Documented | Add exact feature name |
-| 11 | Documented | Add exact feature name |
-| 12 | Documented | Add exact feature name |
-| 13 | Documented | Add exact feature name |
-| 14 | Documented | Add exact feature name |
-| 15 | Documented | Add exact feature name |
-| 16 | Documented | Add exact feature name |
-| 17 | Documented | Add exact feature name |
-| 18 | Documented | Add exact feature name |
-| 19 | Documented | Add exact feature name |
-| 20 | Documented | Add exact feature name |
-| 21 | Documented | Add exact feature name |
-| 22 | Documented | Add exact feature name |
-| 23 | Documented | Add exact feature name |
-| 24 | Documented | Add exact feature name |
-| 25 | Documented | Add exact feature name |
-| 26 | Documented | Add exact feature name |
-| 27 | Documented | Add exact feature name |
-| 28 | Documented | Add exact feature name |
-| 29 | Documented | Add exact feature name |
-| 30 | Documented | Add exact feature name |
-| 31 | Documented | Add exact feature name |
-| 32 | Documented | Add exact feature name |
-| 33 | Documented | Add exact feature name |
-| 34 | Documented | Add exact feature name |
-| 35 | Documented | Add exact feature name |
-| 36 | Documented | Add exact feature name |
-| 37 | Documented | Add exact feature name |
-| 38 | Documented | Add exact feature name |
-| 39 | Documented | Add exact feature name |
-| 40 | Documented | Add exact feature name |
+- Sign in, registration, email verification, password reset
+- Dashboard sections: reports, notifications, forms, invitations, promoted programs
+- Assessment lifecycle: start, continue, complete, retake, results
+- Recommendations for both career and university tracks
+- Personality traits, chart interpretation, report download
+- Mentor personalities, advisor chat, chat quota awareness
+- University catalog search, filters, and pagination
+- Shared resources browsing and secure download
+- Support ticket creation and status follow-up
+- Parent linking and account management
+- Certificate viewing and application document uploads
+- Assigned organization forms with dynamic field types
+
+## Screenshot Checklist
+
+Use this list while adding images:
+
+1. Login page and Google sign-in
+2. Dashboard home (all modules visible)
+3. Assessment list (default + organization assessment card)
+4. Assessment in progress and results screen
+5. Recommendations screen (career and university)
+6. Personality chart and trait cards
+7. Mentor selection and active chat
+8. University search filters + result cards
+9. Resources filters and download action
+10. Help center new ticket + ticket list
+11. Settings (parent link and account deletion confirmation)
+12. Language switch dialog during in-progress assessment
+13. Certificates list and certificate detail dialog
+14. Application documents step upload workflow
+15. Assigned form response page
 
 ![Student Panel Dashboard Placeholder](/images/user-manual/student-panel/dashboard-main.png)
 
-Image placeholder: Add the primary student dashboard screenshot with key modules highlighted.
+Image placeholder: Add the primary dashboard screenshot with core modules labeled.

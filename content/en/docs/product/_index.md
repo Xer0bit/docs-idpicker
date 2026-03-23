@@ -11,6 +11,7 @@ This section defines how IDPicker is structured across user roles and panel resp
 - Student Panel
 - Advisor Panel
 - Parent Panel
+- Admin Panel
 
 ## Account Type Model (Student)
 
@@ -24,7 +25,8 @@ This section defines how IDPicker is structured across user roles and panel resp
 | Student | Career and university planning | Assessments, recommendations, mentorship, resources |
 | Advisor | Student guidance and supervision | Manage students, create sub-advisors, monitor outcomes |
 | Parent | Progress visibility and support | Access linked student insights and support tools |
+| Admin | Platform governance and operations | Manage users/orgs, permissions, prompts/translations, monitoring |
 
 ![Role and Panel Architecture Placeholder](/images/user-manual/product/role-panel-architecture.png)
 
-Image placeholder: Add architecture diagram showing role boundaries, panel entry points, and shared modules.
+Image placeholder: Add architecture diagram showing role boundaries, panel entry points, and shared modules, including admin governance flows.

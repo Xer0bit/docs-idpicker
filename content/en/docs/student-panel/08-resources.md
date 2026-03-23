@@ -1,80 +1,55 @@
 ---
 title: "08. Resources Guide"
-description: "Detailed click-by-click resources walkthrough"
+description: "How to find, filter, and download learning materials shared by your advisor"
 weight: 128
 draft: false
 ---
 
-This guide explains how students find and download advisor-shared learning resources.
+The Resources module acts as your personal digital library. Whenever your advisor, school, or organization shares a helpful document, spreadsheet, or PDF, it lands here.
 
-## Open Resources
+---
 
-1. In sidebar, click Resources.
-2. Wait for resource list/grid to load.
-3. Confirm cards or rows are visible.
+## Browsing the Resource Library
 
-## Search Resources by Keyword
+1. From the main sidebar, click **Resources**.
+2. Wait a second for your personalized file grid to load.
+3. You will immediately see files that are explicitly assigned to you, as well as globally visible files shared by your organization.
 
-1. Click search input.
-2. Type keyword from title, description, or file name.
-3. Review filtered list.
+### Searching by Keyword
 
-## Filter and Sort (Click-by-Click)
+Know exactly what you are looking for?
+1. Click the **Search** bar.
+2. Type a matching keyword from the file's title, description, or original file name.
+3. The list will instantly filter to matching documents.
 
-### File type filter
+---
 
-1. Click File Type filter.
-2. Select a type.
-3. Verify list narrows.
+## Filtering and Sorting Files
 
-### Size filter
+If your organization has shared hundreds of files, use these controls to narrow them down:
 
-1. Click Size filter.
-2. Select Small/Medium/Large.
-3. Verify list updates.
+- **File Type Filter:** Only want to see PDFs or Excel sheets? Select the exact format.
+- **Size Filter:** Select Small, Medium, or Large files (helpful if you are on a slow cellular connection).
+- **Visibility Filter:** Choose between *All*, *Globally Visible*, or *Directly Assigned*.
+- **Sort By:** Change the ordering from Date Added, Alphabetical Name, or File Size.
+- **View Mode:** Toggle between the spacious Grid view or the compact List view depending on your preference.
 
-### Visibility filter
+---
 
-1. Click Visibility filter.
-2. Choose All / Visible / Assigned.
-3. Verify list updates.
+## Downloading a Shared File
 
-### Sort
+1. Locate the card or row of the file you need.
+2. Click the **Download** button.
+3. Your browser will handle the secure download. Check your computer's `Downloads` folder when it finishes.
 
-1. Click Sort dropdown.
-2. Choose date/name/size order.
-3. Verify ordering refresh.
+> **If a download fails:** Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.
 
-### View mode
+---
 
-1. Click Grid or List toggle.
-2. Confirm presentation changes.
+## Common Questions
 
-## Download a Resource
-
-1. Locate target resource card/row.
-2. Click Download.
-3. Wait for browser download start.
-4. Confirm file appears in downloads folder.
-
-## If Download Fails
-
-1. Retry download once.
-2. Refresh page and retry.
-3. Confirm session is still active.
-4. Open Help Center ticket if persistent.
-
-## Common Student Questions
-
-Q: I cannot find file shared by advisor.
-A: Check visibility filter and search by exact file name.
-
-Q: Why does my list keep reordering?
-A: Current sort option is actively applied after every filter/search update.
-
-Q: Resource card shows limited metadata.
-A: Some files may not include full optional description fields.
-
-![Resources Placeholder](/images/user-manual/student-panel/resources-list.png)
-
-Image placeholder: Resource filters, sort controls, and download button state.
+| Situation | What to do |
+|---|---|
+| My advisor said they shared a file, but I cannot see it | They may have forgotten to assign it directly to your email. Ask them to verify the visibility settings on their end. |
+| The file list keeps shuffling when I click things | The *Sort By* option applies instantly whenever a filter changes |
+| A file card is missing a description | Advisors are not strictly required to type out extensive descriptions when uploading |

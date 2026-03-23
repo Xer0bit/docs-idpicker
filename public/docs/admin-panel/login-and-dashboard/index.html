@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Admin Login and Dashboard | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click admin authentication and dashboard workflow">
+<meta name="description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/login-and-dashboard/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Admin Login and Dashboard">
-  <meta property="og:description" content="Detailed click-by-click admin authentication and dashboard workflow">
+  <meta property="og:description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Admin Login and Dashboard">
-  <meta itemprop="description" content="Detailed click-by-click admin authentication and dashboard workflow">
-  <meta itemprop="wordCount" content="149">
+  <meta itemprop="description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="384">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Admin Login and Dashboard">
-  <meta name="twitter:description" content="Detailed click-by-click admin authentication and dashboard workflow">
+  <meta name="twitter:description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,10 +242,9 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#admin-login-click-by-click">Admin Login (Click-by-Click)</a></li>
-    <li><a href="#password-reset">Password Reset</a></li>
-    <li><a href="#dashboard-first-checks">Dashboard First Checks</a></li>
-    <li><a href="#token-usage-and-activity">Token Usage and Activity</a></li>
+    <li><a href="#1-secure-admin-login">1. Secure Admin Login</a></li>
+    <li><a href="#2-daily-dashboard-checks">2. Daily Dashboard Checks</a></li>
+    <li><a href="#3-monitoring-ai-token-usage">3. Monitoring AI Token Usage</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -268,53 +269,65 @@
 </nav>
 <div class="td-content">
 	<h1>Admin Login and Dashboard</h1>
-	<div class="lead">Detailed click-by-click admin authentication and dashboard workflow</div>
+	<div class="lead">How to access the super-admin portal, review global KPIs, and monitor platform health</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="admin-login-click-by-click">Admin Login (Click-by-Click)</h2>
+	<p>The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.</p>
+<hr>
+<h2 id="1-secure-admin-login">1. Secure Admin Login</h2>
+<p>Accessing the admin portal requires navigating to a specific, protected route.</p>
 <ol>
-<li>Open the Admin dashboard login URL.</li>
-<li>Enter username or email.</li>
-<li>Enter password.</li>
-<li>Click Sign In.</li>
-<li>Wait for redirect to dashboard.</li>
+<li>Open the Admin Login URL (often <code>/admin/login</code>).</li>
+<li>Enter your authorized admin <strong>Email</strong> or <strong>Username</strong>.</li>
+<li>Enter your <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.</li>
 </ol>
-<p>Expected result:</p>
-<ul>
-<li>Admin auth cookie is set.</li>
-<li>Dashboard loads KPI cards and recent activity.</li>
-</ul>
-<h2 id="password-reset">Password Reset</h2>
+<p><strong>Forgotten Password?</strong>
+If you lose your password, click <strong>Forgot Password</strong>, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.</p>
+<hr>
+<h2 id="2-daily-dashboard-checks">2. Daily Dashboard Checks</h2>
+<p>The admin dashboard provides a live pulse of the entire platform&rsquo;s health and activity. Make it a habit to review these four areas every time you log in:</p>
 <ol>
-<li>Open reset-password route.</li>
-<li>Enter account email.</li>
-<li>Submit reset request.</li>
-<li>Open reset link from inbox.</li>
-<li>Set new password.</li>
-<li>Log in again.</li>
+<li><strong>Global KPI Cards:</strong> Check total active users, new registrations today, and total completed assessments.</li>
+<li><strong>Recent Assessments Table:</strong> A live feed of the newest data coming into the system from across all organizations.</li>
+<li><strong>Registration Trend Chart:</strong> Look for sudden spikes or drops in daily sign-ups.</li>
+<li><strong>System Activity Panel:</strong> A generalized event feed tracking high-level system actions.</li>
 </ol>
-<h2 id="dashboard-first-checks">Dashboard First Checks</h2>
+<hr>
+<h2 id="3-monitoring-ai-token-usage">3. Monitoring AI Token Usage</h2>
+<p>Because the AI Mentor and generation features consume API tokens, monitoring usage is critical for cost control.</p>
 <ol>
-<li>Confirm KPI cards load.</li>
-<li>Check recent assessments table.</li>
-<li>Review registration trend chart.</li>
-<li>Verify system activity panel updates.</li>
+<li>Scroll to the <strong>Token Usage</strong> section on the dashboard.</li>
+<li>Adjust the date range filter to look at the last 24 hours or the last 7 days.</li>
+<li>Review the charts for <strong>Input Tokens</strong> (prompts sent to the AI) and <strong>Output Tokens</strong> (responses generated by the AI).</li>
+<li>If you notice a massive, unexplained spike in usage, immediately cross-reference the exact timestamp with the <a href="/docs/admin-panel/system-monitoring-and-governance/">Realtime Logs</a> to identify potential abuse or infinite loops.</li>
 </ol>
-<h2 id="token-usage-and-activity">Token Usage and Activity</h2>
-<ol>
-<li>Open token usage section.</li>
-<li>Select date range/interval.</li>
-<li>Review input/output token trends.</li>
-<li>Cross-check spikes with logs module.</li>
-</ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Login works but dashboard widgets are empty.
-A: Wait for API load and refresh once; verify API base URL and token validity.</p>
-<p>Q: I keep returning to login.
-A: Session cookie may be invalid/expired; clear cookies and reauthenticate.</p>
-<p><img src="/images/user-manual/admin-panel/admin-login.png" alt="Admin Login Placeholder"></p>
-<p>Image placeholder: Admin login and post-login dashboard KPI cards.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I log in successfully, but the dashboard widgets are completely blank</td>
+          <td>High-level data queries can take a moment to resolve. Wait 5 seconds and refresh the page</td>
+      </tr>
+      <tr>
+          <td>I click a link and keep getting bounced back to the login page</td>
+          <td>Your secure session cookie has likely expired. Clear your browser cookies for the domain and sign in again</td>
+      </tr>
+      <tr>
+          <td>My token usage seems artificially high</td>
+          <td>Check if an organization recently ran a bulk import and triggered automated report generations for hundreds of students simultaneously</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -343,7 +356,7 @@ A: Session cookie may be invalid/expired; clear cookies and reauthenticate.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIEFkbWluIExvZ2luIChDbGljay1ieS1DbGljaykKCjEuIE9wZW4gdGhlIEFkbWluIGRhc2hib2FyZCBsb2dpbiBVUkwuCjIuIEVudGVyIHVzZXJuYW1lIG9yIGVtYWlsLgozLiBFbnRlciBwYXNzd29yZC4KNC4gQ2xpY2sgU2lnbiBJbi4KNS4gV2FpdCBmb3IgcmVkaXJlY3QgdG8gZGFzaGJvYXJkLgoKRXhwZWN0ZWQgcmVzdWx0OgoKLSBBZG1pbiBhdXRoIGNvb2tpZSBpcyBzZXQuCi0gRGFzaGJvYXJkIGxvYWRzIEtQSSBjYXJkcyBhbmQgcmVjZW50IGFjdGl2aXR5LgoKIyMgUGFzc3dvcmQgUmVzZXQKCjEuIE9wZW4gcmVzZXQtcGFzc3dvcmQgcm91dGUuCjIuIEVudGVyIGFjY291bnQgZW1haWwuCjMuIFN1Ym1pdCByZXNldCByZXF1ZXN0Lgo0LiBPcGVuIHJlc2V0IGxpbmsgZnJvbSBpbmJveC4KNS4gU2V0IG5ldyBwYXNzd29yZC4KNi4gTG9nIGluIGFnYWluLgoKIyMgRGFzaGJvYXJkIEZpcnN0IENoZWNrcwoKMS4gQ29uZmlybSBLUEkgY2FyZHMgbG9hZC4KMi4gQ2hlY2sgcmVjZW50IGFzc2Vzc21lbnRzIHRhYmxlLgozLiBSZXZpZXcgcmVnaXN0cmF0aW9uIHRyZW5kIGNoYXJ0Lgo0LiBWZXJpZnkgc3lzdGVtIGFjdGl2aXR5IHBhbmVsIHVwZGF0ZXMuCgojIyBUb2tlbiBVc2FnZSBhbmQgQWN0aXZpdHkKCjEuIE9wZW4gdG9rZW4gdXNhZ2Ugc2VjdGlvbi4KMi4gU2VsZWN0IGRhdGUgcmFuZ2UvaW50ZXJ2YWwuCjMuIFJldmlldyBpbnB1dC9vdXRwdXQgdG9rZW4gdHJlbmRzLgo0LiBDcm9zcy1jaGVjayBzcGlrZXMgd2l0aCBsb2dzIG1vZHVsZS4KCiMjIENvbW1vbiBRdWVzdGlvbnMKClE6IExvZ2luIHdvcmtzIGJ1dCBkYXNoYm9hcmQgd2lkZ2V0cyBhcmUgZW1wdHkuCkE6IFdhaXQgZm9yIEFQSSBsb2FkIGFuZCByZWZyZXNoIG9uY2U7IHZlcmlmeSBBUEkgYmFzZSBVUkwgYW5kIHRva2VuIHZhbGlkaXR5LgoKUTogSSBrZWVwIHJldHVybmluZyB0byBsb2dpbi4KQTogU2Vzc2lvbiBjb29raWUgbWF5IGJlIGludmFsaWQvZXhwaXJlZDsgY2xlYXIgY29va2llcyBhbmQgcmVhdXRoZW50aWNhdGUuCgohW0FkbWluIExvZ2luIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL2FkbWluLWxvZ2luLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZG1pbiBsb2dpbiBhbmQgcG9zdC1sb2dpbiBkYXNoYm9hcmQgS1BJIGNhcmRzLgo=</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBBZG1pbiBQYW5lbCBpcyB0aGUgaGlnaGVzdCBsZXZlbCBvZiBhY2Nlc3MgaW4gSURQaWNrZXIsIGRlc2lnbmVkIGZvciBwbGF0Zm9ybSBvd25lcnMgYW5kIGhpZ2gtbGV2ZWwgb3BlcmF0aW9ucyBzdGFmZi4gVGhpcyBndWlkZSBjb3ZlcnMgc2VjdXJlIGFjY2VzcyBhbmQgZGFpbHkgbW9uaXRvcmluZyByb3V0aW5lcy4KCi0tLQoKIyMgMS4gU2VjdXJlIEFkbWluIExvZ2luCgpBY2Nlc3NpbmcgdGhlIGFkbWluIHBvcnRhbCByZXF1aXJlcyBuYXZpZ2F0aW5nIHRvIGEgc3BlY2lmaWMsIHByb3RlY3RlZCByb3V0ZS4gCgoxLiBPcGVuIHRoZSBBZG1pbiBMb2dpbiBVUkwgKG9mdGVuIGAvYWRtaW4vbG9naW5gKS4KMi4gRW50ZXIgeW91ciBhdXRob3JpemVkIGFkbWluICoqRW1haWwqKiBvciAqKlVzZXJuYW1lKiouCjMuIEVudGVyIHlvdXIgKipQYXNzd29yZCoqLgo0LiBDbGljayAqKlNpZ24gSW4qKi4KNS4gT25jZSB5b3VyIGhpZ2gtbGV2ZWwgYXV0aG9yaXphdGlvbiBjb29raWUgaXMgdmFsaWRhdGVkLCB5b3UgYXJlIHJvdXRlZCBkaXJlY3RseSB0byB0aGUgZ2xvYmFsIGRhc2hib2FyZC4KCioqRm9yZ290dGVuIFBhc3N3b3JkPyoqCklmIHlvdSBsb3NlIHlvdXIgcGFzc3dvcmQsIGNsaWNrICoqRm9yZ290IFBhc3N3b3JkKiosIGVudGVyIHlvdXIgZW1haWwsIGFuZCB1c2UgdGhlIHNlY3VyZSByZXNldCBsaW5rIHNlbnQgdG8geW91ciBpbmJveC4gQmVjYXVzZSBvZiB0aGUgaGlnaCBwcml2aWxlZ2UgbGV2ZWwgb2YgdGhpcyBhY2NvdW50LCBwYXNzd29yZCBzdHJlbmd0aCByZXF1aXJlbWVudHMgYXJlIHN0cmljdGx5IGVuZm9yY2VkLgoKLS0tCgojIyAyLiBEYWlseSBEYXNoYm9hcmQgQ2hlY2tzCgpUaGUgYWRtaW4gZGFzaGJvYXJkIHByb3ZpZGVzIGEgbGl2ZSBwdWxzZSBvZiB0aGUgZW50aXJlIHBsYXRmb3JtJ3MgaGVhbHRoIGFuZCBhY3Rpdml0eS4gTWFrZSBpdCBhIGhhYml0IHRvIHJldmlldyB0aGVzZSBmb3VyIGFyZWFzIGV2ZXJ5IHRpbWUgeW91IGxvZyBpbjoKCjEuICoqR2xvYmFsIEtQSSBDYXJkczoqKiBDaGVjayB0b3RhbCBhY3RpdmUgdXNlcnMsIG5ldyByZWdpc3RyYXRpb25zIHRvZGF5LCBhbmQgdG90YWwgY29tcGxldGVkIGFzc2Vzc21lbnRzLgoyLiAqKlJlY2VudCBBc3Nlc3NtZW50cyBUYWJsZToqKiBBIGxpdmUgZmVlZCBvZiB0aGUgbmV3ZXN0IGRhdGEgY29taW5nIGludG8gdGhlIHN5c3RlbSBmcm9tIGFjcm9zcyBhbGwgb3JnYW5pemF0aW9ucy4KMy4gKipSZWdpc3RyYXRpb24gVHJlbmQgQ2hhcnQ6KiogTG9vayBmb3Igc3VkZGVuIHNwaWtlcyBvciBkcm9wcyBpbiBkYWlseSBzaWduLXVwcy4KNC4gKipTeXN0ZW0gQWN0aXZpdHkgUGFuZWw6KiogQSBnZW5lcmFsaXplZCBldmVudCBmZWVkIHRyYWNraW5nIGhpZ2gtbGV2ZWwgc3lzdGVtIGFjdGlvbnMuCgotLS0KCiMjIDMuIE1vbml0b3JpbmcgQUkgVG9rZW4gVXNhZ2UKCkJlY2F1c2UgdGhlIEFJIE1lbnRvciBhbmQgZ2VuZXJhdGlvbiBmZWF0dXJlcyBjb25zdW1lIEFQSSB0b2tlbnMsIG1vbml0b3JpbmcgdXNhZ2UgaXMgY3JpdGljYWwgZm9yIGNvc3QgY29udHJvbC4KCjEuIFNjcm9sbCB0byB0aGUgKipUb2tlbiBVc2FnZSoqIHNlY3Rpb24gb24gdGhlIGRhc2hib2FyZC4KMi4gQWRqdXN0IHRoZSBkYXRlIHJhbmdlIGZpbHRlciB0byBsb29rIGF0IHRoZSBsYXN0IDI0IGhvdXJzIG9yIHRoZSBsYXN0IDcgZGF5cy4KMy4gUmV2aWV3IHRoZSBjaGFydHMgZm9yICoqSW5wdXQgVG9rZW5zKiogKHByb21wdHMgc2VudCB0byB0aGUgQUkpIGFuZCAqKk91dHB1dCBUb2tlbnMqKiAocmVzcG9uc2VzIGdlbmVyYXRlZCBieSB0aGUgQUkpLgo0LiBJZiB5b3Ugbm90aWNlIGEgbWFzc2l2ZSwgdW5leHBsYWluZWQgc3Bpa2UgaW4gdXNhZ2UsIGltbWVkaWF0ZWx5IGNyb3NzLXJlZmVyZW5jZSB0aGUgZXhhY3QgdGltZXN0YW1wIHdpdGggdGhlIFtSZWFsdGltZSBMb2dzXSgvZG9jcy9hZG1pbi1wYW5lbC9zeXN0ZW0tbW9uaXRvcmluZy1hbmQtZ292ZXJuYW5jZS8pIHRvIGlkZW50aWZ5IHBvdGVudGlhbCBhYnVzZSBvciBpbmZpbml0ZSBsb29wcy4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBsb2cgaW4gc3VjY2Vzc2Z1bGx5LCBidXQgdGhlIGRhc2hib2FyZCB3aWRnZXRzIGFyZSBjb21wbGV0ZWx5IGJsYW5rIHwgSGlnaC1sZXZlbCBkYXRhIHF1ZXJpZXMgY2FuIHRha2UgYSBtb21lbnQgdG8gcmVzb2x2ZS4gV2FpdCA1IHNlY29uZHMgYW5kIHJlZnJlc2ggdGhlIHBhZ2UgfAp8IEkgY2xpY2sgYSBsaW5rIGFuZCBrZWVwIGdldHRpbmcgYm91bmNlZCBiYWNrIHRvIHRoZSBsb2dpbiBwYWdlIHwgWW91ciBzZWN1cmUgc2Vzc2lvbiBjb29raWUgaGFzIGxpa2VseSBleHBpcmVkLiBDbGVhciB5b3VyIGJyb3dzZXIgY29va2llcyBmb3IgdGhlIGRvbWFpbiBhbmQgc2lnbiBpbiBhZ2FpbiB8CnwgTXkgdG9rZW4gdXNhZ2Ugc2VlbXMgYXJ0aWZpY2lhbGx5IGhpZ2ggfCBDaGVjayBpZiBhbiBvcmdhbml6YXRpb24gcmVjZW50bHkgcmFuIGEgYnVsayBpbXBvcnQgYW5kIHRyaWdnZXJlZCBhdXRvbWF0ZWQgcmVwb3J0IGdlbmVyYXRpb25zIGZvciBodW5kcmVkcyBvZiBzdHVkZW50cyBzaW11bHRhbmVvdXNseSB8Cg==</script>
 
 <style>
  

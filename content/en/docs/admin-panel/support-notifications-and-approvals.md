@@ -1,49 +1,59 @@
 ---
 title: "Support, Notifications, and Approvals"
-description: "Detailed click-by-click operations playbook"
+description: "How to handle incoming support tickets, broadcast global alerts, and manage admission gates"
 weight: 156
 draft: false
 ---
 
-## Support Tickets
+This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.
 
-1. Open Support Tickets.
-2. Filter by status and priority.
-3. Open ticket detail.
-4. Update status.
-5. Add resolution message.
-6. Save and verify status transition.
+---
 
-## Notifications
+## 1. Managing Support Tickets
 
-1. Open Notifications.
-2. Click Create Notification.
-3. Enter title and message.
-4. Select target type (all, users, groups).
-5. Select recipients if needed.
-6. Send and verify history entry.
+When a student or advisor submits a Help Center request, it routes to this global queue.
 
-## Demo Approvals and Admission Criteria
+1. Open **Support Tickets**.
+2. Immediately filter the queue by **Priority: Urgent** and **Status: Pending** to catch blockers.
+3. Click into a ticket to read the user's description and reproduction steps.
+4. Once you have a fix or answer, change the **Status** (e.g., from *In Progress* to *Resolved*).
+5. Type your official response in the Resolution Message field.
+6. Click **Save**. The user will see your response on their local Help Center dashboard.
 
-1. Open Demo Approvals queue.
-2. Review request details.
-3. Approve or reject with notes where required.
-4. Open Admission Criteria module.
-5. Edit or review criteria entries.
-6. Save and verify publishing/active state.
+*Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory "Resolution Message" field before trying to change the status to Resolved.*
+
+---
+
+## 2. Generating Global Notifications
+
+While Advisors notify their specific students, Super Admins can push alerts globally across all active organizations on the platform.
+
+1. Open **Notifications**.
+2. Click **Create Notification**.
+3. Choose your target scope extremely carefully:
+   - **All Users:** Every active student, parent, and advisor. (Use for major platform maintenance warnings only).
+   - **All Students:** All students regardless of organization.
+   - **Selected Groups:** Specific subsets if necessary.
+4. Write your Title and Message, then hit **Send**.
+5. Once sent, verify it appears correctly in your broadcast history.
+
+---
+
+## 3. Demo Approvals and Admission Criteria
+
+If IDPicker is operating a gated launch or pilot program, you must manually approve access.
+
+1. Open the **Demo Approvals** or **Admission Criteria** queue.
+2. Review the incoming request details submitted by prospective users or schools.
+3. Click **Approve** to officially provision their workspace and trigger the welcome email sequence.
+4. Click **Reject** if they do not meet compliance standards (you can usually append an internal note explaining the rejection).
+
+---
 
 ## Common Questions
 
-Q: Ticket transitions fail silently.
-A: Reopen ticket and check required resolution fields before save.
-
-Q: Notification reached wrong audience.
-A: Always verify target mode before sending.
-
-![Support Tickets Placeholder](/images/user-manual/admin-panel/support-tickets.png)
-
-Image placeholder: Ticket queue with status actions.
-
-![Notifications Placeholder](/images/user-manual/admin-panel/notifications.png)
-
-Image placeholder: Notification compose modal with recipient selectors.
+| Situation | What to do |
+|---|---|
+| I accidentally sent a Global Notification to everyone | Platform notifications are instant and cannot be recalled. If the error was severe, send an immediate correction broadcast apologizing for the error |
+| I approved a Demo request but the user got an error logging in | Verify the organization template mapped to their approval was fully provisioned. Sometimes the backend provisioning queue takes 30-60 seconds |
+| Can I assign a ticket to a specific subadmin? | If your Support module supports assignment flags, use the 'Assignee' dropdown inside the ticket detail before saving |

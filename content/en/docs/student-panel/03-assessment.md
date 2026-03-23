@@ -1,78 +1,71 @@
 ---
 title: "03. Assessment Guide"
-description: "Detailed click-by-click self-assessment walkthrough"
+description: "How to take, resume, and review self-assessments to unlock your platform recommendations"
 weight: 123
 draft: false
 ---
 
-This guide explains how students start, continue, submit, and review assessments.
+Assessments are the core of IDPicker. Completing them unlocks your personalized career paths, university recommendations, and personality insights.
 
-## Open Self Assessment
+---
 
-1. From sidebar, click Self Assessment.
-2. Wait for cards to load.
-3. Confirm default cards (Personality and Career) are visible.
-4. Check for organization/platform custom cards if assigned.
+## Starting a New Assessment
 
-## Start a New Assessment
+1. From the left sidebar, click **Self Assessment**.
+2. Look at the available assessment cards (e.g., *Personality*, *Career*).
+   - *Note: Your school or organization may assign custom assessments here as well.*
+3. Click **Start** on the card you want to begin.
+4. Read the question instructions carefully.
+5. Select or type your answer, then click **Next**.
+6. Repeat until all questions are answered, then click **Submit**.
 
-1. Click the card you want (for example Personality).
-2. Click Start.
-3. Read question instructions.
-4. Select or type answer.
-5. Click Next to continue.
-6. Repeat until all required questions are completed.
-7. Click Submit.
+> **Tip:** Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!
 
-## Continue an Incomplete Assessment
+---
 
-1. Return to Self Assessment list.
-2. Find card showing Continue state.
-3. Click Continue.
-4. Resume from saved position.
-5. Complete and submit.
+## Resuming an Incomplete Assessment
 
-## Retake an Assessment
+Life happens. If you close your browser or navigate away, your progress is safely auto-saved.
 
-If retake is allowed:
+1. Return to the **Self Assessment** page (or click the Resume card on your Dashboard).
+2. The assessment card will now show a **Continue** button instead of Start.
+3. Click **Continue**.
+4. You will pick up exactly where you left off. 
+5. Complete the remaining questions and submit.
 
-1. Open completed assessment card.
-2. Click Retake.
-3. Confirm reset if prompted.
-4. Complete new run and submit.
+---
 
-## Review Assessment Result
+## Retaking an Assessment
 
-1. Open completed assessment result action.
-2. Review summary and analysis.
-3. Use result to continue to Recommendations and Personality modules.
+Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:
 
-## Organization/Platform Custom Assessments
+1. Open the completed assessment card.
+2. Click **Retake**.
+3. A confirmation prompt will ask if you are sure you want to overwrite your previous results. Confirm to proceed.
+4. Complete the new run and submit.
 
-When available:
+---
 
-- Cards may include organization/source labeling.
-- Availability windows may apply.
+## Reviewing Your Results
 
-If a custom assessment disappears:
+Once you submit an assessment, the platform instantly generates your results.
 
-- Check if available-until date has passed.
+1. On the completed assessment card, click **View Results**.
+2. Review the summary and breakdown of your traits or aptitudes.
+3. Armed with this new data, head over to the **Recommendations** or **Personality** modules to see what the AI has unlocked for you!
 
-## Important Language Note
+---
 
-If you change language while assessment is in progress, the platform may require reset confirmation for in-progress responses.
+## Important Note on Languages
 
-## Common Student Questions
+If you change your interface language (e.g., from English to Turkish) *while* an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!
 
-Q: Recommendations or Personality are locked.
-A: Complete required assessments first.
+---
 
-Q: I lost progress unexpectedly.
-A: Check if language was switched during in-progress state.
+## Common Questions
 
-Q: Start button is missing on one card.
-A: Card may be completed, unavailable, or outside assignment window.
-
-![Assessment Flow Placeholder](/images/user-manual/student-panel/assessment-flow.png)
-
-Image placeholder: Assessment list card states (Start, Continue, Completed, Retake).
+| Situation | What to do |
+|---|---|
+| Recommendations or Personality menus are locked | You must complete your core assessments first to unlock these areas |
+| The Start button is missing on a custom card | The assessment may be closed, completed, or outside your organization's allowed time window |
+| I lost progress unexpectedly | Check if you switched languages mid-test. Otherwise, ensure you have a stable network connection |

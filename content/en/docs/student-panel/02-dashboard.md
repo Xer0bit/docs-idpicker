@@ -1,83 +1,108 @@
 ---
 title: "02. Dashboard Guide"
-description: "Detailed click-by-click dashboard walkthrough"
+description: "Understanding every block on the student dashboard and how to use them effectively"
 weight: 122
 draft: false
 ---
 
-The dashboard is the student home screen. This guide explains where to click first and how to use each block.
+The Dashboard is the first thing you see after logging in. It gives you a bird's-eye view of everything that needs your attention — assessments, notifications, forms, invitations, and program recommendations.
 
-## Open Dashboard
+---
 
-1. Sign in successfully.
-2. Wait for automatic redirect to dashboard.
-3. Confirm left sidebar is visible.
-4. Confirm core widgets/cards are loaded.
+## What You See on the Dashboard
 
-## Recommended First 5 Clicks After Login
+When you land on the dashboard, you will see several content blocks:
 
-1. Click Notifications preview to check latest updates.
-2. Click Assigned Forms section and open pending form (if any).
-3. Click Resume/Continue assessment prompt (if shown).
-4. Click Recommendations from sidebar.
-5. Return to dashboard and check promoted/random programs.
+| Block | What It Shows | What to Do |
+|---|---|---|
+| **Assessment Reports** | Your latest completed assessment output | Download or view your report |
+| **Assigned Forms** | Forms sent to you by your advisor or organization | Open and respond |
+| **Organization Invitations** | Pending invitations to join an organization | Accept or Decline |
+| **Notifications** | System and advisor announcements | Read and act on relevant items |
+| **Promoted Programs** | Highlighted university/career programs | Browse and explore |
+| **Random Programs** | Exploratory program discovery | Click into any that look interesting |
 
-## Dashboard Blocks and How to Use Them
+---
 
-### 1) Assessment Reports Block
+## Your First 5 Actions After Logging In
 
-1. Locate assessment report area.
-2. If report exists, click view/download action.
-3. If locked or unavailable, complete required assessments first.
+Follow this sequence whenever you start a new session for maximum efficiency:
 
-### 2) Assigned Forms Block
+1. **Check Notifications** — Look for any new announcements from your advisor or platform.
+2. **Open Assigned Forms** — If a form is pending, complete it now before it slips away.
+3. **Resume an Assessment** — If you left an assessment in progress, the dashboard shows a resume prompt.
+4. **Browse Recommendations** — Click Recommendations in the sidebar to check your latest career or university matches.
+5. **Explore Program Cards** — Browse promoted and random programs to discover new options.
 
-1. Locate Assigned Forms.
-2. Click open form on a pending entry.
-3. Complete in dedicated form page.
-4. Return to dashboard after submit.
+---
 
-### 3) Organization Invitations Block
+## Using the Assessment Reports Block
 
-1. Open invitation card.
-2. Review organization name and context.
-3. Click Accept or Decline.
-4. Wait for confirmation.
+1. Locate the **Assessment Reports** block on your dashboard.
+2. If a report is available, click the **View** or **Download** button.
+3. If the button appears locked or restricted:
+   - Your assessment may not be complete yet → go to **Self Assessment** in the sidebar.
+   - Your account plan may not include report downloads → check your subscription in Settings.
 
-### 4) Notifications Block
+---
 
-1. Review unread indicator.
-2. Click relevant notification-driven module.
-3. Return and continue through remaining items.
+## Using the Assigned Forms Block
 
-### 5) Program Discovery Blocks
+Forms are created by your advisor and require your response.
 
-- Promoted programs: prioritized highlights.
-- Random programs: exploratory cards.
+1. Locate **Assigned Forms** on the dashboard.
+2. Click **Open** on any pending form.
+3. Complete all fields on the form page.
+4. Click **Submit**.
+5. You are returned to the dashboard and the form disappears from the pending list.
 
-1. Click a program card.
-2. Review core fields.
-3. Continue exploration in University Search for filtering.
+> **Note:** Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.
 
-## Incomplete Assessment Resume Flow
+---
 
-When shown:
+## Handling Organization Invitations
 
-1. Click resume entry.
-2. Continue from saved progress.
-3. Submit and return to dashboard.
+1. Find the **Invitations** block on the dashboard.
+2. Click an invitation card to review the organization name and context.
+3. Click **Accept** to join or **Decline** to refuse.
+4. Your decision is saved immediately.
 
-## Common Student Questions
+---
 
-Q: My dashboard looks empty.
-A: New accounts may have limited data until assessments/forms/invitations are available.
+## Reading Notifications
 
-Q: Forms disappeared after I submitted one.
-A: Submitted forms are removed from pending list.
+1. Locate the **Notifications** block.
+2. Click on any notification that looks relevant.
+3. It may take you directly to the related module (form, assessment, recommendation, etc.).
+4. After reviewing all, return to the main dashboard.
 
-Q: Why do report actions look restricted?
-A: Availability can depend on completion state and plan/report access.
+---
 
-![Dashboard Overview Placeholder](/images/user-manual/student-panel/dashboard-overview.png)
+## Resuming an In-Progress Assessment
 
-Image placeholder: Full dashboard with numbered labels for each block.
+If you started an assessment and did not finish it:
+
+1. The dashboard shows a **Resume** prompt card automatically.
+2. Click **Resume Assessment**.
+3. You are taken back to exactly where you left off.
+4. Complete all remaining questions and click **Submit**.
+
+---
+
+## Exploring Program Cards
+
+- **Promoted programs** are specifically featured by the platform or your organization.
+- **Random programs** are surfaced for open exploration.
+
+Click any program card to view its details. To search and filter more precisely, open **University Search** from the sidebar.
+
+---
+
+## Common Questions
+
+| Situation | What to do |
+|---|---|
+| Dashboard appears empty on first login | Normal — data populates as you complete assessments, receive forms, and get invitations |
+| A form I need is missing | Check with your advisor — they may not have assigned it yet, or you may have already submitted it |
+| Report download button is greyed out | Complete your assessment first, or check your subscription plan |
+| Recommendations block not visible | It may only appear after your first assessment is complete |

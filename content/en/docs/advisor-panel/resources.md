@@ -1,60 +1,69 @@
 ---
 title: "Resources Management"
-description: "Detailed click-by-click file library and student assignment guide"
+description: "How to upload files, build a library, and share documents securely with your students"
 weight: 135
 draft: false
 ---
 
-Resources lets advisors upload, organize, and assign files to students.
+The Resources module operates as a secure file-sharing library. Advisors can upload helpful materials—like study guides, university brochures, or policy PDFs—and control exactly which students are allowed to see them.
 
-## A) Open Resources
+---
 
-1. In sidebar, click Resources.
-2. Wait for resource list/grid.
+## 1. Uploading a New Resource
 
-## B) Upload a Resource (Click-by-Click)
+1. In the sidebar, click **Resources**.
+2. Click the **Upload Resource** button at the top of the screen.
+3. Click to browse your device, or drag-and-drop your target file.
+4. Fill in the metadata:
+   - **Name:** (Required) A clear, recognizable title.
+   - **Description:** (Optional) Add context on why this file is helpful.
+   - **Category:** (If enabled) Tag the file to keep the library organized.
+5. Choose your initial visibility setting (`Visible to All` or `Assigned Only`).
+6. Click **Upload**.
+7. Wait for the upload to complete and verify the file appears in your library list.
 
-1. Click Upload Resource.
-2. Choose file from local device.
-3. Enter metadata (name/description/category as available).
-4. Select visibility/assignment mode.
-5. Click Upload.
-6. Confirm item appears in list.
+---
 
-## C) Filter and Sort Resources
+## 2. Managing Visibility and Assignments
 
-1. Use search input (filename/title).
-2. Apply file-type filter.
-3. Apply size and visibility filters.
-4. Choose sort mode (date/name/size).
-5. Toggle list/grid view if needed.
+Uploading a file is only half the job. You must ensure the right students can see it.
 
-## D) Assign Resource to Students
+- **Globally Visible:** Any student linked to your organization can see and download this file.
+- **Assigned Only:** The file is hidden by default. Only students you explicitly select will see it.
 
-1. Open resource actions.
-2. Click Assign to Students.
-3. Select one or more students.
-4. Save assignment.
-5. Confirm visibility reflects assignment mode.
+### How to Assign a Hidden File to Specific Students
+1. Locate the file in your Resources list.
+2. Click the action menu `(...)` and select **Assign to Students**.
+3. A student selector modal will appear. Check the boxes next to the individuals (or groups) you want to share this with.
+4. Click **Save Assignment**.
 
-## E) Delete Resource
+---
 
-1. Open resource actions.
-2. Click Delete.
-3. Confirm modal.
-4. Verify resource is removed.
+## 3. Organizing and Finding Files
 
-## Common Advisor Questions
+As your library grows, use the built-in filters to find what you need quickly:
+- **Search Bar:** Quickly locate files by their title or description text.
+- **File Type Filter:** Narrow the list to show only documents, spreadsheets, or images.
+- **Visibility Filter:** See exactly which files are currently hiding behind "Assigned Only" status.
+- **Sort By:** Reorder the grid by the date added, the alphabetical name, or the raw file size.
+- **View Mode Toggle:** Switch from the visual *Grid View* to the dense *List View* if you are managing dozens of files at once.
 
-Q: Upload failed unexpectedly.
-A: Verify file size/type limits and retry.
+---
 
-Q: Assigned resource not visible to student.
-A: Check visibility mode and selected student IDs.
+## 4. Deleting an Outdated Resource
 
-Q: List view and card view show different ordering.
-A: Reapply sort option; sorting is independent of view style.
+When a syllabus or brochure is no longer accurate:
+1. Locate the file card.
+2. Open the action menu and click **Delete**.
+3. Confirm the permanent deletion prompt.
+4. *Note: Disabling visibility is often safer than deleting if you think you might need the file again next year.*
 
-![Resources Advisor Placeholder](/images/user-manual/advisor-panel/resources.png)
+---
 
-Image placeholder: Upload dialog plus assigned-student selector.
+## Common Questions
+
+| Situation | What to do |
+|---|---|
+| My file upload failed instantly | The file is likely larger than the allowed maximum upload limit, or it is a blocked file type (like `.exe`) |
+| I assigned a file but my student says they cannot see it | Double-check that you selected their exact profile in the assignment modal, and verify their account is active in your roaster |
+| The list and grid views are sorted differently | The Sort option applies globally, but if you switch views, you may need to click the sort dropdown again to re-apply it |

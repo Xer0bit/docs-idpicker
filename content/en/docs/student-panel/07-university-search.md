@@ -1,93 +1,73 @@
 ---
 title: "07. University Search Guide"
-description: "Detailed click-by-click university search walkthrough"
+description: "How to find, filter, and compare the perfect higher education programs"
 weight: 127
 draft: false
 ---
 
-This guide explains exactly how students search, filter, and compare universities/programs.
+The University Search module is your comprehensive database for discovering higher education programs worldwide. This guide explains how to use the search engine efficiently to build your target list.
 
-## Open University Search
+---
 
-1. In sidebar, click University Search.
-2. Wait for filter panel and results area to load.
-3. Confirm default result set appears.
+## Basic Keyword Search
 
-## Basic Search (Keyword)
+1. In the sidebar, click **University Search**.
+2. Wait a moment for the filter panel and the default results area to load.
+3. Click the **Search** input box at the top.
+4. Type a university name (e.g., *Harvard*) or a program keyword (e.g., *Computer Science*).
+5. Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.
+6. Review your refined results.
 
-1. Click search input.
-2. Type university or program keyword.
-3. Pause briefly (search is debounced).
-4. Review refreshed results.
+---
 
-## Filter Search (Click-by-Click)
+## Power Filtering
 
-### Category filter
+To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).
 
-1. Click Category dropdown.
-2. Select one category.
-3. Wait for results refresh.
+### 1. By Category (Field of Study)
+Click the Category dropdown and select your overarching field, such as Engineering, Arts, or Medicine. The results will instantly filter to programs mapped to that category.
 
-### Degree filter
+### 2. By Degree Type
+Looking for a Bachelor's, Master's, or PhD? Click the Degree dropdown to restrict results to exactly what you need.
 
-1. Click Degree dropdown.
-2. Select degree type.
-3. Wait for results refresh.
+### 3. By Language of Instruction
+If you want to study entirely in English in a non-English speaking country, this filter is life-saving. Select the instruction language to filter out programs you cannot attend.
 
-### Language filter
+> **Warning:** Mixing too many strict filters at once (e.g., *Aerospace Engineering*, *PhD*, *Turkish language*, *in Germany*) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.
 
-1. Click Language dropdown.
-2. Select instruction language.
-3. Wait for results refresh.
+---
 
-### Page size
+## Managing Pagination (Load More)
 
-1. Click Page Size.
-2. Choose 6, 12, or 24.
-3. Results repaginate automatically.
+When reviewing results:
 
-## Pagination and Load More Behavior
+1. Scroll to the bottom of the current page of university cards.
+2. Click **Load More** (or use the pagination numbers 1, 2, 3...) to fetch the next set.
+3. You can change how many cards load at once by tweaking the **Page Size** control (e.g., 6, 12, 24).
 
-1. Scroll through current page results.
-2. Use pagination/load action to fetch next set.
-3. Continue until target programs are found.
+*Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.*
 
-Important:
+---
 
-- Changing any filter resets pagination to first page.
-- Combined filters can reduce results to zero.
+## How to Compare Programs Efficiently
 
-## Reset to Default Search
+When building your shortlist, we recommend focusing on these core factors displayed on every card:
 
-1. Click reset/clear filter action.
-2. Remove keyword if needed.
-3. Confirm full default result set returns.
+- **University Name & Program Name**
+- **Degree Level**
+- **Language of Instruction**
+- **Tuition Cost (if available)**
+- **Duration (years)**
+- **Country / City**
 
-## Compare Programs Efficiently
+Keep a notebook or spreadsheet open alongside IDPicker to save your top targets!
 
-For each card, note:
+---
 
-- University name
-- Program name
-- Degree
-- Language
-- Tuition
-- Duration
-- Country
+## Common Questions
 
-Then shortlist in your own note-taking sheet.
-
-## Common Student Questions
-
-Q: Search feels delayed when typing.
-A: Input is debounced to avoid unnecessary API requests.
-
-Q: I have no results after adding one filter.
-A: Remove filters one by one to find restrictive combination.
-
-Q: Results order changed after filter update.
-A: New query produces a fresh paginated result set.
-
-![University Search Placeholder](/images/user-manual/student-panel/university-search.png)
-
-Image placeholder: Search bar + active filters + result cards + pagination.
+| Situation | What to do |
+|---|---|
+| The search bar feels laggy | Input is deliberately "debounced" (delayed) by a few milliseconds so it does not overwhelm the server while you type. Just pause when finished! |
+| My results completely disappeared | You probably applied an overly strict combination of filters |
+| The card order suddenly changed | When you apply a new filter, a brand new sorted list is retrieved from the database |

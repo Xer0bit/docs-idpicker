@@ -1,62 +1,65 @@
 ---
 title: "Dashboard and Linked Overview"
-description: "Detailed click-by-click parent dashboard walkthrough"
+description: "How to interpret your main parent dashboard and navigate multiple linked children"
 weight: 143
 draft: false
 ---
 
-Parent dashboard is the main overview for all linked children.
+Once you are logged in, the Parent Dashboard is your main command center. It provides an at-a-glance summary for every child linked to your account.
 
-## A) Open Parent Dashboard
+---
 
-1. Log in as parent.
-2. Wait for dashboard home to load.
-3. Confirm linked children cards are visible (or empty state if none).
+## 1. Understanding Dashboard Blocks
 
-## B) Understand Dashboard Blocks
+When you land on the dashboard, you will immediately see:
 
-Typical sections include:
+- **Linked Children Cards:** A dedicated card for each of your linked students showing their name, avatar, and quick progress percentage.
+- **Progress Snapshots:** High-level metrics showing how many assessments have been completed across your family.
+- **Advisor Activity Indicators:** Quick badges showing if you have unread messages from your child's advisor.
+- **Link Student Form:** The input box used to request access to a new child's account.
 
-- Linked children summary cards
-- Progress and completion snapshots
-- Recommendation and advisor activity indicators
-- Link-student request form
+---
 
-## C) Link Student from Dashboard
+## 2. How to Link Your Child
 
-1. Find Link Student form.
-2. Enter student email.
-3. Submit request.
-4. If linked instantly, select student card.
-5. If pending, wait for student-side completion.
+Before the dashboard shows any meaningful data, you must link your parent account to your child's student account.
 
-## D) Open Student Card
+1. On the dashboard, locate the **Link Student** form.
+2. Enter the **exact email address** your child used to register their student account.
+3. Click **Send Link Request**.
+4. **What happens next depends on the system configuration:**
+   - *Instant Link:* If your email matches records sent by the school, the student card appears immediately on your dashboard.
+   - *Pending Request:* The system sends a notification to your child's student dashboard. They must click "Approve" before you can see their data.
 
-1. Click linked student card.
-2. Navigate to student detail page.
-3. Review student-specific information.
+*(For more details on managing this link, see the [Linked Student Guide](/docs/parent-panel/linked-student-guide/).)*
 
-## E) Refresh Parent Snapshot Data
+---
 
-1. Click refresh action.
-2. Wait for loading states to complete.
-3. Confirm summary values are updated.
+## 3. Opening a Student Card
 
-## F) Legacy Students Route Note
+To dive into the specific details for one child:
+1. Locate their card on your dashboard.
+2. Click anywhere on the card (or click **View Student**).
+3. The platform will navigate to the [Student Detail Page](/docs/parent-panel/student-detail-journey-map-and-chat/), where you can see their full assessment results, progress, and recommendations.
 
-If `/dashboard/students` is opened directly, parent app redirects back to `/dashboard`.
+### Got Multiple Children?
+No problem. Simply use the **Link Student** form again to request access to your second or third child. They will each appear as a distinct, separate card on your dashboard.
 
-## Common Parent Questions
+---
 
-Q: Dashboard has no student cards.
-A: Link at least one student first.
+## 4. Refreshing Stale Data
 
-Q: I linked student but stats are blank.
-A: Wait for child summary fetch and refresh once.
+If you know your child just finished an assessment, but your dashboard still says "Incomplete":
+1. Look for the circular **Refresh** icon on your dashboard.
+2. Click it and wait a moment.
+3. The system will bypass caching and pull the latest, live data directly from the servers.
 
-Q: Can I add multiple students?
-A: Yes, each linked child appears as a separate card when linkage is successful.
+---
 
-![Parent Dashboard Placeholder](/images/user-manual/parent-panel/parent-dashboard.png)
+## Common Questions
 
-Image placeholder: Parent dashboard with linked cards and quick metrics.
+| Situation | What to do |
+|---|---|
+| My dashboard has no student cards at all | You need to use the "Link Student" form to connect your account to your child's account first |
+| I linked my child but their stats are entirely blank | They probably have not started their self-assessments yet. Give them a gentle nudge! |
+| The system says "Pending Request" for days | Your child has not opened their dashboard to click the "Approve Parent Link" button. Remind them to log in |

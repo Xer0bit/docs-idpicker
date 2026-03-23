@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Support, Notifications, and Approvals | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click operations playbook">
+<meta name="description" content="How to handle incoming support tickets, broadcast global alerts, and manage admission gates">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/support-notifications-and-approvals/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Support, Notifications, and Approvals">
-  <meta property="og:description" content="Detailed click-by-click operations playbook">
+  <meta property="og:description" content="How to handle incoming support tickets, broadcast global alerts, and manage admission gates">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Support, Notifications, and Approvals">
-  <meta itemprop="description" content="Detailed click-by-click operations playbook">
-  <meta itemprop="wordCount" content="125">
+  <meta itemprop="description" content="How to handle incoming support tickets, broadcast global alerts, and manage admission gates">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="380">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Support, Notifications, and Approvals">
-  <meta name="twitter:description" content="Detailed click-by-click operations playbook">
+  <meta name="twitter:description" content="How to handle incoming support tickets, broadcast global alerts, and manage admission gates">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,9 +242,9 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#support-tickets">Support Tickets</a></li>
-    <li><a href="#notifications">Notifications</a></li>
-    <li><a href="#demo-approvals-and-admission-criteria">Demo Approvals and Admission Criteria</a></li>
+    <li><a href="#1-managing-support-tickets">1. Managing Support Tickets</a></li>
+    <li><a href="#2-generating-global-notifications">2. Generating Global Notifications</a></li>
+    <li><a href="#3-demo-approvals-and-admission-criteria">3. Demo Approvals and Admission Criteria</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -267,46 +269,72 @@
 </nav>
 <div class="td-content">
 	<h1>Support, Notifications, and Approvals</h1>
-	<div class="lead">Detailed click-by-click operations playbook</div>
+	<div class="lead">How to handle incoming support tickets, broadcast global alerts, and manage admission gates</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="support-tickets">Support Tickets</h2>
+	<p>This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.</p>
+<hr>
+<h2 id="1-managing-support-tickets">1. Managing Support Tickets</h2>
+<p>When a student or advisor submits a Help Center request, it routes to this global queue.</p>
 <ol>
-<li>Open Support Tickets.</li>
-<li>Filter by status and priority.</li>
-<li>Open ticket detail.</li>
-<li>Update status.</li>
-<li>Add resolution message.</li>
-<li>Save and verify status transition.</li>
+<li>Open <strong>Support Tickets</strong>.</li>
+<li>Immediately filter the queue by <strong>Priority: Urgent</strong> and <strong>Status: Pending</strong> to catch blockers.</li>
+<li>Click into a ticket to read the user&rsquo;s description and reproduction steps.</li>
+<li>Once you have a fix or answer, change the <strong>Status</strong> (e.g., from <em>In Progress</em> to <em>Resolved</em>).</li>
+<li>Type your official response in the Resolution Message field.</li>
+<li>Click <strong>Save</strong>. The user will see your response on their local Help Center dashboard.</li>
 </ol>
-<h2 id="notifications">Notifications</h2>
+<p><em>Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &ldquo;Resolution Message&rdquo; field before trying to change the status to Resolved.</em></p>
+<hr>
+<h2 id="2-generating-global-notifications">2. Generating Global Notifications</h2>
+<p>While Advisors notify their specific students, Super Admins can push alerts globally across all active organizations on the platform.</p>
 <ol>
-<li>Open Notifications.</li>
-<li>Click Create Notification.</li>
-<li>Enter title and message.</li>
-<li>Select target type (all, users, groups).</li>
-<li>Select recipients if needed.</li>
-<li>Send and verify history entry.</li>
+<li>Open <strong>Notifications</strong>.</li>
+<li>Click <strong>Create Notification</strong>.</li>
+<li>Choose your target scope extremely carefully:
+<ul>
+<li><strong>All Users:</strong> Every active student, parent, and advisor. (Use for major platform maintenance warnings only).</li>
+<li><strong>All Students:</strong> All students regardless of organization.</li>
+<li><strong>Selected Groups:</strong> Specific subsets if necessary.</li>
+</ul>
+</li>
+<li>Write your Title and Message, then hit <strong>Send</strong>.</li>
+<li>Once sent, verify it appears correctly in your broadcast history.</li>
 </ol>
-<h2 id="demo-approvals-and-admission-criteria">Demo Approvals and Admission Criteria</h2>
+<hr>
+<h2 id="3-demo-approvals-and-admission-criteria">3. Demo Approvals and Admission Criteria</h2>
+<p>If IDPicker is operating a gated launch or pilot program, you must manually approve access.</p>
 <ol>
-<li>Open Demo Approvals queue.</li>
-<li>Review request details.</li>
-<li>Approve or reject with notes where required.</li>
-<li>Open Admission Criteria module.</li>
-<li>Edit or review criteria entries.</li>
-<li>Save and verify publishing/active state.</li>
+<li>Open the <strong>Demo Approvals</strong> or <strong>Admission Criteria</strong> queue.</li>
+<li>Review the incoming request details submitted by prospective users or schools.</li>
+<li>Click <strong>Approve</strong> to officially provision their workspace and trigger the welcome email sequence.</li>
+<li>Click <strong>Reject</strong> if they do not meet compliance standards (you can usually append an internal note explaining the rejection).</li>
 </ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Ticket transitions fail silently.
-A: Reopen ticket and check required resolution fields before save.</p>
-<p>Q: Notification reached wrong audience.
-A: Always verify target mode before sending.</p>
-<p><img src="/images/user-manual/admin-panel/support-tickets.png" alt="Support Tickets Placeholder"></p>
-<p>Image placeholder: Ticket queue with status actions.</p>
-<p><img src="/images/user-manual/admin-panel/notifications.png" alt="Notifications Placeholder"></p>
-<p>Image placeholder: Notification compose modal with recipient selectors.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I accidentally sent a Global Notification to everyone</td>
+          <td>Platform notifications are instant and cannot be recalled. If the error was severe, send an immediate correction broadcast apologizing for the error</td>
+      </tr>
+      <tr>
+          <td>I approved a Demo request but the user got an error logging in</td>
+          <td>Verify the organization template mapped to their approval was fully provisioned. Sometimes the backend provisioning queue takes 30-60 seconds</td>
+      </tr>
+      <tr>
+          <td>Can I assign a ticket to a specific subadmin?</td>
+          <td>If your Support module supports assignment flags, use the &lsquo;Assignee&rsquo; dropdown inside the ticket detail before saving</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -335,7 +363,7 @@ A: Always verify target mode before sending.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIFN1cHBvcnQgVGlja2V0cwoKMS4gT3BlbiBTdXBwb3J0IFRpY2tldHMuCjIuIEZpbHRlciBieSBzdGF0dXMgYW5kIHByaW9yaXR5LgozLiBPcGVuIHRpY2tldCBkZXRhaWwuCjQuIFVwZGF0ZSBzdGF0dXMuCjUuIEFkZCByZXNvbHV0aW9uIG1lc3NhZ2UuCjYuIFNhdmUgYW5kIHZlcmlmeSBzdGF0dXMgdHJhbnNpdGlvbi4KCiMjIE5vdGlmaWNhdGlvbnMKCjEuIE9wZW4gTm90aWZpY2F0aW9ucy4KMi4gQ2xpY2sgQ3JlYXRlIE5vdGlmaWNhdGlvbi4KMy4gRW50ZXIgdGl0bGUgYW5kIG1lc3NhZ2UuCjQuIFNlbGVjdCB0YXJnZXQgdHlwZSAoYWxsLCB1c2VycywgZ3JvdXBzKS4KNS4gU2VsZWN0IHJlY2lwaWVudHMgaWYgbmVlZGVkLgo2LiBTZW5kIGFuZCB2ZXJpZnkgaGlzdG9yeSBlbnRyeS4KCiMjIERlbW8gQXBwcm92YWxzIGFuZCBBZG1pc3Npb24gQ3JpdGVyaWEKCjEuIE9wZW4gRGVtbyBBcHByb3ZhbHMgcXVldWUuCjIuIFJldmlldyByZXF1ZXN0IGRldGFpbHMuCjMuIEFwcHJvdmUgb3IgcmVqZWN0IHdpdGggbm90ZXMgd2hlcmUgcmVxdWlyZWQuCjQuIE9wZW4gQWRtaXNzaW9uIENyaXRlcmlhIG1vZHVsZS4KNS4gRWRpdCBvciByZXZpZXcgY3JpdGVyaWEgZW50cmllcy4KNi4gU2F2ZSBhbmQgdmVyaWZ5IHB1Ymxpc2hpbmcvYWN0aXZlIHN0YXRlLgoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKUTogVGlja2V0IHRyYW5zaXRpb25zIGZhaWwgc2lsZW50bHkuCkE6IFJlb3BlbiB0aWNrZXQgYW5kIGNoZWNrIHJlcXVpcmVkIHJlc29sdXRpb24gZmllbGRzIGJlZm9yZSBzYXZlLgoKUTogTm90aWZpY2F0aW9uIHJlYWNoZWQgd3JvbmcgYXVkaWVuY2UuCkE6IEFsd2F5cyB2ZXJpZnkgdGFyZ2V0IG1vZGUgYmVmb3JlIHNlbmRpbmcuCgohW1N1cHBvcnQgVGlja2V0cyBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZG1pbi1wYW5lbC9zdXBwb3J0LXRpY2tldHMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFRpY2tldCBxdWV1ZSB3aXRoIHN0YXR1cyBhY3Rpb25zLgoKIVtOb3RpZmljYXRpb25zIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL25vdGlmaWNhdGlvbnMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IE5vdGlmaWNhdGlvbiBjb21wb3NlIG1vZGFsIHdpdGggcmVjaXBpZW50IHNlbGVjdG9ycy4K</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgbW9kdWxlIGNvdmVycyB0aGUgb3BlcmF0aW9uYWwgd29ya2Zsb3dzIGZvciBnbG9iYWwgY3VzdG9tZXIgc3VwcG9ydCBhbmQgZ2F0aW5nIGFjY2VzcyB0byB0aGUgcGxhdGZvcm0gdmlhIGZvcm1hbCBhcHByb3ZhbHMuCgotLS0KCiMjIDEuIE1hbmFnaW5nIFN1cHBvcnQgVGlja2V0cwoKV2hlbiBhIHN0dWRlbnQgb3IgYWR2aXNvciBzdWJtaXRzIGEgSGVscCBDZW50ZXIgcmVxdWVzdCwgaXQgcm91dGVzIHRvIHRoaXMgZ2xvYmFsIHF1ZXVlLgoKMS4gT3BlbiAqKlN1cHBvcnQgVGlja2V0cyoqLgoyLiBJbW1lZGlhdGVseSBmaWx0ZXIgdGhlIHF1ZXVlIGJ5ICoqUHJpb3JpdHk6IFVyZ2VudCoqIGFuZCAqKlN0YXR1czogUGVuZGluZyoqIHRvIGNhdGNoIGJsb2NrZXJzLgozLiBDbGljayBpbnRvIGEgdGlja2V0IHRvIHJlYWQgdGhlIHVzZXIncyBkZXNjcmlwdGlvbiBhbmQgcmVwcm9kdWN0aW9uIHN0ZXBzLgo0LiBPbmNlIHlvdSBoYXZlIGEgZml4IG9yIGFuc3dlciwgY2hhbmdlIHRoZSAqKlN0YXR1cyoqIChlLmcuLCBmcm9tICpJbiBQcm9ncmVzcyogdG8gKlJlc29sdmVkKikuCjUuIFR5cGUgeW91ciBvZmZpY2lhbCByZXNwb25zZSBpbiB0aGUgUmVzb2x1dGlvbiBNZXNzYWdlIGZpZWxkLgo2LiBDbGljayAqKlNhdmUqKi4gVGhlIHVzZXIgd2lsbCBzZWUgeW91ciByZXNwb25zZSBvbiB0aGVpciBsb2NhbCBIZWxwIENlbnRlciBkYXNoYm9hcmQuCgoqTm90ZTogSWYgYSB0aWNrZXQgdHJhbnNpdGlvbiBmYWlscyBzaWxlbnRseSwgcmUtb3BlbiBpdC4gWW91IGxpa2VseSBmb3Jnb3QgdG8gZmlsbCBvdXQgYSBtYW5kYXRvcnkgIlJlc29sdXRpb24gTWVzc2FnZSIgZmllbGQgYmVmb3JlIHRyeWluZyB0byBjaGFuZ2UgdGhlIHN0YXR1cyB0byBSZXNvbHZlZC4qCgotLS0KCiMjIDIuIEdlbmVyYXRpbmcgR2xvYmFsIE5vdGlmaWNhdGlvbnMKCldoaWxlIEFkdmlzb3JzIG5vdGlmeSB0aGVpciBzcGVjaWZpYyBzdHVkZW50cywgU3VwZXIgQWRtaW5zIGNhbiBwdXNoIGFsZXJ0cyBnbG9iYWxseSBhY3Jvc3MgYWxsIGFjdGl2ZSBvcmdhbml6YXRpb25zIG9uIHRoZSBwbGF0Zm9ybS4KCjEuIE9wZW4gKipOb3RpZmljYXRpb25zKiouCjIuIENsaWNrICoqQ3JlYXRlIE5vdGlmaWNhdGlvbioqLgozLiBDaG9vc2UgeW91ciB0YXJnZXQgc2NvcGUgZXh0cmVtZWx5IGNhcmVmdWxseToKICAgLSAqKkFsbCBVc2VyczoqKiBFdmVyeSBhY3RpdmUgc3R1ZGVudCwgcGFyZW50LCBhbmQgYWR2aXNvci4gKFVzZSBmb3IgbWFqb3IgcGxhdGZvcm0gbWFpbnRlbmFuY2Ugd2FybmluZ3Mgb25seSkuCiAgIC0gKipBbGwgU3R1ZGVudHM6KiogQWxsIHN0dWRlbnRzIHJlZ2FyZGxlc3Mgb2Ygb3JnYW5pemF0aW9uLgogICAtICoqU2VsZWN0ZWQgR3JvdXBzOioqIFNwZWNpZmljIHN1YnNldHMgaWYgbmVjZXNzYXJ5Lgo0LiBXcml0ZSB5b3VyIFRpdGxlIGFuZCBNZXNzYWdlLCB0aGVuIGhpdCAqKlNlbmQqKi4KNS4gT25jZSBzZW50LCB2ZXJpZnkgaXQgYXBwZWFycyBjb3JyZWN0bHkgaW4geW91ciBicm9hZGNhc3QgaGlzdG9yeS4KCi0tLQoKIyMgMy4gRGVtbyBBcHByb3ZhbHMgYW5kIEFkbWlzc2lvbiBDcml0ZXJpYQoKSWYgSURQaWNrZXIgaXMgb3BlcmF0aW5nIGEgZ2F0ZWQgbGF1bmNoIG9yIHBpbG90IHByb2dyYW0sIHlvdSBtdXN0IG1hbnVhbGx5IGFwcHJvdmUgYWNjZXNzLgoKMS4gT3BlbiB0aGUgKipEZW1vIEFwcHJvdmFscyoqIG9yICoqQWRtaXNzaW9uIENyaXRlcmlhKiogcXVldWUuCjIuIFJldmlldyB0aGUgaW5jb21pbmcgcmVxdWVzdCBkZXRhaWxzIHN1Ym1pdHRlZCBieSBwcm9zcGVjdGl2ZSB1c2VycyBvciBzY2hvb2xzLgozLiBDbGljayAqKkFwcHJvdmUqKiB0byBvZmZpY2lhbGx5IHByb3Zpc2lvbiB0aGVpciB3b3Jrc3BhY2UgYW5kIHRyaWdnZXIgdGhlIHdlbGNvbWUgZW1haWwgc2VxdWVuY2UuCjQuIENsaWNrICoqUmVqZWN0KiogaWYgdGhleSBkbyBub3QgbWVldCBjb21wbGlhbmNlIHN0YW5kYXJkcyAoeW91IGNhbiB1c3VhbGx5IGFwcGVuZCBhbiBpbnRlcm5hbCBub3RlIGV4cGxhaW5pbmcgdGhlIHJlamVjdGlvbikuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEkgYWNjaWRlbnRhbGx5IHNlbnQgYSBHbG9iYWwgTm90aWZpY2F0aW9uIHRvIGV2ZXJ5b25lIHwgUGxhdGZvcm0gbm90aWZpY2F0aW9ucyBhcmUgaW5zdGFudCBhbmQgY2Fubm90IGJlIHJlY2FsbGVkLiBJZiB0aGUgZXJyb3Igd2FzIHNldmVyZSwgc2VuZCBhbiBpbW1lZGlhdGUgY29ycmVjdGlvbiBicm9hZGNhc3QgYXBvbG9naXppbmcgZm9yIHRoZSBlcnJvciB8CnwgSSBhcHByb3ZlZCBhIERlbW8gcmVxdWVzdCBidXQgdGhlIHVzZXIgZ290IGFuIGVycm9yIGxvZ2dpbmcgaW4gfCBWZXJpZnkgdGhlIG9yZ2FuaXphdGlvbiB0ZW1wbGF0ZSBtYXBwZWQgdG8gdGhlaXIgYXBwcm92YWwgd2FzIGZ1bGx5IHByb3Zpc2lvbmVkLiBTb21ldGltZXMgdGhlIGJhY2tlbmQgcHJvdmlzaW9uaW5nIHF1ZXVlIHRha2VzIDMwLTYwIHNlY29uZHMgfAp8IENhbiBJIGFzc2lnbiBhIHRpY2tldCB0byBhIHNwZWNpZmljIHN1YmFkbWluPyB8IElmIHlvdXIgU3VwcG9ydCBtb2R1bGUgc3VwcG9ydHMgYXNzaWdubWVudCBmbGFncywgdXNlIHRoZSAnQXNzaWduZWUnIGRyb3Bkb3duIGluc2lkZSB0aGUgdGlja2V0IGRldGFpbCBiZWZvcmUgc2F2aW5nIHwK</script>
 
 <style>
  

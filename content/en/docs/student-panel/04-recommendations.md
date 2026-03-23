@@ -1,65 +1,60 @@
 ---
 title: "04. Recommendation Guide"
-description: "Detailed click-by-click recommendations walkthrough"
+description: "How to interpret your AI-driven career and university recommendations"
 weight: 124
 draft: false
 ---
 
-This guide explains how students use recommendations, switch guidance track, and download reports.
+Once you complete your core assessments, IDPicker's AI generates a highly personalized list of recommendations. This guide explains how to use them to make informed decisions about your future.
 
-## Open Recommendations
+---
 
-1. In sidebar, click Recommendations.
-2. Wait for profile-based track to load.
-3. Read page header to confirm active mode:
-   - Career Recommendations
-   - University Recommendations
+## Exploring Your Recommendations
 
-## Understand Active Track
+1. In the sidebar, click **Recommendations**.
+2. The system will load your profile-based track (either *Career* or *University*).
+3. Scroll through the recommendation cards. 
+4. Click into any recommendation to open the detailed view, which explains *why* the AI believes this is a strong match for your specific assessment results.
 
-Track is usually determined by profile data:
+> **Tip:** Keep a personal shortlist of the options that excite you the most to discuss later with your Advisor or AI Mentor!
 
-- Grade 9-12 tends to map to Career track.
-- University-level or unknown fallback tends to map to University track.
+---
 
-## Use Recommendation List (Click-by-Click)
+## Understanding Guidance Tracks
 
-1. Scroll through recommendation cards/list.
-2. Open each recommendation detail.
-3. Compare options using your assessment outcomes.
-4. Save or note top choices externally if needed.
+IDPicker provides two distinct tracks depending on your current life stage. The platform automatically defaults to the most relevant track based on your profile:
 
-## Switch Guidance Track
+- **Career Track:** Recommended for high school students (Grades 9-12) focusing on long-term professional paths.
+- **University Track:** Recommended for older students focusing directly on higher education program selection.
 
-1. Scroll to Guidance Track section.
-2. Click switch action:
-   - Switch to Career
-   - Switch to University
-3. Wait for save confirmation.
-4. Re-check header and recommendation content.
+### Switching Between Tracks
 
-## Download Full Report (When Available)
+You are not locked into your default track. To explore the other side:
 
-1. Confirm Download Report button is visible.
-2. Click Download My Report.
-3. Wait for preparation state to finish.
-4. New tab opens with generated report link.
+1. Scroll to the **Guidance Track** switcher section at the top of the page.
+2. Click either **Switch to Career** or **Switch to University**.
+3. Wait a moment for the save confirmation.
+4. The page will refresh with an entirely new set of tailored recommendations.
 
-If button is not visible:
+---
 
-- Report availability is not enabled for current account/state.
+## Downloading Your Full Report
 
-## Common Student Questions
+If your account plan supports it, you can export your entire recommendation profile as a portable document.
 
-Q: Why am I seeing the wrong type of recommendations?
-A: Track is derived from profile education level or saved dashboard track. Use track switcher.
+1. Look for the **Download My Report** button at the top of the recommendations page.
+2. Click the button and wait for the preparation state to finish.
+3. A new tab will open containing a secure link to your generated PDF report.
 
-Q: I switched track but still see old content.
-A: Wait for save confirmation and refresh page once.
+*Note: If the download button is completely hidden, report generation is not enabled for your current account tier or organization policy.*
 
-Q: Download failed.
-A: Retry after a short delay and verify active login session.
+---
 
-![Recommendations Placeholder](/images/user-manual/student-panel/recommendations.png)
+## Common Questions
 
-Image placeholder: Recommendations page with visible track switcher and download action.
+| Situation | What to do |
+|---|---|
+| The recommendations feel inaccurate | Your recommendations are strictly tied to your assessment answers. Consider retaking the assessment if you rushed through it. |
+| I am seeing universities but I want careers | Use the Guidance Track switcher to manually change your focus |
+| I switched tracks but still see old content | Wait for the save confirmation and refresh the page |
+| Report download failed | Intermittent networks can interrupt generation. Wait 60 seconds and try again |

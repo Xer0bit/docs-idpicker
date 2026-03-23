@@ -1,85 +1,70 @@
 ---
 title: "Authentication and Account"
-description: "Detailed click-by-click parent authentication guide"
+description: "How parents sign in, register, and recover access to their dashboard"
 weight: 141
 draft: false
 ---
 
-This guide covers parent login, registration, verification, setup-password, and reset-password flows.
+Parents use the IDPicker Parent Panel to monitor their child's progress, review recommendations, and communicate with advisors. This guide covers how to get your account set up and securely log in.
 
-## A) Parent Login (Click-by-Click)
+---
 
-1. Open parent login URL from [Access URLs](../getting-started/access-urls/).
-2. Click email/username input.
-3. Enter your parent account email.
-4. Click password input.
-5. Enter password.
-6. Optional: Click eye icon to reveal password.
-7. Click Sign In.
-8. Wait for redirect to `/dashboard`.
+## 1. Registering a New Parent Account
 
-Expected result:
+If you are new to the platform:
 
-- Parent auth token cookie is set.
-- Parent dashboard loads.
+1. Open the [Parent Registration URL](/docs/getting-started/access-urls/).
+2. Fill out the registration form with your **Email**, **Full Name**, and a **Strong Password**.
+3. Check the consent checkbox at the bottom of the form.
+4. Click **Register**.
+5. The system will tell you to check your email for a verification link.
+6. Open your inbox, click the verification link, and you will be routed automatically back to the platform to log in.
 
-## B) Parent Registration (Click-by-Click)
+> **Verification Link Expired?** If you clicked the email verification link and it says expired, simply go to the login page, enter your email, and click the **Resend Verification** button.
 
-1. Open Register page.
-2. Fill email.
-3. Fill full name.
-4. Fill password.
-5. Enable consent checkbox.
-6. Click Register.
-7. Verify toast/confirmation message about email verification.
-8. Return to login.
+---
 
-## C) Verify Email
+## 2. Setting Up an Invited Account
 
-1. Open verification link from email.
-2. Wait for auto-verification.
-3. On success, parent is redirected to dashboard.
-4. If token invalid/expired, use resend verification.
+Often, schools or advisors will create a parent account on your behalf and send you an invitation.
 
-## D) Setup Password from Invitation Link
+1. Open your email inbox and find the invitation from IDPicker.
+2. Click the **Setup Password** link in the email.
+3. The browser will open a secure setup page.
+4. Enter a strong new password that you will remember, and confirm it.
+5. Submit the form, then sign in with your email and new password.
 
-1. Open setup-password URL with token.
-2. Wait for token validation.
-3. Enter new password (minimum length requirement applies).
-4. Confirm password.
-5. Submit.
-6. Return to login and sign in.
+---
 
-## E) Request Password Reset
+## 3. Signing In (Click-by-Click)
 
-1. Open login reset-password page.
-2. Enter parent email.
-3. Click Send Reset Link.
-4. Check inbox/spam folder.
+1. Open the Parent Login page.
+2. Click the **Email** field and enter your registered parent email address.
+3. Click the **Password** field and enter your password.
+4. Click **Sign In**.
+5. You will land directly on your [Parent Dashboard](/docs/parent-panel/dashboard-and-linked-overview/).
 
-## F) Complete Password Reset
+*If login fails, double-check your password spelling. Passwords are case-sensitive.*
 
-1. Open reset link with token.
-2. Enter new password.
-3. Confirm password.
-4. Submit reset.
-5. Log in with updated password.
+---
 
-## Common Parent Questions
+## 4. Resetting a Forgotten Password
 
-Q: Login returns parents-only error.
-A: Credentials belong to non-parent role; use correct parent account.
+If you forget your password, you can easily recover your account securely.
 
-Q: Verification link expired.
-A: Use resend verification action on verify-email page.
+1. On the login page, click **Forgot Password**.
+2. Enter your parent email address and click **Send Reset Link**.
+3. Check your email (and spam folder) for the reset message.
+4. Click the link in the email.
+5. Enter a new password, confirm it, and submit.
+6. Return to the login page and sign in with the new password.
 
-Q: Reset link works but password submit fails.
-A: Ensure minimum length and confirm-password match.
+---
 
-![Parent Login Placeholder](/images/user-manual/parent-panel/parent-login.png)
+## Common Questions
 
-Image placeholder: Parent login page with successful redirect.
-
-![Parent Verify Placeholder](/images/user-manual/parent-panel/parent-verify-email.png)
-
-Image placeholder: Verify-email success and resend fallback states.
+| Situation | What to do |
+|---|---|
+| I try to log in but get a "Parents Only" error | You are trying to log into the Parent portal using a Student or Advisor email address. Make sure you use the parent-specific link |
+| I reset my password but it won't let me submit | Your new password is likely too weak. It must meet the minimum length requirements (usually 8+ characters with a mix of numbers/letters) |
+| I stopped receiving emails | Check your spam/junk folder and ensure `noreply@idpicker.com` is whitelisted in your email provider |

@@ -19,23 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>01. Authentication Guide | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click authentication walkthrough">
+<meta name="description" content="How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs">
 <meta property="og:url" content="http://localhost:1313/docs/student-panel/01-authentication/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="01. Authentication Guide">
-  <meta property="og:description" content="Detailed click-by-click authentication walkthrough">
+  <meta property="og:description" content="How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-19T00:55:27+05:00">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="01. Authentication Guide">
-  <meta itemprop="description" content="Detailed click-by-click authentication walkthrough">
-  <meta itemprop="dateModified" content="2026-03-19T00:55:27+05:00">
-  <meta itemprop="wordCount" content="496">
+  <meta itemprop="description" content="How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="705">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="01. Authentication Guide">
-  <meta name="twitter:description" content="Detailed click-by-click authentication walkthrough">
+  <meta name="twitter:description" content="How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -242,14 +242,14 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-you-need-before-starting">What You Need Before Starting</a></li>
-    <li><a href="#a-sign-in-with-email-and-password-click-by-click">A) Sign In with Email and Password (Click-by-Click)</a></li>
-    <li><a href="#b-sign-in-with-google-click-by-click">B) Sign In with Google (Click-by-Click)</a></li>
-    <li><a href="#c-register-new-student-account-click-by-click">C) Register New Student Account (Click-by-Click)</a></li>
-    <li><a href="#d-verify-email-after-registration">D) Verify Email After Registration</a></li>
-    <li><a href="#e-forgot-password-request-reset-link">E) Forgot Password (Request Reset Link)</a></li>
-    <li><a href="#f-reset-password-from-email-link">F) Reset Password from Email Link</a></li>
-    <li><a href="#common-student-questions">Common Student Questions</a></li>
+    <li><a href="#before-you-begin">Before You Begin</a></li>
+    <li><a href="#sign-in-with-email-and-password">Sign In with Email and Password</a></li>
+    <li><a href="#sign-in-with-google">Sign In with Google</a></li>
+    <li><a href="#register-a-new-account">Register a New Account</a></li>
+    <li><a href="#verify-your-email">Verify Your Email</a></li>
+    <li><a href="#forgot-password">Forgot Password</a></li>
+    <li><a href="#reset-password-from-the-email-link">Reset Password From the Email Link</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -273,128 +273,150 @@
 </nav>
 <div class="td-content">
 	<h1>01. Authentication Guide</h1>
-	<div class="lead">Detailed click-by-click authentication walkthrough</div>
+	<div class="lead">How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide explains exactly how a student signs in, registers, verifies email, and recovers account access.</p>
-<h2 id="what-you-need-before-starting">What You Need Before Starting</h2>
+	<p>Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.</p>
+<hr>
+<h2 id="before-you-begin">Before You Begin</h2>
+<p>Make sure you have:</p>
 <ul>
-<li>Student login URL from <a href="../getting-started/access-urls/">Access URLs</a></li>
-<li>Valid email address</li>
-<li>Stable internet connection</li>
-<li>Access to your email inbox (and spam folder)</li>
+<li>The <strong>student login URL</strong> for your environment — see <a href="/docs/getting-started/access-urls/">Access URLs</a></li>
+<li>A valid email address you can check immediately</li>
+<li>A stable internet connection and an up-to-date browser</li>
 </ul>
-<h2 id="a-sign-in-with-email-and-password-click-by-click">A) Sign In with Email and Password (Click-by-Click)</h2>
+<hr>
+<h2 id="sign-in-with-email-and-password">Sign In with Email and Password</h2>
+<p>This is the fastest path for returning students.</p>
+<ol>
+<li>Open the student login URL.</li>
+<li>Click the <strong>Email</strong> field and type your registered email.</li>
+<li>Click the <strong>Password</strong> field and type your password.</li>
+<li><em>(Optional)</em> Click the <strong>eye icon</strong> next to the password field to reveal what you typed.</li>
+<li>Click <strong>Sign In</strong> and wait for the redirect.</li>
+</ol>
+<p><strong>What happens next:</strong></p>
+<ul>
+<li>You land on your <strong>Dashboard</strong>.</li>
+<li>If you were navigating to a specific page before login, you are sent directly there instead.</li>
+</ul>
+<p><strong>If sign-in fails:</strong></p>
+<ul>
+<li>Double-check for typos — passwords are case-sensitive.</li>
+<li>If you see a message about email verification, follow the <a href="#verify-your-email">Verify Your Email</a> section below.</li>
+<li>If you have forgotten your password, use <a href="#forgot-password">Forgot Password</a>.</li>
+</ul>
+<hr>
+<h2 id="sign-in-with-google">Sign In with Google</h2>
+<p>Faster sign-in without a separate password.</p>
 <ol>
 <li>Open the student login page.</li>
-<li>Click the Email field.</li>
-<li>Type your registered email.</li>
-<li>Click the Password field.</li>
-<li>Type your password.</li>
-<li>Optional: Click the eye icon to reveal password and verify typing.</li>
-<li>Click Sign In.</li>
-<li>Wait for redirect.</li>
+<li>Click <strong>Continue with Google</strong>.</li>
+<li>A Google account picker opens — select the account you want to use.</li>
+<li>Approve the consent screen if prompted.</li>
+<li>You are redirected back to IDPicker and land on the dashboard.</li>
 </ol>
-<p>Expected result:</p>
+<p><strong>If the login window stays on the same page:</strong></p>
 <ul>
-<li>You are redirected to dashboard.</li>
-<li>If you were opening a protected page before login, you are redirected there.</li>
+<li>Your browser may be blocking popups. Allow popups for this site and try again.</li>
+<li>Make sure you are not using a private/incognito window with strict tracking prevention.</li>
 </ul>
-<p>If it fails:</p>
+<hr>
+<h2 id="register-a-new-account">Register a New Account</h2>
+<p>New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.</p>
+<ol>
+<li>Click <strong>Sign Up</strong> on the login page.</li>
+<li>Fill in your <strong>name</strong>, <strong>email</strong>, and a strong <strong>password</strong>.
 <ul>
-<li>Check that both fields are filled.</li>
-<li>Recheck uppercase/lowercase in password.</li>
-<li>If message indicates verification is required, follow section C.</li>
+<li>Password must contain at least one uppercase letter, one number, and one special character.</li>
 </ul>
-<h2 id="b-sign-in-with-google-click-by-click">B) Sign In with Google (Click-by-Click)</h2>
-<ol>
-<li>Open login page.</li>
-<li>Click Continue with Google.</li>
-<li>Choose Google account.</li>
-<li>Approve consent if prompted.</li>
-<li>Return to IDPicker tab/window and wait for callback completion.</li>
+</li>
+<li>Confirm the password and check the consent checkbox.</li>
+<li>Complete the <strong>interests and goals</strong> step.</li>
+<li>Fill out your <strong>profile</strong> (education level, gender, social links, occupation).</li>
+<li>Select an organization if prompted, or continue with invitation-prefilled values.</li>
+<li>Complete the <strong>human verification</strong> step.</li>
+<li>Click the final <strong>Register</strong> button.</li>
 </ol>
-<p>Expected result:</p>
+<blockquote>
+<p><strong>Tip:</strong> If you were invited by an advisor, your organization field may already be filled in. Do not change it unless instructed.</p>
+</blockquote>
+<p><strong>Common registration blockers:</strong></p>
 <ul>
-<li>You are authenticated and redirected to dashboard flow.</li>
+<li>Duplicate email → use a different address or try <a href="#forgot-password">Forgot Password</a> if you already registered.</li>
+<li>Consent checkbox not checked → scroll down and tick the box.</li>
+<li>Weak password → make sure it meets all strength requirements shown on screen.</li>
 </ul>
-<p>If it fails:</p>
+<hr>
+<h2 id="verify-your-email">Verify Your Email</h2>
+<p>After registration, IDPicker sends a verification email.</p>
+<ol>
+<li>Open your <strong>email inbox</strong> (check your spam/junk folder too).</li>
+<li>Find the email from IDPicker with subject <strong>Verify your email</strong>.</li>
+<li>Click the <strong>verification link</strong> inside.</li>
+<li>Wait for the verification confirmation page.</li>
+<li>Once verified, you are directed to your dashboard or profile completion.</li>
+</ol>
+<p><strong>If the link says it has expired:</strong></p>
+<ol>
+<li>Return to the login page.</li>
+<li>Enter your email and click <strong>Resend Verification Email</strong>.</li>
+<li>Open the new email and click the fresh link.</li>
+</ol>
+<hr>
+<h2 id="forgot-password">Forgot Password</h2>
+<p>Use this if you cannot remember your current password.</p>
+<ol>
+<li>Open the login page and click <strong>Forgot Password</strong>.</li>
+<li>Enter your registered email address.</li>
+<li>Click <strong>Send Reset Link</strong>.</li>
+<li>Check your inbox and spam folder for the reset email.</li>
+</ol>
+<hr>
+<h2 id="reset-password-from-the-email-link">Reset Password From the Email Link</h2>
+<p>After requesting a reset, you will receive a link by email.</p>
+<ol>
+<li>Click the link from the IDPicker reset email.</li>
+<li>Wait a moment for the token to be validated.</li>
+<li>Enter your <strong>new password</strong>.</li>
+<li>Enter the same <strong>password again</strong> to confirm.</li>
+<li>Watch the strength indicator — make sure it reaches acceptable strength.</li>
+<li>Click <strong>Reset Password</strong>.</li>
+<li>Return to the login page and sign in with your new password.</li>
+</ol>
+<p><strong>If the link says the token is invalid or expired:</strong></p>
 <ul>
-<li>Allow popups/new tab in browser.</li>
-<li>Retry from login page.</li>
-<li>If account linking is incomplete, complete requested follow-up prompts.</li>
+<li>Request a new reset link from the <a href="#forgot-password">Forgot Password</a> step above.</li>
 </ul>
-<h2 id="c-register-new-student-account-click-by-click">C) Register New Student Account (Click-by-Click)</h2>
-<p>Registration is multi-step. The exact order can vary by invitation and configuration.</p>
-<p>Typical sequence:</p>
-<ol>
-<li>Click Sign Up on login page.</li>
-<li>Fill account details (name, email, password).</li>
-<li>Confirm password and consent.</li>
-<li>Continue to interests and goals selections.</li>
-<li>Fill profile information (education level, gender, social links, occupation).</li>
-<li>Select organization or continue with invitation-prefilled values.</li>
-<li>Complete human verification.</li>
-<li>Click final registration action.</li>
-</ol>
-<p>Validation rules to watch:</p>
-<ul>
-<li>Password must satisfy strength checks (length, uppercase, lowercase, number, special character).</li>
-<li>Duplicate email is blocked.</li>
-<li>Consent is required.</li>
-</ul>
-<h2 id="d-verify-email-after-registration">D) Verify Email After Registration</h2>
-<ol>
-<li>Open your email inbox.</li>
-<li>Find verification email from IDPicker.</li>
-<li>Click verification link.</li>
-<li>Wait for verification status page.</li>
-<li>If valid, continue to dashboard/profile completion.</li>
-</ol>
-<p>If link is expired:</p>
-<ol>
-<li>Return to login.</li>
-<li>Enter your email.</li>
-<li>Use resend verification action.</li>
-<li>Open latest verification email and retry.</li>
-</ol>
-<h2 id="e-forgot-password-request-reset-link">E) Forgot Password (Request Reset Link)</h2>
-<ol>
-<li>Open login page.</li>
-<li>Click Forgot Password.</li>
-<li>Click email input.</li>
-<li>Enter registered email.</li>
-<li>Click Send Reset Link.</li>
-<li>Check inbox and spam for reset message.</li>
-</ol>
-<h2 id="f-reset-password-from-email-link">F) Reset Password from Email Link</h2>
-<ol>
-<li>Open reset link from email.</li>
-<li>Wait for token validation screen to finish.</li>
-<li>Enter new password.</li>
-<li>Enter confirm password.</li>
-<li>Verify password strength indicator is acceptable.</li>
-<li>Click Reset Password.</li>
-<li>Return to login and sign in with new password.</li>
-</ol>
-<p>If token is invalid/expired:</p>
-<ul>
-<li>Go back to Forgot Password and request a fresh link.</li>
-</ul>
-<h2 id="common-student-questions">Common Student Questions</h2>
-<p>Q: I entered correct password but still cannot access account.
-A: Most common cause is unverified email. Use resend verification from login.</p>
-<p>Q: I clicked Google login but stayed on same page.
-A: Check popup blocking, then retry.</p>
-<p>Q: Reset link opened but does not allow password update.
-A: Reset token likely expired; request a new one.</p>
-<p><img src="/images/user-manual/student-panel/auth-login-email.png" alt="Student Login Placeholder"></p>
-<p>Image placeholder: Login form with filled fields and Sign In button.</p>
-<p><img src="/images/user-manual/student-panel/auth-login-google.png" alt="Google OAuth Placeholder"></p>
-<p>Image placeholder: Google selection + successful callback state.</p>
-<p><img src="/images/user-manual/student-panel/auth-password-reset.png" alt="Password Reset Placeholder"></p>
-<p>Image placeholder: Token-valid reset page with password strength checks.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Correct password rejected</td>
+          <td>Likely unverified email — resend verification from the login page</td>
+      </tr>
+      <tr>
+          <td>Google login popup closed immediately</td>
+          <td>Enable popups for the IDPicker domain in your browser settings</td>
+      </tr>
+      <tr>
+          <td>Reset link opens but password field is grayed out</td>
+          <td>Token expired — request a fresh reset link</td>
+      </tr>
+      <tr>
+          <td>Registration stuck on verification</td>
+          <td>Check spam folder; if email is over 30 minutes old, resend</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -423,7 +445,7 @@ A: Reset token likely expired; request a new one.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgZXhwbGFpbnMgZXhhY3RseSBob3cgYSBzdHVkZW50IHNpZ25zIGluLCByZWdpc3RlcnMsIHZlcmlmaWVzIGVtYWlsLCBhbmQgcmVjb3ZlcnMgYWNjb3VudCBhY2Nlc3MuCgojIyBXaGF0IFlvdSBOZWVkIEJlZm9yZSBTdGFydGluZwoKLSBTdHVkZW50IGxvZ2luIFVSTCBmcm9tIFtBY2Nlc3MgVVJMc10oLi4vZ2V0dGluZy1zdGFydGVkL2FjY2Vzcy11cmxzLykKLSBWYWxpZCBlbWFpbCBhZGRyZXNzCi0gU3RhYmxlIGludGVybmV0IGNvbm5lY3Rpb24KLSBBY2Nlc3MgdG8geW91ciBlbWFpbCBpbmJveCAoYW5kIHNwYW0gZm9sZGVyKQoKIyMgQSkgU2lnbiBJbiB3aXRoIEVtYWlsIGFuZCBQYXNzd29yZCAoQ2xpY2stYnktQ2xpY2spCgoxLiBPcGVuIHRoZSBzdHVkZW50IGxvZ2luIHBhZ2UuCjIuIENsaWNrIHRoZSBFbWFpbCBmaWVsZC4KMy4gVHlwZSB5b3VyIHJlZ2lzdGVyZWQgZW1haWwuCjQuIENsaWNrIHRoZSBQYXNzd29yZCBmaWVsZC4KNS4gVHlwZSB5b3VyIHBhc3N3b3JkLgo2LiBPcHRpb25hbDogQ2xpY2sgdGhlIGV5ZSBpY29uIHRvIHJldmVhbCBwYXNzd29yZCBhbmQgdmVyaWZ5IHR5cGluZy4KNy4gQ2xpY2sgU2lnbiBJbi4KOC4gV2FpdCBmb3IgcmVkaXJlY3QuCgpFeHBlY3RlZCByZXN1bHQ6CgotIFlvdSBhcmUgcmVkaXJlY3RlZCB0byBkYXNoYm9hcmQuCi0gSWYgeW91IHdlcmUgb3BlbmluZyBhIHByb3RlY3RlZCBwYWdlIGJlZm9yZSBsb2dpbiwgeW91IGFyZSByZWRpcmVjdGVkIHRoZXJlLgoKSWYgaXQgZmFpbHM6CgotIENoZWNrIHRoYXQgYm90aCBmaWVsZHMgYXJlIGZpbGxlZC4KLSBSZWNoZWNrIHVwcGVyY2FzZS9sb3dlcmNhc2UgaW4gcGFzc3dvcmQuCi0gSWYgbWVzc2FnZSBpbmRpY2F0ZXMgdmVyaWZpY2F0aW9uIGlzIHJlcXVpcmVkLCBmb2xsb3cgc2VjdGlvbiBDLgoKIyMgQikgU2lnbiBJbiB3aXRoIEdvb2dsZSAoQ2xpY2stYnktQ2xpY2spCgoxLiBPcGVuIGxvZ2luIHBhZ2UuCjIuIENsaWNrIENvbnRpbnVlIHdpdGggR29vZ2xlLgozLiBDaG9vc2UgR29vZ2xlIGFjY291bnQuCjQuIEFwcHJvdmUgY29uc2VudCBpZiBwcm9tcHRlZC4KNS4gUmV0dXJuIHRvIElEUGlja2VyIHRhYi93aW5kb3cgYW5kIHdhaXQgZm9yIGNhbGxiYWNrIGNvbXBsZXRpb24uCgpFeHBlY3RlZCByZXN1bHQ6CgotIFlvdSBhcmUgYXV0aGVudGljYXRlZCBhbmQgcmVkaXJlY3RlZCB0byBkYXNoYm9hcmQgZmxvdy4KCklmIGl0IGZhaWxzOgoKLSBBbGxvdyBwb3B1cHMvbmV3IHRhYiBpbiBicm93c2VyLgotIFJldHJ5IGZyb20gbG9naW4gcGFnZS4KLSBJZiBhY2NvdW50IGxpbmtpbmcgaXMgaW5jb21wbGV0ZSwgY29tcGxldGUgcmVxdWVzdGVkIGZvbGxvdy11cCBwcm9tcHRzLgoKIyMgQykgUmVnaXN0ZXIgTmV3IFN0dWRlbnQgQWNjb3VudCAoQ2xpY2stYnktQ2xpY2spCgpSZWdpc3RyYXRpb24gaXMgbXVsdGktc3RlcC4gVGhlIGV4YWN0IG9yZGVyIGNhbiB2YXJ5IGJ5IGludml0YXRpb24gYW5kIGNvbmZpZ3VyYXRpb24uCgpUeXBpY2FsIHNlcXVlbmNlOgoKMS4gQ2xpY2sgU2lnbiBVcCBvbiBsb2dpbiBwYWdlLgoyLiBGaWxsIGFjY291bnQgZGV0YWlscyAobmFtZSwgZW1haWwsIHBhc3N3b3JkKS4KMy4gQ29uZmlybSBwYXNzd29yZCBhbmQgY29uc2VudC4KNC4gQ29udGludWUgdG8gaW50ZXJlc3RzIGFuZCBnb2FscyBzZWxlY3Rpb25zLgo1LiBGaWxsIHByb2ZpbGUgaW5mb3JtYXRpb24gKGVkdWNhdGlvbiBsZXZlbCwgZ2VuZGVyLCBzb2NpYWwgbGlua3MsIG9jY3VwYXRpb24pLgo2LiBTZWxlY3Qgb3JnYW5pemF0aW9uIG9yIGNvbnRpbnVlIHdpdGggaW52aXRhdGlvbi1wcmVmaWxsZWQgdmFsdWVzLgo3LiBDb21wbGV0ZSBodW1hbiB2ZXJpZmljYXRpb24uCjguIENsaWNrIGZpbmFsIHJlZ2lzdHJhdGlvbiBhY3Rpb24uCgpWYWxpZGF0aW9uIHJ1bGVzIHRvIHdhdGNoOgoKLSBQYXNzd29yZCBtdXN0IHNhdGlzZnkgc3RyZW5ndGggY2hlY2tzIChsZW5ndGgsIHVwcGVyY2FzZSwgbG93ZXJjYXNlLCBudW1iZXIsIHNwZWNpYWwgY2hhcmFjdGVyKS4KLSBEdXBsaWNhdGUgZW1haWwgaXMgYmxvY2tlZC4KLSBDb25zZW50IGlzIHJlcXVpcmVkLgoKIyMgRCkgVmVyaWZ5IEVtYWlsIEFmdGVyIFJlZ2lzdHJhdGlvbgoKMS4gT3BlbiB5b3VyIGVtYWlsIGluYm94LgoyLiBGaW5kIHZlcmlmaWNhdGlvbiBlbWFpbCBmcm9tIElEUGlja2VyLgozLiBDbGljayB2ZXJpZmljYXRpb24gbGluay4KNC4gV2FpdCBmb3IgdmVyaWZpY2F0aW9uIHN0YXR1cyBwYWdlLgo1LiBJZiB2YWxpZCwgY29udGludWUgdG8gZGFzaGJvYXJkL3Byb2ZpbGUgY29tcGxldGlvbi4KCklmIGxpbmsgaXMgZXhwaXJlZDoKCjEuIFJldHVybiB0byBsb2dpbi4KMi4gRW50ZXIgeW91ciBlbWFpbC4KMy4gVXNlIHJlc2VuZCB2ZXJpZmljYXRpb24gYWN0aW9uLgo0LiBPcGVuIGxhdGVzdCB2ZXJpZmljYXRpb24gZW1haWwgYW5kIHJldHJ5LgoKIyMgRSkgRm9yZ290IFBhc3N3b3JkIChSZXF1ZXN0IFJlc2V0IExpbmspCgoxLiBPcGVuIGxvZ2luIHBhZ2UuCjIuIENsaWNrIEZvcmdvdCBQYXNzd29yZC4KMy4gQ2xpY2sgZW1haWwgaW5wdXQuCjQuIEVudGVyIHJlZ2lzdGVyZWQgZW1haWwuCjUuIENsaWNrIFNlbmQgUmVzZXQgTGluay4KNi4gQ2hlY2sgaW5ib3ggYW5kIHNwYW0gZm9yIHJlc2V0IG1lc3NhZ2UuCgojIyBGKSBSZXNldCBQYXNzd29yZCBmcm9tIEVtYWlsIExpbmsKCjEuIE9wZW4gcmVzZXQgbGluayBmcm9tIGVtYWlsLgoyLiBXYWl0IGZvciB0b2tlbiB2YWxpZGF0aW9uIHNjcmVlbiB0byBmaW5pc2guCjMuIEVudGVyIG5ldyBwYXNzd29yZC4KNC4gRW50ZXIgY29uZmlybSBwYXNzd29yZC4KNS4gVmVyaWZ5IHBhc3N3b3JkIHN0cmVuZ3RoIGluZGljYXRvciBpcyBhY2NlcHRhYmxlLgo2LiBDbGljayBSZXNldCBQYXNzd29yZC4KNy4gUmV0dXJuIHRvIGxvZ2luIGFuZCBzaWduIGluIHdpdGggbmV3IHBhc3N3b3JkLgoKSWYgdG9rZW4gaXMgaW52YWxpZC9leHBpcmVkOgoKLSBHbyBiYWNrIHRvIEZvcmdvdCBQYXNzd29yZCBhbmQgcmVxdWVzdCBhIGZyZXNoIGxpbmsuCgojIyBDb21tb24gU3R1ZGVudCBRdWVzdGlvbnMKClE6IEkgZW50ZXJlZCBjb3JyZWN0IHBhc3N3b3JkIGJ1dCBzdGlsbCBjYW5ub3QgYWNjZXNzIGFjY291bnQuCkE6IE1vc3QgY29tbW9uIGNhdXNlIGlzIHVudmVyaWZpZWQgZW1haWwuIFVzZSByZXNlbmQgdmVyaWZpY2F0aW9uIGZyb20gbG9naW4uCgpROiBJIGNsaWNrZWQgR29vZ2xlIGxvZ2luIGJ1dCBzdGF5ZWQgb24gc2FtZSBwYWdlLgpBOiBDaGVjayBwb3B1cCBibG9ja2luZywgdGhlbiByZXRyeS4KClE6IFJlc2V0IGxpbmsgb3BlbmVkIGJ1dCBkb2VzIG5vdCBhbGxvdyBwYXNzd29yZCB1cGRhdGUuCkE6IFJlc2V0IHRva2VuIGxpa2VseSBleHBpcmVkOyByZXF1ZXN0IGEgbmV3IG9uZS4KCiFbU3R1ZGVudCBMb2dpbiBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2F1dGgtbG9naW4tZW1haWwucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IExvZ2luIGZvcm0gd2l0aCBmaWxsZWQgZmllbGRzIGFuZCBTaWduIEluIGJ1dHRvbi4KCiFbR29vZ2xlIE9BdXRoIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXV0aC1sb2dpbi1nb29nbGUucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEdvb2dsZSBzZWxlY3Rpb24gKyBzdWNjZXNzZnVsIGNhbGxiYWNrIHN0YXRlLgoKIVtQYXNzd29yZCBSZXNldCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2F1dGgtcGFzc3dvcmQtcmVzZXQucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFRva2VuLXZhbGlkIHJlc2V0IHBhZ2Ugd2l0aCBwYXNzd29yZCBzdHJlbmd0aCBjaGVja3MuCg==</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">CkV2ZXJ5dGhpbmcgc3R1ZGVudHMgbmVlZCB0byBjcmVhdGUgYW4gYWNjb3VudCwgc2lnbiBpbiwgYW5kIHJlY292ZXIgYWNjZXNzIHN0YXJ0cyBoZXJlLiBGb2xsb3cgZWFjaCBzZWN0aW9uIGZyb20gdG9wIHRvIGJvdHRvbSB0aGUgZmlyc3QgdGltZSB0aHJvdWdoOyByZXR1cm5pbmcgdXNlcnMgY2FuIGp1bXAgZGlyZWN0bHkgdG8gdGhlIHJlbGV2YW50IGZsb3cuCgotLS0KCiMjIEJlZm9yZSBZb3UgQmVnaW4KCk1ha2Ugc3VyZSB5b3UgaGF2ZToKCi0gVGhlICoqc3R1ZGVudCBsb2dpbiBVUkwqKiBmb3IgeW91ciBlbnZpcm9ubWVudCDigJQgc2VlIFtBY2Nlc3MgVVJMc10oL2RvY3MvZ2V0dGluZy1zdGFydGVkL2FjY2Vzcy11cmxzLykKLSBBIHZhbGlkIGVtYWlsIGFkZHJlc3MgeW91IGNhbiBjaGVjayBpbW1lZGlhdGVseQotIEEgc3RhYmxlIGludGVybmV0IGNvbm5lY3Rpb24gYW5kIGFuIHVwLXRvLWRhdGUgYnJvd3NlcgoKLS0tCgojIyBTaWduIEluIHdpdGggRW1haWwgYW5kIFBhc3N3b3JkCgpUaGlzIGlzIHRoZSBmYXN0ZXN0IHBhdGggZm9yIHJldHVybmluZyBzdHVkZW50cy4KCjEuIE9wZW4gdGhlIHN0dWRlbnQgbG9naW4gVVJMLgoyLiBDbGljayB0aGUgKipFbWFpbCoqIGZpZWxkIGFuZCB0eXBlIHlvdXIgcmVnaXN0ZXJlZCBlbWFpbC4KMy4gQ2xpY2sgdGhlICoqUGFzc3dvcmQqKiBmaWVsZCBhbmQgdHlwZSB5b3VyIHBhc3N3b3JkLgo0LiAqKE9wdGlvbmFsKSogQ2xpY2sgdGhlICoqZXllIGljb24qKiBuZXh0IHRvIHRoZSBwYXNzd29yZCBmaWVsZCB0byByZXZlYWwgd2hhdCB5b3UgdHlwZWQuCjUuIENsaWNrICoqU2lnbiBJbioqIGFuZCB3YWl0IGZvciB0aGUgcmVkaXJlY3QuCgoqKldoYXQgaGFwcGVucyBuZXh0OioqCi0gWW91IGxhbmQgb24geW91ciAqKkRhc2hib2FyZCoqLgotIElmIHlvdSB3ZXJlIG5hdmlnYXRpbmcgdG8gYSBzcGVjaWZpYyBwYWdlIGJlZm9yZSBsb2dpbiwgeW91IGFyZSBzZW50IGRpcmVjdGx5IHRoZXJlIGluc3RlYWQuCgoqKklmIHNpZ24taW4gZmFpbHM6KioKLSBEb3VibGUtY2hlY2sgZm9yIHR5cG9zIOKAlCBwYXNzd29yZHMgYXJlIGNhc2Utc2Vuc2l0aXZlLgotIElmIHlvdSBzZWUgYSBtZXNzYWdlIGFib3V0IGVtYWlsIHZlcmlmaWNhdGlvbiwgZm9sbG93IHRoZSBbVmVyaWZ5IFlvdXIgRW1haWxdKCN2ZXJpZnkteW91ci1lbWFpbCkgc2VjdGlvbiBiZWxvdy4KLSBJZiB5b3UgaGF2ZSBmb3Jnb3R0ZW4geW91ciBwYXNzd29yZCwgdXNlIFtGb3Jnb3QgUGFzc3dvcmRdKCNmb3Jnb3QtcGFzc3dvcmQpLgoKLS0tCgojIyBTaWduIEluIHdpdGggR29vZ2xlCgpGYXN0ZXIgc2lnbi1pbiB3aXRob3V0IGEgc2VwYXJhdGUgcGFzc3dvcmQuCgoxLiBPcGVuIHRoZSBzdHVkZW50IGxvZ2luIHBhZ2UuCjIuIENsaWNrICoqQ29udGludWUgd2l0aCBHb29nbGUqKi4KMy4gQSBHb29nbGUgYWNjb3VudCBwaWNrZXIgb3BlbnMg4oCUIHNlbGVjdCB0aGUgYWNjb3VudCB5b3Ugd2FudCB0byB1c2UuCjQuIEFwcHJvdmUgdGhlIGNvbnNlbnQgc2NyZWVuIGlmIHByb21wdGVkLgo1LiBZb3UgYXJlIHJlZGlyZWN0ZWQgYmFjayB0byBJRFBpY2tlciBhbmQgbGFuZCBvbiB0aGUgZGFzaGJvYXJkLgoKKipJZiB0aGUgbG9naW4gd2luZG93IHN0YXlzIG9uIHRoZSBzYW1lIHBhZ2U6KioKLSBZb3VyIGJyb3dzZXIgbWF5IGJlIGJsb2NraW5nIHBvcHVwcy4gQWxsb3cgcG9wdXBzIGZvciB0aGlzIHNpdGUgYW5kIHRyeSBhZ2Fpbi4KLSBNYWtlIHN1cmUgeW91IGFyZSBub3QgdXNpbmcgYSBwcml2YXRlL2luY29nbml0byB3aW5kb3cgd2l0aCBzdHJpY3QgdHJhY2tpbmcgcHJldmVudGlvbi4KCi0tLQoKIyMgUmVnaXN0ZXIgYSBOZXcgQWNjb3VudAoKTmV3IHN0dWRlbnRzIGZvbGxvdyBhIG11bHRpLXN0ZXAgd2l6YXJkLiBUaGUgZXhhY3Qgc3RlcHMgZGVwZW5kIG9uIHdoZXRoZXIgeW91IHJlY2VpdmVkIGFuIGludml0YXRpb24gbGluay4KCjEuIENsaWNrICoqU2lnbiBVcCoqIG9uIHRoZSBsb2dpbiBwYWdlLgoyLiBGaWxsIGluIHlvdXIgKipuYW1lKiosICoqZW1haWwqKiwgYW5kIGEgc3Ryb25nICoqcGFzc3dvcmQqKi4KICAgLSBQYXNzd29yZCBtdXN0IGNvbnRhaW4gYXQgbGVhc3Qgb25lIHVwcGVyY2FzZSBsZXR0ZXIsIG9uZSBudW1iZXIsIGFuZCBvbmUgc3BlY2lhbCBjaGFyYWN0ZXIuCjMuIENvbmZpcm0gdGhlIHBhc3N3b3JkIGFuZCBjaGVjayB0aGUgY29uc2VudCBjaGVja2JveC4KNC4gQ29tcGxldGUgdGhlICoqaW50ZXJlc3RzIGFuZCBnb2FscyoqIHN0ZXAuCjUuIEZpbGwgb3V0IHlvdXIgKipwcm9maWxlKiogKGVkdWNhdGlvbiBsZXZlbCwgZ2VuZGVyLCBzb2NpYWwgbGlua3MsIG9jY3VwYXRpb24pLgo2LiBTZWxlY3QgYW4gb3JnYW5pemF0aW9uIGlmIHByb21wdGVkLCBvciBjb250aW51ZSB3aXRoIGludml0YXRpb24tcHJlZmlsbGVkIHZhbHVlcy4KNy4gQ29tcGxldGUgdGhlICoqaHVtYW4gdmVyaWZpY2F0aW9uKiogc3RlcC4KOC4gQ2xpY2sgdGhlIGZpbmFsICoqUmVnaXN0ZXIqKiBidXR0b24uCgo&#43;ICoqVGlwOioqIElmIHlvdSB3ZXJlIGludml0ZWQgYnkgYW4gYWR2aXNvciwgeW91ciBvcmdhbml6YXRpb24gZmllbGQgbWF5IGFscmVhZHkgYmUgZmlsbGVkIGluLiBEbyBub3QgY2hhbmdlIGl0IHVubGVzcyBpbnN0cnVjdGVkLgoKKipDb21tb24gcmVnaXN0cmF0aW9uIGJsb2NrZXJzOioqCi0gRHVwbGljYXRlIGVtYWlsIOKGkiB1c2UgYSBkaWZmZXJlbnQgYWRkcmVzcyBvciB0cnkgW0ZvcmdvdCBQYXNzd29yZF0oI2ZvcmdvdC1wYXNzd29yZCkgaWYgeW91IGFscmVhZHkgcmVnaXN0ZXJlZC4KLSBDb25zZW50IGNoZWNrYm94IG5vdCBjaGVja2VkIOKGkiBzY3JvbGwgZG93biBhbmQgdGljayB0aGUgYm94LgotIFdlYWsgcGFzc3dvcmQg4oaSIG1ha2Ugc3VyZSBpdCBtZWV0cyBhbGwgc3RyZW5ndGggcmVxdWlyZW1lbnRzIHNob3duIG9uIHNjcmVlbi4KCi0tLQoKIyMgVmVyaWZ5IFlvdXIgRW1haWwKCkFmdGVyIHJlZ2lzdHJhdGlvbiwgSURQaWNrZXIgc2VuZHMgYSB2ZXJpZmljYXRpb24gZW1haWwuCgoxLiBPcGVuIHlvdXIgKiplbWFpbCBpbmJveCoqIChjaGVjayB5b3VyIHNwYW0vanVuayBmb2xkZXIgdG9vKS4KMi4gRmluZCB0aGUgZW1haWwgZnJvbSBJRFBpY2tlciB3aXRoIHN1YmplY3QgKipWZXJpZnkgeW91ciBlbWFpbCoqLgozLiBDbGljayB0aGUgKip2ZXJpZmljYXRpb24gbGluayoqIGluc2lkZS4KNC4gV2FpdCBmb3IgdGhlIHZlcmlmaWNhdGlvbiBjb25maXJtYXRpb24gcGFnZS4KNS4gT25jZSB2ZXJpZmllZCwgeW91IGFyZSBkaXJlY3RlZCB0byB5b3VyIGRhc2hib2FyZCBvciBwcm9maWxlIGNvbXBsZXRpb24uCgoqKklmIHRoZSBsaW5rIHNheXMgaXQgaGFzIGV4cGlyZWQ6KioKCjEuIFJldHVybiB0byB0aGUgbG9naW4gcGFnZS4KMi4gRW50ZXIgeW91ciBlbWFpbCBhbmQgY2xpY2sgKipSZXNlbmQgVmVyaWZpY2F0aW9uIEVtYWlsKiouCjMuIE9wZW4gdGhlIG5ldyBlbWFpbCBhbmQgY2xpY2sgdGhlIGZyZXNoIGxpbmsuCgotLS0KCiMjIEZvcmdvdCBQYXNzd29yZAoKVXNlIHRoaXMgaWYgeW91IGNhbm5vdCByZW1lbWJlciB5b3VyIGN1cnJlbnQgcGFzc3dvcmQuCgoxLiBPcGVuIHRoZSBsb2dpbiBwYWdlIGFuZCBjbGljayAqKkZvcmdvdCBQYXNzd29yZCoqLgoyLiBFbnRlciB5b3VyIHJlZ2lzdGVyZWQgZW1haWwgYWRkcmVzcy4KMy4gQ2xpY2sgKipTZW5kIFJlc2V0IExpbmsqKi4KNC4gQ2hlY2sgeW91ciBpbmJveCBhbmQgc3BhbSBmb2xkZXIgZm9yIHRoZSByZXNldCBlbWFpbC4KCi0tLQoKIyMgUmVzZXQgUGFzc3dvcmQgRnJvbSB0aGUgRW1haWwgTGluawoKQWZ0ZXIgcmVxdWVzdGluZyBhIHJlc2V0LCB5b3Ugd2lsbCByZWNlaXZlIGEgbGluayBieSBlbWFpbC4KCjEuIENsaWNrIHRoZSBsaW5rIGZyb20gdGhlIElEUGlja2VyIHJlc2V0IGVtYWlsLgoyLiBXYWl0IGEgbW9tZW50IGZvciB0aGUgdG9rZW4gdG8gYmUgdmFsaWRhdGVkLgozLiBFbnRlciB5b3VyICoqbmV3IHBhc3N3b3JkKiouCjQuIEVudGVyIHRoZSBzYW1lICoqcGFzc3dvcmQgYWdhaW4qKiB0byBjb25maXJtLgo1LiBXYXRjaCB0aGUgc3RyZW5ndGggaW5kaWNhdG9yIOKAlCBtYWtlIHN1cmUgaXQgcmVhY2hlcyBhY2NlcHRhYmxlIHN0cmVuZ3RoLgo2LiBDbGljayAqKlJlc2V0IFBhc3N3b3JkKiouCjcuIFJldHVybiB0byB0aGUgbG9naW4gcGFnZSBhbmQgc2lnbiBpbiB3aXRoIHlvdXIgbmV3IHBhc3N3b3JkLgoKKipJZiB0aGUgbGluayBzYXlzIHRoZSB0b2tlbiBpcyBpbnZhbGlkIG9yIGV4cGlyZWQ6KioKLSBSZXF1ZXN0IGEgbmV3IHJlc2V0IGxpbmsgZnJvbSB0aGUgW0ZvcmdvdCBQYXNzd29yZF0oI2ZvcmdvdC1wYXNzd29yZCkgc3RlcCBhYm92ZS4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgQ29ycmVjdCBwYXNzd29yZCByZWplY3RlZCB8IExpa2VseSB1bnZlcmlmaWVkIGVtYWlsIOKAlCByZXNlbmQgdmVyaWZpY2F0aW9uIGZyb20gdGhlIGxvZ2luIHBhZ2UgfAp8IEdvb2dsZSBsb2dpbiBwb3B1cCBjbG9zZWQgaW1tZWRpYXRlbHkgfCBFbmFibGUgcG9wdXBzIGZvciB0aGUgSURQaWNrZXIgZG9tYWluIGluIHlvdXIgYnJvd3NlciBzZXR0aW5ncyB8CnwgUmVzZXQgbGluayBvcGVucyBidXQgcGFzc3dvcmQgZmllbGQgaXMgZ3JheWVkIG91dCB8IFRva2VuIGV4cGlyZWQg4oCUIHJlcXVlc3QgYSBmcmVzaCByZXNldCBsaW5rIHwKfCBSZWdpc3RyYXRpb24gc3R1Y2sgb24gdmVyaWZpY2F0aW9uIHwgQ2hlY2sgc3BhbSBmb2xkZXI7IGlmIGVtYWlsIGlzIG92ZXIgMzAgbWludXRlcyBvbGQsIHJlc2VuZCB8Cg==</script>
 
 <style>
  

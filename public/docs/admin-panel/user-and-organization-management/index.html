@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>User and Organization Management | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click user lifecycle operations">
+<meta name="description" content="How to provision new organizations, audit user accounts, and safely delete records">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/user-and-organization-management/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="User and Organization Management">
-  <meta property="og:description" content="Detailed click-by-click user lifecycle operations">
+  <meta property="og:description" content="How to provision new organizations, audit user accounts, and safely delete records">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="User and Organization Management">
-  <meta itemprop="description" content="Detailed click-by-click user lifecycle operations">
-  <meta itemprop="wordCount" content="159">
+  <meta itemprop="description" content="How to provision new organizations, audit user accounts, and safely delete records">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="459">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="User and Organization Management">
-  <meta name="twitter:description" content="Detailed click-by-click user lifecycle operations">
+  <meta name="twitter:description" content="How to provision new organizations, audit user accounts, and safely delete records">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,10 +242,10 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#student-management">Student Management</a></li>
-    <li><a href="#parent-management">Parent Management</a></li>
-    <li><a href="#organization-management">Organization Management</a></li>
-    <li><a href="#safety-checklist-before-deletion">Safety Checklist Before Deletion</a></li>
+    <li><a href="#1-organization-management">1. Organization Management</a></li>
+    <li><a href="#2-auditing-student-accounts">2. Auditing Student Accounts</a></li>
+    <li><a href="#3-managing-parent-accounts">3. Managing Parent Accounts</a></li>
+    <li><a href="#4-safety-checklist-before-deletion">4. Safety Checklist Before Deletion</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -268,51 +270,79 @@
 </nav>
 <div class="td-content">
 	<h1>User and Organization Management</h1>
-	<div class="lead">Detailed click-by-click user lifecycle operations</div>
+	<div class="lead">How to provision new organizations, audit user accounts, and safely delete records</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="student-management">Student Management</h2>
+	<p>As a platform administrator, you control the foundational structure of IDPicker. This module allows you to manage the top-level Organizations (schools, agencies) and manually audit the individual users beneath them.</p>
+<hr>
+<h2 id="1-organization-management">1. Organization Management</h2>
+<p>Organizations are the containers that hold Advisors, Students, and Parents. Before onboarding a new school, you must create their Organization record.</p>
 <ol>
-<li>Open Student Management.</li>
-<li>Use search by name/email.</li>
-<li>Apply filters and sorting.</li>
-<li>Expand student row for full detail.</li>
-<li>Review verification, premium, and activity counters.</li>
-<li>Use delete action only after confirmation review.</li>
+<li>In the sidebar, click <strong>Organization Management</strong>.</li>
+<li>Click <strong>Create Organization</strong>.</li>
+<li>Fill in the organization&rsquo;s public profile details (Name, Location, Branding if applicable).</li>
+<li>Assign the <strong>Primary Admin</strong> (the head advisor or IT contact for that school).</li>
+<li>Click <strong>Save</strong>. The organization is now active and its admin can begin inviting students.</li>
+<li><em>To edit or delete an organization, use the action menu next to its name in the list view.</em></li>
 </ol>
-<h2 id="parent-management">Parent Management</h2>
+<hr>
+<h2 id="2-auditing-student-accounts">2. Auditing Student Accounts</h2>
+<p>While Advisors manage their own rosters, Super Admins have global visibility over every student in the system for support and auditing purposes.</p>
 <ol>
-<li>Open Parent Management.</li>
-<li>Search/filter parents.</li>
-<li>Open parent detail.</li>
-<li>Edit parent profile fields if needed.</li>
-<li>Link parent to student or unlink relationship.</li>
-<li>Send invite when required.</li>
+<li>Open <strong>Student Management</strong> from the sidebar.</li>
+<li>Use the global search bar to locate any student by name or email across all organizations.</li>
+<li>Expand a student&rsquo;s row to view their full diagnostic detail, including:
+<ul>
+<li>Email verification status</li>
+<li>Premium subscription status</li>
+<li>Total login/activity counters</li>
+</ul>
+</li>
+<li><strong>Global Deletion:</strong> If requested for GDPR/CCPA compliance, you can hard-delete a student from this menu. <em>Use extreme caution and always confirm before executing.</em></li>
 </ol>
-<h2 id="organization-management">Organization Management</h2>
+<hr>
+<h2 id="3-managing-parent-accounts">3. Managing Parent Accounts</h2>
+<p>Parents exist independently but are relationally linked to students.</p>
 <ol>
-<li>Open Organization Management.</li>
-<li>Click Create Organization.</li>
-<li>Fill organization profile and primary admin details.</li>
-<li>Save and verify organization appears in list.</li>
-<li>Edit, export, or delete based on policy.</li>
+<li>Open <strong>Parent Management</strong>.</li>
+<li>Search and filter to locate a specific parent profile.</li>
+<li>Expand their detail view to manually manage their relationships: you can forcefully <strong>Link</strong> them to a student by ID, or <strong>Unlink</strong> a relationship if a mistake was made.</li>
+<li>You can also manually trigger a new invitation email from this panel if a parent claims they never received theirs.</li>
 </ol>
-<h2 id="safety-checklist-before-deletion">Safety Checklist Before Deletion</h2>
+<hr>
+<h2 id="4-safety-checklist-before-deletion">4. Safety Checklist Before Deletion</h2>
+<p>When an organization ceases operation, or a user requests account deletion, follow these steps to prevent data corruption:</p>
 <ol>
-<li>Confirm no active dependencies.</li>
-<li>Export relevant records if needed.</li>
-<li>Use confirmation dialogs carefully.</li>
+<li><strong>Verify Dependencies:</strong> Ensure there are no active financial subscriptions tied to the account.</li>
+<li><strong>Export Data:</strong> If required by your SLA or compliance policy, export their assessment records before deletion.</li>
+<li><strong>Execute:</strong> Delete the dependent users first (e.g., Students/Parents) before deleting the parent Organization container.</li>
+<li><strong>Confirm:</strong> Rely on the system&rsquo;s confirmation dialogue, but always double-check the target ID.</li>
 </ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Parent linked but student still missing.
-A: Refresh relation list and verify student account exists in same environment.</p>
-<p>Q: Organization created without expected admin access.
-A: Reopen organization record and verify admin assignment fields.</p>
-<p><img src="/images/user-manual/admin-panel/user-management.png" alt="User Management Placeholder"></p>
-<p>Image placeholder: Student and parent management tables with filters.</p>
-<p><img src="/images/user-manual/admin-panel/organization-management.png" alt="Organization Management Placeholder"></p>
-<p>Image placeholder: Organization create/edit modal and table view.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I created an Organization but the head Advisor cannot log in</td>
+          <td>Reopen the organization record and double-check you spelled their Admin Email correctly. Check their verification status</td>
+      </tr>
+      <tr>
+          <td>I linked a parent manually but they cannot see the student</td>
+          <td>They may need to refresh their session. Also, verify that the student account is actively fully registered, not just a draft</td>
+      </tr>
+      <tr>
+          <td>I accidentally deleted a user</td>
+          <td>Hard deletions via the Admin panel are permanent and cascade through the database. You will need to restore from a database backup if recovery is critical</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -341,7 +371,7 @@ A: Reopen organization record and verify admin assignment fields.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIFN0dWRlbnQgTWFuYWdlbWVudAoKMS4gT3BlbiBTdHVkZW50IE1hbmFnZW1lbnQuCjIuIFVzZSBzZWFyY2ggYnkgbmFtZS9lbWFpbC4KMy4gQXBwbHkgZmlsdGVycyBhbmQgc29ydGluZy4KNC4gRXhwYW5kIHN0dWRlbnQgcm93IGZvciBmdWxsIGRldGFpbC4KNS4gUmV2aWV3IHZlcmlmaWNhdGlvbiwgcHJlbWl1bSwgYW5kIGFjdGl2aXR5IGNvdW50ZXJzLgo2LiBVc2UgZGVsZXRlIGFjdGlvbiBvbmx5IGFmdGVyIGNvbmZpcm1hdGlvbiByZXZpZXcuCgojIyBQYXJlbnQgTWFuYWdlbWVudAoKMS4gT3BlbiBQYXJlbnQgTWFuYWdlbWVudC4KMi4gU2VhcmNoL2ZpbHRlciBwYXJlbnRzLgozLiBPcGVuIHBhcmVudCBkZXRhaWwuCjQuIEVkaXQgcGFyZW50IHByb2ZpbGUgZmllbGRzIGlmIG5lZWRlZC4KNS4gTGluayBwYXJlbnQgdG8gc3R1ZGVudCBvciB1bmxpbmsgcmVsYXRpb25zaGlwLgo2LiBTZW5kIGludml0ZSB3aGVuIHJlcXVpcmVkLgoKIyMgT3JnYW5pemF0aW9uIE1hbmFnZW1lbnQKCjEuIE9wZW4gT3JnYW5pemF0aW9uIE1hbmFnZW1lbnQuCjIuIENsaWNrIENyZWF0ZSBPcmdhbml6YXRpb24uCjMuIEZpbGwgb3JnYW5pemF0aW9uIHByb2ZpbGUgYW5kIHByaW1hcnkgYWRtaW4gZGV0YWlscy4KNC4gU2F2ZSBhbmQgdmVyaWZ5IG9yZ2FuaXphdGlvbiBhcHBlYXJzIGluIGxpc3QuCjUuIEVkaXQsIGV4cG9ydCwgb3IgZGVsZXRlIGJhc2VkIG9uIHBvbGljeS4KCiMjIFNhZmV0eSBDaGVja2xpc3QgQmVmb3JlIERlbGV0aW9uCgoxLiBDb25maXJtIG5vIGFjdGl2ZSBkZXBlbmRlbmNpZXMuCjIuIEV4cG9ydCByZWxldmFudCByZWNvcmRzIGlmIG5lZWRlZC4KMy4gVXNlIGNvbmZpcm1hdGlvbiBkaWFsb2dzIGNhcmVmdWxseS4KCiMjIENvbW1vbiBRdWVzdGlvbnMKClE6IFBhcmVudCBsaW5rZWQgYnV0IHN0dWRlbnQgc3RpbGwgbWlzc2luZy4KQTogUmVmcmVzaCByZWxhdGlvbiBsaXN0IGFuZCB2ZXJpZnkgc3R1ZGVudCBhY2NvdW50IGV4aXN0cyBpbiBzYW1lIGVudmlyb25tZW50LgoKUTogT3JnYW5pemF0aW9uIGNyZWF0ZWQgd2l0aG91dCBleHBlY3RlZCBhZG1pbiBhY2Nlc3MuCkE6IFJlb3BlbiBvcmdhbml6YXRpb24gcmVjb3JkIGFuZCB2ZXJpZnkgYWRtaW4gYXNzaWdubWVudCBmaWVsZHMuCgohW1VzZXIgTWFuYWdlbWVudCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZG1pbi1wYW5lbC91c2VyLW1hbmFnZW1lbnQucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFN0dWRlbnQgYW5kIHBhcmVudCBtYW5hZ2VtZW50IHRhYmxlcyB3aXRoIGZpbHRlcnMuCgohW09yZ2FuaXphdGlvbiBNYW5hZ2VtZW50IFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL29yZ2FuaXphdGlvbi1tYW5hZ2VtZW50LnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBPcmdhbml6YXRpb24gY3JlYXRlL2VkaXQgbW9kYWwgYW5kIHRhYmxlIHZpZXcuCg==</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">CkFzIGEgcGxhdGZvcm0gYWRtaW5pc3RyYXRvciwgeW91IGNvbnRyb2wgdGhlIGZvdW5kYXRpb25hbCBzdHJ1Y3R1cmUgb2YgSURQaWNrZXIuIFRoaXMgbW9kdWxlIGFsbG93cyB5b3UgdG8gbWFuYWdlIHRoZSB0b3AtbGV2ZWwgT3JnYW5pemF0aW9ucyAoc2Nob29scywgYWdlbmNpZXMpIGFuZCBtYW51YWxseSBhdWRpdCB0aGUgaW5kaXZpZHVhbCB1c2VycyBiZW5lYXRoIHRoZW0uCgotLS0KCiMjIDEuIE9yZ2FuaXphdGlvbiBNYW5hZ2VtZW50CgpPcmdhbml6YXRpb25zIGFyZSB0aGUgY29udGFpbmVycyB0aGF0IGhvbGQgQWR2aXNvcnMsIFN0dWRlbnRzLCBhbmQgUGFyZW50cy4gQmVmb3JlIG9uYm9hcmRpbmcgYSBuZXcgc2Nob29sLCB5b3UgbXVzdCBjcmVhdGUgdGhlaXIgT3JnYW5pemF0aW9uIHJlY29yZC4KCjEuIEluIHRoZSBzaWRlYmFyLCBjbGljayAqKk9yZ2FuaXphdGlvbiBNYW5hZ2VtZW50KiouCjIuIENsaWNrICoqQ3JlYXRlIE9yZ2FuaXphdGlvbioqLgozLiBGaWxsIGluIHRoZSBvcmdhbml6YXRpb24ncyBwdWJsaWMgcHJvZmlsZSBkZXRhaWxzIChOYW1lLCBMb2NhdGlvbiwgQnJhbmRpbmcgaWYgYXBwbGljYWJsZSkuCjQuIEFzc2lnbiB0aGUgKipQcmltYXJ5IEFkbWluKiogKHRoZSBoZWFkIGFkdmlzb3Igb3IgSVQgY29udGFjdCBmb3IgdGhhdCBzY2hvb2wpLiAKNS4gQ2xpY2sgKipTYXZlKiouIFRoZSBvcmdhbml6YXRpb24gaXMgbm93IGFjdGl2ZSBhbmQgaXRzIGFkbWluIGNhbiBiZWdpbiBpbnZpdGluZyBzdHVkZW50cy4KNi4gKlRvIGVkaXQgb3IgZGVsZXRlIGFuIG9yZ2FuaXphdGlvbiwgdXNlIHRoZSBhY3Rpb24gbWVudSBuZXh0IHRvIGl0cyBuYW1lIGluIHRoZSBsaXN0IHZpZXcuKgoKLS0tCgojIyAyLiBBdWRpdGluZyBTdHVkZW50IEFjY291bnRzCgpXaGlsZSBBZHZpc29ycyBtYW5hZ2UgdGhlaXIgb3duIHJvc3RlcnMsIFN1cGVyIEFkbWlucyBoYXZlIGdsb2JhbCB2aXNpYmlsaXR5IG92ZXIgZXZlcnkgc3R1ZGVudCBpbiB0aGUgc3lzdGVtIGZvciBzdXBwb3J0IGFuZCBhdWRpdGluZyBwdXJwb3Nlcy4KCjEuIE9wZW4gKipTdHVkZW50IE1hbmFnZW1lbnQqKiBmcm9tIHRoZSBzaWRlYmFyLgoyLiBVc2UgdGhlIGdsb2JhbCBzZWFyY2ggYmFyIHRvIGxvY2F0ZSBhbnkgc3R1ZGVudCBieSBuYW1lIG9yIGVtYWlsIGFjcm9zcyBhbGwgb3JnYW5pemF0aW9ucy4KMy4gRXhwYW5kIGEgc3R1ZGVudCdzIHJvdyB0byB2aWV3IHRoZWlyIGZ1bGwgZGlhZ25vc3RpYyBkZXRhaWwsIGluY2x1ZGluZzoKICAgLSBFbWFpbCB2ZXJpZmljYXRpb24gc3RhdHVzCiAgIC0gUHJlbWl1bSBzdWJzY3JpcHRpb24gc3RhdHVzCiAgIC0gVG90YWwgbG9naW4vYWN0aXZpdHkgY291bnRlcnMKNC4gKipHbG9iYWwgRGVsZXRpb246KiogSWYgcmVxdWVzdGVkIGZvciBHRFBSL0NDUEEgY29tcGxpYW5jZSwgeW91IGNhbiBoYXJkLWRlbGV0ZSBhIHN0dWRlbnQgZnJvbSB0aGlzIG1lbnUuICpVc2UgZXh0cmVtZSBjYXV0aW9uIGFuZCBhbHdheXMgY29uZmlybSBiZWZvcmUgZXhlY3V0aW5nLioKCi0tLQoKIyMgMy4gTWFuYWdpbmcgUGFyZW50IEFjY291bnRzCgpQYXJlbnRzIGV4aXN0IGluZGVwZW5kZW50bHkgYnV0IGFyZSByZWxhdGlvbmFsbHkgbGlua2VkIHRvIHN0dWRlbnRzLiAKCjEuIE9wZW4gKipQYXJlbnQgTWFuYWdlbWVudCoqLgoyLiBTZWFyY2ggYW5kIGZpbHRlciB0byBsb2NhdGUgYSBzcGVjaWZpYyBwYXJlbnQgcHJvZmlsZS4KMy4gRXhwYW5kIHRoZWlyIGRldGFpbCB2aWV3IHRvIG1hbnVhbGx5IG1hbmFnZSB0aGVpciByZWxhdGlvbnNoaXBzOiB5b3UgY2FuIGZvcmNlZnVsbHkgKipMaW5rKiogdGhlbSB0byBhIHN0dWRlbnQgYnkgSUQsIG9yICoqVW5saW5rKiogYSByZWxhdGlvbnNoaXAgaWYgYSBtaXN0YWtlIHdhcyBtYWRlLgo0LiBZb3UgY2FuIGFsc28gbWFudWFsbHkgdHJpZ2dlciBhIG5ldyBpbnZpdGF0aW9uIGVtYWlsIGZyb20gdGhpcyBwYW5lbCBpZiBhIHBhcmVudCBjbGFpbXMgdGhleSBuZXZlciByZWNlaXZlZCB0aGVpcnMuCgotLS0KCiMjIDQuIFNhZmV0eSBDaGVja2xpc3QgQmVmb3JlIERlbGV0aW9uCgpXaGVuIGFuIG9yZ2FuaXphdGlvbiBjZWFzZXMgb3BlcmF0aW9uLCBvciBhIHVzZXIgcmVxdWVzdHMgYWNjb3VudCBkZWxldGlvbiwgZm9sbG93IHRoZXNlIHN0ZXBzIHRvIHByZXZlbnQgZGF0YSBjb3JydXB0aW9uOgoKMS4gKipWZXJpZnkgRGVwZW5kZW5jaWVzOioqIEVuc3VyZSB0aGVyZSBhcmUgbm8gYWN0aXZlIGZpbmFuY2lhbCBzdWJzY3JpcHRpb25zIHRpZWQgdG8gdGhlIGFjY291bnQuCjIuICoqRXhwb3J0IERhdGE6KiogSWYgcmVxdWlyZWQgYnkgeW91ciBTTEEgb3IgY29tcGxpYW5jZSBwb2xpY3ksIGV4cG9ydCB0aGVpciBhc3Nlc3NtZW50IHJlY29yZHMgYmVmb3JlIGRlbGV0aW9uLgozLiAqKkV4ZWN1dGU6KiogRGVsZXRlIHRoZSBkZXBlbmRlbnQgdXNlcnMgZmlyc3QgKGUuZy4sIFN0dWRlbnRzL1BhcmVudHMpIGJlZm9yZSBkZWxldGluZyB0aGUgcGFyZW50IE9yZ2FuaXphdGlvbiBjb250YWluZXIuIAo0LiAqKkNvbmZpcm06KiogUmVseSBvbiB0aGUgc3lzdGVtJ3MgY29uZmlybWF0aW9uIGRpYWxvZ3VlLCBidXQgYWx3YXlzIGRvdWJsZS1jaGVjayB0aGUgdGFyZ2V0IElELgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBJIGNyZWF0ZWQgYW4gT3JnYW5pemF0aW9uIGJ1dCB0aGUgaGVhZCBBZHZpc29yIGNhbm5vdCBsb2cgaW4gfCBSZW9wZW4gdGhlIG9yZ2FuaXphdGlvbiByZWNvcmQgYW5kIGRvdWJsZS1jaGVjayB5b3Ugc3BlbGxlZCB0aGVpciBBZG1pbiBFbWFpbCBjb3JyZWN0bHkuIENoZWNrIHRoZWlyIHZlcmlmaWNhdGlvbiBzdGF0dXMgfAp8IEkgbGlua2VkIGEgcGFyZW50IG1hbnVhbGx5IGJ1dCB0aGV5IGNhbm5vdCBzZWUgdGhlIHN0dWRlbnQgfCBUaGV5IG1heSBuZWVkIHRvIHJlZnJlc2ggdGhlaXIgc2Vzc2lvbi4gQWxzbywgdmVyaWZ5IHRoYXQgdGhlIHN0dWRlbnQgYWNjb3VudCBpcyBhY3RpdmVseSBmdWxseSByZWdpc3RlcmVkLCBub3QganVzdCBhIGRyYWZ0IHwKfCBJIGFjY2lkZW50YWxseSBkZWxldGVkIGEgdXNlciB8IEhhcmQgZGVsZXRpb25zIHZpYSB0aGUgQWRtaW4gcGFuZWwgYXJlIHBlcm1hbmVudCBhbmQgY2FzY2FkZSB0aHJvdWdoIHRoZSBkYXRhYmFzZS4gWW91IHdpbGwgbmVlZCB0byByZXN0b3JlIGZyb20gYSBkYXRhYmFzZSBiYWNrdXAgaWYgcmVjb3ZlcnkgaXMgY3JpdGljYWwgfAo=</script>
 
 <style>
  

@@ -1,137 +1,135 @@
 ---
 title: "01. Authentication Guide"
-description: "Detailed click-by-click authentication walkthrough"
+description: "How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs"
 weight: 121
 draft: false
 ---
 
-This guide explains exactly how a student signs in, registers, verifies email, and recovers account access.
+Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.
 
-## What You Need Before Starting
+---
 
-- Student login URL from [Access URLs](../getting-started/access-urls/)
-- Valid email address
-- Stable internet connection
-- Access to your email inbox (and spam folder)
+## Before You Begin
 
-## A) Sign In with Email and Password (Click-by-Click)
+Make sure you have:
+
+- The **student login URL** for your environment — see [Access URLs](/docs/getting-started/access-urls/)
+- A valid email address you can check immediately
+- A stable internet connection and an up-to-date browser
+
+---
+
+## Sign In with Email and Password
+
+This is the fastest path for returning students.
+
+1. Open the student login URL.
+2. Click the **Email** field and type your registered email.
+3. Click the **Password** field and type your password.
+4. *(Optional)* Click the **eye icon** next to the password field to reveal what you typed.
+5. Click **Sign In** and wait for the redirect.
+
+**What happens next:**
+- You land on your **Dashboard**.
+- If you were navigating to a specific page before login, you are sent directly there instead.
+
+**If sign-in fails:**
+- Double-check for typos — passwords are case-sensitive.
+- If you see a message about email verification, follow the [Verify Your Email](#verify-your-email) section below.
+- If you have forgotten your password, use [Forgot Password](#forgot-password).
+
+---
+
+## Sign In with Google
+
+Faster sign-in without a separate password.
 
 1. Open the student login page.
-2. Click the Email field.
-3. Type your registered email.
-4. Click the Password field.
-5. Type your password.
-6. Optional: Click the eye icon to reveal password and verify typing.
-7. Click Sign In.
-8. Wait for redirect.
+2. Click **Continue with Google**.
+3. A Google account picker opens — select the account you want to use.
+4. Approve the consent screen if prompted.
+5. You are redirected back to IDPicker and land on the dashboard.
 
-Expected result:
+**If the login window stays on the same page:**
+- Your browser may be blocking popups. Allow popups for this site and try again.
+- Make sure you are not using a private/incognito window with strict tracking prevention.
 
-- You are redirected to dashboard.
-- If you were opening a protected page before login, you are redirected there.
+---
 
-If it fails:
+## Register a New Account
 
-- Check that both fields are filled.
-- Recheck uppercase/lowercase in password.
-- If message indicates verification is required, follow section C.
+New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.
 
-## B) Sign In with Google (Click-by-Click)
+1. Click **Sign Up** on the login page.
+2. Fill in your **name**, **email**, and a strong **password**.
+   - Password must contain at least one uppercase letter, one number, and one special character.
+3. Confirm the password and check the consent checkbox.
+4. Complete the **interests and goals** step.
+5. Fill out your **profile** (education level, gender, social links, occupation).
+6. Select an organization if prompted, or continue with invitation-prefilled values.
+7. Complete the **human verification** step.
+8. Click the final **Register** button.
 
-1. Open login page.
-2. Click Continue with Google.
-3. Choose Google account.
-4. Approve consent if prompted.
-5. Return to IDPicker tab/window and wait for callback completion.
+> **Tip:** If you were invited by an advisor, your organization field may already be filled in. Do not change it unless instructed.
 
-Expected result:
+**Common registration blockers:**
+- Duplicate email → use a different address or try [Forgot Password](#forgot-password) if you already registered.
+- Consent checkbox not checked → scroll down and tick the box.
+- Weak password → make sure it meets all strength requirements shown on screen.
 
-- You are authenticated and redirected to dashboard flow.
+---
 
-If it fails:
+## Verify Your Email
 
-- Allow popups/new tab in browser.
-- Retry from login page.
-- If account linking is incomplete, complete requested follow-up prompts.
+After registration, IDPicker sends a verification email.
 
-## C) Register New Student Account (Click-by-Click)
+1. Open your **email inbox** (check your spam/junk folder too).
+2. Find the email from IDPicker with subject **Verify your email**.
+3. Click the **verification link** inside.
+4. Wait for the verification confirmation page.
+5. Once verified, you are directed to your dashboard or profile completion.
 
-Registration is multi-step. The exact order can vary by invitation and configuration.
+**If the link says it has expired:**
 
-Typical sequence:
+1. Return to the login page.
+2. Enter your email and click **Resend Verification Email**.
+3. Open the new email and click the fresh link.
 
-1. Click Sign Up on login page.
-2. Fill account details (name, email, password).
-3. Confirm password and consent.
-4. Continue to interests and goals selections.
-5. Fill profile information (education level, gender, social links, occupation).
-6. Select organization or continue with invitation-prefilled values.
-7. Complete human verification.
-8. Click final registration action.
+---
 
-Validation rules to watch:
+## Forgot Password
 
-- Password must satisfy strength checks (length, uppercase, lowercase, number, special character).
-- Duplicate email is blocked.
-- Consent is required.
+Use this if you cannot remember your current password.
 
-## D) Verify Email After Registration
+1. Open the login page and click **Forgot Password**.
+2. Enter your registered email address.
+3. Click **Send Reset Link**.
+4. Check your inbox and spam folder for the reset email.
 
-1. Open your email inbox.
-2. Find verification email from IDPicker.
-3. Click verification link.
-4. Wait for verification status page.
-5. If valid, continue to dashboard/profile completion.
+---
 
-If link is expired:
+## Reset Password From the Email Link
 
-1. Return to login.
-2. Enter your email.
-3. Use resend verification action.
-4. Open latest verification email and retry.
+After requesting a reset, you will receive a link by email.
 
-## E) Forgot Password (Request Reset Link)
+1. Click the link from the IDPicker reset email.
+2. Wait a moment for the token to be validated.
+3. Enter your **new password**.
+4. Enter the same **password again** to confirm.
+5. Watch the strength indicator — make sure it reaches acceptable strength.
+6. Click **Reset Password**.
+7. Return to the login page and sign in with your new password.
 
-1. Open login page.
-2. Click Forgot Password.
-3. Click email input.
-4. Enter registered email.
-5. Click Send Reset Link.
-6. Check inbox and spam for reset message.
+**If the link says the token is invalid or expired:**
+- Request a new reset link from the [Forgot Password](#forgot-password) step above.
 
-## F) Reset Password from Email Link
+---
 
-1. Open reset link from email.
-2. Wait for token validation screen to finish.
-3. Enter new password.
-4. Enter confirm password.
-5. Verify password strength indicator is acceptable.
-6. Click Reset Password.
-7. Return to login and sign in with new password.
+## Common Questions
 
-If token is invalid/expired:
-
-- Go back to Forgot Password and request a fresh link.
-
-## Common Student Questions
-
-Q: I entered correct password but still cannot access account.
-A: Most common cause is unverified email. Use resend verification from login.
-
-Q: I clicked Google login but stayed on same page.
-A: Check popup blocking, then retry.
-
-Q: Reset link opened but does not allow password update.
-A: Reset token likely expired; request a new one.
-
-![Student Login Placeholder](/images/user-manual/student-panel/auth-login-email.png)
-
-Image placeholder: Login form with filled fields and Sign In button.
-
-![Google OAuth Placeholder](/images/user-manual/student-panel/auth-login-google.png)
-
-Image placeholder: Google selection + successful callback state.
-
-![Password Reset Placeholder](/images/user-manual/student-panel/auth-password-reset.png)
-
-Image placeholder: Token-valid reset page with password strength checks.
+| Situation | What to do |
+|---|---|
+| Correct password rejected | Likely unverified email — resend verification from the login page |
+| Google login popup closed immediately | Enable popups for the IDPicker domain in your browser settings |
+| Reset link opens but password field is grayed out | Token expired — request a fresh reset link |
+| Registration stuck on verification | Check spam folder; if email is over 30 minutes old, resend |

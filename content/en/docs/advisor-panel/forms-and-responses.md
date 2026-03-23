@@ -1,66 +1,62 @@
 ---
 title: "Forms and Responses"
-description: "Detailed click-by-click forms lifecycle for advisors"
+description: "How to create custom forms, collect data, and review student responses"
 weight: 134
 draft: false
 ---
 
-This guide covers managing advisor forms, publication state, and responses.
+The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.
 
-## A) Open Forms Module
+---
 
-1. In sidebar, click Forms.
-2. Wait for forms list and summary counters.
+## Understanding the Forms Lifecycle
 
-## B) Search and Filter Forms
+Every form moves through a specific lifecycle:
+1. **Draft:** The form is being built and is invisible to students.
+2. **Published:** The form is actively collecting data and is visible to assigned students on their dashboard.
+3. **Archived:** (If applicable) The form is no longer accepting new responses, but old data is preserved.
 
-1. Use search input for form title/metadata.
-2. Filter by status (draft, published, archived, all).
-3. Review counts (total forms, published forms, total responses).
+---
 
-## C) Create New Form
+## 1. Creating and Publishing a Form
 
-1. Click Create New Form.
-2. Enter title and description.
-3. Add/edit form fields in builder.
-4. Save as draft.
-5. Publish when ready.
+1. In the sidebar, click **Forms**.
+2. Click **Create New Form**.
+3. Enter a **Title** and a helpful **Description**.
+4. Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).
+5. Click **Save as Draft** while you are still working on it.
+6. When you are completely finished, select your target audience (groups or specific students) and change the status to **Publish**.
 
-## D) Manage Existing Forms
+### Preview Before Publishing
+Always click the **Preview** action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.
 
-1. Open form from list.
-2. Edit structure/content if still editable.
-3. Publish/unpublish per workflow.
-4. Delete form using action menu and confirmation.
+---
 
-## E) Review Responses
+## 2. Managing Existing Forms
 
-1. Open form.
-2. Click Responses.
-3. Review respondent list and submitted answers.
-4. Open individual response detail for deeper review.
+You can manage your forms from the main Forms list view:
 
-## F) Preview Form
+- **Search & Filter:** Use the search bar to find a specific form by title, or filter to see only *Drafts* or *Published* forms.
+- **Edit:** If a form is still a draft, you can freely edit its structure. Once an active form begins receiving responses, structural edits may be heavily restricted to prevent data corruption.
+- **Delete:** Select the delete action to permanently remove the form. *Note: Doing this may also delete associated response records.*
 
-1. Open form actions.
-2. Click Preview.
-3. Validate visual and field behavior before distribution.
+---
 
-## Common Advisor Questions
+## 3. Reviewing Student Responses
 
-Q: Response count does not update immediately.
-A: Refresh list and confirm responses endpoint load completed.
+Once your form is published and students begin filling it out, you need to review their answers.
 
-Q: Form cannot be edited.
-A: Status/publish state or permission policy may lock edits.
+1. Locate the active form in your Forms list.
+2. You will see a counter indicating the number of Total Responses. Click the **Responses** button.
+3. A table will load showing a list of every student who submitted the form and the timestamp.
+4. Click on an individual response row to drill down and read the specific answers provided by that student.
 
-Q: Delete form failed.
-A: Confirm permissions and that form state allows deletion.
+---
 
-![Forms Placeholder](/images/user-manual/advisor-panel/forms.png)
+## Common Questions
 
-Image placeholder: Forms list with status filter and response count.
-
-![Responses Placeholder](/images/user-manual/advisor-panel/form-responses.png)
-
-Image placeholder: Response table and response detail view.
+| Situation | What to do |
+|---|---|
+| A student says they submitted, but my response count is not updating | The interface does not automatically live-refresh. Manually refresh the page to load the latest data from the server |
+| The system prevents me from editing a form | The form is either locked due to your permission policy, or it is locked because it is Published and actively receiving responses |
+| I accidentally deleted a form | Form deletion is permanent. Always export response data before taking destructive actions |

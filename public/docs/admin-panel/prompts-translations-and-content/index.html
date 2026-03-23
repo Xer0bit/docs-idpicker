@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Prompts, Translations, and Content | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click content configuration guide">
+<meta name="description" content="How to edit the AI system prompts and localize the platform interface text">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/prompts-translations-and-content/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Prompts, Translations, and Content">
-  <meta property="og:description" content="Detailed click-by-click content configuration guide">
+  <meta property="og:description" content="How to edit the AI system prompts and localize the platform interface text">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Prompts, Translations, and Content">
-  <meta itemprop="description" content="Detailed click-by-click content configuration guide">
-  <meta itemprop="wordCount" content="146">
+  <meta itemprop="description" content="How to edit the AI system prompts and localize the platform interface text">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="395">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Prompts, Translations, and Content">
-  <meta name="twitter:description" content="Detailed click-by-click content configuration guide">
+  <meta name="twitter:description" content="How to edit the AI system prompts and localize the platform interface text">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,10 +242,9 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prompts-management">Prompts Management</a></li>
-    <li><a href="#prompt-quality-checks">Prompt Quality Checks</a></li>
-    <li><a href="#translations-management">Translations Management</a></li>
-    <li><a href="#mentor-personality-and-interests">Mentor Personality and Interests</a></li>
+    <li><a href="#1-managing-system-prompts">1. Managing System Prompts</a></li>
+    <li><a href="#2-interface-translations-localization">2. Interface Translations (Localization)</a></li>
+    <li><a href="#3-configuring-mentor-personalities">3. Configuring Mentor Personalities</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -268,52 +269,65 @@
 </nav>
 <div class="td-content">
 	<h1>Prompts, Translations, and Content</h1>
-	<div class="lead">Detailed click-by-click content configuration guide</div>
+	<div class="lead">How to edit the AI system prompts and localize the platform interface text</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="prompts-management">Prompts Management</h2>
+	<p>The core intelligence and language of IDPicker is not hard-coded; it is entirely manageable via the Admin Panel. This allows you to tune the AI Mentors and translate the UI on the fly without requiring engineering deployments.</p>
+<hr>
+<h2 id="1-managing-system-prompts">1. Managing System Prompts</h2>
+<p>The system prompts dictate exactly how the AI Mentors behave, what tone they use, and how they analyze student data.</p>
 <ol>
-<li>Open Prompts.</li>
-<li>Select category.</li>
-<li>Select subcategory.</li>
-<li>Open target prompt template.</li>
-<li>Edit text in editor.</li>
-<li>Validate syntax.</li>
-<li>Save and verify version update.</li>
+<li>Open the <strong>Prompts</strong> module.</li>
+<li>Select the specific category and subcategory you want to tune (e.g., <em>Mentor Persona &gt; Academic Strict</em>).</li>
+<li>Open the target prompt template.</li>
+<li>Edit the instructions in the code editor.</li>
+<li><strong>CRITICAL:</strong> Do not delete dynamic variables (e.g., <code>{{student_name}}</code> or <code>{{assessment_score}}</code>). Removing these breaks the AI&rsquo;s contextual awareness.</li>
+<li>Validate the syntax and click <strong>Save</strong>. The updated prompt version is now live instantly.</li>
 </ol>
-<h2 id="prompt-quality-checks">Prompt Quality Checks</h2>
+<hr>
+<h2 id="2-interface-translations-localization">2. Interface Translations (Localization)</h2>
+<p>If you need to fix a typo in the UI, or launch the platform in a brand new language, use the Translations manager.</p>
 <ol>
-<li>Confirm variable placeholders are valid.</li>
-<li>Review lint/syntax errors.</li>
-<li>Review diff between previous and current versions.</li>
+<li>Open the <strong>Translations</strong> module.</li>
+<li>Use the filters to select a specific <strong>Namespace</strong> (e.g., <code>student_dashboard</code>) and <strong>Locale</strong> (e.g., <code>es-ES</code> for Spanish).</li>
+<li>Use the search bar to locate the specific key or the incorrect phrase.</li>
+<li>Click Edit, type the corrected translation, and save.</li>
+<li>If you are adding a completely new phrase required by a recent UI update, use the <strong>Create Translation</strong> action to add the missing key.</li>
 </ol>
-<h2 id="translations-management">Translations Management</h2>
+<p><em>Cache Warning: Translations are heavily cached in users&rsquo; browsers for speed. Force clear your local browser cache to verify the UI updated correctly.</em></p>
+<hr>
+<h2 id="3-configuring-mentor-personalities">3. Configuring Mentor Personalities</h2>
+<p>You can directly manage the roster of AI Mentors available to students.</p>
 <ol>
-<li>Open Translations.</li>
-<li>Filter by namespace and locale.</li>
-<li>Search by key or value.</li>
-<li>Edit existing translation.</li>
-<li>Create missing translation keys where needed.</li>
-<li>Save and validate in target UI route.</li>
+<li>Open the <strong>Mentor Personality</strong> section.</li>
+<li>You can tweak a mentor&rsquo;s localized name, short description, and their internal <em>Expertise Array</em> (which dictates what tags they are allowed to give advice on).</li>
+<li>Ensure you save your changes before leaving the page.</li>
 </ol>
-<h2 id="mentor-personality-and-interests">Mentor Personality and Interests</h2>
-<ol>
-<li>Open Mentor Personality.</li>
-<li>Edit localized mentor fields and expertise arrays.</li>
-<li>Save and verify list updates.</li>
-<li>Open Interests module.</li>
-<li>Review status queue and update where allowed.</li>
-</ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Prompt save fails with template error.
-A: Fix invalid placeholder/template syntax and retry.</p>
-<p>Q: Translation saved but UI unchanged.
-A: Confirm correct namespace/locale and clear stale cache.</p>
-<p><img src="/images/user-manual/admin-panel/prompts.png" alt="Prompts Placeholder"></p>
-<p>Image placeholder: Prompt editor with validation panel.</p>
-<p><img src="/images/user-manual/admin-panel/translations.png" alt="Translations Placeholder"></p>
-<p>Image placeholder: Translation grid with namespace and locale filters.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I saved an updated Prompt but it threw a &ldquo;Template Syntax Error&rdquo;</td>
+          <td>You likely broke a brace bracket around a variable, like typing <code>{student_name}}</code> instead of <code>{{student_name}}</code>. Fix the brackets and retry</td>
+      </tr>
+      <tr>
+          <td>I updated a Translation but the user still sees the old text</td>
+          <td>Instruct the user to perform a &ldquo;Hard Refresh&rdquo; (Ctrl+F5) to clear their browser cache, or wait for the CDN cache to expire</td>
+      </tr>
+      <tr>
+          <td>The AI Mentor is going &ldquo;off script&rdquo;</td>
+          <td>Revisit your System Prompt. Ensure the instructions are explicit, using commands like &lsquo;DO NOT EVER suggest&hellip;&rsquo;. AI models require explicit, rigid boundaries</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -342,7 +356,7 @@ A: Confirm correct namespace/locale and clear stale cache.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIFByb21wdHMgTWFuYWdlbWVudAoKMS4gT3BlbiBQcm9tcHRzLgoyLiBTZWxlY3QgY2F0ZWdvcnkuCjMuIFNlbGVjdCBzdWJjYXRlZ29yeS4KNC4gT3BlbiB0YXJnZXQgcHJvbXB0IHRlbXBsYXRlLgo1LiBFZGl0IHRleHQgaW4gZWRpdG9yLgo2LiBWYWxpZGF0ZSBzeW50YXguCjcuIFNhdmUgYW5kIHZlcmlmeSB2ZXJzaW9uIHVwZGF0ZS4KCiMjIFByb21wdCBRdWFsaXR5IENoZWNrcwoKMS4gQ29uZmlybSB2YXJpYWJsZSBwbGFjZWhvbGRlcnMgYXJlIHZhbGlkLgoyLiBSZXZpZXcgbGludC9zeW50YXggZXJyb3JzLgozLiBSZXZpZXcgZGlmZiBiZXR3ZWVuIHByZXZpb3VzIGFuZCBjdXJyZW50IHZlcnNpb25zLgoKIyMgVHJhbnNsYXRpb25zIE1hbmFnZW1lbnQKCjEuIE9wZW4gVHJhbnNsYXRpb25zLgoyLiBGaWx0ZXIgYnkgbmFtZXNwYWNlIGFuZCBsb2NhbGUuCjMuIFNlYXJjaCBieSBrZXkgb3IgdmFsdWUuCjQuIEVkaXQgZXhpc3RpbmcgdHJhbnNsYXRpb24uCjUuIENyZWF0ZSBtaXNzaW5nIHRyYW5zbGF0aW9uIGtleXMgd2hlcmUgbmVlZGVkLgo2LiBTYXZlIGFuZCB2YWxpZGF0ZSBpbiB0YXJnZXQgVUkgcm91dGUuCgojIyBNZW50b3IgUGVyc29uYWxpdHkgYW5kIEludGVyZXN0cwoKMS4gT3BlbiBNZW50b3IgUGVyc29uYWxpdHkuCjIuIEVkaXQgbG9jYWxpemVkIG1lbnRvciBmaWVsZHMgYW5kIGV4cGVydGlzZSBhcnJheXMuCjMuIFNhdmUgYW5kIHZlcmlmeSBsaXN0IHVwZGF0ZXMuCjQuIE9wZW4gSW50ZXJlc3RzIG1vZHVsZS4KNS4gUmV2aWV3IHN0YXR1cyBxdWV1ZSBhbmQgdXBkYXRlIHdoZXJlIGFsbG93ZWQuCgojIyBDb21tb24gUXVlc3Rpb25zCgpROiBQcm9tcHQgc2F2ZSBmYWlscyB3aXRoIHRlbXBsYXRlIGVycm9yLgpBOiBGaXggaW52YWxpZCBwbGFjZWhvbGRlci90ZW1wbGF0ZSBzeW50YXggYW5kIHJldHJ5LgoKUTogVHJhbnNsYXRpb24gc2F2ZWQgYnV0IFVJIHVuY2hhbmdlZC4KQTogQ29uZmlybSBjb3JyZWN0IG5hbWVzcGFjZS9sb2NhbGUgYW5kIGNsZWFyIHN0YWxlIGNhY2hlLgoKIVtQcm9tcHRzIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL3Byb21wdHMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFByb21wdCBlZGl0b3Igd2l0aCB2YWxpZGF0aW9uIHBhbmVsLgoKIVtUcmFuc2xhdGlvbnMgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWRtaW4tcGFuZWwvdHJhbnNsYXRpb25zLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBUcmFuc2xhdGlvbiBncmlkIHdpdGggbmFtZXNwYWNlIGFuZCBsb2NhbGUgZmlsdGVycy4K</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBjb3JlIGludGVsbGlnZW5jZSBhbmQgbGFuZ3VhZ2Ugb2YgSURQaWNrZXIgaXMgbm90IGhhcmQtY29kZWQ7IGl0IGlzIGVudGlyZWx5IG1hbmFnZWFibGUgdmlhIHRoZSBBZG1pbiBQYW5lbC4gVGhpcyBhbGxvd3MgeW91IHRvIHR1bmUgdGhlIEFJIE1lbnRvcnMgYW5kIHRyYW5zbGF0ZSB0aGUgVUkgb24gdGhlIGZseSB3aXRob3V0IHJlcXVpcmluZyBlbmdpbmVlcmluZyBkZXBsb3ltZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgU3lzdGVtIFByb21wdHMKClRoZSBzeXN0ZW0gcHJvbXB0cyBkaWN0YXRlIGV4YWN0bHkgaG93IHRoZSBBSSBNZW50b3JzIGJlaGF2ZSwgd2hhdCB0b25lIHRoZXkgdXNlLCBhbmQgaG93IHRoZXkgYW5hbHl6ZSBzdHVkZW50IGRhdGEuCgoxLiBPcGVuIHRoZSAqKlByb21wdHMqKiBtb2R1bGUuCjIuIFNlbGVjdCB0aGUgc3BlY2lmaWMgY2F0ZWdvcnkgYW5kIHN1YmNhdGVnb3J5IHlvdSB3YW50IHRvIHR1bmUgKGUuZy4sICpNZW50b3IgUGVyc29uYSA&#43;IEFjYWRlbWljIFN0cmljdCopLgozLiBPcGVuIHRoZSB0YXJnZXQgcHJvbXB0IHRlbXBsYXRlLgo0LiBFZGl0IHRoZSBpbnN0cnVjdGlvbnMgaW4gdGhlIGNvZGUgZWRpdG9yLgo1LiAqKkNSSVRJQ0FMOioqIERvIG5vdCBkZWxldGUgZHluYW1pYyB2YXJpYWJsZXMgKGUuZy4sIGB7e3N0dWRlbnRfbmFtZX19YCBvciBge3thc3Nlc3NtZW50X3Njb3JlfX1gKS4gUmVtb3ZpbmcgdGhlc2UgYnJlYWtzIHRoZSBBSSdzIGNvbnRleHR1YWwgYXdhcmVuZXNzLgo2LiBWYWxpZGF0ZSB0aGUgc3ludGF4IGFuZCBjbGljayAqKlNhdmUqKi4gVGhlIHVwZGF0ZWQgcHJvbXB0IHZlcnNpb24gaXMgbm93IGxpdmUgaW5zdGFudGx5LgoKLS0tCgojIyAyLiBJbnRlcmZhY2UgVHJhbnNsYXRpb25zIChMb2NhbGl6YXRpb24pCgpJZiB5b3UgbmVlZCB0byBmaXggYSB0eXBvIGluIHRoZSBVSSwgb3IgbGF1bmNoIHRoZSBwbGF0Zm9ybSBpbiBhIGJyYW5kIG5ldyBsYW5ndWFnZSwgdXNlIHRoZSBUcmFuc2xhdGlvbnMgbWFuYWdlci4KCjEuIE9wZW4gdGhlICoqVHJhbnNsYXRpb25zKiogbW9kdWxlLgoyLiBVc2UgdGhlIGZpbHRlcnMgdG8gc2VsZWN0IGEgc3BlY2lmaWMgKipOYW1lc3BhY2UqKiAoZS5nLiwgYHN0dWRlbnRfZGFzaGJvYXJkYCkgYW5kICoqTG9jYWxlKiogKGUuZy4sIGBlcy1FU2AgZm9yIFNwYW5pc2gpLgozLiBVc2UgdGhlIHNlYXJjaCBiYXIgdG8gbG9jYXRlIHRoZSBzcGVjaWZpYyBrZXkgb3IgdGhlIGluY29ycmVjdCBwaHJhc2UuCjQuIENsaWNrIEVkaXQsIHR5cGUgdGhlIGNvcnJlY3RlZCB0cmFuc2xhdGlvbiwgYW5kIHNhdmUuCjUuIElmIHlvdSBhcmUgYWRkaW5nIGEgY29tcGxldGVseSBuZXcgcGhyYXNlIHJlcXVpcmVkIGJ5IGEgcmVjZW50IFVJIHVwZGF0ZSwgdXNlIHRoZSAqKkNyZWF0ZSBUcmFuc2xhdGlvbioqIGFjdGlvbiB0byBhZGQgdGhlIG1pc3Npbmcga2V5LgoKKkNhY2hlIFdhcm5pbmc6IFRyYW5zbGF0aW9ucyBhcmUgaGVhdmlseSBjYWNoZWQgaW4gdXNlcnMnIGJyb3dzZXJzIGZvciBzcGVlZC4gRm9yY2UgY2xlYXIgeW91ciBsb2NhbCBicm93c2VyIGNhY2hlIHRvIHZlcmlmeSB0aGUgVUkgdXBkYXRlZCBjb3JyZWN0bHkuKgoKLS0tCgojIyAzLiBDb25maWd1cmluZyBNZW50b3IgUGVyc29uYWxpdGllcwoKWW91IGNhbiBkaXJlY3RseSBtYW5hZ2UgdGhlIHJvc3RlciBvZiBBSSBNZW50b3JzIGF2YWlsYWJsZSB0byBzdHVkZW50cy4KCjEuIE9wZW4gdGhlICoqTWVudG9yIFBlcnNvbmFsaXR5Kiogc2VjdGlvbi4KMi4gWW91IGNhbiB0d2VhayBhIG1lbnRvcidzIGxvY2FsaXplZCBuYW1lLCBzaG9ydCBkZXNjcmlwdGlvbiwgYW5kIHRoZWlyIGludGVybmFsICpFeHBlcnRpc2UgQXJyYXkqICh3aGljaCBkaWN0YXRlcyB3aGF0IHRhZ3MgdGhleSBhcmUgYWxsb3dlZCB0byBnaXZlIGFkdmljZSBvbikuCjMuIEVuc3VyZSB5b3Ugc2F2ZSB5b3VyIGNoYW5nZXMgYmVmb3JlIGxlYXZpbmcgdGhlIHBhZ2UuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEkgc2F2ZWQgYW4gdXBkYXRlZCBQcm9tcHQgYnV0IGl0IHRocmV3IGEgIlRlbXBsYXRlIFN5bnRheCBFcnJvciIgfCBZb3UgbGlrZWx5IGJyb2tlIGEgYnJhY2UgYnJhY2tldCBhcm91bmQgYSB2YXJpYWJsZSwgbGlrZSB0eXBpbmcgYHtzdHVkZW50X25hbWV9fWAgaW5zdGVhZCBvZiBge3tzdHVkZW50X25hbWV9fWAuIEZpeCB0aGUgYnJhY2tldHMgYW5kIHJldHJ5IHwKfCBJIHVwZGF0ZWQgYSBUcmFuc2xhdGlvbiBidXQgdGhlIHVzZXIgc3RpbGwgc2VlcyB0aGUgb2xkIHRleHQgfCBJbnN0cnVjdCB0aGUgdXNlciB0byBwZXJmb3JtIGEgIkhhcmQgUmVmcmVzaCIgKEN0cmwrRjUpIHRvIGNsZWFyIHRoZWlyIGJyb3dzZXIgY2FjaGUsIG9yIHdhaXQgZm9yIHRoZSBDRE4gY2FjaGUgdG8gZXhwaXJlIHwKfCBUaGUgQUkgTWVudG9yIGlzIGdvaW5nICJvZmYgc2NyaXB0IiB8IFJldmlzaXQgeW91ciBTeXN0ZW0gUHJvbXB0LiBFbnN1cmUgdGhlIGluc3RydWN0aW9ucyBhcmUgZXhwbGljaXQsIHVzaW5nIGNvbW1hbmRzIGxpa2UgJ0RPIE5PVCBFVkVSIHN1Z2dlc3QuLi4nLiBBSSBtb2RlbHMgcmVxdWlyZSBleHBsaWNpdCwgcmlnaWQgYm91bmRhcmllcyB8Cg==</script>
 
 <style>
  

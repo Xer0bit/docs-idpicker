@@ -1,64 +1,63 @@
 ---
 title: "Sub-Advisor Management"
-description: "Detailed click-by-click sub-advisor provisioning and access control"
+description: "How to invite sub-advisors, delegate your workload, and restrict their permissions"
 weight: 139
 draft: false
 ---
 
-This guide explains how advisors create sub-advisors, assign permissions, and validate delegated access.
+If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.
 
-## A) Open Sub-Advisor Area
+---
 
-1. Sign in as advisor.
-2. Open sidebar.
-3. Click Sub-Advisor or Sub-Advisors module.
-4. Wait for list and permission context to load.
+## 1. Creating a New Sub-Advisor
 
-## B) Create Sub-Advisor (Click-by-Click)
+1. In the sidebar, click **Sub-Advisors**.
+2. Click the **Create Sub-Advisor** button.
+3. Fill in their identity details:
+   - **Full Name**
+   - **Email** (This will be their login)
+4. Set their **Assigned Scope**:
+   - If you want them to text *only* 12th graders, assign them explicitly to the "12th Graders" Group. They will not be able to see any students outside of that group.
+5. Configure their **Permission Set**:
+   - Decide exactly which modules they can see (e.g., enable *Students* and *Chat*, but disable *Forms* and *Settings*).
+6. Click **Save / Create**.
+7. The system will email them an invitation link to set up their password.
 
-1. Click Create Sub-Advisor.
-2. Fill required fields:
-   - Full name
-   - Email
-   - Assigned scope/group access
-   - Permission set
-3. Review selected permissions carefully.
-4. Click Save/Create.
-5. Confirm invitation/account provisioning success.
+---
 
-## C) Configure Permissions
+## 2. Editing Sub-Advisor Permissions
 
-1. Open sub-advisor record from list.
-2. Edit permission matrix (module/action level, if available).
-3. Adjust student/group visibility scope.
-4. Save changes.
-5. Verify effective access with test sign-in.
+If a sub-advisor's role changes, you can adjust their access on the fly.
 
-## D) Validate Restricted Visibility
+1. Open the **Sub-Advisors** module.
+2. Click on the target sub-advisor's name.
+3. Scroll down to the Permission Matrix.
+4. Toggle specific module access on or off as needed. You can also change which exact groups they govern here.
+5. Click **Save**. The changes will apply the next time they log in or refresh their page.
 
-1. Sign in as sub-advisor account.
-2. Open Students and Groups modules.
-3. Confirm only authorized cohorts are visible.
-4. Confirm restricted actions are hidden/disabled where expected.
+### Validating Their Access
+If you want to be completely sure you set the permissions correctly:
+1. Ask the sub-advisor to log in while you watch, OR
+2. Temporarily log in using a designated "test" sub-advisor account setup with the identical permission matrix.
+3. Verify that restricted modules are completely hidden from the sidebar.
 
-## E) Deactivate or Revoke Access
+---
 
-1. Open sub-advisor account.
-2. Change status to inactive (or revoke access action).
-3. Save change.
-4. Verify sub-advisor can no longer access protected modules.
+## 3. Revoking Access (Deactivation)
 
-## Common Advisor Questions
+If a sub-advisor leaves your organization, you must revoke their access immediately to protect student privacy.
 
-Q: Sub-advisor cannot see any students.
-A: Check group/visibility assignment in permission scope.
+1. Open their sub-advisor record.
+2. Change their status to **Inactive** (or click the **Revoke Access** button, depending on your UI version).
+3. Click **Save**.
+4. The sub-advisor is immediately logged out of all active sessions and cannot sign back in.
 
-Q: Sub-advisor sees more modules than intended.
-A: Re-open permission matrix and remove excess grants.
+---
 
-Q: Deactivation saved, but account still active.
-A: Sign out all sessions and verify status propagation after refresh.
+## Common Questions
 
-![Sub-Advisor Placeholder](/images/user-manual/advisor-panel/sub-advisor-create.png)
-
-Image placeholder: Add sub-advisor creation form and permission controls screenshot.
+| Situation | What to do |
+|---|---|
+| My sub-advisor cannot see any students | Check their Assigned Scope. If they are not assigned to any groups, and not given "All Students" access, their roster will be blank |
+| A sub-advisor sees too many modules | You granted them too many checkboxes in the Permission Matrix. Uncheck the modules you want hidden and Save |
+| I deactivated an account but they are still logged in | While the system attempts to kill active sessions immediately, a hard refresh on the sub-advisor's browser will forcefully enforce the new locked state |

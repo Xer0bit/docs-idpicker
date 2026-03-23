@@ -1,67 +1,56 @@
 ---
 title: "06. AI Mentorship Guide"
-description: "Detailed click-by-click mentor and advisor chat walkthrough"
+description: "How to chat with specialized AI Mentor personalities and your human Advisor"
 weight: 126
 draft: false
 ---
 
-Mentor area includes AI mentor personalities and advisor chat (if advisor is linked).
+The Mentor Hub is your central communication space. Here, you can seek advice from specialized AI personalities or chat directly with your assigned human advisor.
 
-## Open Mentor Hub
+---
 
-1. In sidebar, click Mentor.
-2. Wait for mentor cards to load.
-3. Check quota indicator (if visible).
+## Starting a Chat with an AI Mentor
 
-## Start Chat with AI Mentor (Click-by-Click)
+IDPicker provides multiple AI personalities, each tuned for specific types of advice (e.g., strict academic planning, empathetic career counseling, technical skills building).
 
-1. Browse mentor cards.
-2. Click Select/Open on preferred mentor.
-3. Chat screen opens.
-4. Click message input.
-5. Type your question.
-6. Click send action.
-7. Continue follow-up prompts.
+1. In the sidebar, click **Mentor**.
+2. Browse the grid of available mentor cards to find a personality that fits your current question.
+3. Click **Select/Open** on your preferred mentor.
+4. Once the chat interface opens, type your question into the message box at the bottom.
+5. Click the **Send** icon.
+6. The AI will respond in real-time, contextually aware of your personality and recommendation profile!
 
-## Return to Mentor List
+> **Quota Warning:** Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!
 
-1. In chat view, click Back to Mentors.
-2. Select another mentor if needed.
+---
 
-## Open Advisor Chat (If Linked)
+## Resuming a Recent Chat
 
-1. In mentor main page, locate advisor section.
-2. Check advisor summary (name, unread count, last message info).
-3. Click advisor chat action.
-4. Continue conversation.
-5. Use back action to return.
+You do not have to start over every time.
 
-If advisor section says no advisor:
+1. In the Mentor Hub, look for the **Recent Chats** list.
+2. Click on a recent thread.
+3. The chat history will load, and you can pick up the conversation exactly where you left off.
 
-- Advisor is not currently linked to this student account.
+---
 
-## Use Recent Chats
+## Chatting With Your Human Advisor
 
-1. In mentor hub, open recent chats list.
-2. Click recent thread.
-3. Continue from last context.
+If your account is linked to an organization or school, your human advisor manages your progress. You can message them directly here.
 
-## Chat Quota Awareness
+1. On the main Mentor page, look for the **Advisor** section.
+2. You will see your advisor's name, last known activity, and a red badge if you have **unread messages**.
+3. Click the **Chat with Advisor** button.
+4. Type and send your message. When your advisor replies, you will be notified on your dashboard.
 
-- Quota can limit number of chat interactions.
-- Upgrade prompts may appear if free usage is exhausted.
+*Note: If the advisor section says "No advisor linked," your account operates independently and this feature is disabled.*
 
-## Common Student Questions
+---
 
-Q: I selected mentor but chat did not open.
-A: Retry selection and verify page URL updates with mentor parameter.
+## Common Questions
 
-Q: Advisor chat button is disabled.
-A: Advisor may be loading or not linked.
-
-Q: Messages stopped sending.
-A: Check quota status and active internet connection.
-
-![Mentor Chat Placeholder](/images/user-manual/student-panel/ai-mentor-chat.png)
-
-Image placeholder: Mentor card grid and active chat interface with back button.
+| Situation | What to do |
+|---|---|
+| I clicked a mentor but the chat didn't open | Refresh the page and try again; verify your network is stable |
+| The Advisor chat button is greyed out | You do not currently have a human advisor linked to your account |
+| My messages stopped sending | You have likely hit your chat quota limit. Check your subscription settings |

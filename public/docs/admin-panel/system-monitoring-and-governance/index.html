@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>System Monitoring and Governance | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click status, logs, and governance controls">
+<meta name="description" content="How to check service health, read realtime logs, and manage free-use policies">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/system-monitoring-and-governance/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="System Monitoring and Governance">
-  <meta property="og:description" content="Detailed click-by-click status, logs, and governance controls">
+  <meta property="og:description" content="How to check service health, read realtime logs, and manage free-use policies">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="System Monitoring and Governance">
-  <meta itemprop="description" content="Detailed click-by-click status, logs, and governance controls">
-  <meta itemprop="wordCount" content="127">
+  <meta itemprop="description" content="How to check service health, read realtime logs, and manage free-use policies">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="410">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="System Monitoring and Governance">
-  <meta name="twitter:description" content="Detailed click-by-click status, logs, and governance controls">
+  <meta name="twitter:description" content="How to check service health, read realtime logs, and manage free-use policies">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,10 +242,10 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#status-module">Status Module</a></li>
-    <li><a href="#realtime-logs">Realtime Logs</a></li>
-    <li><a href="#free-use-management">Free-Use Management</a></li>
-    <li><a href="#certificates-and-application-documents">Certificates and Application Documents</a></li>
+    <li><a href="#1-reviewing-the-status-module">1. Reviewing the Status Module</a></li>
+    <li><a href="#2-using-realtime-logs">2. Using Realtime Logs</a></li>
+    <li><a href="#3-free-use-policy-management">3. Free-Use Policy Management</a></li>
+    <li><a href="#4-certificates-and-compliance-documents">4. Certificates and Compliance Documents</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -268,48 +270,74 @@
 </nav>
 <div class="td-content">
 	<h1>System Monitoring and Governance</h1>
-	<div class="lead">Detailed click-by-click status, logs, and governance controls</div>
+	<div class="lead">How to check service health, read realtime logs, and manage free-use policies</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="status-module">Status Module</h2>
+	<p>For technical administrators, this section acts as your infrastructure dashboard. Here you can monitor server health, catch bugs as they happen, and control the financial levers of free usage.</p>
+<hr>
+<h2 id="1-reviewing-the-status-module">1. Reviewing the Status Module</h2>
 <ol>
-<li>Open Status page.</li>
-<li>Review service health blocks.</li>
-<li>Identify degraded components.</li>
-<li>Correlate with recent alerts.</li>
+<li>Open the <strong>Status</strong> page from the sidebar.</li>
+<li>Review the core service health blocks (Database, API, AI Services, Storage).</li>
+<li>If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.</li>
+<li>The status page helps isolate whether a reported bug is a local user error or a widespread server outage.</li>
 </ol>
-<h2 id="realtime-logs">Realtime Logs</h2>
+<hr>
+<h2 id="2-using-realtime-logs">2. Using Realtime Logs</h2>
+<p>When a user reports a persistent crash, the Realtime Logs are your best diagnostic tool.</p>
 <ol>
-<li>Open Realtime Logs.</li>
-<li>Start live stream view.</li>
-<li>Filter by level/source if available.</li>
-<li>Track suspicious error bursts.</li>
+<li>Open the <strong>Realtime Logs</strong> module.</li>
+<li>Click <strong>Start Stream</strong> to watch live events hit the backend in real-time.</li>
+<li>Apply filters:
+<ul>
+<li>Set log level to <code>ERROR</code> or <code>FATAL</code> to strip out the noise.</li>
+<li>Set the source filter if you are tracing a specific module (e.g., <code>stripe-webhook</code> or <code>ai-generation</code>).</li>
+</ul>
+</li>
+<li>Look for sudden bursts or cascading error statements. These can be exported and sent to your engineering team.</li>
 </ol>
-<h2 id="free-use-management">Free-Use Management</h2>
+<hr>
+<h2 id="3-free-use-policy-management">3. Free-Use Policy Management</h2>
+<p>If your platform offers a &ldquo;freemium&rdquo; tier, you need to govern exactly how much free API processing the average user can consume before hitting a paywall.</p>
 <ol>
-<li>Open Free Use Management.</li>
-<li>Review current quota/limit values.</li>
-<li>Update limits according to policy.</li>
-<li>Save and verify effect on applicable feature gates.</li>
+<li>Open <strong>Free Use Management</strong>.</li>
+<li>Review the current limit caps (e.g., <em>Max Free AI Chat Messages = 10</em>, <em>Max Free Reports = 1</em>).</li>
+<li>Adjust the limits up or down depending on your current marketing strategy or token budget.</li>
+<li>Click <strong>Save</strong>. The updated thresholds immediately apply to the gating logic on the student apps.</li>
 </ol>
-<h2 id="certificates-and-application-documents">Certificates and Application Documents</h2>
+<hr>
+<h2 id="4-certificates-and-compliance-documents">4. Certificates and Compliance Documents</h2>
 <ol>
-<li>Open Certificates.</li>
-<li>Review issuance queue/status.</li>
-<li>Open Application Documents.</li>
-<li>Review document validations and statuses.</li>
-<li>Apply review decisions and notes.</li>
+<li>Open the <strong>Certificates</strong> or <strong>Application Documents</strong> queue.</li>
+<li>Review pending document validations submitted by users (e.g., proof of high school graduation or language proficiency).</li>
+<li>Apply review decisions (Verify / Reject) based on your governance policy.</li>
+<li>Add internal audit notes to every rejection for compliance tracking.</li>
 </ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Logs show spikes but dashboard looks normal.
-A: Compare time windows and cross-check token usage metrics.</p>
-<p>Q: Free-use update saved but behavior unchanged.
-A: Verify environment and cache propagation delay.</p>
-<p><img src="/images/user-manual/admin-panel/status.png" alt="Status Placeholder"></p>
-<p>Image placeholder: Service status tiles and health indicators.</p>
-<p><img src="/images/user-manual/admin-panel/realtime-logs.png" alt="Realtime Logs Placeholder"></p>
-<p>Image placeholder: Live log stream with filters.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The Realtime Logs view is completely empty</td>
+          <td>Ensure you clicked &ldquo;Start Stream&rdquo;. Also check if your exact filter combination is too restrictive (e.g., looking for FATAL logs on an entirely healthy system)</td>
+      </tr>
+      <tr>
+          <td>I see a massive spike in ERROR logs but the Status page says &ldquo;Healthy&rdquo;</td>
+          <td>A specific edge-case feature might be crashing (generating logs) without actually taking the core database offline. Investigate the log stack trace immediately</td>
+      </tr>
+      <tr>
+          <td>I updated the Free-Use limit but students say they are still blocked</td>
+          <td>Global platform settings often rely on multi-stage caching. Verify the environment variable propagated correctly, or wait 5 minutes for the cache TTL to expire</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -338,7 +366,7 @@ A: Verify environment and cache propagation delay.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIFN0YXR1cyBNb2R1bGUKCjEuIE9wZW4gU3RhdHVzIHBhZ2UuCjIuIFJldmlldyBzZXJ2aWNlIGhlYWx0aCBibG9ja3MuCjMuIElkZW50aWZ5IGRlZ3JhZGVkIGNvbXBvbmVudHMuCjQuIENvcnJlbGF0ZSB3aXRoIHJlY2VudCBhbGVydHMuCgojIyBSZWFsdGltZSBMb2dzCgoxLiBPcGVuIFJlYWx0aW1lIExvZ3MuCjIuIFN0YXJ0IGxpdmUgc3RyZWFtIHZpZXcuCjMuIEZpbHRlciBieSBsZXZlbC9zb3VyY2UgaWYgYXZhaWxhYmxlLgo0LiBUcmFjayBzdXNwaWNpb3VzIGVycm9yIGJ1cnN0cy4KCiMjIEZyZWUtVXNlIE1hbmFnZW1lbnQKCjEuIE9wZW4gRnJlZSBVc2UgTWFuYWdlbWVudC4KMi4gUmV2aWV3IGN1cnJlbnQgcXVvdGEvbGltaXQgdmFsdWVzLgozLiBVcGRhdGUgbGltaXRzIGFjY29yZGluZyB0byBwb2xpY3kuCjQuIFNhdmUgYW5kIHZlcmlmeSBlZmZlY3Qgb24gYXBwbGljYWJsZSBmZWF0dXJlIGdhdGVzLgoKIyMgQ2VydGlmaWNhdGVzIGFuZCBBcHBsaWNhdGlvbiBEb2N1bWVudHMKCjEuIE9wZW4gQ2VydGlmaWNhdGVzLgoyLiBSZXZpZXcgaXNzdWFuY2UgcXVldWUvc3RhdHVzLgozLiBPcGVuIEFwcGxpY2F0aW9uIERvY3VtZW50cy4KNC4gUmV2aWV3IGRvY3VtZW50IHZhbGlkYXRpb25zIGFuZCBzdGF0dXNlcy4KNS4gQXBwbHkgcmV2aWV3IGRlY2lzaW9ucyBhbmQgbm90ZXMuCgojIyBDb21tb24gUXVlc3Rpb25zCgpROiBMb2dzIHNob3cgc3Bpa2VzIGJ1dCBkYXNoYm9hcmQgbG9va3Mgbm9ybWFsLgpBOiBDb21wYXJlIHRpbWUgd2luZG93cyBhbmQgY3Jvc3MtY2hlY2sgdG9rZW4gdXNhZ2UgbWV0cmljcy4KClE6IEZyZWUtdXNlIHVwZGF0ZSBzYXZlZCBidXQgYmVoYXZpb3IgdW5jaGFuZ2VkLgpBOiBWZXJpZnkgZW52aXJvbm1lbnQgYW5kIGNhY2hlIHByb3BhZ2F0aW9uIGRlbGF5LgoKIVtTdGF0dXMgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWRtaW4tcGFuZWwvc3RhdHVzLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBTZXJ2aWNlIHN0YXR1cyB0aWxlcyBhbmQgaGVhbHRoIGluZGljYXRvcnMuCgohW1JlYWx0aW1lIExvZ3MgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWRtaW4tcGFuZWwvcmVhbHRpbWUtbG9ncy5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogTGl2ZSBsb2cgc3RyZWFtIHdpdGggZmlsdGVycy4K</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">CkZvciB0ZWNobmljYWwgYWRtaW5pc3RyYXRvcnMsIHRoaXMgc2VjdGlvbiBhY3RzIGFzIHlvdXIgaW5mcmFzdHJ1Y3R1cmUgZGFzaGJvYXJkLiBIZXJlIHlvdSBjYW4gbW9uaXRvciBzZXJ2ZXIgaGVhbHRoLCBjYXRjaCBidWdzIGFzIHRoZXkgaGFwcGVuLCBhbmQgY29udHJvbCB0aGUgZmluYW5jaWFsIGxldmVycyBvZiBmcmVlIHVzYWdlLgoKLS0tCgojIyAxLiBSZXZpZXdpbmcgdGhlIFN0YXR1cyBNb2R1bGUKCjEuIE9wZW4gdGhlICoqU3RhdHVzKiogcGFnZSBmcm9tIHRoZSBzaWRlYmFyLgoyLiBSZXZpZXcgdGhlIGNvcmUgc2VydmljZSBoZWFsdGggYmxvY2tzIChEYXRhYmFzZSwgQVBJLCBBSSBTZXJ2aWNlcywgU3RvcmFnZSkuCjMuIElmIGFueSBjb21wb25lbnQgaXMgZmxhZ2dlZCB5ZWxsb3cgKERlZ3JhZGVkKSBvciByZWQgKE9mZmxpbmUpLCBpbW1lZGlhdGVseSBjcm9zcy1yZWZlcmVuY2UgeW91ciBpbmZyYXN0cnVjdHVyZSBhbGVydHMuCjQuIFRoZSBzdGF0dXMgcGFnZSBoZWxwcyBpc29sYXRlIHdoZXRoZXIgYSByZXBvcnRlZCBidWcgaXMgYSBsb2NhbCB1c2VyIGVycm9yIG9yIGEgd2lkZXNwcmVhZCBzZXJ2ZXIgb3V0YWdlLgoKLS0tCgojIyAyLiBVc2luZyBSZWFsdGltZSBMb2dzCgpXaGVuIGEgdXNlciByZXBvcnRzIGEgcGVyc2lzdGVudCBjcmFzaCwgdGhlIFJlYWx0aW1lIExvZ3MgYXJlIHlvdXIgYmVzdCBkaWFnbm9zdGljIHRvb2wuCgoxLiBPcGVuIHRoZSAqKlJlYWx0aW1lIExvZ3MqKiBtb2R1bGUuCjIuIENsaWNrICoqU3RhcnQgU3RyZWFtKiogdG8gd2F0Y2ggbGl2ZSBldmVudHMgaGl0IHRoZSBiYWNrZW5kIGluIHJlYWwtdGltZS4KMy4gQXBwbHkgZmlsdGVyczoKICAgLSBTZXQgbG9nIGxldmVsIHRvIGBFUlJPUmAgb3IgYEZBVEFMYCB0byBzdHJpcCBvdXQgdGhlIG5vaXNlLgogICAtIFNldCB0aGUgc291cmNlIGZpbHRlciBpZiB5b3UgYXJlIHRyYWNpbmcgYSBzcGVjaWZpYyBtb2R1bGUgKGUuZy4sIGBzdHJpcGUtd2ViaG9va2Agb3IgYGFpLWdlbmVyYXRpb25gKS4KNC4gTG9vayBmb3Igc3VkZGVuIGJ1cnN0cyBvciBjYXNjYWRpbmcgZXJyb3Igc3RhdGVtZW50cy4gVGhlc2UgY2FuIGJlIGV4cG9ydGVkIGFuZCBzZW50IHRvIHlvdXIgZW5naW5lZXJpbmcgdGVhbS4KCi0tLQoKIyMgMy4gRnJlZS1Vc2UgUG9saWN5IE1hbmFnZW1lbnQKCklmIHlvdXIgcGxhdGZvcm0gb2ZmZXJzIGEgImZyZWVtaXVtIiB0aWVyLCB5b3UgbmVlZCB0byBnb3Zlcm4gZXhhY3RseSBob3cgbXVjaCBmcmVlIEFQSSBwcm9jZXNzaW5nIHRoZSBhdmVyYWdlIHVzZXIgY2FuIGNvbnN1bWUgYmVmb3JlIGhpdHRpbmcgYSBwYXl3YWxsLgoKMS4gT3BlbiAqKkZyZWUgVXNlIE1hbmFnZW1lbnQqKi4KMi4gUmV2aWV3IHRoZSBjdXJyZW50IGxpbWl0IGNhcHMgKGUuZy4sICpNYXggRnJlZSBBSSBDaGF0IE1lc3NhZ2VzID0gMTAqLCAqTWF4IEZyZWUgUmVwb3J0cyA9IDEqKS4KMy4gQWRqdXN0IHRoZSBsaW1pdHMgdXAgb3IgZG93biBkZXBlbmRpbmcgb24geW91ciBjdXJyZW50IG1hcmtldGluZyBzdHJhdGVneSBvciB0b2tlbiBidWRnZXQuCjQuIENsaWNrICoqU2F2ZSoqLiBUaGUgdXBkYXRlZCB0aHJlc2hvbGRzIGltbWVkaWF0ZWx5IGFwcGx5IHRvIHRoZSBnYXRpbmcgbG9naWMgb24gdGhlIHN0dWRlbnQgYXBwcy4KCi0tLQoKIyMgNC4gQ2VydGlmaWNhdGVzIGFuZCBDb21wbGlhbmNlIERvY3VtZW50cwoKMS4gT3BlbiB0aGUgKipDZXJ0aWZpY2F0ZXMqKiBvciAqKkFwcGxpY2F0aW9uIERvY3VtZW50cyoqIHF1ZXVlLgoyLiBSZXZpZXcgcGVuZGluZyBkb2N1bWVudCB2YWxpZGF0aW9ucyBzdWJtaXR0ZWQgYnkgdXNlcnMgKGUuZy4sIHByb29mIG9mIGhpZ2ggc2Nob29sIGdyYWR1YXRpb24gb3IgbGFuZ3VhZ2UgcHJvZmljaWVuY3kpLgozLiBBcHBseSByZXZpZXcgZGVjaXNpb25zIChWZXJpZnkgLyBSZWplY3QpIGJhc2VkIG9uIHlvdXIgZ292ZXJuYW5jZSBwb2xpY3kuCjQuIEFkZCBpbnRlcm5hbCBhdWRpdCBub3RlcyB0byBldmVyeSByZWplY3Rpb24gZm9yIGNvbXBsaWFuY2UgdHJhY2tpbmcuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSBSZWFsdGltZSBMb2dzIHZpZXcgaXMgY29tcGxldGVseSBlbXB0eSB8IEVuc3VyZSB5b3UgY2xpY2tlZCAiU3RhcnQgU3RyZWFtIi4gQWxzbyBjaGVjayBpZiB5b3VyIGV4YWN0IGZpbHRlciBjb21iaW5hdGlvbiBpcyB0b28gcmVzdHJpY3RpdmUgKGUuZy4sIGxvb2tpbmcgZm9yIEZBVEFMIGxvZ3Mgb24gYW4gZW50aXJlbHkgaGVhbHRoeSBzeXN0ZW0pIHwKfCBJIHNlZSBhIG1hc3NpdmUgc3Bpa2UgaW4gRVJST1IgbG9ncyBidXQgdGhlIFN0YXR1cyBwYWdlIHNheXMgIkhlYWx0aHkiIHwgQSBzcGVjaWZpYyBlZGdlLWNhc2UgZmVhdHVyZSBtaWdodCBiZSBjcmFzaGluZyAoZ2VuZXJhdGluZyBsb2dzKSB3aXRob3V0IGFjdHVhbGx5IHRha2luZyB0aGUgY29yZSBkYXRhYmFzZSBvZmZsaW5lLiBJbnZlc3RpZ2F0ZSB0aGUgbG9nIHN0YWNrIHRyYWNlIGltbWVkaWF0ZWx5IHwKfCBJIHVwZGF0ZWQgdGhlIEZyZWUtVXNlIGxpbWl0IGJ1dCBzdHVkZW50cyBzYXkgdGhleSBhcmUgc3RpbGwgYmxvY2tlZCB8IEdsb2JhbCBwbGF0Zm9ybSBzZXR0aW5ncyBvZnRlbiByZWx5IG9uIG11bHRpLXN0YWdlIGNhY2hpbmcuIFZlcmlmeSB0aGUgZW52aXJvbm1lbnQgdmFyaWFibGUgcHJvcGFnYXRlZCBjb3JyZWN0bHksIG9yIHdhaXQgNSBtaW51dGVzIGZvciB0aGUgY2FjaGUgVFRMIHRvIGV4cGlyZSB8Cg==</script>
 
 <style>
  

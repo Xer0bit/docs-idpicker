@@ -19,23 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Advisor Login and Dashboard | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click login, session, and dashboard guide">
+<meta name="description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
 <meta property="og:url" content="http://localhost:1313/docs/advisor-panel/login-and-dashboard/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Advisor Login and Dashboard">
-  <meta property="og:description" content="Detailed click-by-click login, session, and dashboard guide">
+  <meta property="og:description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-19T00:55:27+05:00">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Advisor Login and Dashboard">
-  <meta itemprop="description" content="Detailed click-by-click login, session, and dashboard guide">
-  <meta itemprop="dateModified" content="2026-03-19T00:55:27+05:00">
-  <meta itemprop="wordCount" content="269">
+  <meta itemprop="description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="421">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Advisor Login and Dashboard">
-  <meta name="twitter:description" content="Detailed click-by-click login, session, and dashboard guide">
+  <meta name="twitter:description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -242,12 +242,11 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-advisor-login-click-by-click">A) Advisor Login (Click-by-Click)</a></li>
-    <li><a href="#b-first-time-password-setup">B) First-Time Password Setup</a></li>
-    <li><a href="#c-password-reset-flow">C) Password Reset Flow</a></li>
-    <li><a href="#d-dashboard-navigation-click-by-click">D) Dashboard Navigation (Click-by-Click)</a></li>
-    <li><a href="#e-role-and-permission-behavior">E) Role and Permission Behavior</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#1-advisor-login">1. Advisor Login</a></li>
+    <li><a href="#2-setting-up-your-account-first-time">2. Setting Up Your Account (First Time)</a></li>
+    <li><a href="#3-password-reset-flow">3. Password Reset Flow</a></li>
+    <li><a href="#4-understanding-your-dashboard">4. Understanding Your Dashboard</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -271,74 +270,76 @@
 </nav>
 <div class="td-content">
 	<h1>Advisor Login and Dashboard</h1>
-	<div class="lead">Detailed click-by-click login, session, and dashboard guide</div>
+	<div class="lead">How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide covers advisor access, role-based session behavior, and first dashboard checks.</p>
-<h2 id="a-advisor-login-click-by-click">A) Advisor Login (Click-by-Click)</h2>
+	<p>As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.</p>
+<hr>
+<h2 id="1-advisor-login">1. Advisor Login</h2>
+<p>Depending on your organization&rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See <a href="/docs/getting-started/access-urls/">Access URLs</a> if you are unsure).</p>
 <ol>
-<li>Open advisor login URL from <a href="../getting-started/access-urls/">Access URLs</a>.</li>
-<li>Click Email field and enter advisor email.</li>
-<li>Click Password field and enter password.</li>
-<li>Click Sign In.</li>
-<li>Wait for session initialization.</li>
-<li>Confirm redirect to dashboard.</li>
+<li>Open the Advisor Login page.</li>
+<li>Enter your registered <strong>Email</strong> and <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>The system initializes your specific role and permission set, then drops you onto your Dashboard.</li>
 </ol>
-<p>Expected result:</p>
-<ul>
-<li>Advisor session is loaded with role and permission set.</li>
-<li>User lands on advisor dashboard.</li>
-</ul>
-<p>If login fails:</p>
-<ul>
-<li>Re-check email/password.</li>
-<li>Confirm account status is active.</li>
-<li>Use request/reset password flow if needed.</li>
-</ul>
-<h2 id="b-first-time-password-setup">B) First-Time Password Setup</h2>
-<p>For invited advisors/sub-advisors:</p>
+<blockquote>
+<p><strong>Why is my dashboard missing certain modules?</strong>
+If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.</p>
+</blockquote>
+<hr>
+<h2 id="2-setting-up-your-account-first-time">2. Setting Up Your Account (First Time)</h2>
+<p>If you were invited to join as an advisor or sub-advisor by your organization lead:</p>
 <ol>
-<li>Open setup-password link from email.</li>
-<li>Enter new password and confirm.</li>
-<li>Submit setup form.</li>
-<li>Return to login and sign in.</li>
+<li>Check your email for an invitation from IDPicker.</li>
+<li>Click the <strong>Setup Password</strong> link in that email.</li>
+<li>You will be taken to a secure token-validation page.</li>
+<li>Enter a strong new password, confirm it, and submit to activate your account.</li>
+<li>Return directly to the login page and sign in.</li>
 </ol>
-<h2 id="c-password-reset-flow">C) Password Reset Flow</h2>
+<hr>
+<h2 id="3-password-reset-flow">3. Password Reset Flow</h2>
+<p>If you have forgotten your password:</p>
 <ol>
-<li>Open request-password/reset-password page.</li>
-<li>Enter advisor email.</li>
-<li>Request reset email.</li>
-<li>Open reset link and set new password.</li>
-<li>Sign in again.</li>
+<li>On the login page, click <strong>Forgot Password</strong>.</li>
+<li>Enter your advisor email address.</li>
+<li>You will receive a reset link. Click it, set a new password, and verify the strength indicator.</li>
+<li>If the link says it is expired, immediately request a new one from the login page.</li>
 </ol>
-<h2 id="d-dashboard-navigation-click-by-click">D) Dashboard Navigation (Click-by-Click)</h2>
-<ol>
-<li>After login, open dashboard home.</li>
-<li>Review top overview blocks (metrics/summary widgets).</li>
-<li>Open Assigned Forms block and verify current pending items.</li>
-<li>Use sidebar to verify access to Students, Groups, Resources, and Support Tickets.</li>
-<li>Confirm language preference control works if available in dashboard header.</li>
-</ol>
-<h2 id="e-role-and-permission-behavior">E) Role and Permission Behavior</h2>
-<p>Advisor role:</p>
+<hr>
+<h2 id="4-understanding-your-dashboard">4. Understanding Your Dashboard</h2>
+<p>The Advisor Dashboard serves as your daily command center.</p>
 <ul>
-<li>Full operational access based on organization policies.</li>
+<li><strong>KPI Widgets (Top Row):</strong> These blocks show quick metrics regarding your linked students, such as total student count, recently completed assessments, and pending forms.</li>
+<li><strong>Assigned Forms Block:</strong> Immediately see which of your forms currently have pending responses from students.</li>
+<li><strong>Main Navigation (Sidebar):</strong> Use the sidebar to quickly jump between managing Students, organizing Groups, distributing Resources, or handling Support/Chat.</li>
 </ul>
-<p>Sub-advisor role:</p>
-<ul>
-<li>Access is limited to delegated permissions.</li>
-<li>Some modules/actions may be hidden or disabled.</li>
-</ul>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: I logged in but cannot see expected modules.
-A: Check whether account is sub-advisor with restricted permissions.</p>
-<p>Q: Login succeeds but dashboard appears partially loaded.
-A: Wait for session and dashboard API calls to finish, then refresh once.</p>
-<p>Q: Password setup link does not work.
-A: Request a fresh password setup/reset email.</p>
-<p><img src="/images/user-manual/advisor-panel/advisor-login.png" alt="Advisor Login Placeholder"></p>
-<p>Image placeholder: Add login screen and post-login dashboard landing view.</p>
+<p><em>Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I logged in but cannot see the &ldquo;Groups&rdquo; module</td>
+          <td>Your account is likely a Sub-Advisor with restricted permissions</td>
+      </tr>
+      <tr>
+          <td>My dashboard looks partially loaded or broken</td>
+          <td>Wait a few seconds for all underlying API calls to finish, then refresh the page once</td>
+      </tr>
+      <tr>
+          <td>The password setup link in my email doesn&rsquo;t work</td>
+          <td>Security tokens expire quickly. Ask your administrator to resend the invitation, or use the &ldquo;Forgot Password&rdquo; flow if the account was already created</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -367,7 +368,7 @@ A: Request a fresh password setup/reset email.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIGFkdmlzb3IgYWNjZXNzLCByb2xlLWJhc2VkIHNlc3Npb24gYmVoYXZpb3IsIGFuZCBmaXJzdCBkYXNoYm9hcmQgY2hlY2tzLgoKIyMgQSkgQWR2aXNvciBMb2dpbiAoQ2xpY2stYnktQ2xpY2spCgoxLiBPcGVuIGFkdmlzb3IgbG9naW4gVVJMIGZyb20gW0FjY2VzcyBVUkxzXSguLi9nZXR0aW5nLXN0YXJ0ZWQvYWNjZXNzLXVybHMvKS4KMi4gQ2xpY2sgRW1haWwgZmllbGQgYW5kIGVudGVyIGFkdmlzb3IgZW1haWwuCjMuIENsaWNrIFBhc3N3b3JkIGZpZWxkIGFuZCBlbnRlciBwYXNzd29yZC4KNC4gQ2xpY2sgU2lnbiBJbi4KNS4gV2FpdCBmb3Igc2Vzc2lvbiBpbml0aWFsaXphdGlvbi4KNi4gQ29uZmlybSByZWRpcmVjdCB0byBkYXNoYm9hcmQuCgpFeHBlY3RlZCByZXN1bHQ6CgotIEFkdmlzb3Igc2Vzc2lvbiBpcyBsb2FkZWQgd2l0aCByb2xlIGFuZCBwZXJtaXNzaW9uIHNldC4KLSBVc2VyIGxhbmRzIG9uIGFkdmlzb3IgZGFzaGJvYXJkLgoKSWYgbG9naW4gZmFpbHM6CgotIFJlLWNoZWNrIGVtYWlsL3Bhc3N3b3JkLgotIENvbmZpcm0gYWNjb3VudCBzdGF0dXMgaXMgYWN0aXZlLgotIFVzZSByZXF1ZXN0L3Jlc2V0IHBhc3N3b3JkIGZsb3cgaWYgbmVlZGVkLgoKIyMgQikgRmlyc3QtVGltZSBQYXNzd29yZCBTZXR1cAoKRm9yIGludml0ZWQgYWR2aXNvcnMvc3ViLWFkdmlzb3JzOgoKMS4gT3BlbiBzZXR1cC1wYXNzd29yZCBsaW5rIGZyb20gZW1haWwuCjIuIEVudGVyIG5ldyBwYXNzd29yZCBhbmQgY29uZmlybS4KMy4gU3VibWl0IHNldHVwIGZvcm0uCjQuIFJldHVybiB0byBsb2dpbiBhbmQgc2lnbiBpbi4KCiMjIEMpIFBhc3N3b3JkIFJlc2V0IEZsb3cKCjEuIE9wZW4gcmVxdWVzdC1wYXNzd29yZC9yZXNldC1wYXNzd29yZCBwYWdlLgoyLiBFbnRlciBhZHZpc29yIGVtYWlsLgozLiBSZXF1ZXN0IHJlc2V0IGVtYWlsLgo0LiBPcGVuIHJlc2V0IGxpbmsgYW5kIHNldCBuZXcgcGFzc3dvcmQuCjUuIFNpZ24gaW4gYWdhaW4uCgojIyBEKSBEYXNoYm9hcmQgTmF2aWdhdGlvbiAoQ2xpY2stYnktQ2xpY2spCgoxLiBBZnRlciBsb2dpbiwgb3BlbiBkYXNoYm9hcmQgaG9tZS4KMi4gUmV2aWV3IHRvcCBvdmVydmlldyBibG9ja3MgKG1ldHJpY3Mvc3VtbWFyeSB3aWRnZXRzKS4KMy4gT3BlbiBBc3NpZ25lZCBGb3JtcyBibG9jayBhbmQgdmVyaWZ5IGN1cnJlbnQgcGVuZGluZyBpdGVtcy4KNC4gVXNlIHNpZGViYXIgdG8gdmVyaWZ5IGFjY2VzcyB0byBTdHVkZW50cywgR3JvdXBzLCBSZXNvdXJjZXMsIGFuZCBTdXBwb3J0IFRpY2tldHMuCjUuIENvbmZpcm0gbGFuZ3VhZ2UgcHJlZmVyZW5jZSBjb250cm9sIHdvcmtzIGlmIGF2YWlsYWJsZSBpbiBkYXNoYm9hcmQgaGVhZGVyLgoKIyMgRSkgUm9sZSBhbmQgUGVybWlzc2lvbiBCZWhhdmlvcgoKQWR2aXNvciByb2xlOgoKLSBGdWxsIG9wZXJhdGlvbmFsIGFjY2VzcyBiYXNlZCBvbiBvcmdhbml6YXRpb24gcG9saWNpZXMuCgpTdWItYWR2aXNvciByb2xlOgoKLSBBY2Nlc3MgaXMgbGltaXRlZCB0byBkZWxlZ2F0ZWQgcGVybWlzc2lvbnMuCi0gU29tZSBtb2R1bGVzL2FjdGlvbnMgbWF5IGJlIGhpZGRlbiBvciBkaXNhYmxlZC4KCiMjIENvbW1vbiBBZHZpc29yIFF1ZXN0aW9ucwoKUTogSSBsb2dnZWQgaW4gYnV0IGNhbm5vdCBzZWUgZXhwZWN0ZWQgbW9kdWxlcy4KQTogQ2hlY2sgd2hldGhlciBhY2NvdW50IGlzIHN1Yi1hZHZpc29yIHdpdGggcmVzdHJpY3RlZCBwZXJtaXNzaW9ucy4KClE6IExvZ2luIHN1Y2NlZWRzIGJ1dCBkYXNoYm9hcmQgYXBwZWFycyBwYXJ0aWFsbHkgbG9hZGVkLgpBOiBXYWl0IGZvciBzZXNzaW9uIGFuZCBkYXNoYm9hcmQgQVBJIGNhbGxzIHRvIGZpbmlzaCwgdGhlbiByZWZyZXNoIG9uY2UuCgpROiBQYXNzd29yZCBzZXR1cCBsaW5rIGRvZXMgbm90IHdvcmsuCkE6IFJlcXVlc3QgYSBmcmVzaCBwYXNzd29yZCBzZXR1cC9yZXNldCBlbWFpbC4KCiFbQWR2aXNvciBMb2dpbiBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL2Fkdmlzb3ItbG9naW4ucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBsb2dpbiBzY3JlZW4gYW5kIHBvc3QtbG9naW4gZGFzaGJvYXJkIGxhbmRpbmcgdmlldy4K</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">CkFzIGFuIEFkdmlzb3IsIHlvdXIgcGxhdGZvcm0gYWNjZXNzIGlzIHRhaWxvcmVkIHRvIHlvdXIgb3BlcmF0aW9uYWwgcm9sZS4gVGhpcyBndWlkZSBjb3ZlcnMgaG93IHRvIGdldCBsb2dnZWQgaW4gc2VjdXJlbHkgYW5kIGhvdyB0byBpbnRlcnByZXQgeW91ciBtYWluIGRhc2hib2FyZC4KCi0tLQoKIyMgMS4gQWR2aXNvciBMb2dpbgoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3Mgc2V0dXAsIHlvdSB3aWxsIGFjY2VzcyB0aGUgcGxhdGZvcm0gZWl0aGVyIHZpYSBhIGN1c3RvbSBvcmdhbml6YXRpb24gbGluayBvciB0aGUgbWFpbiBhZHZpc29yIHBvcnRhbC4gKFNlZSBbQWNjZXNzIFVSTHNdKC9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscy8pIGlmIHlvdSBhcmUgdW5zdXJlKS4KCjEuIE9wZW4gdGhlIEFkdmlzb3IgTG9naW4gcGFnZS4KMi4gRW50ZXIgeW91ciByZWdpc3RlcmVkICoqRW1haWwqKiBhbmQgKipQYXNzd29yZCoqLgozLiBDbGljayAqKlNpZ24gSW4qKi4KNC4gVGhlIHN5c3RlbSBpbml0aWFsaXplcyB5b3VyIHNwZWNpZmljIHJvbGUgYW5kIHBlcm1pc3Npb24gc2V0LCB0aGVuIGRyb3BzIHlvdSBvbnRvIHlvdXIgRGFzaGJvYXJkLgoKPiAqKldoeSBpcyBteSBkYXNoYm9hcmQgbWlzc2luZyBjZXJ0YWluIG1vZHVsZXM/KioKPiBJZiB5b3UgYXJlIGEgIlN1Yi1BZHZpc29yLCIgeW91ciBhY2Nlc3MgaXMgc3RyaWN0bHkgbGltaXRlZCB0byB0aGUgcGVybWlzc2lvbnMgeW91ciBwcmltYXJ5IEFkdmlzb3IgZGVsZWdhdGVkIHRvIHlvdS4gSWYgeW91IGNhbm5vdCBzZWUgYSBtb2R1bGUsIHlvdSBkbyBub3QgaGF2ZSBwZXJtaXNzaW9uIGZvciBpdC4KCi0tLQoKIyMgMi4gU2V0dGluZyBVcCBZb3VyIEFjY291bnQgKEZpcnN0IFRpbWUpCgpJZiB5b3Ugd2VyZSBpbnZpdGVkIHRvIGpvaW4gYXMgYW4gYWR2aXNvciBvciBzdWItYWR2aXNvciBieSB5b3VyIG9yZ2FuaXphdGlvbiBsZWFkOgoKMS4gQ2hlY2sgeW91ciBlbWFpbCBmb3IgYW4gaW52aXRhdGlvbiBmcm9tIElEUGlja2VyLgoyLiBDbGljayB0aGUgKipTZXR1cCBQYXNzd29yZCoqIGxpbmsgaW4gdGhhdCBlbWFpbC4KMy4gWW91IHdpbGwgYmUgdGFrZW4gdG8gYSBzZWN1cmUgdG9rZW4tdmFsaWRhdGlvbiBwYWdlLgo0LiBFbnRlciBhIHN0cm9uZyBuZXcgcGFzc3dvcmQsIGNvbmZpcm0gaXQsIGFuZCBzdWJtaXQgdG8gYWN0aXZhdGUgeW91ciBhY2NvdW50Lgo1LiBSZXR1cm4gZGlyZWN0bHkgdG8gdGhlIGxvZ2luIHBhZ2UgYW5kIHNpZ24gaW4uCgotLS0KCiMjIDMuIFBhc3N3b3JkIFJlc2V0IEZsb3cKCklmIHlvdSBoYXZlIGZvcmdvdHRlbiB5b3VyIHBhc3N3b3JkOgoxLiBPbiB0aGUgbG9naW4gcGFnZSwgY2xpY2sgKipGb3Jnb3QgUGFzc3dvcmQqKi4KMi4gRW50ZXIgeW91ciBhZHZpc29yIGVtYWlsIGFkZHJlc3MuCjMuIFlvdSB3aWxsIHJlY2VpdmUgYSByZXNldCBsaW5rLiBDbGljayBpdCwgc2V0IGEgbmV3IHBhc3N3b3JkLCBhbmQgdmVyaWZ5IHRoZSBzdHJlbmd0aCBpbmRpY2F0b3IuCjQuIElmIHRoZSBsaW5rIHNheXMgaXQgaXMgZXhwaXJlZCwgaW1tZWRpYXRlbHkgcmVxdWVzdCBhIG5ldyBvbmUgZnJvbSB0aGUgbG9naW4gcGFnZS4KCi0tLQoKIyMgNC4gVW5kZXJzdGFuZGluZyBZb3VyIERhc2hib2FyZAoKVGhlIEFkdmlzb3IgRGFzaGJvYXJkIHNlcnZlcyBhcyB5b3VyIGRhaWx5IGNvbW1hbmQgY2VudGVyLgoKLSAqKktQSSBXaWRnZXRzIChUb3AgUm93KToqKiBUaGVzZSBibG9ja3Mgc2hvdyBxdWljayBtZXRyaWNzIHJlZ2FyZGluZyB5b3VyIGxpbmtlZCBzdHVkZW50cywgc3VjaCBhcyB0b3RhbCBzdHVkZW50IGNvdW50LCByZWNlbnRseSBjb21wbGV0ZWQgYXNzZXNzbWVudHMsIGFuZCBwZW5kaW5nIGZvcm1zLgotICoqQXNzaWduZWQgRm9ybXMgQmxvY2s6KiogSW1tZWRpYXRlbHkgc2VlIHdoaWNoIG9mIHlvdXIgZm9ybXMgY3VycmVudGx5IGhhdmUgcGVuZGluZyByZXNwb25zZXMgZnJvbSBzdHVkZW50cy4KLSAqKk1haW4gTmF2aWdhdGlvbiAoU2lkZWJhcik6KiogVXNlIHRoZSBzaWRlYmFyIHRvIHF1aWNrbHkganVtcCBiZXR3ZWVuIG1hbmFnaW5nIFN0dWRlbnRzLCBvcmdhbml6aW5nIEdyb3VwcywgZGlzdHJpYnV0aW5nIFJlc291cmNlcywgb3IgaGFuZGxpbmcgU3VwcG9ydC9DaGF0LgoKKlRpcDogSWYgeW91ciBwbGF0Zm9ybSBzdXBwb3J0cyBtdWx0aXBsZSBsYW5ndWFnZXMsIHVzZSB0aGUgbGFuZ3VhZ2UgdG9nZ2xlIGluIHRoZSBoZWFkZXIgdG8gc3dpdGNoIHlvdXIgaW50ZXJmYWNlIGxhbmd1YWdlIGluc3RhbnRseS4qCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEkgbG9nZ2VkIGluIGJ1dCBjYW5ub3Qgc2VlIHRoZSAiR3JvdXBzIiBtb2R1bGUgfCBZb3VyIGFjY291bnQgaXMgbGlrZWx5IGEgU3ViLUFkdmlzb3Igd2l0aCByZXN0cmljdGVkIHBlcm1pc3Npb25zIHwKfCBNeSBkYXNoYm9hcmQgbG9va3MgcGFydGlhbGx5IGxvYWRlZCBvciBicm9rZW4gfCBXYWl0IGEgZmV3IHNlY29uZHMgZm9yIGFsbCB1bmRlcmx5aW5nIEFQSSBjYWxscyB0byBmaW5pc2gsIHRoZW4gcmVmcmVzaCB0aGUgcGFnZSBvbmNlIHwKfCBUaGUgcGFzc3dvcmQgc2V0dXAgbGluayBpbiBteSBlbWFpbCBkb2Vzbid0IHdvcmsgfCBTZWN1cml0eSB0b2tlbnMgZXhwaXJlIHF1aWNrbHkuIEFzayB5b3VyIGFkbWluaXN0cmF0b3IgdG8gcmVzZW5kIHRoZSBpbnZpdGF0aW9uLCBvciB1c2UgdGhlICJGb3Jnb3QgUGFzc3dvcmQiIGZsb3cgaWYgdGhlIGFjY291bnQgd2FzIGFscmVhZHkgY3JlYXRlZCB8Cg==</script>
 
 <style>
  

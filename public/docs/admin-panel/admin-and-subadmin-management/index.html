@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Admin and Subadmin Management | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click admin access governance">
+<meta name="description" content="How to govern internal platform access and manage subadmin permission scopes">
 <meta property="og:url" content="http://localhost:1313/docs/admin-panel/admin-and-subadmin-management/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Admin and Subadmin Management">
-  <meta property="og:description" content="Detailed click-by-click admin access governance">
+  <meta property="og:description" content="How to govern internal platform access and manage subadmin permission scopes">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Admin and Subadmin Management">
-  <meta itemprop="description" content="Detailed click-by-click admin access governance">
-  <meta itemprop="wordCount" content="131">
+  <meta itemprop="description" content="How to govern internal platform access and manage subadmin permission scopes">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="352">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Admin and Subadmin Management">
-  <meta name="twitter:description" content="Detailed click-by-click admin access governance">
+  <meta name="twitter:description" content="How to govern internal platform access and manage subadmin permission scopes">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,10 +242,9 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#create-admin-user">Create Admin User</a></li>
-    <li><a href="#edit-admin-profile">Edit Admin Profile</a></li>
-    <li><a href="#permission-assignment">Permission Assignment</a></li>
-    <li><a href="#subadmin-self-view">Subadmin Self View</a></li>
+    <li><a href="#1-creating-an-admin-user">1. Creating an Admin User</a></li>
+    <li><a href="#2-managing-the-permission-matrix">2. Managing the Permission Matrix</a></li>
+    <li><a href="#3-subadmin-self-auditing">3. Subadmin Self-Auditing</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -268,53 +269,75 @@
 </nav>
 <div class="td-content">
 	<h1>Admin and Subadmin Management</h1>
-	<div class="lead">Detailed click-by-click admin access governance</div>
+	<div class="lead">How to govern internal platform access and manage subadmin permission scopes</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="create-admin-user">Create Admin User</h2>
+	<p>Not all administrators need full access to every setting. This module allows you to create internal staff accounts and rigorously defend your organization&rsquo;s security posture by enforcing least-privilege access.</p>
+<hr>
+<h2 id="1-creating-an-admin-user">1. Creating an Admin User</h2>
 <ol>
-<li>Open Admin Management.</li>
-<li>Click Add Admin.</li>
-<li>Fill identity fields (email, username, first/last name).</li>
-<li>Set temporary password.</li>
-<li>Choose role.</li>
-<li>Save and confirm creation.</li>
-</ol>
-<h2 id="edit-admin-profile">Edit Admin Profile</h2>
-<ol>
-<li>Open admin row detail.</li>
-<li>Update identity fields.</li>
-<li>Save updates.</li>
-<li>Confirm list refresh reflects changes.</li>
-</ol>
-<h2 id="permission-assignment">Permission Assignment</h2>
-<ol>
-<li>Open permission panel for target admin.</li>
-<li>Set feature scopes per module:
+<li>Open the <strong>Admin Management</strong> page.</li>
+<li>Click <strong>Add Admin</strong>.</li>
+<li>Fill in the required identity fields:
 <ul>
-<li>write</li>
-<li>read</li>
-<li>none</li>
+<li>Email (Must be unique across the platform)</li>
+<li>Username</li>
+<li>First / Last Name</li>
 </ul>
 </li>
-<li>Set organization-level scope where applicable.</li>
-<li>Save permissions.</li>
-<li>Ask user to relogin if permissions do not refresh immediately.</li>
+<li>Set a strong temporary password. The new admin should change this immediately upon their first login.</li>
+<li>Select their foundational Role (e.g., <em>Super Admin</em> vs <em>Content Admin</em>).</li>
+<li>Click <strong>Save</strong>.</li>
 </ol>
-<h2 id="subadmin-self-view">Subadmin Self View</h2>
+<hr>
+<h2 id="2-managing-the-permission-matrix">2. Managing the Permission Matrix</h2>
+<p>The true power of IDPicker&rsquo;s internal security is the Permission Matrix, which configures access on a highly granular, per-module basis.</p>
 <ol>
-<li>Open Subadmin page.</li>
-<li>Review effective permission summary.</li>
-<li>Use refresh permissions action to sync latest grants.</li>
+<li>Locate the target admin in your active list and click to open their <strong>Permission Panel</strong>.</li>
+<li>For every module (Users, Assessments, Support, Financials, etc.), set their specific access scope:
+<ul>
+<li><strong>Write:</strong> Full read/edit/delete authority.</li>
+<li><strong>Read:</strong> Can view the data, but cannot change it.</li>
+<li><strong>None:</strong> The module is completely hidden.</li>
+</ul>
+</li>
+<li>If your platform uses multi-tenancy, you can also restrict their scope to specific <em>Organizations</em> rather than global access.</li>
+<li>Click <strong>Save Permissions</strong>.</li>
 </ol>
+<p><em>Important: If the subadmin is currently logged in, you must instruct them to refresh their page or log out/in for the new permissions to apply to their session token immediately.</em></p>
+<hr>
+<h2 id="3-subadmin-self-auditing">3. Subadmin Self-Auditing</h2>
+<p>If you are a subadmin and believe you are missing access to a module you need to perform your job:</p>
+<ol>
+<li>Open the <strong>Subadmin View</strong> from the sidebar.</li>
+<li>Review your effective permission summary. It lists exactly what you are authorized to do.</li>
+<li>If there is a discrepancy, reach out to your Primary Admin to update your matrix.</li>
+</ol>
+<hr>
 <h2 id="common-questions">Common Questions</h2>
-<p>Q: Admin can see module but cannot perform action.
-A: Verify action-level permission is write, not read.</p>
-<p>Q: Updated permissions not applied.
-A: Refresh permissions and reauthenticate.</p>
-<p><img src="/images/user-manual/admin-panel/admin-permissions.png" alt="Admin Permissions Placeholder"></p>
-<p>Image placeholder: Permission matrix with feature and organization scopes.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A subadmin can see the User list, but the &ldquo;Delete&rdquo; button is missing</td>
+          <td>You granted them &ldquo;Read&rdquo; access to the Users module. They need &ldquo;Write&rdquo; access to execute deletions or edits</td>
+      </tr>
+      <tr>
+          <td>I updated permissions but they say nothing changed</td>
+          <td>The subadmin must manually trigger the &ldquo;Refresh Permissions&rdquo; action or fully re-authenticate to generate a new permission token</td>
+      </tr>
+      <tr>
+          <td>Can subadmins create other subadmins?</td>
+          <td>Usually no, unless they have explicit &ldquo;Write&rdquo; access on the Admin Management module itself</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -343,7 +366,7 @@ A: Refresh permissions and reauthenticate.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIENyZWF0ZSBBZG1pbiBVc2VyCgoxLiBPcGVuIEFkbWluIE1hbmFnZW1lbnQuCjIuIENsaWNrIEFkZCBBZG1pbi4KMy4gRmlsbCBpZGVudGl0eSBmaWVsZHMgKGVtYWlsLCB1c2VybmFtZSwgZmlyc3QvbGFzdCBuYW1lKS4KNC4gU2V0IHRlbXBvcmFyeSBwYXNzd29yZC4KNS4gQ2hvb3NlIHJvbGUuCjYuIFNhdmUgYW5kIGNvbmZpcm0gY3JlYXRpb24uCgojIyBFZGl0IEFkbWluIFByb2ZpbGUKCjEuIE9wZW4gYWRtaW4gcm93IGRldGFpbC4KMi4gVXBkYXRlIGlkZW50aXR5IGZpZWxkcy4KMy4gU2F2ZSB1cGRhdGVzLgo0LiBDb25maXJtIGxpc3QgcmVmcmVzaCByZWZsZWN0cyBjaGFuZ2VzLgoKIyMgUGVybWlzc2lvbiBBc3NpZ25tZW50CgoxLiBPcGVuIHBlcm1pc3Npb24gcGFuZWwgZm9yIHRhcmdldCBhZG1pbi4KMi4gU2V0IGZlYXR1cmUgc2NvcGVzIHBlciBtb2R1bGU6CiAgIC0gd3JpdGUKICAgLSByZWFkCiAgIC0gbm9uZQozLiBTZXQgb3JnYW5pemF0aW9uLWxldmVsIHNjb3BlIHdoZXJlIGFwcGxpY2FibGUuCjQuIFNhdmUgcGVybWlzc2lvbnMuCjUuIEFzayB1c2VyIHRvIHJlbG9naW4gaWYgcGVybWlzc2lvbnMgZG8gbm90IHJlZnJlc2ggaW1tZWRpYXRlbHkuCgojIyBTdWJhZG1pbiBTZWxmIFZpZXcKCjEuIE9wZW4gU3ViYWRtaW4gcGFnZS4KMi4gUmV2aWV3IGVmZmVjdGl2ZSBwZXJtaXNzaW9uIHN1bW1hcnkuCjMuIFVzZSByZWZyZXNoIHBlcm1pc3Npb25zIGFjdGlvbiB0byBzeW5jIGxhdGVzdCBncmFudHMuCgojIyBDb21tb24gUXVlc3Rpb25zCgpROiBBZG1pbiBjYW4gc2VlIG1vZHVsZSBidXQgY2Fubm90IHBlcmZvcm0gYWN0aW9uLgpBOiBWZXJpZnkgYWN0aW9uLWxldmVsIHBlcm1pc3Npb24gaXMgd3JpdGUsIG5vdCByZWFkLgoKUTogVXBkYXRlZCBwZXJtaXNzaW9ucyBub3QgYXBwbGllZC4KQTogUmVmcmVzaCBwZXJtaXNzaW9ucyBhbmQgcmVhdXRoZW50aWNhdGUuCgohW0FkbWluIFBlcm1pc3Npb25zIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL2FkbWluLXBlcm1pc3Npb25zLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBQZXJtaXNzaW9uIG1hdHJpeCB3aXRoIGZlYXR1cmUgYW5kIG9yZ2FuaXphdGlvbiBzY29wZXMuCg==</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">Ck5vdCBhbGwgYWRtaW5pc3RyYXRvcnMgbmVlZCBmdWxsIGFjY2VzcyB0byBldmVyeSBzZXR0aW5nLiBUaGlzIG1vZHVsZSBhbGxvd3MgeW91IHRvIGNyZWF0ZSBpbnRlcm5hbCBzdGFmZiBhY2NvdW50cyBhbmQgcmlnb3JvdXNseSBkZWZlbmQgeW91ciBvcmdhbml6YXRpb24ncyBzZWN1cml0eSBwb3N0dXJlIGJ5IGVuZm9yY2luZyBsZWFzdC1wcml2aWxlZ2UgYWNjZXNzLgoKLS0tCgojIyAxLiBDcmVhdGluZyBhbiBBZG1pbiBVc2VyCgoxLiBPcGVuIHRoZSAqKkFkbWluIE1hbmFnZW1lbnQqKiBwYWdlLgoyLiBDbGljayAqKkFkZCBBZG1pbioqLgozLiBGaWxsIGluIHRoZSByZXF1aXJlZCBpZGVudGl0eSBmaWVsZHM6CiAgIC0gRW1haWwgKE11c3QgYmUgdW5pcXVlIGFjcm9zcyB0aGUgcGxhdGZvcm0pCiAgIC0gVXNlcm5hbWUKICAgLSBGaXJzdCAvIExhc3QgTmFtZQo0LiBTZXQgYSBzdHJvbmcgdGVtcG9yYXJ5IHBhc3N3b3JkLiBUaGUgbmV3IGFkbWluIHNob3VsZCBjaGFuZ2UgdGhpcyBpbW1lZGlhdGVseSB1cG9uIHRoZWlyIGZpcnN0IGxvZ2luLgo1LiBTZWxlY3QgdGhlaXIgZm91bmRhdGlvbmFsIFJvbGUgKGUuZy4sICpTdXBlciBBZG1pbiogdnMgKkNvbnRlbnQgQWRtaW4qKS4KNi4gQ2xpY2sgKipTYXZlKiouCgotLS0KCiMjIDIuIE1hbmFnaW5nIHRoZSBQZXJtaXNzaW9uIE1hdHJpeAoKVGhlIHRydWUgcG93ZXIgb2YgSURQaWNrZXIncyBpbnRlcm5hbCBzZWN1cml0eSBpcyB0aGUgUGVybWlzc2lvbiBNYXRyaXgsIHdoaWNoIGNvbmZpZ3VyZXMgYWNjZXNzIG9uIGEgaGlnaGx5IGdyYW51bGFyLCBwZXItbW9kdWxlIGJhc2lzLgoKMS4gTG9jYXRlIHRoZSB0YXJnZXQgYWRtaW4gaW4geW91ciBhY3RpdmUgbGlzdCBhbmQgY2xpY2sgdG8gb3BlbiB0aGVpciAqKlBlcm1pc3Npb24gUGFuZWwqKi4KMi4gRm9yIGV2ZXJ5IG1vZHVsZSAoVXNlcnMsIEFzc2Vzc21lbnRzLCBTdXBwb3J0LCBGaW5hbmNpYWxzLCBldGMuKSwgc2V0IHRoZWlyIHNwZWNpZmljIGFjY2VzcyBzY29wZToKICAgLSAqKldyaXRlOioqIEZ1bGwgcmVhZC9lZGl0L2RlbGV0ZSBhdXRob3JpdHkuCiAgIC0gKipSZWFkOioqIENhbiB2aWV3IHRoZSBkYXRhLCBidXQgY2Fubm90IGNoYW5nZSBpdC4KICAgLSAqKk5vbmU6KiogVGhlIG1vZHVsZSBpcyBjb21wbGV0ZWx5IGhpZGRlbi4KMy4gSWYgeW91ciBwbGF0Zm9ybSB1c2VzIG11bHRpLXRlbmFuY3ksIHlvdSBjYW4gYWxzbyByZXN0cmljdCB0aGVpciBzY29wZSB0byBzcGVjaWZpYyAqT3JnYW5pemF0aW9ucyogcmF0aGVyIHRoYW4gZ2xvYmFsIGFjY2Vzcy4KNC4gQ2xpY2sgKipTYXZlIFBlcm1pc3Npb25zKiouIAoKKkltcG9ydGFudDogSWYgdGhlIHN1YmFkbWluIGlzIGN1cnJlbnRseSBsb2dnZWQgaW4sIHlvdSBtdXN0IGluc3RydWN0IHRoZW0gdG8gcmVmcmVzaCB0aGVpciBwYWdlIG9yIGxvZyBvdXQvaW4gZm9yIHRoZSBuZXcgcGVybWlzc2lvbnMgdG8gYXBwbHkgdG8gdGhlaXIgc2Vzc2lvbiB0b2tlbiBpbW1lZGlhdGVseS4qCgotLS0KCiMjIDMuIFN1YmFkbWluIFNlbGYtQXVkaXRpbmcKCklmIHlvdSBhcmUgYSBzdWJhZG1pbiBhbmQgYmVsaWV2ZSB5b3UgYXJlIG1pc3NpbmcgYWNjZXNzIHRvIGEgbW9kdWxlIHlvdSBuZWVkIHRvIHBlcmZvcm0geW91ciBqb2I6CgoxLiBPcGVuIHRoZSAqKlN1YmFkbWluIFZpZXcqKiBmcm9tIHRoZSBzaWRlYmFyLgoyLiBSZXZpZXcgeW91ciBlZmZlY3RpdmUgcGVybWlzc2lvbiBzdW1tYXJ5LiBJdCBsaXN0cyBleGFjdGx5IHdoYXQgeW91IGFyZSBhdXRob3JpemVkIHRvIGRvLgozLiBJZiB0aGVyZSBpcyBhIGRpc2NyZXBhbmN5LCByZWFjaCBvdXQgdG8geW91ciBQcmltYXJ5IEFkbWluIHRvIHVwZGF0ZSB5b3VyIG1hdHJpeC4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgQSBzdWJhZG1pbiBjYW4gc2VlIHRoZSBVc2VyIGxpc3QsIGJ1dCB0aGUgIkRlbGV0ZSIgYnV0dG9uIGlzIG1pc3NpbmcgfCBZb3UgZ3JhbnRlZCB0aGVtICJSZWFkIiBhY2Nlc3MgdG8gdGhlIFVzZXJzIG1vZHVsZS4gVGhleSBuZWVkICJXcml0ZSIgYWNjZXNzIHRvIGV4ZWN1dGUgZGVsZXRpb25zIG9yIGVkaXRzIHwKfCBJIHVwZGF0ZWQgcGVybWlzc2lvbnMgYnV0IHRoZXkgc2F5IG5vdGhpbmcgY2hhbmdlZCB8IFRoZSBzdWJhZG1pbiBtdXN0IG1hbnVhbGx5IHRyaWdnZXIgdGhlICJSZWZyZXNoIFBlcm1pc3Npb25zIiBhY3Rpb24gb3IgZnVsbHkgcmUtYXV0aGVudGljYXRlIHRvIGdlbmVyYXRlIGEgbmV3IHBlcm1pc3Npb24gdG9rZW4gfAp8IENhbiBzdWJhZG1pbnMgY3JlYXRlIG90aGVyIHN1YmFkbWlucz8gfCBVc3VhbGx5IG5vLCB1bmxlc3MgdGhleSBoYXZlIGV4cGxpY2l0ICJXcml0ZSIgYWNjZXNzIG9uIHRoZSBBZG1pbiBNYW5hZ2VtZW50IG1vZHVsZSBpdHNlbGYgfAo=</script>
 
 <style>
  

@@ -19,23 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Sub-Advisor Management | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click sub-advisor provisioning and access control">
+<meta name="description" content="How to invite sub-advisors, delegate your workload, and restrict their permissions">
 <meta property="og:url" content="http://localhost:1313/docs/advisor-panel/sub-advisor-management/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Sub-Advisor Management">
-  <meta property="og:description" content="Detailed click-by-click sub-advisor provisioning and access control">
+  <meta property="og:description" content="How to invite sub-advisors, delegate your workload, and restrict their permissions">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-19T00:55:27+05:00">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Sub-Advisor Management">
-  <meta itemprop="description" content="Detailed click-by-click sub-advisor provisioning and access control">
-  <meta itemprop="dateModified" content="2026-03-19T00:55:27+05:00">
-  <meta itemprop="wordCount" content="203">
+  <meta itemprop="description" content="How to invite sub-advisors, delegate your workload, and restrict their permissions">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="402">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Sub-Advisor Management">
-  <meta name="twitter:description" content="Detailed click-by-click sub-advisor provisioning and access control">
+  <meta name="twitter:description" content="How to invite sub-advisors, delegate your workload, and restrict their permissions">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -242,12 +242,14 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-open-sub-advisor-area">A) Open Sub-Advisor Area</a></li>
-    <li><a href="#b-create-sub-advisor-click-by-click">B) Create Sub-Advisor (Click-by-Click)</a></li>
-    <li><a href="#c-configure-permissions">C) Configure Permissions</a></li>
-    <li><a href="#d-validate-restricted-visibility">D) Validate Restricted Visibility</a></li>
-    <li><a href="#e-deactivate-or-revoke-access">E) Deactivate or Revoke Access</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#1-creating-a-new-sub-advisor">1. Creating a New Sub-Advisor</a></li>
+    <li><a href="#2-editing-sub-advisor-permissions">2. Editing Sub-Advisor Permissions</a>
+      <ul>
+        <li><a href="#validating-their-access">Validating Their Access</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-revoking-access-deactivation">3. Revoking Access (Deactivation)</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -271,64 +273,85 @@
 </nav>
 <div class="td-content">
 	<h1>Sub-Advisor Management</h1>
-	<div class="lead">Detailed click-by-click sub-advisor provisioning and access control</div>
+	<div class="lead">How to invite sub-advisors, delegate your workload, and restrict their permissions</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide explains how advisors create sub-advisors, assign permissions, and validate delegated access.</p>
-<h2 id="a-open-sub-advisor-area">A) Open Sub-Advisor Area</h2>
+	<p>If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.</p>
+<hr>
+<h2 id="1-creating-a-new-sub-advisor">1. Creating a New Sub-Advisor</h2>
 <ol>
-<li>Sign in as advisor.</li>
-<li>Open sidebar.</li>
-<li>Click Sub-Advisor or Sub-Advisors module.</li>
-<li>Wait for list and permission context to load.</li>
-</ol>
-<h2 id="b-create-sub-advisor-click-by-click">B) Create Sub-Advisor (Click-by-Click)</h2>
-<ol>
-<li>Click Create Sub-Advisor.</li>
-<li>Fill required fields:
+<li>In the sidebar, click <strong>Sub-Advisors</strong>.</li>
+<li>Click the <strong>Create Sub-Advisor</strong> button.</li>
+<li>Fill in their identity details:
 <ul>
-<li>Full name</li>
-<li>Email</li>
-<li>Assigned scope/group access</li>
-<li>Permission set</li>
+<li><strong>Full Name</strong></li>
+<li><strong>Email</strong> (This will be their login)</li>
 </ul>
 </li>
-<li>Review selected permissions carefully.</li>
-<li>Click Save/Create.</li>
-<li>Confirm invitation/account provisioning success.</li>
+<li>Set their <strong>Assigned Scope</strong>:
+<ul>
+<li>If you want them to text <em>only</em> 12th graders, assign them explicitly to the &ldquo;12th Graders&rdquo; Group. They will not be able to see any students outside of that group.</li>
+</ul>
+</li>
+<li>Configure their <strong>Permission Set</strong>:
+<ul>
+<li>Decide exactly which modules they can see (e.g., enable <em>Students</em> and <em>Chat</em>, but disable <em>Forms</em> and <em>Settings</em>).</li>
+</ul>
+</li>
+<li>Click <strong>Save / Create</strong>.</li>
+<li>The system will email them an invitation link to set up their password.</li>
 </ol>
-<h2 id="c-configure-permissions">C) Configure Permissions</h2>
+<hr>
+<h2 id="2-editing-sub-advisor-permissions">2. Editing Sub-Advisor Permissions</h2>
+<p>If a sub-advisor&rsquo;s role changes, you can adjust their access on the fly.</p>
 <ol>
-<li>Open sub-advisor record from list.</li>
-<li>Edit permission matrix (module/action level, if available).</li>
-<li>Adjust student/group visibility scope.</li>
-<li>Save changes.</li>
-<li>Verify effective access with test sign-in.</li>
+<li>Open the <strong>Sub-Advisors</strong> module.</li>
+<li>Click on the target sub-advisor&rsquo;s name.</li>
+<li>Scroll down to the Permission Matrix.</li>
+<li>Toggle specific module access on or off as needed. You can also change which exact groups they govern here.</li>
+<li>Click <strong>Save</strong>. The changes will apply the next time they log in or refresh their page.</li>
 </ol>
-<h2 id="d-validate-restricted-visibility">D) Validate Restricted Visibility</h2>
+<h3 id="validating-their-access">Validating Their Access</h3>
+<p>If you want to be completely sure you set the permissions correctly:</p>
 <ol>
-<li>Sign in as sub-advisor account.</li>
-<li>Open Students and Groups modules.</li>
-<li>Confirm only authorized cohorts are visible.</li>
-<li>Confirm restricted actions are hidden/disabled where expected.</li>
+<li>Ask the sub-advisor to log in while you watch, OR</li>
+<li>Temporarily log in using a designated &ldquo;test&rdquo; sub-advisor account setup with the identical permission matrix.</li>
+<li>Verify that restricted modules are completely hidden from the sidebar.</li>
 </ol>
-<h2 id="e-deactivate-or-revoke-access">E) Deactivate or Revoke Access</h2>
+<hr>
+<h2 id="3-revoking-access-deactivation">3. Revoking Access (Deactivation)</h2>
+<p>If a sub-advisor leaves your organization, you must revoke their access immediately to protect student privacy.</p>
 <ol>
-<li>Open sub-advisor account.</li>
-<li>Change status to inactive (or revoke access action).</li>
-<li>Save change.</li>
-<li>Verify sub-advisor can no longer access protected modules.</li>
+<li>Open their sub-advisor record.</li>
+<li>Change their status to <strong>Inactive</strong> (or click the <strong>Revoke Access</strong> button, depending on your UI version).</li>
+<li>Click <strong>Save</strong>.</li>
+<li>The sub-advisor is immediately logged out of all active sessions and cannot sign back in.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Sub-advisor cannot see any students.
-A: Check group/visibility assignment in permission scope.</p>
-<p>Q: Sub-advisor sees more modules than intended.
-A: Re-open permission matrix and remove excess grants.</p>
-<p>Q: Deactivation saved, but account still active.
-A: Sign out all sessions and verify status propagation after refresh.</p>
-<p><img src="/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-Advisor Placeholder"></p>
-<p>Image placeholder: Add sub-advisor creation form and permission controls screenshot.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My sub-advisor cannot see any students</td>
+          <td>Check their Assigned Scope. If they are not assigned to any groups, and not given &ldquo;All Students&rdquo; access, their roster will be blank</td>
+      </tr>
+      <tr>
+          <td>A sub-advisor sees too many modules</td>
+          <td>You granted them too many checkboxes in the Permission Matrix. Uncheck the modules you want hidden and Save</td>
+      </tr>
+      <tr>
+          <td>I deactivated an account but they are still logged in</td>
+          <td>While the system attempts to kill active sessions immediately, a hard refresh on the sub-advisor&rsquo;s browser will forcefully enforce the new locked state</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -357,7 +380,7 @@ A: Sign out all sessions and verify status propagation after refresh.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgZXhwbGFpbnMgaG93IGFkdmlzb3JzIGNyZWF0ZSBzdWItYWR2aXNvcnMsIGFzc2lnbiBwZXJtaXNzaW9ucywgYW5kIHZhbGlkYXRlIGRlbGVnYXRlZCBhY2Nlc3MuCgojIyBBKSBPcGVuIFN1Yi1BZHZpc29yIEFyZWEKCjEuIFNpZ24gaW4gYXMgYWR2aXNvci4KMi4gT3BlbiBzaWRlYmFyLgozLiBDbGljayBTdWItQWR2aXNvciBvciBTdWItQWR2aXNvcnMgbW9kdWxlLgo0LiBXYWl0IGZvciBsaXN0IGFuZCBwZXJtaXNzaW9uIGNvbnRleHQgdG8gbG9hZC4KCiMjIEIpIENyZWF0ZSBTdWItQWR2aXNvciAoQ2xpY2stYnktQ2xpY2spCgoxLiBDbGljayBDcmVhdGUgU3ViLUFkdmlzb3IuCjIuIEZpbGwgcmVxdWlyZWQgZmllbGRzOgogICAtIEZ1bGwgbmFtZQogICAtIEVtYWlsCiAgIC0gQXNzaWduZWQgc2NvcGUvZ3JvdXAgYWNjZXNzCiAgIC0gUGVybWlzc2lvbiBzZXQKMy4gUmV2aWV3IHNlbGVjdGVkIHBlcm1pc3Npb25zIGNhcmVmdWxseS4KNC4gQ2xpY2sgU2F2ZS9DcmVhdGUuCjUuIENvbmZpcm0gaW52aXRhdGlvbi9hY2NvdW50IHByb3Zpc2lvbmluZyBzdWNjZXNzLgoKIyMgQykgQ29uZmlndXJlIFBlcm1pc3Npb25zCgoxLiBPcGVuIHN1Yi1hZHZpc29yIHJlY29yZCBmcm9tIGxpc3QuCjIuIEVkaXQgcGVybWlzc2lvbiBtYXRyaXggKG1vZHVsZS9hY3Rpb24gbGV2ZWwsIGlmIGF2YWlsYWJsZSkuCjMuIEFkanVzdCBzdHVkZW50L2dyb3VwIHZpc2liaWxpdHkgc2NvcGUuCjQuIFNhdmUgY2hhbmdlcy4KNS4gVmVyaWZ5IGVmZmVjdGl2ZSBhY2Nlc3Mgd2l0aCB0ZXN0IHNpZ24taW4uCgojIyBEKSBWYWxpZGF0ZSBSZXN0cmljdGVkIFZpc2liaWxpdHkKCjEuIFNpZ24gaW4gYXMgc3ViLWFkdmlzb3IgYWNjb3VudC4KMi4gT3BlbiBTdHVkZW50cyBhbmQgR3JvdXBzIG1vZHVsZXMuCjMuIENvbmZpcm0gb25seSBhdXRob3JpemVkIGNvaG9ydHMgYXJlIHZpc2libGUuCjQuIENvbmZpcm0gcmVzdHJpY3RlZCBhY3Rpb25zIGFyZSBoaWRkZW4vZGlzYWJsZWQgd2hlcmUgZXhwZWN0ZWQuCgojIyBFKSBEZWFjdGl2YXRlIG9yIFJldm9rZSBBY2Nlc3MKCjEuIE9wZW4gc3ViLWFkdmlzb3IgYWNjb3VudC4KMi4gQ2hhbmdlIHN0YXR1cyB0byBpbmFjdGl2ZSAob3IgcmV2b2tlIGFjY2VzcyBhY3Rpb24pLgozLiBTYXZlIGNoYW5nZS4KNC4gVmVyaWZ5IHN1Yi1hZHZpc29yIGNhbiBubyBsb25nZXIgYWNjZXNzIHByb3RlY3RlZCBtb2R1bGVzLgoKIyMgQ29tbW9uIEFkdmlzb3IgUXVlc3Rpb25zCgpROiBTdWItYWR2aXNvciBjYW5ub3Qgc2VlIGFueSBzdHVkZW50cy4KQTogQ2hlY2sgZ3JvdXAvdmlzaWJpbGl0eSBhc3NpZ25tZW50IGluIHBlcm1pc3Npb24gc2NvcGUuCgpROiBTdWItYWR2aXNvciBzZWVzIG1vcmUgbW9kdWxlcyB0aGFuIGludGVuZGVkLgpBOiBSZS1vcGVuIHBlcm1pc3Npb24gbWF0cml4IGFuZCByZW1vdmUgZXhjZXNzIGdyYW50cy4KClE6IERlYWN0aXZhdGlvbiBzYXZlZCwgYnV0IGFjY291bnQgc3RpbGwgYWN0aXZlLgpBOiBTaWduIG91dCBhbGwgc2Vzc2lvbnMgYW5kIHZlcmlmeSBzdGF0dXMgcHJvcGFnYXRpb24gYWZ0ZXIgcmVmcmVzaC4KCiFbU3ViLUFkdmlzb3IgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9zdWItYWR2aXNvci1jcmVhdGUucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzdWItYWR2aXNvciBjcmVhdGlvbiBmb3JtIGFuZCBwZXJtaXNzaW9uIGNvbnRyb2xzIHNjcmVlbnNob3QuCg==</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">CklmIHlvdSBhcmUgYSBwcmltYXJ5IEFkdmlzb3IgbWFuYWdpbmcgYSBsYXJnZSBvcmdhbml6YXRpb24sIHlvdSBjYW4gaW52aXRlIHN1Yi1hZHZpc29ycyAobGlrZSBhc3Npc3RhbnRzIG9yIHNwZWNpYWxpemVkIHRyYWNraW5nIGNvdW5zZWxvcnMpIHRvIGhlbHAgeW91LiBUaGlzIGd1aWRlIGV4cGxhaW5zIGhvdyB0byBpbnZpdGUgdGhlbSBhbmQgc2FmZWx5IHJlc3RyaWN0IHRoZWlyIGFjY2Vzcy4KCi0tLQoKIyMgMS4gQ3JlYXRpbmcgYSBOZXcgU3ViLUFkdmlzb3IKCjEuIEluIHRoZSBzaWRlYmFyLCBjbGljayAqKlN1Yi1BZHZpc29ycyoqLgoyLiBDbGljayB0aGUgKipDcmVhdGUgU3ViLUFkdmlzb3IqKiBidXR0b24uCjMuIEZpbGwgaW4gdGhlaXIgaWRlbnRpdHkgZGV0YWlsczoKICAgLSAqKkZ1bGwgTmFtZSoqCiAgIC0gKipFbWFpbCoqIChUaGlzIHdpbGwgYmUgdGhlaXIgbG9naW4pCjQuIFNldCB0aGVpciAqKkFzc2lnbmVkIFNjb3BlKio6CiAgIC0gSWYgeW91IHdhbnQgdGhlbSB0byB0ZXh0ICpvbmx5KiAxMnRoIGdyYWRlcnMsIGFzc2lnbiB0aGVtIGV4cGxpY2l0bHkgdG8gdGhlICIxMnRoIEdyYWRlcnMiIEdyb3VwLiBUaGV5IHdpbGwgbm90IGJlIGFibGUgdG8gc2VlIGFueSBzdHVkZW50cyBvdXRzaWRlIG9mIHRoYXQgZ3JvdXAuCjUuIENvbmZpZ3VyZSB0aGVpciAqKlBlcm1pc3Npb24gU2V0Kio6CiAgIC0gRGVjaWRlIGV4YWN0bHkgd2hpY2ggbW9kdWxlcyB0aGV5IGNhbiBzZWUgKGUuZy4sIGVuYWJsZSAqU3R1ZGVudHMqIGFuZCAqQ2hhdCosIGJ1dCBkaXNhYmxlICpGb3JtcyogYW5kICpTZXR0aW5ncyopLgo2LiBDbGljayAqKlNhdmUgLyBDcmVhdGUqKi4KNy4gVGhlIHN5c3RlbSB3aWxsIGVtYWlsIHRoZW0gYW4gaW52aXRhdGlvbiBsaW5rIHRvIHNldCB1cCB0aGVpciBwYXNzd29yZC4KCi0tLQoKIyMgMi4gRWRpdGluZyBTdWItQWR2aXNvciBQZXJtaXNzaW9ucwoKSWYgYSBzdWItYWR2aXNvcidzIHJvbGUgY2hhbmdlcywgeW91IGNhbiBhZGp1c3QgdGhlaXIgYWNjZXNzIG9uIHRoZSBmbHkuCgoxLiBPcGVuIHRoZSAqKlN1Yi1BZHZpc29ycyoqIG1vZHVsZS4KMi4gQ2xpY2sgb24gdGhlIHRhcmdldCBzdWItYWR2aXNvcidzIG5hbWUuCjMuIFNjcm9sbCBkb3duIHRvIHRoZSBQZXJtaXNzaW9uIE1hdHJpeC4KNC4gVG9nZ2xlIHNwZWNpZmljIG1vZHVsZSBhY2Nlc3Mgb24gb3Igb2ZmIGFzIG5lZWRlZC4gWW91IGNhbiBhbHNvIGNoYW5nZSB3aGljaCBleGFjdCBncm91cHMgdGhleSBnb3Zlcm4gaGVyZS4KNS4gQ2xpY2sgKipTYXZlKiouIFRoZSBjaGFuZ2VzIHdpbGwgYXBwbHkgdGhlIG5leHQgdGltZSB0aGV5IGxvZyBpbiBvciByZWZyZXNoIHRoZWlyIHBhZ2UuCgojIyMgVmFsaWRhdGluZyBUaGVpciBBY2Nlc3MKSWYgeW91IHdhbnQgdG8gYmUgY29tcGxldGVseSBzdXJlIHlvdSBzZXQgdGhlIHBlcm1pc3Npb25zIGNvcnJlY3RseToKMS4gQXNrIHRoZSBzdWItYWR2aXNvciB0byBsb2cgaW4gd2hpbGUgeW91IHdhdGNoLCBPUgoyLiBUZW1wb3JhcmlseSBsb2cgaW4gdXNpbmcgYSBkZXNpZ25hdGVkICJ0ZXN0IiBzdWItYWR2aXNvciBhY2NvdW50IHNldHVwIHdpdGggdGhlIGlkZW50aWNhbCBwZXJtaXNzaW9uIG1hdHJpeC4KMy4gVmVyaWZ5IHRoYXQgcmVzdHJpY3RlZCBtb2R1bGVzIGFyZSBjb21wbGV0ZWx5IGhpZGRlbiBmcm9tIHRoZSBzaWRlYmFyLgoKLS0tCgojIyAzLiBSZXZva2luZyBBY2Nlc3MgKERlYWN0aXZhdGlvbikKCklmIGEgc3ViLWFkdmlzb3IgbGVhdmVzIHlvdXIgb3JnYW5pemF0aW9uLCB5b3UgbXVzdCByZXZva2UgdGhlaXIgYWNjZXNzIGltbWVkaWF0ZWx5IHRvIHByb3RlY3Qgc3R1ZGVudCBwcml2YWN5LgoKMS4gT3BlbiB0aGVpciBzdWItYWR2aXNvciByZWNvcmQuCjIuIENoYW5nZSB0aGVpciBzdGF0dXMgdG8gKipJbmFjdGl2ZSoqIChvciBjbGljayB0aGUgKipSZXZva2UgQWNjZXNzKiogYnV0dG9uLCBkZXBlbmRpbmcgb24geW91ciBVSSB2ZXJzaW9uKS4KMy4gQ2xpY2sgKipTYXZlKiouCjQuIFRoZSBzdWItYWR2aXNvciBpcyBpbW1lZGlhdGVseSBsb2dnZWQgb3V0IG9mIGFsbCBhY3RpdmUgc2Vzc2lvbnMgYW5kIGNhbm5vdCBzaWduIGJhY2sgaW4uCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IE15IHN1Yi1hZHZpc29yIGNhbm5vdCBzZWUgYW55IHN0dWRlbnRzIHwgQ2hlY2sgdGhlaXIgQXNzaWduZWQgU2NvcGUuIElmIHRoZXkgYXJlIG5vdCBhc3NpZ25lZCB0byBhbnkgZ3JvdXBzLCBhbmQgbm90IGdpdmVuICJBbGwgU3R1ZGVudHMiIGFjY2VzcywgdGhlaXIgcm9zdGVyIHdpbGwgYmUgYmxhbmsgfAp8IEEgc3ViLWFkdmlzb3Igc2VlcyB0b28gbWFueSBtb2R1bGVzIHwgWW91IGdyYW50ZWQgdGhlbSB0b28gbWFueSBjaGVja2JveGVzIGluIHRoZSBQZXJtaXNzaW9uIE1hdHJpeC4gVW5jaGVjayB0aGUgbW9kdWxlcyB5b3Ugd2FudCBoaWRkZW4gYW5kIFNhdmUgfAp8IEkgZGVhY3RpdmF0ZWQgYW4gYWNjb3VudCBidXQgdGhleSBhcmUgc3RpbGwgbG9nZ2VkIGluIHwgV2hpbGUgdGhlIHN5c3RlbSBhdHRlbXB0cyB0byBraWxsIGFjdGl2ZSBzZXNzaW9ucyBpbW1lZGlhdGVseSwgYSBoYXJkIHJlZnJlc2ggb24gdGhlIHN1Yi1hZHZpc29yJ3MgYnJvd3NlciB3aWxsIGZvcmNlZnVsbHkgZW5mb3JjZSB0aGUgbmV3IGxvY2tlZCBzdGF0ZSB8Cg==</script>
 
 <style>
  

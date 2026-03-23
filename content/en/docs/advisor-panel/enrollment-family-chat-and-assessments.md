@@ -1,63 +1,58 @@
 ---
 title: "Enrollment, Family Chat, and Assessments"
-description: "Detailed click-by-click operational flows for enrollment, messaging, and assessments"
+description: "How to handle incoming requests, chat with parents, and configure custom assessments"
 weight: 140
 draft: false
 ---
 
-This guide combines operational modules often handled together by advisors.
+This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.
 
-## A) Enrollment Requests
+---
 
-1. In sidebar, click Enrollment Requests.
-2. Wait for request list to load.
-3. Open a request detail.
-4. Review requester and related context.
-5. Click Approve or Deny.
-6. Confirm status update in list.
+## 1. Managing Enrollment Requests
 
-## B) Family Chat
+Depending on your organization's configuration, students who register may not join your roster automatically. They may land in an approval queue.
 
-1. In sidebar, click Family Chat.
-2. Choose chat scope/tab (student or parent context).
-3. Open conversation.
-4. Type response in message input.
-5. Click Send.
-6. Confirm message appears in thread.
+1. In the sidebar, click **Enrollment Requests**.
+2. A list of pending student accounts will appear.
+3. Click into a request to review the individual's profile to verify they belong to your organization.
+4. Click **Approve** to admit them (which grants them full platform access and adds them to your Students roster).
+5. Click **Deny** if they do not belong.
 
-## C) Student Chat Module
+---
 
-1. Open Students Chat page if separate route is available.
-2. Select student thread.
-3. Continue support/guidance conversation.
+## 2. Using Family Chat
 
-## D) Assessments Management
+IDPicker recognizes that guidance is a collaborative effort between the advisor, the student, and the parents. 
 
-1. In sidebar, click Assessments.
-2. Review available assessment items/templates.
-3. Create or adopt assessment depending on current flow.
-4. Configure metadata and visibility.
-5. Publish or assign according to process.
+1. In the sidebar, click **Family Chat** (or navigate to the Chat module).
+2. You will see different message threads categorized by scope:
+   - **Student Threads:** Direct 1-on-1 chats with the student.
+   - **Parent Threads:** Direct chats with the linked parent.
+   - **Family Threads:** Multi-party threads involving both the student and the parent(s).
+3. Select a thread, type your message in the composer, and hit **Send**.
+4. A red badge will appear next to names when they reply.
 
-## Common Advisor Questions
+> **Tip:** If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.
 
-Q: Enrollment action button is disabled.
-A: Confirm permission level and request status compatibility.
+---
 
-Q: Family chat message sent but not visible immediately.
-A: Refresh thread and verify active conversation context.
+## 3. Custom Assessments
 
-Q: Assessment setup options are unclear.
-A: Start with default templates and publish only after preview validation.
+While IDPicker provides built-in psychological and career assessments, your organization may want to issue bespoke quizzes (e.g., a "Math Placement Exam" or "Mid-Year Feedback").
 
-![Enrollment Placeholder](/images/user-manual/advisor-panel/enrollment-requests.png)
+1. In the sidebar, click **Assessments**.
+2. Click **Create Assessment** (or clone an existing template).
+3. Build your questions (Multiple Choice, Rating Scales, Short Answer).
+4. Configure the visibility parameters (e.g., Which groups get this? Does it expire?).
+5. **Publish** the assessment. It will immediately appear on the targeted students' *Self Assessment* dashboard.
 
-Image placeholder: Enrollment list with approve/deny actions.
+---
 
-![Family Chat Placeholder](/images/user-manual/advisor-panel/family-chat.png)
+## Common Questions
 
-Image placeholder: Advisor family chat with message composer.
-
-![Assessments Placeholder](/images/user-manual/advisor-panel/assessments.png)
-
-Image placeholder: Assessment list/creation workflow.
+| Situation | What to do |
+|---|---|
+| The Approve/Deny buttons in Enrollment are missing | Your account might be a restricted sub-advisor, or the request is already processed. Check the "Resolved" tab |
+| I sent a family chat but the parent did not reply | Parents receive email notifications about unread messages, but they still have to log in to read them. Mention it during a phone call |
+| I need to fix a typo in a Published Assessment | Once an assessment starts receiving answers, structural edits may be locked. Fix typos immediately before distributing, or duplicate the assessment and pause the old one |

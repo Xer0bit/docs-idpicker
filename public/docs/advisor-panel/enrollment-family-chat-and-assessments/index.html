@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Enrollment, Family Chat, and Assessments | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click operational flows for enrollment, messaging, and assessments">
+<meta name="description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
 <meta property="og:url" content="http://localhost:1313/docs/advisor-panel/enrollment-family-chat-and-assessments/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Enrollment, Family Chat, and Assessments">
-  <meta property="og:description" content="Detailed click-by-click operational flows for enrollment, messaging, and assessments">
+  <meta property="og:description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Enrollment, Family Chat, and Assessments">
-  <meta itemprop="description" content="Detailed click-by-click operational flows for enrollment, messaging, and assessments">
-  <meta itemprop="wordCount" content="190">
+  <meta itemprop="description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="389">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Enrollment, Family Chat, and Assessments">
-  <meta name="twitter:description" content="Detailed click-by-click operational flows for enrollment, messaging, and assessments">
+  <meta name="twitter:description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,11 +242,10 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-enrollment-requests">A) Enrollment Requests</a></li>
-    <li><a href="#b-family-chat">B) Family Chat</a></li>
-    <li><a href="#c-student-chat-module">C) Student Chat Module</a></li>
-    <li><a href="#d-assessments-management">D) Assessments Management</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#1-managing-enrollment-requests">1. Managing Enrollment Requests</a></li>
+    <li><a href="#2-using-family-chat">2. Using Family Chat</a></li>
+    <li><a href="#3-custom-assessments">3. Custom Assessments</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -268,56 +269,73 @@
 </nav>
 <div class="td-content">
 	<h1>Enrollment, Family Chat, and Assessments</h1>
-	<div class="lead">Detailed click-by-click operational flows for enrollment, messaging, and assessments</div>
+	<div class="lead">How to handle incoming requests, chat with parents, and configure custom assessments</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide combines operational modules often handled together by advisors.</p>
-<h2 id="a-enrollment-requests">A) Enrollment Requests</h2>
+	<p>This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.</p>
+<hr>
+<h2 id="1-managing-enrollment-requests">1. Managing Enrollment Requests</h2>
+<p>Depending on your organization&rsquo;s configuration, students who register may not join your roster automatically. They may land in an approval queue.</p>
 <ol>
-<li>In sidebar, click Enrollment Requests.</li>
-<li>Wait for request list to load.</li>
-<li>Open a request detail.</li>
-<li>Review requester and related context.</li>
-<li>Click Approve or Deny.</li>
-<li>Confirm status update in list.</li>
+<li>In the sidebar, click <strong>Enrollment Requests</strong>.</li>
+<li>A list of pending student accounts will appear.</li>
+<li>Click into a request to review the individual&rsquo;s profile to verify they belong to your organization.</li>
+<li>Click <strong>Approve</strong> to admit them (which grants them full platform access and adds them to your Students roster).</li>
+<li>Click <strong>Deny</strong> if they do not belong.</li>
 </ol>
-<h2 id="b-family-chat">B) Family Chat</h2>
+<hr>
+<h2 id="2-using-family-chat">2. Using Family Chat</h2>
+<p>IDPicker recognizes that guidance is a collaborative effort between the advisor, the student, and the parents.</p>
 <ol>
-<li>In sidebar, click Family Chat.</li>
-<li>Choose chat scope/tab (student or parent context).</li>
-<li>Open conversation.</li>
-<li>Type response in message input.</li>
-<li>Click Send.</li>
-<li>Confirm message appears in thread.</li>
+<li>In the sidebar, click <strong>Family Chat</strong> (or navigate to the Chat module).</li>
+<li>You will see different message threads categorized by scope:
+<ul>
+<li><strong>Student Threads:</strong> Direct 1-on-1 chats with the student.</li>
+<li><strong>Parent Threads:</strong> Direct chats with the linked parent.</li>
+<li><strong>Family Threads:</strong> Multi-party threads involving both the student and the parent(s).</li>
+</ul>
+</li>
+<li>Select a thread, type your message in the composer, and hit <strong>Send</strong>.</li>
+<li>A red badge will appear next to names when they reply.</li>
 </ol>
-<h2 id="c-student-chat-module">C) Student Chat Module</h2>
+<blockquote>
+<p><strong>Tip:</strong> If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.</p>
+</blockquote>
+<hr>
+<h2 id="3-custom-assessments">3. Custom Assessments</h2>
+<p>While IDPicker provides built-in psychological and career assessments, your organization may want to issue bespoke quizzes (e.g., a &ldquo;Math Placement Exam&rdquo; or &ldquo;Mid-Year Feedback&rdquo;).</p>
 <ol>
-<li>Open Students Chat page if separate route is available.</li>
-<li>Select student thread.</li>
-<li>Continue support/guidance conversation.</li>
+<li>In the sidebar, click <strong>Assessments</strong>.</li>
+<li>Click <strong>Create Assessment</strong> (or clone an existing template).</li>
+<li>Build your questions (Multiple Choice, Rating Scales, Short Answer).</li>
+<li>Configure the visibility parameters (e.g., Which groups get this? Does it expire?).</li>
+<li><strong>Publish</strong> the assessment. It will immediately appear on the targeted students&rsquo; <em>Self Assessment</em> dashboard.</li>
 </ol>
-<h2 id="d-assessments-management">D) Assessments Management</h2>
-<ol>
-<li>In sidebar, click Assessments.</li>
-<li>Review available assessment items/templates.</li>
-<li>Create or adopt assessment depending on current flow.</li>
-<li>Configure metadata and visibility.</li>
-<li>Publish or assign according to process.</li>
-</ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Enrollment action button is disabled.
-A: Confirm permission level and request status compatibility.</p>
-<p>Q: Family chat message sent but not visible immediately.
-A: Refresh thread and verify active conversation context.</p>
-<p>Q: Assessment setup options are unclear.
-A: Start with default templates and publish only after preview validation.</p>
-<p><img src="/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment Placeholder"></p>
-<p>Image placeholder: Enrollment list with approve/deny actions.</p>
-<p><img src="/images/user-manual/advisor-panel/family-chat.png" alt="Family Chat Placeholder"></p>
-<p>Image placeholder: Advisor family chat with message composer.</p>
-<p><img src="/images/user-manual/advisor-panel/assessments.png" alt="Assessments Placeholder"></p>
-<p>Image placeholder: Assessment list/creation workflow.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The Approve/Deny buttons in Enrollment are missing</td>
+          <td>Your account might be a restricted sub-advisor, or the request is already processed. Check the &ldquo;Resolved&rdquo; tab</td>
+      </tr>
+      <tr>
+          <td>I sent a family chat but the parent did not reply</td>
+          <td>Parents receive email notifications about unread messages, but they still have to log in to read them. Mention it during a phone call</td>
+      </tr>
+      <tr>
+          <td>I need to fix a typo in a Published Assessment</td>
+          <td>Once an assessment starts receiving answers, structural edits may be locked. Fix typos immediately before distributing, or duplicate the assessment and pause the old one</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -346,7 +364,7 @@ A: Start with default templates and publish only after preview validation.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY29tYmluZXMgb3BlcmF0aW9uYWwgbW9kdWxlcyBvZnRlbiBoYW5kbGVkIHRvZ2V0aGVyIGJ5IGFkdmlzb3JzLgoKIyMgQSkgRW5yb2xsbWVudCBSZXF1ZXN0cwoKMS4gSW4gc2lkZWJhciwgY2xpY2sgRW5yb2xsbWVudCBSZXF1ZXN0cy4KMi4gV2FpdCBmb3IgcmVxdWVzdCBsaXN0IHRvIGxvYWQuCjMuIE9wZW4gYSByZXF1ZXN0IGRldGFpbC4KNC4gUmV2aWV3IHJlcXVlc3RlciBhbmQgcmVsYXRlZCBjb250ZXh0Lgo1LiBDbGljayBBcHByb3ZlIG9yIERlbnkuCjYuIENvbmZpcm0gc3RhdHVzIHVwZGF0ZSBpbiBsaXN0LgoKIyMgQikgRmFtaWx5IENoYXQKCjEuIEluIHNpZGViYXIsIGNsaWNrIEZhbWlseSBDaGF0LgoyLiBDaG9vc2UgY2hhdCBzY29wZS90YWIgKHN0dWRlbnQgb3IgcGFyZW50IGNvbnRleHQpLgozLiBPcGVuIGNvbnZlcnNhdGlvbi4KNC4gVHlwZSByZXNwb25zZSBpbiBtZXNzYWdlIGlucHV0Lgo1LiBDbGljayBTZW5kLgo2LiBDb25maXJtIG1lc3NhZ2UgYXBwZWFycyBpbiB0aHJlYWQuCgojIyBDKSBTdHVkZW50IENoYXQgTW9kdWxlCgoxLiBPcGVuIFN0dWRlbnRzIENoYXQgcGFnZSBpZiBzZXBhcmF0ZSByb3V0ZSBpcyBhdmFpbGFibGUuCjIuIFNlbGVjdCBzdHVkZW50IHRocmVhZC4KMy4gQ29udGludWUgc3VwcG9ydC9ndWlkYW5jZSBjb252ZXJzYXRpb24uCgojIyBEKSBBc3Nlc3NtZW50cyBNYW5hZ2VtZW50CgoxLiBJbiBzaWRlYmFyLCBjbGljayBBc3Nlc3NtZW50cy4KMi4gUmV2aWV3IGF2YWlsYWJsZSBhc3Nlc3NtZW50IGl0ZW1zL3RlbXBsYXRlcy4KMy4gQ3JlYXRlIG9yIGFkb3B0IGFzc2Vzc21lbnQgZGVwZW5kaW5nIG9uIGN1cnJlbnQgZmxvdy4KNC4gQ29uZmlndXJlIG1ldGFkYXRhIGFuZCB2aXNpYmlsaXR5Lgo1LiBQdWJsaXNoIG9yIGFzc2lnbiBhY2NvcmRpbmcgdG8gcHJvY2Vzcy4KCiMjIENvbW1vbiBBZHZpc29yIFF1ZXN0aW9ucwoKUTogRW5yb2xsbWVudCBhY3Rpb24gYnV0dG9uIGlzIGRpc2FibGVkLgpBOiBDb25maXJtIHBlcm1pc3Npb24gbGV2ZWwgYW5kIHJlcXVlc3Qgc3RhdHVzIGNvbXBhdGliaWxpdHkuCgpROiBGYW1pbHkgY2hhdCBtZXNzYWdlIHNlbnQgYnV0IG5vdCB2aXNpYmxlIGltbWVkaWF0ZWx5LgpBOiBSZWZyZXNoIHRocmVhZCBhbmQgdmVyaWZ5IGFjdGl2ZSBjb252ZXJzYXRpb24gY29udGV4dC4KClE6IEFzc2Vzc21lbnQgc2V0dXAgb3B0aW9ucyBhcmUgdW5jbGVhci4KQTogU3RhcnQgd2l0aCBkZWZhdWx0IHRlbXBsYXRlcyBhbmQgcHVibGlzaCBvbmx5IGFmdGVyIHByZXZpZXcgdmFsaWRhdGlvbi4KCiFbRW5yb2xsbWVudCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL2Vucm9sbG1lbnQtcmVxdWVzdHMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEVucm9sbG1lbnQgbGlzdCB3aXRoIGFwcHJvdmUvZGVueSBhY3Rpb25zLgoKIVtGYW1pbHkgQ2hhdCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL2ZhbWlseS1jaGF0LnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZHZpc29yIGZhbWlseSBjaGF0IHdpdGggbWVzc2FnZSBjb21wb3Nlci4KCiFbQXNzZXNzbWVudHMgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9hc3Nlc3NtZW50cy5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogQXNzZXNzbWVudCBsaXN0L2NyZWF0aW9uIHdvcmtmbG93Lgo=</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHRocmVlIGRpc3RpbmN0IG9wZXJhdGlvbmFsIGZsb3dzIHRoYXQgYWR2aXNvcnMgaGFuZGxlIGRhaWx5OiBhcHByb3ZpbmcgbmV3IHN0dWRlbnRzLCBtYW5hZ2luZyBtdWx0aWRpcmVjdGlvbmFsIGNoYXRzLCBhbmQgc2V0dGluZyB1cCBvcmdhbml6YXRpb25hbCBhc3Nlc3NtZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgRW5yb2xsbWVudCBSZXF1ZXN0cwoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3MgY29uZmlndXJhdGlvbiwgc3R1ZGVudHMgd2hvIHJlZ2lzdGVyIG1heSBub3Qgam9pbiB5b3VyIHJvc3RlciBhdXRvbWF0aWNhbGx5LiBUaGV5IG1heSBsYW5kIGluIGFuIGFwcHJvdmFsIHF1ZXVlLgoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRW5yb2xsbWVudCBSZXF1ZXN0cyoqLgoyLiBBIGxpc3Qgb2YgcGVuZGluZyBzdHVkZW50IGFjY291bnRzIHdpbGwgYXBwZWFyLgozLiBDbGljayBpbnRvIGEgcmVxdWVzdCB0byByZXZpZXcgdGhlIGluZGl2aWR1YWwncyBwcm9maWxlIHRvIHZlcmlmeSB0aGV5IGJlbG9uZyB0byB5b3VyIG9yZ2FuaXphdGlvbi4KNC4gQ2xpY2sgKipBcHByb3ZlKiogdG8gYWRtaXQgdGhlbSAod2hpY2ggZ3JhbnRzIHRoZW0gZnVsbCBwbGF0Zm9ybSBhY2Nlc3MgYW5kIGFkZHMgdGhlbSB0byB5b3VyIFN0dWRlbnRzIHJvc3RlcikuCjUuIENsaWNrICoqRGVueSoqIGlmIHRoZXkgZG8gbm90IGJlbG9uZy4KCi0tLQoKIyMgMi4gVXNpbmcgRmFtaWx5IENoYXQKCklEUGlja2VyIHJlY29nbml6ZXMgdGhhdCBndWlkYW5jZSBpcyBhIGNvbGxhYm9yYXRpdmUgZWZmb3J0IGJldHdlZW4gdGhlIGFkdmlzb3IsIHRoZSBzdHVkZW50LCBhbmQgdGhlIHBhcmVudHMuIAoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRmFtaWx5IENoYXQqKiAob3IgbmF2aWdhdGUgdG8gdGhlIENoYXQgbW9kdWxlKS4KMi4gWW91IHdpbGwgc2VlIGRpZmZlcmVudCBtZXNzYWdlIHRocmVhZHMgY2F0ZWdvcml6ZWQgYnkgc2NvcGU6CiAgIC0gKipTdHVkZW50IFRocmVhZHM6KiogRGlyZWN0IDEtb24tMSBjaGF0cyB3aXRoIHRoZSBzdHVkZW50LgogICAtICoqUGFyZW50IFRocmVhZHM6KiogRGlyZWN0IGNoYXRzIHdpdGggdGhlIGxpbmtlZCBwYXJlbnQuCiAgIC0gKipGYW1pbHkgVGhyZWFkczoqKiBNdWx0aS1wYXJ0eSB0aHJlYWRzIGludm9sdmluZyBib3RoIHRoZSBzdHVkZW50IGFuZCB0aGUgcGFyZW50KHMpLgozLiBTZWxlY3QgYSB0aHJlYWQsIHR5cGUgeW91ciBtZXNzYWdlIGluIHRoZSBjb21wb3NlciwgYW5kIGhpdCAqKlNlbmQqKi4KNC4gQSByZWQgYmFkZ2Ugd2lsbCBhcHBlYXIgbmV4dCB0byBuYW1lcyB3aGVuIHRoZXkgcmVwbHkuCgo&#43;ICoqVGlwOioqIElmIGEgcGFyZW50IHRocmVhZCBpcyBkaXNhYmxlZCwgaXQgbWVhbnMgdGhlIHN0dWRlbnQgaGFzIG5vdCB5ZXQgYXBwcm92ZWQgYSBwYXJlbnQgbGlua2FnZSByZXF1ZXN0IG9uIHRoZWlyIGVuZC4KCi0tLQoKIyMgMy4gQ3VzdG9tIEFzc2Vzc21lbnRzCgpXaGlsZSBJRFBpY2tlciBwcm92aWRlcyBidWlsdC1pbiBwc3ljaG9sb2dpY2FsIGFuZCBjYXJlZXIgYXNzZXNzbWVudHMsIHlvdXIgb3JnYW5pemF0aW9uIG1heSB3YW50IHRvIGlzc3VlIGJlc3Bva2UgcXVpenplcyAoZS5nLiwgYSAiTWF0aCBQbGFjZW1lbnQgRXhhbSIgb3IgIk1pZC1ZZWFyIEZlZWRiYWNrIikuCgoxLiBJbiB0aGUgc2lkZWJhciwgY2xpY2sgKipBc3Nlc3NtZW50cyoqLgoyLiBDbGljayAqKkNyZWF0ZSBBc3Nlc3NtZW50KiogKG9yIGNsb25lIGFuIGV4aXN0aW5nIHRlbXBsYXRlKS4KMy4gQnVpbGQgeW91ciBxdWVzdGlvbnMgKE11bHRpcGxlIENob2ljZSwgUmF0aW5nIFNjYWxlcywgU2hvcnQgQW5zd2VyKS4KNC4gQ29uZmlndXJlIHRoZSB2aXNpYmlsaXR5IHBhcmFtZXRlcnMgKGUuZy4sIFdoaWNoIGdyb3VwcyBnZXQgdGhpcz8gRG9lcyBpdCBleHBpcmU/KS4KNS4gKipQdWJsaXNoKiogdGhlIGFzc2Vzc21lbnQuIEl0IHdpbGwgaW1tZWRpYXRlbHkgYXBwZWFyIG9uIHRoZSB0YXJnZXRlZCBzdHVkZW50cycgKlNlbGYgQXNzZXNzbWVudCogZGFzaGJvYXJkLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBUaGUgQXBwcm92ZS9EZW55IGJ1dHRvbnMgaW4gRW5yb2xsbWVudCBhcmUgbWlzc2luZyB8IFlvdXIgYWNjb3VudCBtaWdodCBiZSBhIHJlc3RyaWN0ZWQgc3ViLWFkdmlzb3IsIG9yIHRoZSByZXF1ZXN0IGlzIGFscmVhZHkgcHJvY2Vzc2VkLiBDaGVjayB0aGUgIlJlc29sdmVkIiB0YWIgfAp8IEkgc2VudCBhIGZhbWlseSBjaGF0IGJ1dCB0aGUgcGFyZW50IGRpZCBub3QgcmVwbHkgfCBQYXJlbnRzIHJlY2VpdmUgZW1haWwgbm90aWZpY2F0aW9ucyBhYm91dCB1bnJlYWQgbWVzc2FnZXMsIGJ1dCB0aGV5IHN0aWxsIGhhdmUgdG8gbG9nIGluIHRvIHJlYWQgdGhlbS4gTWVudGlvbiBpdCBkdXJpbmcgYSBwaG9uZSBjYWxsIHwKfCBJIG5lZWQgdG8gZml4IGEgdHlwbyBpbiBhIFB1Ymxpc2hlZCBBc3Nlc3NtZW50IHwgT25jZSBhbiBhc3Nlc3NtZW50IHN0YXJ0cyByZWNlaXZpbmcgYW5zd2Vycywgc3RydWN0dXJhbCBlZGl0cyBtYXkgYmUgbG9ja2VkLiBGaXggdHlwb3MgaW1tZWRpYXRlbHkgYmVmb3JlIGRpc3RyaWJ1dGluZywgb3IgZHVwbGljYXRlIHRoZSBhc3Nlc3NtZW50IGFuZCBwYXVzZSB0aGUgb2xkIG9uZSB8Cg==</script>
 
 <style>
  

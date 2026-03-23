@@ -1,67 +1,74 @@
 ---
 title: "Linked Student Guide"
-description: "Detailed click-by-click linked student management guide"
+description: "How to connect with your child's account and understand what data you can access"
 weight: 142
 draft: false
 ---
 
-This guide explains how parents link students, open student details, and unlink when needed.
+IDPicker requires explicit linking between a Parent account and a Student account to protect student privacy. This guide explains how to establish that link and what you can (and cannot) see.
 
-## A) Link a Student by Email (Click-by-Click)
+---
 
-1. Sign in to Parent Dashboard.
-2. Find the Link Student form on dashboard.
-3. Click Student Email input.
-4. Enter student's registered email.
-5. Click Send Link Request.
-6. Wait for one of these outcomes:
-   - `linked`: student appears immediately in dashboard list.
-   - `pending`: request registered, awaiting matching student-side action.
+## 1. Requesting a Link by Email
 
-## B) Open Linked Student
+If your child's school has not automatically linked your accounts, you must initiate the request from your dashboard.
 
-1. In dashboard linked-student cards, click View Student.
-2. Open `/dashboard/{studentId}` detail page.
-3. Review summary sections (progress, recommendations, assessments, mentor/advisor activity).
+1. Sign in to your [Parent Dashboard](/docs/parent-panel/dashboard-and-linked-overview/).
+2. Locate the **Link Student** form.
+3. In the input box, carefully type the exact email address your child used to register.
+4. Click **Send Link Request**.
 
-## C) Refresh Linked Data
+Depending on the platform settings, you will experience one of two outcomes:
+- **Instant Link:** The student appears immediately on your dashboard.
+- **Pending Link:** The request is sent to your child. They must log in to their student dashboard and click "Approve" before you can see any of their data.
 
-1. Click refresh action in parent dashboard or student detail page.
-2. Wait for latest API data to load.
-3. Confirm unread counts and progress values update.
+---
 
-## D) Unlink Student
+## 2. Opening the Linked Student Profile
 
-1. Open linked student detail.
-2. Find unlink/remove access action.
-3. Confirm unlink prompt.
-4. Return to dashboard and verify student card is removed.
+Once a link is established, your child appears as a card on your dashboard.
 
-## What Parents Can View
+1. Click **View Student** on their card.
+2. The platform opens their specific profile page.
+3. You can now review their **progress summaries**, **recommendation insights**, and **recent advisor activity**.
+4. To see live updates, use the **Refresh** button on this page.
 
-- Progress summary
-- Milestone completion
-- Selected recommendation insights
-- Journey map preview/download
-- Advisor unread indicators and parent-advisor messaging context
+*If you have multiple children on the platform, each has their own dedicated card and profile page.*
 
-## What Parents Cannot Edit
+---
 
-- Student-only private settings
-- Restricted assessment configuration
-- Student account credentials/profile ownership fields
+## 3. Removing Access (Unlinking)
 
-## Common Parent Questions
+If an account was linked by mistake or is no longer needed:
 
-Q: I sent link request but student does not appear.
-A: Link may be pending; ask student to complete corresponding link step.
+1. Open the linked student's detail page.
+2. Scroll to the bottom and find the **Remove Access** (or Unlink) button.
+3. A confirmation prompt will appear. Click to confirm.
+4. You will be returned to your dashboard, and their card will be permanently removed.
 
-Q: I can see student card but detail page fails.
-A: Refresh session and retry opening the same student card.
+---
 
-Q: Can I edit student recommendations directly?
-A: No, parent panel is monitoring/support oriented, not student-authoring mode.
+## 4. Understanding Parent Permissions
 
-![Linked Student Placeholder](/images/user-manual/parent-panel/linked-student-view.png)
+The Parent Panel is designed for **monitoring and support**, not authoring. 
 
-Image placeholder: Parent dashboard linked student card and student detail open state.
+### What You CAN Do:
+- View assessment progress and milestone completions
+- See selected career/university recommendation insights
+- Preview and download their Journey Map
+- Chat with their advisor and see unread message indicators
+
+### What You CANNOT Do:
+- Edit their test answers or take assessments for them
+- Modify their profile data (like email or password)
+- See private, restricted journal entries or private notes intended only for the advisor
+
+---
+
+## Common Questions
+
+| Situation | What to do |
+|---|---|
+| I sent a link request but nothing happened | Ask your child to log in and approve the pending request |
+| The student detail page fails to load | Your session may have timed out, or the link was revoked by the student. Refresh the page and check your dashboard |
+| Can I reset my child's password for them? | No. Security policies require the student to use the "Forgot Password" link on the normal student login page |

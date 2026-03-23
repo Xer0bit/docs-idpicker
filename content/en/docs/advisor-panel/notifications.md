@@ -1,57 +1,55 @@
 ---
 title: "Notifications"
-description: "Detailed click-by-click broadcast notification workflow"
+description: "How to compose, target, and broadcast announcements to your student cohorts"
 weight: 137
 draft: false
 ---
 
-Notifications allows advisors to send targeted announcements to students.
+The Notifications module is your mass-communication tool. Instead of sending hundreds of individual emails, use notifications to broadcast platform-native announcements, reminders, and alerts directly to student dashboards.
 
-## A) Open Notifications
+---
 
-1. In sidebar, click Notifications.
-2. Wait for notification history list.
+## 1. Creating a New Broadcast
 
-## B) Create New Notification (Click-by-Click)
+1. In the sidebar, click **Notifications**.
+2. You will see a history of your past broadcasts. Click **Create Notification**.
+3. Enter a clear, attention-grabbing **Title**.
+4. Type your **Message Body**. Keep it concise but ensure all necessary links or action items are included.
+5. Select your **Target Type**:
+   - `All Students`: Broadcasts to every single student in your organization. Use sparingly.
+   - `Selected Users`: Allows you to hand-pick individuals.
+   - `Selected Groups`: The most common option. Targets a pre-made cohort (e.g., "Seniors").
+6. If you chose Users or Groups, a selection interface will appear. Pick your targets.
+7. Click **Send** (or **Create**).
+8. The notification is immediately dispatched and will appear in your history list.
 
-1. Click Create Notification.
-2. Enter title.
-3. Enter message body.
-4. Choose target type:
-   - All students
-   - Selected users
-   - Selected groups
-5. If users/groups selected, choose recipients.
-6. Click Send/Create.
-7. Confirm new notification appears in history.
+---
 
-## C) Review Delivery Summary
+## 2. Reviewing Delivery and Effectiveness
 
-In notification list, verify:
+Unlike email, platform notifications allow you to track engagement. In your notification history list, you can verify:
 
-- Target type
-- Created date/time
-- Total recipients
-- Read count
-- Unread count
+- **Target Type:** A quick reminder of who received the broadcast.
+- **Created Date:** Exactly when it went out.
+- **Total Recipients:** The absolute number of unique students who received the ping.
+- **Read Count:** How many students have clicked on the notification to read the full body.
+- **Unread Count:** How many students have ignored or not yet seen the alert.
 
-## D) Filter History
+---
 
-1. Apply target-type filters.
-2. Search for a title or campaign keyword.
-3. Review historical effectiveness.
+## 3. Filtering Your Broadcast History
 
-## Common Advisor Questions
+If you need to check what you sent months ago:
+1. Apply the **Target Type** filters (e.g., show me all messages sent to "All Students").
+2. Use the search input to find a specific keyword or campaign title.
+3. Review the historical *Read Counts* to determine which types of subject lines get the most engagement from your roster.
 
-Q: Notification sent to wrong audience.
-A: Recheck target type and recipient selection before sending.
+---
 
-Q: Read count seems low.
-A: Students may not have opened notification yet.
+## Common Questions
 
-Q: Group targeting not available.
-A: Ensure groups exist and user has required permissions.
-
-![Notifications Placeholder](/images/user-manual/advisor-panel/notifications.png)
-
-Image placeholder: Notification create modal with target selector and recipient lists.
+| Situation | What to do |
+|---|---|
+| The read rate is extremely low | Give it 24 hours. Students only see notifications when they actively log in to their dashboard |
+| I accidentally sent a notification to the wrong group | Platform notifications are instant and generally cannot be un-sent. Send a follow-up correction immediately to the same wrong group |
+| The "Selected Groups" option is greyed out | You cannot target groups if you have not created any groups yet. See the [Groups](/docs/advisor-panel/groups/) guide |

@@ -1,79 +1,66 @@
 ---
 title: "Advisor Login and Dashboard"
-description: "Detailed click-by-click login, session, and dashboard guide"
+description: "How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview"
 weight: 131
 draft: false
 ---
 
-This guide covers advisor access, role-based session behavior, and first dashboard checks.
+As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.
 
-## A) Advisor Login (Click-by-Click)
+---
 
-1. Open advisor login URL from [Access URLs](../getting-started/access-urls/).
-2. Click Email field and enter advisor email.
-3. Click Password field and enter password.
-4. Click Sign In.
-5. Wait for session initialization.
-6. Confirm redirect to dashboard.
+## 1. Advisor Login
 
-Expected result:
+Depending on your organization's setup, you will access the platform either via a custom organization link or the main advisor portal. (See [Access URLs](/docs/getting-started/access-urls/) if you are unsure).
 
-- Advisor session is loaded with role and permission set.
-- User lands on advisor dashboard.
+1. Open the Advisor Login page.
+2. Enter your registered **Email** and **Password**.
+3. Click **Sign In**.
+4. The system initializes your specific role and permission set, then drops you onto your Dashboard.
 
-If login fails:
+> **Why is my dashboard missing certain modules?**
+> If you are a "Sub-Advisor," your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.
 
-- Re-check email/password.
-- Confirm account status is active.
-- Use request/reset password flow if needed.
+---
 
-## B) First-Time Password Setup
+## 2. Setting Up Your Account (First Time)
 
-For invited advisors/sub-advisors:
+If you were invited to join as an advisor or sub-advisor by your organization lead:
 
-1. Open setup-password link from email.
-2. Enter new password and confirm.
-3. Submit setup form.
-4. Return to login and sign in.
+1. Check your email for an invitation from IDPicker.
+2. Click the **Setup Password** link in that email.
+3. You will be taken to a secure token-validation page.
+4. Enter a strong new password, confirm it, and submit to activate your account.
+5. Return directly to the login page and sign in.
 
-## C) Password Reset Flow
+---
 
-1. Open request-password/reset-password page.
-2. Enter advisor email.
-3. Request reset email.
-4. Open reset link and set new password.
-5. Sign in again.
+## 3. Password Reset Flow
 
-## D) Dashboard Navigation (Click-by-Click)
+If you have forgotten your password:
+1. On the login page, click **Forgot Password**.
+2. Enter your advisor email address.
+3. You will receive a reset link. Click it, set a new password, and verify the strength indicator.
+4. If the link says it is expired, immediately request a new one from the login page.
 
-1. After login, open dashboard home.
-2. Review top overview blocks (metrics/summary widgets).
-3. Open Assigned Forms block and verify current pending items.
-4. Use sidebar to verify access to Students, Groups, Resources, and Support Tickets.
-5. Confirm language preference control works if available in dashboard header.
+---
 
-## E) Role and Permission Behavior
+## 4. Understanding Your Dashboard
 
-Advisor role:
+The Advisor Dashboard serves as your daily command center.
 
-- Full operational access based on organization policies.
+- **KPI Widgets (Top Row):** These blocks show quick metrics regarding your linked students, such as total student count, recently completed assessments, and pending forms.
+- **Assigned Forms Block:** Immediately see which of your forms currently have pending responses from students.
+- **Main Navigation (Sidebar):** Use the sidebar to quickly jump between managing Students, organizing Groups, distributing Resources, or handling Support/Chat.
 
-Sub-advisor role:
+*Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.*
 
-- Access is limited to delegated permissions.
-- Some modules/actions may be hidden or disabled.
+---
 
-## Common Advisor Questions
+## Common Questions
 
-Q: I logged in but cannot see expected modules.
-A: Check whether account is sub-advisor with restricted permissions.
-
-Q: Login succeeds but dashboard appears partially loaded.
-A: Wait for session and dashboard API calls to finish, then refresh once.
-
-Q: Password setup link does not work.
-A: Request a fresh password setup/reset email.
-
-![Advisor Login Placeholder](/images/user-manual/advisor-panel/advisor-login.png)
-
-Image placeholder: Add login screen and post-login dashboard landing view.
+| Situation | What to do |
+|---|---|
+| I logged in but cannot see the "Groups" module | Your account is likely a Sub-Advisor with restricted permissions |
+| My dashboard looks partially loaded or broken | Wait a few seconds for all underlying API calls to finish, then refresh the page once |
+| The password setup link in my email doesn't work | Security tokens expire quickly. Ask your administrator to resend the invitation, or use the "Forgot Password" flow if the account was already created |

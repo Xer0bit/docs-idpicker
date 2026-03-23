@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Authentication and Account | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click parent authentication guide">
+<meta name="description" content="How parents sign in, register, and recover access to their dashboard">
 <meta property="og:url" content="http://localhost:1313/docs/parent-panel/authentication-and-account/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Authentication and Account">
-  <meta property="og:description" content="Detailed click-by-click parent authentication guide">
+  <meta property="og:description" content="How parents sign in, register, and recover access to their dashboard">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Authentication and Account">
-  <meta itemprop="description" content="Detailed click-by-click parent authentication guide">
-  <meta itemprop="wordCount" content="244">
+  <meta itemprop="description" content="How parents sign in, register, and recover access to their dashboard">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="418">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Authentication and Account">
-  <meta name="twitter:description" content="Detailed click-by-click parent authentication guide">
+  <meta name="twitter:description" content="How parents sign in, register, and recover access to their dashboard">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,13 +242,11 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-parent-login-click-by-click">A) Parent Login (Click-by-Click)</a></li>
-    <li><a href="#b-parent-registration-click-by-click">B) Parent Registration (Click-by-Click)</a></li>
-    <li><a href="#c-verify-email">C) Verify Email</a></li>
-    <li><a href="#d-setup-password-from-invitation-link">D) Setup Password from Invitation Link</a></li>
-    <li><a href="#e-request-password-reset">E) Request Password Reset</a></li>
-    <li><a href="#f-complete-password-reset">F) Complete Password Reset</a></li>
-    <li><a href="#common-parent-questions">Common Parent Questions</a></li>
+    <li><a href="#1-registering-a-new-parent-account">1. Registering a New Parent Account</a></li>
+    <li><a href="#2-setting-up-an-invited-account">2. Setting Up an Invited Account</a></li>
+    <li><a href="#3-signing-in-click-by-click">3. Signing In (Click-by-Click)</a></li>
+    <li><a href="#4-resetting-a-forgotten-password">4. Resetting a Forgotten Password</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -270,80 +270,80 @@
 </nav>
 <div class="td-content">
 	<h1>Authentication and Account</h1>
-	<div class="lead">Detailed click-by-click parent authentication guide</div>
+	<div class="lead">How parents sign in, register, and recover access to their dashboard</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide covers parent login, registration, verification, setup-password, and reset-password flows.</p>
-<h2 id="a-parent-login-click-by-click">A) Parent Login (Click-by-Click)</h2>
+	<p>Parents use the IDPicker Parent Panel to monitor their child&rsquo;s progress, review recommendations, and communicate with advisors. This guide covers how to get your account set up and securely log in.</p>
+<hr>
+<h2 id="1-registering-a-new-parent-account">1. Registering a New Parent Account</h2>
+<p>If you are new to the platform:</p>
 <ol>
-<li>Open parent login URL from <a href="../getting-started/access-urls/">Access URLs</a>.</li>
-<li>Click email/username input.</li>
-<li>Enter your parent account email.</li>
-<li>Click password input.</li>
-<li>Enter password.</li>
-<li>Optional: Click eye icon to reveal password.</li>
-<li>Click Sign In.</li>
-<li>Wait for redirect to <code>/dashboard</code>.</li>
+<li>Open the <a href="/docs/getting-started/access-urls/">Parent Registration URL</a>.</li>
+<li>Fill out the registration form with your <strong>Email</strong>, <strong>Full Name</strong>, and a <strong>Strong Password</strong>.</li>
+<li>Check the consent checkbox at the bottom of the form.</li>
+<li>Click <strong>Register</strong>.</li>
+<li>The system will tell you to check your email for a verification link.</li>
+<li>Open your inbox, click the verification link, and you will be routed automatically back to the platform to log in.</li>
 </ol>
-<p>Expected result:</p>
-<ul>
-<li>Parent auth token cookie is set.</li>
-<li>Parent dashboard loads.</li>
-</ul>
-<h2 id="b-parent-registration-click-by-click">B) Parent Registration (Click-by-Click)</h2>
+<blockquote>
+<p><strong>Verification Link Expired?</strong> If you clicked the email verification link and it says expired, simply go to the login page, enter your email, and click the <strong>Resend Verification</strong> button.</p>
+</blockquote>
+<hr>
+<h2 id="2-setting-up-an-invited-account">2. Setting Up an Invited Account</h2>
+<p>Often, schools or advisors will create a parent account on your behalf and send you an invitation.</p>
 <ol>
-<li>Open Register page.</li>
-<li>Fill email.</li>
-<li>Fill full name.</li>
-<li>Fill password.</li>
-<li>Enable consent checkbox.</li>
-<li>Click Register.</li>
-<li>Verify toast/confirmation message about email verification.</li>
-<li>Return to login.</li>
+<li>Open your email inbox and find the invitation from IDPicker.</li>
+<li>Click the <strong>Setup Password</strong> link in the email.</li>
+<li>The browser will open a secure setup page.</li>
+<li>Enter a strong new password that you will remember, and confirm it.</li>
+<li>Submit the form, then sign in with your email and new password.</li>
 </ol>
-<h2 id="c-verify-email">C) Verify Email</h2>
+<hr>
+<h2 id="3-signing-in-click-by-click">3. Signing In (Click-by-Click)</h2>
 <ol>
-<li>Open verification link from email.</li>
-<li>Wait for auto-verification.</li>
-<li>On success, parent is redirected to dashboard.</li>
-<li>If token invalid/expired, use resend verification.</li>
+<li>Open the Parent Login page.</li>
+<li>Click the <strong>Email</strong> field and enter your registered parent email address.</li>
+<li>Click the <strong>Password</strong> field and enter your password.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>You will land directly on your <a href="/docs/parent-panel/dashboard-and-linked-overview/">Parent Dashboard</a>.</li>
 </ol>
-<h2 id="d-setup-password-from-invitation-link">D) Setup Password from Invitation Link</h2>
+<p><em>If login fails, double-check your password spelling. Passwords are case-sensitive.</em></p>
+<hr>
+<h2 id="4-resetting-a-forgotten-password">4. Resetting a Forgotten Password</h2>
+<p>If you forget your password, you can easily recover your account securely.</p>
 <ol>
-<li>Open setup-password URL with token.</li>
-<li>Wait for token validation.</li>
-<li>Enter new password (minimum length requirement applies).</li>
-<li>Confirm password.</li>
-<li>Submit.</li>
-<li>Return to login and sign in.</li>
+<li>On the login page, click <strong>Forgot Password</strong>.</li>
+<li>Enter your parent email address and click <strong>Send Reset Link</strong>.</li>
+<li>Check your email (and spam folder) for the reset message.</li>
+<li>Click the link in the email.</li>
+<li>Enter a new password, confirm it, and submit.</li>
+<li>Return to the login page and sign in with the new password.</li>
 </ol>
-<h2 id="e-request-password-reset">E) Request Password Reset</h2>
-<ol>
-<li>Open login reset-password page.</li>
-<li>Enter parent email.</li>
-<li>Click Send Reset Link.</li>
-<li>Check inbox/spam folder.</li>
-</ol>
-<h2 id="f-complete-password-reset">F) Complete Password Reset</h2>
-<ol>
-<li>Open reset link with token.</li>
-<li>Enter new password.</li>
-<li>Confirm password.</li>
-<li>Submit reset.</li>
-<li>Log in with updated password.</li>
-</ol>
-<h2 id="common-parent-questions">Common Parent Questions</h2>
-<p>Q: Login returns parents-only error.
-A: Credentials belong to non-parent role; use correct parent account.</p>
-<p>Q: Verification link expired.
-A: Use resend verification action on verify-email page.</p>
-<p>Q: Reset link works but password submit fails.
-A: Ensure minimum length and confirm-password match.</p>
-<p><img src="/images/user-manual/parent-panel/parent-login.png" alt="Parent Login Placeholder"></p>
-<p>Image placeholder: Parent login page with successful redirect.</p>
-<p><img src="/images/user-manual/parent-panel/parent-verify-email.png" alt="Parent Verify Placeholder"></p>
-<p>Image placeholder: Verify-email success and resend fallback states.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I try to log in but get a &ldquo;Parents Only&rdquo; error</td>
+          <td>You are trying to log into the Parent portal using a Student or Advisor email address. Make sure you use the parent-specific link</td>
+      </tr>
+      <tr>
+          <td>I reset my password but it won&rsquo;t let me submit</td>
+          <td>Your new password is likely too weak. It must meet the minimum length requirements (usually 8+ characters with a mix of numbers/letters)</td>
+      </tr>
+      <tr>
+          <td>I stopped receiving emails</td>
+          <td>Check your spam/junk folder and ensure <code>noreply@idpicker.com</code> is whitelisted in your email provider</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -372,7 +372,7 @@ A: Ensure minimum length and confirm-password match.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHBhcmVudCBsb2dpbiwgcmVnaXN0cmF0aW9uLCB2ZXJpZmljYXRpb24sIHNldHVwLXBhc3N3b3JkLCBhbmQgcmVzZXQtcGFzc3dvcmQgZmxvd3MuCgojIyBBKSBQYXJlbnQgTG9naW4gKENsaWNrLWJ5LUNsaWNrKQoKMS4gT3BlbiBwYXJlbnQgbG9naW4gVVJMIGZyb20gW0FjY2VzcyBVUkxzXSguLi9nZXR0aW5nLXN0YXJ0ZWQvYWNjZXNzLXVybHMvKS4KMi4gQ2xpY2sgZW1haWwvdXNlcm5hbWUgaW5wdXQuCjMuIEVudGVyIHlvdXIgcGFyZW50IGFjY291bnQgZW1haWwuCjQuIENsaWNrIHBhc3N3b3JkIGlucHV0Lgo1LiBFbnRlciBwYXNzd29yZC4KNi4gT3B0aW9uYWw6IENsaWNrIGV5ZSBpY29uIHRvIHJldmVhbCBwYXNzd29yZC4KNy4gQ2xpY2sgU2lnbiBJbi4KOC4gV2FpdCBmb3IgcmVkaXJlY3QgdG8gYC9kYXNoYm9hcmRgLgoKRXhwZWN0ZWQgcmVzdWx0OgoKLSBQYXJlbnQgYXV0aCB0b2tlbiBjb29raWUgaXMgc2V0LgotIFBhcmVudCBkYXNoYm9hcmQgbG9hZHMuCgojIyBCKSBQYXJlbnQgUmVnaXN0cmF0aW9uIChDbGljay1ieS1DbGljaykKCjEuIE9wZW4gUmVnaXN0ZXIgcGFnZS4KMi4gRmlsbCBlbWFpbC4KMy4gRmlsbCBmdWxsIG5hbWUuCjQuIEZpbGwgcGFzc3dvcmQuCjUuIEVuYWJsZSBjb25zZW50IGNoZWNrYm94Lgo2LiBDbGljayBSZWdpc3Rlci4KNy4gVmVyaWZ5IHRvYXN0L2NvbmZpcm1hdGlvbiBtZXNzYWdlIGFib3V0IGVtYWlsIHZlcmlmaWNhdGlvbi4KOC4gUmV0dXJuIHRvIGxvZ2luLgoKIyMgQykgVmVyaWZ5IEVtYWlsCgoxLiBPcGVuIHZlcmlmaWNhdGlvbiBsaW5rIGZyb20gZW1haWwuCjIuIFdhaXQgZm9yIGF1dG8tdmVyaWZpY2F0aW9uLgozLiBPbiBzdWNjZXNzLCBwYXJlbnQgaXMgcmVkaXJlY3RlZCB0byBkYXNoYm9hcmQuCjQuIElmIHRva2VuIGludmFsaWQvZXhwaXJlZCwgdXNlIHJlc2VuZCB2ZXJpZmljYXRpb24uCgojIyBEKSBTZXR1cCBQYXNzd29yZCBmcm9tIEludml0YXRpb24gTGluawoKMS4gT3BlbiBzZXR1cC1wYXNzd29yZCBVUkwgd2l0aCB0b2tlbi4KMi4gV2FpdCBmb3IgdG9rZW4gdmFsaWRhdGlvbi4KMy4gRW50ZXIgbmV3IHBhc3N3b3JkIChtaW5pbXVtIGxlbmd0aCByZXF1aXJlbWVudCBhcHBsaWVzKS4KNC4gQ29uZmlybSBwYXNzd29yZC4KNS4gU3VibWl0Lgo2LiBSZXR1cm4gdG8gbG9naW4gYW5kIHNpZ24gaW4uCgojIyBFKSBSZXF1ZXN0IFBhc3N3b3JkIFJlc2V0CgoxLiBPcGVuIGxvZ2luIHJlc2V0LXBhc3N3b3JkIHBhZ2UuCjIuIEVudGVyIHBhcmVudCBlbWFpbC4KMy4gQ2xpY2sgU2VuZCBSZXNldCBMaW5rLgo0LiBDaGVjayBpbmJveC9zcGFtIGZvbGRlci4KCiMjIEYpIENvbXBsZXRlIFBhc3N3b3JkIFJlc2V0CgoxLiBPcGVuIHJlc2V0IGxpbmsgd2l0aCB0b2tlbi4KMi4gRW50ZXIgbmV3IHBhc3N3b3JkLgozLiBDb25maXJtIHBhc3N3b3JkLgo0LiBTdWJtaXQgcmVzZXQuCjUuIExvZyBpbiB3aXRoIHVwZGF0ZWQgcGFzc3dvcmQuCgojIyBDb21tb24gUGFyZW50IFF1ZXN0aW9ucwoKUTogTG9naW4gcmV0dXJucyBwYXJlbnRzLW9ubHkgZXJyb3IuCkE6IENyZWRlbnRpYWxzIGJlbG9uZyB0byBub24tcGFyZW50IHJvbGU7IHVzZSBjb3JyZWN0IHBhcmVudCBhY2NvdW50LgoKUTogVmVyaWZpY2F0aW9uIGxpbmsgZXhwaXJlZC4KQTogVXNlIHJlc2VuZCB2ZXJpZmljYXRpb24gYWN0aW9uIG9uIHZlcmlmeS1lbWFpbCBwYWdlLgoKUTogUmVzZXQgbGluayB3b3JrcyBidXQgcGFzc3dvcmQgc3VibWl0IGZhaWxzLgpBOiBFbnN1cmUgbWluaW11bSBsZW5ndGggYW5kIGNvbmZpcm0tcGFzc3dvcmQgbWF0Y2guCgohW1BhcmVudCBMb2dpbiBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9wYXJlbnQtcGFuZWwvcGFyZW50LWxvZ2luLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBQYXJlbnQgbG9naW4gcGFnZSB3aXRoIHN1Y2Nlc3NmdWwgcmVkaXJlY3QuCgohW1BhcmVudCBWZXJpZnkgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvcGFyZW50LXBhbmVsL3BhcmVudC12ZXJpZnktZW1haWwucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFZlcmlmeS1lbWFpbCBzdWNjZXNzIGFuZCByZXNlbmQgZmFsbGJhY2sgc3RhdGVzLgo=</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClBhcmVudHMgdXNlIHRoZSBJRFBpY2tlciBQYXJlbnQgUGFuZWwgdG8gbW9uaXRvciB0aGVpciBjaGlsZCdzIHByb2dyZXNzLCByZXZpZXcgcmVjb21tZW5kYXRpb25zLCBhbmQgY29tbXVuaWNhdGUgd2l0aCBhZHZpc29ycy4gVGhpcyBndWlkZSBjb3ZlcnMgaG93IHRvIGdldCB5b3VyIGFjY291bnQgc2V0IHVwIGFuZCBzZWN1cmVseSBsb2cgaW4uCgotLS0KCiMjIDEuIFJlZ2lzdGVyaW5nIGEgTmV3IFBhcmVudCBBY2NvdW50CgpJZiB5b3UgYXJlIG5ldyB0byB0aGUgcGxhdGZvcm06CgoxLiBPcGVuIHRoZSBbUGFyZW50IFJlZ2lzdHJhdGlvbiBVUkxdKC9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscy8pLgoyLiBGaWxsIG91dCB0aGUgcmVnaXN0cmF0aW9uIGZvcm0gd2l0aCB5b3VyICoqRW1haWwqKiwgKipGdWxsIE5hbWUqKiwgYW5kIGEgKipTdHJvbmcgUGFzc3dvcmQqKi4KMy4gQ2hlY2sgdGhlIGNvbnNlbnQgY2hlY2tib3ggYXQgdGhlIGJvdHRvbSBvZiB0aGUgZm9ybS4KNC4gQ2xpY2sgKipSZWdpc3RlcioqLgo1LiBUaGUgc3lzdGVtIHdpbGwgdGVsbCB5b3UgdG8gY2hlY2sgeW91ciBlbWFpbCBmb3IgYSB2ZXJpZmljYXRpb24gbGluay4KNi4gT3BlbiB5b3VyIGluYm94LCBjbGljayB0aGUgdmVyaWZpY2F0aW9uIGxpbmssIGFuZCB5b3Ugd2lsbCBiZSByb3V0ZWQgYXV0b21hdGljYWxseSBiYWNrIHRvIHRoZSBwbGF0Zm9ybSB0byBsb2cgaW4uCgo&#43;ICoqVmVyaWZpY2F0aW9uIExpbmsgRXhwaXJlZD8qKiBJZiB5b3UgY2xpY2tlZCB0aGUgZW1haWwgdmVyaWZpY2F0aW9uIGxpbmsgYW5kIGl0IHNheXMgZXhwaXJlZCwgc2ltcGx5IGdvIHRvIHRoZSBsb2dpbiBwYWdlLCBlbnRlciB5b3VyIGVtYWlsLCBhbmQgY2xpY2sgdGhlICoqUmVzZW5kIFZlcmlmaWNhdGlvbioqIGJ1dHRvbi4KCi0tLQoKIyMgMi4gU2V0dGluZyBVcCBhbiBJbnZpdGVkIEFjY291bnQKCk9mdGVuLCBzY2hvb2xzIG9yIGFkdmlzb3JzIHdpbGwgY3JlYXRlIGEgcGFyZW50IGFjY291bnQgb24geW91ciBiZWhhbGYgYW5kIHNlbmQgeW91IGFuIGludml0YXRpb24uCgoxLiBPcGVuIHlvdXIgZW1haWwgaW5ib3ggYW5kIGZpbmQgdGhlIGludml0YXRpb24gZnJvbSBJRFBpY2tlci4KMi4gQ2xpY2sgdGhlICoqU2V0dXAgUGFzc3dvcmQqKiBsaW5rIGluIHRoZSBlbWFpbC4KMy4gVGhlIGJyb3dzZXIgd2lsbCBvcGVuIGEgc2VjdXJlIHNldHVwIHBhZ2UuCjQuIEVudGVyIGEgc3Ryb25nIG5ldyBwYXNzd29yZCB0aGF0IHlvdSB3aWxsIHJlbWVtYmVyLCBhbmQgY29uZmlybSBpdC4KNS4gU3VibWl0IHRoZSBmb3JtLCB0aGVuIHNpZ24gaW4gd2l0aCB5b3VyIGVtYWlsIGFuZCBuZXcgcGFzc3dvcmQuCgotLS0KCiMjIDMuIFNpZ25pbmcgSW4gKENsaWNrLWJ5LUNsaWNrKQoKMS4gT3BlbiB0aGUgUGFyZW50IExvZ2luIHBhZ2UuCjIuIENsaWNrIHRoZSAqKkVtYWlsKiogZmllbGQgYW5kIGVudGVyIHlvdXIgcmVnaXN0ZXJlZCBwYXJlbnQgZW1haWwgYWRkcmVzcy4KMy4gQ2xpY2sgdGhlICoqUGFzc3dvcmQqKiBmaWVsZCBhbmQgZW50ZXIgeW91ciBwYXNzd29yZC4KNC4gQ2xpY2sgKipTaWduIEluKiouCjUuIFlvdSB3aWxsIGxhbmQgZGlyZWN0bHkgb24geW91ciBbUGFyZW50IERhc2hib2FyZF0oL2RvY3MvcGFyZW50LXBhbmVsL2Rhc2hib2FyZC1hbmQtbGlua2VkLW92ZXJ2aWV3LykuCgoqSWYgbG9naW4gZmFpbHMsIGRvdWJsZS1jaGVjayB5b3VyIHBhc3N3b3JkIHNwZWxsaW5nLiBQYXNzd29yZHMgYXJlIGNhc2Utc2Vuc2l0aXZlLioKCi0tLQoKIyMgNC4gUmVzZXR0aW5nIGEgRm9yZ290dGVuIFBhc3N3b3JkCgpJZiB5b3UgZm9yZ2V0IHlvdXIgcGFzc3dvcmQsIHlvdSBjYW4gZWFzaWx5IHJlY292ZXIgeW91ciBhY2NvdW50IHNlY3VyZWx5LgoKMS4gT24gdGhlIGxvZ2luIHBhZ2UsIGNsaWNrICoqRm9yZ290IFBhc3N3b3JkKiouCjIuIEVudGVyIHlvdXIgcGFyZW50IGVtYWlsIGFkZHJlc3MgYW5kIGNsaWNrICoqU2VuZCBSZXNldCBMaW5rKiouCjMuIENoZWNrIHlvdXIgZW1haWwgKGFuZCBzcGFtIGZvbGRlcikgZm9yIHRoZSByZXNldCBtZXNzYWdlLgo0LiBDbGljayB0aGUgbGluayBpbiB0aGUgZW1haWwuCjUuIEVudGVyIGEgbmV3IHBhc3N3b3JkLCBjb25maXJtIGl0LCBhbmQgc3VibWl0Lgo2LiBSZXR1cm4gdG8gdGhlIGxvZ2luIHBhZ2UgYW5kIHNpZ24gaW4gd2l0aCB0aGUgbmV3IHBhc3N3b3JkLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBJIHRyeSB0byBsb2cgaW4gYnV0IGdldCBhICJQYXJlbnRzIE9ubHkiIGVycm9yIHwgWW91IGFyZSB0cnlpbmcgdG8gbG9nIGludG8gdGhlIFBhcmVudCBwb3J0YWwgdXNpbmcgYSBTdHVkZW50IG9yIEFkdmlzb3IgZW1haWwgYWRkcmVzcy4gTWFrZSBzdXJlIHlvdSB1c2UgdGhlIHBhcmVudC1zcGVjaWZpYyBsaW5rIHwKfCBJIHJlc2V0IG15IHBhc3N3b3JkIGJ1dCBpdCB3b24ndCBsZXQgbWUgc3VibWl0IHwgWW91ciBuZXcgcGFzc3dvcmQgaXMgbGlrZWx5IHRvbyB3ZWFrLiBJdCBtdXN0IG1lZXQgdGhlIG1pbmltdW0gbGVuZ3RoIHJlcXVpcmVtZW50cyAodXN1YWxseSA4KyBjaGFyYWN0ZXJzIHdpdGggYSBtaXggb2YgbnVtYmVycy9sZXR0ZXJzKSB8CnwgSSBzdG9wcGVkIHJlY2VpdmluZyBlbWFpbHMgfCBDaGVjayB5b3VyIHNwYW0vanVuayBmb2xkZXIgYW5kIGVuc3VyZSBgbm9yZXBseUBpZHBpY2tlci5jb21gIGlzIHdoaXRlbGlzdGVkIGluIHlvdXIgZW1haWwgcHJvdmlkZXIgfAo=</script>
 
 <style>
  

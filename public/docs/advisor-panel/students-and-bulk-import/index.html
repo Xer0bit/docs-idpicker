@@ -19,21 +19,23 @@
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Students and Bulk Import | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click student management operations">
+<meta name="description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
 <meta property="og:url" content="http://localhost:1313/docs/advisor-panel/students-and-bulk-import/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Students and Bulk Import">
-  <meta property="og:description" content="Detailed click-by-click student management operations">
+  <meta property="og:description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T00:23:54+05:00">
 
   <meta itemprop="name" content="Students and Bulk Import">
-  <meta itemprop="description" content="Detailed click-by-click student management operations">
-  <meta itemprop="wordCount" content="242">
+  <meta itemprop="description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
+  <meta itemprop="dateModified" content="2026-03-24T00:23:54+05:00">
+  <meta itemprop="wordCount" content="431">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Students and Bulk Import">
-  <meta name="twitter:description" content="Detailed click-by-click student management operations">
+  <meta name="twitter:description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -240,13 +242,18 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-open-students-list">A) Open Students List</a></li>
-    <li><a href="#b-search-and-filter-students-click-by-click">B) Search and Filter Students (Click-by-Click)</a></li>
-    <li><a href="#c-open-student-detail">C) Open Student Detail</a></li>
-    <li><a href="#d-update-student-group-membership">D) Update Student Group Membership</a></li>
-    <li><a href="#e-bulk-import-students-from-excel">E) Bulk Import Students from Excel</a></li>
-    <li><a href="#import-validation-notes">Import Validation Notes</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#searching-and-filtering-your-roster">Searching and Filtering Your Roster</a>
+      <ul>
+        <li><a href="#viewing-student-details">Viewing Student Details</a></li>
+      </ul>
+    </li>
+    <li><a href="#managing-group-assignments">Managing Group Assignments</a></li>
+    <li><a href="#bulk-importing-students-excel">Bulk Importing Students (Excel)</a>
+      <ul>
+        <li><a href="#important-import-rules">Important Import Rules</a></li>
+      </ul>
+    </li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -270,71 +277,86 @@
 </nav>
 <div class="td-content">
 	<h1>Students and Bulk Import</h1>
-	<div class="lead">Detailed click-by-click student management operations</div>
+	<div class="lead">How to search your student roster, review profiles, and perform bulk imports from Excel</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide covers student search/filter, profile access, group assignment, and bulk import.</p>
-<h2 id="a-open-students-list">A) Open Students List</h2>
+	<p>The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.</p>
+<hr>
+<h2 id="searching-and-filtering-your-roster">Searching and Filtering Your Roster</h2>
+<p>When you open the <strong>Students</strong> module from the sidebar, you see your entire authorized roster.</p>
 <ol>
-<li>Sign in as advisor.</li>
-<li>In sidebar, click Students.</li>
-<li>Wait for student table/cards to load.</li>
-</ol>
-<h2 id="b-search-and-filter-students-click-by-click">B) Search and Filter Students (Click-by-Click)</h2>
-<ol>
-<li>Click search input.</li>
-<li>Type name or email keyword.</li>
-<li>Apply filters as needed (groups, chat status, assessment signals, date, location, etc.).</li>
-<li>Apply sorting (name, email, joined date, and other available fields).</li>
-<li>Review narrowed result list.</li>
-</ol>
-<h2 id="c-open-student-detail">C) Open Student Detail</h2>
-<ol>
-<li>Click a student row/card.</li>
-<li>Open student detail page.</li>
-<li>Review profile and activity context.</li>
-</ol>
-<h2 id="d-update-student-group-membership">D) Update Student Group Membership</h2>
-<ol>
-<li>From Students list, open group assignment action.</li>
-<li>Check/uncheck target groups.</li>
-<li>Save membership update.</li>
-<li>Confirm changes in student row/detail.</li>
-</ol>
-<h2 id="e-bulk-import-students-from-excel">E) Bulk Import Students from Excel</h2>
-<ol>
-<li>In Students page, click Bulk Students/Import.</li>
-<li>Upload .xlsx or .xls file.</li>
-<li>Wait for preview parsing.</li>
-<li>Validate required columns exist:
+<li><strong>Search:</strong> Use the search bar to find a student quickly by name or email.</li>
+<li><strong>Filter:</strong> Narrow down your list using the drop-down filters. You can filter by:
 <ul>
-<li>email</li>
-<li>first_name</li>
-<li>last_name</li>
+<li>Assigned Groups</li>
+<li>Chat status (e.g., awaiting reply)</li>
+<li>Assessment signals (e.g., completed, missing)</li>
+<li>Joined date or location</li>
 </ul>
 </li>
-<li>Select rows to import.</li>
-<li>Click Bulk Create/Import.</li>
-<li>Wait for success summary.</li>
+<li><strong>Sort:</strong> Click the column headers (Name, Email, Joined Date) to reorder the list.</li>
 </ol>
-<h2 id="import-validation-notes">Import Validation Notes</h2>
+<h3 id="viewing-student-details">Viewing Student Details</h3>
+<p>Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.</p>
+<hr>
+<h2 id="managing-group-assignments">Managing Group Assignments</h2>
+<p>To help organize your communications, you can assign students to Groups right from the roster.</p>
+<ol>
+<li>From the Students list, select the checkbox next to one or more students.</li>
+<li>Click the <strong>Assign to Group</strong> action button.</li>
+<li>Check the boxes for the target groups.</li>
+<li>Click <strong>Save</strong>. The membership updates instantly.</li>
+</ol>
+<p><em>(Note: See the <a href="/docs/advisor-panel/groups/">Groups Management</a> guide for how to create groups in the first place).</em></p>
+<hr>
+<h2 id="bulk-importing-students-excel">Bulk Importing Students (Excel)</h2>
+<p>If you have a large cohort starting simultaneously, do not add them one by one. Use the Bulk Import tool.</p>
+<ol>
+<li>On the Students page, click <strong>Bulk Actions &gt; Import</strong>.</li>
+<li>Prepare your <code>.xlsx</code> or <code>.xls</code> file. Your spreadsheet <strong>must</strong> contain these three exact column headers in the first row:
 <ul>
-<li>Max file size is limited.</li>
-<li>Invalid file type is rejected.</li>
-<li>Rows with missing required fields are skipped or flagged.</li>
+<li><code>email</code></li>
+<li><code>first_name</code></li>
+<li><code>last_name</code></li>
 </ul>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Import file uploaded but no preview appears.
-A: Confirm Excel format and header names match expected fields.</p>
-<p>Q: Student created but not in desired group.
-A: Update group membership after import or include assignment flow if available.</p>
-<p>Q: Filters return no students unexpectedly.
-A: Clear filters and reapply one by one.</p>
-<p><img src="/images/user-manual/advisor-panel/students-list.png" alt="Students Placeholder"></p>
-<p>Image placeholder: Students list with search/filter controls.</p>
-<p><img src="/images/user-manual/advisor-panel/bulk-import.png" alt="Bulk Import Placeholder"></p>
-<p>Image placeholder: Bulk import upload and parsed preview table.</p>
+</li>
+<li>Upload the file.</li>
+<li>The system will parse the file and show a <strong>Preview Table</strong>.</li>
+<li>Select the rows you wish to actually import, or select all.</li>
+<li>Click <strong>Confirm Import</strong>.</li>
+<li>Wait. The system will summarize successes and any skipped rows (failures).</li>
+</ol>
+<h3 id="important-import-rules">Important Import Rules</h3>
+<ul>
+<li><strong>File Limits:</strong> There is a maximum file size limit (usually a few megabytes).</li>
+<li><strong>Duplicates:</strong> If an email already exists in the system, that row will be skipped/flagged.</li>
+<li><strong>Group Assignment:</strong> Imported students are <em>not</em> automatically placed in a group upon import. You must assign them afterward.</li>
+</ul>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I uploaded an Excel file but the preview is totally blank</td>
+          <td>Make sure your file is a valid <code>.xlsx</code> and exactly matches the required lowercase header names (<code>email</code>, <code>first_name</code>, <code>last_name</code>)</td>
+      </tr>
+      <tr>
+          <td>The filters say &ldquo;0 students found&rdquo; but I know they exist</td>
+          <td>You likely have conflicting filters applied. Clear all filters and reapply them one by one</td>
+      </tr>
+      <tr>
+          <td>I just imported students; how do I message them all?</td>
+          <td>Create a Group for the new cohort, assign them, and then use the <a href="/docs/advisor-panel/notifications/">Notifications</a> module to broadcast a message</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -363,7 +385,7 @@ A: Clear filters and reapply one by one.</p>
 <script src='/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHN0dWRlbnQgc2VhcmNoL2ZpbHRlciwgcHJvZmlsZSBhY2Nlc3MsIGdyb3VwIGFzc2lnbm1lbnQsIGFuZCBidWxrIGltcG9ydC4KCiMjIEEpIE9wZW4gU3R1ZGVudHMgTGlzdAoKMS4gU2lnbiBpbiBhcyBhZHZpc29yLgoyLiBJbiBzaWRlYmFyLCBjbGljayBTdHVkZW50cy4KMy4gV2FpdCBmb3Igc3R1ZGVudCB0YWJsZS9jYXJkcyB0byBsb2FkLgoKIyMgQikgU2VhcmNoIGFuZCBGaWx0ZXIgU3R1ZGVudHMgKENsaWNrLWJ5LUNsaWNrKQoKMS4gQ2xpY2sgc2VhcmNoIGlucHV0LgoyLiBUeXBlIG5hbWUgb3IgZW1haWwga2V5d29yZC4KMy4gQXBwbHkgZmlsdGVycyBhcyBuZWVkZWQgKGdyb3VwcywgY2hhdCBzdGF0dXMsIGFzc2Vzc21lbnQgc2lnbmFscywgZGF0ZSwgbG9jYXRpb24sIGV0Yy4pLgo0LiBBcHBseSBzb3J0aW5nIChuYW1lLCBlbWFpbCwgam9pbmVkIGRhdGUsIGFuZCBvdGhlciBhdmFpbGFibGUgZmllbGRzKS4KNS4gUmV2aWV3IG5hcnJvd2VkIHJlc3VsdCBsaXN0LgoKIyMgQykgT3BlbiBTdHVkZW50IERldGFpbAoKMS4gQ2xpY2sgYSBzdHVkZW50IHJvdy9jYXJkLgoyLiBPcGVuIHN0dWRlbnQgZGV0YWlsIHBhZ2UuCjMuIFJldmlldyBwcm9maWxlIGFuZCBhY3Rpdml0eSBjb250ZXh0LgoKIyMgRCkgVXBkYXRlIFN0dWRlbnQgR3JvdXAgTWVtYmVyc2hpcAoKMS4gRnJvbSBTdHVkZW50cyBsaXN0LCBvcGVuIGdyb3VwIGFzc2lnbm1lbnQgYWN0aW9uLgoyLiBDaGVjay91bmNoZWNrIHRhcmdldCBncm91cHMuCjMuIFNhdmUgbWVtYmVyc2hpcCB1cGRhdGUuCjQuIENvbmZpcm0gY2hhbmdlcyBpbiBzdHVkZW50IHJvdy9kZXRhaWwuCgojIyBFKSBCdWxrIEltcG9ydCBTdHVkZW50cyBmcm9tIEV4Y2VsCgoxLiBJbiBTdHVkZW50cyBwYWdlLCBjbGljayBCdWxrIFN0dWRlbnRzL0ltcG9ydC4KMi4gVXBsb2FkIC54bHN4IG9yIC54bHMgZmlsZS4KMy4gV2FpdCBmb3IgcHJldmlldyBwYXJzaW5nLgo0LiBWYWxpZGF0ZSByZXF1aXJlZCBjb2x1bW5zIGV4aXN0OgogICAtIGVtYWlsCiAgIC0gZmlyc3RfbmFtZQogICAtIGxhc3RfbmFtZQo1LiBTZWxlY3Qgcm93cyB0byBpbXBvcnQuCjYuIENsaWNrIEJ1bGsgQ3JlYXRlL0ltcG9ydC4KNy4gV2FpdCBmb3Igc3VjY2VzcyBzdW1tYXJ5LgoKIyMgSW1wb3J0IFZhbGlkYXRpb24gTm90ZXMKCi0gTWF4IGZpbGUgc2l6ZSBpcyBsaW1pdGVkLgotIEludmFsaWQgZmlsZSB0eXBlIGlzIHJlamVjdGVkLgotIFJvd3Mgd2l0aCBtaXNzaW5nIHJlcXVpcmVkIGZpZWxkcyBhcmUgc2tpcHBlZCBvciBmbGFnZ2VkLgoKIyMgQ29tbW9uIEFkdmlzb3IgUXVlc3Rpb25zCgpROiBJbXBvcnQgZmlsZSB1cGxvYWRlZCBidXQgbm8gcHJldmlldyBhcHBlYXJzLgpBOiBDb25maXJtIEV4Y2VsIGZvcm1hdCBhbmQgaGVhZGVyIG5hbWVzIG1hdGNoIGV4cGVjdGVkIGZpZWxkcy4KClE6IFN0dWRlbnQgY3JlYXRlZCBidXQgbm90IGluIGRlc2lyZWQgZ3JvdXAuCkE6IFVwZGF0ZSBncm91cCBtZW1iZXJzaGlwIGFmdGVyIGltcG9ydCBvciBpbmNsdWRlIGFzc2lnbm1lbnQgZmxvdyBpZiBhdmFpbGFibGUuCgpROiBGaWx0ZXJzIHJldHVybiBubyBzdHVkZW50cyB1bmV4cGVjdGVkbHkuCkE6IENsZWFyIGZpbHRlcnMgYW5kIHJlYXBwbHkgb25lIGJ5IG9uZS4KCiFbU3R1ZGVudHMgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9zdHVkZW50cy1saXN0LnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBTdHVkZW50cyBsaXN0IHdpdGggc2VhcmNoL2ZpbHRlciBjb250cm9scy4KCiFbQnVsayBJbXBvcnQgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9idWxrLWltcG9ydC5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogQnVsayBpbXBvcnQgdXBsb2FkIGFuZCBwYXJzZWQgcHJldmlldyB0YWJsZS4K</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBTdHVkZW50cyBtb2R1bGUgaXMgeW91ciBDUk0gZm9yIG1hbmFnaW5nIHRoZSBpbmRpdmlkdWFscyB5b3UgYWR2aXNlLiBZb3UgY2FuIHZpZXcgdGhlaXIgcHJvZ3Jlc3MgaW5kaXZpZHVhbGx5LCBhc3NpZ24gdGhlbSB0byBncm91cHMsIG9yIGltcG9ydCBodW5kcmVkcyBvZiBzdHVkZW50cyBhdCBvbmNlLgoKLS0tCgojIyBTZWFyY2hpbmcgYW5kIEZpbHRlcmluZyBZb3VyIFJvc3RlcgoKV2hlbiB5b3Ugb3BlbiB0aGUgKipTdHVkZW50cyoqIG1vZHVsZSBmcm9tIHRoZSBzaWRlYmFyLCB5b3Ugc2VlIHlvdXIgZW50aXJlIGF1dGhvcml6ZWQgcm9zdGVyLgoKMS4gKipTZWFyY2g6KiogVXNlIHRoZSBzZWFyY2ggYmFyIHRvIGZpbmQgYSBzdHVkZW50IHF1aWNrbHkgYnkgbmFtZSBvciBlbWFpbC4KMi4gKipGaWx0ZXI6KiogTmFycm93IGRvd24geW91ciBsaXN0IHVzaW5nIHRoZSBkcm9wLWRvd24gZmlsdGVycy4gWW91IGNhbiBmaWx0ZXIgYnk6CiAgIC0gQXNzaWduZWQgR3JvdXBzCiAgIC0gQ2hhdCBzdGF0dXMgKGUuZy4sIGF3YWl0aW5nIHJlcGx5KQogICAtIEFzc2Vzc21lbnQgc2lnbmFscyAoZS5nLiwgY29tcGxldGVkLCBtaXNzaW5nKQogICAtIEpvaW5lZCBkYXRlIG9yIGxvY2F0aW9uCjMuICoqU29ydDoqKiBDbGljayB0aGUgY29sdW1uIGhlYWRlcnMgKE5hbWUsIEVtYWlsLCBKb2luZWQgRGF0ZSkgdG8gcmVvcmRlciB0aGUgbGlzdC4KCiMjIyBWaWV3aW5nIFN0dWRlbnQgRGV0YWlscwpDbGljayBvbiBhbnkgc3R1ZGVudCByb3cgb3IgY2FyZCB0byBvcGVuIHRoZWlyIGRldGFpbGVkIHByb2ZpbGUuIEhlcmUgeW91IGdldCBmdWxsIGNvbnRleHQgb24gdGhlaXIgYmFja2dyb3VuZCwgYWN0aXZpdGllcywgYW5kIGN1cnJlbnQgcGxhdGVhdS4KCi0tLQoKIyMgTWFuYWdpbmcgR3JvdXAgQXNzaWdubWVudHMKClRvIGhlbHAgb3JnYW5pemUgeW91ciBjb21tdW5pY2F0aW9ucywgeW91IGNhbiBhc3NpZ24gc3R1ZGVudHMgdG8gR3JvdXBzIHJpZ2h0IGZyb20gdGhlIHJvc3Rlci4KCjEuIEZyb20gdGhlIFN0dWRlbnRzIGxpc3QsIHNlbGVjdCB0aGUgY2hlY2tib3ggbmV4dCB0byBvbmUgb3IgbW9yZSBzdHVkZW50cy4KMi4gQ2xpY2sgdGhlICoqQXNzaWduIHRvIEdyb3VwKiogYWN0aW9uIGJ1dHRvbi4KMy4gQ2hlY2sgdGhlIGJveGVzIGZvciB0aGUgdGFyZ2V0IGdyb3Vwcy4KNC4gQ2xpY2sgKipTYXZlKiouIFRoZSBtZW1iZXJzaGlwIHVwZGF0ZXMgaW5zdGFudGx5LgoKKihOb3RlOiBTZWUgdGhlIFtHcm91cHMgTWFuYWdlbWVudF0oL2RvY3MvYWR2aXNvci1wYW5lbC9ncm91cHMvKSBndWlkZSBmb3IgaG93IHRvIGNyZWF0ZSBncm91cHMgaW4gdGhlIGZpcnN0IHBsYWNlKS4qCgotLS0KCiMjIEJ1bGsgSW1wb3J0aW5nIFN0dWRlbnRzIChFeGNlbCkKCklmIHlvdSBoYXZlIGEgbGFyZ2UgY29ob3J0IHN0YXJ0aW5nIHNpbXVsdGFuZW91c2x5LCBkbyBub3QgYWRkIHRoZW0gb25lIGJ5IG9uZS4gVXNlIHRoZSBCdWxrIEltcG9ydCB0b29sLgoKMS4gT24gdGhlIFN0dWRlbnRzIHBhZ2UsIGNsaWNrICoqQnVsayBBY3Rpb25zID4gSW1wb3J0KiouCjIuIFByZXBhcmUgeW91ciBgLnhsc3hgIG9yIGAueGxzYCBmaWxlLiBZb3VyIHNwcmVhZHNoZWV0ICoqbXVzdCoqIGNvbnRhaW4gdGhlc2UgdGhyZWUgZXhhY3QgY29sdW1uIGhlYWRlcnMgaW4gdGhlIGZpcnN0IHJvdzoKICAgLSBgZW1haWxgCiAgIC0gYGZpcnN0X25hbWVgCiAgIC0gYGxhc3RfbmFtZWAKMy4gVXBsb2FkIHRoZSBmaWxlLgo0LiBUaGUgc3lzdGVtIHdpbGwgcGFyc2UgdGhlIGZpbGUgYW5kIHNob3cgYSAqKlByZXZpZXcgVGFibGUqKi4KNS4gU2VsZWN0IHRoZSByb3dzIHlvdSB3aXNoIHRvIGFjdHVhbGx5IGltcG9ydCwgb3Igc2VsZWN0IGFsbC4KNi4gQ2xpY2sgKipDb25maXJtIEltcG9ydCoqLgo3LiBXYWl0LiBUaGUgc3lzdGVtIHdpbGwgc3VtbWFyaXplIHN1Y2Nlc3NlcyBhbmQgYW55IHNraXBwZWQgcm93cyAoZmFpbHVyZXMpLgoKIyMjIEltcG9ydGFudCBJbXBvcnQgUnVsZXMKLSAqKkZpbGUgTGltaXRzOioqIFRoZXJlIGlzIGEgbWF4aW11bSBmaWxlIHNpemUgbGltaXQgKHVzdWFsbHkgYSBmZXcgbWVnYWJ5dGVzKS4KLSAqKkR1cGxpY2F0ZXM6KiogSWYgYW4gZW1haWwgYWxyZWFkeSBleGlzdHMgaW4gdGhlIHN5c3RlbSwgdGhhdCByb3cgd2lsbCBiZSBza2lwcGVkL2ZsYWdnZWQuCi0gKipHcm91cCBBc3NpZ25tZW50OioqIEltcG9ydGVkIHN0dWRlbnRzIGFyZSAqbm90KiBhdXRvbWF0aWNhbGx5IHBsYWNlZCBpbiBhIGdyb3VwIHVwb24gaW1wb3J0LiBZb3UgbXVzdCBhc3NpZ24gdGhlbSBhZnRlcndhcmQuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEkgdXBsb2FkZWQgYW4gRXhjZWwgZmlsZSBidXQgdGhlIHByZXZpZXcgaXMgdG90YWxseSBibGFuayB8IE1ha2Ugc3VyZSB5b3VyIGZpbGUgaXMgYSB2YWxpZCBgLnhsc3hgIGFuZCBleGFjdGx5IG1hdGNoZXMgdGhlIHJlcXVpcmVkIGxvd2VyY2FzZSBoZWFkZXIgbmFtZXMgKGBlbWFpbGAsIGBmaXJzdF9uYW1lYCwgYGxhc3RfbmFtZWApIHwKfCBUaGUgZmlsdGVycyBzYXkgIjAgc3R1ZGVudHMgZm91bmQiIGJ1dCBJIGtub3cgdGhleSBleGlzdCB8IFlvdSBsaWtlbHkgaGF2ZSBjb25mbGljdGluZyBmaWx0ZXJzIGFwcGxpZWQuIENsZWFyIGFsbCBmaWx0ZXJzIGFuZCByZWFwcGx5IHRoZW0gb25lIGJ5IG9uZSB8CnwgSSBqdXN0IGltcG9ydGVkIHN0dWRlbnRzOyBob3cgZG8gSSBtZXNzYWdlIHRoZW0gYWxsPyB8IENyZWF0ZSBhIEdyb3VwIGZvciB0aGUgbmV3IGNvaG9ydCwgYXNzaWduIHRoZW0sIGFuZCB0aGVuIHVzZSB0aGUgW05vdGlmaWNhdGlvbnNdKC9kb2NzL2Fkdmlzb3ItcGFuZWwvbm90aWZpY2F0aW9ucy8pIG1vZHVsZSB0byBicm9hZGNhc3QgYSBtZXNzYWdlIHwK</script>
 
 <style>
  

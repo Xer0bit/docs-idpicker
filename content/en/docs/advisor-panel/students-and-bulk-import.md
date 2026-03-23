@@ -1,73 +1,70 @@
 ---
 title: "Students and Bulk Import"
-description: "Detailed click-by-click student management operations"
+description: "How to search your student roster, review profiles, and perform bulk imports from Excel"
 weight: 132
 draft: false
 ---
 
-This guide covers student search/filter, profile access, group assignment, and bulk import.
+The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.
 
-## A) Open Students List
+---
 
-1. Sign in as advisor.
-2. In sidebar, click Students.
-3. Wait for student table/cards to load.
+## Searching and Filtering Your Roster
 
-## B) Search and Filter Students (Click-by-Click)
+When you open the **Students** module from the sidebar, you see your entire authorized roster.
 
-1. Click search input.
-2. Type name or email keyword.
-3. Apply filters as needed (groups, chat status, assessment signals, date, location, etc.).
-4. Apply sorting (name, email, joined date, and other available fields).
-5. Review narrowed result list.
+1. **Search:** Use the search bar to find a student quickly by name or email.
+2. **Filter:** Narrow down your list using the drop-down filters. You can filter by:
+   - Assigned Groups
+   - Chat status (e.g., awaiting reply)
+   - Assessment signals (e.g., completed, missing)
+   - Joined date or location
+3. **Sort:** Click the column headers (Name, Email, Joined Date) to reorder the list.
 
-## C) Open Student Detail
+### Viewing Student Details
+Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.
 
-1. Click a student row/card.
-2. Open student detail page.
-3. Review profile and activity context.
+---
 
-## D) Update Student Group Membership
+## Managing Group Assignments
 
-1. From Students list, open group assignment action.
-2. Check/uncheck target groups.
-3. Save membership update.
-4. Confirm changes in student row/detail.
+To help organize your communications, you can assign students to Groups right from the roster.
 
-## E) Bulk Import Students from Excel
+1. From the Students list, select the checkbox next to one or more students.
+2. Click the **Assign to Group** action button.
+3. Check the boxes for the target groups.
+4. Click **Save**. The membership updates instantly.
 
-1. In Students page, click Bulk Students/Import.
-2. Upload .xlsx or .xls file.
-3. Wait for preview parsing.
-4. Validate required columns exist:
-   - email
-   - first_name
-   - last_name
-5. Select rows to import.
-6. Click Bulk Create/Import.
-7. Wait for success summary.
+*(Note: See the [Groups Management](/docs/advisor-panel/groups/) guide for how to create groups in the first place).*
 
-## Import Validation Notes
+---
 
-- Max file size is limited.
-- Invalid file type is rejected.
-- Rows with missing required fields are skipped or flagged.
+## Bulk Importing Students (Excel)
 
-## Common Advisor Questions
+If you have a large cohort starting simultaneously, do not add them one by one. Use the Bulk Import tool.
 
-Q: Import file uploaded but no preview appears.
-A: Confirm Excel format and header names match expected fields.
+1. On the Students page, click **Bulk Actions > Import**.
+2. Prepare your `.xlsx` or `.xls` file. Your spreadsheet **must** contain these three exact column headers in the first row:
+   - `email`
+   - `first_name`
+   - `last_name`
+3. Upload the file.
+4. The system will parse the file and show a **Preview Table**.
+5. Select the rows you wish to actually import, or select all.
+6. Click **Confirm Import**.
+7. Wait. The system will summarize successes and any skipped rows (failures).
 
-Q: Student created but not in desired group.
-A: Update group membership after import or include assignment flow if available.
+### Important Import Rules
+- **File Limits:** There is a maximum file size limit (usually a few megabytes).
+- **Duplicates:** If an email already exists in the system, that row will be skipped/flagged.
+- **Group Assignment:** Imported students are *not* automatically placed in a group upon import. You must assign them afterward.
 
-Q: Filters return no students unexpectedly.
-A: Clear filters and reapply one by one.
+---
 
-![Students Placeholder](/images/user-manual/advisor-panel/students-list.png)
+## Common Questions
 
-Image placeholder: Students list with search/filter controls.
-
-![Bulk Import Placeholder](/images/user-manual/advisor-panel/bulk-import.png)
-
-Image placeholder: Bulk import upload and parsed preview table.
+| Situation | What to do |
+|---|---|
+| I uploaded an Excel file but the preview is totally blank | Make sure your file is a valid `.xlsx` and exactly matches the required lowercase header names (`email`, `first_name`, `last_name`) |
+| The filters say "0 students found" but I know they exist | You likely have conflicting filters applied. Clear all filters and reapply them one by one |
+| I just imported students; how do I message them all? | Create a Group for the new cohort, assign them, and then use the [Notifications](/docs/advisor-panel/notifications/) module to broadcast a message |

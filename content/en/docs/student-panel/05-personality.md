@@ -1,68 +1,60 @@
 ---
 title: "05. Personality Guide"
-description: "Detailed click-by-click personality analysis walkthrough"
+description: "How to read your psychological radar chart and trait breakdowns"
 weight: 125
 draft: false
 ---
 
-This guide explains exactly how students read personality results and export reports.
+The Personality module visualizes your psychological traits and provides actionable advice on how to leverage your natural strengths.
 
-## Prerequisite Check
+---
 
-1. In sidebar, click Personality.
-2. If assessment is incomplete, you will see a completion prompt.
-3. Click Complete Assessment and finish personality self-assessment first.
+## Prerequisite: Complete the Assessment!
 
-## Open Personality Analysis
+Before you can see your personality breakdown, you must complete the Personality self-assessment. 
 
-1. After completion, return to Personality.
-2. Wait for loading to finish.
-3. Confirm radar chart is visible.
-4. Confirm trait cards are visible below chart.
+1. From the sidebar, click **Personality**.
+2. If your assessment is incomplete, the screen will show a lock state.
+3. Click the prompt to **Complete Assessment** and finish it.
 
-## Read Radar Chart (Click-by-Click)
+---
 
-1. Hover each radar axis point.
-2. Identify stronger and weaker dimensions.
-3. Cross-check chart with trait card scores.
+## Reading Your Radar Chart
 
-## Read Trait Cards
+Once unlocked, the first thing you will see is your interactive **Radar Chart**.
 
-For each card:
+1. **Hover over the points** on the radar axis to see the exact percentage scoring for each dimension.
+2. Identify the spikes (your strongest natural traits) and the dips (traits that require more conscious effort).
+3. The shape of the radar gives you an immediate, visual understanding of your behavioral footprint.
 
-1. Read trait title.
-2. Check score.
-3. Read short description.
-4. Read detailed interpretation.
-5. Read actionable advice.
+---
 
-## Download Personality Report
+## Understanding Trait Cards
 
-1. Click Download Report.
-2. Wait for report generation.
-3. Open generated link in new tab.
-4. Save/export from browser if needed.
+Below the chart, you will find detailed cards for every measured trait. 
 
-## Error and Recovery Flow
+Each card breaks down your score into highly actionable sections:
+- **Trait Title & Score:** Your baseline metric.
+- **Short Description:** A one-sentence summary of what this trait means.
+- **Detailed Interpretation:** Deep dive into how this score manifests in your daily life and studies.
+- **Actionable Advice:** Concrete, practical steps on how to use this trait to your advantage (or mitigate its downsides).
 
-If page shows error:
+---
 
-1. Click Retry.
-2. Confirm network is stable.
-3. Re-open after short delay.
-4. If repeated, open Help Center ticket.
+## Downloading Your Personality Report
 
-## Common Student Questions
+Just like recommendations, you can export your psychological profile to share with parents, mentors, or for your own records.
 
-Q: Why is this page locked?
-A: Personality assessment is not completed yet.
+1. Click **Download Report** at the top or bottom of the analysis page.
+2. Wait a few seconds for the document to generate.
+3. Click the secure link that opens in a new tab to save the PDF.
 
-Q: Chart shows but cards are empty.
-A: Reload page and retry fetch.
+---
 
-Q: Report button exists but no file opens.
-A: Generation may fail temporarily. Retry and then contact support if persistent.
+## Common Questions
 
-![Personality Chart Placeholder](/images/user-manual/student-panel/personality-chart.png)
-
-Image placeholder: Radar chart with trait cards and report download button.
+| Situation | What to do |
+|---|---|
+| The entire page is locked | You must complete the Personality Assessment first |
+| The chart loads but the trait cards are blank | A network drop may have occurred. Reload the page |
+| The report button works but no file opens | Generation might have temporarily timed out. Wait a moment and retry |

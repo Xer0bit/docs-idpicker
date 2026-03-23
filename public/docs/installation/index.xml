@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Installation on IDPicker Docs</title>
-    <link>http://localhost:1313/docs/installation/</link>
-    <description>Recent content in Installation on IDPicker Docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/docs/installation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>System Requirements</title>
-      <link>http://localhost:1313/docs/installation/requirements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/installation/requirements/</guid>
-      <description>&lt;h2 id=&#34;minimum-requirements&#34;&gt;Minimum Requirements&lt;/h2&gt;&#xA;&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;&#xA;&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Setup</title>
-      <link>http://localhost:1313/docs/installation/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/installation/setup/</guid>
-      <description>&lt;h2 id=&#34;install-steps&#34;&gt;Install Steps&lt;/h2&gt;&#xA;&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configure-settings&#34;&gt;Configure Settings&lt;/h2&gt;&#xA;&lt;p&gt;Describe required configuration values.&lt;/p&gt;&#xA;&lt;h2 id=&#34;validate-installation&#34;&gt;Validate Installation&lt;/h2&gt;&#xA;&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation on IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/docs/installation/</link><description>Recent content in Installation on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/docs/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>System Requirements</title><link>https://xer0bit.github.io/docs-idpicker/docs/installation/requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/installation/requirements/</guid><description>&lt;h2 id="minimum-requirements"&gt;Minimum Requirements&lt;/h2&gt;
+&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;
+&lt;h2 id="supported-platforms"&gt;Supported Platforms&lt;/h2&gt;
+&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;
+&lt;h2 id="dependencies"&gt;Dependencies&lt;/h2&gt;
+&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description></item><item><title>Setup</title><link>https://xer0bit.github.io/docs-idpicker/docs/installation/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/installation/setup/</guid><description>&lt;h2 id="install-steps"&gt;Install Steps&lt;/h2&gt;
+&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;
+&lt;h2 id="configure-settings"&gt;Configure Settings&lt;/h2&gt;
+&lt;p&gt;Describe required configuration values.&lt;/p&gt;
+&lt;h2 id="validate-installation"&gt;Validate Installation&lt;/h2&gt;
+&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description></item></channel></rss>

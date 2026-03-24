@@ -1,5 +1,5 @@
 ---
-title: "12. Language Guide"
+title: "Language"
 description: "Detailed click-by-click language switching walkthrough"
 weight: 32
 draft: false

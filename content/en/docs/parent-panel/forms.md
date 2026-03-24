@@ -1,6 +1,6 @@
 ---
 title: "Parent Forms"
-description: "Detailed click-by-click parent form response guide"
+description: "Detailed click-by-click parent form response"
 weight: 43
 draft: false
 ---

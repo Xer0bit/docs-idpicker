@@ -1,5 +1,5 @@
 ---
-title: "14. Assigned Forms Guide"
+title: "Assigned Forms"
 description: "Detailed click-by-click assigned forms walkthrough"
 weight: 34
 draft: false

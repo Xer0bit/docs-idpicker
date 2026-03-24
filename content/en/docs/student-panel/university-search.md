@@ -1,5 +1,5 @@
 ---
-title: "07. University Search Guide"
+title: "University Search"
 description: "How to find, filter, and compare the perfect higher education programs"
 weight: 27
 draft: false

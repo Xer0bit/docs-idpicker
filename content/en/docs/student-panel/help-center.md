@@ -1,5 +1,5 @@
 ---
-title: "09. Help Center Guide"
+title: "Help Center"
 description: "How to create support tickets and get help when things go wrong"
 weight: 29
 draft: false

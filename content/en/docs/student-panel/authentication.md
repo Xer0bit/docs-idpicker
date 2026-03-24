@@ -1,5 +1,5 @@
 ---
-title: "01. Authentication Guide"
+title: "Authentication"
 description: "How students sign in, register, verify email, and recover access — complete step-by-step walkthroughs"
 weight: 21
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "03. Assessment Guide"
+title: "Assessment"
 description: "How to take, resume, and review self-assessments to unlock your platform recommendations"
 weight: 23
 draft: false

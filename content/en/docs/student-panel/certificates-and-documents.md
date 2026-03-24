@@ -1,5 +1,5 @@
 ---
-title: "13. Certificates and Application Documents"
+title: "Certificates and Application Documents"
 description: "Detailed click-by-click certificates and document workflow"
 weight: 33
 draft: false

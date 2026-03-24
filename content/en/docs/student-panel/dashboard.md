@@ -1,5 +1,5 @@
 ---
-title: "02. Dashboard Guide"
+title: "Dashboard"
 description: "Understanding every block on the student dashboard and how to use them effectively"
 weight: 22
 draft: false

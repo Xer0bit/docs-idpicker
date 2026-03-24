@@ -1,5 +1,5 @@
 ---
-title: "11. Account and Settings Guide"
+title: "Account and Settings"
 description: "Detailed click-by-click profile and settings walkthrough"
 weight: 31
 draft: false

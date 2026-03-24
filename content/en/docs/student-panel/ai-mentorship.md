@@ -1,5 +1,5 @@
 ---
-title: "06. AI Mentorship Guide"
+title: "AI Mentorship"
 description: "How to chat with specialized AI Mentor personalities and your human Advisor"
 weight: 26
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "10. Subscription Guide"
+title: "Subscription"
 description: "Detailed guide to limits, quotas, and upgrade paths"
 weight: 30
 draft: false

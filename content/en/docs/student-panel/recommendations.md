@@ -1,5 +1,5 @@
 ---
-title: "04. Recommendation Guide"
+title: "Recommendation"
 description: "How to interpret your AI-driven career and university recommendations"
 weight: 24
 draft: false

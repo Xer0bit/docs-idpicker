@@ -39,6 +39,11 @@ body {
     transition: color 0.15s;
     &:hover { color: #000000; }
   }
+
+  // Hide the theme's text title so only our PNG logo shows
+  .navbar-brand__name {
+    display: none !important;
+  }
 }
 
 // ─── Sidebar ─────────────────────────────────────────────────────────────────
@@ -268,5 +273,99 @@ body {
   .active-link { 
     color: #000000 !important; 
     font-weight: 600; 
+  }
+}
+
+// ─── Homepage UI Upgrade ───────────────────────────────────────────────────
+.hero-section {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #111827 0%, #4B5563 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    color: #6B7280;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 4rem;
+}
+
+.home-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  background: #FFFFFF;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  
+  h3 {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    color: #4B5563;
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  &:hover {
+    border-color: #D1D5DB;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+    transform: translateY(-2px);
+  }
+}
+
+.home-section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  border-bottom: none !important;
+}
+
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 4rem;
+  
+  a {
+    padding: 0.5rem 1rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: #374151 !important;
+    background: #F9FAFB;
+    text-decoration: none !important;
+    transition: all 0.2s;
+    
+    &:hover {
+      background: #FFFFFF;
+      border-color: #111827;
+      color: #111827 !important;
+    }
   }
 }

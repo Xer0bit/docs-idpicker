@@ -38,10 +38,35 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
+<style>
+ 
+.td-navbar .navbar-brand__name {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+ 
+.td-footer, footer, .bg-dark, footer.bg-dark { 
+  display: none !important; 
+}
+
+ 
+@media (min-width: 768px) {
+  .home-grid-strict {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-grid-strict {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+</style>
 
   </head>
   <body class="td-taxonomy">
@@ -90,160 +115,6 @@
     <script src="/js/main.js"></script>
 <script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-<script id="llm-raw-md" type="text/plain" style="display:none">CldlbGNvbWUgdG8gdGhlIElEUGlja2VyIGRvY3VtZW50YXRpb24gcG9ydGFsLgoKIyMgUGxhdGZvcm0gUGFuZWxzCgo8ZGl2IGNsYXNzPSJyb3cgZy0zIj4KICA8ZGl2IGNsYXNzPSJjb2wtbWQtNCI&#43;CiAgICA8ZGl2IGNsYXNzPSJjYXJkIGgtMTAwIHNoYWRvdy1zbSI&#43;CiAgICAgIDxkaXYgY2xhc3M9ImNhcmQtYm9keSI&#43;CiAgICAgICAgPGg1IGNsYXNzPSJjYXJkLXRpdGxlIj5TdHVkZW50IFBhbmVsPC9oNT4KICAgICAgICA8cCBjbGFzcz0iY2FyZC10ZXh0Ij5Db21wbGV0ZSBzdHVkZW50IHdvcmtmbG93IGZyb20gbG9naW4gdG8gbGFuZ3VhZ2Ugc2V0dGluZ3MuPC9wPgogICAgICAgIDxhIGNsYXNzPSJidG4gYnRuLXByaW1hcnkiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvIj5PcGVuIFN0dWRlbnQgUGFuZWwgR3VpZGU8L2E&#43;CiAgICAgIDwvZGl2PgogICAgPC9kaXY&#43;CiAgPC9kaXY&#43;CiAgPGRpdiBjbGFzcz0iY29sLW1kLTQiPgogICAgPGRpdiBjbGFzcz0iY2FyZCBoLTEwMCBzaGFkb3ctc20iPgogICAgICA8ZGl2IGNsYXNzPSJjYXJkLWJvZHkiPgogICAgICAgIDxoNSBjbGFzcz0iY2FyZC10aXRsZSI&#43;QWR2aXNvciBQYW5lbDwvaDU&#43;CiAgICAgICAgPHAgY2xhc3M9ImNhcmQtdGV4dCI&#43;QWR2aXNvciBkYXNoYm9hcmQgb3BlcmF0aW9ucyBhbmQgc3ViLWFkdmlzb3IgbWFuYWdlbWVudC48L3A&#43;CiAgICAgICAgPGEgY2xhc3M9ImJ0biBidG4tcHJpbWFyeSIgaHJlZj0iL2RvY3MvYWR2aXNvci1wYW5lbC8iPk9wZW4gQWR2aXNvciBQYW5lbCBHdWlkZTwvYT4KICAgICAgPC9kaXY&#43;CiAgICA8L2Rpdj4KICA8L2Rpdj4KICA8ZGl2IGNsYXNzPSJjb2wtbWQtNCI&#43;CiAgICA8ZGl2IGNsYXNzPSJjYXJkIGgtMTAwIHNoYWRvdy1zbSI&#43;CiAgICAgIDxkaXYgY2xhc3M9ImNhcmQtYm9keSI&#43;CiAgICAgICAgPGg1IGNsYXNzPSJjYXJkLXRpdGxlIj5QYXJlbnQgUGFuZWw8L2g1PgogICAgICAgIDxwIGNsYXNzPSJjYXJkLXRleHQiPkxpbmtlZCBzdHVkZW50IHZpc2liaWxpdHkgYW5kIHBhcmVudCBzdXBwb3J0IHdvcmtmbG93cy48L3A&#43;CiAgICAgICAgPGEgY2xhc3M9ImJ0biBidG4tcHJpbWFyeSIgaHJlZj0iL2RvY3MvcGFyZW50LXBhbmVsLyI&#43;T3BlbiBQYXJlbnQgUGFuZWwgR3VpZGU8L2E&#43;CiAgICAgIDwvZGl2PgogICAgPC9kaXY&#43;CiAgPC9kaXY&#43;CjwvZGl2PgoKIyMgTmVjZXNzYXJ5IFRhYnMKCjxkaXYgY2xhc3M9InJvdyBnLTMgbXQtMSI&#43;CiAgPGRpdiBjbGFzcz0iY29sLW1kLTMgY29sLXNtLTYiPjxhIGNsYXNzPSJjYXJkIGNhcmQtYm9keSB0ZXh0LWRlY29yYXRpb24tbm9uZSIgaHJlZj0iL2RvY3Mvc3R1ZGVudC1wYW5lbC8wMS1hdXRoZW50aWNhdGlvbi8iPjxzdHJvbmc&#43;QXV0aGVudGljYXRpb248L3N0cm9uZz48c3Bhbj5Mb2dpbiBhbmQgcGFzc3dvcmQgcmVzZXQ8L3NwYW4&#43;PC9hPjwvZGl2PgogIDxkaXYgY2xhc3M9ImNvbC1tZC0zIGNvbC1zbS02Ij48YSBjbGFzcz0iY2FyZCBjYXJkLWJvZHkgdGV4dC1kZWNvcmF0aW9uLW5vbmUiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvMDItZGFzaGJvYXJkLyI&#43;PHN0cm9uZz5EYXNoYm9hcmQ8L3N0cm9uZz48c3Bhbj5NYWluIG5hdmlnYXRpb24gYW5kIG1vZHVsZXM8L3NwYW4&#43;PC9hPjwvZGl2PgogIDxkaXYgY2xhc3M9ImNvbC1tZC0zIGNvbC1zbS02Ij48YSBjbGFzcz0iY2FyZCBjYXJkLWJvZHkgdGV4dC1kZWNvcmF0aW9uLW5vbmUiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvMDMtYXNzZXNzbWVudC8iPjxzdHJvbmc&#43;QXNzZXNzbWVudHM8L3N0cm9uZz48c3Bhbj5TdGFydCwgcmVzdW1lLCBhbmQgY29tcGxldGU8L3NwYW4&#43;PC9hPjwvZGl2PgogIDxkaXYgY2xhc3M9ImNvbC1tZC0zIGNvbC1zbS02Ij48YSBjbGFzcz0iY2FyZCBjYXJkLWJvZHkgdGV4dC1kZWNvcmF0aW9uLW5vbmUiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvMDQtcmVjb21tZW5kYXRpb25zLyI&#43;PHN0cm9uZz5SZWNvbW1lbmRhdGlvbnM8L3N0cm9uZz48c3Bhbj5DYXJlZXIgcGF0aHMgYW5kIGRvd25sb2Fkczwvc3Bhbj48L2E&#43;PC9kaXY&#43;CiAgPGRpdiBjbGFzcz0iY29sLW1kLTMgY29sLXNtLTYiPjxhIGNsYXNzPSJjYXJkIGNhcmQtYm9keSB0ZXh0LWRlY29yYXRpb24tbm9uZSIgaHJlZj0iL2RvY3Mvc3R1ZGVudC1wYW5lbC8wNi1haS1tZW50b3JzaGlwLyI&#43;PHN0cm9uZz5BSSBNZW50b3JzaGlwPC9zdHJvbmc&#43;PHNwYW4&#43;TWVudG9yIGNoYXQgYW5kIGd1aWRlZCBhZHZpY2U8L3NwYW4&#43;PC9hPjwvZGl2PgogIDxkaXYgY2xhc3M9ImNvbC1tZC0zIGNvbC1zbS02Ij48YSBjbGFzcz0iY2FyZCBjYXJkLWJvZHkgdGV4dC1kZWNvcmF0aW9uLW5vbmUiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvMDctdW5pdmVyc2l0eS1zZWFyY2gvIj48c3Ryb25nPlVuaXZlcnNpdHkgU2VhcmNoPC9zdHJvbmc&#43;PHNwYW4&#43;U2VhcmNoLCBmaWx0ZXIsIGFuZCBjb21wYXJlPC9zcGFuPjwvYT48L2Rpdj4KICA8ZGl2IGNsYXNzPSJjb2wtbWQtMyBjb2wtc20tNiI&#43;PGEgY2xhc3M9ImNhcmQgY2FyZC1ib2R5IHRleHQtZGVjb3JhdGlvbi1ub25lIiBocmVmPSIvZG9jcy9zdHVkZW50LXBhbmVsLzA4LXJlc291cmNlcy8iPjxzdHJvbmc&#43;UmVzb3VyY2VzPC9zdHJvbmc&#43;PHNwYW4&#43;U2hhcmVkIGZpbGVzIGFuZCByZWZlcmVuY2VzPC9zcGFuPjwvYT48L2Rpdj4KICA8ZGl2IGNsYXNzPSJjb2wtbWQtMyBjb2wtc20tNiI&#43;PGEgY2xhc3M9ImNhcmQgY2FyZC1ib2R5IHRleHQtZGVjb3JhdGlvbi1ub25lIiBocmVmPSIvZG9jcy9zdHVkZW50LXBhbmVsLzA5LWhlbHAtY2VudGVyLyI&#43;PHN0cm9uZz5IZWxwIENlbnRlcjwvc3Ryb25nPjxzcGFuPlN1Ym1pdCBhbmQgdHJhY2sgdGlja2V0czwvc3Bhbj48L2E&#43;PC9kaXY&#43;CiAgPGRpdiBjbGFzcz0iY29sLW1kLTMgY29sLXNtLTYiPjxhIGNsYXNzPSJjYXJkIGNhcmQtYm9keSB0ZXh0LWRlY29yYXRpb24tbm9uZSIgaHJlZj0iL2RvY3Mvc3R1ZGVudC1wYW5lbC8xMC1zdWJzY3JpcHRpb24vIj48c3Ryb25nPlN1YnNjcmlwdGlvbjwvc3Ryb25nPjxzcGFuPlBsYW5zIGFuZCB1cGdyYWRlIGZsb3c8L3NwYW4&#43;PC9hPjwvZGl2PgogIDxkaXYgY2xhc3M9ImNvbC1tZC0zIGNvbC1zbS02Ij48YSBjbGFzcz0iY2FyZCBjYXJkLWJvZHkgdGV4dC1kZWNvcmF0aW9uLW5vbmUiIGhyZWY9Ii9kb2NzL3N0dWRlbnQtcGFuZWwvMTEtYWNjb3VudC1zZXR0aW5ncy8iPjxzdHJvbmc&#43;QWNjb3VudCBhbmQgU2V0dGluZ3M8L3N0cm9uZz48c3Bhbj5Qcm9maWxlIGFuZCBzZWN1cml0eSBjb250cm9sczwvc3Bhbj48L2E&#43;PC9kaXY&#43;CiAgPGRpdiBjbGFzcz0iY29sLW1kLTMgY29sLXNtLTYiPjxhIGNsYXNzPSJjYXJkIGNhcmQtYm9keSB0ZXh0LWRlY29yYXRpb24tbm9uZSIgaHJlZj0iL2RvY3Mvc3R1ZGVudC1wYW5lbC8xMi1sYW5ndWFnZS8iPjxzdHJvbmc&#43;TGFuZ3VhZ2U8L3N0cm9uZz48c3Bhbj5Td2l0Y2ggRU4gYW5kIFRSPC9zcGFuPjwvYT48L2Rpdj4KICA8ZGl2IGNsYXNzPSJjb2wtbWQtMyBjb2wtc20tNiI&#43;PGEgY2xhc3M9ImNhcmQgY2FyZC1ib2R5IHRleHQtZGVjb3JhdGlvbi1ub25lIiBocmVmPSIvZG9jcy9nZXR0aW5nLXN0YXJ0ZWQvYWNjZXNzLXVybHMvIj48c3Ryb25nPkFjY2VzcyBVUkxzPC9zdHJvbmc&#43;PHNwYW4&#43;RXhhY3QgbGlua3MgYnkgZW52aXJvbm1lbnQ8L3NwYW4&#43;PC9hPjwvZGl2Pgo8L2Rpdj4K</script>
-
-<style>
- 
-.page-meta-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1.75rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #E2E8F0;
-}
-.page-meta-bar__left {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.78rem;
-  color: #94A3B8;
-}
-.page-meta-bar__pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  background: #F1F5F9;
-  border-radius: 999px;
-  padding: 0.25rem 0.6rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #64748B;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
- 
-.btn-copy-llm {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
-  padding: 0.5rem 1rem;
-  border-radius: 0.45rem;
-  border: 1.5px solid #DDD6FE;
-  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FD 100%);
-  color: #5B45E5;
-  cursor: pointer;
-  transition: all 0.18s ease;
-  box-shadow: 0 1px 3px rgba(91,69,229,0.1), 0 1px 2px rgba(91,69,229,0.06);
-  user-select: none;
-  position: relative;
-  overflow: hidden;
-}
-.btn-copy-llm::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0);
-  transition: background 0.18s;
-}
-.btn-copy-llm:hover {
-  border-color: #A78BFA;
-  color: #4338CA;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(91,69,229,0.18);
-}
-.btn-copy-llm:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(91,69,229,0.1);
-}
-.btn-copy-llm.state--copied {
-  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
-  border-color: #6EE7B7;
-  color: #065F46;
-  box-shadow: 0 1px 3px rgba(16,185,129,0.1);
-  transform: none;
-}
-.btn-copy-llm svg {
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-  stroke-width: 2.2;
-  transition: transform 0.2s;
-}
-.btn-copy-llm:hover svg { transform: translateY(-1px); }
-</style>
-
-<script>
-(function () {
-  const COPY_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
-  const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
-  const DOC_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
-
-  function injectBar() {
-    const rawEl  = document.getElementById('llm-raw-md');
-    const h1     = document.querySelector('.td-content > h1');
-    if (!rawEl || !h1) return;
-
-    
-    const bar = document.createElement('div');
-    bar.className = 'page-meta-bar';
-
-    
-    const left = document.createElement('div');
-    left.className = 'page-meta-bar__left';
-    left.innerHTML = `<span class="page-meta-bar__pill">${DOC_ICON} &nbsp;Documentation</span>`;
-    bar.appendChild(left);
-
-    
-    const btn = document.createElement('button');
-    btn.className = 'btn-copy-llm';
-    btn.type = 'button';
-    btn.title = 'Copy this page as Markdown for pasting into an LLM (Claude, GPT, Gemini…)';
-    btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
-
-    btn.addEventListener('click', function () {
-      try {
-        const encoded   = rawEl.textContent.trim();
-        const markdown  = atob(encoded);
-        const payload   = `\x3C!-- Source: ${window.location.href} -->\n\n${markdown}`;
-
-        navigator.clipboard.writeText(payload).then(function () {
-          btn.innerHTML = CHECK_ICON + ' &nbsp;Copied!';
-          btn.classList.add('state--copied');
-          setTimeout(function () {
-            btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
-            btn.classList.remove('state--copied');
-          }, 2200);
-        }).catch(function (err) {
-          console.warn('[LLM Copy] clipboard write failed:', err);
-        });
-      } catch (e) {
-        console.error('[LLM Copy] failed', e);
-      }
-    });
-
-    bar.appendChild(btn);
-
-    
-    h1.parentNode.insertBefore(bar, h1);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectBar);
-  } else {
-    injectBar();
-  }
-})();
-</script>
 
 
   </body>

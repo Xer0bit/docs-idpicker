@@ -40,10 +40,35 @@
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
+<style>
+ 
+.td-navbar .navbar-brand__name {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+ 
+.td-footer, footer, .bg-dark, footer.bg-dark { 
+  display: none !important; 
+}
+
+ 
+@media (min-width: 768px) {
+  .home-grid-strict {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-grid-strict {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+</style>
 
   </head>
   <body class="td-section">

@@ -1,4 +1,29 @@
-{{/* ── Google Fonts: Inter + JetBrains Mono ── */}}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Bruteforce hide the generic Docsy text in the navbar so only our pristine brand logo shows */
+.td-navbar .navbar-brand__name {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Force hide the massive default black footer */
+.td-footer, footer, .bg-dark, footer.bg-dark { 
+  display: none !important; 
+}
+
+/* Homepage strict grid layout (failsafe if Bootstrap variables drop out) */
+@media (min-width: 768px) {
+  .home-grid-strict {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-grid-strict {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+</style>

@@ -1,0 +1,78 @@
+{{ define "main" }}
+<div class="td-main">
+  <div class="container mt-5 mb-5 px-4">
+    <!-- Hero Section -->
+    <div class="hero-section text-center py-5">
+      <h1 class="display-3 fw-bold mb-3" style="letter-spacing: -0.05em; background: linear-gradient(135deg, #111827 0%, #4B5563 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">IDPicker Documentation</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">The complete guide to mastering the IDPicker career and university guidance platform.</p>
+    </div>
+
+    <!-- Panel Grid -->
+    <div class="home-grid-strict mb-5">
+      <div>
+        <a href="/docs/getting-started/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s, box-shadow 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
+          <h3 class="h5 fw-bold text-dark mb-2">🚀 Getting Started</h3>
+          <p class="text-secondary mb-0 small">Set up your account, learn the access URLs, and view the quick start guide.</p>
+        </a>
+      </div>
+      <div>
+        <a href="/docs/student-panel/authentication/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
+          <h3 class="h5 fw-bold text-dark mb-2">🎓 Student Panel</h3>
+          <p class="text-secondary mb-0 small">Complete workflow for students from assessments to university search.</p>
+        </a>
+      </div>
+      <div>
+        <a href="/docs/advisor-panel/login-and-dashboard/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
+          <h3 class="h5 fw-bold text-dark mb-2">👥 Advisor Panel</h3>
+          <p class="text-secondary mb-0 small">Manage nested students, bulk import groups, and track responses.</p>
+        </a>
+      </div>
+      <div>
+        <a href="/docs/parent-panel/authentication-and-account/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
+          <h3 class="h5 fw-bold text-dark mb-2">👪 Parent Panel</h3>
+          <p class="text-secondary mb-0 small">Understand the parent dashboard and linked student visibility.</p>
+        </a>
+      </div>
+      <div>
+        <a href="/docs/admin-panel/login-and-dashboard/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
+          <h3 class="h5 fw-bold text-dark mb-2">⚙️ Admin Panel</h3>
+          <p class="text-secondary mb-0 small">System configuration, prompts, translations, and global governance.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="text-center mt-5 mb-5 pb-5">
+      <h2 class="h4 fw-bold mb-4">Popular Quick Links</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-2">
+        <a href="/docs/student-panel/authentication/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">Authentication</a>
+        <a href="/docs/student-panel/dashboard/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">Dashboard</a>
+        <a href="/docs/student-panel/assessment/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">Assessments</a>
+        <a href="/docs/student-panel/ai-mentorship/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">AI Mentorship</a>
+        <a href="/docs/student-panel/university-search/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">University Search</a>
+        <a href="/docs/advisor-panel/forms-and-responses/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">Forms & Responses</a>
+        <a href="/docs/advisor-panel/students-and-bulk-import/" class="btn btn-light rounded-pill border px-3 py-2 text-dark" style="font-size: 0.85rem; background:#F9FAFB;">Bulk Import</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inline CSS to guarantee hover cards work beautifully -->
+<style>
+.td-main {
+  background-color: #FFFFFF;
+}
+.home-card:hover {
+  border-color: #111827 !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  transform: translateY(-4px);
+}
+.btn-light:hover {
+  background: #111827 !important;
+  border-color: #111827 !important;
+  color: #FFFFFF !important;
+}
+/* Force hide footer if it somehow leaks through */
+.td-footer, footer, .bg-dark { display: none !important; }
+</style>
+{{ end }}

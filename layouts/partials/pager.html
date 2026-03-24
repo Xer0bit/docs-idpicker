@@ -1,0 +1,20 @@
+<nav class="d-print-none mt-5 pt-3">
+  <hr class="mb-4" style="border-color: #E5E7EB;">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.RelPermalink }}" class="btn btn-outline-secondary rounded-pill px-4 py-2" style="font-size: 0.9rem; border-color: #D1D5DB; color: #4B5563;">
+        &larr; <span class="d-none d-sm-inline fw-semibold ms-1">Prev: </span>{{ .PrevInSection.Title }}
+      </a>
+    {{ end }}
+    </div>
+    
+    <div>
+    {{ if .NextInSection }}
+      <a href="{{ .NextInSection.RelPermalink }}" class="btn btn-dark rounded-pill px-4 py-2 shadow-sm" style="font-size: 0.9rem; background-color: #111827; border-color: #111827;">
+        <span class="d-none d-sm-inline fw-semibold me-1">Next: </span>{{ .NextInSection.Title }} &rarr;
+      </a>
+    {{ end }}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="canonical" type="text/html" href="http://localhost:32897/docs-idpicker/docs/advisor-panel/forms-and-responses/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-idpicker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
+
+<title>Forms and Responses | IDPicker Docs</title>
+<meta name="description" content="How to create custom forms, collect data, and review student responses">
+<meta property="og:url" content="http://localhost:32897/docs-idpicker/docs/advisor-panel/forms-and-responses/">
+  <meta property="og:site_name" content="IDPicker Docs">
+  <meta property="og:title" content="Forms and Responses">
+  <meta property="og:description" content="How to create custom forms, collect data, and review student responses">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
+
+  <meta itemprop="name" content="Forms and Responses">
+  <meta itemprop="description" content="How to create custom forms, collect data, and review student responses">
+  <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
+  <meta itemprop="wordCount" content="430">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Forms and Responses">
+  <meta name="twitter:description" content="How to create custom forms, collect data, and review student responses">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<style>
+ 
+.td-navbar .navbar-brand__name {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+ 
+.td-footer, footer, .bg-dark, footer.bg-dark { 
+  display: none !important; 
+}
+
+ 
+@media (min-width: 768px) {
+  .home-grid-strict {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-grid-strict {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+</style>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll">
+<div class="td-navbar-container container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
+    <div class="scroll-indicator scroll-left"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs-idpicker/"><span>Home</span></a>
+      </li>
+      </ul>
+    <div class="scroll-indicator scroll-right"></div>
+  </div>
+  <div class="td-navbar__search d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    name="q"
+    class="td-search__input form-control"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+<div class="td-content">
+	<h1>Forms and Responses</h1>
+	<div class="lead">How to create custom forms, collect data, and review student responses</div>
+	<header class="article-meta">
+		
+</header>
+	<p>The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.</p>
+<hr>
+<h2 id="understanding-the-forms-lifecycle">Understanding the Forms Lifecycle</h2>
+<p>Every form moves through a specific lifecycle:</p>
+<ol>
+<li><strong>Draft:</strong> The form is being built and is invisible to students.</li>
+<li><strong>Published:</strong> The form is actively collecting data and is visible to assigned students on their dashboard.</li>
+<li><strong>Archived:</strong> (If applicable) The form is no longer accepting new responses, but old data is preserved.</li>
+</ol>
+<hr>
+<h2 id="1-creating-and-publishing-a-form">1. Creating and Publishing a Form</h2>
+<ol>
+<li>In the sidebar, click <strong>Forms</strong>.</li>
+<li>Click <strong>Create New Form</strong>.</li>
+<li>Enter a <strong>Title</strong> and a helpful <strong>Description</strong>.</li>
+<li>Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).</li>
+<li>Click <strong>Save as Draft</strong> while you are still working on it.</li>
+<li>When you are completely finished, select your target audience (groups or specific students) and change the status to <strong>Publish</strong>.</li>
+</ol>
+<h3 id="preview-before-publishing">Preview Before Publishing</h3>
+<p>Always click the <strong>Preview</strong> action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.</p>
+<hr>
+<h2 id="2-managing-existing-forms">2. Managing Existing Forms</h2>
+<p>You can manage your forms from the main Forms list view:</p>
+<ul>
+<li><strong>Search &amp; Filter:</strong> Use the search bar to find a specific form by title, or filter to see only <em>Drafts</em> or <em>Published</em> forms.</li>
+<li><strong>Edit:</strong> If a form is still a draft, you can freely edit its structure. Once an active form begins receiving responses, structural edits may be heavily restricted to prevent data corruption.</li>
+<li><strong>Delete:</strong> Select the delete action to permanently remove the form. <em>Note: Doing this may also delete associated response records.</em></li>
+</ul>
+<hr>
+<h2 id="3-reviewing-student-responses">3. Reviewing Student Responses</h2>
+<p>Once your form is published and students begin filling it out, you need to review their answers.</p>
+<ol>
+<li>Locate the active form in your Forms list.</li>
+<li>You will see a counter indicating the number of Total Responses. Click the <strong>Responses</strong> button.</li>
+<li>A table will load showing a list of every student who submitted the form and the timestamp.</li>
+<li>Click on an individual response row to drill down and read the specific answers provided by that student.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A student says they submitted, but my response count is not updating</td>
+          <td>The interface does not automatically live-refresh. Manually refresh the page to load the latest data from the server</td>
+      </tr>
+      <tr>
+          <td>The system prevents me from editing a form</td>
+          <td>The form is either locked due to your permission policy, or it is locked because it is Published and actively receiving responses</td>
+      </tr>
+      <tr>
+          <td>I accidentally deleted a form</td>
+          <td>Form deletion is permanent. Always export response data before taking destructive actions</td>
+      </tr>
+  </tbody>
+</table>
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBGb3JtcyBtb2R1bGUgYWxsb3dzIGFkdmlzb3JzIHRvIGNyZWF0ZSBjdXN0b20gcXVlc3Rpb25uYWlyZXMsIHN1cnZleXMsIG9yIGRhdGEtY29sbGVjdGlvbiBzaGVldHMsIGRpc3RyaWJ1dGUgdGhlbSB0byBzcGVjaWZpYyBzdHVkZW50cywgYW5kIHRyYWNrIHRoZSByZXNwb25zZXMgaW4gb25lIHBsYWNlLgoKLS0tCgojIyBVbmRlcnN0YW5kaW5nIHRoZSBGb3JtcyBMaWZlY3ljbGUKCkV2ZXJ5IGZvcm0gbW92ZXMgdGhyb3VnaCBhIHNwZWNpZmljIGxpZmVjeWNsZToKMS4gKipEcmFmdDoqKiBUaGUgZm9ybSBpcyBiZWluZyBidWlsdCBhbmQgaXMgaW52aXNpYmxlIHRvIHN0dWRlbnRzLgoyLiAqKlB1Ymxpc2hlZDoqKiBUaGUgZm9ybSBpcyBhY3RpdmVseSBjb2xsZWN0aW5nIGRhdGEgYW5kIGlzIHZpc2libGUgdG8gYXNzaWduZWQgc3R1ZGVudHMgb24gdGhlaXIgZGFzaGJvYXJkLgozLiAqKkFyY2hpdmVkOioqIChJZiBhcHBsaWNhYmxlKSBUaGUgZm9ybSBpcyBubyBsb25nZXIgYWNjZXB0aW5nIG5ldyByZXNwb25zZXMsIGJ1dCBvbGQgZGF0YSBpcyBwcmVzZXJ2ZWQuCgotLS0KCiMjIDEuIENyZWF0aW5nIGFuZCBQdWJsaXNoaW5nIGEgRm9ybQoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRm9ybXMqKi4KMi4gQ2xpY2sgKipDcmVhdGUgTmV3IEZvcm0qKi4KMy4gRW50ZXIgYSAqKlRpdGxlKiogYW5kIGEgaGVscGZ1bCAqKkRlc2NyaXB0aW9uKiouCjQuIFVzZSB0aGUgZm9ybSBidWlsZGVyIGludGVyZmFjZSB0byBhZGQgeW91ciBzcGVjaWZpYyBmaWVsZHMgKGUuZy4sIHRleHQgaW5wdXRzLCBkcm9wZG93bnMsIGNoZWNrYm94ZXMpLgo1LiBDbGljayAqKlNhdmUgYXMgRHJhZnQqKiB3aGlsZSB5b3UgYXJlIHN0aWxsIHdvcmtpbmcgb24gaXQuCjYuIFdoZW4geW91IGFyZSBjb21wbGV0ZWx5IGZpbmlzaGVkLCBzZWxlY3QgeW91ciB0YXJnZXQgYXVkaWVuY2UgKGdyb3VwcyBvciBzcGVjaWZpYyBzdHVkZW50cykgYW5kIGNoYW5nZSB0aGUgc3RhdHVzIHRvICoqUHVibGlzaCoqLgoKIyMjIFByZXZpZXcgQmVmb3JlIFB1Ymxpc2hpbmcKQWx3YXlzIGNsaWNrIHRoZSAqKlByZXZpZXcqKiBhY3Rpb24gYmVmb3JlIHB1Ymxpc2hpbmchIFRoaXMgbGV0cyB5b3Ugc2VlIHRoZSBmb3JtIGV4YWN0bHkgYXMgYSBzdHVkZW50IHdpbGwgc2VlIGl0LCBlbnN1cmluZyB0aGF0IHlvdXIgcmVxdWlyZWQgZmllbGRzIGFuZCB2aXN1YWwgbGF5b3V0IGJlaGF2ZSBhcyBleHBlY3RlZC4KCi0tLQoKIyMgMi4gTWFuYWdpbmcgRXhpc3RpbmcgRm9ybXMKCllvdSBjYW4gbWFuYWdlIHlvdXIgZm9ybXMgZnJvbSB0aGUgbWFpbiBGb3JtcyBsaXN0IHZpZXc6CgotICoqU2VhcmNoICYgRmlsdGVyOioqIFVzZSB0aGUgc2VhcmNoIGJhciB0byBmaW5kIGEgc3BlY2lmaWMgZm9ybSBieSB0aXRsZSwgb3IgZmlsdGVyIHRvIHNlZSBvbmx5ICpEcmFmdHMqIG9yICpQdWJsaXNoZWQqIGZvcm1zLgotICoqRWRpdDoqKiBJZiBhIGZvcm0gaXMgc3RpbGwgYSBkcmFmdCwgeW91IGNhbiBmcmVlbHkgZWRpdCBpdHMgc3RydWN0dXJlLiBPbmNlIGFuIGFjdGl2ZSBmb3JtIGJlZ2lucyByZWNlaXZpbmcgcmVzcG9uc2VzLCBzdHJ1Y3R1cmFsIGVkaXRzIG1heSBiZSBoZWF2aWx5IHJlc3RyaWN0ZWQgdG8gcHJldmVudCBkYXRhIGNvcnJ1cHRpb24uCi0gKipEZWxldGU6KiogU2VsZWN0IHRoZSBkZWxldGUgYWN0aW9uIHRvIHBlcm1hbmVudGx5IHJlbW92ZSB0aGUgZm9ybS4gKk5vdGU6IERvaW5nIHRoaXMgbWF5IGFsc28gZGVsZXRlIGFzc29jaWF0ZWQgcmVzcG9uc2UgcmVjb3Jkcy4qCgotLS0KCiMjIDMuIFJldmlld2luZyBTdHVkZW50IFJlc3BvbnNlcwoKT25jZSB5b3VyIGZvcm0gaXMgcHVibGlzaGVkIGFuZCBzdHVkZW50cyBiZWdpbiBmaWxsaW5nIGl0IG91dCwgeW91IG5lZWQgdG8gcmV2aWV3IHRoZWlyIGFuc3dlcnMuCgoxLiBMb2NhdGUgdGhlIGFjdGl2ZSBmb3JtIGluIHlvdXIgRm9ybXMgbGlzdC4KMi4gWW91IHdpbGwgc2VlIGEgY291bnRlciBpbmRpY2F0aW5nIHRoZSBudW1iZXIgb2YgVG90YWwgUmVzcG9uc2VzLiBDbGljayB0aGUgKipSZXNwb25zZXMqKiBidXR0b24uCjMuIEEgdGFibGUgd2lsbCBsb2FkIHNob3dpbmcgYSBsaXN0IG9mIGV2ZXJ5IHN0dWRlbnQgd2hvIHN1Ym1pdHRlZCB0aGUgZm9ybSBhbmQgdGhlIHRpbWVzdGFtcC4KNC4gQ2xpY2sgb24gYW4gaW5kaXZpZHVhbCByZXNwb25zZSByb3cgdG8gZHJpbGwgZG93biBhbmQgcmVhZCB0aGUgc3BlY2lmaWMgYW5zd2VycyBwcm92aWRlZCBieSB0aGF0IHN0dWRlbnQuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEEgc3R1ZGVudCBzYXlzIHRoZXkgc3VibWl0dGVkLCBidXQgbXkgcmVzcG9uc2UgY291bnQgaXMgbm90IHVwZGF0aW5nIHwgVGhlIGludGVyZmFjZSBkb2VzIG5vdCBhdXRvbWF0aWNhbGx5IGxpdmUtcmVmcmVzaC4gTWFudWFsbHkgcmVmcmVzaCB0aGUgcGFnZSB0byBsb2FkIHRoZSBsYXRlc3QgZGF0YSBmcm9tIHRoZSBzZXJ2ZXIgfAp8IFRoZSBzeXN0ZW0gcHJldmVudHMgbWUgZnJvbSBlZGl0aW5nIGEgZm9ybSB8IFRoZSBmb3JtIGlzIGVpdGhlciBsb2NrZWQgZHVlIHRvIHlvdXIgcGVybWlzc2lvbiBwb2xpY3ksIG9yIGl0IGlzIGxvY2tlZCBiZWNhdXNlIGl0IGlzIFB1Ymxpc2hlZCBhbmQgYWN0aXZlbHkgcmVjZWl2aW5nIHJlc3BvbnNlcyB8CnwgSSBhY2NpZGVudGFsbHkgZGVsZXRlZCBhIGZvcm0gfCBGb3JtIGRlbGV0aW9uIGlzIHBlcm1hbmVudC4gQWx3YXlzIGV4cG9ydCByZXNwb25zZSBkYXRhIGJlZm9yZSB0YWtpbmcgZGVzdHJ1Y3RpdmUgYWN0aW9ucyB8Cg==</script>
+
+<style>
+ 
+.page-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+.page-meta-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+.page-meta-bar__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #F1F5F9;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+ 
+.btn-copy-llm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.45rem;
+  border: 1.5px solid #DDD6FE;
+  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FD 100%);
+  color: #5B45E5;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1), 0 1px 2px rgba(91,69,229,0.06);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-copy-llm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.18s;
+}
+.btn-copy-llm:hover {
+  border-color: #A78BFA;
+  color: #4338CA;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91,69,229,0.18);
+}
+.btn-copy-llm:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1);
+}
+.btn-copy-llm.state--copied {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border-color: #6EE7B7;
+  color: #065F46;
+  box-shadow: 0 1px 3px rgba(16,185,129,0.1);
+  transform: none;
+}
+.btn-copy-llm svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+.btn-copy-llm:hover svg { transform: translateY(-1px); }
+</style>
+
+<script>
+(function () {
+  const COPY_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+  const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+  const DOC_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+
+  function injectBar() {
+    const rawEl  = document.getElementById('llm-raw-md');
+    const h1     = document.querySelector('.td-content > h1');
+    if (!rawEl || !h1) return;
+
+    
+    const bar = document.createElement('div');
+    bar.className = 'page-meta-bar';
+
+    
+    const left = document.createElement('div');
+    left.className = 'page-meta-bar__left';
+    left.innerHTML = `<span class="page-meta-bar__pill">${DOC_ICON} &nbsp;Documentation</span>`;
+    bar.appendChild(left);
+
+    
+    const btn = document.createElement('button');
+    btn.className = 'btn-copy-llm';
+    btn.type = 'button';
+    btn.title = 'Copy this page as Markdown for pasting into an LLM (Claude, GPT, Gemini…)';
+    btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+
+    btn.addEventListener('click', function () {
+      try {
+        const encoded   = rawEl.textContent.trim();
+        const markdown  = atob(encoded);
+        const payload   = `\x3C!-- Source: ${window.location.href} -->\n\n${markdown}`;
+
+        navigator.clipboard.writeText(payload).then(function () {
+          btn.innerHTML = CHECK_ICON + ' &nbsp;Copied!';
+          btn.classList.add('state--copied');
+          setTimeout(function () {
+            btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+            btn.classList.remove('state--copied');
+          }, 2200);
+        }).catch(function (err) {
+          console.warn('[LLM Copy] clipboard write failed:', err);
+        });
+      } catch (e) {
+        console.error('[LLM Copy] failed', e);
+      }
+    });
+
+    bar.appendChild(btn);
+
+    
+    h1.parentNode.insertBefore(bar, h1);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectBar);
+  } else {
+    injectBar();
+  }
+})();
+</script>
+
+
+  </body>
+</html>

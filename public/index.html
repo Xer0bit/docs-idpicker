@@ -1,24 +1,25 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
   <head>
-	<meta name="generator" content="Hugo 0.158.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.158.0"><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=32897&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:32897/docs-idpicker/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:32897/docs-idpicker/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-idpicker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>IDPicker Docs</title>
 <meta name="description" content="IDPicker Documentation The complete guide to mastering the IDPicker career and university guidance platform.
@@ -27,7 +28,7 @@
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
 ⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
-<meta property="og:url" content="http://localhost:1313/">
+<meta property="og:url" content="http://localhost:32897/docs-idpicker/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="IDPicker Docs">
   <meta property="og:description" content="IDPicker Documentation The complete guide to mastering the IDPicker career and university guidance platform.
@@ -46,7 +47,7 @@
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
 ⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
-  <meta itemprop="dateModified" content="2026-03-19T09:36:28+05:00">
+  <meta itemprop="dateModified" content="2026-03-24T11:55:57+05:00">
   <meta itemprop="wordCount" content="91">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="IDPicker Docs">
@@ -56,10 +57,14 @@
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
 ⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 <style>
  
@@ -96,18 +101,32 @@
     <header>
       <nav class="td-navbar js-navbar-scroll">
 <div class="td-navbar-container container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
   <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
     <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="/"><span>Home</span></a>
+        <a class="nav-link active" href="/docs-idpicker/"><span>Home</span></a>
       </li>
       </ul>
     <div class="scroll-indicator scroll-right"></div>
   </div>
   <div class="td-navbar__search d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    name="q"
+    class="td-search__input form-control"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
+    autocomplete="off"
     
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
   </div>
 </div>
 </nav>
@@ -119,7 +138,7 @@
   <div class="container mt-5 mb-5 px-4">
     
     <div class="hero-section text-center py-5">
-      <h1 class="display-3 fw-bold mb-3" style="letter-spacing: -0.05em; background: linear-gradient(135deg, #111827 0%, #4B5563 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">IDPicker Documentation</h1>
+      <h1 class="display-3 fw-bold mb-3" style="letter-spacing: -0.05em; background: linear-gradient(135deg, #111827 0%, #4B5563 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">IDPICKER User Guide</h1>
       <p class="lead text-muted mx-auto" style="max-width: 600px;">The complete guide to mastering the IDPicker career and university guidance platform.</p>
     </div>
 
@@ -127,31 +146,31 @@
     <div class="home-grid-strict mb-5">
       <div>
         <a href="/docs/getting-started/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s, box-shadow 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">🚀 Getting Started</h3>
+          <h3 class="h5 fw-bold text-dark mb-2">Getting Started</h3>
           <p class="text-secondary mb-0 small">Set up your account, learn the access URLs, and view the quick start guide.</p>
         </a>
       </div>
       <div>
         <a href="/docs/student-panel/authentication/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">🎓 Student Panel</h3>
+          <h3 class="h5 fw-bold text-dark mb-2">Student Panel</h3>
           <p class="text-secondary mb-0 small">Complete workflow for students from assessments to university search.</p>
         </a>
       </div>
       <div>
         <a href="/docs/advisor-panel/login-and-dashboard/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">👥 Advisor Panel</h3>
+          <h3 class="h5 fw-bold text-dark mb-2">Advisor Panel</h3>
           <p class="text-secondary mb-0 small">Manage nested students, bulk import groups, and track responses.</p>
         </a>
       </div>
       <div>
         <a href="/docs/parent-panel/authentication-and-account/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">👪 Parent Panel</h3>
+          <h3 class="h5 fw-bold text-dark mb-2">Parent Panel</h3>
           <p class="text-secondary mb-0 small">Understand the parent dashboard and linked student visibility.</p>
         </a>
       </div>
       <div>
         <a href="/docs/admin-panel/login-and-dashboard/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">⚙️ Admin Panel</h3>
+          <h3 class="h5 fw-bold text-dark mb-2">Admin Panel</h3>
           <p class="text-secondary mb-0 small">System configuration, prompts, translations, and global governance.</p>
         </a>
       </div>
@@ -208,9 +227,9 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
 
   </body>

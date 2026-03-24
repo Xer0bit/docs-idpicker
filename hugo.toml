@@ -11,10 +11,21 @@ enableGitInfo = true
   [[module.imports]]
     path = "github.com/google/docsy"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "print", "JSON"]
+  page = ["HTML", "print"]
+
 [params]
   description = "Documentation for IDPicker"
-  ui.sidebar_menu_compact = true
-  ui.breadcrumb_disable = false
+  offlineSearch = true
+  offlineSearchSummaryLength = 70
+  offlineSearchMaxResults = 10
+  
+  [params.ui]
+    sidebar_menu_compact = true
+    breadcrumb_disable = false
+    pager = true
 
 [markup.goldmark.renderer]
   unsafe = true

@@ -1,0 +1,363 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="canonical" type="text/html" href="http://localhost:32897/docs-idpicker/docs/admin-panel/login-and-dashboard/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-idpicker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
+
+<title>Admin Login and Dashboard | IDPicker Docs</title>
+<meta name="description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
+<meta property="og:url" content="http://localhost:32897/docs-idpicker/docs/admin-panel/login-and-dashboard/">
+  <meta property="og:site_name" content="IDPicker Docs">
+  <meta property="og:title" content="Admin Login and Dashboard">
+  <meta property="og:description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
+
+  <meta itemprop="name" content="Admin Login and Dashboard">
+  <meta itemprop="description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
+  <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
+  <meta itemprop="wordCount" content="384">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Admin Login and Dashboard">
+  <meta name="twitter:description" content="How to access the super-admin portal, review global KPIs, and monitor platform health">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  crossorigin="anonymous"></script>
+<style>
+ 
+.td-navbar .navbar-brand__name {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+ 
+.td-footer, footer, .bg-dark, footer.bg-dark { 
+  display: none !important; 
+}
+
+ 
+@media (min-width: 768px) {
+  .home-grid-strict {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .home-grid-strict {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+</style>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll">
+<div class="td-navbar-container container-fluid flex-column flex-md-row">
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
+    <div class="scroll-indicator scroll-left"></div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/docs-idpicker/"><span>Home</span></a>
+      </li>
+      </ul>
+    <div class="scroll-indicator scroll-right"></div>
+  </div>
+  <div class="td-navbar__search d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    name="q"
+    class="td-search__input form-control"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
+    autocomplete="off"
+    
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
+  </div>
+</div>
+</nav>
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+<div class="td-content">
+	<h1>Admin Login and Dashboard</h1>
+	<div class="lead">How to access the super-admin portal, review global KPIs, and monitor platform health</div>
+	<header class="article-meta">
+		
+</header>
+	<p>The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.</p>
+<hr>
+<h2 id="1-secure-admin-login">1. Secure Admin Login</h2>
+<p>Accessing the admin portal requires navigating to a specific, protected route.</p>
+<ol>
+<li>Open the Admin Login URL (often <code>/admin/login</code>).</li>
+<li>Enter your authorized admin <strong>Email</strong> or <strong>Username</strong>.</li>
+<li>Enter your <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.</li>
+</ol>
+<p><strong>Forgotten Password?</strong>
+If you lose your password, click <strong>Forgot Password</strong>, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.</p>
+<hr>
+<h2 id="2-daily-dashboard-checks">2. Daily Dashboard Checks</h2>
+<p>The admin dashboard provides a live pulse of the entire platform&rsquo;s health and activity. Make it a habit to review these four areas every time you log in:</p>
+<ol>
+<li><strong>Global KPI Cards:</strong> Check total active users, new registrations today, and total completed assessments.</li>
+<li><strong>Recent Assessments Table:</strong> A live feed of the newest data coming into the system from across all organizations.</li>
+<li><strong>Registration Trend Chart:</strong> Look for sudden spikes or drops in daily sign-ups.</li>
+<li><strong>System Activity Panel:</strong> A generalized event feed tracking high-level system actions.</li>
+</ol>
+<hr>
+<h2 id="3-monitoring-ai-token-usage">3. Monitoring AI Token Usage</h2>
+<p>Because the AI Mentor and generation features consume API tokens, monitoring usage is critical for cost control.</p>
+<ol>
+<li>Scroll to the <strong>Token Usage</strong> section on the dashboard.</li>
+<li>Adjust the date range filter to look at the last 24 hours or the last 7 days.</li>
+<li>Review the charts for <strong>Input Tokens</strong> (prompts sent to the AI) and <strong>Output Tokens</strong> (responses generated by the AI).</li>
+<li>If you notice a massive, unexplained spike in usage, immediately cross-reference the exact timestamp with the <a href="/docs/admin-panel/system-monitoring-and-governance/">Realtime Logs</a> to identify potential abuse or infinite loops.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I log in successfully, but the dashboard widgets are completely blank</td>
+          <td>High-level data queries can take a moment to resolve. Wait 5 seconds and refresh the page</td>
+      </tr>
+      <tr>
+          <td>I click a link and keep getting bounced back to the login page</td>
+          <td>Your secure session cookie has likely expired. Clear your browser cookies for the domain and sign in again</td>
+      </tr>
+      <tr>
+          <td>My token usage seems artificially high</td>
+          <td>Check if an organization recently ran a bulk import and triggered automated report generations for hundreds of students simultaneously</td>
+      </tr>
+  </tbody>
+</table>
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBBZG1pbiBQYW5lbCBpcyB0aGUgaGlnaGVzdCBsZXZlbCBvZiBhY2Nlc3MgaW4gSURQaWNrZXIsIGRlc2lnbmVkIGZvciBwbGF0Zm9ybSBvd25lcnMgYW5kIGhpZ2gtbGV2ZWwgb3BlcmF0aW9ucyBzdGFmZi4gVGhpcyBndWlkZSBjb3ZlcnMgc2VjdXJlIGFjY2VzcyBhbmQgZGFpbHkgbW9uaXRvcmluZyByb3V0aW5lcy4KCi0tLQoKIyMgMS4gU2VjdXJlIEFkbWluIExvZ2luCgpBY2Nlc3NpbmcgdGhlIGFkbWluIHBvcnRhbCByZXF1aXJlcyBuYXZpZ2F0aW5nIHRvIGEgc3BlY2lmaWMsIHByb3RlY3RlZCByb3V0ZS4gCgoxLiBPcGVuIHRoZSBBZG1pbiBMb2dpbiBVUkwgKG9mdGVuIGAvYWRtaW4vbG9naW5gKS4KMi4gRW50ZXIgeW91ciBhdXRob3JpemVkIGFkbWluICoqRW1haWwqKiBvciAqKlVzZXJuYW1lKiouCjMuIEVudGVyIHlvdXIgKipQYXNzd29yZCoqLgo0LiBDbGljayAqKlNpZ24gSW4qKi4KNS4gT25jZSB5b3VyIGhpZ2gtbGV2ZWwgYXV0aG9yaXphdGlvbiBjb29raWUgaXMgdmFsaWRhdGVkLCB5b3UgYXJlIHJvdXRlZCBkaXJlY3RseSB0byB0aGUgZ2xvYmFsIGRhc2hib2FyZC4KCioqRm9yZ290dGVuIFBhc3N3b3JkPyoqCklmIHlvdSBsb3NlIHlvdXIgcGFzc3dvcmQsIGNsaWNrICoqRm9yZ290IFBhc3N3b3JkKiosIGVudGVyIHlvdXIgZW1haWwsIGFuZCB1c2UgdGhlIHNlY3VyZSByZXNldCBsaW5rIHNlbnQgdG8geW91ciBpbmJveC4gQmVjYXVzZSBvZiB0aGUgaGlnaCBwcml2aWxlZ2UgbGV2ZWwgb2YgdGhpcyBhY2NvdW50LCBwYXNzd29yZCBzdHJlbmd0aCByZXF1aXJlbWVudHMgYXJlIHN0cmljdGx5IGVuZm9yY2VkLgoKLS0tCgojIyAyLiBEYWlseSBEYXNoYm9hcmQgQ2hlY2tzCgpUaGUgYWRtaW4gZGFzaGJvYXJkIHByb3ZpZGVzIGEgbGl2ZSBwdWxzZSBvZiB0aGUgZW50aXJlIHBsYXRmb3JtJ3MgaGVhbHRoIGFuZCBhY3Rpdml0eS4gTWFrZSBpdCBhIGhhYml0IHRvIHJldmlldyB0aGVzZSBmb3VyIGFyZWFzIGV2ZXJ5IHRpbWUgeW91IGxvZyBpbjoKCjEuICoqR2xvYmFsIEtQSSBDYXJkczoqKiBDaGVjayB0b3RhbCBhY3RpdmUgdXNlcnMsIG5ldyByZWdpc3RyYXRpb25zIHRvZGF5LCBhbmQgdG90YWwgY29tcGxldGVkIGFzc2Vzc21lbnRzLgoyLiAqKlJlY2VudCBBc3Nlc3NtZW50cyBUYWJsZToqKiBBIGxpdmUgZmVlZCBvZiB0aGUgbmV3ZXN0IGRhdGEgY29taW5nIGludG8gdGhlIHN5c3RlbSBmcm9tIGFjcm9zcyBhbGwgb3JnYW5pemF0aW9ucy4KMy4gKipSZWdpc3RyYXRpb24gVHJlbmQgQ2hhcnQ6KiogTG9vayBmb3Igc3VkZGVuIHNwaWtlcyBvciBkcm9wcyBpbiBkYWlseSBzaWduLXVwcy4KNC4gKipTeXN0ZW0gQWN0aXZpdHkgUGFuZWw6KiogQSBnZW5lcmFsaXplZCBldmVudCBmZWVkIHRyYWNraW5nIGhpZ2gtbGV2ZWwgc3lzdGVtIGFjdGlvbnMuCgotLS0KCiMjIDMuIE1vbml0b3JpbmcgQUkgVG9rZW4gVXNhZ2UKCkJlY2F1c2UgdGhlIEFJIE1lbnRvciBhbmQgZ2VuZXJhdGlvbiBmZWF0dXJlcyBjb25zdW1lIEFQSSB0b2tlbnMsIG1vbml0b3JpbmcgdXNhZ2UgaXMgY3JpdGljYWwgZm9yIGNvc3QgY29udHJvbC4KCjEuIFNjcm9sbCB0byB0aGUgKipUb2tlbiBVc2FnZSoqIHNlY3Rpb24gb24gdGhlIGRhc2hib2FyZC4KMi4gQWRqdXN0IHRoZSBkYXRlIHJhbmdlIGZpbHRlciB0byBsb29rIGF0IHRoZSBsYXN0IDI0IGhvdXJzIG9yIHRoZSBsYXN0IDcgZGF5cy4KMy4gUmV2aWV3IHRoZSBjaGFydHMgZm9yICoqSW5wdXQgVG9rZW5zKiogKHByb21wdHMgc2VudCB0byB0aGUgQUkpIGFuZCAqKk91dHB1dCBUb2tlbnMqKiAocmVzcG9uc2VzIGdlbmVyYXRlZCBieSB0aGUgQUkpLgo0LiBJZiB5b3Ugbm90aWNlIGEgbWFzc2l2ZSwgdW5leHBsYWluZWQgc3Bpa2UgaW4gdXNhZ2UsIGltbWVkaWF0ZWx5IGNyb3NzLXJlZmVyZW5jZSB0aGUgZXhhY3QgdGltZXN0YW1wIHdpdGggdGhlIFtSZWFsdGltZSBMb2dzXSgvZG9jcy9hZG1pbi1wYW5lbC9zeXN0ZW0tbW9uaXRvcmluZy1hbmQtZ292ZXJuYW5jZS8pIHRvIGlkZW50aWZ5IHBvdGVudGlhbCBhYnVzZSBvciBpbmZpbml0ZSBsb29wcy4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBsb2cgaW4gc3VjY2Vzc2Z1bGx5LCBidXQgdGhlIGRhc2hib2FyZCB3aWRnZXRzIGFyZSBjb21wbGV0ZWx5IGJsYW5rIHwgSGlnaC1sZXZlbCBkYXRhIHF1ZXJpZXMgY2FuIHRha2UgYSBtb21lbnQgdG8gcmVzb2x2ZS4gV2FpdCA1IHNlY29uZHMgYW5kIHJlZnJlc2ggdGhlIHBhZ2UgfAp8IEkgY2xpY2sgYSBsaW5rIGFuZCBrZWVwIGdldHRpbmcgYm91bmNlZCBiYWNrIHRvIHRoZSBsb2dpbiBwYWdlIHwgWW91ciBzZWN1cmUgc2Vzc2lvbiBjb29raWUgaGFzIGxpa2VseSBleHBpcmVkLiBDbGVhciB5b3VyIGJyb3dzZXIgY29va2llcyBmb3IgdGhlIGRvbWFpbiBhbmQgc2lnbiBpbiBhZ2FpbiB8CnwgTXkgdG9rZW4gdXNhZ2Ugc2VlbXMgYXJ0aWZpY2lhbGx5IGhpZ2ggfCBDaGVjayBpZiBhbiBvcmdhbml6YXRpb24gcmVjZW50bHkgcmFuIGEgYnVsayBpbXBvcnQgYW5kIHRyaWdnZXJlZCBhdXRvbWF0ZWQgcmVwb3J0IGdlbmVyYXRpb25zIGZvciBodW5kcmVkcyBvZiBzdHVkZW50cyBzaW11bHRhbmVvdXNseSB8Cg==</script>
+
+<style>
+ 
+.page-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+.page-meta-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+.page-meta-bar__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #F1F5F9;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+ 
+.btn-copy-llm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.45rem;
+  border: 1.5px solid #DDD6FE;
+  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FD 100%);
+  color: #5B45E5;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1), 0 1px 2px rgba(91,69,229,0.06);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-copy-llm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.18s;
+}
+.btn-copy-llm:hover {
+  border-color: #A78BFA;
+  color: #4338CA;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91,69,229,0.18);
+}
+.btn-copy-llm:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1);
+}
+.btn-copy-llm.state--copied {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border-color: #6EE7B7;
+  color: #065F46;
+  box-shadow: 0 1px 3px rgba(16,185,129,0.1);
+  transform: none;
+}
+.btn-copy-llm svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+.btn-copy-llm:hover svg { transform: translateY(-1px); }
+</style>
+
+<script>
+(function () {
+  const COPY_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+  const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+  const DOC_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+
+  function injectBar() {
+    const rawEl  = document.getElementById('llm-raw-md');
+    const h1     = document.querySelector('.td-content > h1');
+    if (!rawEl || !h1) return;
+
+    
+    const bar = document.createElement('div');
+    bar.className = 'page-meta-bar';
+
+    
+    const left = document.createElement('div');
+    left.className = 'page-meta-bar__left';
+    left.innerHTML = `<span class="page-meta-bar__pill">${DOC_ICON} &nbsp;Documentation</span>`;
+    bar.appendChild(left);
+
+    
+    const btn = document.createElement('button');
+    btn.className = 'btn-copy-llm';
+    btn.type = 'button';
+    btn.title = 'Copy this page as Markdown for pasting into an LLM (Claude, GPT, Gemini…)';
+    btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+
+    btn.addEventListener('click', function () {
+      try {
+        const encoded   = rawEl.textContent.trim();
+        const markdown  = atob(encoded);
+        const payload   = `\x3C!-- Source: ${window.location.href} -->\n\n${markdown}`;
+
+        navigator.clipboard.writeText(payload).then(function () {
+          btn.innerHTML = CHECK_ICON + ' &nbsp;Copied!';
+          btn.classList.add('state--copied');
+          setTimeout(function () {
+            btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+            btn.classList.remove('state--copied');
+          }, 2200);
+        }).catch(function (err) {
+          console.warn('[LLM Copy] clipboard write failed:', err);
+        });
+      } catch (e) {
+        console.error('[LLM Copy] failed', e);
+      }
+    });
+
+    bar.appendChild(btn);
+
+    
+    h1.parentNode.insertBefore(bar, h1);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectBar);
+  } else {
+    injectBar();
+  }
+})();
+</script>
+
+
+  </body>
+</html>

@@ -1,27 +1,29 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=32897&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/help/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:32897/docs-idpicker/docs/help/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:32897/docs-idpicker/_print/docs/help/">
+<link rel="alternate" type="application/json" href="http://localhost:32897/docs-idpicker/docs/help/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-idpicker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Help | IDPicker Docs</title>
 <meta name="description" content="Troubleshooting and frequently asked questions">
-<meta property="og:url" content="http://localhost:1313/docs/help/">
+<meta property="og:url" content="http://localhost:32897/docs-idpicker/docs/help/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Help">
   <meta property="og:description" content="Troubleshooting and frequently asked questions">
@@ -35,10 +37,14 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Help">
   <meta name="twitter:description" content="Troubleshooting and frequently asked questions">
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+<script defer
+  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
+  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 <style>
  
@@ -75,18 +81,32 @@
     <header>
       <nav class="td-navbar js-navbar-scroll">
 <div class="td-navbar-container container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
   <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
     <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="/"><span>Home</span></a>
+        <a class="nav-link active" href="/docs-idpicker/"><span>Home</span></a>
       </li>
       </ul>
     <div class="scroll-indicator scroll-right"></div>
   </div>
   <div class="td-navbar__search d-none d-lg-block">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    name="q"
+    class="td-search__input form-control"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
+    autocomplete="off"
     
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
   </div>
 </div>
 </nav>
@@ -97,154 +117,168 @@
           <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
             <div id="td-sidebar-menu" class="td-sidebar__inner">
   <form class="td-sidebar__search d-flex align-items-center">
+    <div class="td-search td-search--offline">
+  <div class="td-search__icon"></div>
+  <input
+    type="search"
+    name="q"
+    class="td-search__input form-control"
+    placeholder='Search this site…'
+    aria-label='Search this site…'
+    autocomplete="off"
     
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-base-href="/"
+    data-offline-search-max-results="10"
+  >
+</div>
     <button class="btn btn-link td-sidebar__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
   <nav class="td-sidebar-nav collapse" id="td-section-nav">
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
-    <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">IDPicker User Manual</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-idpickerdocs-li">
+    <a href="/docs-idpicker/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs-idpickerdocs"><span class="">IDPicker User Manual</span></a>
     <ul class="ul-1">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsgetting-started-li">
-    <a href="/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsgetting-started"><span class="">Getting Started</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
+    <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedoverview-li">
-    <a href="/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedoverview"><span class="">Overview</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedquick-start-li">
-    <a href="/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedquick-start"><span class="">Quick Start</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsgetting-startedaccess-urls-li">
-    <a href="/docs/getting-started/access-urls/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsgetting-startedaccess-urls"><span class="">Access URLs</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+    <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
+    <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedaccess-urls-li">
+    <a href="/docs-idpicker/docs/getting-started/access-urls/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedaccess-urls"><span class="">Access URLs</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsstudent-panel-li">
-    <a href="/docs/student-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsstudent-panel"><span class="">Student Panel</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsstudent-panel-li">
+    <a href="/docs-idpicker/docs/student-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsstudent-panel"><span class="">Student Panel</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelauthentication-li">
-    <a href="/docs/student-panel/authentication/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelauthentication"><span class="">Authentication</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-paneldashboard-li">
-    <a href="/docs/student-panel/dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-paneldashboard"><span class="">Dashboard</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelassessment-li">
-    <a href="/docs/student-panel/assessment/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelassessment"><span class="">Assessment</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelrecommendations-li">
-    <a href="/docs/student-panel/recommendations/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelrecommendations"><span class="">Recommendation</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelpersonality-li">
-    <a href="/docs/student-panel/personality/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelpersonality"><span class="">Personality</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelai-mentorship-li">
-    <a href="/docs/student-panel/ai-mentorship/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelai-mentorship"><span class="">AI Mentorship</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-paneluniversity-search-li">
-    <a href="/docs/student-panel/university-search/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-paneluniversity-search"><span class="">University Search</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelresources-li">
-    <a href="/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelresources"><span class="">Resources</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelhelp-center-li">
-    <a href="/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelhelp-center"><span class="">Help Center</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelsubscription-li">
-    <a href="/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelsubscription"><span class="">Subscription</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelaccount-settings-li">
-    <a href="/docs/student-panel/account-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelaccount-settings"><span class="">Account and Settings</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panellanguage-li">
-    <a href="/docs/student-panel/language/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panellanguage"><span class="">Language</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelcertificates-and-documents-li">
-    <a href="/docs/student-panel/certificates-and-documents/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelcertificates-and-documents"><span class="">Certificates and Application Documents</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsstudent-panelassigned-forms-li">
-    <a href="/docs/student-panel/assigned-forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsstudent-panelassigned-forms"><span class="">Assigned Forms</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelauthentication-li">
+    <a href="/docs-idpicker/docs/student-panel/authentication/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelauthentication"><span class="">Authentication</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-paneldashboard-li">
+    <a href="/docs-idpicker/docs/student-panel/dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-paneldashboard"><span class="">Dashboard</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelassessment-li">
+    <a href="/docs-idpicker/docs/student-panel/assessment/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelassessment"><span class="">Assessment</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelrecommendations-li">
+    <a href="/docs-idpicker/docs/student-panel/recommendations/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelrecommendations"><span class="">Recommendation</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelpersonality-li">
+    <a href="/docs-idpicker/docs/student-panel/personality/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelpersonality"><span class="">Personality</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelai-mentorship-li">
+    <a href="/docs-idpicker/docs/student-panel/ai-mentorship/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelai-mentorship"><span class="">AI Mentorship</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-paneluniversity-search-li">
+    <a href="/docs-idpicker/docs/student-panel/university-search/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-paneluniversity-search"><span class="">University Search</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelresources-li">
+    <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
+    <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
+    <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
+    <a href="/docs-idpicker/docs/student-panel/account-settings/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelaccount-settings"><span class="">Account and Settings</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panellanguage-li">
+    <a href="/docs-idpicker/docs/student-panel/language/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panellanguage"><span class="">Language</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelcertificates-and-documents-li">
+    <a href="/docs-idpicker/docs/student-panel/certificates-and-documents/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelcertificates-and-documents"><span class="">Certificates and Application Documents</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelassigned-forms-li">
+    <a href="/docs-idpicker/docs/student-panel/assigned-forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelassigned-forms"><span class="">Assigned Forms</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsadvisor-panel-li">
-    <a href="/docs/advisor-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsadvisor-panel"><span class="">Advisor Panel</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsadvisor-panel-li">
+    <a href="/docs-idpicker/docs/advisor-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsadvisor-panel"><span class="">Advisor Panel</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panellogin-and-dashboard-li">
-    <a href="/docs/advisor-panel/login-and-dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panellogin-and-dashboard"><span class="">Advisor Login and Dashboard</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelstudents-and-bulk-import-li">
-    <a href="/docs/advisor-panel/students-and-bulk-import/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelstudents-and-bulk-import"><span class="">Students and Bulk Import</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelcertificates-and-application-documents-li">
-    <a href="/docs/advisor-panel/certificates-and-application-documents/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelcertificates-and-application-documents"><span class="">Certificates and Application Documents</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelenrollment-family-chat-and-assessments-li">
-    <a href="/docs/advisor-panel/enrollment-family-chat-and-assessments/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelenrollment-family-chat-and-assessments"><span class="">Enrollment, Family Chat, and Assessments</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelforms-and-responses-li">
-    <a href="/docs/advisor-panel/forms-and-responses/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelforms-and-responses"><span class="">Forms and Responses</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelgroups-li">
-    <a href="/docs/advisor-panel/groups/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelgroups"><span class="">Groups Management</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelnotifications-li">
-    <a href="/docs/advisor-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelnotifications"><span class="">Notifications</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelprofile-prompts-and-interests-li">
-    <a href="/docs/advisor-panel/profile-prompts-and-interests/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelprofile-prompts-and-interests"><span class="">Profile, Prompts, and Interests</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelresources-li">
-    <a href="/docs/advisor-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelresources"><span class="">Resources Management</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelsub-advisor-management-li">
-    <a href="/docs/advisor-panel/sub-advisor-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelsub-advisor-management"><span class="">Sub-Advisor Management</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadvisor-panelsupport-tickets-li">
-    <a href="/docs/advisor-panel/support-tickets/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadvisor-panelsupport-tickets"><span class="">Support Tickets</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panellogin-and-dashboard-li">
+    <a href="/docs-idpicker/docs/advisor-panel/login-and-dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panellogin-and-dashboard"><span class="">Advisor Login and Dashboard</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelstudents-and-bulk-import-li">
+    <a href="/docs-idpicker/docs/advisor-panel/students-and-bulk-import/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelstudents-and-bulk-import"><span class="">Students and Bulk Import</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelcertificates-and-application-documents-li">
+    <a href="/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelcertificates-and-application-documents"><span class="">Certificates and Application Documents</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelenrollment-family-chat-and-assessments-li">
+    <a href="/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelenrollment-family-chat-and-assessments"><span class="">Enrollment, Family Chat, and Assessments</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelforms-and-responses-li">
+    <a href="/docs-idpicker/docs/advisor-panel/forms-and-responses/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelforms-and-responses"><span class="">Forms and Responses</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelgroups-li">
+    <a href="/docs-idpicker/docs/advisor-panel/groups/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelgroups"><span class="">Groups Management</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelnotifications-li">
+    <a href="/docs-idpicker/docs/advisor-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelnotifications"><span class="">Notifications</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelprofile-prompts-and-interests-li">
+    <a href="/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelprofile-prompts-and-interests"><span class="">Profile, Prompts, and Interests</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelresources-li">
+    <a href="/docs-idpicker/docs/advisor-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelresources"><span class="">Resources Management</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelsub-advisor-management-li">
+    <a href="/docs-idpicker/docs/advisor-panel/sub-advisor-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelsub-advisor-management"><span class="">Sub-Advisor Management</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadvisor-panelsupport-tickets-li">
+    <a href="/docs-idpicker/docs/advisor-panel/support-tickets/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadvisor-panelsupport-tickets"><span class="">Support Tickets</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsparent-panel-li">
-    <a href="/docs/parent-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsparent-panel"><span class="">Parent Panel</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsparent-panel-li">
+    <a href="/docs-idpicker/docs/parent-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsparent-panel"><span class="">Parent Panel</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsparent-panelauthentication-and-account-li">
-    <a href="/docs/parent-panel/authentication-and-account/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsparent-panelauthentication-and-account"><span class="">Authentication and Account</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsparent-paneldashboard-and-linked-overview-li">
-    <a href="/docs/parent-panel/dashboard-and-linked-overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsparent-paneldashboard-and-linked-overview"><span class="">Dashboard and Linked Overview</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsparent-panelforms-li">
-    <a href="/docs/parent-panel/forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsparent-panelforms"><span class="">Parent Forms</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsparent-panellinked-student-guide-li">
-    <a href="/docs/parent-panel/linked-student-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsparent-panellinked-student-guide"><span class="">Linked Student</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsparent-panelstudent-detail-journey-map-and-chat-li">
-    <a href="/docs/parent-panel/student-detail-journey-map-and-chat/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsparent-panelstudent-detail-journey-map-and-chat"><span class="">Student Detail, Journey Map, and Advisor Chat</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsparent-panelauthentication-and-account-li">
+    <a href="/docs-idpicker/docs/parent-panel/authentication-and-account/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsparent-panelauthentication-and-account"><span class="">Authentication and Account</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsparent-paneldashboard-and-linked-overview-li">
+    <a href="/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsparent-paneldashboard-and-linked-overview"><span class="">Dashboard and Linked Overview</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsparent-panelforms-li">
+    <a href="/docs-idpicker/docs/parent-panel/forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsparent-panelforms"><span class="">Parent Forms</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsparent-panellinked-student-guide-li">
+    <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsparent-panellinked-student-guide"><span class="">Linked Student</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsparent-panelstudent-detail-journey-map-and-chat-li">
+    <a href="/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsparent-panelstudent-detail-journey-map-and-chat"><span class="">Student Detail, Journey Map, and Advisor Chat</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsadmin-panel-li">
-    <a href="/docs/admin-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsadmin-panel"><span class="">Admin Panel</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsadmin-panel-li">
+    <a href="/docs-idpicker/docs/admin-panel/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsadmin-panel"><span class="">Admin Panel</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-panellogin-and-dashboard-li">
-    <a href="/docs/admin-panel/login-and-dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-panellogin-and-dashboard"><span class="">Admin Login and Dashboard</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-paneluser-and-organization-management-li">
-    <a href="/docs/admin-panel/user-and-organization-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-paneluser-and-organization-management"><span class="">User and Organization Management</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-paneladmin-and-subadmin-management-li">
-    <a href="/docs/admin-panel/admin-and-subadmin-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-paneladmin-and-subadmin-management"><span class="">Admin and Subadmin Management</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-panelassessments-and-forms-li">
-    <a href="/docs/admin-panel/assessments-and-forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-panelassessments-and-forms"><span class="">Assessments and Forms</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-panelprompts-translations-and-content-li">
-    <a href="/docs/admin-panel/prompts-translations-and-content/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-panelprompts-translations-and-content"><span class="">Prompts, Translations, and Content</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-panelsupport-notifications-and-approvals-li">
-    <a href="/docs/admin-panel/support-notifications-and-approvals/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-panelsupport-notifications-and-approvals"><span class="">Support, Notifications, and Approvals</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsadmin-panelsystem-monitoring-and-governance-li">
-    <a href="/docs/admin-panel/system-monitoring-and-governance/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsadmin-panelsystem-monitoring-and-governance"><span class="">System Monitoring and Governance</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-panellogin-and-dashboard-li">
+    <a href="/docs-idpicker/docs/admin-panel/login-and-dashboard/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-panellogin-and-dashboard"><span class="">Admin Login and Dashboard</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-paneluser-and-organization-management-li">
+    <a href="/docs-idpicker/docs/admin-panel/user-and-organization-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-paneluser-and-organization-management"><span class="">User and Organization Management</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-paneladmin-and-subadmin-management-li">
+    <a href="/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-paneladmin-and-subadmin-management"><span class="">Admin and Subadmin Management</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-panelassessments-and-forms-li">
+    <a href="/docs-idpicker/docs/admin-panel/assessments-and-forms/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-panelassessments-and-forms"><span class="">Assessments and Forms</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-panelprompts-translations-and-content-li">
+    <a href="/docs-idpicker/docs/admin-panel/prompts-translations-and-content/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-panelprompts-translations-and-content"><span class="">Prompts, Translations, and Content</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-panelsupport-notifications-and-approvals-li">
+    <a href="/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-panelsupport-notifications-and-approvals"><span class="">Support, Notifications, and Approvals</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsadmin-panelsystem-monitoring-and-governance-li">
+    <a href="/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsadmin-panelsystem-monitoring-and-governance"><span class="">System Monitoring and Governance</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docsproduct-li">
-    <a href="/docs/product/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsproduct"><span class="">Product Scope and Roles</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsinstallation-li">
-    <a href="/docs/installation/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsinstallation"><span class="">Installation</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocsproduct-li">
+    <a href="/docs-idpicker/docs/product/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsproduct"><span class="">Product Scope and Roles</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsinstallation-li">
+    <a href="/docs-idpicker/docs/installation/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsinstallation"><span class="">Installation</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsinstallationrequirements-li">
-    <a href="/docs/installation/requirements/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsinstallationrequirements"><span class="">System Requirements</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsinstallationsetup-li">
-    <a href="/docs/installation/setup/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsinstallationsetup"><span class="">Setup</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsinstallationrequirements-li">
+    <a href="/docs-idpicker/docs/installation/requirements/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsinstallationrequirements"><span class="">System Requirements</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsinstallationsetup-li">
+    <a href="/docs-idpicker/docs/installation/setup/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsinstallationsetup"><span class="">Setup</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docshelp-li">
-    <a href="/docs/help/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-docshelp"><span class="td-sidebar-nav-active-item">Help</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-idpickerdocshelp-li">
+    <a href="/docs-idpicker/docs/help/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocshelp"><span class="td-sidebar-nav-active-item">Help</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelptroubleshooting-li">
-    <a href="/docs/help/troubleshooting/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docshelptroubleshooting"><span class="">Troubleshooting</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docshelpfaq-li">
-    <a href="/docs/help/faq/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docshelpfaq"><span class="">FAQ</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocshelptroubleshooting-li">
+    <a href="/docs-idpicker/docs/help/troubleshooting/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocshelptroubleshooting"><span class="">Troubleshooting</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocshelpfaq-li">
+    <a href="/docs-idpicker/docs/help/faq/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocshelpfaq"><span class="">FAQ</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsreference-li">
-    <a href="/docs/reference/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsreference"><span class="">Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsreference-li">
+    <a href="/docs-idpicker/docs/reference/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsreference"><span class="">Reference</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsreferenceconfiguration-li">
-    <a href="/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
+    <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
   </li>
     </ul>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsusage-li">
-    <a href="/docs/usage/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docsusage"><span class="">Usage</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
+    <a href="/docs-idpicker/docs/usage/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsusage"><span class="">Usage</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsusagecommon-tasks-li">
-    <a href="/docs/usage/common-tasks/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsusagecommon-tasks"><span class="">Common Tasks</span></a>
-  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsusagebest-practices-li">
-    <a href="/docs/usage/best-practices/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docsusagebest-practices"><span class="">Best Practices</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsusagecommon-tasks-li">
+    <a href="/docs-idpicker/docs/usage/common-tasks/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsusagecommon-tasks"><span class="">Common Tasks</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsusagebest-practices-li">
+    <a href="/docs-idpicker/docs/usage/best-practices/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsusagebest-practices"><span class="">Best Practices</span></a>
   </li>
     </ul>
   </li>
@@ -256,6 +290,7 @@
           </aside>
           <aside class="td-sidebar-toc">
             <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/docs-idpicker/_print/docs/help/"><i class="fa-solid fa-print fa-fw"></i> Print entire section</a>
 
 </div>
 
@@ -272,7 +307,7 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/docs/">IDPicker User Manual</a></li>
+    <a href="/docs-idpicker/docs/">IDPicker User Manual</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     Help</li>
   </ol>
@@ -291,13 +326,13 @@
     <hr class="panel-line">
         <div class="entry">
                 <h5>
-                    <a href="/docs/help/troubleshooting/">Troubleshooting</a>
+                    <a href="/docs-idpicker/docs/help/troubleshooting/">Troubleshooting</a>
                 </h5>
                 <p>Operational playbooks for common platform issues</p>
             </div>
         <div class="entry">
                 <h5>
-                    <a href="/docs/help/faq/">FAQ</a>
+                    <a href="/docs-idpicker/docs/help/faq/">FAQ</a>
                 </h5>
                 <p>Frequently asked questions with practical answers</p>
             </div>
@@ -322,9 +357,9 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">CkZpbmQgYW5zd2VycyB0byBjb21tb24gaXNzdWVzIGFuZCBrbm93biBsaW1pdGF0aW9ucy4K</script>

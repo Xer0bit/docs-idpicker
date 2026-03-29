@@ -113,25 +113,11 @@
       <description>&lt;p&gt;As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-advisor-login&#34;&gt;1. Advisor Login&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your organization&amp;rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See &lt;a href=&#34;http://localhost:1313/docs/getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt; if you are unsure).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Advisor Login page.&lt;/li&gt;&#xA;&lt;li&gt;Enter your registered &lt;strong&gt;Email&lt;/strong&gt; and &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system initializes your specific role and permission set, then drops you onto your Dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why is my dashboard missing certain modules?&lt;/strong&gt;&#xA;If you are a &amp;ldquo;Sub-Advisor,&amp;rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>System Requirements</title>
-      <link>http://localhost:1313/docs/installation/requirements/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/installation/requirements/</guid>
-      <description>&lt;h2 id=&#34;minimum-requirements&#34;&gt;Minimum Requirements&lt;/h2&gt;&#xA;&lt;p&gt;List CPU, RAM, disk, and network requirements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;supported-platforms&#34;&gt;Supported Platforms&lt;/h2&gt;&#xA;&lt;p&gt;List supported operating systems and versions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;dependencies&#34;&gt;Dependencies&lt;/h2&gt;&#xA;&lt;p&gt;List required runtimes, tools, and services.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Language</title>
       <link>http://localhost:1313/docs/student-panel/language/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/student-panel/language/</guid>
       <description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;&#xA;&lt;h2 id=&#34;switch-language-normal-case&#34;&gt;Switch Language (Normal Case)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Click language switcher.&lt;/li&gt;&#xA;&lt;li&gt;Select target language.&lt;/li&gt;&#xA;&lt;li&gt;Wait for UI text refresh.&lt;/li&gt;&#xA;&lt;li&gt;Navigate to another page to confirm persistence.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;switch-language-during-in-progress-assessment&#34;&gt;Switch Language During In-Progress Assessment&lt;/h2&gt;&#xA;&lt;p&gt;If an assessment is in progress, a confirmation dialog can appear.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select new language.&lt;/li&gt;&#xA;&lt;li&gt;Read warning: in-progress assessment may be reset.&lt;/li&gt;&#xA;&lt;li&gt;Click Cancel to keep current language and progress.&lt;/li&gt;&#xA;&lt;li&gt;Or click Confirm to switch language and reset in-progress state.&lt;/li&gt;&#xA;&lt;li&gt;Page reloads with selected language.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;validation-checklist&#34;&gt;Validation Checklist&lt;/h2&gt;&#xA;&lt;p&gt;After language switch, verify:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Setup</title>
-      <link>http://localhost:1313/docs/installation/setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/installation/setup/</guid>
-      <description>&lt;h2 id=&#34;install-steps&#34;&gt;Install Steps&lt;/h2&gt;&#xA;&lt;p&gt;Document installation commands or installer steps.&lt;/p&gt;&#xA;&lt;h2 id=&#34;configure-settings&#34;&gt;Configure Settings&lt;/h2&gt;&#xA;&lt;p&gt;Describe required configuration values.&lt;/p&gt;&#xA;&lt;h2 id=&#34;validate-installation&#34;&gt;Validate Installation&lt;/h2&gt;&#xA;&lt;p&gt;Provide checks to confirm successful setup.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Students and Bulk Import</title>

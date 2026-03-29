@@ -7,7 +7,7 @@ draft: false
 
 This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.
 
-## A) Edit Profile (Click-by-Click)
+## 1. Edit Profile (Click-by-Click)
 
 1. In sidebar, click Profile.
 2. Click Edit Profile.
@@ -28,7 +28,7 @@ If save fails:
 - Recheck required fields and URL formats.
 - Retry once after page refresh.
 
-## B) Switch Recommendation Track from Settings
+## 2. Switch Recommendation Track from Settings
 
 1. In sidebar, click Settings.
 2. Locate Guidance Track section.
@@ -36,7 +36,7 @@ If save fails:
 4. Wait for saved confirmation.
 5. Open Recommendations and confirm new mode.
 
-## C) Link Parent Account
+## 3. Link Parent Account
 
 1. Stay on Settings page.
 2. Locate Parent Linking section.
@@ -50,14 +50,14 @@ Possible outcomes:
 - Linked immediately
 - Pending until parent-side confirmation flow
 
-## D) Remove Parent Access
+## 4. Remove Parent Access
 
 1. In Parent Links list, locate linked parent row.
 2. Click Unlink.
 3. Confirm action.
 4. Verify parent is removed from linked list.
 
-## E) Delete Student Account (High Risk)
+## 5. Delete Student Account (High Risk)
 
 1. In Settings, open Delete Account area.
 2. Click Delete Account.

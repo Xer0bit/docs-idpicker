@@ -20,7 +20,7 @@ The Recommendations page is the heart of the IDPicker platform. Once your assess
 
 ![Recommendations summary banner showing found count, pass counter, and ranked university cards below](/images/user-manual/student-panel/recommendations-overview.png)
 
-*Image placeholder: Add screenshot of the Recommendations page — show the summary banner with found count and pass counter, and at least 2 university cards ranked below it.*
+Image placeholder: Add screenshot of the Recommendations page — show the summary banner with found count and pass counter, and at least 2 university cards ranked below it.
 
 ---
 
@@ -37,7 +37,7 @@ Click the tile for the mode you want — the selected tile gets a highlighted bo
 
 ![Recommendation input section showing Test Scores tile and Personality tile with selection highlight](/images/user-manual/student-panel/recommendations-input-mode.png)
 
-*Image placeholder: Add screenshot of the refinement panel showing both input mode tiles (Test Scores and Personality) with one selected and highlighted.*
+Image placeholder: Add screenshot of the refinement panel showing both input mode tiles (Test Scores and Personality) with one selected and highlighted.
 
 ---
 
@@ -65,7 +65,7 @@ IDPicker supports up to **3 exam slots** (shown as **1/3** in the panel). Each s
 
 ![Exam score palette showing exam name, score, and ranking input fields for the first exam slot](/images/user-manual/student-panel/recommendations-exam-slot.png)
 
-*Image placeholder: Add screenshot of the exam score palette with the first slot’s Exam name, Score, and Ranking (optional) fields visible and empty.*
+Image placeholder: Add screenshot of the exam score palette with the first slot’s Exam name, Score, and Ranking (optional) fields visible and empty.
 
 ### 3c. Adding a Second or Third Exam
 
@@ -95,7 +95,7 @@ Other common Turkish exam entries:
 
 ![Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example](/images/user-manual/student-panel/recommendations-yks-example.png)
 
-*Image placeholder: Add screenshot of the score palette with YKS–SAY entered as exam name, a numeric score, and a ranking value filled in as a demonstrative example.*
+Image placeholder: Add screenshot of the score palette with YKS–SAY entered as exam name, a numeric score, and a ranking value filled in as a demonstrative example.
 
 ### 3e. Applying Your Scores
 
@@ -106,7 +106,7 @@ Other common Turkish exam entries:
 
 ![Apply All Filters button highlighted at the bottom of the refinement panel](/images/user-manual/student-panel/recommendations-apply-filters.png)
 
-*Image placeholder: Add screenshot of the Apply All Filters button at the bottom of the refinement panel, highlighted or in focus.*
+Image placeholder: Add screenshot of the Apply All Filters button at the bottom of the refinement panel, highlighted or in focus.
 
 ---
 
@@ -119,11 +119,11 @@ If you have completed the Personality assessment on IDPicker, you can let the AI
 3. Click **Apply All Filters**.
 4. The AI re-ranks your recommendations based on trait compatibility with each university or career programme.
 
-> **Note:** This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to [Assessment](/docs/student-panel/assessment/) first.
+> **Note:** This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to [Assessment]({{< relref "/docs/student-panel/assessment" >}}) first.
 
 ![Personality tile selected in the recommendation input section with no additional input fields visible](/images/user-manual/student-panel/recommendations-personality-mode.png)
 
-*Image placeholder: Add screenshot of the refinement panel with the Personality tile selected — no exam input fields should be visible.*
+Image placeholder: Add screenshot of the refinement panel with the Personality tile selected — no exam input fields should be visible.
 
 ---
 
@@ -140,7 +140,7 @@ The **Refine by Country** dropdown narrows results to universities located in a 
 
 ![Country dropdown open with a country selected in the Refine by section of the recommendations panel](/images/user-manual/student-panel/recommendations-country-filter.png)
 
-*Image placeholder: Add screenshot of the country dropdown open with a country selected inside the Refine by section.*
+Image placeholder: Add screenshot of the country dropdown open with a country selected inside the Refine by section.
 
 ---
 
@@ -156,7 +156,7 @@ After country-level filtering, you can drill down further by city using the **Fi
 
 ![Filter by city dropdown showing All cities default and a city selection in context of the results list](/images/user-manual/student-panel/recommendations-city-filter.png)
 
-*Image placeholder: Add screenshot of the Filter by city row above the results — show the dropdown open with All cities default and one city option highlighted.*
+Image placeholder: Add screenshot of the Filter by city row above the results — show the dropdown open with All cities default and one city option highlighted.
 
 ---
 
@@ -175,7 +175,7 @@ Click the university name to open its full detail page showing all programmes, r
 
 ![University recommendation card showing name, city, Premium badge, and programme detail summary](/images/user-manual/student-panel/recommendations-card-detail.png)
 
-*Image placeholder: Add screenshot of a recommendation card showing university name, city, Premium badge, and programme detail summary (mask any real student data).*
+Image placeholder: Add screenshot of a recommendation card showing university name, city, Premium badge, and programme detail summary (mask any real student data).
 
 ---
 
@@ -191,7 +191,7 @@ If your account plan supports it, you can export your recommendation profile as 
 
 ![Download My Report button and secure PDF link in a new tab](/images/user-manual/student-panel/recommendations-report-download.png)
 
-*Image placeholder: Add screenshot of the Download My Report button at the top of the page, and optionally the PDF open in a new browser tab.*
+Image placeholder: Add screenshot of the Download My Report button at the top of the page, and optionally the PDF open in a new browser tab.
 
 ---
 
@@ -200,7 +200,7 @@ If your account plan supports it, you can export your recommendation profile as 
 | Situation | What to do |
 |---|---|
 | The recommendations feel inaccurate | Retake the assessment if you rushed through it, then apply filters again |
-| I want career results, not universities | Use the Guidance Track switcher to change focus — see [Assessment](/docs/student-panel/assessment/) |
+| I want career results, not universities | Use the Guidance Track switcher to change focus — see [Assessment]({{< relref "/docs/student-panel/assessment" >}}) |
 | The Personality tile is locked | Complete the Personality assessment first under the Assessment module |
 | I entered my YKS score but the list did not change | Make sure you clicked **Apply All Filters** after entering the score |
 | The **+** button to add more exams is disabled | You have reached the 3-exam limit. Clear one row to replace it |

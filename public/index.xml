@@ -1,347 +1,1196 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>IDPicker Docs</title>
-    <link>http://localhost:1313/docs-idpicker/</link>
-    <description>Recent content on IDPicker Docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/docs-idpicker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Roles and Permissions</title>
-      <link>http://localhost:1313/docs-idpicker/docs/getting-started/roles-and-permissions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/getting-started/roles-and-permissions/</guid>
-      <description>&lt;p&gt;IDPicker has five distinct user roles, each with a specific set of capabilities. Understanding what each role can and cannot do helps you set up accounts correctly and avoid confusion about access rights.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-the-five-roles-at-a-glance&#34;&gt;1. The Five Roles at a Glance&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Role&lt;/th&gt;&#xA;          &lt;th&gt;Who holds it&lt;/th&gt;&#xA;          &lt;th&gt;Primary purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Super Admin&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Platform owner / IT operations staff&lt;/td&gt;&#xA;          &lt;td&gt;Full control of technical settings, all organisations, global content, and billing&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Advisor&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Head counselor or primary school contact&lt;/td&gt;&#xA;          &lt;td&gt;Manages their student roster, runs forms, distributes resources, chats with families&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Sub-Advisor&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Assistant counselor or specialist staff&lt;/td&gt;&#xA;          &lt;td&gt;Operates within a restricted subset of the Advisor&amp;rsquo;s permissions and student scope&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Student&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;The young person using the platform&lt;/td&gt;&#xA;          &lt;td&gt;Completes assessments, explores recommendations, chats with their advisor and AI mentor&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Parent / Guardian&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Parent or legal guardian of a student&lt;/td&gt;&#xA;          &lt;td&gt;Monitors a linked child&amp;rsquo;s progress and communicates with the advisor&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-permission-comparison-table&#34;&gt;2. Permission Comparison Table&lt;/h2&gt;&#xA;&lt;h3 id=&#34;students-and-core-assessment&#34;&gt;Students and Core Assessment&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;          &lt;th&gt;Super Admin&lt;/th&gt;&#xA;          &lt;th&gt;Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Sub-Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Student&lt;/th&gt;&#xA;          &lt;th&gt;Parent&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Take self-assessments&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;View own assessment results&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;Read-only view&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;View any student&amp;rsquo;s results&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;Scoped only&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;Own child only&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Edit another user&amp;rsquo;s answers&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;forms-and-documents&#34;&gt;Forms and Documents&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;          &lt;th&gt;Super Admin&lt;/th&gt;&#xA;          &lt;th&gt;Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Sub-Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Student&lt;/th&gt;&#xA;          &lt;th&gt;Parent&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Create global forms&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Create organisation forms&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Submit a form response&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;View form responses&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;Own only&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Upload application documents&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Review / verify documents&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;communication&#34;&gt;Communication&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;          &lt;th&gt;Super Admin&lt;/th&gt;&#xA;          &lt;th&gt;Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Sub-Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Student&lt;/th&gt;&#xA;          &lt;th&gt;Parent&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Send notifications to all students&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Send notifications to own cohort&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Chat with their advisor&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Chat with a student&amp;rsquo;s parent&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Join a family group chat&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;user-and-organisation-management&#34;&gt;User and Organisation Management&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;          &lt;th&gt;Super Admin&lt;/th&gt;&#xA;          &lt;th&gt;Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Sub-Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Student&lt;/th&gt;&#xA;          &lt;th&gt;Parent&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Create organisations&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Invite advisors&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Invite sub-advisors&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Import students in bulk&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Link a parent to a student&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;Request only&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Delete any account&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;ai-and-content&#34;&gt;AI and Content&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;          &lt;th&gt;Super Admin&lt;/th&gt;&#xA;          &lt;th&gt;Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Sub-Advisor&lt;/th&gt;&#xA;          &lt;th&gt;Student&lt;/th&gt;&#xA;          &lt;th&gt;Parent&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Edit global AI system prompts&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Edit organisation-level prompts&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Use AI mentor chat&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Issue certificates&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;If permitted&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Generate a Journey Map PDF&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;—&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;          &lt;td&gt;✅&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;3-how-sub-advisor-permissions-work&#34;&gt;3. How Sub-Advisor Permissions Work&lt;/h2&gt;&#xA;&lt;p&gt;Sub-Advisors do not have a fixed permission set. Their access is configured entirely by their primary Advisor using the &lt;strong&gt;Permission Matrix&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Authentication</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/authentication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/authentication/</guid>
-      <description>&lt;p&gt;Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;before-you-begin&#34;&gt;Before You Begin&lt;/h2&gt;&#xA;&lt;p&gt;Make sure you have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The &lt;strong&gt;student login URL&lt;/strong&gt; for your environment — see &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;A valid email address you can check immediately&lt;/li&gt;&#xA;&lt;li&gt;A stable internet connection and an up-to-date browser&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;sign-in-with-email-and-password&#34;&gt;Sign In with Email and Password&lt;/h2&gt;&#xA;&lt;p&gt;This is the fastest path for returning students.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Overview</title>
-      <link>http://localhost:1313/docs-idpicker/docs/getting-started/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/getting-started/overview/</guid>
-      <description>&lt;p&gt;IDPicker is a career and university guidance platform that helps students discover their strengths, explore academic pathways, and receive AI-powered recommendations — all within a supervised ecosystem connecting students, advisors, and parents.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-what-idpicker-does&#34;&gt;1. What IDPicker Does&lt;/h2&gt;&#xA;&lt;p&gt;IDPicker guides students through a structured self-discovery and decision-making journey using three core engines:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Engine&lt;/th&gt;&#xA;          &lt;th&gt;What it does&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Psychometric Assessments&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Measures personality traits, aptitudes, and interests using validated questionnaires&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;AI Recommendations&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Matches universities and career programmes to each student&amp;rsquo;s unique profile&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;AI Mentorship&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Provides on-demand guidance conversations powered by the student&amp;rsquo;s own assessment data&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;The platform is used by individual students, school-based advisors managing hundreds of students, parents tracking their child&amp;rsquo;s progress, and organizational super-admins governing the entire deployment.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dashboard</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/dashboard/</guid>
-      <description>&lt;p&gt;The Dashboard is the first thing you see after logging in. It gives you a bird&amp;rsquo;s-eye view of everything that needs your attention — assessments, notifications, forms, invitations, and program recommendations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-you-see-on-the-dashboard&#34;&gt;What You See on the Dashboard&lt;/h2&gt;&#xA;&lt;p&gt;When you land on the dashboard, you will see several content blocks:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Block&lt;/th&gt;&#xA;          &lt;th&gt;What It Shows&lt;/th&gt;&#xA;          &lt;th&gt;What to Do&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Assessment Reports&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Your latest completed assessment output&lt;/td&gt;&#xA;          &lt;td&gt;Download or view your report&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Assigned Forms&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Forms sent to you by your advisor or organization&lt;/td&gt;&#xA;          &lt;td&gt;Open and respond&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Organization Invitations&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Pending invitations to join an organization&lt;/td&gt;&#xA;          &lt;td&gt;Accept or Decline&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Notifications&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;System and advisor announcements&lt;/td&gt;&#xA;          &lt;td&gt;Read and act on relevant items&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Promoted Programs&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Highlighted university/career programs&lt;/td&gt;&#xA;          &lt;td&gt;Browse and explore&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Random Programs&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Exploratory program discovery&lt;/td&gt;&#xA;          &lt;td&gt;Click into any that look interesting&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/dashboard-overview.png&#34; alt=&#34;Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quick Start</title>
-      <link>http://localhost:1313/docs-idpicker/docs/getting-started/quick-start/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/getting-started/quick-start/</guid>
-      <description>&lt;p&gt;This guide is for brand-new users — students, advisors, and parents — who want to get from zero to their first meaningful action in under 15 minutes. Follow the section that matches your role.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-opening-the-right-login-page&#34;&gt;1. Opening the Right Login Page&lt;/h2&gt;&#xA;&lt;p&gt;IDPicker has separate login portals for each role. Before anything else, make sure you are on the correct URL.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open your browser and navigate to the login address provided by your school, organization, or invitation email.&lt;/li&gt;&#xA;&lt;li&gt;Confirm the page title matches your role (e.g., &lt;em&gt;Student Login&lt;/em&gt;, &lt;em&gt;Advisor Login&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;If you are unsure of the correct URL, see the &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt; page.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Access URLs</title>
-      <link>http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/</guid>
-      <description>&lt;p&gt;Use this page as the single source of truth for platform URLs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;production-urls&#34;&gt;Production URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;          &lt;th&gt;URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Main Platform Login&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/login&#34;&gt;https://app.idpicker.com/login&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/student/dashboard&#34;&gt;https://app.idpicker.com/student/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/advisor/dashboard&#34;&gt;https://app.idpicker.com/advisor/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent Panel&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/parent/dashboard&#34;&gt;https://app.idpicker.com/parent/dashboard&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Help Center&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://app.idpicker.com/help-center&#34;&gt;https://app.idpicker.com/help-center&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;stagingtest-urls&#34;&gt;Staging/Test URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;          &lt;th&gt;URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;API Base&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://testapi.idpicker.com/api&#34;&gt;https://testapi.idpicker.com/api&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Language Preference API&lt;/td&gt;&#xA;          &lt;td&gt;&lt;a href=&#34;https://testapi.idpicker.com/api/set-language-preference/&#34;&gt;https://testapi.idpicker.com/api/set-language-preference/&lt;/a&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;url-validation-checklist&#34;&gt;URL Validation Checklist&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Login URL is reachable.&lt;/li&gt;&#xA;&lt;li&gt;Role-based panel redirects are correct.&lt;/li&gt;&#xA;&lt;li&gt;Unauthorized role access is blocked.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/getting-started/url-registry.png&#34; alt=&#34;URL Registry Placeholder&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Image placeholder: Add screenshot of browser tabs showing each panel URL after login.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assessment</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/assessment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/assessment/</guid>
-      <description>&lt;p&gt;Assessments are the core of IDPicker. Completing them unlocks your personalized career paths, university recommendations, and personality insights.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;starting-a-new-assessment&#34;&gt;Starting a New Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the left sidebar, click &lt;strong&gt;Self Assessment&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Look at the available assessment cards (e.g., &lt;em&gt;Personality&lt;/em&gt;, &lt;em&gt;Career&lt;/em&gt;).&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Note: Your school or organization may assign custom assessments here as well.&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Start&lt;/strong&gt; on the card you want to begin.&lt;/li&gt;&#xA;&lt;li&gt;Read the question instructions carefully.&lt;/li&gt;&#xA;&lt;li&gt;Select or type your answer, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Repeat until all questions are answered, then click &lt;strong&gt;Submit&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Recommendation</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/recommendations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/recommendations/</guid>
-      <description>&lt;p&gt;The Recommendations page is the heart of the IDPicker platform. Once your assessments are complete, the AI generates a personalized list of universities or career paths that match your profile. You can then sharpen those results in two powerful ways: by feeding in your real exam scores and rankings, or by leaning entirely on your completed personality profile. This guide walks through every option step by step.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-opening-your-recommendations&#34;&gt;1. Opening Your Recommendations&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the left sidebar, click &lt;strong&gt;Recommendations&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The page loads your results and displays a summary banner — for example, &lt;strong&gt;&amp;ldquo;Found 3 personalized recommendations&amp;rdquo;&lt;/strong&gt; — along with a pass counter (e.g. &lt;strong&gt;1/2&lt;/strong&gt;) that tracks how many refinement passes have been applied.&lt;/li&gt;&#xA;&lt;li&gt;Scroll down to see your university or career cards ranked by match strength.&lt;/li&gt;&#xA;&lt;li&gt;Click any card title to open its full detail view, which explains precisely why the AI selected it for your profile.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Personality</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/personality/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/personality/</guid>
-      <description>&lt;p&gt;The Personality module reveals who you are through eight measured psychological traits. After completing the Personality assessment, you receive a full analysis: an interactive radar chart, a personality overview with strength tiers, quick stat rankings, and individual trait cards with detailed interpretations and concrete action steps. This page explains every section so you can use your results to guide your studies, career choices, and personal growth.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Warning — Take the assessment in a calm, focused environment.&lt;/strong&gt; Your personality results are only as accurate as the honesty and mindfulness you bring to the questions. Find a quiet place, set aside at least 15–20 uninterrupted minutes, put your phone away, and answer each question based on how you &lt;em&gt;actually&lt;/em&gt; behave — not how you wish you behaved. Rushed or distracted answers will skew your trait scores and reduce the quality of your university and career recommendations.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AI Mentorship</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/ai-mentorship/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/ai-mentorship/</guid>
-      <description>&lt;p&gt;The Mentor Hub is your central communication space. Here, you can seek advice from specialized AI personalities or chat directly with your assigned human advisor.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;starting-a-chat-with-an-ai-mentor&#34;&gt;Starting a Chat with an AI Mentor&lt;/h2&gt;&#xA;&lt;p&gt;IDPicker provides multiple AI personalities, each tuned for specific types of advice (e.g., strict academic planning, empathetic career counseling, technical skills building).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Mentor&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Browse the grid of available mentor cards to find a personality that fits your current question.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Select/Open&lt;/strong&gt; on your preferred mentor.&lt;/li&gt;&#xA;&lt;li&gt;Once the chat interface opens, type your question into the message box at the bottom.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Send&lt;/strong&gt; icon.&lt;/li&gt;&#xA;&lt;li&gt;The AI will respond in real-time, contextually aware of your personality and recommendation profile!&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Quota Warning:&lt;/strong&gt; Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>University Search</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/university-search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/university-search/</guid>
-      <description>&lt;p&gt;The University Search module is your comprehensive database for discovering higher education programs worldwide. This guide explains how to use the search engine efficiently to build your target list.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;basic-keyword-search&#34;&gt;Basic Keyword Search&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;University Search&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait a moment for the filter panel and the default results area to load.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Search&lt;/strong&gt; input box at the top.&lt;/li&gt;&#xA;&lt;li&gt;Type a university name (e.g., &lt;em&gt;Harvard&lt;/em&gt;) or a program keyword (e.g., &lt;em&gt;Computer Science&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.&lt;/li&gt;&#xA;&lt;li&gt;Review your refined results.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/university-search-keyword.png&#34; alt=&#34;University search bar with keyword input and auto-filtered results grid&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Resources</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/resources/</guid>
-      <description>&lt;p&gt;The Resources module acts as your personal digital library. Whenever your advisor, school, or organization shares a helpful document, spreadsheet, or PDF, it lands here.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;browsing-the-resource-library&#34;&gt;Browsing the Resource Library&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;From the main sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait a second for your personalized file grid to load.&lt;/li&gt;&#xA;&lt;li&gt;You will immediately see files that are explicitly assigned to you, as well as globally visible files shared by your organization.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;searching-by-keyword&#34;&gt;Searching by Keyword&lt;/h3&gt;&#xA;&lt;p&gt;Know exactly what you are looking for?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Help Center</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/help-center/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/help-center/</guid>
-      <description>&lt;p&gt;Sometimes things break or you encounter a feature you do not understand. The Help Center is your direct line to the IDPicker platform support team.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;opening-a-new-support-ticket&#34;&gt;Opening a New Support Ticket&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Help Center&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Make sure the &lt;strong&gt;New Ticket&lt;/strong&gt; tab is selected.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Subject&lt;/strong&gt; line and type a brief, clear summary (e.g., &lt;em&gt;Cannot download personality report&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Select the matching &lt;strong&gt;Category&lt;/strong&gt; (Technical, Account, Billing, Feature, General, or Other).&lt;/li&gt;&#xA;&lt;li&gt;Select a &lt;strong&gt;Priority&lt;/strong&gt; (Low, Medium, High, Urgent).&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Note: Please only use Urgent for complete account blockers (like being totally unable to log in).&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;In the &lt;strong&gt;Description&lt;/strong&gt; box, provide as much detail as possible.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Submit&lt;/strong&gt; and wait for the success flash.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/help-center-new-ticket.png&#34; alt=&#34;New ticket form with subject, category, priority, and description fields filled in&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Notifications</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/notifications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/notifications/</guid>
-      <description>&lt;p&gt;IDPicker keeps you informed through a built-in notification system. Whenever your advisor sends you a message, assigns you a form, or an action requires your attention, a notification appears in your inbox so nothing falls through the cracks.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-opening-your-notification-inbox&#34;&gt;1. Opening Your Notification Inbox&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Look for the &lt;strong&gt;Bell icon&lt;/strong&gt; in the top navigation bar.&lt;/li&gt;&#xA;&lt;li&gt;A red badge on the bell shows how many unread notifications you have.&lt;/li&gt;&#xA;&lt;li&gt;Click the bell to open the &lt;strong&gt;Notification Dropdown&lt;/strong&gt; — this shows your five most recent messages.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;View All Notifications&lt;/strong&gt; at the bottom of the dropdown to open the full inbox page.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/student-panel/notifications-dropdown.png&#34; alt=&#34;Notification bell icon with a red unread badge and the dropdown panel showing recent notifications&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Subscription</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/subscription/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/subscription/</guid>
-      <description>&lt;p&gt;This guide explains how students identify free-plan limits and use upgrade paths.&lt;/p&gt;&#xA;&lt;h2 id=&#34;understand-feature-limits&#34;&gt;Understand Feature Limits&lt;/h2&gt;&#xA;&lt;p&gt;Free-plan limits can apply to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mentor chat usage&lt;/li&gt;&#xA;&lt;li&gt;Assessment/recommendation usage counters&lt;/li&gt;&#xA;&lt;li&gt;Full report download availability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;where-students-see-limit-signals&#34;&gt;Where Students See Limit Signals&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open a quota-sensitive module (Mentor, Assessments, Recommendations).&lt;/li&gt;&#xA;&lt;li&gt;Locate quota indicator or blocked state.&lt;/li&gt;&#xA;&lt;li&gt;Read remaining usage and limit label.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;upgrade-flow-from-feature-context&#34;&gt;Upgrade Flow from Feature Context&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Reach a gated/limited action.&lt;/li&gt;&#xA;&lt;li&gt;Click Upgrade or equivalent CTA.&lt;/li&gt;&#xA;&lt;li&gt;Follow the presented flow for plan upgrade.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Note:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Account and Settings</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/account-settings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/account-settings/</guid>
-      <description>&lt;p&gt;This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-edit-profile-click-by-click&#34;&gt;A) Edit Profile (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Profile.&lt;/li&gt;&#xA;&lt;li&gt;Click Edit Profile.&lt;/li&gt;&#xA;&lt;li&gt;Update fields as needed:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First name&lt;/li&gt;&#xA;&lt;li&gt;Last name&lt;/li&gt;&#xA;&lt;li&gt;Bio&lt;/li&gt;&#xA;&lt;li&gt;Location&lt;/li&gt;&#xA;&lt;li&gt;Job title&lt;/li&gt;&#xA;&lt;li&gt;Gender&lt;/li&gt;&#xA;&lt;li&gt;Instagram URL&lt;/li&gt;&#xA;&lt;li&gt;X URL&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click Save.&lt;/li&gt;&#xA;&lt;li&gt;Wait for success confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;If save fails:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Recheck required fields and URL formats.&lt;/li&gt;&#xA;&lt;li&gt;Retry once after page refresh.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;b-switch-recommendation-track-from-settings&#34;&gt;B) Switch Recommendation Track from Settings&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Settings.&lt;/li&gt;&#xA;&lt;li&gt;Locate Guidance Track section.&lt;/li&gt;&#xA;&lt;li&gt;Click switch action (Career/University).&lt;/li&gt;&#xA;&lt;li&gt;Wait for saved confirmation.&lt;/li&gt;&#xA;&lt;li&gt;Open Recommendations and confirm new mode.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-link-parent-account&#34;&gt;C) Link Parent Account&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Stay on Settings page.&lt;/li&gt;&#xA;&lt;li&gt;Locate Parent Linking section.&lt;/li&gt;&#xA;&lt;li&gt;Click parent email input.&lt;/li&gt;&#xA;&lt;li&gt;Enter parent email.&lt;/li&gt;&#xA;&lt;li&gt;Click Send/Request Link.&lt;/li&gt;&#xA;&lt;li&gt;Wait for confirmation.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Possible outcomes:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Advisor Login and Dashboard</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid>
-      <description>&lt;p&gt;As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-advisor-login&#34;&gt;1. Advisor Login&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your organization&amp;rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt; if you are unsure).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Advisor Login page.&lt;/li&gt;&#xA;&lt;li&gt;Enter your registered &lt;strong&gt;Email&lt;/strong&gt; and &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system initializes your specific role and permission set, then drops you onto your Dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why is my dashboard missing certain modules?&lt;/strong&gt;&#xA;If you are a &amp;ldquo;Sub-Advisor,&amp;rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Language</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/language/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/language/</guid>
-      <description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;&#xA;&lt;h2 id=&#34;switch-language-normal-case&#34;&gt;Switch Language (Normal Case)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Click language switcher.&lt;/li&gt;&#xA;&lt;li&gt;Select target language.&lt;/li&gt;&#xA;&lt;li&gt;Wait for UI text refresh.&lt;/li&gt;&#xA;&lt;li&gt;Navigate to another page to confirm persistence.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;switch-language-during-in-progress-assessment&#34;&gt;Switch Language During In-Progress Assessment&lt;/h2&gt;&#xA;&lt;p&gt;If an assessment is in progress, a confirmation dialog can appear.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select new language.&lt;/li&gt;&#xA;&lt;li&gt;Read warning: in-progress assessment may be reset.&lt;/li&gt;&#xA;&lt;li&gt;Click Cancel to keep current language and progress.&lt;/li&gt;&#xA;&lt;li&gt;Or click Confirm to switch language and reset in-progress state.&lt;/li&gt;&#xA;&lt;li&gt;Page reloads with selected language.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;validation-checklist&#34;&gt;Validation Checklist&lt;/h2&gt;&#xA;&lt;p&gt;After language switch, verify:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Students and Bulk Import</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</guid>
-      <description>&lt;p&gt;The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;searching-and-filtering-your-roster&#34;&gt;Searching and Filtering Your Roster&lt;/h2&gt;&#xA;&lt;p&gt;When you open the &lt;strong&gt;Students&lt;/strong&gt; module from the sidebar, you see your entire authorized roster.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Search:&lt;/strong&gt; Use the search bar to find a student quickly by name or email.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Filter:&lt;/strong&gt; Narrow down your list using the drop-down filters. You can filter by:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Assigned Groups&lt;/li&gt;&#xA;&lt;li&gt;Chat status (e.g., awaiting reply)&lt;/li&gt;&#xA;&lt;li&gt;Assessment signals (e.g., completed, missing)&lt;/li&gt;&#xA;&lt;li&gt;Joined date or location&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Click the column headers (Name, Email, Joined Date) to reorder the list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;viewing-student-details&#34;&gt;Viewing Student Details&lt;/h3&gt;&#xA;&lt;p&gt;Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Certificates and Application Documents</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</guid>
-      <description>&lt;p&gt;This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-issuing-a-certificate&#34;&gt;1. Issuing a Certificate&lt;/h2&gt;&#xA;&lt;p&gt;Certificates are formal, advisor-generated recognitions that appear in the student&amp;rsquo;s Certificates module and can be downloaded as PDFs.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Certificates&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Issue Certificate&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A certificate builder dialog opens. Fill in:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Student&lt;/strong&gt; — Search and select the recipient.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Certificate Type&lt;/strong&gt; — Choose from available templates (e.g., &lt;em&gt;Assessment Completion&lt;/em&gt;, &lt;em&gt;Programme Readiness&lt;/em&gt;, &lt;em&gt;Participation&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Issue Date&lt;/strong&gt; — Defaults to today; change if back-dating is required.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt; &lt;em&gt;(Optional)&lt;/em&gt; — Add a personalised message that will appear on the certificate document.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Issue&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The certificate is immediately added to the student&amp;rsquo;s account. They will see it in their &lt;strong&gt;Certificates and Documents&lt;/strong&gt; section and receive a notification.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Certificates and Application Documents</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/certificates-and-documents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/certificates-and-documents/</guid>
-      <description>&lt;p&gt;This guide covers two high-value student workflows: earned certificates and application document submission.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-certificates-click-by-click&#34;&gt;A) Certificates (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Certificates.&lt;/li&gt;&#xA;&lt;li&gt;Wait for cards to load.&lt;/li&gt;&#xA;&lt;li&gt;Use search input to find by template/subject/issuer.&lt;/li&gt;&#xA;&lt;li&gt;Use filter tabs: All, Certificate, Badge.&lt;/li&gt;&#xA;&lt;li&gt;Click a certificate card to open detail dialog.&lt;/li&gt;&#xA;&lt;li&gt;Review:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Template name&lt;/li&gt;&#xA;&lt;li&gt;Subject&lt;/li&gt;&#xA;&lt;li&gt;Issuer&lt;/li&gt;&#xA;&lt;li&gt;Issue date&lt;/li&gt;&#xA;&lt;li&gt;Status&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click Copy ID to copy verification identifier.&lt;/li&gt;&#xA;&lt;li&gt;If download link exists, click Download.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;b-application-documents-setup&#34;&gt;B) Application Documents Setup&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In sidebar, click Application Documents.&lt;/li&gt;&#xA;&lt;li&gt;First-time users: choose nationality (Turkish/International).&lt;/li&gt;&#xA;&lt;li&gt;Collection is created.&lt;/li&gt;&#xA;&lt;li&gt;Wait for step categories and requirements to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;c-upload-documents-by-step-click-by-click&#34;&gt;C) Upload Documents by Step (Click-by-Click)&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select step/category tab.&lt;/li&gt;&#xA;&lt;li&gt;Select required document type.&lt;/li&gt;&#xA;&lt;li&gt;Choose file from device.&lt;/li&gt;&#xA;&lt;li&gt;Add optional notes.&lt;/li&gt;&#xA;&lt;li&gt;Click Upload.&lt;/li&gt;&#xA;&lt;li&gt;Repeat for all required items in current step.&lt;/li&gt;&#xA;&lt;li&gt;Mark step complete when requirements are satisfied.&lt;/li&gt;&#xA;&lt;li&gt;Continue until all steps are complete.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;d-review-status-and-fix-invalid-files&#34;&gt;D) Review Status and Fix Invalid Files&lt;/h2&gt;&#xA;&lt;p&gt;Each document may show:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assigned Forms</title>
-      <link>http://localhost:1313/docs-idpicker/docs/student-panel/assigned-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/student-panel/assigned-forms/</guid>
-      <description>&lt;p&gt;Assigned forms are organization/advisor forms that students complete from dashboard or direct link.&lt;/p&gt;&#xA;&lt;h2 id=&#34;open-assigned-form-from-dashboard&#34;&gt;Open Assigned Form from Dashboard&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open Dashboard.&lt;/li&gt;&#xA;&lt;li&gt;Locate Assigned Forms block.&lt;/li&gt;&#xA;&lt;li&gt;Click Open Form on pending item.&lt;/li&gt;&#xA;&lt;li&gt;Wait for form page to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;understand-form-header&#34;&gt;Understand Form Header&lt;/h2&gt;&#xA;&lt;p&gt;At top, you may see:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Organization banner image&lt;/li&gt;&#xA;&lt;li&gt;Form title&lt;/li&gt;&#xA;&lt;li&gt;Form description&lt;/li&gt;&#xA;&lt;li&gt;Editability state&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;complete-form-fields-click-by-click&#34;&gt;Complete Form Fields (Click-by-Click)&lt;/h2&gt;&#xA;&lt;p&gt;For each field:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Read label and required indicator.&lt;/li&gt;&#xA;&lt;li&gt;Click input control.&lt;/li&gt;&#xA;&lt;li&gt;Enter/select response.&lt;/li&gt;&#xA;&lt;li&gt;Continue to next field.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Supported field patterns include text, textarea, number, email, dropdown, radio, checkbox, date/time/datetime, and rating.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Enrollment, Family Chat, and Assessments</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</guid>
-      <description>&lt;p&gt;This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-enrollment-requests&#34;&gt;1. Managing Enrollment Requests&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your organization&amp;rsquo;s configuration, students who register may not join your roster automatically. They may land in an approval queue.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Enrollment Requests&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A list of pending student accounts will appear.&lt;/li&gt;&#xA;&lt;li&gt;Click into a request to review the individual&amp;rsquo;s profile to verify they belong to your organization.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Approve&lt;/strong&gt; to admit them (which grants them full platform access and adds them to your Students roster).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Deny&lt;/strong&gt; if they do not belong.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/enrollment-requests.png&#34; alt=&#34;Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Forms and Responses</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/forms-and-responses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/forms-and-responses/</guid>
-      <description>&lt;p&gt;The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;understanding-the-forms-lifecycle&#34;&gt;Understanding the Forms Lifecycle&lt;/h2&gt;&#xA;&lt;p&gt;Every form moves through a specific lifecycle:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Draft:&lt;/strong&gt; The form is being built and is invisible to students.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Published:&lt;/strong&gt; The form is actively collecting data and is visible to assigned students on their dashboard.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Archived:&lt;/strong&gt; (If applicable) The form is no longer accepting new responses, but old data is preserved.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-and-publishing-a-form&#34;&gt;1. Creating and Publishing a Form&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Forms&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create New Form&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter a &lt;strong&gt;Title&lt;/strong&gt; and a helpful &lt;strong&gt;Description&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save as Draft&lt;/strong&gt; while you are still working on it.&lt;/li&gt;&#xA;&lt;li&gt;When you are completely finished, select your target audience (groups or specific students) and change the status to &lt;strong&gt;Publish&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;preview-before-publishing&#34;&gt;Preview Before Publishing&lt;/h3&gt;&#xA;&lt;p&gt;Always click the &lt;strong&gt;Preview&lt;/strong&gt; action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Groups Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/groups/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/groups/</guid>
-      <description>&lt;p&gt;Groups are an essential organizational tool. By grouping students—whether by graduation year, specific study tracks, or custom campaign objectives—you can distribute forms, share resources, and send notifications much more efficiently.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-group&#34;&gt;1. Creating a New Group&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Groups&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait for the current groups list to load.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Create Group&lt;/strong&gt; button.&lt;/li&gt;&#xA;&lt;li&gt;Enter a clear, descriptive &lt;strong&gt;Group Name&lt;/strong&gt; (e.g., &amp;ldquo;Class of 2026 - Engineering Track&amp;rdquo;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;(Optional)&lt;/em&gt; Add a short description for your own internal reference.&lt;/li&gt;&#xA;&lt;li&gt;A student selector will appear. Select the specific students you want to add to this group right now.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. Your new group appears in the list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;best-practices-for-naming-groups&#34;&gt;Best Practices for Naming Groups&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be Consistent:&lt;/strong&gt; Use a standard naming convention (e.g., &lt;code&gt;[Year] - [Major/Track] - [Cohort]&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be Specific:&lt;/strong&gt; &amp;ldquo;Group A&amp;rdquo; becomes impossible to manage after a few months.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Review Often:&lt;/strong&gt; Clean up and delete groups when a cohort graduates or finishes a campaign.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/groups-create.png&#34; alt=&#34;Create group dialog showing group name field, description field, and student selector checkboxes&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Notifications</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/notifications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/notifications/</guid>
-      <description>&lt;p&gt;The Notifications module is your mass-communication tool. Instead of sending hundreds of individual emails, use notifications to broadcast platform-native announcements, reminders, and alerts directly to student dashboards.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-broadcast&#34;&gt;1. Creating a New Broadcast&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Notifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;You will see a history of your past broadcasts. Click &lt;strong&gt;Create Notification&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter a clear, attention-grabbing &lt;strong&gt;Title&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Type your &lt;strong&gt;Message Body&lt;/strong&gt;. Keep it concise but ensure all necessary links or action items are included.&lt;/li&gt;&#xA;&lt;li&gt;Select your &lt;strong&gt;Target Type&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;All Students&lt;/code&gt;: Broadcasts to every single student in your organization. Use sparingly.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Selected Users&lt;/code&gt;: Allows you to hand-pick individuals.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Selected Groups&lt;/code&gt;: The most common option. Targets a pre-made cohort (e.g., &amp;ldquo;Seniors&amp;rdquo;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;If you chose Users or Groups, a selection interface will appear. Pick your targets.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Send&lt;/strong&gt; (or &lt;strong&gt;Create&lt;/strong&gt;).&lt;/li&gt;&#xA;&lt;li&gt;The notification is immediately dispatched and will appear in your history list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/notifications-compose.png&#34; alt=&#34;Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Profile, Prompts, and Interests</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</guid>
-      <description>&lt;p&gt;This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&amp;rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-updating-your-advisor-profile&#34;&gt;1. Updating Your Advisor Profile&lt;/h2&gt;&#xA;&lt;p&gt;Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click your &lt;strong&gt;Avatar&lt;/strong&gt; or &lt;strong&gt;Profile&lt;/strong&gt; link.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Edit Profile&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Update any of the following:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Display Name&lt;/strong&gt; and &lt;strong&gt;Title&lt;/strong&gt; (e.g., &lt;em&gt;Senior Career Counselor&lt;/em&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bio&lt;/strong&gt; — A short paragraph about your background and specialties&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Avatar&lt;/strong&gt; — Upload a clear headshot (recommended: square, at least 400×400 px)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Details&lt;/strong&gt; — Office hours, phone extension, or secondary email if relevant&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Organization Data&lt;/strong&gt; — Department, branch, or campus information if your platform supports it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save Profile&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Verify the preview panel on the right shows the updated name and avatar correctly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png&#34; alt=&#34;Advisor profile editor showing name, title, bio, and avatar upload fields&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Resources Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/resources/</guid>
-      <description>&lt;p&gt;The Resources module operates as a secure file-sharing library. Advisors can upload helpful materials—like study guides, university brochures, or policy PDFs—and control exactly which students are allowed to see them.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-uploading-a-new-resource&#34;&gt;1. Uploading a New Resource&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Upload Resource&lt;/strong&gt; button at the top of the screen.&lt;/li&gt;&#xA;&lt;li&gt;Click to browse your device, or drag-and-drop your target file.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the metadata:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; (Required) A clear, recognizable title.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; (Optional) Add context on why this file is helpful.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (If enabled) Tag the file to keep the library organized.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Choose your initial visibility setting (&lt;code&gt;Visible to All&lt;/code&gt; or &lt;code&gt;Assigned Only&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Upload&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait for the upload to complete and verify the file appears in your library list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/resources-upload.png&#34; alt=&#34;Resource upload dialog showing file drop zone, name field, description field, and visibility toggle&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sub-Advisor Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid>
-      <description>&lt;p&gt;If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-sub-advisor&#34;&gt;1. Creating a New Sub-Advisor&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Sub-Advisors&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Create Sub-Advisor&lt;/strong&gt; button.&lt;/li&gt;&#xA;&lt;li&gt;Fill in their identity details:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Full Name&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt; (This will be their login)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Set their &lt;strong&gt;Assigned Scope&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If you want them to text &lt;em&gt;only&lt;/em&gt; 12th graders, assign them explicitly to the &amp;ldquo;12th Graders&amp;rdquo; Group. They will not be able to see any students outside of that group.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Configure their &lt;strong&gt;Permission Set&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Decide exactly which modules they can see (e.g., enable &lt;em&gt;Students&lt;/em&gt; and &lt;em&gt;Chat&lt;/em&gt;, but disable &lt;em&gt;Forms&lt;/em&gt; and &lt;em&gt;Settings&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save / Create&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system will email them an invitation link to set up their password.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png&#34; alt=&#34;Sub-advisor creation form showing name, email, scope selector, and permission checkboxes&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Authentication and Account</title>
-      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/authentication-and-account/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/authentication-and-account/</guid>
-      <description>&lt;p&gt;Parents use the IDPicker Parent Panel to monitor their child&amp;rsquo;s progress, review recommendations, and communicate with advisors. This guide covers how to get your account set up and securely log in.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-registering-a-new-parent-account&#34;&gt;1. Registering a New Parent Account&lt;/h2&gt;&#xA;&lt;p&gt;If you are new to the platform:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/&#34;&gt;Parent Registration URL&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Fill out the registration form with your &lt;strong&gt;Email&lt;/strong&gt;, &lt;strong&gt;Full Name&lt;/strong&gt;, and a &lt;strong&gt;Strong Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Check the consent checkbox at the bottom of the form.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Register&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system will tell you to check your email for a verification link.&lt;/li&gt;&#xA;&lt;li&gt;Open your inbox, click the verification link, and you will be routed automatically back to the platform to log in.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Verification Link Expired?&lt;/strong&gt; If you clicked the email verification link and it says expired, simply go to the login page, enter your email, and click the &lt;strong&gt;Resend Verification&lt;/strong&gt; button.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Common Tasks</title>
-      <link>http://localhost:1313/docs-idpicker/docs/usage/common-tasks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/usage/common-tasks/</guid>
-      <description>&lt;h2 id=&#34;task-1&#34;&gt;Task 1&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;&#xA;&lt;h2 id=&#34;task-2&#34;&gt;Task 2&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;&#xA;&lt;h2 id=&#34;task-3&#34;&gt;Task 3&lt;/h2&gt;&#xA;&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Support Tickets</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/support-tickets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/support-tickets/</guid>
-      <description>&lt;p&gt;The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-opening-the-ticket-queue&#34;&gt;1. Opening the Ticket Queue&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The queue loads with a summary row at the top showing counts by status: &lt;em&gt;Pending&lt;/em&gt;, &lt;em&gt;In Progress&lt;/em&gt;, &lt;em&gt;Resolved&lt;/em&gt;, &lt;em&gt;Closed&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by &lt;strong&gt;Priority&lt;/strong&gt; immediately.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Start every support session by filtering for &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt;. These are the issues blocking students right now.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Best Practices</title>
-      <link>http://localhost:1313/docs-idpicker/docs/usage/best-practices/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/usage/best-practices/</guid>
-      <description>&lt;h2 id=&#34;recommended-workflow&#34;&gt;Recommended Workflow&lt;/h2&gt;&#xA;&lt;p&gt;Explain the preferred sequence of actions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;security-tips&#34;&gt;Security Tips&lt;/h2&gt;&#xA;&lt;p&gt;List secure usage guidelines.&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance-tips&#34;&gt;Performance Tips&lt;/h2&gt;&#xA;&lt;p&gt;Describe ways to keep usage efficient.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dashboard and Linked Overview</title>
-      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/</guid>
-      <description>&lt;p&gt;Once you are logged in, the Parent Dashboard is your main command center. It provides an at-a-glance summary for every child linked to your account.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-understanding-dashboard-blocks&#34;&gt;1. Understanding Dashboard Blocks&lt;/h2&gt;&#xA;&lt;p&gt;When you land on the dashboard, you will immediately see:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Linked Children Cards:&lt;/strong&gt; A dedicated card for each of your linked students showing their name, avatar, and quick progress percentage.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Progress Snapshots:&lt;/strong&gt; High-level metrics showing how many assessments have been completed across your family.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Advisor Activity Indicators:&lt;/strong&gt; Quick badges showing if you have unread messages from your child&amp;rsquo;s advisor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Link Student Form:&lt;/strong&gt; The input box used to request access to a new child&amp;rsquo;s account.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-how-to-link-your-child&#34;&gt;2. How to Link Your Child&lt;/h2&gt;&#xA;&lt;p&gt;Before the dashboard shows any meaningful data, you must link your parent account to your child&amp;rsquo;s student account.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Parent Forms</title>
-      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/forms/</guid>
-      <description>&lt;p&gt;Advisors and administrators can assign forms to parents for collecting consent, supplementary information, or progress feedback. This guide walks you through opening, completing, and submitting a form from the parent panel.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-finding-a-form-to-complete&#34;&gt;1. Finding a Form to Complete&lt;/h2&gt;&#xA;&lt;p&gt;Forms assigned to you appear in two places:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dashboard notification banner&lt;/strong&gt; — A highlighted card appears when you have a pending form requiring a response.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Notifications panel&lt;/strong&gt; — Click the bell icon in the top menu and look for a notification labelled &lt;em&gt;Form Assigned&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Click the notification or the dashboard banner to open the form directly.&lt;/li&gt;&#xA;&lt;li&gt;Alternatively, navigate to &lt;strong&gt;Forms&lt;/strong&gt; in the sidebar to see all forms assigned to your account.&lt;/li&gt;&#xA;&lt;li&gt;Forms with a &lt;strong&gt;Pending&lt;/strong&gt; status badge still require your response. Forms marked &lt;strong&gt;Submitted&lt;/strong&gt; are read-only.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/parent-panel/parent-forms-list.png&#34; alt=&#34;Parent forms list showing form names, submission status badges, and due dates&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Linked Student</title>
-      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/linked-student-guide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/linked-student-guide/</guid>
-      <description>&lt;p&gt;IDPicker requires explicit linking between a Parent account and a Student account to protect student privacy. This guide explains how to establish that link and what you can (and cannot) see.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-requesting-a-link-by-email&#34;&gt;1. Requesting a Link by Email&lt;/h2&gt;&#xA;&lt;p&gt;If your child&amp;rsquo;s school has not automatically linked your accounts, you must initiate the request from your dashboard.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Sign in to your &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/&#34;&gt;Parent Dashboard&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Locate the &lt;strong&gt;Link Student&lt;/strong&gt; form.&lt;/li&gt;&#xA;&lt;li&gt;In the input box, carefully type the exact email address your child used to register.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Send Link Request&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Depending on the platform settings, you will experience one of two outcomes:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Student Detail, Journey Map, and Advisor Chat</title>
-      <link>http://localhost:1313/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/</guid>
-      <description>&lt;p&gt;Once you open a linked student&amp;rsquo;s profile from your dashboard, you gain access to powerful tracking tools and direct communication lines with their educational team.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-reviewing-progress-and-insights&#34;&gt;1. Reviewing Progress and Insights&lt;/h2&gt;&#xA;&lt;p&gt;At the top of the student detail page, you will see their &lt;strong&gt;Basic Profile&lt;/strong&gt; (name, age, grade). Below this, the page is broken down into insight blocks:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Assessment Progress:&lt;/strong&gt; Quickly see which required psychological or educational assessments your child has completed, and which are still pending.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Recommendations Summary:&lt;/strong&gt; A high-level view of the career paths or universities the AI has suggested for them based on their results.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentorship Activity:&lt;/strong&gt; See if your child has been utilizing the AI mentors or checking in with their human advisor.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/parent-panel/student-detail-overview.png&#34; alt=&#34;Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Admin Login and Dashboard</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/login-and-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/login-and-dashboard/</guid>
-      <description>&lt;p&gt;The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-secure-admin-login&#34;&gt;1. Secure Admin Login&lt;/h2&gt;&#xA;&lt;p&gt;Accessing the admin portal requires navigating to a specific, protected route.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Admin Login URL (often &lt;code&gt;/admin/login&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Enter your authorized admin &lt;strong&gt;Email&lt;/strong&gt; or &lt;strong&gt;Username&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;Forgotten Password?&lt;/strong&gt;&#xA;If you lose your password, click &lt;strong&gt;Forgot Password&lt;/strong&gt;, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Configuration Reference</title>
-      <link>http://localhost:1313/docs-idpicker/docs/reference/configuration/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/reference/configuration/</guid>
-      <description>&lt;p&gt;This page documents high-impact configuration values used across IDPicker modules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-core-environment-variables&#34;&gt;1. Core Environment Variables&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Key&lt;/th&gt;&#xA;          &lt;th&gt;Typical Value (Local)&lt;/th&gt;&#xA;          &lt;th&gt;Used By&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NEXT_PUBLIC_API_BASE_URL&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:8000/api&lt;/td&gt;&#xA;          &lt;td&gt;Student, Advisor, Parent, Admin dashboards&lt;/td&gt;&#xA;          &lt;td&gt;Base API URL for frontend requests&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NODE_ENV&lt;/td&gt;&#xA;          &lt;td&gt;development / production&lt;/td&gt;&#xA;          &lt;td&gt;All frontends&lt;/td&gt;&#xA;          &lt;td&gt;Runtime mode and behavior switches&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Notes:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Frontends append role-specific paths in API clients where needed.&lt;/li&gt;&#xA;&lt;li&gt;Some shared endpoints remove role suffix at runtime in client helper logic.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;2-local-frontend-dev-urls&#34;&gt;2. Local Frontend Dev URLs&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;App&lt;/th&gt;&#xA;          &lt;th&gt;Typical Local URL&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student module frontend&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3000&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Admin dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3001&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3002&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent dashboard&lt;/td&gt;&#xA;          &lt;td&gt;http://localhost:3003&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;3-authentication-cookies-frontend&#34;&gt;3. Authentication Cookies (Frontend)&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Role&lt;/th&gt;&#xA;          &lt;th&gt;Cookie Name&lt;/th&gt;&#xA;          &lt;th&gt;Purpose&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Student&lt;/td&gt;&#xA;          &lt;td&gt;authToken&lt;/td&gt;&#xA;          &lt;td&gt;Student API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Advisor&lt;/td&gt;&#xA;          &lt;td&gt;authTokenAdvisor&lt;/td&gt;&#xA;          &lt;td&gt;Advisor API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Parent&lt;/td&gt;&#xA;          &lt;td&gt;authTokenParent&lt;/td&gt;&#xA;          &lt;td&gt;Parent API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Admin&lt;/td&gt;&#xA;          &lt;td&gt;authTokenAdmin&lt;/td&gt;&#xA;          &lt;td&gt;Admin API authorization token&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Operational notes:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Glossary</title>
-      <link>http://localhost:1313/docs-idpicker/docs/reference/glossary/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/reference/glossary/</guid>
-      <description>&lt;p&gt;This glossary defines key terms used throughout the IDPicker documentation. When a term in a guide is unclear, look it up here first.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;a&#34;&gt;A&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;AI Mentor&lt;/strong&gt;&#xA;One of the AI-powered conversational agents available to students. Each AI Mentor has a distinct persona and area of expertise (e.g., Career Guidance, Psychological Support, University Selection). Students choose a mentor to chat with inside the AI Mentorship module.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Application Documents&lt;/strong&gt;&#xA;A structured collection of files (transcripts, passports, language certificates, reference letters) that a student uploads as part of a university or programme application. Advisors review and verify each file.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>User and Organization Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/user-and-organization-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/user-and-organization-management/</guid>
-      <description>&lt;p&gt;As a platform administrator, you control the foundational structure of IDPicker. This module allows you to manage the top-level Organizations (schools, agencies) and manually audit the individual users beneath them.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-organization-management&#34;&gt;1. Organization Management&lt;/h2&gt;&#xA;&lt;p&gt;Organizations are the containers that hold Advisors, Students, and Parents. Before onboarding a new school, you must create their Organization record.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Organization Management&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create Organization&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the organization&amp;rsquo;s public profile details (Name, Location, Branding if applicable).&lt;/li&gt;&#xA;&lt;li&gt;Assign the &lt;strong&gt;Primary Admin&lt;/strong&gt; (the head advisor or IT contact for that school).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The organization is now active and its admin can begin inviting students.&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;To edit or delete an organization, use the action menu next to its name in the list view.&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/organization-list.png&#34; alt=&#34;Organization list showing school names, primary admin, location, and action menus, with Create Organization button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Admin and Subadmin Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</guid>
-      <description>&lt;p&gt;Not all administrators need full access to every setting. This module allows you to create internal staff accounts and rigorously defend your organization&amp;rsquo;s security posture by enforcing least-privilege access.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-an-admin-user&#34;&gt;1. Creating an Admin User&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Admin Management&lt;/strong&gt; page.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Add Admin&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the required identity fields:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email (Must be unique across the platform)&lt;/li&gt;&#xA;&lt;li&gt;Username&lt;/li&gt;&#xA;&lt;li&gt;First / Last Name&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Set a strong temporary password. The new admin should change this immediately upon their first login.&lt;/li&gt;&#xA;&lt;li&gt;Select their foundational Role (e.g., &lt;em&gt;Super Admin&lt;/em&gt; vs &lt;em&gt;Content Admin&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/admin-create.png&#34; alt=&#34;Add admin form showing email, username, name fields, role dropdown, and Save button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assessments and Forms</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/assessments-and-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/assessments-and-forms/</guid>
-      <description>&lt;p&gt;While Advisors can create localized forms for their specific students, Super Admins control the global Assessments and global Forms that apply across the entire IDPicker ecosystem.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-global-assessment&#34;&gt;1. Creating a Global Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, open &lt;strong&gt;Assessments&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create Assessment&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Provide the foundational metadata:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Title &amp;amp; Description:&lt;/strong&gt; Make these public-friendly.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (e.g., Psychological, Placement, Feedback).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Enter the visual builder to add questions. Supported formats include:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rating Scales (1-5, 1-10)&lt;/li&gt;&#xA;&lt;li&gt;Multiple Choice (Single or Multi-select)&lt;/li&gt;&#xA;&lt;li&gt;Short/Long Answer text fields&lt;/li&gt;&#xA;&lt;li&gt;Yes/No Booleans&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Configure required flags and save.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Testing is Mandatory:&lt;/strong&gt; Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Prompts, Translations, and Content</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</guid>
-      <description>&lt;p&gt;The core intelligence and language of IDPicker is not hard-coded; it is entirely manageable via the Admin Panel. This allows you to tune the AI Mentors and translate the UI on the fly without requiring engineering deployments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-system-prompts&#34;&gt;1. Managing System Prompts&lt;/h2&gt;&#xA;&lt;p&gt;The system prompts dictate exactly how the AI Mentors behave, what tone they use, and how they analyze student data.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Prompts&lt;/strong&gt; module.&lt;/li&gt;&#xA;&lt;li&gt;Select the specific category and subcategory you want to tune (e.g., &lt;em&gt;Mentor Persona &amp;gt; Academic Strict&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Open the target prompt template.&lt;/li&gt;&#xA;&lt;li&gt;Edit the instructions in the code editor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; Do not delete dynamic variables (e.g., &lt;code&gt;{{student_name}}&lt;/code&gt; or &lt;code&gt;{{assessment_score}}&lt;/code&gt;). Removing these breaks the AI&amp;rsquo;s contextual awareness.&lt;/li&gt;&#xA;&lt;li&gt;Validate the syntax and click &lt;strong&gt;Save&lt;/strong&gt;. The updated prompt version is now live instantly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/prompts-editor.png&#34; alt=&#34;Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Support, Notifications, and Approvals</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</guid>
-      <description>&lt;p&gt;This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-support-tickets&#34;&gt;1. Managing Support Tickets&lt;/h2&gt;&#xA;&lt;p&gt;When a student or advisor submits a Help Center request, it routes to this global queue.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Immediately filter the queue by &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt; to catch blockers.&lt;/li&gt;&#xA;&lt;li&gt;Click into a ticket to read the user&amp;rsquo;s description and reproduction steps.&lt;/li&gt;&#xA;&lt;li&gt;Once you have a fix or answer, change the &lt;strong&gt;Status&lt;/strong&gt; (e.g., from &lt;em&gt;In Progress&lt;/em&gt; to &lt;em&gt;Resolved&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Type your official response in the Resolution Message field.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The user will see your response on their local Help Center dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;em&gt;Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &amp;ldquo;Resolution Message&amp;rdquo; field before trying to change the status to Resolved.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>System Monitoring and Governance</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</guid>
-      <description>&lt;p&gt;For technical administrators, this section acts as your infrastructure dashboard. Here you can monitor server health, catch bugs as they happen, and control the financial levers of free usage.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-reviewing-the-status-module&#34;&gt;1. Reviewing the Status Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Status&lt;/strong&gt; page from the sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Review the core service health blocks (Database, API, AI Services, Storage).&lt;/li&gt;&#xA;&lt;li&gt;If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.&lt;/li&gt;&#xA;&lt;li&gt;The status page helps isolate whether a reported bug is a local user error or a widespread server outage.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/status-page.png&#34; alt=&#34;Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Troubleshooting</title>
-      <link>http://localhost:1313/docs-idpicker/docs/help/troubleshooting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/help/troubleshooting/</guid>
-      <description>&lt;p&gt;Use these playbooks when users report blocked workflows.&lt;/p&gt;&#xA;&lt;h2 id=&#34;playbook-1-cannot-sign-in&#34;&gt;Playbook 1: Cannot Sign In&lt;/h2&gt;&#xA;&lt;p&gt;Symptoms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Invalid credentials error&lt;/li&gt;&#xA;&lt;li&gt;Redirect loop to login&lt;/li&gt;&#xA;&lt;li&gt;Role mismatch message&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Checks:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm correct role URL.&lt;/li&gt;&#xA;&lt;li&gt;Confirm account exists and is active.&lt;/li&gt;&#xA;&lt;li&gt;Confirm email verification status.&lt;/li&gt;&#xA;&lt;li&gt;Clear cookies and retry login.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Escalate when:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Multiple users fail with same error pattern.&lt;/li&gt;&#xA;&lt;li&gt;Login endpoint responds with server errors.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;playbook-2-form-cannot-submit&#34;&gt;Playbook 2: Form Cannot Submit&lt;/h2&gt;&#xA;&lt;p&gt;Symptoms:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Submit button fails silently&lt;/li&gt;&#xA;&lt;li&gt;Validation error persists&lt;/li&gt;&#xA;&lt;li&gt;Response not saved&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Checks:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>FAQ</title>
-      <link>http://localhost:1313/docs-idpicker/docs/help/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/help/faq/</guid>
-      <description>&lt;h2 id=&#34;access-and-accounts&#34;&gt;Access and Accounts&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-i-cannot-log-in-what-should-i-check-first&#34;&gt;1. I cannot log in. What should I check first?&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Confirm you are using the correct panel URL for your role.&lt;/li&gt;&#xA;&lt;li&gt;Re-enter username/email and password carefully.&lt;/li&gt;&#xA;&lt;li&gt;Check whether your email verification is pending.&lt;/li&gt;&#xA;&lt;li&gt;Use password reset if you suspect credential mismatch.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;2-why-do-i-get-redirected-back-to-login&#34;&gt;2. Why do I get redirected back to login?&lt;/h3&gt;&#xA;&lt;p&gt;Most common causes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Expired or invalid auth cookie&lt;/li&gt;&#xA;&lt;li&gt;Wrong role token used on another panel&lt;/li&gt;&#xA;&lt;li&gt;Backend session/token invalidation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Fix:&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/</link><description>Recent content on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/index.xml" rel="self" type="application/rss+xml"/><item><title>Roles and Permissions</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/roles-and-permissions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/roles-and-permissions/</guid><description>&lt;p&gt;IDPicker has five distinct user roles, each with a specific set of capabilities. Understanding what each role can and cannot do helps you set up accounts correctly and avoid confusion about access rights.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-the-five-roles-at-a-glance"&gt;1. The Five Roles at a Glance&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Role&lt;/th&gt;
+ &lt;th&gt;Who holds it&lt;/th&gt;
+ &lt;th&gt;Primary purpose&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Super Admin&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Platform owner / IT operations staff&lt;/td&gt;
+ &lt;td&gt;Full control of technical settings, all organisations, global content, and billing&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Advisor&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Head counselor or primary school contact&lt;/td&gt;
+ &lt;td&gt;Manages their student roster, runs forms, distributes resources, chats with families&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Sub-Advisor&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Assistant counselor or specialist staff&lt;/td&gt;
+ &lt;td&gt;Operates within a restricted subset of the Advisor&amp;rsquo;s permissions and student scope&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Student&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;The young person using the platform&lt;/td&gt;
+ &lt;td&gt;Completes assessments, explores recommendations, chats with their advisor and AI mentor&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Parent / Guardian&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Parent or legal guardian of a student&lt;/td&gt;
+ &lt;td&gt;Monitors a linked child&amp;rsquo;s progress and communicates with the advisor&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="2-permission-comparison-table"&gt;2. Permission Comparison Table&lt;/h2&gt;
+&lt;h3 id="students-and-core-assessment"&gt;Students and Core Assessment&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;th&gt;Super Admin&lt;/th&gt;
+ &lt;th&gt;Advisor&lt;/th&gt;
+ &lt;th&gt;Sub-Advisor&lt;/th&gt;
+ &lt;th&gt;Student&lt;/th&gt;
+ &lt;th&gt;Parent&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Take self-assessments&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;View own assessment results&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;Read-only view&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;View any student&amp;rsquo;s results&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;Scoped only&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;Own child only&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Edit another user&amp;rsquo;s answers&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="forms-and-documents"&gt;Forms and Documents&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;th&gt;Super Admin&lt;/th&gt;
+ &lt;th&gt;Advisor&lt;/th&gt;
+ &lt;th&gt;Sub-Advisor&lt;/th&gt;
+ &lt;th&gt;Student&lt;/th&gt;
+ &lt;th&gt;Parent&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Create global forms&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Create organisation forms&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Submit a form response&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;View form responses&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;Own only&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Upload application documents&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Review / verify documents&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="communication"&gt;Communication&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;th&gt;Super Admin&lt;/th&gt;
+ &lt;th&gt;Advisor&lt;/th&gt;
+ &lt;th&gt;Sub-Advisor&lt;/th&gt;
+ &lt;th&gt;Student&lt;/th&gt;
+ &lt;th&gt;Parent&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Send notifications to all students&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Send notifications to own cohort&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Chat with their advisor&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Chat with a student&amp;rsquo;s parent&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Join a family group chat&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="user-and-organisation-management"&gt;User and Organisation Management&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;th&gt;Super Admin&lt;/th&gt;
+ &lt;th&gt;Advisor&lt;/th&gt;
+ &lt;th&gt;Sub-Advisor&lt;/th&gt;
+ &lt;th&gt;Student&lt;/th&gt;
+ &lt;th&gt;Parent&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Create organisations&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Invite advisors&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Invite sub-advisors&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Import students in bulk&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Link a parent to a student&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;Request only&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Delete any account&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="ai-and-content"&gt;AI and Content&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Action&lt;/th&gt;
+ &lt;th&gt;Super Admin&lt;/th&gt;
+ &lt;th&gt;Advisor&lt;/th&gt;
+ &lt;th&gt;Sub-Advisor&lt;/th&gt;
+ &lt;th&gt;Student&lt;/th&gt;
+ &lt;th&gt;Parent&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Edit global AI system prompts&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Edit organisation-level prompts&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Use AI mentor chat&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Issue certificates&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;If permitted&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Generate a Journey Map PDF&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;—&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;td&gt;✅&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="3-how-sub-advisor-permissions-work"&gt;3. How Sub-Advisor Permissions Work&lt;/h2&gt;
+&lt;p&gt;Sub-Advisors do not have a fixed permission set. Their access is configured entirely by their primary Advisor using the &lt;strong&gt;Permission Matrix&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>Authentication</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/authentication/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/authentication/</guid><description>&lt;p&gt;Everything students need to create an account, sign in, and recover access starts here. Follow each section from top to bottom the first time through; returning users can jump directly to the relevant flow.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-before-you-begin"&gt;1. Before You Begin&lt;/h2&gt;
+&lt;p&gt;Make sure you have:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;student login URL&lt;/strong&gt; for your environment — see &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/"&gt;Access URLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A valid email address you can check immediately&lt;/li&gt;
+&lt;li&gt;A stable internet connection and an up-to-date browser&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="2-sign-in-with-email-and-password"&gt;2. Sign In with Email and Password&lt;/h2&gt;
+&lt;p&gt;This is the fastest path for returning students.&lt;/p&gt;</description></item><item><title>Overview</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/overview/</guid><description>&lt;p&gt;IDPicker is a career and university guidance platform that helps students discover their strengths, explore academic pathways, and receive AI-powered recommendations — all within a supervised ecosystem connecting students, advisors, and parents.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-what-idpicker-does"&gt;1. What IDPicker Does&lt;/h2&gt;
+&lt;p&gt;IDPicker guides students through a structured self-discovery and decision-making journey using three core engines:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Engine&lt;/th&gt;
+ &lt;th&gt;What it does&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Psychometric Assessments&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Measures personality traits, aptitudes, and interests using validated questionnaires&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;AI Recommendations&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Matches universities and career programmes to each student&amp;rsquo;s unique profile&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;AI Mentorship&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Provides on-demand guidance conversations powered by the student&amp;rsquo;s own assessment data&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The platform is used by individual students, school-based advisors managing hundreds of students, parents tracking their child&amp;rsquo;s progress, and organizational super-admins governing the entire deployment.&lt;/p&gt;</description></item><item><title>Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/dashboard/</guid><description>&lt;p&gt;The Dashboard is the first thing you see after logging in. It gives you a bird&amp;rsquo;s-eye view of everything that needs your attention — assessments, notifications, forms, invitations, and program recommendations.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-what-you-see-on-the-dashboard"&gt;1. What You See on the Dashboard&lt;/h2&gt;
+&lt;p&gt;When you land on the dashboard, you will see several content blocks:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Block&lt;/th&gt;
+ &lt;th&gt;What It Shows&lt;/th&gt;
+ &lt;th&gt;What to Do&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Assessment Reports&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Your latest completed assessment output&lt;/td&gt;
+ &lt;td&gt;Download or view your report&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Assigned Forms&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Forms sent to you by your advisor or organization&lt;/td&gt;
+ &lt;td&gt;Open and respond&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Organization Invitations&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Pending invitations to join an organization&lt;/td&gt;
+ &lt;td&gt;Accept or Decline&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Notifications&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;System and advisor announcements&lt;/td&gt;
+ &lt;td&gt;Read and act on relevant items&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Promoted Programs&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Highlighted university/career programs&lt;/td&gt;
+ &lt;td&gt;Browse and explore&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Random Programs&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Exploratory program discovery&lt;/td&gt;
+ &lt;td&gt;Click into any that look interesting&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/dashboard-overview.png" alt="Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards"&gt;&lt;/p&gt;</description></item><item><title>Quick Start</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/</guid><description>&lt;p&gt;This guide is for brand-new users — students, advisors, and parents — who want to get from zero to their first meaningful action in under 15 minutes. Follow the section that matches your role.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-the-right-login-page"&gt;1. Opening the Right Login Page&lt;/h2&gt;
+&lt;p&gt;IDPicker has separate login portals for each role. Before anything else, make sure you are on the correct URL.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open your browser and navigate to the login address provided by your school, organization, or invitation email.&lt;/li&gt;
+&lt;li&gt;Confirm the page title matches your role (e.g., &lt;em&gt;Student Login&lt;/em&gt;, &lt;em&gt;Advisor Login&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;If you are unsure of the correct URL, see the &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/"&gt;Access URLs&lt;/a&gt; page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.&lt;/p&gt;</description></item><item><title>Access URLs</title><link>https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/</guid><description>&lt;p&gt;Use this page as the single source of truth for platform URLs.&lt;/p&gt;
+&lt;h2 id="production-urls"&gt;Production URLs&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;th&gt;URL&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Main Platform Login&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://app.idpicker.com/login"&gt;https://app.idpicker.com/login&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Student Panel&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://app.idpicker.com/student/dashboard"&gt;https://app.idpicker.com/student/dashboard&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Advisor Panel&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://app.idpicker.com/advisor/dashboard"&gt;https://app.idpicker.com/advisor/dashboard&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Parent Panel&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://app.idpicker.com/parent/dashboard"&gt;https://app.idpicker.com/parent/dashboard&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Help Center&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://app.idpicker.com/help-center"&gt;https://app.idpicker.com/help-center&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="stagingtest-urls"&gt;Staging/Test URLs&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;th&gt;URL&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;API Base&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://testapi.idpicker.com/api"&gt;https://testapi.idpicker.com/api&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Language Preference API&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://testapi.idpicker.com/api/set-language-preference/"&gt;https://testapi.idpicker.com/api/set-language-preference/&lt;/a&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="url-validation-checklist"&gt;URL Validation Checklist&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Login URL is reachable.&lt;/li&gt;
+&lt;li&gt;Role-based panel redirects are correct.&lt;/li&gt;
+&lt;li&gt;Unauthorized role access is blocked.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/getting-started/url-registry.png" alt="URL Registry Placeholder"&gt;&lt;/p&gt;
+&lt;p&gt;Image placeholder: Add screenshot of browser tabs showing each panel URL after login.&lt;/p&gt;</description></item><item><title>Assessment</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assessment/</guid><description>&lt;p&gt;Assessments are the core of IDPicker. Completing them unlocks your personalized career paths, university recommendations, and personality insights.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-starting-a-new-assessment"&gt;1. Starting a New Assessment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;From the left sidebar, click &lt;strong&gt;Self Assessment&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Look at the available assessment cards (e.g., &lt;em&gt;Personality&lt;/em&gt;, &lt;em&gt;Career&lt;/em&gt;).
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Note: Your school or organization may assign custom assessments here as well.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Start&lt;/strong&gt; on the card you want to begin.&lt;/li&gt;
+&lt;li&gt;Read the question instructions carefully.&lt;/li&gt;
+&lt;li&gt;Select or type your answer, then click &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Repeat until all questions are answered, then click &lt;strong&gt;Submit&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!&lt;/p&gt;</description></item><item><title>Recommendation</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/recommendations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/recommendations/</guid><description>&lt;p&gt;The Recommendations page is the heart of the IDPicker platform. Once your assessments are complete, the AI generates a personalized list of universities or career paths that match your profile. You can then sharpen those results in two powerful ways: by feeding in your real exam scores and rankings, or by leaning entirely on your completed personality profile. This guide walks through every option step by step.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-your-recommendations"&gt;1. Opening Your Recommendations&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the left sidebar, click &lt;strong&gt;Recommendations&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The page loads your results and displays a summary banner — for example, &lt;strong&gt;&amp;ldquo;Found 3 personalized recommendations&amp;rdquo;&lt;/strong&gt; — along with a pass counter (e.g. &lt;strong&gt;1/2&lt;/strong&gt;) that tracks how many refinement passes have been applied.&lt;/li&gt;
+&lt;li&gt;Scroll down to see your university or career cards ranked by match strength.&lt;/li&gt;
+&lt;li&gt;Click any card title to open its full detail view, which explains precisely why the AI selected it for your profile.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.&lt;/p&gt;</description></item><item><title>Personality</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/personality/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/personality/</guid><description>&lt;p&gt;The Personality module reveals who you are through eight measured psychological traits. After completing the Personality assessment, you receive a full analysis: an interactive radar chart, a personality overview with strength tiers, quick stat rankings, and individual trait cards with detailed interpretations and concrete action steps. This page explains every section so you can use your results to guide your studies, career choices, and personal growth.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Warning — Take the assessment in a calm, focused environment.&lt;/strong&gt; Your personality results are only as accurate as the honesty and mindfulness you bring to the questions. Find a quiet place, set aside at least 15–20 uninterrupted minutes, put your phone away, and answer each question based on how you &lt;em&gt;actually&lt;/em&gt; behave — not how you wish you behaved. Rushed or distracted answers will skew your trait scores and reduce the quality of your university and career recommendations.&lt;/p&gt;</description></item><item><title>AI Mentorship</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/ai-mentorship/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/ai-mentorship/</guid><description>&lt;p&gt;The Mentor Hub is your central communication space. Here, you can seek advice from specialized AI personalities or chat directly with your assigned human advisor.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-starting-a-chat-with-an-ai-mentor"&gt;1. Starting a Chat with an AI Mentor&lt;/h2&gt;
+&lt;p&gt;IDPicker provides multiple AI personalities, each tuned for specific types of advice (e.g., strict academic planning, empathetic career counseling, technical skills building).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Mentor&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Browse the grid of available mentor cards to find a personality that fits your current question.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Select/Open&lt;/strong&gt; on your preferred mentor.&lt;/li&gt;
+&lt;li&gt;Once the chat interface opens, type your question into the message box at the bottom.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Send&lt;/strong&gt; icon.&lt;/li&gt;
+&lt;li&gt;The AI will respond in real-time, contextually aware of your personality and recommendation profile!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Quota Warning:&lt;/strong&gt; Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!&lt;/p&gt;</description></item><item><title>University Search</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/university-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/university-search/</guid><description>&lt;p&gt;The University Search module is your comprehensive database for discovering higher education programs worldwide. This guide explains how to use the search engine efficiently to build your target list.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-basic-keyword-search"&gt;1. Basic Keyword Search&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;University Search&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait a moment for the filter panel and the default results area to load.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Search&lt;/strong&gt; input box at the top.&lt;/li&gt;
+&lt;li&gt;Type a university name (e.g., &lt;em&gt;Harvard&lt;/em&gt;) or a program keyword (e.g., &lt;em&gt;Computer Science&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.&lt;/li&gt;
+&lt;li&gt;Review your refined results.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/university-search-keyword.png" alt="University search bar with keyword input and auto-filtered results grid"&gt;&lt;/p&gt;</description></item><item><title>Resources</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/</guid><description>&lt;p&gt;The Resources module acts as your personal digital library. Whenever your advisor, school, or organization shares a helpful document, spreadsheet, or PDF, it lands here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-browsing-the-resource-library"&gt;1. Browsing the Resource Library&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;From the main sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait a second for your personalized file grid to load.&lt;/li&gt;
+&lt;li&gt;You will immediately see files that are explicitly assigned to you, as well as globally visible files shared by your organization.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="searching-by-keyword"&gt;Searching by Keyword&lt;/h3&gt;
+&lt;p&gt;Know exactly what you are looking for?&lt;/p&gt;</description></item><item><title>Help Center</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/help-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/help-center/</guid><description>&lt;p&gt;Sometimes things break or you encounter a feature you do not understand. The Help Center is your direct line to the IDPicker platform support team.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-a-new-support-ticket"&gt;1. Opening a New Support Ticket&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Help Center&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Make sure the &lt;strong&gt;New Ticket&lt;/strong&gt; tab is selected.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Subject&lt;/strong&gt; line and type a brief, clear summary (e.g., &lt;em&gt;Cannot download personality report&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Select the matching &lt;strong&gt;Category&lt;/strong&gt; (Technical, Account, Billing, Feature, General, or Other).&lt;/li&gt;
+&lt;li&gt;Select a &lt;strong&gt;Priority&lt;/strong&gt; (Low, Medium, High, Urgent).
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Note: Please only use Urgent for complete account blockers (like being totally unable to log in).&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;In the &lt;strong&gt;Description&lt;/strong&gt; box, provide as much detail as possible.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Submit&lt;/strong&gt; and wait for the success flash.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/help-center-new-ticket.png" alt="New ticket form with subject, category, priority, and description fields filled in"&gt;&lt;/p&gt;</description></item><item><title>Notifications</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/notifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/notifications/</guid><description>&lt;p&gt;IDPicker keeps you informed through a built-in notification system. Whenever your advisor sends you a message, assigns you a form, or an action requires your attention, a notification appears in your inbox so nothing falls through the cracks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-your-notification-inbox"&gt;1. Opening Your Notification Inbox&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Look for the &lt;strong&gt;Bell icon&lt;/strong&gt; in the top navigation bar.&lt;/li&gt;
+&lt;li&gt;A red badge on the bell shows how many unread notifications you have.&lt;/li&gt;
+&lt;li&gt;Click the bell to open the &lt;strong&gt;Notification Dropdown&lt;/strong&gt; — this shows your five most recent messages.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;View All Notifications&lt;/strong&gt; at the bottom of the dropdown to open the full inbox page.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/student-panel/notifications-dropdown.png" alt="Notification bell icon with a red unread badge and the dropdown panel showing recent notifications"&gt;&lt;/p&gt;</description></item><item><title>Subscription</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/subscription/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/subscription/</guid><description>&lt;p&gt;This guide explains how students identify free-plan limits and use upgrade paths.&lt;/p&gt;
+&lt;h2 id="1-understand-feature-limits"&gt;1. Understand Feature Limits&lt;/h2&gt;
+&lt;p&gt;Free-plan limits can apply to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mentor chat usage&lt;/li&gt;
+&lt;li&gt;Assessment/recommendation usage counters&lt;/li&gt;
+&lt;li&gt;Full report download availability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-where-students-see-limit-signals"&gt;2. Where Students See Limit Signals&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open a quota-sensitive module (Mentor, Assessments, Recommendations).&lt;/li&gt;
+&lt;li&gt;Locate quota indicator or blocked state.&lt;/li&gt;
+&lt;li&gt;Read remaining usage and limit label.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="3-upgrade-flow-from-feature-context"&gt;3. Upgrade Flow from Feature Context&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Reach a gated/limited action.&lt;/li&gt;
+&lt;li&gt;Click Upgrade or equivalent CTA.&lt;/li&gt;
+&lt;li&gt;Follow the presented flow for plan upgrade.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note:&lt;/p&gt;</description></item><item><title>Account and Settings</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/account-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/account-settings/</guid><description>&lt;p&gt;This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.&lt;/p&gt;
+&lt;h2 id="1-edit-profile-click-by-click"&gt;1. Edit Profile (Click-by-Click)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In sidebar, click Profile.&lt;/li&gt;
+&lt;li&gt;Click Edit Profile.&lt;/li&gt;
+&lt;li&gt;Update fields as needed:
+&lt;ul&gt;
+&lt;li&gt;First name&lt;/li&gt;
+&lt;li&gt;Last name&lt;/li&gt;
+&lt;li&gt;Bio&lt;/li&gt;
+&lt;li&gt;Location&lt;/li&gt;
+&lt;li&gt;Job title&lt;/li&gt;
+&lt;li&gt;Gender&lt;/li&gt;
+&lt;li&gt;Instagram URL&lt;/li&gt;
+&lt;li&gt;X URL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click Save.&lt;/li&gt;
+&lt;li&gt;Wait for success confirmation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If save fails:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recheck required fields and URL formats.&lt;/li&gt;
+&lt;li&gt;Retry once after page refresh.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-switch-recommendation-track-from-settings"&gt;2. Switch Recommendation Track from Settings&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In sidebar, click Settings.&lt;/li&gt;
+&lt;li&gt;Locate Guidance Track section.&lt;/li&gt;
+&lt;li&gt;Click switch action (Career/University).&lt;/li&gt;
+&lt;li&gt;Wait for saved confirmation.&lt;/li&gt;
+&lt;li&gt;Open Recommendations and confirm new mode.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="3-link-parent-account"&gt;3. Link Parent Account&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Stay on Settings page.&lt;/li&gt;
+&lt;li&gt;Locate Parent Linking section.&lt;/li&gt;
+&lt;li&gt;Click parent email input.&lt;/li&gt;
+&lt;li&gt;Enter parent email.&lt;/li&gt;
+&lt;li&gt;Click Send/Request Link.&lt;/li&gt;
+&lt;li&gt;Wait for confirmation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Possible outcomes:&lt;/p&gt;</description></item><item><title>Advisor Login and Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid><description>&lt;p&gt;As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-advisor-login"&gt;1. Advisor Login&lt;/h2&gt;
+&lt;p&gt;Depending on your organization&amp;rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/"&gt;Access URLs&lt;/a&gt; if you are unsure).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Advisor Login page.&lt;/li&gt;
+&lt;li&gt;Enter your registered &lt;strong&gt;Email&lt;/strong&gt; and &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The system initializes your specific role and permission set, then drops you onto your Dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Why is my dashboard missing certain modules?&lt;/strong&gt;
+If you are a &amp;ldquo;Sub-Advisor,&amp;rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.&lt;/p&gt;</description></item><item><title>Language</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/language/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/language/</guid><description>&lt;p&gt;Student panel supports English and Turkish.&lt;/p&gt;
+&lt;h2 id="1-switch-language-normal-case"&gt;1. Switch Language (Normal Case)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open sidebar.&lt;/li&gt;
+&lt;li&gt;Click language switcher.&lt;/li&gt;
+&lt;li&gt;Select target language.&lt;/li&gt;
+&lt;li&gt;Wait for UI text refresh.&lt;/li&gt;
+&lt;li&gt;Navigate to another page to confirm persistence.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2-switch-language-during-in-progress-assessment"&gt;2. Switch Language During In-Progress Assessment&lt;/h2&gt;
+&lt;p&gt;If an assessment is in progress, a confirmation dialog can appear.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Select new language.&lt;/li&gt;
+&lt;li&gt;Read warning: in-progress assessment may be reset.&lt;/li&gt;
+&lt;li&gt;Click Cancel to keep current language and progress.&lt;/li&gt;
+&lt;li&gt;Or click Confirm to switch language and reset in-progress state.&lt;/li&gt;
+&lt;li&gt;Page reloads with selected language.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="3-validation-checklist"&gt;3. Validation Checklist&lt;/h2&gt;
+&lt;p&gt;After language switch, verify:&lt;/p&gt;</description></item><item><title>Students and Bulk Import</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</guid><description>&lt;p&gt;The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-searching-and-filtering-your-roster"&gt;1. Searching and Filtering Your Roster&lt;/h2&gt;
+&lt;p&gt;When you open the &lt;strong&gt;Students&lt;/strong&gt; module from the sidebar, you see your entire authorized roster.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Search:&lt;/strong&gt; Use the search bar to find a student quickly by name or email.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Filter:&lt;/strong&gt; Narrow down your list using the drop-down filters. You can filter by:
+&lt;ul&gt;
+&lt;li&gt;Assigned Groups&lt;/li&gt;
+&lt;li&gt;Chat status (e.g., awaiting reply)&lt;/li&gt;
+&lt;li&gt;Assessment signals (e.g., completed, missing)&lt;/li&gt;
+&lt;li&gt;Joined date or location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Click the column headers (Name, Email, Joined Date) to reorder the list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="viewing-student-details"&gt;Viewing Student Details&lt;/h3&gt;
+&lt;p&gt;Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.&lt;/p&gt;</description></item><item><title>Certificates and Application Documents</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</guid><description>&lt;p&gt;This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-issuing-a-certificate"&gt;1. Issuing a Certificate&lt;/h2&gt;
+&lt;p&gt;Certificates are formal, advisor-generated recognitions that appear in the student&amp;rsquo;s Certificates module and can be downloaded as PDFs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Certificates&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Issue Certificate&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A certificate builder dialog opens. Fill in:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Student&lt;/strong&gt; — Search and select the recipient.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate Type&lt;/strong&gt; — Choose from available templates (e.g., &lt;em&gt;Assessment Completion&lt;/em&gt;, &lt;em&gt;Programme Readiness&lt;/em&gt;, &lt;em&gt;Participation&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Issue Date&lt;/strong&gt; — Defaults to today; change if back-dating is required.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt; &lt;em&gt;(Optional)&lt;/em&gt; — Add a personalised message that will appear on the certificate document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Issue&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The certificate is immediately added to the student&amp;rsquo;s account. They will see it in their &lt;strong&gt;Certificates and Documents&lt;/strong&gt; section and receive a notification.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.&lt;/p&gt;</description></item><item><title>Certificates and Application Documents</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/certificates-and-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/certificates-and-documents/</guid><description>&lt;p&gt;This guide covers two high-value student workflows: earned certificates and application document submission.&lt;/p&gt;
+&lt;h2 id="1-certificates-click-by-click"&gt;1. Certificates (Click-by-Click)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In sidebar, click Certificates.&lt;/li&gt;
+&lt;li&gt;Wait for cards to load.&lt;/li&gt;
+&lt;li&gt;Use search input to find by template/subject/issuer.&lt;/li&gt;
+&lt;li&gt;Use filter tabs: All, Certificate, Badge.&lt;/li&gt;
+&lt;li&gt;Click a certificate card to open detail dialog.&lt;/li&gt;
+&lt;li&gt;Review:
+&lt;ul&gt;
+&lt;li&gt;Template name&lt;/li&gt;
+&lt;li&gt;Subject&lt;/li&gt;
+&lt;li&gt;Issuer&lt;/li&gt;
+&lt;li&gt;Issue date&lt;/li&gt;
+&lt;li&gt;Status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click Copy ID to copy verification identifier.&lt;/li&gt;
+&lt;li&gt;If download link exists, click Download.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2-application-documents-setup"&gt;2. Application Documents Setup&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In sidebar, click Application Documents.&lt;/li&gt;
+&lt;li&gt;First-time users: choose nationality (Turkish/International).&lt;/li&gt;
+&lt;li&gt;Collection is created.&lt;/li&gt;
+&lt;li&gt;Wait for step categories and requirements to load.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="3-upload-documents-by-step-click-by-click"&gt;3. Upload Documents by Step (Click-by-Click)&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Select step/category tab.&lt;/li&gt;
+&lt;li&gt;Select required document type.&lt;/li&gt;
+&lt;li&gt;Choose file from device.&lt;/li&gt;
+&lt;li&gt;Add optional notes.&lt;/li&gt;
+&lt;li&gt;Click Upload.&lt;/li&gt;
+&lt;li&gt;Repeat for all required items in current step.&lt;/li&gt;
+&lt;li&gt;Mark step complete when requirements are satisfied.&lt;/li&gt;
+&lt;li&gt;Continue until all steps are complete.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="4-review-status-and-fix-invalid-files"&gt;4. Review Status and Fix Invalid Files&lt;/h2&gt;
+&lt;p&gt;Each document may show:&lt;/p&gt;</description></item><item><title>Assigned Forms</title><link>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/</guid><description>&lt;p&gt;Assigned forms are organization/advisor forms that students complete from dashboard or direct link.&lt;/p&gt;
+&lt;h2 id="1-open-assigned-form-from-dashboard"&gt;1. Open Assigned Form from Dashboard&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Dashboard.&lt;/li&gt;
+&lt;li&gt;Locate Assigned Forms block.&lt;/li&gt;
+&lt;li&gt;Click Open Form on pending item.&lt;/li&gt;
+&lt;li&gt;Wait for form page to load.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2-understand-form-header"&gt;2. Understand Form Header&lt;/h2&gt;
+&lt;p&gt;At top, you may see:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Organization banner image&lt;/li&gt;
+&lt;li&gt;Form title&lt;/li&gt;
+&lt;li&gt;Form description&lt;/li&gt;
+&lt;li&gt;Editability state&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="3-complete-form-fields-click-by-click"&gt;3. Complete Form Fields (Click-by-Click)&lt;/h2&gt;
+&lt;p&gt;For each field:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read label and required indicator.&lt;/li&gt;
+&lt;li&gt;Click input control.&lt;/li&gt;
+&lt;li&gt;Enter/select response.&lt;/li&gt;
+&lt;li&gt;Continue to next field.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Supported field patterns include text, textarea, number, email, dropdown, radio, checkbox, date/time/datetime, and rating.&lt;/p&gt;</description></item><item><title>Enrollment, Family Chat, and Assessments</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</guid><description>&lt;p&gt;This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-enrollment-requests"&gt;1. Managing Enrollment Requests&lt;/h2&gt;
+&lt;p&gt;Depending on your organization&amp;rsquo;s configuration, students who register may not join your roster automatically. They may land in an approval queue.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Enrollment Requests&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A list of pending student accounts will appear.&lt;/li&gt;
+&lt;li&gt;Click into a request to review the individual&amp;rsquo;s profile to verify they belong to your organization.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Approve&lt;/strong&gt; to admit them (which grants them full platform access and adds them to your Students roster).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Deny&lt;/strong&gt; if they do not belong.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons"&gt;&lt;/p&gt;</description></item><item><title>Forms and Responses</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/forms-and-responses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/forms-and-responses/</guid><description>&lt;p&gt;The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-understanding-the-forms-lifecycle"&gt;1. Understanding the Forms Lifecycle&lt;/h2&gt;
+&lt;p&gt;Every form moves through a specific lifecycle:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Draft:&lt;/strong&gt; The form is being built and is invisible to students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Published:&lt;/strong&gt; The form is actively collecting data and is visible to assigned students on their dashboard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Archived:&lt;/strong&gt; (If applicable) The form is no longer accepting new responses, but old data is preserved.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="2-creating-and-publishing-a-form"&gt;2. Creating and Publishing a Form&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Forms&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create New Form&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter a &lt;strong&gt;Title&lt;/strong&gt; and a helpful &lt;strong&gt;Description&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save as Draft&lt;/strong&gt; while you are still working on it.&lt;/li&gt;
+&lt;li&gt;When you are completely finished, select your target audience (groups or specific students) and change the status to &lt;strong&gt;Publish&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="preview-before-publishing"&gt;Preview Before Publishing&lt;/h3&gt;
+&lt;p&gt;Always click the &lt;strong&gt;Preview&lt;/strong&gt; action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.&lt;/p&gt;</description></item><item><title>Groups Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/groups/</guid><description>&lt;p&gt;Groups are an essential organizational tool. By grouping students—whether by graduation year, specific study tracks, or custom campaign objectives—you can distribute forms, share resources, and send notifications much more efficiently.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-group"&gt;1. Creating a New Group&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Groups&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait for the current groups list to load.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Create Group&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Enter a clear, descriptive &lt;strong&gt;Group Name&lt;/strong&gt; (e.g., &amp;ldquo;Class of 2026 - Engineering Track&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;(Optional)&lt;/em&gt; Add a short description for your own internal reference.&lt;/li&gt;
+&lt;li&gt;A student selector will appear. Select the specific students you want to add to this group right now.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. Your new group appears in the list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="best-practices-for-naming-groups"&gt;Best Practices for Naming Groups&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Be Consistent:&lt;/strong&gt; Use a standard naming convention (e.g., &lt;code&gt;[Year] - [Major/Track] - [Cohort]&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be Specific:&lt;/strong&gt; &amp;ldquo;Group A&amp;rdquo; becomes impossible to manage after a few months.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Review Often:&lt;/strong&gt; Clean up and delete groups when a cohort graduates or finishes a campaign.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/groups-create.png" alt="Create group dialog showing group name field, description field, and student selector checkboxes"&gt;&lt;/p&gt;</description></item><item><title>Notifications</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/notifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/notifications/</guid><description>&lt;p&gt;The Notifications module is your mass-communication tool. Instead of sending hundreds of individual emails, use notifications to broadcast platform-native announcements, reminders, and alerts directly to student dashboards.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-broadcast"&gt;1. Creating a New Broadcast&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Notifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;You will see a history of your past broadcasts. Click &lt;strong&gt;Create Notification&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter a clear, attention-grabbing &lt;strong&gt;Title&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Type your &lt;strong&gt;Message Body&lt;/strong&gt;. Keep it concise but ensure all necessary links or action items are included.&lt;/li&gt;
+&lt;li&gt;Select your &lt;strong&gt;Target Type&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;All Students&lt;/code&gt;: Broadcasts to every single student in your organization. Use sparingly.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Selected Users&lt;/code&gt;: Allows you to hand-pick individuals.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Selected Groups&lt;/code&gt;: The most common option. Targets a pre-made cohort (e.g., &amp;ldquo;Seniors&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you chose Users or Groups, a selection interface will appear. Pick your targets.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Send&lt;/strong&gt; (or &lt;strong&gt;Create&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;The notification is immediately dispatched and will appear in your history list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/notifications-compose.png" alt="Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button"&gt;&lt;/p&gt;</description></item><item><title>Profile, Prompts, and Interests</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</guid><description>&lt;p&gt;This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&amp;rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-updating-your-advisor-profile"&gt;1. Updating Your Advisor Profile&lt;/h2&gt;
+&lt;p&gt;Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click your &lt;strong&gt;Avatar&lt;/strong&gt; or &lt;strong&gt;Profile&lt;/strong&gt; link.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Edit Profile&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Update any of the following:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Display Name&lt;/strong&gt; and &lt;strong&gt;Title&lt;/strong&gt; (e.g., &lt;em&gt;Senior Career Counselor&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bio&lt;/strong&gt; — A short paragraph about your background and specialties&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avatar&lt;/strong&gt; — Upload a clear headshot (recommended: square, at least 400×400 px)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contact Details&lt;/strong&gt; — Office hours, phone extension, or secondary email if relevant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organization Data&lt;/strong&gt; — Department, branch, or campus information if your platform supports it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save Profile&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Verify the preview panel on the right shows the updated name and avatar correctly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png" alt="Advisor profile editor showing name, title, bio, and avatar upload fields"&gt;&lt;/p&gt;</description></item><item><title>Resources Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/resources/</guid><description>&lt;p&gt;The Resources module operates as a secure file-sharing library. Advisors can upload helpful materials—like study guides, university brochures, or policy PDFs—and control exactly which students are allowed to see them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-uploading-a-new-resource"&gt;1. Uploading a New Resource&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Upload Resource&lt;/strong&gt; button at the top of the screen.&lt;/li&gt;
+&lt;li&gt;Click to browse your device, or drag-and-drop your target file.&lt;/li&gt;
+&lt;li&gt;Fill in the metadata:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; (Required) A clear, recognizable title.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; (Optional) Add context on why this file is helpful.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (If enabled) Tag the file to keep the library organized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Choose your initial visibility setting (&lt;code&gt;Visible to All&lt;/code&gt; or &lt;code&gt;Assigned Only&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Upload&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait for the upload to complete and verify the file appears in your library list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/resources-upload.png" alt="Resource upload dialog showing file drop zone, name field, description field, and visibility toggle"&gt;&lt;/p&gt;</description></item><item><title>Sub-Advisor Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid><description>&lt;p&gt;If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-sub-advisor"&gt;1. Creating a New Sub-Advisor&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Sub-Advisors&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Create Sub-Advisor&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Fill in their identity details:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Full Name&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt; (This will be their login)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set their &lt;strong&gt;Assigned Scope&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;If you want them to text &lt;em&gt;only&lt;/em&gt; 12th graders, assign them explicitly to the &amp;ldquo;12th Graders&amp;rdquo; Group. They will not be able to see any students outside of that group.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure their &lt;strong&gt;Permission Set&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Decide exactly which modules they can see (e.g., enable &lt;em&gt;Students&lt;/em&gt; and &lt;em&gt;Chat&lt;/em&gt;, but disable &lt;em&gt;Forms&lt;/em&gt; and &lt;em&gt;Settings&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save / Create&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The system will email them an invitation link to set up their password.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-advisor creation form showing name, email, scope selector, and permission checkboxes"&gt;&lt;/p&gt;</description></item><item><title>Authentication and Account</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/authentication-and-account/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/authentication-and-account/</guid><description>&lt;p&gt;Parents use the IDPicker Parent Panel to monitor their child&amp;rsquo;s progress, review recommendations, and communicate with advisors. This guide covers how to get your account set up and securely log in.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-registering-a-new-parent-account"&gt;1. Registering a New Parent Account&lt;/h2&gt;
+&lt;p&gt;If you are new to the platform:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/"&gt;Parent Registration URL&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Fill out the registration form with your &lt;strong&gt;Email&lt;/strong&gt;, &lt;strong&gt;Full Name&lt;/strong&gt;, and a &lt;strong&gt;Strong Password&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Check the consent checkbox at the bottom of the form.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Register&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The system will tell you to check your email for a verification link.&lt;/li&gt;
+&lt;li&gt;Open your inbox, click the verification link, and you will be routed automatically back to the platform to log in.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Verification Link Expired?&lt;/strong&gt; If you clicked the email verification link and it says expired, simply go to the login page, enter your email, and click the &lt;strong&gt;Resend Verification&lt;/strong&gt; button.&lt;/p&gt;</description></item><item><title>Common Tasks</title><link>https://xer0bit.github.io/docs-idpicker/docs/usage/common-tasks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/usage/common-tasks/</guid><description>&lt;h2 id="task-1"&gt;Task 1&lt;/h2&gt;
+&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;
+&lt;h2 id="task-2"&gt;Task 2&lt;/h2&gt;
+&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;
+&lt;h2 id="task-3"&gt;Task 3&lt;/h2&gt;
+&lt;p&gt;Describe purpose, steps, and expected result.&lt;/p&gt;</description></item><item><title>Support Tickets</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/support-tickets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/support-tickets/</guid><description>&lt;p&gt;The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-the-ticket-queue"&gt;1. Opening the Ticket Queue&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The queue loads with a summary row at the top showing counts by status: &lt;em&gt;Pending&lt;/em&gt;, &lt;em&gt;In Progress&lt;/em&gt;, &lt;em&gt;Resolved&lt;/em&gt;, &lt;em&gt;Closed&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by &lt;strong&gt;Priority&lt;/strong&gt; immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Start every support session by filtering for &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt;. These are the issues blocking students right now.&lt;/p&gt;</description></item><item><title>Best Practices</title><link>https://xer0bit.github.io/docs-idpicker/docs/usage/best-practices/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/usage/best-practices/</guid><description>&lt;h2 id="recommended-workflow"&gt;Recommended Workflow&lt;/h2&gt;
+&lt;p&gt;Explain the preferred sequence of actions.&lt;/p&gt;
+&lt;h2 id="security-tips"&gt;Security Tips&lt;/h2&gt;
+&lt;p&gt;List secure usage guidelines.&lt;/p&gt;
+&lt;h2 id="performance-tips"&gt;Performance Tips&lt;/h2&gt;
+&lt;p&gt;Describe ways to keep usage efficient.&lt;/p&gt;</description></item><item><title>Dashboard and Linked Overview</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/</guid><description>&lt;p&gt;Once you are logged in, the Parent Dashboard is your main command center. It provides an at-a-glance summary for every child linked to your account.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-understanding-dashboard-blocks"&gt;1. Understanding Dashboard Blocks&lt;/h2&gt;
+&lt;p&gt;When you land on the dashboard, you will immediately see:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linked Children Cards:&lt;/strong&gt; A dedicated card for each of your linked students showing their name, avatar, and quick progress percentage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Progress Snapshots:&lt;/strong&gt; High-level metrics showing how many assessments have been completed across your family.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advisor Activity Indicators:&lt;/strong&gt; Quick badges showing if you have unread messages from your child&amp;rsquo;s advisor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Link Student Form:&lt;/strong&gt; The input box used to request access to a new child&amp;rsquo;s account.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="2-how-to-link-your-child"&gt;2. How to Link Your Child&lt;/h2&gt;
+&lt;p&gt;Before the dashboard shows any meaningful data, you must link your parent account to your child&amp;rsquo;s student account.&lt;/p&gt;</description></item><item><title>Parent Forms</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/forms/</guid><description>&lt;p&gt;Advisors and administrators can assign forms to parents for collecting consent, supplementary information, or progress feedback. This guide walks you through opening, completing, and submitting a form from the parent panel.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-finding-a-form-to-complete"&gt;1. Finding a Form to Complete&lt;/h2&gt;
+&lt;p&gt;Forms assigned to you appear in two places:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Dashboard notification banner&lt;/strong&gt; — A highlighted card appears when you have a pending form requiring a response.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notifications panel&lt;/strong&gt; — Click the bell icon in the top menu and look for a notification labelled &lt;em&gt;Form Assigned&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the notification or the dashboard banner to open the form directly.&lt;/li&gt;
+&lt;li&gt;Alternatively, navigate to &lt;strong&gt;Forms&lt;/strong&gt; in the sidebar to see all forms assigned to your account.&lt;/li&gt;
+&lt;li&gt;Forms with a &lt;strong&gt;Pending&lt;/strong&gt; status badge still require your response. Forms marked &lt;strong&gt;Submitted&lt;/strong&gt; are read-only.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/parent-panel/parent-forms-list.png" alt="Parent forms list showing form names, submission status badges, and due dates"&gt;&lt;/p&gt;</description></item><item><title>Linked Student</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/linked-student-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/linked-student-guide/</guid><description>&lt;p&gt;IDPicker requires explicit linking between a Parent account and a Student account to protect student privacy. This guide explains how to establish that link and what you can (and cannot) see.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-requesting-a-link-by-email"&gt;1. Requesting a Link by Email&lt;/h2&gt;
+&lt;p&gt;If your child&amp;rsquo;s school has not automatically linked your accounts, you must initiate the request from your dashboard.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sign in to your &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/"&gt;Parent Dashboard&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Locate the &lt;strong&gt;Link Student&lt;/strong&gt; form.&lt;/li&gt;
+&lt;li&gt;In the input box, carefully type the exact email address your child used to register.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Send Link Request&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Depending on the platform settings, you will experience one of two outcomes:&lt;/p&gt;</description></item><item><title>Student Detail, Journey Map, and Advisor Chat</title><link>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/</guid><description>&lt;p&gt;Once you open a linked student&amp;rsquo;s profile from your dashboard, you gain access to powerful tracking tools and direct communication lines with their educational team.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-reviewing-progress-and-insights"&gt;1. Reviewing Progress and Insights&lt;/h2&gt;
+&lt;p&gt;At the top of the student detail page, you will see their &lt;strong&gt;Basic Profile&lt;/strong&gt; (name, age, grade). Below this, the page is broken down into insight blocks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Assessment Progress:&lt;/strong&gt; Quickly see which required psychological or educational assessments your child has completed, and which are still pending.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Recommendations Summary:&lt;/strong&gt; A high-level view of the career paths or universities the AI has suggested for them based on their results.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mentorship Activity:&lt;/strong&gt; See if your child has been utilizing the AI mentors or checking in with their human advisor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/parent-panel/student-detail-overview.png" alt="Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator"&gt;&lt;/p&gt;</description></item><item><title>Admin Login and Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/login-and-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/login-and-dashboard/</guid><description>&lt;p&gt;The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-secure-admin-login"&gt;1. Secure Admin Login&lt;/h2&gt;
+&lt;p&gt;Accessing the admin portal requires navigating to a specific, protected route.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Admin Login URL (often &lt;code&gt;/admin/login&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Enter your authorized admin &lt;strong&gt;Email&lt;/strong&gt; or &lt;strong&gt;Username&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Forgotten Password?&lt;/strong&gt;
+If you lose your password, click &lt;strong&gt;Forgot Password&lt;/strong&gt;, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.&lt;/p&gt;</description></item><item><title>Configuration Reference</title><link>https://xer0bit.github.io/docs-idpicker/docs/reference/configuration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/reference/configuration/</guid><description>&lt;p&gt;This page documents high-impact configuration values used across IDPicker modules.&lt;/p&gt;
+&lt;h2 id="1-core-environment-variables"&gt;1. Core Environment Variables&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Key&lt;/th&gt;
+ &lt;th&gt;Typical Value (Local)&lt;/th&gt;
+ &lt;th&gt;Used By&lt;/th&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;NEXT_PUBLIC_API_BASE_URL&lt;/td&gt;
+ &lt;td&gt;http://localhost:8000/api&lt;/td&gt;
+ &lt;td&gt;Student, Advisor, Parent, Admin dashboards&lt;/td&gt;
+ &lt;td&gt;Base API URL for frontend requests&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;NODE_ENV&lt;/td&gt;
+ &lt;td&gt;development / production&lt;/td&gt;
+ &lt;td&gt;All frontends&lt;/td&gt;
+ &lt;td&gt;Runtime mode and behavior switches&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Frontends append role-specific paths in API clients where needed.&lt;/li&gt;
+&lt;li&gt;Some shared endpoints remove role suffix at runtime in client helper logic.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="2-local-frontend-dev-urls"&gt;2. Local Frontend Dev URLs&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;App&lt;/th&gt;
+ &lt;th&gt;Typical Local URL&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Student module frontend&lt;/td&gt;
+ &lt;td&gt;http://localhost:3000&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Admin dashboard&lt;/td&gt;
+ &lt;td&gt;http://localhost:3001&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Advisor dashboard&lt;/td&gt;
+ &lt;td&gt;http://localhost:3002&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Parent dashboard&lt;/td&gt;
+ &lt;td&gt;http://localhost:3003&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="3-authentication-cookies-frontend"&gt;3. Authentication Cookies (Frontend)&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Role&lt;/th&gt;
+ &lt;th&gt;Cookie Name&lt;/th&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Student&lt;/td&gt;
+ &lt;td&gt;authToken&lt;/td&gt;
+ &lt;td&gt;Student API authorization token&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Advisor&lt;/td&gt;
+ &lt;td&gt;authTokenAdvisor&lt;/td&gt;
+ &lt;td&gt;Advisor API authorization token&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Parent&lt;/td&gt;
+ &lt;td&gt;authTokenParent&lt;/td&gt;
+ &lt;td&gt;Parent API authorization token&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Admin&lt;/td&gt;
+ &lt;td&gt;authTokenAdmin&lt;/td&gt;
+ &lt;td&gt;Admin API authorization token&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Operational notes:&lt;/p&gt;</description></item><item><title>Glossary</title><link>https://xer0bit.github.io/docs-idpicker/docs/reference/glossary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/reference/glossary/</guid><description>&lt;p&gt;This glossary defines key terms used throughout the IDPicker documentation. When a term in a guide is unclear, look it up here first.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="a"&gt;A&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;AI Mentor&lt;/strong&gt;
+One of the AI-powered conversational agents available to students. Each AI Mentor has a distinct persona and area of expertise (e.g., Career Guidance, Psychological Support, University Selection). Students choose a mentor to chat with inside the AI Mentorship module.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Application Documents&lt;/strong&gt;
+A structured collection of files (transcripts, passports, language certificates, reference letters) that a student uploads as part of a university or programme application. Advisors review and verify each file.&lt;/p&gt;</description></item><item><title>User and Organization Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/user-and-organization-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/user-and-organization-management/</guid><description>&lt;p&gt;As a platform administrator, you control the foundational structure of IDPicker. This module allows you to manage the top-level Organizations (schools, agencies) and manually audit the individual users beneath them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-organization-management"&gt;1. Organization Management&lt;/h2&gt;
+&lt;p&gt;Organizations are the containers that hold Advisors, Students, and Parents. Before onboarding a new school, you must create their Organization record.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Organization Management&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create Organization&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Fill in the organization&amp;rsquo;s public profile details (Name, Location, Branding if applicable).&lt;/li&gt;
+&lt;li&gt;Assign the &lt;strong&gt;Primary Admin&lt;/strong&gt; (the head advisor or IT contact for that school).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The organization is now active and its admin can begin inviting students.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;To edit or delete an organization, use the action menu next to its name in the list view.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/organization-list.png" alt="Organization list showing school names, primary admin, location, and action menus, with Create Organization button"&gt;&lt;/p&gt;</description></item><item><title>Admin and Subadmin Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</guid><description>&lt;p&gt;Not all administrators need full access to every setting. This module allows you to create internal staff accounts and rigorously defend your organization&amp;rsquo;s security posture by enforcing least-privilege access.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-an-admin-user"&gt;1. Creating an Admin User&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Admin Management&lt;/strong&gt; page.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Add Admin&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Fill in the required identity fields:
+&lt;ul&gt;
+&lt;li&gt;Email (Must be unique across the platform)&lt;/li&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;First / Last Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set a strong temporary password. The new admin should change this immediately upon their first login.&lt;/li&gt;
+&lt;li&gt;Select their foundational Role (e.g., &lt;em&gt;Super Admin&lt;/em&gt; vs &lt;em&gt;Content Admin&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/admin-create.png" alt="Add admin form showing email, username, name fields, role dropdown, and Save button"&gt;&lt;/p&gt;</description></item><item><title>Assessments and Forms</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/assessments-and-forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/assessments-and-forms/</guid><description>&lt;p&gt;While Advisors can create localized forms for their specific students, Super Admins control the global Assessments and global Forms that apply across the entire IDPicker ecosystem.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-global-assessment"&gt;1. Creating a Global Assessment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, open &lt;strong&gt;Assessments&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create Assessment&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Provide the foundational metadata:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Title &amp;amp; Description:&lt;/strong&gt; Make these public-friendly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (e.g., Psychological, Placement, Feedback).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Enter the visual builder to add questions. Supported formats include:
+&lt;ul&gt;
+&lt;li&gt;Rating Scales (1-5, 1-10)&lt;/li&gt;
+&lt;li&gt;Multiple Choice (Single or Multi-select)&lt;/li&gt;
+&lt;li&gt;Short/Long Answer text fields&lt;/li&gt;
+&lt;li&gt;Yes/No Booleans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure required flags and save.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Testing is Mandatory:&lt;/strong&gt; Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.&lt;/p&gt;</description></item><item><title>Prompts, Translations, and Content</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</guid><description>&lt;p&gt;The core intelligence and language of IDPicker is not hard-coded; it is entirely manageable via the Admin Panel. This allows you to tune the AI Mentors and translate the UI on the fly without requiring engineering deployments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-system-prompts"&gt;1. Managing System Prompts&lt;/h2&gt;
+&lt;p&gt;The system prompts dictate exactly how the AI Mentors behave, what tone they use, and how they analyze student data.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Prompts&lt;/strong&gt; module.&lt;/li&gt;
+&lt;li&gt;Select the specific category and subcategory you want to tune (e.g., &lt;em&gt;Mentor Persona &amp;gt; Academic Strict&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Open the target prompt template.&lt;/li&gt;
+&lt;li&gt;Edit the instructions in the code editor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; Do not delete dynamic variables (e.g., &lt;code&gt;{{student_name}}&lt;/code&gt; or &lt;code&gt;{{assessment_score}}&lt;/code&gt;). Removing these breaks the AI&amp;rsquo;s contextual awareness.&lt;/li&gt;
+&lt;li&gt;Validate the syntax and click &lt;strong&gt;Save&lt;/strong&gt;. The updated prompt version is now live instantly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/prompts-editor.png" alt="Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button"&gt;&lt;/p&gt;</description></item><item><title>Support, Notifications, and Approvals</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</guid><description>&lt;p&gt;This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-support-tickets"&gt;1. Managing Support Tickets&lt;/h2&gt;
+&lt;p&gt;When a student or advisor submits a Help Center request, it routes to this global queue.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Immediately filter the queue by &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt; to catch blockers.&lt;/li&gt;
+&lt;li&gt;Click into a ticket to read the user&amp;rsquo;s description and reproduction steps.&lt;/li&gt;
+&lt;li&gt;Once you have a fix or answer, change the &lt;strong&gt;Status&lt;/strong&gt; (e.g., from &lt;em&gt;In Progress&lt;/em&gt; to &lt;em&gt;Resolved&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Type your official response in the Resolution Message field.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The user will see your response on their local Help Center dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &amp;ldquo;Resolution Message&amp;rdquo; field before trying to change the status to Resolved.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>System Monitoring and Governance</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</guid><description>&lt;p&gt;For technical administrators, this section acts as your infrastructure dashboard. Here you can monitor server health, catch bugs as they happen, and control the financial levers of free usage.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-reviewing-the-status-module"&gt;1. Reviewing the Status Module&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Status&lt;/strong&gt; page from the sidebar.&lt;/li&gt;
+&lt;li&gt;Review the core service health blocks (Database, API, AI Services, Storage).&lt;/li&gt;
+&lt;li&gt;If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.&lt;/li&gt;
+&lt;li&gt;The status page helps isolate whether a reported bug is a local user error or a widespread server outage.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/status-page.png" alt="Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded"&gt;&lt;/p&gt;</description></item><item><title>Troubleshooting</title><link>https://xer0bit.github.io/docs-idpicker/docs/help/troubleshooting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/help/troubleshooting/</guid><description>&lt;p&gt;Use these playbooks when users report blocked workflows.&lt;/p&gt;
+&lt;h2 id="playbook-1-cannot-sign-in"&gt;Playbook 1: Cannot Sign In&lt;/h2&gt;
+&lt;p&gt;Symptoms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Invalid credentials error&lt;/li&gt;
+&lt;li&gt;Redirect loop to login&lt;/li&gt;
+&lt;li&gt;Role mismatch message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Checks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Confirm correct role URL.&lt;/li&gt;
+&lt;li&gt;Confirm account exists and is active.&lt;/li&gt;
+&lt;li&gt;Confirm email verification status.&lt;/li&gt;
+&lt;li&gt;Clear cookies and retry login.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Escalate when:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Multiple users fail with same error pattern.&lt;/li&gt;
+&lt;li&gt;Login endpoint responds with server errors.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="playbook-2-form-cannot-submit"&gt;Playbook 2: Form Cannot Submit&lt;/h2&gt;
+&lt;p&gt;Symptoms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Submit button fails silently&lt;/li&gt;
+&lt;li&gt;Validation error persists&lt;/li&gt;
+&lt;li&gt;Response not saved&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Checks:&lt;/p&gt;</description></item><item><title>FAQ</title><link>https://xer0bit.github.io/docs-idpicker/docs/help/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/help/faq/</guid><description>&lt;h2 id="access-and-accounts"&gt;Access and Accounts&lt;/h2&gt;
+&lt;h3 id="1-i-cannot-log-in-what-should-i-check-first"&gt;1. I cannot log in. What should I check first?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Confirm you are using the correct panel URL for your role.&lt;/li&gt;
+&lt;li&gt;Re-enter username/email and password carefully.&lt;/li&gt;
+&lt;li&gt;Check whether your email verification is pending.&lt;/li&gt;
+&lt;li&gt;Use password reset if you suspect credential mismatch.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="2-why-do-i-get-redirected-back-to-login"&gt;2. Why do I get redirected back to login?&lt;/h3&gt;
+&lt;p&gt;Most common causes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Expired or invalid auth cookie&lt;/li&gt;
+&lt;li&gt;Wrong role token used on another panel&lt;/li&gt;
+&lt;li&gt;Backend session/token invalidation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fix:&lt;/p&gt;</description></item></channel></rss>

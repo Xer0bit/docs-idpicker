@@ -25,7 +25,7 @@ The Personality page is locked until you finish the assessment. If you see a loc
 
 ![Personality page in locked state with Complete Assessment prompt and link to the assessment module](/images/user-manual/student-panel/personality-locked.png)
 
-*Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.*
+Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.
 
 ---
 
@@ -39,7 +39,7 @@ Below the heading is the **Export** button — this lets you download your full 
 
 ![Personality Insights header with Export button at the top of the analysis page](/images/user-manual/student-panel/personality-header.png)
 
-*Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the "Your Personality Analysis" heading, and the Export button.*
+Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the "Your Personality Analysis" heading, and the Export button.
 
 ---
 
@@ -69,7 +69,7 @@ The radar chart is the first visual you see after the header. It plots all eight
 
 ![Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip](/images/user-manual/student-panel/personality-radar-chart.png)
 
-*Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.*
+Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.
 
 ---
 
@@ -87,7 +87,7 @@ The overview card opens with a paragraph describing the unique pattern of your r
 
 ![Personality Overview card showing three tier labels and an introductory paragraph about the student's unique trait pattern](/images/user-manual/student-panel/personality-overview-panel.png)
 
-*Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.*
+Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.
 
 ---
 
@@ -102,7 +102,7 @@ To the right of the Personality Overview is the **Quick Stats** panel. It lists 
 
 ![Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange](/images/user-manual/student-panel/personality-quick-stats.png)
 
-*Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.*
+Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.
 
 ---
 
@@ -124,7 +124,7 @@ Below the overview section, every one of the eight traits has its own card. Each
 
 ![Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section](/images/user-manual/student-panel/personality-trait-card.png)
 
-*Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.*
+Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.
 
 ### The Eight Trait Cards in Detail
 
@@ -200,7 +200,7 @@ How clearly you understand your own traits, habits, emotional triggers, and impa
 
 ![Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps](/images/user-manual/student-panel/personality-growth-area-cards.png)
 
-*Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.*
+Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.
 
 ---
 
@@ -216,7 +216,7 @@ Your full personality analysis can be exported as a PDF to share with parents, a
 
 ![Export button at the top of the Personality page and the resulting PDF open in a new browser tab](/images/user-manual/student-panel/personality-report-download.png)
 
-*Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.*
+Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.
 
 ---
 
@@ -226,7 +226,7 @@ Your personality data does not exist in isolation — it feeds directly into oth
 
 | Module | How personality connects |
 |---|---|
-| **Recommendations** | Select *Personality* mode in the Refine panel to match universities and careers to your trait profile instead of exam scores — see [Recommendations](/docs/student-panel/recommendations/) |
+| **Recommendations** | Select *Personality* mode in the Refine panel to match universities and careers to your trait profile instead of exam scores — see [Recommendations]({{< relref "/docs/student-panel/recommendations" >}}) |
 | **AI Mentorship** | Your active AI mentor is contextually aware of your personality scores and tailors its guidance accordingly |
 | **Advisor Chat** | Share your Quick Stats with your advisor to focus your next guidance session on specific Growth Areas |
 

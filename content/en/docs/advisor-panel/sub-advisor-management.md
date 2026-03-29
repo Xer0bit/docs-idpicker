@@ -25,7 +25,7 @@ If you are a primary Advisor managing a large organization, you can invite sub-a
 
 ![Sub-advisor creation form showing name, email, scope selector, and permission checkboxes](/images/user-manual/advisor-panel/sub-advisor-create.png)
 
-*Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.*
+Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.
 
 ---
 
@@ -40,7 +40,7 @@ If a sub-advisor's role changes, you can adjust their access on the fly.
 5. Click **Save**. The changes will apply the next time they log in or refresh their page.
 ![Permission matrix editor for a sub-advisor showing module toggles with some enabled and some disabled](/images/user-manual/advisor-panel/sub-advisor-permissions.png)
 
-*Image placeholder: Add screenshot of the sub-advisor permission matrix editor with some modules toggled on and others off.*
+Image placeholder: Add screenshot of the sub-advisor permission matrix editor with some modules toggled on and others off.
 ### Validating Their Access
 If you want to be completely sure you set the permissions correctly:
 1. Ask the sub-advisor to log in while you watch, OR

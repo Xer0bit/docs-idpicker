@@ -9,7 +9,7 @@ The University Search module is your comprehensive database for discovering high
 
 ---
 
-## Basic Keyword Search
+## 1. Basic Keyword Search
 
 1. In the sidebar, click **University Search**.
 2. Wait a moment for the filter panel and the default results area to load.
@@ -20,11 +20,11 @@ The University Search module is your comprehensive database for discovering high
 
 ![University search bar with keyword input and auto-filtered results grid](/images/user-manual/student-panel/university-search-keyword.png)
 
-*Image placeholder: Add screenshot of the university search bar with a keyword typed in and the auto-filtered results grid below it.*
+Image placeholder: Add screenshot of the university search bar with a keyword typed in and the auto-filtered results grid below it.
 
 ---
 
-## Power Filtering
+## 2. Power Filtering
 
 To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).
 
@@ -41,11 +41,11 @@ If you want to study entirely in English in a non-English speaking country, this
 
 ![University search filter panel showing category, degree type, and language of instruction dropdowns](/images/user-manual/student-panel/university-search-filters.png)
 
-*Image placeholder: Add screenshot of the filter panel with the Category, Degree Type, and Language of Instruction dropdowns visible.*
+Image placeholder: Add screenshot of the filter panel with the Category, Degree Type, and Language of Instruction dropdowns visible.
 
 ---
 
-## Managing Pagination (Load More)
+## 3. Managing Pagination (Load More)
 
 When reviewing results:
 
@@ -57,11 +57,11 @@ When reviewing results:
 
 ![Pagination controls with page numbers and page size selector at the bottom of university results](/images/user-manual/student-panel/university-search-pagination.png)
 
-*Image placeholder: Add screenshot of the pagination bar at the bottom of the results — show page numbers, the active page highlighted, and the page size selector.*
+Image placeholder: Add screenshot of the pagination bar at the bottom of the results — show page numbers, the active page highlighted, and the page size selector.
 
 ---
 
-## How to Compare Programs Efficiently
+## 4. How to Compare Programs Efficiently
 
 When building your shortlist, we recommend focusing on these core factors displayed on every card:
 

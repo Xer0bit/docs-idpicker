@@ -7,7 +7,7 @@ draft: false
 
 Student panel supports English and Turkish.
 
-## Switch Language (Normal Case)
+## 1. Switch Language (Normal Case)
 
 1. Open sidebar.
 2. Click language switcher.
@@ -15,7 +15,7 @@ Student panel supports English and Turkish.
 4. Wait for UI text refresh.
 5. Navigate to another page to confirm persistence.
 
-## Switch Language During In-Progress Assessment
+## 2. Switch Language During In-Progress Assessment
 
 If an assessment is in progress, a confirmation dialog can appear.
 
@@ -25,7 +25,7 @@ If an assessment is in progress, a confirmation dialog can appear.
 4. Or click Confirm to switch language and reset in-progress state.
 5. Page reloads with selected language.
 
-## Validation Checklist
+## 3. Validation Checklist
 
 After language switch, verify:
 

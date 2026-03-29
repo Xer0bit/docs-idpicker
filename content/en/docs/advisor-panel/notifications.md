@@ -25,7 +25,7 @@ The Notifications module is your mass-communication tool. Instead of sending hun
 
 ![Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button](/images/user-manual/advisor-panel/notifications-compose.png)
 
-*Image placeholder: Add screenshot of the notification composer with a title, message, and group selection visible before clicking Send.*
+Image placeholder: Add screenshot of the notification composer with a title, message, and group selection visible before clicking Send.
 
 ---
 
@@ -41,7 +41,7 @@ Unlike email, platform notifications allow you to track engagement. In your noti
 
 ![Notification history list showing past broadcasts with recipient count, read count, and unread count columns](/images/user-manual/advisor-panel/notifications-history.png)
 
-*Image placeholder: Add screenshot of the notification history table showing several past notifications with their read and unread counts.*
+Image placeholder: Add screenshot of the notification history table showing several past notifications with their read and unread counts.
 
 ---
 

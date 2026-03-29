@@ -27,7 +27,7 @@ While Advisors can create localized forms for their specific students, Super Adm
 
 ![Assessment builder showing question editor with rating scale and multiple choice fields, and question list sidebar](/images/user-manual/admin-panel/assessment-builder.png)
 
-*Image placeholder: Add screenshot of the assessment builder with the question list panel on the left and the question editor open on the right.*
+Image placeholder: Add screenshot of the assessment builder with the question list panel on the left and the question editor open on the right.
 
 ---
 
@@ -43,7 +43,7 @@ If you already have established paper-based psychometrics, you can import them d
 
 ![Bulk import preview table showing question rows with type and options columns, and rows flagged with validation errors](/images/user-manual/admin-panel/assessment-import-preview.png)
 
-*Image placeholder: Add screenshot of the bulk import preview table with valid rows and at least one flagged validation error row.*
+Image placeholder: Add screenshot of the bulk import preview table with valid rows and at least one flagged validation error row.
 
 ---
 

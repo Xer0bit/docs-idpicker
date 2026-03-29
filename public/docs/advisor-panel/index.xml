@@ -1,88 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Advisor Panel on IDPicker Docs</title>
-    <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/</link>
-    <description>Recent content in Advisor Panel on IDPicker Docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/docs-idpicker/docs/advisor-panel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Advisor Login and Dashboard</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid>
-      <description>&lt;p&gt;As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-advisor-login&#34;&gt;1. Advisor Login&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your organization&amp;rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See &lt;a href=&#34;http://localhost:1313/docs-idpicker/docs/getting-started/access-urls/&#34;&gt;Access URLs&lt;/a&gt; if you are unsure).&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Advisor Login page.&lt;/li&gt;&#xA;&lt;li&gt;Enter your registered &lt;strong&gt;Email&lt;/strong&gt; and &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system initializes your specific role and permission set, then drops you onto your Dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Why is my dashboard missing certain modules?&lt;/strong&gt;&#xA;If you are a &amp;ldquo;Sub-Advisor,&amp;rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Students and Bulk Import</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</guid>
-      <description>&lt;p&gt;The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;searching-and-filtering-your-roster&#34;&gt;Searching and Filtering Your Roster&lt;/h2&gt;&#xA;&lt;p&gt;When you open the &lt;strong&gt;Students&lt;/strong&gt; module from the sidebar, you see your entire authorized roster.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Search:&lt;/strong&gt; Use the search bar to find a student quickly by name or email.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Filter:&lt;/strong&gt; Narrow down your list using the drop-down filters. You can filter by:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Assigned Groups&lt;/li&gt;&#xA;&lt;li&gt;Chat status (e.g., awaiting reply)&lt;/li&gt;&#xA;&lt;li&gt;Assessment signals (e.g., completed, missing)&lt;/li&gt;&#xA;&lt;li&gt;Joined date or location&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Click the column headers (Name, Email, Joined Date) to reorder the list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;viewing-student-details&#34;&gt;Viewing Student Details&lt;/h3&gt;&#xA;&lt;p&gt;Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Certificates and Application Documents</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</guid>
-      <description>&lt;p&gt;This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-issuing-a-certificate&#34;&gt;1. Issuing a Certificate&lt;/h2&gt;&#xA;&lt;p&gt;Certificates are formal, advisor-generated recognitions that appear in the student&amp;rsquo;s Certificates module and can be downloaded as PDFs.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Certificates&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Issue Certificate&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A certificate builder dialog opens. Fill in:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Student&lt;/strong&gt; — Search and select the recipient.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Certificate Type&lt;/strong&gt; — Choose from available templates (e.g., &lt;em&gt;Assessment Completion&lt;/em&gt;, &lt;em&gt;Programme Readiness&lt;/em&gt;, &lt;em&gt;Participation&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Issue Date&lt;/strong&gt; — Defaults to today; change if back-dating is required.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt; &lt;em&gt;(Optional)&lt;/em&gt; — Add a personalised message that will appear on the certificate document.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Issue&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The certificate is immediately added to the student&amp;rsquo;s account. They will see it in their &lt;strong&gt;Certificates and Documents&lt;/strong&gt; section and receive a notification.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Enrollment, Family Chat, and Assessments</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</guid>
-      <description>&lt;p&gt;This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-enrollment-requests&#34;&gt;1. Managing Enrollment Requests&lt;/h2&gt;&#xA;&lt;p&gt;Depending on your organization&amp;rsquo;s configuration, students who register may not join your roster automatically. They may land in an approval queue.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Enrollment Requests&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;A list of pending student accounts will appear.&lt;/li&gt;&#xA;&lt;li&gt;Click into a request to review the individual&amp;rsquo;s profile to verify they belong to your organization.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Approve&lt;/strong&gt; to admit them (which grants them full platform access and adds them to your Students roster).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Deny&lt;/strong&gt; if they do not belong.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/enrollment-requests.png&#34; alt=&#34;Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Forms and Responses</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/forms-and-responses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/forms-and-responses/</guid>
-      <description>&lt;p&gt;The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;understanding-the-forms-lifecycle&#34;&gt;Understanding the Forms Lifecycle&lt;/h2&gt;&#xA;&lt;p&gt;Every form moves through a specific lifecycle:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Draft:&lt;/strong&gt; The form is being built and is invisible to students.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Published:&lt;/strong&gt; The form is actively collecting data and is visible to assigned students on their dashboard.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Archived:&lt;/strong&gt; (If applicable) The form is no longer accepting new responses, but old data is preserved.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-and-publishing-a-form&#34;&gt;1. Creating and Publishing a Form&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Forms&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create New Form&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter a &lt;strong&gt;Title&lt;/strong&gt; and a helpful &lt;strong&gt;Description&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save as Draft&lt;/strong&gt; while you are still working on it.&lt;/li&gt;&#xA;&lt;li&gt;When you are completely finished, select your target audience (groups or specific students) and change the status to &lt;strong&gt;Publish&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;preview-before-publishing&#34;&gt;Preview Before Publishing&lt;/h3&gt;&#xA;&lt;p&gt;Always click the &lt;strong&gt;Preview&lt;/strong&gt; action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Groups Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/groups/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/groups/</guid>
-      <description>&lt;p&gt;Groups are an essential organizational tool. By grouping students—whether by graduation year, specific study tracks, or custom campaign objectives—you can distribute forms, share resources, and send notifications much more efficiently.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-group&#34;&gt;1. Creating a New Group&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Groups&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait for the current groups list to load.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Create Group&lt;/strong&gt; button.&lt;/li&gt;&#xA;&lt;li&gt;Enter a clear, descriptive &lt;strong&gt;Group Name&lt;/strong&gt; (e.g., &amp;ldquo;Class of 2026 - Engineering Track&amp;rdquo;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;(Optional)&lt;/em&gt; Add a short description for your own internal reference.&lt;/li&gt;&#xA;&lt;li&gt;A student selector will appear. Select the specific students you want to add to this group right now.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. Your new group appears in the list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;best-practices-for-naming-groups&#34;&gt;Best Practices for Naming Groups&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be Consistent:&lt;/strong&gt; Use a standard naming convention (e.g., &lt;code&gt;[Year] - [Major/Track] - [Cohort]&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Be Specific:&lt;/strong&gt; &amp;ldquo;Group A&amp;rdquo; becomes impossible to manage after a few months.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Review Often:&lt;/strong&gt; Clean up and delete groups when a cohort graduates or finishes a campaign.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/groups-create.png&#34; alt=&#34;Create group dialog showing group name field, description field, and student selector checkboxes&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Notifications</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/notifications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/notifications/</guid>
-      <description>&lt;p&gt;The Notifications module is your mass-communication tool. Instead of sending hundreds of individual emails, use notifications to broadcast platform-native announcements, reminders, and alerts directly to student dashboards.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-broadcast&#34;&gt;1. Creating a New Broadcast&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Notifications&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;You will see a history of your past broadcasts. Click &lt;strong&gt;Create Notification&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter a clear, attention-grabbing &lt;strong&gt;Title&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Type your &lt;strong&gt;Message Body&lt;/strong&gt;. Keep it concise but ensure all necessary links or action items are included.&lt;/li&gt;&#xA;&lt;li&gt;Select your &lt;strong&gt;Target Type&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;All Students&lt;/code&gt;: Broadcasts to every single student in your organization. Use sparingly.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Selected Users&lt;/code&gt;: Allows you to hand-pick individuals.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Selected Groups&lt;/code&gt;: The most common option. Targets a pre-made cohort (e.g., &amp;ldquo;Seniors&amp;rdquo;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;If you chose Users or Groups, a selection interface will appear. Pick your targets.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Send&lt;/strong&gt; (or &lt;strong&gt;Create&lt;/strong&gt;).&lt;/li&gt;&#xA;&lt;li&gt;The notification is immediately dispatched and will appear in your history list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/notifications-compose.png&#34; alt=&#34;Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Profile, Prompts, and Interests</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</guid>
-      <description>&lt;p&gt;This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&amp;rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-updating-your-advisor-profile&#34;&gt;1. Updating Your Advisor Profile&lt;/h2&gt;&#xA;&lt;p&gt;Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click your &lt;strong&gt;Avatar&lt;/strong&gt; or &lt;strong&gt;Profile&lt;/strong&gt; link.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Edit Profile&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Update any of the following:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Display Name&lt;/strong&gt; and &lt;strong&gt;Title&lt;/strong&gt; (e.g., &lt;em&gt;Senior Career Counselor&lt;/em&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bio&lt;/strong&gt; — A short paragraph about your background and specialties&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Avatar&lt;/strong&gt; — Upload a clear headshot (recommended: square, at least 400×400 px)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Contact Details&lt;/strong&gt; — Office hours, phone extension, or secondary email if relevant&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Organization Data&lt;/strong&gt; — Department, branch, or campus information if your platform supports it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save Profile&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Verify the preview panel on the right shows the updated name and avatar correctly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png&#34; alt=&#34;Advisor profile editor showing name, title, bio, and avatar upload fields&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Resources Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/resources/</guid>
-      <description>&lt;p&gt;The Resources module operates as a secure file-sharing library. Advisors can upload helpful materials—like study guides, university brochures, or policy PDFs—and control exactly which students are allowed to see them.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-uploading-a-new-resource&#34;&gt;1. Uploading a New Resource&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Upload Resource&lt;/strong&gt; button at the top of the screen.&lt;/li&gt;&#xA;&lt;li&gt;Click to browse your device, or drag-and-drop your target file.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the metadata:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; (Required) A clear, recognizable title.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; (Optional) Add context on why this file is helpful.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (If enabled) Tag the file to keep the library organized.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Choose your initial visibility setting (&lt;code&gt;Visible to All&lt;/code&gt; or &lt;code&gt;Assigned Only&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Upload&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Wait for the upload to complete and verify the file appears in your library list.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/resources-upload.png&#34; alt=&#34;Resource upload dialog showing file drop zone, name field, description field, and visibility toggle&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Sub-Advisor Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid>
-      <description>&lt;p&gt;If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-new-sub-advisor&#34;&gt;1. Creating a New Sub-Advisor&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Sub-Advisors&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click the &lt;strong&gt;Create Sub-Advisor&lt;/strong&gt; button.&lt;/li&gt;&#xA;&lt;li&gt;Fill in their identity details:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Full Name&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt; (This will be their login)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Set their &lt;strong&gt;Assigned Scope&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If you want them to text &lt;em&gt;only&lt;/em&gt; 12th graders, assign them explicitly to the &amp;ldquo;12th Graders&amp;rdquo; Group. They will not be able to see any students outside of that group.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Configure their &lt;strong&gt;Permission Set&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Decide exactly which modules they can see (e.g., enable &lt;em&gt;Students&lt;/em&gt; and &lt;em&gt;Chat&lt;/em&gt;, but disable &lt;em&gt;Forms&lt;/em&gt; and &lt;em&gt;Settings&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save / Create&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The system will email them an invitation link to set up their password.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png&#34; alt=&#34;Sub-advisor creation form showing name, email, scope selector, and permission checkboxes&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Support Tickets</title>
-      <link>http://localhost:1313/docs-idpicker/docs/advisor-panel/support-tickets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/advisor-panel/support-tickets/</guid>
-      <description>&lt;p&gt;The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-opening-the-ticket-queue&#34;&gt;1. Opening the Ticket Queue&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;The queue loads with a summary row at the top showing counts by status: &lt;em&gt;Pending&lt;/em&gt;, &lt;em&gt;In Progress&lt;/em&gt;, &lt;em&gt;Resolved&lt;/em&gt;, &lt;em&gt;Closed&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;li&gt;By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by &lt;strong&gt;Priority&lt;/strong&gt; immediately.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Start every support session by filtering for &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt;. These are the issues blocking students right now.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Advisor Panel on IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/</link><description>Recent content in Advisor Panel on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/index.xml" rel="self" type="application/rss+xml"/><item><title>Advisor Login and Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/</guid><description>&lt;p&gt;As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-advisor-login"&gt;1. Advisor Login&lt;/h2&gt;
+&lt;p&gt;Depending on your organization&amp;rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See &lt;a href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/access-urls/"&gt;Access URLs&lt;/a&gt; if you are unsure).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Advisor Login page.&lt;/li&gt;
+&lt;li&gt;Enter your registered &lt;strong&gt;Email&lt;/strong&gt; and &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The system initializes your specific role and permission set, then drops you onto your Dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Why is my dashboard missing certain modules?&lt;/strong&gt;
+If you are a &amp;ldquo;Sub-Advisor,&amp;rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.&lt;/p&gt;</description></item><item><title>Students and Bulk Import</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/</guid><description>&lt;p&gt;The Students module is your CRM for managing the individuals you advise. You can view their progress individually, assign them to groups, or import hundreds of students at once.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-searching-and-filtering-your-roster"&gt;1. Searching and Filtering Your Roster&lt;/h2&gt;
+&lt;p&gt;When you open the &lt;strong&gt;Students&lt;/strong&gt; module from the sidebar, you see your entire authorized roster.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Search:&lt;/strong&gt; Use the search bar to find a student quickly by name or email.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Filter:&lt;/strong&gt; Narrow down your list using the drop-down filters. You can filter by:
+&lt;ul&gt;
+&lt;li&gt;Assigned Groups&lt;/li&gt;
+&lt;li&gt;Chat status (e.g., awaiting reply)&lt;/li&gt;
+&lt;li&gt;Assessment signals (e.g., completed, missing)&lt;/li&gt;
+&lt;li&gt;Joined date or location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sort:&lt;/strong&gt; Click the column headers (Name, Email, Joined Date) to reorder the list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="viewing-student-details"&gt;Viewing Student Details&lt;/h3&gt;
+&lt;p&gt;Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.&lt;/p&gt;</description></item><item><title>Certificates and Application Documents</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/</guid><description>&lt;p&gt;This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-issuing-a-certificate"&gt;1. Issuing a Certificate&lt;/h2&gt;
+&lt;p&gt;Certificates are formal, advisor-generated recognitions that appear in the student&amp;rsquo;s Certificates module and can be downloaded as PDFs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Certificates&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Issue Certificate&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A certificate builder dialog opens. Fill in:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Student&lt;/strong&gt; — Search and select the recipient.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate Type&lt;/strong&gt; — Choose from available templates (e.g., &lt;em&gt;Assessment Completion&lt;/em&gt;, &lt;em&gt;Programme Readiness&lt;/em&gt;, &lt;em&gt;Participation&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Issue Date&lt;/strong&gt; — Defaults to today; change if back-dating is required.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Notes&lt;/strong&gt; &lt;em&gt;(Optional)&lt;/em&gt; — Add a personalised message that will appear on the certificate document.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Issue&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The certificate is immediately added to the student&amp;rsquo;s account. They will see it in their &lt;strong&gt;Certificates and Documents&lt;/strong&gt; section and receive a notification.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.&lt;/p&gt;</description></item><item><title>Enrollment, Family Chat, and Assessments</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/</guid><description>&lt;p&gt;This guide covers three distinct operational flows that advisors handle daily: approving new students, managing multidirectional chats, and setting up organizational assessments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-enrollment-requests"&gt;1. Managing Enrollment Requests&lt;/h2&gt;
+&lt;p&gt;Depending on your organization&amp;rsquo;s configuration, students who register may not join your roster automatically. They may land in an approval queue.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Enrollment Requests&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;A list of pending student accounts will appear.&lt;/li&gt;
+&lt;li&gt;Click into a request to review the individual&amp;rsquo;s profile to verify they belong to your organization.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Approve&lt;/strong&gt; to admit them (which grants them full platform access and adds them to your Students roster).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Deny&lt;/strong&gt; if they do not belong.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons"&gt;&lt;/p&gt;</description></item><item><title>Forms and Responses</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/forms-and-responses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/forms-and-responses/</guid><description>&lt;p&gt;The Forms module allows advisors to create custom questionnaires, surveys, or data-collection sheets, distribute them to specific students, and track the responses in one place.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-understanding-the-forms-lifecycle"&gt;1. Understanding the Forms Lifecycle&lt;/h2&gt;
+&lt;p&gt;Every form moves through a specific lifecycle:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Draft:&lt;/strong&gt; The form is being built and is invisible to students.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Published:&lt;/strong&gt; The form is actively collecting data and is visible to assigned students on their dashboard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Archived:&lt;/strong&gt; (If applicable) The form is no longer accepting new responses, but old data is preserved.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="2-creating-and-publishing-a-form"&gt;2. Creating and Publishing a Form&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Forms&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create New Form&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter a &lt;strong&gt;Title&lt;/strong&gt; and a helpful &lt;strong&gt;Description&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Use the form builder interface to add your specific fields (e.g., text inputs, dropdowns, checkboxes).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save as Draft&lt;/strong&gt; while you are still working on it.&lt;/li&gt;
+&lt;li&gt;When you are completely finished, select your target audience (groups or specific students) and change the status to &lt;strong&gt;Publish&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="preview-before-publishing"&gt;Preview Before Publishing&lt;/h3&gt;
+&lt;p&gt;Always click the &lt;strong&gt;Preview&lt;/strong&gt; action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.&lt;/p&gt;</description></item><item><title>Groups Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/groups/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/groups/</guid><description>&lt;p&gt;Groups are an essential organizational tool. By grouping students—whether by graduation year, specific study tracks, or custom campaign objectives—you can distribute forms, share resources, and send notifications much more efficiently.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-group"&gt;1. Creating a New Group&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Groups&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait for the current groups list to load.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Create Group&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Enter a clear, descriptive &lt;strong&gt;Group Name&lt;/strong&gt; (e.g., &amp;ldquo;Class of 2026 - Engineering Track&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;(Optional)&lt;/em&gt; Add a short description for your own internal reference.&lt;/li&gt;
+&lt;li&gt;A student selector will appear. Select the specific students you want to add to this group right now.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. Your new group appears in the list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="best-practices-for-naming-groups"&gt;Best Practices for Naming Groups&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Be Consistent:&lt;/strong&gt; Use a standard naming convention (e.g., &lt;code&gt;[Year] - [Major/Track] - [Cohort]&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be Specific:&lt;/strong&gt; &amp;ldquo;Group A&amp;rdquo; becomes impossible to manage after a few months.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Review Often:&lt;/strong&gt; Clean up and delete groups when a cohort graduates or finishes a campaign.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/groups-create.png" alt="Create group dialog showing group name field, description field, and student selector checkboxes"&gt;&lt;/p&gt;</description></item><item><title>Notifications</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/notifications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/notifications/</guid><description>&lt;p&gt;The Notifications module is your mass-communication tool. Instead of sending hundreds of individual emails, use notifications to broadcast platform-native announcements, reminders, and alerts directly to student dashboards.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-broadcast"&gt;1. Creating a New Broadcast&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Notifications&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;You will see a history of your past broadcasts. Click &lt;strong&gt;Create Notification&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter a clear, attention-grabbing &lt;strong&gt;Title&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Type your &lt;strong&gt;Message Body&lt;/strong&gt;. Keep it concise but ensure all necessary links or action items are included.&lt;/li&gt;
+&lt;li&gt;Select your &lt;strong&gt;Target Type&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;All Students&lt;/code&gt;: Broadcasts to every single student in your organization. Use sparingly.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Selected Users&lt;/code&gt;: Allows you to hand-pick individuals.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Selected Groups&lt;/code&gt;: The most common option. Targets a pre-made cohort (e.g., &amp;ldquo;Seniors&amp;rdquo;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you chose Users or Groups, a selection interface will appear. Pick your targets.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Send&lt;/strong&gt; (or &lt;strong&gt;Create&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;The notification is immediately dispatched and will appear in your history list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/notifications-compose.png" alt="Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button"&gt;&lt;/p&gt;</description></item><item><title>Profile, Prompts, and Interests</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/</guid><description>&lt;p&gt;This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&amp;rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-updating-your-advisor-profile"&gt;1. Updating Your Advisor Profile&lt;/h2&gt;
+&lt;p&gt;Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click your &lt;strong&gt;Avatar&lt;/strong&gt; or &lt;strong&gt;Profile&lt;/strong&gt; link.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Edit Profile&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Update any of the following:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Display Name&lt;/strong&gt; and &lt;strong&gt;Title&lt;/strong&gt; (e.g., &lt;em&gt;Senior Career Counselor&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bio&lt;/strong&gt; — A short paragraph about your background and specialties&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Avatar&lt;/strong&gt; — Upload a clear headshot (recommended: square, at least 400×400 px)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contact Details&lt;/strong&gt; — Office hours, phone extension, or secondary email if relevant&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organization Data&lt;/strong&gt; — Department, branch, or campus information if your platform supports it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save Profile&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Verify the preview panel on the right shows the updated name and avatar correctly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png" alt="Advisor profile editor showing name, title, bio, and avatar upload fields"&gt;&lt;/p&gt;</description></item><item><title>Resources Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/resources/</guid><description>&lt;p&gt;The Resources module operates as a secure file-sharing library. Advisors can upload helpful materials—like study guides, university brochures, or policy PDFs—and control exactly which students are allowed to see them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-uploading-a-new-resource"&gt;1. Uploading a New Resource&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Resources&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Upload Resource&lt;/strong&gt; button at the top of the screen.&lt;/li&gt;
+&lt;li&gt;Click to browse your device, or drag-and-drop your target file.&lt;/li&gt;
+&lt;li&gt;Fill in the metadata:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; (Required) A clear, recognizable title.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description:&lt;/strong&gt; (Optional) Add context on why this file is helpful.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (If enabled) Tag the file to keep the library organized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Choose your initial visibility setting (&lt;code&gt;Visible to All&lt;/code&gt; or &lt;code&gt;Assigned Only&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Upload&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Wait for the upload to complete and verify the file appears in your library list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/resources-upload.png" alt="Resource upload dialog showing file drop zone, name field, description field, and visibility toggle"&gt;&lt;/p&gt;</description></item><item><title>Sub-Advisor Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/sub-advisor-management/</guid><description>&lt;p&gt;If you are a primary Advisor managing a large organization, you can invite sub-advisors (like assistants or specialized tracking counselors) to help you. This guide explains how to invite them and safely restrict their access.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-new-sub-advisor"&gt;1. Creating a New Sub-Advisor&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Sub-Advisors&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click the &lt;strong&gt;Create Sub-Advisor&lt;/strong&gt; button.&lt;/li&gt;
+&lt;li&gt;Fill in their identity details:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Full Name&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt; (This will be their login)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set their &lt;strong&gt;Assigned Scope&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;If you want them to text &lt;em&gt;only&lt;/em&gt; 12th graders, assign them explicitly to the &amp;ldquo;12th Graders&amp;rdquo; Group. They will not be able to see any students outside of that group.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure their &lt;strong&gt;Permission Set&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;Decide exactly which modules they can see (e.g., enable &lt;em&gt;Students&lt;/em&gt; and &lt;em&gt;Chat&lt;/em&gt;, but disable &lt;em&gt;Forms&lt;/em&gt; and &lt;em&gt;Settings&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save / Create&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The system will email them an invitation link to set up their password.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-advisor creation form showing name, email, scope selector, and permission checkboxes"&gt;&lt;/p&gt;</description></item><item><title>Support Tickets</title><link>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/support-tickets/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/support-tickets/</guid><description>&lt;p&gt;The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-opening-the-ticket-queue"&gt;1. Opening the Ticket Queue&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The queue loads with a summary row at the top showing counts by status: &lt;em&gt;Pending&lt;/em&gt;, &lt;em&gt;In Progress&lt;/em&gt;, &lt;em&gt;Resolved&lt;/em&gt;, &lt;em&gt;Closed&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by &lt;strong&gt;Priority&lt;/strong&gt; immediately.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Start every support session by filtering for &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt;. These are the issues blocking students right now.&lt;/p&gt;</description></item></channel></rss>

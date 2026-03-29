@@ -19,7 +19,7 @@ The Support Tickets module is your direct line to students who are having troubl
 
 ![Support ticket queue showing status summary cards and a filtered list sorted by priority](/images/user-manual/advisor-panel/support-tickets-queue.png)
 
-*Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.*
+Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.
 
 ---
 
@@ -42,7 +42,7 @@ The Support Tickets module is your direct line to students who are having troubl
 
 ![Ticket detail view showing subject, description, user details panel, category badge, and timestamps](/images/user-manual/advisor-panel/support-ticket-detail.png)
 
-*Image placeholder: Add screenshot of an open ticket detail view with the student info panel, description, and status dropdown visible.*
+Image placeholder: Add screenshot of an open ticket detail view with the student info panel, description, and status dropdown visible.
 
 ---
 
@@ -76,7 +76,7 @@ Resolution messages are crucial — they are the student-facing reply that appea
 
 ![Resolution message text area filled in with a clear response and the Resolved status selected](/images/user-manual/advisor-panel/support-ticket-resolution.png)
 
-*Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.*
+Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.
 
 ---
 

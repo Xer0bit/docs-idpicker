@@ -34,7 +34,7 @@ Before the dashboard shows any meaningful data, you must link your parent accoun
 *(For more details on managing this link, see the [Linked Student Guide]({{< relref "/docs/parent-panel/linked-student-guide" >}}).)*
 ![Parent dashboard showing linked children cards with progress percentages and the Link Student form](/images/user-manual/parent-panel/dashboard-overview.png)
 
-*Image placeholder: Add screenshot of the parent dashboard showing at least one child card with progress data and the Link Student input field.*
+Image placeholder: Add screenshot of the parent dashboard showing at least one child card with progress data and the Link Student input field.
 ---
 
 ## 3. Opening a Student Card
@@ -49,7 +49,7 @@ No problem. Simply use the **Link Student** form again to request access to your
 
 ![Student card on parent dashboard with the View Student button highlighted](/images/user-manual/parent-panel/student-card.png)
 
-*Image placeholder: Add screenshot of a student card on the parent dashboard with the View Student button visible.*
+Image placeholder: Add screenshot of a student card on the parent dashboard with the View Student button visible.
 
 ---
 

@@ -9,7 +9,7 @@ The Mentor Hub is your central communication space. Here, you can seek advice fr
 
 ---
 
-## Starting a Chat with an AI Mentor
+## 1. Starting a Chat with an AI Mentor
 
 IDPicker provides multiple AI personalities, each tuned for specific types of advice (e.g., strict academic planning, empathetic career counseling, technical skills building).
 
@@ -24,11 +24,11 @@ IDPicker provides multiple AI personalities, each tuned for specific types of ad
 
 ![AI Mentor hub showing personality cards grid and open chat interface with message input box](/images/user-manual/student-panel/ai-mentorship-mentor-chat.png)
 
-*Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.*
+Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.
 
 ---
 
-## Resuming a Recent Chat
+## 2. Resuming a Recent Chat
 
 You do not have to start over every time.
 
@@ -38,11 +38,11 @@ You do not have to start over every time.
 
 ![Recent chats list in Mentor Hub showing previous conversation threads](/images/user-manual/student-panel/ai-mentorship-recent-chats.png)
 
-*Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.*
+Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.
 
 ---
 
-## Chatting With Your Human Advisor
+## 3. Chatting With Your Human Advisor
 
 If your account is linked to an organization or school, your human advisor manages your progress. You can message them directly here.
 
@@ -55,7 +55,7 @@ If your account is linked to an organization or school, your human advisor manag
 
 ![Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button](/images/user-manual/student-panel/ai-mentorship-advisor-chat.png)
 
-*Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.*
+Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.
 
 ---
 

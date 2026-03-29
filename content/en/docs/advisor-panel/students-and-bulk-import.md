@@ -9,7 +9,7 @@ The Students module is your CRM for managing the individuals you advise. You can
 
 ---
 
-## Searching and Filtering Your Roster
+## 1. Searching and Filtering Your Roster
 
 When you open the **Students** module from the sidebar, you see your entire authorized roster.
 
@@ -26,11 +26,11 @@ Click on any student row or card to open their detailed profile. Here you get fu
 
 ![Student roster list showing search bar, filter dropdowns, and student rows with name and email columns](/images/user-manual/advisor-panel/students-roster.png)
 
-*Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.*
+Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.
 
 ---
 
-## Managing Group Assignments
+## 2. Managing Group Assignments
 
 To help organize your communications, you can assign students to Groups right from the roster.
 
@@ -43,7 +43,7 @@ To help organize your communications, you can assign students to Groups right fr
 
 ---
 
-## Bulk Importing Students (Excel)
+## 3. Bulk Importing Students (Excel)
 
 If you have a large cohort starting simultaneously, do not add them one by one. Use the Bulk Import tool.
 
@@ -65,7 +65,7 @@ If you have a large cohort starting simultaneously, do not add them one by one. 
 
 ![Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button](/images/user-manual/advisor-panel/students-bulk-import.png)
 
-*Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.*
+Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.
 
 ---
 

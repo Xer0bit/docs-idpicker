@@ -7,7 +7,7 @@ draft: false
 
 This guide explains how students identify free-plan limits and use upgrade paths.
 
-## Understand Feature Limits
+## 1. Understand Feature Limits
 
 Free-plan limits can apply to:
 
@@ -15,13 +15,13 @@ Free-plan limits can apply to:
 - Assessment/recommendation usage counters
 - Full report download availability
 
-## Where Students See Limit Signals
+## 2. Where Students See Limit Signals
 
 1. Open a quota-sensitive module (Mentor, Assessments, Recommendations).
 2. Locate quota indicator or blocked state.
 3. Read remaining usage and limit label.
 
-## Upgrade Flow from Feature Context
+## 3. Upgrade Flow from Feature Context
 
 1. Reach a gated/limited action.
 2. Click Upgrade or equivalent CTA.
@@ -32,7 +32,7 @@ Note:
 - Dedicated subscription page availability may vary by deployment.
 - In-context upgrade prompts are currently the reliable path.
 
-## What to Do When Subscription Menu Exists but Page Is Missing
+## 4. What to Do When Subscription Menu Exists but Page Is Missing
 
 1. Stay in module where limit appears.
 2. Use in-module upgrade CTA.

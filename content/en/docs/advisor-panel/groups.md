@@ -26,7 +26,7 @@ Groups are an essential organizational tool. By grouping students—whether by g
 
 ![Create group dialog showing group name field, description field, and student selector checkboxes](/images/user-manual/advisor-panel/groups-create.png)
 
-*Image placeholder: Add screenshot of the create group dialog with the name field filled in and several students selected in the member selector.*
+Image placeholder: Add screenshot of the create group dialog with the name field filled in and several students selected in the member selector.
 
 ---
 
@@ -56,7 +56,7 @@ When a group is no longer needed:
 
 ![Groups list showing group cards with member counts, edit buttons, and action menus](/images/user-manual/advisor-panel/groups-list.png)
 
-*Image placeholder: Add screenshot of the groups list showing several group cards or rows with member count badges and action menus.*
+Image placeholder: Add screenshot of the groups list showing several group cards or rows with member count badges and action menus.
 
 ---
 

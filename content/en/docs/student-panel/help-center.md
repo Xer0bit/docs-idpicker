@@ -9,7 +9,7 @@ Sometimes things break or you encounter a feature you do not understand. The Hel
 
 ---
 
-## Opening a New Support Ticket
+## 1. Opening a New Support Ticket
 
 1. In the sidebar, click **Help Center**.
 2. Make sure the **New Ticket** tab is selected.
@@ -22,11 +22,11 @@ Sometimes things break or you encounter a feature you do not understand. The Hel
 
 ![New ticket form with subject, category, priority, and description fields filled in](/images/user-manual/student-panel/help-center-new-ticket.png)
 
-*Image placeholder: Add screenshot of the New Ticket form — all fields visible: subject, category, priority dropdown, and description box.*
+Image placeholder: Add screenshot of the New Ticket form — all fields visible: subject, category, priority dropdown, and description box.
 
 ---
 
-## How to Write a Ticket That Gets Fixed Fast
+## 2. How to Write a Ticket That Gets Fixed Fast
 
 The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:
 
@@ -37,7 +37,7 @@ The support team wants to help, but they cannot see your screen. Provide these d
 
 ---
 
-## Tracking Your Submitted Tickets
+## 3. Tracking Your Submitted Tickets
 
 Once submitted, you can monitor the status of your request without sending duplicate emails.
 
@@ -56,7 +56,7 @@ If an agent replies requiring more info, you will be notified!
 
 ![My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges](/images/user-manual/student-panel/help-center-my-tickets.png)
 
-*Image placeholder: Add screenshot of the My Tickets tab showing at least 2-3 tickets with different status badges (Pending, In Progress, Resolved).*
+Image placeholder: Add screenshot of the My Tickets tab showing at least 2-3 tickets with different status badges (Pending, In Progress, Resolved).
 
 ---
 

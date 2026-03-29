@@ -22,7 +22,7 @@ The system prompts dictate exactly how the AI Mentors behave, what tone they use
 
 ![Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button](/images/user-manual/admin-panel/prompts-editor.png)
 
-*Image placeholder: Add screenshot of the prompt editor with a category selected and the code editor showing dynamic variables like {{student_name}} highlighted.*
+Image placeholder: Add screenshot of the prompt editor with a category selected and the code editor showing dynamic variables like {{student_name}} highlighted.
 
 ---
 
@@ -40,7 +40,7 @@ If you need to fix a typo in the UI, or launch the platform in a brand new langu
 
 ![Translations manager showing namespace dropdown, locale selector, search bar, and an editable translation key row](/images/user-manual/admin-panel/translations-manager.png)
 
-*Image placeholder: Add screenshot of the translations manager showing the namespace/locale filters and a translation row being edited.*
+Image placeholder: Add screenshot of the translations manager showing the namespace/locale filters and a translation row being edited.
 
 ---
 

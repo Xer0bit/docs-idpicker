@@ -7,7 +7,7 @@ draft: false
 
 This guide covers two high-value student workflows: earned certificates and application document submission.
 
-## A) Certificates (Click-by-Click)
+## 1. Certificates (Click-by-Click)
 
 1. In sidebar, click Certificates.
 2. Wait for cards to load.
@@ -23,14 +23,14 @@ This guide covers two high-value student workflows: earned certificates and appl
 7. Click Copy ID to copy verification identifier.
 8. If download link exists, click Download.
 
-## B) Application Documents Setup
+## 2. Application Documents Setup
 
 1. In sidebar, click Application Documents.
 2. First-time users: choose nationality (Turkish/International).
 3. Collection is created.
 4. Wait for step categories and requirements to load.
 
-## C) Upload Documents by Step (Click-by-Click)
+## 3. Upload Documents by Step (Click-by-Click)
 
 1. Select step/category tab.
 2. Select required document type.
@@ -41,7 +41,7 @@ This guide covers two high-value student workflows: earned certificates and appl
 7. Mark step complete when requirements are satisfied.
 8. Continue until all steps are complete.
 
-## D) Review Status and Fix Invalid Files
+## 4. Review Status and Fix Invalid Files
 
 Each document may show:
 
@@ -55,7 +55,7 @@ For invalid file:
 2. Correct file issue.
 3. Re-upload in same requirement slot.
 
-## E) Submit Final Document Collection
+## 5. Submit Final Document Collection
 
 1. Confirm all required steps are complete.
 2. Click final submit action.

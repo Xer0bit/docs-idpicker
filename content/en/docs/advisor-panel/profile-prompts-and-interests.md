@@ -26,7 +26,7 @@ Your profile information appears inside student and parent-facing chat windows w
 
 ![Advisor profile editor showing name, title, bio, and avatar upload fields](/images/user-manual/advisor-panel/profile-editor.png)
 
-*Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.*
+Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.
 
 ---
 
@@ -48,7 +48,7 @@ If your organisation has been granted permission to configure regional AI prompt
 
 ![Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted](/images/user-manual/advisor-panel/prompts-editor.png)
 
-*Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.*
+Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.
 
 ---
 
@@ -67,7 +67,7 @@ The Interests module shows the career domains and fields of study each student h
 
 ![Interests table showing student names, interest domain labels, and status badges](/images/user-manual/advisor-panel/interests-table.png)
 
-*Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.*
+Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.
 
 ---
 

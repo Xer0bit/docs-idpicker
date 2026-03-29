@@ -24,7 +24,7 @@ The Resources module operates as a secure file-sharing library. Advisors can upl
 
 ![Resource upload dialog showing file drop zone, name field, description field, and visibility toggle](/images/user-manual/advisor-panel/resources-upload.png)
 
-*Image placeholder: Add screenshot of the resource upload dialog with all metadata fields filled in and visibility set.*
+Image placeholder: Add screenshot of the resource upload dialog with all metadata fields filled in and visibility set.
 
 ---
 
@@ -54,7 +54,7 @@ As your library grows, use the built-in filters to find what you need quickly:
 
 ![Resources library in grid view showing file cards with title, type badge, visibility label, and action menu](/images/user-manual/advisor-panel/resources-library.png)
 
-*Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.*
+Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.
 
 ---
 

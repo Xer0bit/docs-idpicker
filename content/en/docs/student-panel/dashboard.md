@@ -9,7 +9,7 @@ The Dashboard is the first thing you see after logging in. It gives you a bird's
 
 ---
 
-## What You See on the Dashboard
+## 1. What You See on the Dashboard
 
 When you land on the dashboard, you will see several content blocks:
 
@@ -24,11 +24,11 @@ When you land on the dashboard, you will see several content blocks:
 
 ![Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards](/images/user-manual/student-panel/dashboard-overview.png)
 
-*Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.*
+Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.
 
 ---
 
-## Your First 5 Actions After Logging In
+## 2. Your First 5 Actions After Logging In
 
 Follow this sequence whenever you start a new session for maximum efficiency:
 
@@ -40,7 +40,7 @@ Follow this sequence whenever you start a new session for maximum efficiency:
 
 ---
 
-## Using the Assessment Reports Block
+## 3. Using the Assessment Reports Block
 
 1. Locate the **Assessment Reports** block on your dashboard.
 2. If a report is available, click the **View** or **Download** button.
@@ -50,7 +50,7 @@ Follow this sequence whenever you start a new session for maximum efficiency:
 
 ---
 
-## Using the Assigned Forms Block
+## 4. Using the Assigned Forms Block
 
 Forms are created by your advisor and require your response.
 
@@ -64,11 +64,11 @@ Forms are created by your advisor and require your response.
 
 ![Assigned Forms block with a pending form card and Open button highlighted](/images/user-manual/student-panel/dashboard-assigned-forms.png)
 
-*Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.*
+Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.
 
 ---
 
-## Handling Organization Invitations
+## 5. Handling Organization Invitations
 
 1. Find the **Invitations** block on the dashboard.
 2. Click an invitation card to review the organization name and context.
@@ -77,11 +77,11 @@ Forms are created by your advisor and require your response.
 
 ![Organization invitation card showing organization name with Accept and Decline buttons](/images/user-manual/student-panel/dashboard-invitations.png)
 
-*Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.*
+Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.
 
 ---
 
-## Reading Notifications
+## 6. Reading Notifications
 
 1. Locate the **Notifications** block.
 2. Click on any notification that looks relevant.
@@ -90,7 +90,7 @@ Forms are created by your advisor and require your response.
 
 ---
 
-## Resuming an In-Progress Assessment
+## 7. Resuming an In-Progress Assessment
 
 If you started an assessment and did not finish it:
 
@@ -100,11 +100,11 @@ If you started an assessment and did not finish it:
 4. Complete all remaining questions and click **Submit**.
 ![Dashboard showing Resume Assessment prompt card with Continue button](/images/user-manual/student-panel/dashboard-resume-assessment.png)
 
-*Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.*
+Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.
 
 ---
 
-## Exploring Program Cards
+## 8. Exploring Program Cards
 
 - **Promoted programs** are specifically featured by the platform or your organization.
 - **Random programs** are surfaced for open exploration.

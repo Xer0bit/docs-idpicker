@@ -22,7 +22,7 @@ Organizations are the containers that hold Advisors, Students, and Parents. Befo
 
 ![Organization list showing school names, primary admin, location, and action menus, with Create Organization button](/images/user-manual/admin-panel/organization-list.png)
 
-*Image placeholder: Add screenshot of the organization management list with several school rows and the Create Organization button.*
+Image placeholder: Add screenshot of the organization management list with several school rows and the Create Organization button.
 
 ---
 
@@ -40,7 +40,7 @@ While Advisors manage their own rosters, Super Admins have global visibility ove
 
 ![Student management search showing name/email search results with expanded row displaying verification and activity details](/images/user-manual/admin-panel/student-management.png)
 
-*Image placeholder: Add screenshot of the student management global search results with an expanded row showing account verification status and activity data.*
+Image placeholder: Add screenshot of the student management global search results with an expanded row showing account verification status and activity data.
 
 ---
 

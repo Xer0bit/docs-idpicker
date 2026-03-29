@@ -24,7 +24,7 @@ When a student or advisor submits a Help Center request, it routes to this globa
 
 ![Global support ticket queue showing filter controls, ticket rows with priority and status badges, and a resolution message field](/images/user-manual/admin-panel/support-tickets-admin.png)
 
-*Image placeholder: Add screenshot of the admin support ticket queue filtered to Urgent + Pending, with an open ticket showing the resolution message field.*
+Image placeholder: Add screenshot of the admin support ticket queue filtered to Urgent + Pending, with an open ticket showing the resolution message field.
 
 ---
 
@@ -43,7 +43,7 @@ While Advisors notify their specific students, Super Admins can push alerts glob
 
 ![Global notification composer showing target scope dropdown set to All Students, title and message fields, and Send button](/images/user-manual/admin-panel/notifications-global.png)
 
-*Image placeholder: Add screenshot of the global notification composer with target scope, title, and message filled in before sending.*
+Image placeholder: Add screenshot of the global notification composer with target scope, title, and message filled in before sending.
 
 ---
 

@@ -23,7 +23,7 @@ Depending on your organization's setup, you will access the platform either via 
 
 ![Advisor login page showing the email, password fields, and Sign In button](/images/user-manual/advisor-panel/login.png)
 
-*Image placeholder: Add screenshot of the advisor login page with email and password fields visible.*
+Image placeholder: Add screenshot of the advisor login page with email and password fields visible.
 
 ---
 
@@ -61,7 +61,7 @@ The Advisor Dashboard serves as your daily command center.
 
 ![Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation](/images/user-manual/advisor-panel/dashboard.png)
 
-*Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.*
+Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.
 
 ---
 

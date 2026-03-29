@@ -21,7 +21,7 @@ Depending on your organization's configuration, students who register may not jo
 
 ![Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons](/images/user-manual/advisor-panel/enrollment-requests.png)
 
-*Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.*
+Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.
 
 ---
 
@@ -41,7 +41,7 @@ IDPicker recognizes that guidance is a collaborative effort between the advisor,
 
 ![Family chat interface showing student thread, parent thread, and family thread tabs with message composer at bottom](/images/user-manual/advisor-panel/family-chat.png)
 
-*Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.*
+Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.
 
 ---
 

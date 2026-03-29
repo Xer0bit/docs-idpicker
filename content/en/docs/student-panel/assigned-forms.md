@@ -7,14 +7,14 @@ draft: false
 
 Assigned forms are organization/advisor forms that students complete from dashboard or direct link.
 
-## Open Assigned Form from Dashboard
+## 1. Open Assigned Form from Dashboard
 
 1. Open Dashboard.
 2. Locate Assigned Forms block.
 3. Click Open Form on pending item.
 4. Wait for form page to load.
 
-## Understand Form Header
+## 2. Understand Form Header
 
 At top, you may see:
 
@@ -23,7 +23,7 @@ At top, you may see:
 - Form description
 - Editability state
 
-## Complete Form Fields (Click-by-Click)
+## 3. Complete Form Fields (Click-by-Click)
 
 For each field:
 
@@ -34,14 +34,14 @@ For each field:
 
 Supported field patterns include text, textarea, number, email, dropdown, radio, checkbox, date/time/datetime, and rating.
 
-## Submit Response
+## 4. Submit Response
 
 1. Scroll to submit action.
 2. Click Submit.
 3. Wait for success message.
 4. Return to dashboard.
 
-## If Form Is Read-Only
+## 5. If Form Is Read-Only
 
 If already submitted and editing is disabled:
 

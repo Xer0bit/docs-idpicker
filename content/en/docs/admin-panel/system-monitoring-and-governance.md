@@ -18,7 +18,7 @@ For technical administrators, this section acts as your infrastructure dashboard
 
 ![Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded](/images/user-manual/admin-panel/status-page.png)
 
-*Image placeholder: Add screenshot of the status page showing all service health blocks, with any current degraded or offline indicators visible.*
+Image placeholder: Add screenshot of the status page showing all service health blocks, with any current degraded or offline indicators visible.
 
 ---
 
@@ -35,7 +35,7 @@ When a user reports a persistent crash, the Realtime Logs are your best diagnost
 
 ![Realtime logs stream showing live error and fatal level log entries with source filter set to ai-generation](/images/user-manual/admin-panel/realtime-logs.png)
 
-*Image placeholder: Add screenshot of the realtime logs stream with the ERROR filter active and several log entries visible.*
+Image placeholder: Add screenshot of the realtime logs stream with the ERROR filter active and several log entries visible.
 
 ---
 

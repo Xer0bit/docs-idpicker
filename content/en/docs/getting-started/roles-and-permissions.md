@@ -99,7 +99,7 @@ Parents have a deliberately limited view to protect student privacy:
 
 ![Diagram showing the relationship between Admin, Advisor, Sub-Advisor, Student, and Parent roles with arrows indicating who can see or manage whom](/images/user-manual/getting-started/roles-diagram.png)
 
-*Image placeholder: Add a diagram showing the five roles and the directional relationships between them \u2014 e.g., Admin oversees all, Advisor manages Sub-Advisor and Students, Parent links to Student.*
+Image placeholder: Add a diagram showing the five roles and the directional relationships between them \u2014 e.g., Admin oversees all, Advisor manages Sub-Advisor and Students, Parent links to Student.
 
 ---
 

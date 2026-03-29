@@ -9,7 +9,7 @@ Assessments are the core of IDPicker. Completing them unlocks your personalized 
 
 ---
 
-## Starting a New Assessment
+## 1. Starting a New Assessment
 
 1. From the left sidebar, click **Self Assessment**.
 2. Look at the available assessment cards (e.g., *Personality*, *Career*).
@@ -23,11 +23,11 @@ Assessments are the core of IDPicker. Completing them unlocks your personalized 
 
 ![Assessment card list showing available assessments with Start button](/images/user-manual/student-panel/assessment-card-list.png)
 
-*Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.*
+Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.
 
 ---
 
-## Resuming an Incomplete Assessment
+## 2. Resuming an Incomplete Assessment
 
 Life happens. If you close your browser or navigate away, your progress is safely auto-saved.
 
@@ -39,11 +39,11 @@ Life happens. If you close your browser or navigate away, your progress is safel
 
 ![Assessment card showing Continue button for a session that was left incomplete](/images/user-manual/student-panel/assessment-resume.png)
 
-*Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.*
+Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.
 
 ---
 
-## Retaking an Assessment
+## 3. Retaking an Assessment
 
 Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:
 
@@ -54,11 +54,11 @@ Some assessments allow you to retake them if you feel your situation has changed
 
 ![Retake confirmation dialog warning that previous results will be overwritten](/images/user-manual/student-panel/assessment-retake-confirm.png)
 
-*Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.*
+Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.
 
 ---
 
-## Reviewing Your Results
+## 4. Reviewing Your Results
 
 Once you submit an assessment, the platform instantly generates your results.
 
@@ -68,11 +68,11 @@ Once you submit an assessment, the platform instantly generates your results.
 
 ![Assessment results summary showing trait scores and breakdown after submission](/images/user-manual/student-panel/assessment-results.png)
 
-*Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.*
+Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.
 
 ---
 
-## Important Note on Languages
+## 5. Important Note on Languages
 
 If you change your interface language (e.g., from English to Turkish) *while* an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!
 

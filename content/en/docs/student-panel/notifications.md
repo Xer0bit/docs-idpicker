@@ -18,7 +18,7 @@ IDPicker keeps you informed through a built-in notification system. Whenever you
 
 ![Notification bell icon with a red unread badge and the dropdown panel showing recent notifications](/images/user-manual/student-panel/notifications-dropdown.png)
 
-*Image placeholder: Add screenshot of the notification bell in the navbar with the dropdown open, showing recent notification items and the View All link.*
+Image placeholder: Add screenshot of the notification bell in the navbar with the dropdown open, showing recent notification items and the View All link.
 
 ---
 
@@ -47,7 +47,7 @@ If you have many unread notifications and want to clear the badge quickly:
 
 ![Notifications inbox showing unread rows highlighted and the Mark All as Read button at the top](/images/user-manual/student-panel/notifications-inbox.png)
 
-*Image placeholder: Add screenshot of the full notifications inbox page with several unread rows and the Mark All as Read button visible.*
+Image placeholder: Add screenshot of the full notifications inbox page with several unread rows and the Mark All as Read button visible.
 
 ---
 

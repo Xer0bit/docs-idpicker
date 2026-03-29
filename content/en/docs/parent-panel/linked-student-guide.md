@@ -24,7 +24,7 @@ Depending on the platform settings, you will experience one of two outcomes:
 
 ![Link student form showing an email input field and Send Link Request button, with a Pending confirmation message below](/images/user-manual/parent-panel/link-student-form.png)
 
-*Image placeholder: Add screenshot of the Link Student form with an email address entered and the pending confirmation state visible.*
+Image placeholder: Add screenshot of the Link Student form with an email address entered and the pending confirmation state visible.
 
 ---
 
@@ -69,7 +69,7 @@ The Parent Panel is designed for **monitoring and support**, not authoring.
 
 ![Linked student profile view showing assessment progress, recommendation summary, and journey map section](/images/user-manual/parent-panel/linked-student-profile.png)
 
-*Image placeholder: Add screenshot of the linked student profile page showing the progress, recommendations, and journey map sections available to the parent.*
+Image placeholder: Add screenshot of the linked student profile page showing the progress, recommendations, and journey map sections available to the parent.
 
 ---
 

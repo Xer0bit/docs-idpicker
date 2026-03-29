@@ -23,7 +23,7 @@ The platform is used by individual students, school-based advisors managing hund
 
 ![IDPicker platform workflow overview — from assessment to recommendation](/images/user-manual/getting-started/platform-overview.png)
 
-*Image placeholder: Add a simple workflow diagram showing the student journey: Register → Assessment → Personality → Recommendations → AI Mentor.*
+Image placeholder: Add a simple workflow diagram showing the student journey: Register → Assessment → Personality → Recommendations → AI Mentor.
 
 ---
 
@@ -69,7 +69,7 @@ IDPicker is designed as a **supervised platform**. Relationships between roles a
 
 ![Diagram showing the relationship between advisor, student, and parent accounts](/images/user-manual/getting-started/role-relationships.png)
 
-*Image placeholder: Add a simple diagram showing how advisor, student, and parent accounts link together with arrows indicating who initiates each connection.*
+Image placeholder: Add a simple diagram showing how advisor, student, and parent accounts link together with arrows indicating who initiates each connection.
 
 ---
 
@@ -87,5 +87,5 @@ IDPicker is designed as a **supervised platform**. Relationships between roles a
 | Situation | What to do |
 |---|---|
 | I am not sure which panel to use | Your invitation email or onboarding link will take you directly to the correct panel for your role |
-| I forgot my login URL | See the [Access URLs](/docs/getting-started/access-urls/) page for all environment-specific login addresses |
+| I forgot my login URL | See the [Access URLs]({{< relref "/docs/getting-started/access-urls" >}}) page for all environment-specific login addresses |
 | I need to act as both advisor and parent | Register two separate accounts with different email addresses — one for each role |

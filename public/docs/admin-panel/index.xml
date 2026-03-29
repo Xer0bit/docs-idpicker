@@ -1,60 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Admin Panel on IDPicker Docs</title>
-    <link>http://localhost:1313/docs-idpicker/docs/admin-panel/</link>
-    <description>Recent content in Admin Panel on IDPicker Docs</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <atom:link href="http://localhost:1313/docs-idpicker/docs/admin-panel/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Admin Login and Dashboard</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/login-and-dashboard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/login-and-dashboard/</guid>
-      <description>&lt;p&gt;The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-secure-admin-login&#34;&gt;1. Secure Admin Login&lt;/h2&gt;&#xA;&lt;p&gt;Accessing the admin portal requires navigating to a specific, protected route.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the Admin Login URL (often &lt;code&gt;/admin/login&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Enter your authorized admin &lt;strong&gt;Email&lt;/strong&gt; or &lt;strong&gt;Username&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;Forgotten Password?&lt;/strong&gt;&#xA;If you lose your password, click &lt;strong&gt;Forgot Password&lt;/strong&gt;, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>User and Organization Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/user-and-organization-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/user-and-organization-management/</guid>
-      <description>&lt;p&gt;As a platform administrator, you control the foundational structure of IDPicker. This module allows you to manage the top-level Organizations (schools, agencies) and manually audit the individual users beneath them.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-organization-management&#34;&gt;1. Organization Management&lt;/h2&gt;&#xA;&lt;p&gt;Organizations are the containers that hold Advisors, Students, and Parents. Before onboarding a new school, you must create their Organization record.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, click &lt;strong&gt;Organization Management&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create Organization&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the organization&amp;rsquo;s public profile details (Name, Location, Branding if applicable).&lt;/li&gt;&#xA;&lt;li&gt;Assign the &lt;strong&gt;Primary Admin&lt;/strong&gt; (the head advisor or IT contact for that school).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The organization is now active and its admin can begin inviting students.&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;To edit or delete an organization, use the action menu next to its name in the list view.&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/organization-list.png&#34; alt=&#34;Organization list showing school names, primary admin, location, and action menus, with Create Organization button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Admin and Subadmin Management</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</guid>
-      <description>&lt;p&gt;Not all administrators need full access to every setting. This module allows you to create internal staff accounts and rigorously defend your organization&amp;rsquo;s security posture by enforcing least-privilege access.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-an-admin-user&#34;&gt;1. Creating an Admin User&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Admin Management&lt;/strong&gt; page.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Add Admin&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Fill in the required identity fields:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email (Must be unique across the platform)&lt;/li&gt;&#xA;&lt;li&gt;Username&lt;/li&gt;&#xA;&lt;li&gt;First / Last Name&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Set a strong temporary password. The new admin should change this immediately upon their first login.&lt;/li&gt;&#xA;&lt;li&gt;Select their foundational Role (e.g., &lt;em&gt;Super Admin&lt;/em&gt; vs &lt;em&gt;Content Admin&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/admin-create.png&#34; alt=&#34;Add admin form showing email, username, name fields, role dropdown, and Save button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Assessments and Forms</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/assessments-and-forms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/assessments-and-forms/</guid>
-      <description>&lt;p&gt;While Advisors can create localized forms for their specific students, Super Admins control the global Assessments and global Forms that apply across the entire IDPicker ecosystem.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-creating-a-global-assessment&#34;&gt;1. Creating a Global Assessment&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;In the sidebar, open &lt;strong&gt;Assessments&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Create Assessment&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Provide the foundational metadata:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Title &amp;amp; Description:&lt;/strong&gt; Make these public-friendly.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (e.g., Psychological, Placement, Feedback).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Enter the visual builder to add questions. Supported formats include:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Rating Scales (1-5, 1-10)&lt;/li&gt;&#xA;&lt;li&gt;Multiple Choice (Single or Multi-select)&lt;/li&gt;&#xA;&lt;li&gt;Short/Long Answer text fields&lt;/li&gt;&#xA;&lt;li&gt;Yes/No Booleans&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Configure required flags and save.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Testing is Mandatory:&lt;/strong&gt; Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Prompts, Translations, and Content</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</guid>
-      <description>&lt;p&gt;The core intelligence and language of IDPicker is not hard-coded; it is entirely manageable via the Admin Panel. This allows you to tune the AI Mentors and translate the UI on the fly without requiring engineering deployments.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-system-prompts&#34;&gt;1. Managing System Prompts&lt;/h2&gt;&#xA;&lt;p&gt;The system prompts dictate exactly how the AI Mentors behave, what tone they use, and how they analyze student data.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Prompts&lt;/strong&gt; module.&lt;/li&gt;&#xA;&lt;li&gt;Select the specific category and subcategory you want to tune (e.g., &lt;em&gt;Mentor Persona &amp;gt; Academic Strict&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Open the target prompt template.&lt;/li&gt;&#xA;&lt;li&gt;Edit the instructions in the code editor.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; Do not delete dynamic variables (e.g., &lt;code&gt;{{student_name}}&lt;/code&gt; or &lt;code&gt;{{assessment_score}}&lt;/code&gt;). Removing these breaks the AI&amp;rsquo;s contextual awareness.&lt;/li&gt;&#xA;&lt;li&gt;Validate the syntax and click &lt;strong&gt;Save&lt;/strong&gt;. The updated prompt version is now live instantly.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/prompts-editor.png&#34; alt=&#34;Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Support, Notifications, and Approvals</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</guid>
-      <description>&lt;p&gt;This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-managing-support-tickets&#34;&gt;1. Managing Support Tickets&lt;/h2&gt;&#xA;&lt;p&gt;When a student or advisor submits a Help Center request, it routes to this global queue.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Immediately filter the queue by &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt; to catch blockers.&lt;/li&gt;&#xA;&lt;li&gt;Click into a ticket to read the user&amp;rsquo;s description and reproduction steps.&lt;/li&gt;&#xA;&lt;li&gt;Once you have a fix or answer, change the &lt;strong&gt;Status&lt;/strong&gt; (e.g., from &lt;em&gt;In Progress&lt;/em&gt; to &lt;em&gt;Resolved&lt;/em&gt;).&lt;/li&gt;&#xA;&lt;li&gt;Type your official response in the Resolution Message field.&lt;/li&gt;&#xA;&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The user will see your response on their local Help Center dashboard.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;em&gt;Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &amp;ldquo;Resolution Message&amp;rdquo; field before trying to change the status to Resolved.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>System Monitoring and Governance</title>
-      <link>http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</guid>
-      <description>&lt;p&gt;For technical administrators, this section acts as your infrastructure dashboard. Here you can monitor server health, catch bugs as they happen, and control the financial levers of free usage.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-reviewing-the-status-module&#34;&gt;1. Reviewing the Status Module&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the &lt;strong&gt;Status&lt;/strong&gt; page from the sidebar.&lt;/li&gt;&#xA;&lt;li&gt;Review the core service health blocks (Database, API, AI Services, Storage).&lt;/li&gt;&#xA;&lt;li&gt;If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.&lt;/li&gt;&#xA;&lt;li&gt;The status page helps isolate whether a reported bug is a local user error or a widespread server outage.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/docs-idpicker/images/user-manual/admin-panel/status-page.png&#34; alt=&#34;Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Admin Panel on IDPicker Docs</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/</link><description>Recent content in Admin Panel on IDPicker Docs</description><generator>Hugo</generator><language>en</language><atom:link href="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/index.xml" rel="self" type="application/rss+xml"/><item><title>Admin Login and Dashboard</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/login-and-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/login-and-dashboard/</guid><description>&lt;p&gt;The Admin Panel is the highest level of access in IDPicker, designed for platform owners and high-level operations staff. This guide covers secure access and daily monitoring routines.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-secure-admin-login"&gt;1. Secure Admin Login&lt;/h2&gt;
+&lt;p&gt;Accessing the admin portal requires navigating to a specific, protected route.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the Admin Login URL (often &lt;code&gt;/admin/login&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Enter your authorized admin &lt;strong&gt;Email&lt;/strong&gt; or &lt;strong&gt;Username&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Once your high-level authorization cookie is validated, you are routed directly to the global dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Forgotten Password?&lt;/strong&gt;
+If you lose your password, click &lt;strong&gt;Forgot Password&lt;/strong&gt;, enter your email, and use the secure reset link sent to your inbox. Because of the high privilege level of this account, password strength requirements are strictly enforced.&lt;/p&gt;</description></item><item><title>User and Organization Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/user-and-organization-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/user-and-organization-management/</guid><description>&lt;p&gt;As a platform administrator, you control the foundational structure of IDPicker. This module allows you to manage the top-level Organizations (schools, agencies) and manually audit the individual users beneath them.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-organization-management"&gt;1. Organization Management&lt;/h2&gt;
+&lt;p&gt;Organizations are the containers that hold Advisors, Students, and Parents. Before onboarding a new school, you must create their Organization record.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, click &lt;strong&gt;Organization Management&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create Organization&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Fill in the organization&amp;rsquo;s public profile details (Name, Location, Branding if applicable).&lt;/li&gt;
+&lt;li&gt;Assign the &lt;strong&gt;Primary Admin&lt;/strong&gt; (the head advisor or IT contact for that school).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The organization is now active and its admin can begin inviting students.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;To edit or delete an organization, use the action menu next to its name in the list view.&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/organization-list.png" alt="Organization list showing school names, primary admin, location, and action menus, with Create Organization button"&gt;&lt;/p&gt;</description></item><item><title>Admin and Subadmin Management</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/</guid><description>&lt;p&gt;Not all administrators need full access to every setting. This module allows you to create internal staff accounts and rigorously defend your organization&amp;rsquo;s security posture by enforcing least-privilege access.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-an-admin-user"&gt;1. Creating an Admin User&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Admin Management&lt;/strong&gt; page.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Add Admin&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Fill in the required identity fields:
+&lt;ul&gt;
+&lt;li&gt;Email (Must be unique across the platform)&lt;/li&gt;
+&lt;li&gt;Username&lt;/li&gt;
+&lt;li&gt;First / Last Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Set a strong temporary password. The new admin should change this immediately upon their first login.&lt;/li&gt;
+&lt;li&gt;Select their foundational Role (e.g., &lt;em&gt;Super Admin&lt;/em&gt; vs &lt;em&gt;Content Admin&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/admin-create.png" alt="Add admin form showing email, username, name fields, role dropdown, and Save button"&gt;&lt;/p&gt;</description></item><item><title>Assessments and Forms</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/assessments-and-forms/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/assessments-and-forms/</guid><description>&lt;p&gt;While Advisors can create localized forms for their specific students, Super Admins control the global Assessments and global Forms that apply across the entire IDPicker ecosystem.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-creating-a-global-assessment"&gt;1. Creating a Global Assessment&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In the sidebar, open &lt;strong&gt;Assessments&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create Assessment&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Provide the foundational metadata:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Title &amp;amp; Description:&lt;/strong&gt; Make these public-friendly.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; (e.g., Psychological, Placement, Feedback).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Enter the visual builder to add questions. Supported formats include:
+&lt;ul&gt;
+&lt;li&gt;Rating Scales (1-5, 1-10)&lt;/li&gt;
+&lt;li&gt;Multiple Choice (Single or Multi-select)&lt;/li&gt;
+&lt;li&gt;Short/Long Answer text fields&lt;/li&gt;
+&lt;li&gt;Yes/No Booleans&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure required flags and save.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Testing is Mandatory:&lt;/strong&gt; Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.&lt;/p&gt;</description></item><item><title>Prompts, Translations, and Content</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/</guid><description>&lt;p&gt;The core intelligence and language of IDPicker is not hard-coded; it is entirely manageable via the Admin Panel. This allows you to tune the AI Mentors and translate the UI on the fly without requiring engineering deployments.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-system-prompts"&gt;1. Managing System Prompts&lt;/h2&gt;
+&lt;p&gt;The system prompts dictate exactly how the AI Mentors behave, what tone they use, and how they analyze student data.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Prompts&lt;/strong&gt; module.&lt;/li&gt;
+&lt;li&gt;Select the specific category and subcategory you want to tune (e.g., &lt;em&gt;Mentor Persona &amp;gt; Academic Strict&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Open the target prompt template.&lt;/li&gt;
+&lt;li&gt;Edit the instructions in the code editor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CRITICAL:&lt;/strong&gt; Do not delete dynamic variables (e.g., &lt;code&gt;{{student_name}}&lt;/code&gt; or &lt;code&gt;{{assessment_score}}&lt;/code&gt;). Removing these breaks the AI&amp;rsquo;s contextual awareness.&lt;/li&gt;
+&lt;li&gt;Validate the syntax and click &lt;strong&gt;Save&lt;/strong&gt;. The updated prompt version is now live instantly.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/prompts-editor.png" alt="Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button"&gt;&lt;/p&gt;</description></item><item><title>Support, Notifications, and Approvals</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/support-notifications-and-approvals/</guid><description>&lt;p&gt;This module covers the operational workflows for global customer support and gating access to the platform via formal approvals.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-managing-support-tickets"&gt;1. Managing Support Tickets&lt;/h2&gt;
+&lt;p&gt;When a student or advisor submits a Help Center request, it routes to this global queue.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;strong&gt;Support Tickets&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Immediately filter the queue by &lt;strong&gt;Priority: Urgent&lt;/strong&gt; and &lt;strong&gt;Status: Pending&lt;/strong&gt; to catch blockers.&lt;/li&gt;
+&lt;li&gt;Click into a ticket to read the user&amp;rsquo;s description and reproduction steps.&lt;/li&gt;
+&lt;li&gt;Once you have a fix or answer, change the &lt;strong&gt;Status&lt;/strong&gt; (e.g., from &lt;em&gt;In Progress&lt;/em&gt; to &lt;em&gt;Resolved&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Type your official response in the Resolution Message field.&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Save&lt;/strong&gt;. The user will see your response on their local Help Center dashboard.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &amp;ldquo;Resolution Message&amp;rdquo; field before trying to change the status to Resolved.&lt;/em&gt;&lt;/p&gt;</description></item><item><title>System Monitoring and Governance</title><link>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/</guid><description>&lt;p&gt;For technical administrators, this section acts as your infrastructure dashboard. Here you can monitor server health, catch bugs as they happen, and control the financial levers of free usage.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="1-reviewing-the-status-module"&gt;1. Reviewing the Status Module&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open the &lt;strong&gt;Status&lt;/strong&gt; page from the sidebar.&lt;/li&gt;
+&lt;li&gt;Review the core service health blocks (Database, API, AI Services, Storage).&lt;/li&gt;
+&lt;li&gt;If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.&lt;/li&gt;
+&lt;li&gt;The status page helps isolate whether a reported bug is a local user error or a widespread server outage.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src="https://xer0bit.github.io/docs-idpicker/images/user-manual/admin-panel/status-page.png" alt="Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded"&gt;&lt;/p&gt;</description></item></channel></rss>

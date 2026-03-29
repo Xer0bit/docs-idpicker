@@ -19,7 +19,7 @@ At the top of the student detail page, you will see their **Basic Profile** (nam
 
 ![Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator](/images/user-manual/parent-panel/student-detail-overview.png)
 
-*Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.*
+Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.
 
 ---
 
@@ -39,7 +39,7 @@ The Journey Map is a comprehensive, exportable report that synthesizes your chil
 
 ![Journey Map section showing data point checkboxes, Preview button, and Generate & Download button](/images/user-manual/parent-panel/journey-map-generator.png)
 
-*Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate & Download button visible.*
+Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate & Download button visible.
 
 ---
 

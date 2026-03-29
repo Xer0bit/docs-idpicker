@@ -35,7 +35,7 @@ The admin dashboard provides a live pulse of the entire platform's health and ac
 
 ![Admin dashboard showing global KPI cards, registration trend chart, and recent assessments feed](/images/user-manual/admin-panel/admin-dashboard.png)
 
-*Image placeholder: Add screenshot of the full admin dashboard with KPI cards at the top, trend chart, and system activity panel.*
+Image placeholder: Add screenshot of the full admin dashboard with KPI cards at the top, trend chart, and system activity panel.
 
 ---
 
@@ -50,7 +50,7 @@ Because the AI Mentor and generation features consume API tokens, monitoring usa
 
 ![Token usage section showing a date range filter with input and output token charts side by side](/images/user-manual/admin-panel/token-usage.png)
 
-*Image placeholder: Add screenshot of the token usage section showing the date filter and the input/output token charts.*
+Image placeholder: Add screenshot of the token usage section showing the date filter and the input/output token charts.
 
 ---
 

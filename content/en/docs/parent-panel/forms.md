@@ -22,7 +22,7 @@ Forms assigned to you appear in two places:
 
 ![Parent forms list showing form names, submission status badges, and due dates](/images/user-manual/parent-panel/parent-forms-list.png)
 
-*Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.*
+Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.
 
 ---
 
@@ -57,7 +57,7 @@ Fields marked with a red asterisk `*` are **required** — you cannot submit the
 
 ![Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers](/images/user-manual/parent-panel/parent-form-filling.png)
 
-*Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.*
+Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.
 
 ---
 
@@ -79,7 +79,7 @@ Before clicking **Submit**:
 
 ![Success notification after form submission and the form title now showing Submitted status](/images/user-manual/parent-panel/parent-form-submitted.png)
 
-*Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.*
+Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.
 
 ---
 

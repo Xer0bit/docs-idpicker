@@ -9,7 +9,7 @@ Everything students need to create an account, sign in, and recover access start
 
 ---
 
-## Before You Begin
+## 1. Before You Begin
 
 Make sure you have:
 
@@ -19,7 +19,7 @@ Make sure you have:
 
 ---
 
-## Sign In with Email and Password
+## 2. Sign In with Email and Password
 
 This is the fastest path for returning students.
 
@@ -40,11 +40,11 @@ This is the fastest path for returning students.
 
 ![Student login page showing email and password fields with Sign In button](/images/user-manual/student-panel/authentication-login.png)
 
-*Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.*
+Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.
 
 ---
 
-## Sign In with Google
+## 3. Sign In with Google
 
 Faster sign-in without a separate password.
 
@@ -60,11 +60,11 @@ Faster sign-in without a separate password.
 
 ![Continue with Google button and Google account picker dialog](/images/user-manual/student-panel/authentication-google-signin.png)
 
-*Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.*
+Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.
 
 ---
 
-## Register a New Account
+## 4. Register a New Account
 
 New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.
 
@@ -87,11 +87,11 @@ New students follow a multi-step wizard. The exact steps depend on whether you r
 
 ![Multi-step registration wizard showing name, email, password, interests, and profile fields](/images/user-manual/student-panel/authentication-register.png)
 
-*Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.*
+Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.
 
 ---
 
-## Verify Your Email
+## 5. Verify Your Email
 
 After registration, IDPicker sends a verification email.
 
@@ -109,11 +109,11 @@ After registration, IDPicker sends a verification email.
 
 ![Email verification page confirming the link was clicked successfully](/images/user-manual/student-panel/authentication-verify-email.png)
 
-*Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.*
+Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.
 
 ---
 
-## Forgot Password
+## 6. Forgot Password
 
 Use this if you cannot remember your current password.
 
@@ -124,11 +124,11 @@ Use this if you cannot remember your current password.
 
 ![Forgot password form with registered email input and Send Reset Link button](/images/user-manual/student-panel/authentication-forgot-password.png)
 
-*Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.*
+Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.
 
 ---
 
-## Reset Password From the Email Link
+## 7. Reset Password From the Email Link
 
 After requesting a reset, you will receive a link by email.
 
@@ -145,7 +145,7 @@ After requesting a reset, you will receive a link by email.
 
 ![Reset password form with new password field, confirm password field, and strength indicator](/images/user-manual/student-panel/authentication-reset-password.png)
 
-*Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.*
+Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.
 
 ---
 

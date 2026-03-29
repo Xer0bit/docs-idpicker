@@ -27,7 +27,7 @@ Certificates are formal, advisor-generated recognitions that appear in the stude
 
 ![Certificate builder dialog showing student selector, type dropdown, and issue date field](/images/user-manual/advisor-panel/certificates-issue.png)
 
-*Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.*
+Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.
 
 ---
 
@@ -65,7 +65,7 @@ Students upload supporting documents (transcripts, passports, language certifica
 
 ![Application documents list with student rows, completion progress bars, and a review button](/images/user-manual/advisor-panel/application-documents-list.png)
 
-*Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.*
+Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.
 
 ---
 
@@ -83,7 +83,7 @@ Students upload supporting documents (transcripts, passports, language certifica
 
 ![Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field](/images/user-manual/advisor-panel/document-review-panel.png)
 
-*Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.*
+Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.
 
 ---
 

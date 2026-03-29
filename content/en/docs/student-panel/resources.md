@@ -9,7 +9,7 @@ The Resources module acts as your personal digital library. Whenever your adviso
 
 ---
 
-## Browsing the Resource Library
+## 1. Browsing the Resource Library
 
 1. From the main sidebar, click **Resources**.
 2. Wait a second for your personalized file grid to load.
@@ -24,11 +24,11 @@ Know exactly what you are looking for?
 
 ![Resource library grid showing file cards with assigned and globally visible documents](/images/user-manual/student-panel/resources-library.png)
 
-*Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.*
+Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.
 
 ---
 
-## Filtering and Sorting Files
+## 2. Filtering and Sorting Files
 
 If your organization has shared hundreds of files, use these controls to narrow them down:
 
@@ -40,11 +40,11 @@ If your organization has shared hundreds of files, use these controls to narrow 
 
 ![Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls](/images/user-manual/student-panel/resources-filters.png)
 
-*Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.*
+Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.
 
 ---
 
-## Downloading a Shared File
+## 3. Downloading a Shared File
 
 1. Locate the card or row of the file you need.
 2. Click the **Download** button.
@@ -54,7 +54,7 @@ If your organization has shared hundreds of files, use these controls to narrow 
 
 ![Resource file card with Download button highlighted and browser download prompt](/images/user-manual/student-panel/resources-download.png)
 
-*Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.*
+Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.
 
 ---
 

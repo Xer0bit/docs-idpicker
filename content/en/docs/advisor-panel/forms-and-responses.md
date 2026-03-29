@@ -9,7 +9,7 @@ The Forms module allows advisors to create custom questionnaires, surveys, or da
 
 ---
 
-## Understanding the Forms Lifecycle
+## 1. Understanding the Forms Lifecycle
 
 Every form moves through a specific lifecycle:
 1. **Draft:** The form is being built and is invisible to students.
@@ -18,7 +18,7 @@ Every form moves through a specific lifecycle:
 
 ---
 
-## 1. Creating and Publishing a Form
+## 2. Creating and Publishing a Form
 
 1. In the sidebar, click **Forms**.
 2. Click **Create New Form**.
@@ -32,11 +32,11 @@ Always click the **Preview** action before publishing! This lets you see the for
 
 ![Form builder interface showing the title field, question editor panel, and a preview of the first question](/images/user-manual/advisor-panel/forms-builder.png)
 
-*Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.*
+Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.
 
 ---
 
-## 2. Managing Existing Forms
+## 3. Managing Existing Forms
 
 You can manage your forms from the main Forms list view:
 
@@ -46,7 +46,7 @@ You can manage your forms from the main Forms list view:
 
 ---
 
-## 3. Reviewing Student Responses
+## 4. Reviewing Student Responses
 
 Once your form is published and students begin filling it out, you need to review their answers.
 
@@ -57,7 +57,7 @@ Once your form is published and students begin filling it out, you need to revie
 
 ![Form responses table listing student names, submission timestamps, and a row-click drill-down panel](/images/user-manual/advisor-panel/forms-responses.png)
 
-*Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student's answers.*
+Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student's answers.
 
 ---
 

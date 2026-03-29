@@ -15,13 +15,13 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 1. Open your browser and navigate to the login address provided by your school, organization, or invitation email.
 2. Confirm the page title matches your role (e.g., *Student Login*, *Advisor Login*).
-3. If you are unsure of the correct URL, see the [Access URLs](/docs/getting-started/access-urls/) page.
+3. If you are unsure of the correct URL, see the [Access URLs]({{< relref "/docs/getting-started/access-urls" >}}) page.
 
 > **Tip:** Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.
 
 ![Student login page URL in browser bar and the sign-in form](/images/user-manual/getting-started/login-page.png)
 
-*Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.*
+Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.
 
 ---
 
@@ -49,7 +49,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 ![Sign-in form with email/password fields and Continue with Google button](/images/user-manual/getting-started/sign-in-form.png)
 
-*Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.*
+Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.
 
 ---
 
@@ -67,7 +67,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 ![Student dashboard with the Self Assessment card highlighted and a Start button](/images/user-manual/getting-started/student-first-assessment.png)
 
-*Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.*
+Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.
 
 ### Step 2 — Explore your Personality profile
 
@@ -88,7 +88,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 ![Recommendations page showing ranked university cards after applying filters](/images/user-manual/getting-started/student-first-recommendations.png)
 
-*Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.*
+Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.
 
 ---
 
@@ -115,7 +115,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 ![Advisor dashboard with KPI widgets and sidebar navigation highlighted](/images/user-manual/getting-started/advisor-first-run.png)
 
-*Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.*
+Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.
 
 ---
 
@@ -137,7 +137,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 ![Parent dashboard showing a linked student card with View Student button](/images/user-manual/getting-started/parent-first-run.png)
 
-*Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.*
+Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.
 
 ---
 
@@ -145,6 +145,6 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 | Situation | What to do |
 |---|---|
-| I signed in but landed on the wrong panel | Log out and use the correct login URL for your role — see [Access URLs](/docs/getting-started/access-urls/) |
+| I signed in but landed on the wrong panel | Log out and use the correct login URL for your role — see [Access URLs]({{< relref "/docs/getting-started/access-urls" >}}) |
 | I clicked Start on the assessment but the page is blank | Refresh the page. If it persists, try a different browser (Chrome or Firefox recommended) |
 | My child never received my link request | Ask them to log in to their student dashboard and look for a notification about a pending parent link approval |

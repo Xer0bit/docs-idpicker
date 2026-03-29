@@ -20,6 +20,8 @@ Sometimes things break or you encounter a feature you do not understand. The Hel
 6. In the **Description** box, provide as much detail as possible.
 7. Click **Submit** and wait for the success flash.
 
+![New ticket form with subject, category, priority, and description fields filled in](/images/user-manual/student-panel/help-center-new-ticket.png)
+
 ---
 
 ## How to Write a Ticket That Gets Fixed Fast
@@ -49,6 +51,8 @@ Once submitted, you can monitor the status of your request without sending dupli
 | **Closed** | The issue is fully completed and archived |
 
 If an agent replies requiring more info, you will be notified!
+
+![My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges](/images/user-manual/student-panel/help-center-my-tickets.png)
 
 ---
 

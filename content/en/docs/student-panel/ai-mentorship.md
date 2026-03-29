@@ -22,6 +22,8 @@ IDPicker provides multiple AI personalities, each tuned for specific types of ad
 
 > **Quota Warning:** Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!
 
+![AI Mentor hub showing personality cards grid and open chat interface with message input box](/images/user-manual/student-panel/ai-mentorship-mentor-chat.png)
+
 ---
 
 ## Resuming a Recent Chat
@@ -31,6 +33,8 @@ You do not have to start over every time.
 1. In the Mentor Hub, look for the **Recent Chats** list.
 2. Click on a recent thread.
 3. The chat history will load, and you can pick up the conversation exactly where you left off.
+
+![Recent chats list in Mentor Hub showing previous conversation threads](/images/user-manual/student-panel/ai-mentorship-recent-chats.png)
 
 ---
 
@@ -44,6 +48,8 @@ If your account is linked to an organization or school, your human advisor manag
 4. Type and send your message. When your advisor replies, you will be notified on your dashboard.
 
 *Note: If the advisor section says "No advisor linked," your account operates independently and this feature is disabled.*
+
+![Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button](/images/user-manual/student-panel/ai-mentorship-advisor-chat.png)
 
 ---
 

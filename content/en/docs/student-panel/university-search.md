@@ -18,6 +18,8 @@ The University Search module is your comprehensive database for discovering high
 5. Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.
 6. Review your refined results.
 
+![University search bar with keyword input and auto-filtered results grid](/images/user-manual/student-panel/university-search-keyword.png)
+
 ---
 
 ## Power Filtering
@@ -35,6 +37,8 @@ If you want to study entirely in English in a non-English speaking country, this
 
 > **Warning:** Mixing too many strict filters at once (e.g., *Aerospace Engineering*, *PhD*, *Turkish language*, *in Germany*) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.
 
+![University search filter panel showing category, degree type, and language of instruction dropdowns](/images/user-manual/student-panel/university-search-filters.png)
+
 ---
 
 ## Managing Pagination (Load More)
@@ -46,6 +50,8 @@ When reviewing results:
 3. You can change how many cards load at once by tweaking the **Page Size** control (e.g., 6, 12, 24).
 
 *Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.*
+
+![Pagination controls with page numbers and page size selector at the bottom of university results](/images/user-manual/student-panel/university-search-pagination.png)
 
 ---
 

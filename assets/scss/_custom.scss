@@ -40,6 +40,20 @@ body {
     &:hover { color: #000000; }
   }
 
+  // Show the PNG logo correctly in the brand slot
+  .navbar-brand__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 36px;
+      width: auto;
+      max-height: 36px;
+      display: block;
+      object-fit: contain;
+    }
+  }
+
   // Hide the theme's text title so only our PNG logo shows
   .navbar-brand__name {
     display: none !important;

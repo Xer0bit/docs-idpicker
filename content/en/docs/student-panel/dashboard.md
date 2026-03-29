@@ -22,6 +22,8 @@ When you land on the dashboard, you will see several content blocks:
 | **Promoted Programs** | Highlighted university/career programs | Browse and explore |
 | **Random Programs** | Exploratory program discovery | Click into any that look interesting |
 
+![Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards](/images/user-manual/student-panel/dashboard-overview.png)
+
 ---
 
 ## Your First 5 Actions After Logging In
@@ -58,6 +60,8 @@ Forms are created by your advisor and require your response.
 
 > **Note:** Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.
 
+![Assigned Forms block with a pending form card and Open button highlighted](/images/user-manual/student-panel/dashboard-assigned-forms.png)
+
 ---
 
 ## Handling Organization Invitations
@@ -66,6 +70,8 @@ Forms are created by your advisor and require your response.
 2. Click an invitation card to review the organization name and context.
 3. Click **Accept** to join or **Decline** to refuse.
 4. Your decision is saved immediately.
+
+![Organization invitation card showing organization name with Accept and Decline buttons](/images/user-manual/student-panel/dashboard-invitations.png)
 
 ---
 
@@ -86,7 +92,7 @@ If you started an assessment and did not finish it:
 2. Click **Resume Assessment**.
 3. You are taken back to exactly where you left off.
 4. Complete all remaining questions and click **Submit**.
-
+![Dashboard showing Resume Assessment prompt card with Continue button](/images/user-manual/student-panel/dashboard-resume-assessment.png)
 ---
 
 ## Exploring Program Cards

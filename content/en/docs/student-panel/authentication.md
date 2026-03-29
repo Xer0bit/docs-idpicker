@@ -13,7 +13,7 @@ Everything students need to create an account, sign in, and recover access start
 
 Make sure you have:
 
-- The **student login URL** for your environment — see [Access URLs](/docs/getting-started/access-urls/)
+- The **student login URL** for your environment — see [Access URLs]({{< relref "/docs/getting-started/access-urls" >}})
 - A valid email address you can check immediately
 - A stable internet connection and an up-to-date browser
 
@@ -38,6 +38,8 @@ This is the fastest path for returning students.
 - If you see a message about email verification, follow the [Verify Your Email](#verify-your-email) section below.
 - If you have forgotten your password, use [Forgot Password](#forgot-password).
 
+![Student login page showing email and password fields with Sign In button](/images/user-manual/student-panel/authentication-login.png)
+
 ---
 
 ## Sign In with Google
@@ -53,6 +55,8 @@ Faster sign-in without a separate password.
 **If the login window stays on the same page:**
 - Your browser may be blocking popups. Allow popups for this site and try again.
 - Make sure you are not using a private/incognito window with strict tracking prevention.
+
+![Continue with Google button and Google account picker dialog](/images/user-manual/student-panel/authentication-google-signin.png)
 
 ---
 
@@ -77,6 +81,8 @@ New students follow a multi-step wizard. The exact steps depend on whether you r
 - Consent checkbox not checked → scroll down and tick the box.
 - Weak password → make sure it meets all strength requirements shown on screen.
 
+![Multi-step registration wizard showing name, email, password, interests, and profile fields](/images/user-manual/student-panel/authentication-register.png)
+
 ---
 
 ## Verify Your Email
@@ -95,6 +101,8 @@ After registration, IDPicker sends a verification email.
 2. Enter your email and click **Resend Verification Email**.
 3. Open the new email and click the fresh link.
 
+![Email verification page confirming the link was clicked successfully](/images/user-manual/student-panel/authentication-verify-email.png)
+
 ---
 
 ## Forgot Password
@@ -105,6 +113,8 @@ Use this if you cannot remember your current password.
 2. Enter your registered email address.
 3. Click **Send Reset Link**.
 4. Check your inbox and spam folder for the reset email.
+
+![Forgot password form with registered email input and Send Reset Link button](/images/user-manual/student-panel/authentication-forgot-password.png)
 
 ---
 
@@ -122,6 +132,8 @@ After requesting a reset, you will receive a link by email.
 
 **If the link says the token is invalid or expired:**
 - Request a new reset link from the [Forgot Password](#forgot-password) step above.
+
+![Reset password form with new password field, confirm password field, and strength indicator](/images/user-manual/student-panel/authentication-reset-password.png)
 
 ---
 

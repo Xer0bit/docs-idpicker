@@ -1,12 +1,8 @@
 <a class="navbar-brand" href="{{ "/" | relLangURL }}" aria-label="IDPicker">
   <span class="navbar-brand__logo">
-    {{ if os.FileExists "assets/icons/logo.svg" -}}
-    {{ partial "icons/logo.svg" . }}
-    {{- else -}}
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36">
-      <image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/>
-    </svg>
-    {{- end }}
+    {{ $logo := resources.Get "icons/logo.png" }}
+    {{ if $logo }}
+    <img src="{{ $logo.RelPermalink }}" alt="IDPicker" height="40" style="max-height:40px; width:auto; display:block;">
+    {{ end }}
   </span>
-  <!-- Purposefully removed the `<span class="navbar-brand__name">` element to hide the text -->
 </a>

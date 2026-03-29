@@ -35,7 +35,7 @@ To help organize your communications, you can assign students to Groups right fr
 3. Check the boxes for the target groups.
 4. Click **Save**. The membership updates instantly.
 
-*(Note: See the [Groups Management](/docs/advisor-panel/groups/) guide for how to create groups in the first place).*
+*(Note: See the [Groups Management]({{< relref "/docs/advisor-panel/groups" >}}) guide for how to create groups in the first place).*
 
 ---
 
@@ -67,4 +67,4 @@ If you have a large cohort starting simultaneously, do not add them one by one. 
 |---|---|
 | I uploaded an Excel file but the preview is totally blank | Make sure your file is a valid `.xlsx` and exactly matches the required lowercase header names (`email`, `first_name`, `last_name`) |
 | The filters say "0 students found" but I know they exist | You likely have conflicting filters applied. Clear all filters and reapply them one by one |
-| I just imported students; how do I message them all? | Create a Group for the new cohort, assign them, and then use the [Notifications](/docs/advisor-panel/notifications/) module to broadcast a message |
+| I just imported students; how do I message them all? | Create a Group for the new cohort, assign them, and then use the [Notifications]({{< relref "/docs/advisor-panel/notifications" >}}) module to broadcast a message |

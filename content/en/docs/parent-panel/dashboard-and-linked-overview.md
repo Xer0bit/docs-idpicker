@@ -31,7 +31,7 @@ Before the dashboard shows any meaningful data, you must link your parent accoun
    - *Instant Link:* If your email matches records sent by the school, the student card appears immediately on your dashboard.
    - *Pending Request:* The system sends a notification to your child's student dashboard. They must click "Approve" before you can see their data.
 
-*(For more details on managing this link, see the [Linked Student Guide](/docs/parent-panel/linked-student-guide/).)*
+*(For more details on managing this link, see the [Linked Student Guide]({{< relref "/docs/parent-panel/linked-student-guide" >}}).)*
 
 ---
 
@@ -40,7 +40,7 @@ Before the dashboard shows any meaningful data, you must link your parent accoun
 To dive into the specific details for one child:
 1. Locate their card on your dashboard.
 2. Click anywhere on the card (or click **View Student**).
-3. The platform will navigate to the [Student Detail Page](/docs/parent-panel/student-detail-journey-map-and-chat/), where you can see their full assessment results, progress, and recommendations.
+3. The platform will navigate to the [Student Detail Page]({{< relref "/docs/parent-panel/student-detail-journey-map-and-chat" >}}), where you can see their full assessment results, progress, and recommendations.
 
 ### Got Multiple Children?
 No problem. Simply use the **Link Student** form again to request access to your second or third child. They will each appear as a distinct, separate card on your dashboard.

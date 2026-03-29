@@ -11,7 +11,7 @@ As an Advisor, your platform access is tailored to your operational role. This g
 
 ## 1. Advisor Login
 
-Depending on your organization's setup, you will access the platform either via a custom organization link or the main advisor portal. (See [Access URLs](/docs/getting-started/access-urls/) if you are unsure).
+Depending on your organization's setup, you will access the platform either via a custom organization link or the main advisor portal. (See [Access URLs]({{< relref "/docs/getting-started/access-urls" >}}) if you are unsure).
 
 1. Open the Advisor Login page.
 2. Enter your registered **Email** and **Password**.

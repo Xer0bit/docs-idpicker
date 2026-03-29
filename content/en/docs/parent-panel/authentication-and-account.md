@@ -13,7 +13,7 @@ Parents use the IDPicker Parent Panel to monitor their child's progress, review 
 
 If you are new to the platform:
 
-1. Open the [Parent Registration URL](/docs/getting-started/access-urls/).
+1. Open the [Parent Registration URL]({{< relref "/docs/getting-started/access-urls" >}}).
 2. Fill out the registration form with your **Email**, **Full Name**, and a **Strong Password**.
 3. Check the consent checkbox at the bottom of the form.
 4. Click **Register**.
@@ -42,7 +42,7 @@ Often, schools or advisors will create a parent account on your behalf and send 
 2. Click the **Email** field and enter your registered parent email address.
 3. Click the **Password** field and enter your password.
 4. Click **Sign In**.
-5. You will land directly on your [Parent Dashboard](/docs/parent-panel/dashboard-and-linked-overview/).
+5. You will land directly on your [Parent Dashboard]({{< relref "/docs/parent-panel/dashboard-and-linked-overview" >}}).
 
 *If login fails, double-check your password spelling. Passwords are case-sensitive.*
 

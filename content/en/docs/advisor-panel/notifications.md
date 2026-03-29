@@ -52,4 +52,4 @@ If you need to check what you sent months ago:
 |---|---|
 | The read rate is extremely low | Give it 24 hours. Students only see notifications when they actively log in to their dashboard |
 | I accidentally sent a notification to the wrong group | Platform notifications are instant and generally cannot be un-sent. Send a follow-up correction immediately to the same wrong group |
-| The "Selected Groups" option is greyed out | You cannot target groups if you have not created any groups yet. See the [Groups](/docs/advisor-panel/groups/) guide |
+| The "Selected Groups" option is greyed out | You cannot target groups if you have not created any groups yet. See the [Groups]({{< relref "/docs/advisor-panel/groups" >}}) guide |

@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/student-panel/personality/">
-<meta name="robots" content="noindex, nofollow">
+<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/student-panel/personality/">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -20,24 +20,25 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Personality | IDPicker Docs</title>
-<meta name="description" content="How to read your psychological radar chart and trait breakdowns">
-<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/student-panel/personality/">
+<meta name="description" content="How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps">
+<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/student-panel/personality/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Personality">
-  <meta property="og:description" content="How to read your psychological radar chart and trait breakdowns">
+  <meta property="og:description" content="How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
 
   <meta itemprop="name" content="Personality">
-  <meta itemprop="description" content="How to read your psychological radar chart and trait breakdowns">
+  <meta itemprop="description" content="How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps">
   <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="314">
+  <meta itemprop="wordCount" content="1781">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Personality">
-  <meta name="twitter:description" content="How to read your psychological radar chart and trait breakdowns">
-<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
+  <meta name="twitter:description" content="How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps">
+<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -46,7 +47,27 @@
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
+
+<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="586">
+<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
+ 
+.td-navbar .navbar-brand__logo svg {
+  display: none !important;
+}
+.td-navbar .navbar-brand__logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 160px;
+  height: 40px;
+  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  flex-shrink: 0;
+}
+
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -81,7 +102,7 @@
     <header>
       <nav class="td-navbar js-navbar-scroll">
 <div class="td-navbar-container container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
   <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
     <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
@@ -102,7 +123,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -127,7 +148,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -292,10 +313,24 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisite-complete-the-assessment">Prerequisite: Complete the Assessment!</a></li>
-    <li><a href="#reading-your-radar-chart">Reading Your Radar Chart</a></li>
-    <li><a href="#understanding-trait-cards">Understanding Trait Cards</a></li>
-    <li><a href="#downloading-your-personality-report">Downloading Your Personality Report</a></li>
+    <li><a href="#1-prerequisite-complete-the-personality-assessment">1. Prerequisite: Complete the Personality Assessment</a></li>
+    <li><a href="#2-the-personality-insights-header">2. The Personality Insights Header</a></li>
+    <li><a href="#3-reading-the-radar-chart">3. Reading the Radar Chart</a>
+      <ul>
+        <li><a href="#the-eight-traits-on-the-chart">The Eight Traits on the Chart</a></li>
+        <li><a href="#how-to-read-the-chart">How to Read the Chart</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-the-personality-overview-panel">4. The Personality Overview Panel</a></li>
+    <li><a href="#5-quick-stats-panel">5. Quick Stats Panel</a></li>
+    <li><a href="#6-individual-trait-cards">6. Individual Trait Cards</a>
+      <ul>
+        <li><a href="#card-anatomy">Card Anatomy</a></li>
+        <li><a href="#the-eight-trait-cards-in-detail">The Eight Trait Cards in Detail</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-exporting-your-personality-report">7. Exporting Your Personality Report</a></li>
+    <li><a href="#8-using-your-personality-results-with-other-platform-features">8. Using Your Personality Results With Other Platform Features</a></li>
     <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
@@ -320,45 +355,260 @@
 </nav>
 <div class="td-content">
 	<h1>Personality</h1>
-	<div class="lead">How to read your psychological radar chart and trait breakdowns</div>
+	<div class="lead">How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps</div>
 	<header class="article-meta">
 		
 </header>
-	<p>The Personality module visualizes your psychological traits and provides actionable advice on how to leverage your natural strengths.</p>
+	<p>The Personality module reveals who you are through eight measured psychological traits. After completing the Personality assessment, you receive a full analysis: an interactive radar chart, a personality overview with strength tiers, quick stat rankings, and individual trait cards with detailed interpretations and concrete action steps. This page explains every section so you can use your results to guide your studies, career choices, and personal growth.</p>
+<blockquote>
+<p><strong>Warning — Take the assessment in a calm, focused environment.</strong> Your personality results are only as accurate as the honesty and mindfulness you bring to the questions. Find a quiet place, set aside at least 15–20 uninterrupted minutes, put your phone away, and answer each question based on how you <em>actually</em> behave — not how you wish you behaved. Rushed or distracted answers will skew your trait scores and reduce the quality of your university and career recommendations.</p>
+</blockquote>
 <hr>
-<h2 id="prerequisite-complete-the-assessment">Prerequisite: Complete the Assessment!</h2>
-<p>Before you can see your personality breakdown, you must complete the Personality self-assessment.</p>
+<h2 id="1-prerequisite-complete-the-personality-assessment">1. Prerequisite: Complete the Personality Assessment</h2>
+<p>The Personality page is locked until you finish the assessment. If you see a locked state:</p>
 <ol>
-<li>From the sidebar, click <strong>Personality</strong>.</li>
-<li>If your assessment is incomplete, the screen will show a lock state.</li>
-<li>Click the prompt to <strong>Complete Assessment</strong> and finish it.</li>
+<li>From the sidebar, click <strong>Assessment</strong>.</li>
+<li>Locate the <strong>Personality</strong> assessment card.</li>
+<li>Click <strong>Start</strong> and work through every question without skipping.</li>
+<li>Submit the assessment when all questions are complete.</li>
+<li>Return to the sidebar and click <strong>Personality</strong> — your full analysis is now unlocked.</li>
 </ol>
+<blockquote>
+<p><strong>Note:</strong> Once you submit, results are generated instantly. You do not need to wait or refresh.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/personality-locked.png" alt="Personality page in locked state with Complete Assessment prompt and link to the assessment module"></p>
 <hr>
-<h2 id="reading-your-radar-chart">Reading Your Radar Chart</h2>
-<p>Once unlocked, the first thing you will see is your interactive <strong>Radar Chart</strong>.</p>
+<h2 id="2-the-personality-insights-header">2. The Personality Insights Header</h2>
+<p>At the top of the page you will see a <strong>Personality Insights</strong> badge and the heading <strong>Your Personality Analysis</strong>, followed by the subline:</p>
+<blockquote>
+<p><em>&ldquo;Explore your unique personality traits through the interactive radar chart below, based on your assessment.&rdquo;</em></p>
+</blockquote>
+<p>Below the heading is the <strong>Export</strong> button — this lets you download your full report at any time. See <a href="#7-exporting-your-personality-report">section 7</a> for full export steps.</p>
+<p><img src="/images/user-manual/student-panel/personality-header.png" alt="Personality Insights header with Export button at the top of the analysis page"></p>
+<hr>
+<h2 id="3-reading-the-radar-chart">3. Reading the Radar Chart</h2>
+<p>The radar chart is the first visual you see after the header. It plots all eight traits simultaneously so you can grasp your overall profile shape at a glance.</p>
+<h3 id="the-eight-traits-on-the-chart">The Eight Traits on the Chart</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Trait</th>
+          <th>Axis position on chart</th>
+          <th>What it measures</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Emotional Balance</strong></td>
+          <td>Top centre</td>
+          <td>How steadily you manage your feelings under pressure</td>
+      </tr>
+      <tr>
+          <td><strong>Social Connection</strong></td>
+          <td>Right</td>
+          <td>Your ability to build and sustain positive relationships</td>
+      </tr>
+      <tr>
+          <td><strong>Mental Agility</strong></td>
+          <td>Lower right</td>
+          <td>Cognitive flexibility and capacity for clear thinking</td>
+      </tr>
+      <tr>
+          <td><strong>Inner Drive</strong></td>
+          <td>Lower right-centre</td>
+          <td>Internal motivation and self-push to reach goals</td>
+      </tr>
+      <tr>
+          <td><strong>Self-Awareness</strong></td>
+          <td>Bottom centre</td>
+          <td>Understanding of your own traits, behaviours, and impact</td>
+      </tr>
+      <tr>
+          <td><strong>Growth Mindset</strong></td>
+          <td>Lower left</td>
+          <td>Openness to learning, challenges, and self-improvement</td>
+      </tr>
+      <tr>
+          <td><strong>Adaptive Thinking</strong></td>
+          <td>Left</td>
+          <td>Thoughtfulness and balanced decision-making</td>
+      </tr>
+      <tr>
+          <td><strong>Goal Focus</strong></td>
+          <td>Upper left</td>
+          <td>Clarity of vision and directed energy toward goals</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="how-to-read-the-chart">How to Read the Chart</h3>
 <ol>
-<li><strong>Hover over the points</strong> on the radar axis to see the exact percentage scoring for each dimension.</li>
-<li>Identify the spikes (your strongest natural traits) and the dips (traits that require more conscious effort).</li>
-<li>The shape of the radar gives you an immediate, visual understanding of your behavioral footprint.</li>
+<li><strong>Look at the overall shape</strong> — a large, even polygon means broadly developed traits. A lopsided shape signals strong peaks and clear growth areas.</li>
+<li><strong>Identify the outermost points</strong> — these are your Top Strengths (scores 7–10).</li>
+<li><strong>Identify the innermost points</strong> — these are your Growth Areas (scores 1–5), which represent the biggest opportunities for self-improvement.</li>
+<li><strong>Hover over any axis point</strong> to see the exact numeric score for that trait.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/personality-radar-chart.png" alt="Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip"></p>
 <hr>
-<h2 id="understanding-trait-cards">Understanding Trait Cards</h2>
-<p>Below the chart, you will find detailed cards for every measured trait.</p>
-<p>Each card breaks down your score into highly actionable sections:</p>
+<h2 id="4-the-personality-overview-panel">4. The Personality Overview Panel</h2>
+<p>Directly below the radar chart, the <strong>Personality Overview</strong> panel gives a written summary of your profile organised into three tiers.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tier</th>
+          <th>Score range</th>
+          <th>What it means</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Strong Traits</strong></td>
+          <td>Scores 7–10: Exceptional abilities</td>
+          <td>These are your natural strengths — behaviours that come easily and can be leveraged for academic and career success</td>
+      </tr>
+      <tr>
+          <td><strong>Balanced Traits</strong></td>
+          <td>Scores 4–6: Well-developed skills</td>
+          <td>Solid, reliable skills that with moderate attention can become strengths</td>
+      </tr>
+      <tr>
+          <td><strong>Growth Areas</strong></td>
+          <td>Scores 1–3: Development opportunities</td>
+          <td>Traits that are currently underdeveloped and represent your highest-potential areas of improvement</td>
+      </tr>
+  </tbody>
+</table>
+<p>The overview card opens with a paragraph describing the unique pattern of your results and how your traits shape your approach to learning, relationships, and personal growth.</p>
+<p><img src="/images/user-manual/student-panel/personality-overview-panel.png" alt="Personality Overview card showing three tier labels and an introductory paragraph about the student&rsquo;s unique trait pattern"></p>
+<hr>
+<h2 id="5-quick-stats-panel">5. Quick Stats Panel</h2>
+<p>To the right of the Personality Overview is the <strong>Quick Stats</strong> panel. It lists your highest-scoring traits under <strong>Top Strengths</strong> and your lowest-scoring traits under <strong>Growth Areas</strong>, each with their numeric score shown.</p>
+<p><strong>How to use Quick Stats:</strong></p>
 <ul>
-<li><strong>Trait Title &amp; Score:</strong> Your baseline metric.</li>
-<li><strong>Short Description:</strong> A one-sentence summary of what this trait means.</li>
-<li><strong>Detailed Interpretation:</strong> Deep dive into how this score manifests in your daily life and studies.</li>
-<li><strong>Actionable Advice:</strong> Concrete, practical steps on how to use this trait to your advantage (or mitigate its downsides).</li>
+<li>Use the <strong>Top Strengths</strong> list to identify which traits to emphasise in application essays, interviews, and conversations with your advisor.</li>
+<li>Use the <strong>Growth Areas</strong> list to prioritise which Action Steps (from the trait cards below) to work on first.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/personality-quick-stats.png" alt="Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange"></p>
 <hr>
-<h2 id="downloading-your-personality-report">Downloading Your Personality Report</h2>
-<p>Just like recommendations, you can export your psychological profile to share with parents, mentors, or for your own records.</p>
+<h2 id="6-individual-trait-cards">6. Individual Trait Cards</h2>
+<p>Below the overview section, every one of the eight traits has its own card. Each card follows the same structure and tells you exactly what your score means and what to do about it.</p>
+<h3 id="card-anatomy">Card Anatomy</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>What it shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Trait name</strong></td>
+          <td>The name of the measured trait</td>
+      </tr>
+      <tr>
+          <td><strong>Score bar</strong></td>
+          <td>A filled progress bar representing 1–10 scale</td>
+      </tr>
+      <tr>
+          <td><strong>Score number</strong></td>
+          <td>Your exact numeric score</td>
+      </tr>
+      <tr>
+          <td><strong>Level label</strong></td>
+          <td>Colour-coded label: <em>Exceptional</em> (green), <em>Strong</em> (green), <em>Moderate</em> (orange)</td>
+      </tr>
+      <tr>
+          <td><strong>One-liner</strong></td>
+          <td>A single sentence summary of what the score says about you</td>
+      </tr>
+      <tr>
+          <td><strong>Detailed Analysis</strong></td>
+          <td>A paragraph-length explanation of how this trait manifests in your daily life, study habits, and decision-making</td>
+      </tr>
+      <tr>
+          <td><strong>Action Steps</strong></td>
+          <td>One or two concrete, practical things you can do right now to build on a strength or develop a growth area</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/user-manual/student-panel/personality-trait-card.png" alt="Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section"></p>
+<h3 id="the-eight-trait-cards-in-detail">The Eight Trait Cards in Detail</h3>
+<h4 id="growth-mindset">Growth Mindset</h4>
+<p>Your openness to learning, challenges, and self-improvement. A high score here means you see setbacks as fuel for growth rather than failure.</p>
+<p><strong>What to do with a high score:</strong> Keep seeking out challenging courses, new skills, and experiences that push you past your comfort zone.</p>
+<p><strong>What to do with a low score:</strong> Start small — pick one new skill or subject per month and commit to practicing it even when it feels difficult.</p>
+<hr>
+<h4 id="emotional-balance">Emotional Balance</h4>
+<p>How well you regulate your emotions and stay steady under pressure. A high score means you can handle stress, disappointment, and uncertainty without being derailed.</p>
+<p><strong>What to do with a high score:</strong> Use this stability to support peers and take on leadership roles in group projects or student activities.</p>
+<p><strong>What to do with a low score:</strong> Build a small daily routine (journaling, breathing exercises, short walks) that gives your emotions a healthy outlet before pressure builds.</p>
+<hr>
+<h4 id="goal-focus">Goal Focus</h4>
+<p>The clarity of your vision and how directed your energy is toward specific targets. A high score means you rarely waste effort on distractions.</p>
+<p><strong>What to do with a high score:</strong> Write down both short-term and long-term goals and review them weekly to stay calibrated.</p>
+<p><strong>What to do with a low score:</strong> Start with one concrete weekly goal and practise completing it before adding more. Clarity comes from doing, not planning.</p>
+<hr>
+<h4 id="social-connection">Social Connection</h4>
+<p>Your capacity to build meaningful, positive relationships. A high score means you connect easily and bring warmth to group settings.</p>
+<p><strong>What to do with a high score:</strong> Use your social strength to join new groups, clubs, or communities aligned with your career interests — connections open doors.</p>
+<p><strong>What to do with a low score:</strong> Pick one low-stakes social activity per week (a study group, an online forum, a class) to practise connection in a comfortable environment.</p>
+<hr>
+<h4 id="inner-drive">Inner Drive</h4>
+<p>Your internal motivation and the push you generate from within. A high score means you do not need external pressure to stay productive.</p>
+<p><strong>What to do with a high score:</strong> Break bigger goals into smaller milestones — your drive compounds fastest when you can see forward progress regularly.</p>
+<p><strong>What to do with a low score:</strong> Identify what genuinely excites you (not what you think should excite you) and anchor your daily tasks to that.</p>
+<hr>
+<h4 id="adaptive-thinking">Adaptive Thinking</h4>
+<p>Your thoughtfulness and ability to consider multiple options before acting. A high score means you make balanced decisions and avoid impulsive choices.</p>
+<p><strong>What to do with a high score:</strong> Practise applying this skill to everyday decisions — even small daily choices build the habit of measured thinking.</p>
+<p><strong>What to do with a low score:</strong> Before acting on a decision, write down two alternative options and weigh the trade-offs. The habit takes three to four weeks to form.</p>
+<hr>
+<h4 id="mental-agility">Mental Agility</h4>
+<p>Your cognitive flexibility, learning speed, and capacity for clear thinking. A high score means you process new information efficiently and adapt quickly to new environments.</p>
+<p><strong>What to do with a high score:</strong> Challenge yourself with problem-solving activities — maths puzzles, strategy games, or learning a new language keeps this trait sharp.</p>
+<p><strong>What to do with a low score:</strong> Break complex tasks into the smallest possible steps. Cognitive load goes down when you focus on one piece at a time.</p>
+<hr>
+<h4 id="self-awareness">Self-Awareness</h4>
+<p>How clearly you understand your own traits, habits, emotional triggers, and impact on others. A high score means your self-perception aligns with how others actually experience you.</p>
+<p><strong>What to do with a high score:</strong> Continue reflecting on your experiences — journalling, asking for honest feedback, and reviewing your decisions weekly deepens this further.</p>
+<p><strong>What to do with a low score:</strong> After any significant interaction or decision, take five minutes to ask yourself: <em>What did I do well? What would I change?</em> Small reflection habits compound over time.</p>
+<p><img src="/images/user-manual/student-panel/personality-growth-area-cards.png" alt="Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps"></p>
+<hr>
+<h2 id="7-exporting-your-personality-report">7. Exporting Your Personality Report</h2>
+<p>Your full personality analysis can be exported as a PDF to share with parents, advisors, or for personal records.</p>
 <ol>
-<li>Click <strong>Download Report</strong> at the top or bottom of the analysis page.</li>
-<li>Wait a few seconds for the document to generate.</li>
-<li>Click the secure link that opens in a new tab to save the PDF.</li>
+<li>Click the <strong>Export</strong> button at the top of the Personality page (below the header).</li>
+<li>Wait a few seconds while the document is generated.</li>
+<li>A secure link opens in a new tab — click it to download your PDF report.</li>
 </ol>
+<blockquote>
+<p><strong>Note:</strong> If the <strong>Export</strong> button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check <strong>Settings → Subscription</strong> or contact your advisor.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/personality-report-download.png" alt="Export button at the top of the Personality page and the resulting PDF open in a new browser tab"></p>
+<hr>
+<h2 id="8-using-your-personality-results-with-other-platform-features">8. Using Your Personality Results With Other Platform Features</h2>
+<p>Your personality data does not exist in isolation — it feeds directly into other IDPicker modules:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Module</th>
+          <th>How personality connects</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Recommendations</strong></td>
+          <td>Select <em>Personality</em> mode in the Refine panel to match universities and careers to your trait profile instead of exam scores — see <a href="/docs/student-panel/recommendations/">Recommendations</a></td>
+      </tr>
+      <tr>
+          <td><strong>AI Mentorship</strong></td>
+          <td>Your active AI mentor is contextually aware of your personality scores and tailors its guidance accordingly</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor Chat</strong></td>
+          <td>Share your Quick Stats with your advisor to focus your next guidance session on specific Growth Areas</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -370,16 +620,28 @@
   </thead>
   <tbody>
       <tr>
-          <td>The entire page is locked</td>
-          <td>You must complete the Personality Assessment first</td>
+          <td>The Personality page is locked</td>
+          <td>Complete the Personality assessment in the Assessment module first</td>
       </tr>
       <tr>
-          <td>The chart loads but the trait cards are blank</td>
-          <td>A network drop may have occurred. Reload the page</td>
+          <td>My scores feel wrong or don&rsquo;t reflect me</td>
+          <td>You may have answered quickly or in a distracted state. Retake the assessment in a calm, focused setting</td>
       </tr>
       <tr>
-          <td>The report button works but no file opens</td>
-          <td>Generation might have temporarily timed out. Wait a moment and retry</td>
+          <td>The radar chart loads but trait cards are blank</td>
+          <td>A network drop occurred mid-load. Reload the page</td>
+      </tr>
+      <tr>
+          <td>I want to retake the assessment</td>
+          <td>Go to Assessment, open the Personality card, and click <strong>Retake</strong> if the option is available</td>
+      </tr>
+      <tr>
+          <td>The Export button is missing</td>
+          <td>Report export may not be enabled for your plan. Check Settings or ask your advisor</td>
+      </tr>
+      <tr>
+          <td>My Growth Mindset score is high but recommendations still feel off</td>
+          <td>Personality mode in Recommendations uses all eight trait scores together. Try combining personality mode with country or exam filters for sharper results</td>
       </tr>
   </tbody>
 </table>
@@ -406,12 +668,12 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.js"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBQZXJzb25hbGl0eSBtb2R1bGUgdmlzdWFsaXplcyB5b3VyIHBzeWNob2xvZ2ljYWwgdHJhaXRzIGFuZCBwcm92aWRlcyBhY3Rpb25hYmxlIGFkdmljZSBvbiBob3cgdG8gbGV2ZXJhZ2UgeW91ciBuYXR1cmFsIHN0cmVuZ3Rocy4KCi0tLQoKIyMgUHJlcmVxdWlzaXRlOiBDb21wbGV0ZSB0aGUgQXNzZXNzbWVudCEKCkJlZm9yZSB5b3UgY2FuIHNlZSB5b3VyIHBlcnNvbmFsaXR5IGJyZWFrZG93biwgeW91IG11c3QgY29tcGxldGUgdGhlIFBlcnNvbmFsaXR5IHNlbGYtYXNzZXNzbWVudC4gCgoxLiBGcm9tIHRoZSBzaWRlYmFyLCBjbGljayAqKlBlcnNvbmFsaXR5KiouCjIuIElmIHlvdXIgYXNzZXNzbWVudCBpcyBpbmNvbXBsZXRlLCB0aGUgc2NyZWVuIHdpbGwgc2hvdyBhIGxvY2sgc3RhdGUuCjMuIENsaWNrIHRoZSBwcm9tcHQgdG8gKipDb21wbGV0ZSBBc3Nlc3NtZW50KiogYW5kIGZpbmlzaCBpdC4KCi0tLQoKIyMgUmVhZGluZyBZb3VyIFJhZGFyIENoYXJ0CgpPbmNlIHVubG9ja2VkLCB0aGUgZmlyc3QgdGhpbmcgeW91IHdpbGwgc2VlIGlzIHlvdXIgaW50ZXJhY3RpdmUgKipSYWRhciBDaGFydCoqLgoKMS4gKipIb3ZlciBvdmVyIHRoZSBwb2ludHMqKiBvbiB0aGUgcmFkYXIgYXhpcyB0byBzZWUgdGhlIGV4YWN0IHBlcmNlbnRhZ2Ugc2NvcmluZyBmb3IgZWFjaCBkaW1lbnNpb24uCjIuIElkZW50aWZ5IHRoZSBzcGlrZXMgKHlvdXIgc3Ryb25nZXN0IG5hdHVyYWwgdHJhaXRzKSBhbmQgdGhlIGRpcHMgKHRyYWl0cyB0aGF0IHJlcXVpcmUgbW9yZSBjb25zY2lvdXMgZWZmb3J0KS4KMy4gVGhlIHNoYXBlIG9mIHRoZSByYWRhciBnaXZlcyB5b3UgYW4gaW1tZWRpYXRlLCB2aXN1YWwgdW5kZXJzdGFuZGluZyBvZiB5b3VyIGJlaGF2aW9yYWwgZm9vdHByaW50LgoKLS0tCgojIyBVbmRlcnN0YW5kaW5nIFRyYWl0IENhcmRzCgpCZWxvdyB0aGUgY2hhcnQsIHlvdSB3aWxsIGZpbmQgZGV0YWlsZWQgY2FyZHMgZm9yIGV2ZXJ5IG1lYXN1cmVkIHRyYWl0LiAKCkVhY2ggY2FyZCBicmVha3MgZG93biB5b3VyIHNjb3JlIGludG8gaGlnaGx5IGFjdGlvbmFibGUgc2VjdGlvbnM6Ci0gKipUcmFpdCBUaXRsZSAmIFNjb3JlOioqIFlvdXIgYmFzZWxpbmUgbWV0cmljLgotICoqU2hvcnQgRGVzY3JpcHRpb246KiogQSBvbmUtc2VudGVuY2Ugc3VtbWFyeSBvZiB3aGF0IHRoaXMgdHJhaXQgbWVhbnMuCi0gKipEZXRhaWxlZCBJbnRlcnByZXRhdGlvbjoqKiBEZWVwIGRpdmUgaW50byBob3cgdGhpcyBzY29yZSBtYW5pZmVzdHMgaW4geW91ciBkYWlseSBsaWZlIGFuZCBzdHVkaWVzLgotICoqQWN0aW9uYWJsZSBBZHZpY2U6KiogQ29uY3JldGUsIHByYWN0aWNhbCBzdGVwcyBvbiBob3cgdG8gdXNlIHRoaXMgdHJhaXQgdG8geW91ciBhZHZhbnRhZ2UgKG9yIG1pdGlnYXRlIGl0cyBkb3duc2lkZXMpLgoKLS0tCgojIyBEb3dubG9hZGluZyBZb3VyIFBlcnNvbmFsaXR5IFJlcG9ydAoKSnVzdCBsaWtlIHJlY29tbWVuZGF0aW9ucywgeW91IGNhbiBleHBvcnQgeW91ciBwc3ljaG9sb2dpY2FsIHByb2ZpbGUgdG8gc2hhcmUgd2l0aCBwYXJlbnRzLCBtZW50b3JzLCBvciBmb3IgeW91ciBvd24gcmVjb3Jkcy4KCjEuIENsaWNrICoqRG93bmxvYWQgUmVwb3J0KiogYXQgdGhlIHRvcCBvciBib3R0b20gb2YgdGhlIGFuYWx5c2lzIHBhZ2UuCjIuIFdhaXQgYSBmZXcgc2Vjb25kcyBmb3IgdGhlIGRvY3VtZW50IHRvIGdlbmVyYXRlLgozLiBDbGljayB0aGUgc2VjdXJlIGxpbmsgdGhhdCBvcGVucyBpbiBhIG5ldyB0YWIgdG8gc2F2ZSB0aGUgUERGLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBUaGUgZW50aXJlIHBhZ2UgaXMgbG9ja2VkIHwgWW91IG11c3QgY29tcGxldGUgdGhlIFBlcnNvbmFsaXR5IEFzc2Vzc21lbnQgZmlyc3QgfAp8IFRoZSBjaGFydCBsb2FkcyBidXQgdGhlIHRyYWl0IGNhcmRzIGFyZSBibGFuayB8IEEgbmV0d29yayBkcm9wIG1heSBoYXZlIG9jY3VycmVkLiBSZWxvYWQgdGhlIHBhZ2UgfAp8IFRoZSByZXBvcnQgYnV0dG9uIHdvcmtzIGJ1dCBubyBmaWxlIG9wZW5zIHwgR2VuZXJhdGlvbiBtaWdodCBoYXZlIHRlbXBvcmFyaWx5IHRpbWVkIG91dC4gV2FpdCBhIG1vbWVudCBhbmQgcmV0cnkgfAo=</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBQZXJzb25hbGl0eSBtb2R1bGUgcmV2ZWFscyB3aG8geW91IGFyZSB0aHJvdWdoIGVpZ2h0IG1lYXN1cmVkIHBzeWNob2xvZ2ljYWwgdHJhaXRzLiBBZnRlciBjb21wbGV0aW5nIHRoZSBQZXJzb25hbGl0eSBhc3Nlc3NtZW50LCB5b3UgcmVjZWl2ZSBhIGZ1bGwgYW5hbHlzaXM6IGFuIGludGVyYWN0aXZlIHJhZGFyIGNoYXJ0LCBhIHBlcnNvbmFsaXR5IG92ZXJ2aWV3IHdpdGggc3RyZW5ndGggdGllcnMsIHF1aWNrIHN0YXQgcmFua2luZ3MsIGFuZCBpbmRpdmlkdWFsIHRyYWl0IGNhcmRzIHdpdGggZGV0YWlsZWQgaW50ZXJwcmV0YXRpb25zIGFuZCBjb25jcmV0ZSBhY3Rpb24gc3RlcHMuIFRoaXMgcGFnZSBleHBsYWlucyBldmVyeSBzZWN0aW9uIHNvIHlvdSBjYW4gdXNlIHlvdXIgcmVzdWx0cyB0byBndWlkZSB5b3VyIHN0dWRpZXMsIGNhcmVlciBjaG9pY2VzLCBhbmQgcGVyc29uYWwgZ3Jvd3RoLgoKPiAqKldhcm5pbmcg4oCUIFRha2UgdGhlIGFzc2Vzc21lbnQgaW4gYSBjYWxtLCBmb2N1c2VkIGVudmlyb25tZW50LioqIFlvdXIgcGVyc29uYWxpdHkgcmVzdWx0cyBhcmUgb25seSBhcyBhY2N1cmF0ZSBhcyB0aGUgaG9uZXN0eSBhbmQgbWluZGZ1bG5lc3MgeW91IGJyaW5nIHRvIHRoZSBxdWVzdGlvbnMuIEZpbmQgYSBxdWlldCBwbGFjZSwgc2V0IGFzaWRlIGF0IGxlYXN0IDE14oCTMjAgdW5pbnRlcnJ1cHRlZCBtaW51dGVzLCBwdXQgeW91ciBwaG9uZSBhd2F5LCBhbmQgYW5zd2VyIGVhY2ggcXVlc3Rpb24gYmFzZWQgb24gaG93IHlvdSAqYWN0dWFsbHkqIGJlaGF2ZSDigJQgbm90IGhvdyB5b3Ugd2lzaCB5b3UgYmVoYXZlZC4gUnVzaGVkIG9yIGRpc3RyYWN0ZWQgYW5zd2VycyB3aWxsIHNrZXcgeW91ciB0cmFpdCBzY29yZXMgYW5kIHJlZHVjZSB0aGUgcXVhbGl0eSBvZiB5b3VyIHVuaXZlcnNpdHkgYW5kIGNhcmVlciByZWNvbW1lbmRhdGlvbnMuCgotLS0KCiMjIDEuIFByZXJlcXVpc2l0ZTogQ29tcGxldGUgdGhlIFBlcnNvbmFsaXR5IEFzc2Vzc21lbnQKClRoZSBQZXJzb25hbGl0eSBwYWdlIGlzIGxvY2tlZCB1bnRpbCB5b3UgZmluaXNoIHRoZSBhc3Nlc3NtZW50LiBJZiB5b3Ugc2VlIGEgbG9ja2VkIHN0YXRlOgoKMS4gRnJvbSB0aGUgc2lkZWJhciwgY2xpY2sgKipBc3Nlc3NtZW50KiouCjIuIExvY2F0ZSB0aGUgKipQZXJzb25hbGl0eSoqIGFzc2Vzc21lbnQgY2FyZC4KMy4gQ2xpY2sgKipTdGFydCoqIGFuZCB3b3JrIHRocm91Z2ggZXZlcnkgcXVlc3Rpb24gd2l0aG91dCBza2lwcGluZy4KNC4gU3VibWl0IHRoZSBhc3Nlc3NtZW50IHdoZW4gYWxsIHF1ZXN0aW9ucyBhcmUgY29tcGxldGUuCjUuIFJldHVybiB0byB0aGUgc2lkZWJhciBhbmQgY2xpY2sgKipQZXJzb25hbGl0eSoqIOKAlCB5b3VyIGZ1bGwgYW5hbHlzaXMgaXMgbm93IHVubG9ja2VkLgoKPiAqKk5vdGU6KiogT25jZSB5b3Ugc3VibWl0LCByZXN1bHRzIGFyZSBnZW5lcmF0ZWQgaW5zdGFudGx5LiBZb3UgZG8gbm90IG5lZWQgdG8gd2FpdCBvciByZWZyZXNoLgoKIVtQZXJzb25hbGl0eSBwYWdlIGluIGxvY2tlZCBzdGF0ZSB3aXRoIENvbXBsZXRlIEFzc2Vzc21lbnQgcHJvbXB0IGFuZCBsaW5rIHRvIHRoZSBhc3Nlc3NtZW50IG1vZHVsZV0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3BlcnNvbmFsaXR5LWxvY2tlZC5wbmcpCgotLS0KCiMjIDIuIFRoZSBQZXJzb25hbGl0eSBJbnNpZ2h0cyBIZWFkZXIKCkF0IHRoZSB0b3Agb2YgdGhlIHBhZ2UgeW91IHdpbGwgc2VlIGEgKipQZXJzb25hbGl0eSBJbnNpZ2h0cyoqIGJhZGdlIGFuZCB0aGUgaGVhZGluZyAqKllvdXIgUGVyc29uYWxpdHkgQW5hbHlzaXMqKiwgZm9sbG93ZWQgYnkgdGhlIHN1YmxpbmU6Cgo&#43;ICoiRXhwbG9yZSB5b3VyIHVuaXF1ZSBwZXJzb25hbGl0eSB0cmFpdHMgdGhyb3VnaCB0aGUgaW50ZXJhY3RpdmUgcmFkYXIgY2hhcnQgYmVsb3csIGJhc2VkIG9uIHlvdXIgYXNzZXNzbWVudC4iKgoKQmVsb3cgdGhlIGhlYWRpbmcgaXMgdGhlICoqRXhwb3J0KiogYnV0dG9uIOKAlCB0aGlzIGxldHMgeW91IGRvd25sb2FkIHlvdXIgZnVsbCByZXBvcnQgYXQgYW55IHRpbWUuIFNlZSBbc2VjdGlvbiA3XSgjNy1leHBvcnRpbmcteW91ci1wZXJzb25hbGl0eS1yZXBvcnQpIGZvciBmdWxsIGV4cG9ydCBzdGVwcy4KCiFbUGVyc29uYWxpdHkgSW5zaWdodHMgaGVhZGVyIHdpdGggRXhwb3J0IGJ1dHRvbiBhdCB0aGUgdG9wIG9mIHRoZSBhbmFseXNpcyBwYWdlXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcGVyc29uYWxpdHktaGVhZGVyLnBuZykKCi0tLQoKIyMgMy4gUmVhZGluZyB0aGUgUmFkYXIgQ2hhcnQKClRoZSByYWRhciBjaGFydCBpcyB0aGUgZmlyc3QgdmlzdWFsIHlvdSBzZWUgYWZ0ZXIgdGhlIGhlYWRlci4gSXQgcGxvdHMgYWxsIGVpZ2h0IHRyYWl0cyBzaW11bHRhbmVvdXNseSBzbyB5b3UgY2FuIGdyYXNwIHlvdXIgb3ZlcmFsbCBwcm9maWxlIHNoYXBlIGF0IGEgZ2xhbmNlLgoKIyMjIFRoZSBFaWdodCBUcmFpdHMgb24gdGhlIENoYXJ0Cgp8IFRyYWl0IHwgQXhpcyBwb3NpdGlvbiBvbiBjaGFydCB8IFdoYXQgaXQgbWVhc3VyZXMgfAp8LS0tfC0tLXwtLS18CnwgKipFbW90aW9uYWwgQmFsYW5jZSoqIHwgVG9wIGNlbnRyZSB8IEhvdyBzdGVhZGlseSB5b3UgbWFuYWdlIHlvdXIgZmVlbGluZ3MgdW5kZXIgcHJlc3N1cmUgfAp8ICoqU29jaWFsIENvbm5lY3Rpb24qKiB8IFJpZ2h0IHwgWW91ciBhYmlsaXR5IHRvIGJ1aWxkIGFuZCBzdXN0YWluIHBvc2l0aXZlIHJlbGF0aW9uc2hpcHMgfAp8ICoqTWVudGFsIEFnaWxpdHkqKiB8IExvd2VyIHJpZ2h0IHwgQ29nbml0aXZlIGZsZXhpYmlsaXR5IGFuZCBjYXBhY2l0eSBmb3IgY2xlYXIgdGhpbmtpbmcgfAp8ICoqSW5uZXIgRHJpdmUqKiB8IExvd2VyIHJpZ2h0LWNlbnRyZSB8IEludGVybmFsIG1vdGl2YXRpb24gYW5kIHNlbGYtcHVzaCB0byByZWFjaCBnb2FscyB8CnwgKipTZWxmLUF3YXJlbmVzcyoqIHwgQm90dG9tIGNlbnRyZSB8IFVuZGVyc3RhbmRpbmcgb2YgeW91ciBvd24gdHJhaXRzLCBiZWhhdmlvdXJzLCBhbmQgaW1wYWN0IHwKfCAqKkdyb3d0aCBNaW5kc2V0KiogfCBMb3dlciBsZWZ0IHwgT3Blbm5lc3MgdG8gbGVhcm5pbmcsIGNoYWxsZW5nZXMsIGFuZCBzZWxmLWltcHJvdmVtZW50IHwKfCAqKkFkYXB0aXZlIFRoaW5raW5nKiogfCBMZWZ0IHwgVGhvdWdodGZ1bG5lc3MgYW5kIGJhbGFuY2VkIGRlY2lzaW9uLW1ha2luZyB8CnwgKipHb2FsIEZvY3VzKiogfCBVcHBlciBsZWZ0IHwgQ2xhcml0eSBvZiB2aXNpb24gYW5kIGRpcmVjdGVkIGVuZXJneSB0b3dhcmQgZ29hbHMgfAoKIyMjIEhvdyB0byBSZWFkIHRoZSBDaGFydAoKMS4gKipMb29rIGF0IHRoZSBvdmVyYWxsIHNoYXBlKiog4oCUIGEgbGFyZ2UsIGV2ZW4gcG9seWdvbiBtZWFucyBicm9hZGx5IGRldmVsb3BlZCB0cmFpdHMuIEEgbG9wc2lkZWQgc2hhcGUgc2lnbmFscyBzdHJvbmcgcGVha3MgYW5kIGNsZWFyIGdyb3d0aCBhcmVhcy4KMi4gKipJZGVudGlmeSB0aGUgb3V0ZXJtb3N0IHBvaW50cyoqIOKAlCB0aGVzZSBhcmUgeW91ciBUb3AgU3RyZW5ndGhzIChzY29yZXMgN&#43;KAkzEwKS4KMy4gKipJZGVudGlmeSB0aGUgaW5uZXJtb3N0IHBvaW50cyoqIOKAlCB0aGVzZSBhcmUgeW91ciBHcm93dGggQXJlYXMgKHNjb3JlcyAx4oCTNSksIHdoaWNoIHJlcHJlc2VudCB0aGUgYmlnZ2VzdCBvcHBvcnR1bml0aWVzIGZvciBzZWxmLWltcHJvdmVtZW50Lgo0LiAqKkhvdmVyIG92ZXIgYW55IGF4aXMgcG9pbnQqKiB0byBzZWUgdGhlIGV4YWN0IG51bWVyaWMgc2NvcmUgZm9yIHRoYXQgdHJhaXQuCgohW0ludGVyYWN0aXZlIHJhZGFyIGNoYXJ0IHdpdGggYWxsIDggdHJhaXQgYXhlcyBsYWJlbGxlZCBhbmQgb25lIGF4aXMgaG92ZXJlZCBzaG93aW5nIGEgbnVtZXJpYyBzY29yZSB0b29sdGlwXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcGVyc29uYWxpdHktcmFkYXItY2hhcnQucG5nKQoKLS0tCgojIyA0LiBUaGUgUGVyc29uYWxpdHkgT3ZlcnZpZXcgUGFuZWwKCkRpcmVjdGx5IGJlbG93IHRoZSByYWRhciBjaGFydCwgdGhlICoqUGVyc29uYWxpdHkgT3ZlcnZpZXcqKiBwYW5lbCBnaXZlcyBhIHdyaXR0ZW4gc3VtbWFyeSBvZiB5b3VyIHByb2ZpbGUgb3JnYW5pc2VkIGludG8gdGhyZWUgdGllcnMuCgp8IFRpZXIgfCBTY29yZSByYW5nZSB8IFdoYXQgaXQgbWVhbnMgfAp8LS0tfC0tLXwtLS18CnwgKipTdHJvbmcgVHJhaXRzKiogfCBTY29yZXMgN&#43;KAkzEwOiBFeGNlcHRpb25hbCBhYmlsaXRpZXMgfCBUaGVzZSBhcmUgeW91ciBuYXR1cmFsIHN0cmVuZ3RocyDigJQgYmVoYXZpb3VycyB0aGF0IGNvbWUgZWFzaWx5IGFuZCBjYW4gYmUgbGV2ZXJhZ2VkIGZvciBhY2FkZW1pYyBhbmQgY2FyZWVyIHN1Y2Nlc3MgfAp8ICoqQmFsYW5jZWQgVHJhaXRzKiogfCBTY29yZXMgNOKAkzY6IFdlbGwtZGV2ZWxvcGVkIHNraWxscyB8IFNvbGlkLCByZWxpYWJsZSBza2lsbHMgdGhhdCB3aXRoIG1vZGVyYXRlIGF0dGVudGlvbiBjYW4gYmVjb21lIHN0cmVuZ3RocyB8CnwgKipHcm93dGggQXJlYXMqKiB8IFNjb3JlcyAx4oCTMzogRGV2ZWxvcG1lbnQgb3Bwb3J0dW5pdGllcyB8IFRyYWl0cyB0aGF0IGFyZSBjdXJyZW50bHkgdW5kZXJkZXZlbG9wZWQgYW5kIHJlcHJlc2VudCB5b3VyIGhpZ2hlc3QtcG90ZW50aWFsIGFyZWFzIG9mIGltcHJvdmVtZW50IHwKClRoZSBvdmVydmlldyBjYXJkIG9wZW5zIHdpdGggYSBwYXJhZ3JhcGggZGVzY3JpYmluZyB0aGUgdW5pcXVlIHBhdHRlcm4gb2YgeW91ciByZXN1bHRzIGFuZCBob3cgeW91ciB0cmFpdHMgc2hhcGUgeW91ciBhcHByb2FjaCB0byBsZWFybmluZywgcmVsYXRpb25zaGlwcywgYW5kIHBlcnNvbmFsIGdyb3d0aC4KCiFbUGVyc29uYWxpdHkgT3ZlcnZpZXcgY2FyZCBzaG93aW5nIHRocmVlIHRpZXIgbGFiZWxzIGFuZCBhbiBpbnRyb2R1Y3RvcnkgcGFyYWdyYXBoIGFib3V0IHRoZSBzdHVkZW50J3MgdW5pcXVlIHRyYWl0IHBhdHRlcm5dKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9wZXJzb25hbGl0eS1vdmVydmlldy1wYW5lbC5wbmcpCgotLS0KCiMjIDUuIFF1aWNrIFN0YXRzIFBhbmVsCgpUbyB0aGUgcmlnaHQgb2YgdGhlIFBlcnNvbmFsaXR5IE92ZXJ2aWV3IGlzIHRoZSAqKlF1aWNrIFN0YXRzKiogcGFuZWwuIEl0IGxpc3RzIHlvdXIgaGlnaGVzdC1zY29yaW5nIHRyYWl0cyB1bmRlciAqKlRvcCBTdHJlbmd0aHMqKiBhbmQgeW91ciBsb3dlc3Qtc2NvcmluZyB0cmFpdHMgdW5kZXIgKipHcm93dGggQXJlYXMqKiwgZWFjaCB3aXRoIHRoZWlyIG51bWVyaWMgc2NvcmUgc2hvd24uCgoqKkhvdyB0byB1c2UgUXVpY2sgU3RhdHM6KioKCi0gVXNlIHRoZSAqKlRvcCBTdHJlbmd0aHMqKiBsaXN0IHRvIGlkZW50aWZ5IHdoaWNoIHRyYWl0cyB0byBlbXBoYXNpc2UgaW4gYXBwbGljYXRpb24gZXNzYXlzLCBpbnRlcnZpZXdzLCBhbmQgY29udmVyc2F0aW9ucyB3aXRoIHlvdXIgYWR2aXNvci4KLSBVc2UgdGhlICoqR3Jvd3RoIEFyZWFzKiogbGlzdCB0byBwcmlvcml0aXNlIHdoaWNoIEFjdGlvbiBTdGVwcyAoZnJvbSB0aGUgdHJhaXQgY2FyZHMgYmVsb3cpIHRvIHdvcmsgb24gZmlyc3QuCgohW1F1aWNrIFN0YXRzIHBhbmVsIHNob3dpbmcgVG9wIFN0cmVuZ3RocyBsaXN0IHdpdGggc2NvcmVzIGluIGdyZWVuIGFuZCBHcm93dGggQXJlYXMgbGlzdCB3aXRoIHNjb3JlcyBpbiBvcmFuZ2VdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9wZXJzb25hbGl0eS1xdWljay1zdGF0cy5wbmcpCgotLS0KCiMjIDYuIEluZGl2aWR1YWwgVHJhaXQgQ2FyZHMKCkJlbG93IHRoZSBvdmVydmlldyBzZWN0aW9uLCBldmVyeSBvbmUgb2YgdGhlIGVpZ2h0IHRyYWl0cyBoYXMgaXRzIG93biBjYXJkLiBFYWNoIGNhcmQgZm9sbG93cyB0aGUgc2FtZSBzdHJ1Y3R1cmUgYW5kIHRlbGxzIHlvdSBleGFjdGx5IHdoYXQgeW91ciBzY29yZSBtZWFucyBhbmQgd2hhdCB0byBkbyBhYm91dCBpdC4KCiMjIyBDYXJkIEFuYXRvbXkKCnwgRWxlbWVudCB8IFdoYXQgaXQgc2hvd3MgfAp8LS0tfC0tLXwKfCAqKlRyYWl0IG5hbWUqKiB8IFRoZSBuYW1lIG9mIHRoZSBtZWFzdXJlZCB0cmFpdCB8CnwgKipTY29yZSBiYXIqKiB8IEEgZmlsbGVkIHByb2dyZXNzIGJhciByZXByZXNlbnRpbmcgMeKAkzEwIHNjYWxlIHwKfCAqKlNjb3JlIG51bWJlcioqIHwgWW91ciBleGFjdCBudW1lcmljIHNjb3JlIHwKfCAqKkxldmVsIGxhYmVsKiogfCBDb2xvdXItY29kZWQgbGFiZWw6ICpFeGNlcHRpb25hbCogKGdyZWVuKSwgKlN0cm9uZyogKGdyZWVuKSwgKk1vZGVyYXRlKiAob3JhbmdlKSB8CnwgKipPbmUtbGluZXIqKiB8IEEgc2luZ2xlIHNlbnRlbmNlIHN1bW1hcnkgb2Ygd2hhdCB0aGUgc2NvcmUgc2F5cyBhYm91dCB5b3UgfAp8ICoqRGV0YWlsZWQgQW5hbHlzaXMqKiB8IEEgcGFyYWdyYXBoLWxlbmd0aCBleHBsYW5hdGlvbiBvZiBob3cgdGhpcyB0cmFpdCBtYW5pZmVzdHMgaW4geW91ciBkYWlseSBsaWZlLCBzdHVkeSBoYWJpdHMsIGFuZCBkZWNpc2lvbi1tYWtpbmcgfAp8ICoqQWN0aW9uIFN0ZXBzKiogfCBPbmUgb3IgdHdvIGNvbmNyZXRlLCBwcmFjdGljYWwgdGhpbmdzIHlvdSBjYW4gZG8gcmlnaHQgbm93IHRvIGJ1aWxkIG9uIGEgc3RyZW5ndGggb3IgZGV2ZWxvcCBhIGdyb3d0aCBhcmVhIHwKCiFbRnVsbCB0cmFpdCBjYXJkIHNob3dpbmcgc2NvcmUgYmFyLCBsZXZlbCBsYWJlbCwgb25lLWxpbmVyLCBEZXRhaWxlZCBBbmFseXNpcyBzZWN0aW9uLCBhbmQgQWN0aW9uIFN0ZXBzIHNlY3Rpb25dKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9wZXJzb25hbGl0eS10cmFpdC1jYXJkLnBuZykKCiMjIyBUaGUgRWlnaHQgVHJhaXQgQ2FyZHMgaW4gRGV0YWlsCgojIyMjIEdyb3d0aCBNaW5kc2V0CllvdXIgb3Blbm5lc3MgdG8gbGVhcm5pbmcsIGNoYWxsZW5nZXMsIGFuZCBzZWxmLWltcHJvdmVtZW50LiBBIGhpZ2ggc2NvcmUgaGVyZSBtZWFucyB5b3Ugc2VlIHNldGJhY2tzIGFzIGZ1ZWwgZm9yIGdyb3d0aCByYXRoZXIgdGhhbiBmYWlsdXJlLgoKKipXaGF0IHRvIGRvIHdpdGggYSBoaWdoIHNjb3JlOioqIEtlZXAgc2Vla2luZyBvdXQgY2hhbGxlbmdpbmcgY291cnNlcywgbmV3IHNraWxscywgYW5kIGV4cGVyaWVuY2VzIHRoYXQgcHVzaCB5b3UgcGFzdCB5b3VyIGNvbWZvcnQgem9uZS4KCioqV2hhdCB0byBkbyB3aXRoIGEgbG93IHNjb3JlOioqIFN0YXJ0IHNtYWxsIOKAlCBwaWNrIG9uZSBuZXcgc2tpbGwgb3Igc3ViamVjdCBwZXIgbW9udGggYW5kIGNvbW1pdCB0byBwcmFjdGljaW5nIGl0IGV2ZW4gd2hlbiBpdCBmZWVscyBkaWZmaWN1bHQuCgotLS0KCiMjIyMgRW1vdGlvbmFsIEJhbGFuY2UKSG93IHdlbGwgeW91IHJlZ3VsYXRlIHlvdXIgZW1vdGlvbnMgYW5kIHN0YXkgc3RlYWR5IHVuZGVyIHByZXNzdXJlLiBBIGhpZ2ggc2NvcmUgbWVhbnMgeW91IGNhbiBoYW5kbGUgc3RyZXNzLCBkaXNhcHBvaW50bWVudCwgYW5kIHVuY2VydGFpbnR5IHdpdGhvdXQgYmVpbmcgZGVyYWlsZWQuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGhpZ2ggc2NvcmU6KiogVXNlIHRoaXMgc3RhYmlsaXR5IHRvIHN1cHBvcnQgcGVlcnMgYW5kIHRha2Ugb24gbGVhZGVyc2hpcCByb2xlcyBpbiBncm91cCBwcm9qZWN0cyBvciBzdHVkZW50IGFjdGl2aXRpZXMuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGxvdyBzY29yZToqKiBCdWlsZCBhIHNtYWxsIGRhaWx5IHJvdXRpbmUgKGpvdXJuYWxpbmcsIGJyZWF0aGluZyBleGVyY2lzZXMsIHNob3J0IHdhbGtzKSB0aGF0IGdpdmVzIHlvdXIgZW1vdGlvbnMgYSBoZWFsdGh5IG91dGxldCBiZWZvcmUgcHJlc3N1cmUgYnVpbGRzLgoKLS0tCgojIyMjIEdvYWwgRm9jdXMKVGhlIGNsYXJpdHkgb2YgeW91ciB2aXNpb24gYW5kIGhvdyBkaXJlY3RlZCB5b3VyIGVuZXJneSBpcyB0b3dhcmQgc3BlY2lmaWMgdGFyZ2V0cy4gQSBoaWdoIHNjb3JlIG1lYW5zIHlvdSByYXJlbHkgd2FzdGUgZWZmb3J0IG9uIGRpc3RyYWN0aW9ucy4KCioqV2hhdCB0byBkbyB3aXRoIGEgaGlnaCBzY29yZToqKiBXcml0ZSBkb3duIGJvdGggc2hvcnQtdGVybSBhbmQgbG9uZy10ZXJtIGdvYWxzIGFuZCByZXZpZXcgdGhlbSB3ZWVrbHkgdG8gc3RheSBjYWxpYnJhdGVkLgoKKipXaGF0IHRvIGRvIHdpdGggYSBsb3cgc2NvcmU6KiogU3RhcnQgd2l0aCBvbmUgY29uY3JldGUgd2Vla2x5IGdvYWwgYW5kIHByYWN0aXNlIGNvbXBsZXRpbmcgaXQgYmVmb3JlIGFkZGluZyBtb3JlLiBDbGFyaXR5IGNvbWVzIGZyb20gZG9pbmcsIG5vdCBwbGFubmluZy4KCi0tLQoKIyMjIyBTb2NpYWwgQ29ubmVjdGlvbgpZb3VyIGNhcGFjaXR5IHRvIGJ1aWxkIG1lYW5pbmdmdWwsIHBvc2l0aXZlIHJlbGF0aW9uc2hpcHMuIEEgaGlnaCBzY29yZSBtZWFucyB5b3UgY29ubmVjdCBlYXNpbHkgYW5kIGJyaW5nIHdhcm10aCB0byBncm91cCBzZXR0aW5ncy4KCioqV2hhdCB0byBkbyB3aXRoIGEgaGlnaCBzY29yZToqKiBVc2UgeW91ciBzb2NpYWwgc3RyZW5ndGggdG8gam9pbiBuZXcgZ3JvdXBzLCBjbHVicywgb3IgY29tbXVuaXRpZXMgYWxpZ25lZCB3aXRoIHlvdXIgY2FyZWVyIGludGVyZXN0cyDigJQgY29ubmVjdGlvbnMgb3BlbiBkb29ycy4KCioqV2hhdCB0byBkbyB3aXRoIGEgbG93IHNjb3JlOioqIFBpY2sgb25lIGxvdy1zdGFrZXMgc29jaWFsIGFjdGl2aXR5IHBlciB3ZWVrIChhIHN0dWR5IGdyb3VwLCBhbiBvbmxpbmUgZm9ydW0sIGEgY2xhc3MpIHRvIHByYWN0aXNlIGNvbm5lY3Rpb24gaW4gYSBjb21mb3J0YWJsZSBlbnZpcm9ubWVudC4KCi0tLQoKIyMjIyBJbm5lciBEcml2ZQpZb3VyIGludGVybmFsIG1vdGl2YXRpb24gYW5kIHRoZSBwdXNoIHlvdSBnZW5lcmF0ZSBmcm9tIHdpdGhpbi4gQSBoaWdoIHNjb3JlIG1lYW5zIHlvdSBkbyBub3QgbmVlZCBleHRlcm5hbCBwcmVzc3VyZSB0byBzdGF5IHByb2R1Y3RpdmUuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGhpZ2ggc2NvcmU6KiogQnJlYWsgYmlnZ2VyIGdvYWxzIGludG8gc21hbGxlciBtaWxlc3RvbmVzIOKAlCB5b3VyIGRyaXZlIGNvbXBvdW5kcyBmYXN0ZXN0IHdoZW4geW91IGNhbiBzZWUgZm9yd2FyZCBwcm9ncmVzcyByZWd1bGFybHkuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGxvdyBzY29yZToqKiBJZGVudGlmeSB3aGF0IGdlbnVpbmVseSBleGNpdGVzIHlvdSAobm90IHdoYXQgeW91IHRoaW5rIHNob3VsZCBleGNpdGUgeW91KSBhbmQgYW5jaG9yIHlvdXIgZGFpbHkgdGFza3MgdG8gdGhhdC4KCi0tLQoKIyMjIyBBZGFwdGl2ZSBUaGlua2luZwpZb3VyIHRob3VnaHRmdWxuZXNzIGFuZCBhYmlsaXR5IHRvIGNvbnNpZGVyIG11bHRpcGxlIG9wdGlvbnMgYmVmb3JlIGFjdGluZy4gQSBoaWdoIHNjb3JlIG1lYW5zIHlvdSBtYWtlIGJhbGFuY2VkIGRlY2lzaW9ucyBhbmQgYXZvaWQgaW1wdWxzaXZlIGNob2ljZXMuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGhpZ2ggc2NvcmU6KiogUHJhY3Rpc2UgYXBwbHlpbmcgdGhpcyBza2lsbCB0byBldmVyeWRheSBkZWNpc2lvbnMg4oCUIGV2ZW4gc21hbGwgZGFpbHkgY2hvaWNlcyBidWlsZCB0aGUgaGFiaXQgb2YgbWVhc3VyZWQgdGhpbmtpbmcuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGxvdyBzY29yZToqKiBCZWZvcmUgYWN0aW5nIG9uIGEgZGVjaXNpb24sIHdyaXRlIGRvd24gdHdvIGFsdGVybmF0aXZlIG9wdGlvbnMgYW5kIHdlaWdoIHRoZSB0cmFkZS1vZmZzLiBUaGUgaGFiaXQgdGFrZXMgdGhyZWUgdG8gZm91ciB3ZWVrcyB0byBmb3JtLgoKLS0tCgojIyMjIE1lbnRhbCBBZ2lsaXR5CllvdXIgY29nbml0aXZlIGZsZXhpYmlsaXR5LCBsZWFybmluZyBzcGVlZCwgYW5kIGNhcGFjaXR5IGZvciBjbGVhciB0aGlua2luZy4gQSBoaWdoIHNjb3JlIG1lYW5zIHlvdSBwcm9jZXNzIG5ldyBpbmZvcm1hdGlvbiBlZmZpY2llbnRseSBhbmQgYWRhcHQgcXVpY2tseSB0byBuZXcgZW52aXJvbm1lbnRzLgoKKipXaGF0IHRvIGRvIHdpdGggYSBoaWdoIHNjb3JlOioqIENoYWxsZW5nZSB5b3Vyc2VsZiB3aXRoIHByb2JsZW0tc29sdmluZyBhY3Rpdml0aWVzIOKAlCBtYXRocyBwdXp6bGVzLCBzdHJhdGVneSBnYW1lcywgb3IgbGVhcm5pbmcgYSBuZXcgbGFuZ3VhZ2Uga2VlcHMgdGhpcyB0cmFpdCBzaGFycC4KCioqV2hhdCB0byBkbyB3aXRoIGEgbG93IHNjb3JlOioqIEJyZWFrIGNvbXBsZXggdGFza3MgaW50byB0aGUgc21hbGxlc3QgcG9zc2libGUgc3RlcHMuIENvZ25pdGl2ZSBsb2FkIGdvZXMgZG93biB3aGVuIHlvdSBmb2N1cyBvbiBvbmUgcGllY2UgYXQgYSB0aW1lLgoKLS0tCgojIyMjIFNlbGYtQXdhcmVuZXNzCkhvdyBjbGVhcmx5IHlvdSB1bmRlcnN0YW5kIHlvdXIgb3duIHRyYWl0cywgaGFiaXRzLCBlbW90aW9uYWwgdHJpZ2dlcnMsIGFuZCBpbXBhY3Qgb24gb3RoZXJzLiBBIGhpZ2ggc2NvcmUgbWVhbnMgeW91ciBzZWxmLXBlcmNlcHRpb24gYWxpZ25zIHdpdGggaG93IG90aGVycyBhY3R1YWxseSBleHBlcmllbmNlIHlvdS4KCioqV2hhdCB0byBkbyB3aXRoIGEgaGlnaCBzY29yZToqKiBDb250aW51ZSByZWZsZWN0aW5nIG9uIHlvdXIgZXhwZXJpZW5jZXMg4oCUIGpvdXJuYWxsaW5nLCBhc2tpbmcgZm9yIGhvbmVzdCBmZWVkYmFjaywgYW5kIHJldmlld2luZyB5b3VyIGRlY2lzaW9ucyB3ZWVrbHkgZGVlcGVucyB0aGlzIGZ1cnRoZXIuCgoqKldoYXQgdG8gZG8gd2l0aCBhIGxvdyBzY29yZToqKiBBZnRlciBhbnkgc2lnbmlmaWNhbnQgaW50ZXJhY3Rpb24gb3IgZGVjaXNpb24sIHRha2UgZml2ZSBtaW51dGVzIHRvIGFzayB5b3Vyc2VsZjogKldoYXQgZGlkIEkgZG8gd2VsbD8gV2hhdCB3b3VsZCBJIGNoYW5nZT8qIFNtYWxsIHJlZmxlY3Rpb24gaGFiaXRzIGNvbXBvdW5kIG92ZXIgdGltZS4KCiFbVHdvIHRyYWl0IGNhcmRzIHNpZGUgYnkgc2lkZSDigJQgTWVudGFsIEFnaWxpdHkgKE1vZGVyYXRlKSBhbmQgU2VsZi1Bd2FyZW5lc3MgKE1vZGVyYXRlKSDigJQgc2hvd2luZyBzY29yZSBiYXJzLCBkZXRhaWxlZCBhbmFseXNpcywgYW5kIGFjdGlvbiBzdGVwc10oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3BlcnNvbmFsaXR5LWdyb3d0aC1hcmVhLWNhcmRzLnBuZykKCi0tLQoKIyMgNy4gRXhwb3J0aW5nIFlvdXIgUGVyc29uYWxpdHkgUmVwb3J0CgpZb3VyIGZ1bGwgcGVyc29uYWxpdHkgYW5hbHlzaXMgY2FuIGJlIGV4cG9ydGVkIGFzIGEgUERGIHRvIHNoYXJlIHdpdGggcGFyZW50cywgYWR2aXNvcnMsIG9yIGZvciBwZXJzb25hbCByZWNvcmRzLgoKMS4gQ2xpY2sgdGhlICoqRXhwb3J0KiogYnV0dG9uIGF0IHRoZSB0b3Agb2YgdGhlIFBlcnNvbmFsaXR5IHBhZ2UgKGJlbG93IHRoZSBoZWFkZXIpLgoyLiBXYWl0IGEgZmV3IHNlY29uZHMgd2hpbGUgdGhlIGRvY3VtZW50IGlzIGdlbmVyYXRlZC4KMy4gQSBzZWN1cmUgbGluayBvcGVucyBpbiBhIG5ldyB0YWIg4oCUIGNsaWNrIGl0IHRvIGRvd25sb2FkIHlvdXIgUERGIHJlcG9ydC4KCj4gKipOb3RlOioqIElmIHRoZSAqKkV4cG9ydCoqIGJ1dHRvbiBpcyBtaXNzaW5nIG9yIGRpc2FibGVkLCByZXBvcnQgZXhwb3J0IG1heSBub3QgYmUgZW5hYmxlZCBmb3IgeW91ciBjdXJyZW50IHN1YnNjcmlwdGlvbiBwbGFuIG9yIG9yZ2FuaXNhdGlvbiBwb2xpY3kuIENoZWNrICoqU2V0dGluZ3Mg4oaSIFN1YnNjcmlwdGlvbioqIG9yIGNvbnRhY3QgeW91ciBhZHZpc29yLgoKIVtFeHBvcnQgYnV0dG9uIGF0IHRoZSB0b3Agb2YgdGhlIFBlcnNvbmFsaXR5IHBhZ2UgYW5kIHRoZSByZXN1bHRpbmcgUERGIG9wZW4gaW4gYSBuZXcgYnJvd3NlciB0YWJdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9wZXJzb25hbGl0eS1yZXBvcnQtZG93bmxvYWQucG5nKQoKLS0tCgojIyA4LiBVc2luZyBZb3VyIFBlcnNvbmFsaXR5IFJlc3VsdHMgV2l0aCBPdGhlciBQbGF0Zm9ybSBGZWF0dXJlcwoKWW91ciBwZXJzb25hbGl0eSBkYXRhIGRvZXMgbm90IGV4aXN0IGluIGlzb2xhdGlvbiDigJQgaXQgZmVlZHMgZGlyZWN0bHkgaW50byBvdGhlciBJRFBpY2tlciBtb2R1bGVzOgoKfCBNb2R1bGUgfCBIb3cgcGVyc29uYWxpdHkgY29ubmVjdHMgfAp8LS0tfC0tLXwKfCAqKlJlY29tbWVuZGF0aW9ucyoqIHwgU2VsZWN0ICpQZXJzb25hbGl0eSogbW9kZSBpbiB0aGUgUmVmaW5lIHBhbmVsIHRvIG1hdGNoIHVuaXZlcnNpdGllcyBhbmQgY2FyZWVycyB0byB5b3VyIHRyYWl0IHByb2ZpbGUgaW5zdGVhZCBvZiBleGFtIHNjb3JlcyDigJQgc2VlIFtSZWNvbW1lbmRhdGlvbnNdKC9kb2NzL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLykgfAp8ICoqQUkgTWVudG9yc2hpcCoqIHwgWW91ciBhY3RpdmUgQUkgbWVudG9yIGlzIGNvbnRleHR1YWxseSBhd2FyZSBvZiB5b3VyIHBlcnNvbmFsaXR5IHNjb3JlcyBhbmQgdGFpbG9ycyBpdHMgZ3VpZGFuY2UgYWNjb3JkaW5nbHkgfAp8ICoqQWR2aXNvciBDaGF0KiogfCBTaGFyZSB5b3VyIFF1aWNrIFN0YXRzIHdpdGggeW91ciBhZHZpc29yIHRvIGZvY3VzIHlvdXIgbmV4dCBndWlkYW5jZSBzZXNzaW9uIG9uIHNwZWNpZmljIEdyb3d0aCBBcmVhcyB8CgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSBQZXJzb25hbGl0eSBwYWdlIGlzIGxvY2tlZCB8IENvbXBsZXRlIHRoZSBQZXJzb25hbGl0eSBhc3Nlc3NtZW50IGluIHRoZSBBc3Nlc3NtZW50IG1vZHVsZSBmaXJzdCB8CnwgTXkgc2NvcmVzIGZlZWwgd3Jvbmcgb3IgZG9uJ3QgcmVmbGVjdCBtZSB8IFlvdSBtYXkgaGF2ZSBhbnN3ZXJlZCBxdWlja2x5IG9yIGluIGEgZGlzdHJhY3RlZCBzdGF0ZS4gUmV0YWtlIHRoZSBhc3Nlc3NtZW50IGluIGEgY2FsbSwgZm9jdXNlZCBzZXR0aW5nIHwKfCBUaGUgcmFkYXIgY2hhcnQgbG9hZHMgYnV0IHRyYWl0IGNhcmRzIGFyZSBibGFuayB8IEEgbmV0d29yayBkcm9wIG9jY3VycmVkIG1pZC1sb2FkLiBSZWxvYWQgdGhlIHBhZ2UgfAp8IEkgd2FudCB0byByZXRha2UgdGhlIGFzc2Vzc21lbnQgfCBHbyB0byBBc3Nlc3NtZW50LCBvcGVuIHRoZSBQZXJzb25hbGl0eSBjYXJkLCBhbmQgY2xpY2sgKipSZXRha2UqKiBpZiB0aGUgb3B0aW9uIGlzIGF2YWlsYWJsZSB8CnwgVGhlIEV4cG9ydCBidXR0b24gaXMgbWlzc2luZyB8IFJlcG9ydCBleHBvcnQgbWF5IG5vdCBiZSBlbmFibGVkIGZvciB5b3VyIHBsYW4uIENoZWNrIFNldHRpbmdzIG9yIGFzayB5b3VyIGFkdmlzb3IgfAp8IE15IEdyb3d0aCBNaW5kc2V0IHNjb3JlIGlzIGhpZ2ggYnV0IHJlY29tbWVuZGF0aW9ucyBzdGlsbCBmZWVsIG9mZiB8IFBlcnNvbmFsaXR5IG1vZGUgaW4gUmVjb21tZW5kYXRpb25zIHVzZXMgYWxsIGVpZ2h0IHRyYWl0IHNjb3JlcyB0b2dldGhlci4gVHJ5IGNvbWJpbmluZyBwZXJzb25hbGl0eSBtb2RlIHdpdGggY291bnRyeSBvciBleGFtIGZpbHRlcnMgZm9yIHNoYXJwZXIgcmVzdWx0cyB8Cg==</script>
 
 <style>
  

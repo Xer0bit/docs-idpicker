@@ -20,23 +20,23 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Recommendation | IDPicker Docs</title>
-<meta name="description" content="How to interpret your AI-driven career and university recommendations">
+<meta name="description" content="How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city">
 <meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/student-panel/recommendations/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Recommendation">
-  <meta property="og:description" content="How to interpret your AI-driven career and university recommendations">
+  <meta property="og:description" content="How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
 
   <meta itemprop="name" content="Recommendation">
-  <meta itemprop="description" content="How to interpret your AI-driven career and university recommendations">
+  <meta itemprop="description" content="How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city">
   <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="369">
+  <meta itemprop="wordCount" content="1305">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Recommendation">
-  <meta name="twitter:description" content="How to interpret your AI-driven career and university recommendations">
+  <meta name="twitter:description" content="How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city">
 <link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -46,6 +46,13 @@
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/logo.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="586">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
  
 .td-navbar .navbar-brand__name {
@@ -81,7 +88,7 @@
     <header>
       <nav class="td-navbar js-navbar-scroll">
 <div class="td-navbar-container container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
   <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
     <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
@@ -118,46 +125,202 @@
             
 <div class="td-content">
 	<h1>Recommendation</h1>
-	<div class="lead">How to interpret your AI-driven career and university recommendations</div>
+	<div class="lead">How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city</div>
 	<header class="article-meta">
 		
 </header>
-	<p>Once you complete your core assessments, IDPicker&rsquo;s AI generates a highly personalized list of recommendations. This guide explains how to use them to make informed decisions about your future.</p>
+	<p>The Recommendations page is the heart of the IDPicker platform. Once your assessments are complete, the AI generates a personalized list of universities or career paths that match your profile. You can then sharpen those results in two powerful ways: by feeding in your real exam scores and rankings, or by leaning entirely on your completed personality profile. This guide walks through every option step by step.</p>
 <hr>
-<h2 id="exploring-your-recommendations">Exploring Your Recommendations</h2>
+<h2 id="1-opening-your-recommendations">1. Opening Your Recommendations</h2>
 <ol>
-<li>In the sidebar, click <strong>Recommendations</strong>.</li>
-<li>The system will load your profile-based track (either <em>Career</em> or <em>University</em>).</li>
-<li>Scroll through the recommendation cards.</li>
-<li>Click into any recommendation to open the detailed view, which explains <em>why</em> the AI believes this is a strong match for your specific assessment results.</li>
+<li>In the left sidebar, click <strong>Recommendations</strong>.</li>
+<li>The page loads your results and displays a summary banner — for example, <strong>&ldquo;Found 3 personalized recommendations&rdquo;</strong> — along with a pass counter (e.g. <strong>1/2</strong>) that tracks how many refinement passes have been applied.</li>
+<li>Scroll down to see your university or career cards ranked by match strength.</li>
+<li>Click any card title to open its full detail view, which explains precisely why the AI selected it for your profile.</li>
 </ol>
 <blockquote>
-<p><strong>Tip:</strong> Keep a personal shortlist of the options that excite you the most to discuss later with your Advisor or AI Mentor!</p>
+<p><strong>Tip:</strong> The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-overview.png" alt="Recommendations summary banner showing found count, pass counter, and ranked university cards below"></p>
 <hr>
-<h2 id="understanding-guidance-tracks">Understanding Guidance Tracks</h2>
-<p>IDPicker provides two distinct tracks depending on your current life stage. The platform automatically defaults to the most relevant track based on your profile:</p>
+<h2 id="2-choosing-a-recommendation-input-mode">2. Choosing a Recommendation Input Mode</h2>
+<p>Before the AI refines your results, you must tell it what data to prioritise. Click <strong>Refine Results</strong> (top-right button) to open the refinement panel, then select one of the two <strong>Recommendation input</strong> modes:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Mode</th>
+          <th>What it uses</th>
+          <th>Best for</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Test Scores</strong></td>
+          <td>Your entrance exam names, scores, and rankings</td>
+          <td>Students who have sat official exams and know their results</td>
+      </tr>
+      <tr>
+          <td><strong>Personality</strong></td>
+          <td>Your completed personality assessment on IDPicker</td>
+          <td>Students who want a purely trait-based match without exam data</td>
+      </tr>
+  </tbody>
+</table>
+<p>Click the tile for the mode you want — the selected tile gets a highlighted border.</p>
+<p><img src="/images/user-manual/student-panel/recommendations-input-mode.png" alt="Recommendation input section showing Test Scores tile and Personality tile with selection highlight"></p>
+<hr>
+<h2 id="3-refining-with-test-scores-exam-based-mode">3. Refining With Test Scores (Exam-Based Mode)</h2>
+<p>This mode lets you enter the entrance exams you have actually sat, together with your score and ranking. Universities use these figures as admission criteria, so providing them produces the most accurate shortlist.</p>
+<h3 id="3a-how-the-score-palette-works">3a. How the Score Palette Works</h3>
+<p>IDPicker supports up to <strong>3 exam slots</strong> (shown as <strong>1/3</strong> in the panel). Each slot captures:</p>
 <ul>
-<li><strong>Career Track:</strong> Recommended for high school students (Grades 9-12) focusing on long-term professional paths.</li>
-<li><strong>University Track:</strong> Recommended for older students focusing directly on higher education program selection.</li>
+<li><strong>Exam name</strong> — the official name of the test (e.g. <em>IELTS</em>, <em>SAT</em>, <em>TOEFL</em>)</li>
+<li><strong>Score</strong> — the numeric result you received</li>
+<li><strong>Ranking</strong> <em>(optional)</em> — your position or percentile, e.g. <em>Top 5%</em> or <em>1000th</em></li>
 </ul>
-<h3 id="switching-between-tracks">Switching Between Tracks</h3>
-<p>You are not locked into your default track. To explore the other side:</p>
+<blockquote>
+<p><strong>Design tip shown in the panel:</strong> Blend aptitude, language, and speciality exams for a balanced story. For example, adding both a language exam (IELTS) and an aptitude exam (SAT) gives the AI richer data to match against university requirements.</p>
+</blockquote>
+<h3 id="3b-adding-your-first-exam-step-by-step">3b. Adding Your First Exam (Step by Step)</h3>
 <ol>
-<li>Scroll to the <strong>Guidance Track</strong> switcher section at the top of the page.</li>
-<li>Click either <strong>Switch to Career</strong> or <strong>Switch to University</strong>.</li>
-<li>Wait a moment for the save confirmation.</li>
-<li>The page will refresh with an entirely new set of tailored recommendations.</li>
+<li>In the refinement panel, confirm <strong>Test Scores</strong> is selected.</li>
+<li>You will see a numbered row labelled <strong>1</strong> with three input fields: <strong>Exam name</strong>, <strong>Score</strong>, and <strong>Ranking (optional)</strong>.</li>
+<li>Click the <strong>Exam name</strong> field and type the name of your exam (e.g. <em>YKS-SAY</em>).</li>
+<li>Click the <strong>Score</strong> field and enter your numeric score.</li>
+<li>Click the <strong>Ranking (optional)</strong> field and enter your rank if known (e.g. <em>Top 5%</em> or <em>15000th</em>).</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/recommendations-exam-slot.png" alt="Exam score palette showing exam name, score, and ranking input fields for the first exam slot"></p>
+<h3 id="3c-adding-a-second-or-third-exam">3c. Adding a Second or Third Exam</h3>
+<ol>
+<li>Click the <strong>+</strong> button on the right side of the palette row counter.</li>
+<li>A new numbered row appears.</li>
+<li>Fill in <strong>Exam name</strong>, <strong>Score</strong>, and <strong>Ranking</strong> for the additional exam.</li>
+<li>Repeat for a third exam if needed (maximum 3 slots).</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> The <strong>+</strong> button is disabled once all 3 slots are filled. To replace an exam, clear an existing row first.</p>
+</blockquote>
+<h3 id="3d-real-world-example--turkish-yks-exam">3d. Real-World Example — Turkish YKS Exam</h3>
+<p>Turkey uses the <strong>YKS</strong> university entrance system, which includes several sub-tests. A typical student entry looks like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Example Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Exam name</td>
+          <td>YKS – SAY (Science)</td>
+      </tr>
+      <tr>
+          <td>Score</td>
+          <td>487.32</td>
+      </tr>
+      <tr>
+          <td>Ranking</td>
+          <td>8500th</td>
+      </tr>
+  </tbody>
+</table>
+<p>The SAY sub-score is the figure Turkish universities use to rank applicants for science and engineering faculties. Entering it gives IDPicker the exact criterion those universities apply, so the recommendation list mirrors real admission eligibility.</p>
+<p>Other common Turkish exam entries:</p>
+<ul>
+<li><strong>YKS – EA</strong> (Equally Weighted) — used for economics, law, business</li>
+<li><strong>YKS – SÖZ</strong> (Verbal) — used for humanities and social sciences</li>
+<li><strong>YKS – DİL</strong> (Language) — used for foreign language degree programmes</li>
+</ul>
+<p><img src="/images/user-manual/student-panel/recommendations-yks-example.png" alt="Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example"></p>
+<h3 id="3e-applying-your-scores">3e. Applying Your Scores</h3>
+<ol>
+<li>After filling in all your exam rows, click <strong>Apply All Filters</strong> (bottom-right of the refinement panel).</li>
+<li>The platform saves your score palette and triggers a new recommendation pass.</li>
+<li>The pass counter in the summary banner increments (e.g. from <strong>1/2</strong> to <strong>2/2</strong>).</li>
+<li>Your ranked list updates to reflect universities whose admission criteria your scores meet.</li>
+</ol>
+<p><img src="/images/user-manual/student-panel/recommendations-apply-filters.png" alt="Apply All Filters button highlighted at the bottom of the refinement panel"></p>
 <hr>
-<h2 id="downloading-your-full-report">Downloading Your Full Report</h2>
-<p>If your account plan supports it, you can export your entire recommendation profile as a portable document.</p>
+<h2 id="4-refining-with-personality-trait-based-mode">4. Refining With Personality (Trait-Based Mode)</h2>
+<p>If you have completed the Personality assessment on IDPicker, you can let the AI use your psychological trait scores instead of exam data.</p>
+<ol>
+<li>In the refinement panel, click the <strong>Personality</strong> tile.</li>
+<li>The exam score fields disappear — no manual input is required.</li>
+<li>Click <strong>Apply All Filters</strong>.</li>
+<li>The AI re-ranks your recommendations based on trait compatibility with each university or career programme.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to <a href="/docs/student-panel/assessment/">Assessment</a> first.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-personality-mode.png" alt="Personality tile selected in the recommendation input section with no additional input fields visible"></p>
+<hr>
+<h2 id="5-filtering-by-country">5. Filtering by Country</h2>
+<p>The <strong>Refine by Country</strong> dropdown narrows results to universities located in a specific country before the AI applies its ranking logic.</p>
+<ol>
+<li>In the refinement panel, click the <strong>Select country</strong> dropdown under <strong>Refine by:</strong>.</li>
+<li>Scroll or type to find your target country.</li>
+<li>Select it — the dropdown updates to show the chosen country.</li>
+<li>Click <strong>Apply All Filters</strong> to reload results for that country only.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Combine country filtering with an exam mode for the tightest shortlist. For example, selecting <em>Turkey</em> + entering YKS–SAY scores surfaces only Turkish universities that accept your specific score range.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-country-filter.png" alt="Country dropdown open with a country selected in the Refine by section of the recommendations panel"></p>
+<hr>
+<h2 id="6-filtering-by-city">6. Filtering by City</h2>
+<p>After country-level filtering, you can drill down further by city using the <strong>Filter by city</strong> control that appears above the results list.</p>
+<ol>
+<li>Scroll past the refinement panel to the <strong>Filter by city</strong> row.</li>
+<li>Click the city dropdown (defaults to <strong>All cities</strong>).</li>
+<li>Select the city you want — only universities in that city will show.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> City-level filtering is applied independently of the refinement panel. You do not need to click <strong>Apply All Filters</strong> again — city changes take effect immediately.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-city-filter.png" alt="Filter by city dropdown showing All cities default and a city selection in context of the results list"></p>
+<hr>
+<h2 id="7-reading-the-recommendation-cards">7. Reading the Recommendation Cards</h2>
+<p>Each university card in your results list displays key admission and programme information at a glance:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>What it shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>University name</strong></td>
+          <td>Full official name including city and type (state/private)</td>
+      </tr>
+      <tr>
+          <td><strong>Premium badge</strong></td>
+          <td>Marks universities available to Premium-tier subscribers only</td>
+      </tr>
+      <tr>
+          <td>Programme details</td>
+          <td>Faculty, degree type, and language of instruction</td>
+      </tr>
+      <tr>
+          <td>Match indicators</td>
+          <td>Visual signals showing how closely the university fits your profile</td>
+      </tr>
+  </tbody>
+</table>
+<p>Click the university name to open its full detail page showing all programmes, requirements, and the AI&rsquo;s reasoning for the match.</p>
+<p><img src="/images/user-manual/student-panel/recommendations-card-detail.png" alt="University recommendation card showing name, city, Premium badge, and programme detail summary"></p>
+<hr>
+<h2 id="8-downloading-your-full-report">8. Downloading Your Full Report</h2>
+<p>If your account plan supports it, you can export your recommendation profile as a PDF.</p>
 <ol>
 <li>Look for the <strong>Download My Report</strong> button at the top of the recommendations page.</li>
-<li>Click the button and wait for the preparation state to finish.</li>
-<li>A new tab will open containing a secure link to your generated PDF report.</li>
+<li>Click it and wait for the document to be prepared.</li>
+<li>A secure link opens in a new tab — click it to save the PDF.</li>
 </ol>
-<p><em>Note: If the download button is completely hidden, report generation is not enabled for your current account tier or organization policy.</em></p>
+<blockquote>
+<p><strong>Note:</strong> If the button is hidden, report export is not enabled for your current plan or organisation policy. Check your subscription under <strong>Settings</strong>.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-report-download.png" alt="Download My Report button and secure PDF link in a new tab"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -170,19 +333,35 @@
   <tbody>
       <tr>
           <td>The recommendations feel inaccurate</td>
-          <td>Your recommendations are strictly tied to your assessment answers. Consider retaking the assessment if you rushed through it.</td>
+          <td>Retake the assessment if you rushed through it, then apply filters again</td>
       </tr>
       <tr>
-          <td>I am seeing universities but I want careers</td>
-          <td>Use the Guidance Track switcher to manually change your focus</td>
+          <td>I want career results, not universities</td>
+          <td>Use the Guidance Track switcher to change focus — see <a href="/docs/student-panel/assessment/">Assessment</a></td>
       </tr>
       <tr>
-          <td>I switched tracks but still see old content</td>
-          <td>Wait for the save confirmation and refresh the page</td>
+          <td>The Personality tile is locked</td>
+          <td>Complete the Personality assessment first under the Assessment module</td>
+      </tr>
+      <tr>
+          <td>I entered my YKS score but the list did not change</td>
+          <td>Make sure you clicked <strong>Apply All Filters</strong> after entering the score</td>
+      </tr>
+      <tr>
+          <td>The <strong>+</strong> button to add more exams is disabled</td>
+          <td>You have reached the 3-exam limit. Clear one row to replace it</td>
+      </tr>
+      <tr>
+          <td>City filter shows no results</td>
+          <td>The selected country may not have city-level data. Try <strong>All cities</strong></td>
       </tr>
       <tr>
           <td>Report download failed</td>
-          <td>Intermittent networks can interrupt generation. Wait 60 seconds and try again</td>
+          <td>Wait 60 seconds and try again — intermittent network drops can interrupt PDF generation</td>
+      </tr>
+      <tr>
+          <td>Pass counter is stuck at 1/2</td>
+          <td>A failed filter apply may have stopped the count. Re-apply your filters and check your connection</td>
       </tr>
   </tbody>
 </table>
@@ -214,7 +393,7 @@
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
 
-<script id="llm-raw-md" type="text/plain" style="display:none">Ck9uY2UgeW91IGNvbXBsZXRlIHlvdXIgY29yZSBhc3Nlc3NtZW50cywgSURQaWNrZXIncyBBSSBnZW5lcmF0ZXMgYSBoaWdobHkgcGVyc29uYWxpemVkIGxpc3Qgb2YgcmVjb21tZW5kYXRpb25zLiBUaGlzIGd1aWRlIGV4cGxhaW5zIGhvdyB0byB1c2UgdGhlbSB0byBtYWtlIGluZm9ybWVkIGRlY2lzaW9ucyBhYm91dCB5b3VyIGZ1dHVyZS4KCi0tLQoKIyMgRXhwbG9yaW5nIFlvdXIgUmVjb21tZW5kYXRpb25zCgoxLiBJbiB0aGUgc2lkZWJhciwgY2xpY2sgKipSZWNvbW1lbmRhdGlvbnMqKi4KMi4gVGhlIHN5c3RlbSB3aWxsIGxvYWQgeW91ciBwcm9maWxlLWJhc2VkIHRyYWNrIChlaXRoZXIgKkNhcmVlciogb3IgKlVuaXZlcnNpdHkqKS4KMy4gU2Nyb2xsIHRocm91Z2ggdGhlIHJlY29tbWVuZGF0aW9uIGNhcmRzLiAKNC4gQ2xpY2sgaW50byBhbnkgcmVjb21tZW5kYXRpb24gdG8gb3BlbiB0aGUgZGV0YWlsZWQgdmlldywgd2hpY2ggZXhwbGFpbnMgKndoeSogdGhlIEFJIGJlbGlldmVzIHRoaXMgaXMgYSBzdHJvbmcgbWF0Y2ggZm9yIHlvdXIgc3BlY2lmaWMgYXNzZXNzbWVudCByZXN1bHRzLgoKPiAqKlRpcDoqKiBLZWVwIGEgcGVyc29uYWwgc2hvcnRsaXN0IG9mIHRoZSBvcHRpb25zIHRoYXQgZXhjaXRlIHlvdSB0aGUgbW9zdCB0byBkaXNjdXNzIGxhdGVyIHdpdGggeW91ciBBZHZpc29yIG9yIEFJIE1lbnRvciEKCi0tLQoKIyMgVW5kZXJzdGFuZGluZyBHdWlkYW5jZSBUcmFja3MKCklEUGlja2VyIHByb3ZpZGVzIHR3byBkaXN0aW5jdCB0cmFja3MgZGVwZW5kaW5nIG9uIHlvdXIgY3VycmVudCBsaWZlIHN0YWdlLiBUaGUgcGxhdGZvcm0gYXV0b21hdGljYWxseSBkZWZhdWx0cyB0byB0aGUgbW9zdCByZWxldmFudCB0cmFjayBiYXNlZCBvbiB5b3VyIHByb2ZpbGU6CgotICoqQ2FyZWVyIFRyYWNrOioqIFJlY29tbWVuZGVkIGZvciBoaWdoIHNjaG9vbCBzdHVkZW50cyAoR3JhZGVzIDktMTIpIGZvY3VzaW5nIG9uIGxvbmctdGVybSBwcm9mZXNzaW9uYWwgcGF0aHMuCi0gKipVbml2ZXJzaXR5IFRyYWNrOioqIFJlY29tbWVuZGVkIGZvciBvbGRlciBzdHVkZW50cyBmb2N1c2luZyBkaXJlY3RseSBvbiBoaWdoZXIgZWR1Y2F0aW9uIHByb2dyYW0gc2VsZWN0aW9uLgoKIyMjIFN3aXRjaGluZyBCZXR3ZWVuIFRyYWNrcwoKWW91IGFyZSBub3QgbG9ja2VkIGludG8geW91ciBkZWZhdWx0IHRyYWNrLiBUbyBleHBsb3JlIHRoZSBvdGhlciBzaWRlOgoKMS4gU2Nyb2xsIHRvIHRoZSAqKkd1aWRhbmNlIFRyYWNrKiogc3dpdGNoZXIgc2VjdGlvbiBhdCB0aGUgdG9wIG9mIHRoZSBwYWdlLgoyLiBDbGljayBlaXRoZXIgKipTd2l0Y2ggdG8gQ2FyZWVyKiogb3IgKipTd2l0Y2ggdG8gVW5pdmVyc2l0eSoqLgozLiBXYWl0IGEgbW9tZW50IGZvciB0aGUgc2F2ZSBjb25maXJtYXRpb24uCjQuIFRoZSBwYWdlIHdpbGwgcmVmcmVzaCB3aXRoIGFuIGVudGlyZWx5IG5ldyBzZXQgb2YgdGFpbG9yZWQgcmVjb21tZW5kYXRpb25zLgoKLS0tCgojIyBEb3dubG9hZGluZyBZb3VyIEZ1bGwgUmVwb3J0CgpJZiB5b3VyIGFjY291bnQgcGxhbiBzdXBwb3J0cyBpdCwgeW91IGNhbiBleHBvcnQgeW91ciBlbnRpcmUgcmVjb21tZW5kYXRpb24gcHJvZmlsZSBhcyBhIHBvcnRhYmxlIGRvY3VtZW50LgoKMS4gTG9vayBmb3IgdGhlICoqRG93bmxvYWQgTXkgUmVwb3J0KiogYnV0dG9uIGF0IHRoZSB0b3Agb2YgdGhlIHJlY29tbWVuZGF0aW9ucyBwYWdlLgoyLiBDbGljayB0aGUgYnV0dG9uIGFuZCB3YWl0IGZvciB0aGUgcHJlcGFyYXRpb24gc3RhdGUgdG8gZmluaXNoLgozLiBBIG5ldyB0YWIgd2lsbCBvcGVuIGNvbnRhaW5pbmcgYSBzZWN1cmUgbGluayB0byB5b3VyIGdlbmVyYXRlZCBQREYgcmVwb3J0LgoKKk5vdGU6IElmIHRoZSBkb3dubG9hZCBidXR0b24gaXMgY29tcGxldGVseSBoaWRkZW4sIHJlcG9ydCBnZW5lcmF0aW9uIGlzIG5vdCBlbmFibGVkIGZvciB5b3VyIGN1cnJlbnQgYWNjb3VudCB0aWVyIG9yIG9yZ2FuaXphdGlvbiBwb2xpY3kuKgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBUaGUgcmVjb21tZW5kYXRpb25zIGZlZWwgaW5hY2N1cmF0ZSB8IFlvdXIgcmVjb21tZW5kYXRpb25zIGFyZSBzdHJpY3RseSB0aWVkIHRvIHlvdXIgYXNzZXNzbWVudCBhbnN3ZXJzLiBDb25zaWRlciByZXRha2luZyB0aGUgYXNzZXNzbWVudCBpZiB5b3UgcnVzaGVkIHRocm91Z2ggaXQuIHwKfCBJIGFtIHNlZWluZyB1bml2ZXJzaXRpZXMgYnV0IEkgd2FudCBjYXJlZXJzIHwgVXNlIHRoZSBHdWlkYW5jZSBUcmFjayBzd2l0Y2hlciB0byBtYW51YWxseSBjaGFuZ2UgeW91ciBmb2N1cyB8CnwgSSBzd2l0Y2hlZCB0cmFja3MgYnV0IHN0aWxsIHNlZSBvbGQgY29udGVudCB8IFdhaXQgZm9yIHRoZSBzYXZlIGNvbmZpcm1hdGlvbiBhbmQgcmVmcmVzaCB0aGUgcGFnZSB8CnwgUmVwb3J0IGRvd25sb2FkIGZhaWxlZCB8IEludGVybWl0dGVudCBuZXR3b3JrcyBjYW4gaW50ZXJydXB0IGdlbmVyYXRpb24uIFdhaXQgNjAgc2Vjb25kcyBhbmQgdHJ5IGFnYWluIHwK</script>
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBSZWNvbW1lbmRhdGlvbnMgcGFnZSBpcyB0aGUgaGVhcnQgb2YgdGhlIElEUGlja2VyIHBsYXRmb3JtLiBPbmNlIHlvdXIgYXNzZXNzbWVudHMgYXJlIGNvbXBsZXRlLCB0aGUgQUkgZ2VuZXJhdGVzIGEgcGVyc29uYWxpemVkIGxpc3Qgb2YgdW5pdmVyc2l0aWVzIG9yIGNhcmVlciBwYXRocyB0aGF0IG1hdGNoIHlvdXIgcHJvZmlsZS4gWW91IGNhbiB0aGVuIHNoYXJwZW4gdGhvc2UgcmVzdWx0cyBpbiB0d28gcG93ZXJmdWwgd2F5czogYnkgZmVlZGluZyBpbiB5b3VyIHJlYWwgZXhhbSBzY29yZXMgYW5kIHJhbmtpbmdzLCBvciBieSBsZWFuaW5nIGVudGlyZWx5IG9uIHlvdXIgY29tcGxldGVkIHBlcnNvbmFsaXR5IHByb2ZpbGUuIFRoaXMgZ3VpZGUgd2Fsa3MgdGhyb3VnaCBldmVyeSBvcHRpb24gc3RlcCBieSBzdGVwLgoKLS0tCgojIyAxLiBPcGVuaW5nIFlvdXIgUmVjb21tZW5kYXRpb25zCgoxLiBJbiB0aGUgbGVmdCBzaWRlYmFyLCBjbGljayAqKlJlY29tbWVuZGF0aW9ucyoqLgoyLiBUaGUgcGFnZSBsb2FkcyB5b3VyIHJlc3VsdHMgYW5kIGRpc3BsYXlzIGEgc3VtbWFyeSBiYW5uZXIg4oCUIGZvciBleGFtcGxlLCAqKiJGb3VuZCAzIHBlcnNvbmFsaXplZCByZWNvbW1lbmRhdGlvbnMiKiog4oCUIGFsb25nIHdpdGggYSBwYXNzIGNvdW50ZXIgKGUuZy4gKioxLzIqKikgdGhhdCB0cmFja3MgaG93IG1hbnkgcmVmaW5lbWVudCBwYXNzZXMgaGF2ZSBiZWVuIGFwcGxpZWQuCjMuIFNjcm9sbCBkb3duIHRvIHNlZSB5b3VyIHVuaXZlcnNpdHkgb3IgY2FyZWVyIGNhcmRzIHJhbmtlZCBieSBtYXRjaCBzdHJlbmd0aC4KNC4gQ2xpY2sgYW55IGNhcmQgdGl0bGUgdG8gb3BlbiBpdHMgZnVsbCBkZXRhaWwgdmlldywgd2hpY2ggZXhwbGFpbnMgcHJlY2lzZWx5IHdoeSB0aGUgQUkgc2VsZWN0ZWQgaXQgZm9yIHlvdXIgcHJvZmlsZS4KCj4gKipUaXA6KiogVGhlIHBhc3MgY291bnRlciBuZXh0IHRvIHRoZSBzdW1tYXJ5IGJhbm5lciBpbmNyZW1lbnRzIGVhY2ggdGltZSB5b3UgYXBwbHkgYSBuZXcgc2V0IG9mIGZpbHRlcnMuIFVzZSBpdCB0byBjb21wYXJlIGhvdyB5b3VyIHJlc3VsdHMgY2hhbmdlIGJldHdlZW4gcmVmaW5lbWVudCBwYXNzZXMuCgohW1JlY29tbWVuZGF0aW9ucyBzdW1tYXJ5IGJhbm5lciBzaG93aW5nIGZvdW5kIGNvdW50LCBwYXNzIGNvdW50ZXIsIGFuZCByYW5rZWQgdW5pdmVyc2l0eSBjYXJkcyBiZWxvd10oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3JlY29tbWVuZGF0aW9ucy1vdmVydmlldy5wbmcpCgotLS0KCiMjIDIuIENob29zaW5nIGEgUmVjb21tZW5kYXRpb24gSW5wdXQgTW9kZQoKQmVmb3JlIHRoZSBBSSByZWZpbmVzIHlvdXIgcmVzdWx0cywgeW91IG11c3QgdGVsbCBpdCB3aGF0IGRhdGEgdG8gcHJpb3JpdGlzZS4gQ2xpY2sgKipSZWZpbmUgUmVzdWx0cyoqICh0b3AtcmlnaHQgYnV0dG9uKSB0byBvcGVuIHRoZSByZWZpbmVtZW50IHBhbmVsLCB0aGVuIHNlbGVjdCBvbmUgb2YgdGhlIHR3byAqKlJlY29tbWVuZGF0aW9uIGlucHV0KiogbW9kZXM6Cgp8IE1vZGUgfCBXaGF0IGl0IHVzZXMgfCBCZXN0IGZvciB8CnwtLS18LS0tfC0tLXwKfCAqKlRlc3QgU2NvcmVzKiogfCBZb3VyIGVudHJhbmNlIGV4YW0gbmFtZXMsIHNjb3JlcywgYW5kIHJhbmtpbmdzIHwgU3R1ZGVudHMgd2hvIGhhdmUgc2F0IG9mZmljaWFsIGV4YW1zIGFuZCBrbm93IHRoZWlyIHJlc3VsdHMgfAp8ICoqUGVyc29uYWxpdHkqKiB8IFlvdXIgY29tcGxldGVkIHBlcnNvbmFsaXR5IGFzc2Vzc21lbnQgb24gSURQaWNrZXIgfCBTdHVkZW50cyB3aG8gd2FudCBhIHB1cmVseSB0cmFpdC1iYXNlZCBtYXRjaCB3aXRob3V0IGV4YW0gZGF0YSB8CgpDbGljayB0aGUgdGlsZSBmb3IgdGhlIG1vZGUgeW91IHdhbnQg4oCUIHRoZSBzZWxlY3RlZCB0aWxlIGdldHMgYSBoaWdobGlnaHRlZCBib3JkZXIuCgohW1JlY29tbWVuZGF0aW9uIGlucHV0IHNlY3Rpb24gc2hvd2luZyBUZXN0IFNjb3JlcyB0aWxlIGFuZCBQZXJzb25hbGl0eSB0aWxlIHdpdGggc2VsZWN0aW9uIGhpZ2hsaWdodF0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3JlY29tbWVuZGF0aW9ucy1pbnB1dC1tb2RlLnBuZykKCi0tLQoKIyMgMy4gUmVmaW5pbmcgV2l0aCBUZXN0IFNjb3JlcyAoRXhhbS1CYXNlZCBNb2RlKQoKVGhpcyBtb2RlIGxldHMgeW91IGVudGVyIHRoZSBlbnRyYW5jZSBleGFtcyB5b3UgaGF2ZSBhY3R1YWxseSBzYXQsIHRvZ2V0aGVyIHdpdGggeW91ciBzY29yZSBhbmQgcmFua2luZy4gVW5pdmVyc2l0aWVzIHVzZSB0aGVzZSBmaWd1cmVzIGFzIGFkbWlzc2lvbiBjcml0ZXJpYSwgc28gcHJvdmlkaW5nIHRoZW0gcHJvZHVjZXMgdGhlIG1vc3QgYWNjdXJhdGUgc2hvcnRsaXN0LgoKIyMjIDNhLiBIb3cgdGhlIFNjb3JlIFBhbGV0dGUgV29ya3MKCklEUGlja2VyIHN1cHBvcnRzIHVwIHRvICoqMyBleGFtIHNsb3RzKiogKHNob3duIGFzICoqMS8zKiogaW4gdGhlIHBhbmVsKS4gRWFjaCBzbG90IGNhcHR1cmVzOgoKLSAqKkV4YW0gbmFtZSoqIOKAlCB0aGUgb2ZmaWNpYWwgbmFtZSBvZiB0aGUgdGVzdCAoZS5nLiAqSUVMVFMqLCAqU0FUKiwgKlRPRUZMKikKLSAqKlNjb3JlKiog4oCUIHRoZSBudW1lcmljIHJlc3VsdCB5b3UgcmVjZWl2ZWQKLSAqKlJhbmtpbmcqKiAqKG9wdGlvbmFsKSog4oCUIHlvdXIgcG9zaXRpb24gb3IgcGVyY2VudGlsZSwgZS5nLiAqVG9wIDUlKiBvciAqMTAwMHRoKgoKPiAqKkRlc2lnbiB0aXAgc2hvd24gaW4gdGhlIHBhbmVsOioqIEJsZW5kIGFwdGl0dWRlLCBsYW5ndWFnZSwgYW5kIHNwZWNpYWxpdHkgZXhhbXMgZm9yIGEgYmFsYW5jZWQgc3RvcnkuIEZvciBleGFtcGxlLCBhZGRpbmcgYm90aCBhIGxhbmd1YWdlIGV4YW0gKElFTFRTKSBhbmQgYW4gYXB0aXR1ZGUgZXhhbSAoU0FUKSBnaXZlcyB0aGUgQUkgcmljaGVyIGRhdGEgdG8gbWF0Y2ggYWdhaW5zdCB1bml2ZXJzaXR5IHJlcXVpcmVtZW50cy4KCiMjIyAzYi4gQWRkaW5nIFlvdXIgRmlyc3QgRXhhbSAoU3RlcCBieSBTdGVwKQoKMS4gSW4gdGhlIHJlZmluZW1lbnQgcGFuZWwsIGNvbmZpcm0gKipUZXN0IFNjb3JlcyoqIGlzIHNlbGVjdGVkLgoyLiBZb3Ugd2lsbCBzZWUgYSBudW1iZXJlZCByb3cgbGFiZWxsZWQgKioxKiogd2l0aCB0aHJlZSBpbnB1dCBmaWVsZHM6ICoqRXhhbSBuYW1lKiosICoqU2NvcmUqKiwgYW5kICoqUmFua2luZyAob3B0aW9uYWwpKiouCjMuIENsaWNrIHRoZSAqKkV4YW0gbmFtZSoqIGZpZWxkIGFuZCB0eXBlIHRoZSBuYW1lIG9mIHlvdXIgZXhhbSAoZS5nLiAqWUtTLVNBWSopLgo0LiBDbGljayB0aGUgKipTY29yZSoqIGZpZWxkIGFuZCBlbnRlciB5b3VyIG51bWVyaWMgc2NvcmUuCjUuIENsaWNrIHRoZSAqKlJhbmtpbmcgKG9wdGlvbmFsKSoqIGZpZWxkIGFuZCBlbnRlciB5b3VyIHJhbmsgaWYga25vd24gKGUuZy4gKlRvcCA1JSogb3IgKjE1MDAwdGgqKS4KCiFbRXhhbSBzY29yZSBwYWxldHRlIHNob3dpbmcgZXhhbSBuYW1lLCBzY29yZSwgYW5kIHJhbmtpbmcgaW5wdXQgZmllbGRzIGZvciB0aGUgZmlyc3QgZXhhbSBzbG90XSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLWV4YW0tc2xvdC5wbmcpCgojIyMgM2MuIEFkZGluZyBhIFNlY29uZCBvciBUaGlyZCBFeGFtCgoxLiBDbGljayB0aGUgKiorKiogYnV0dG9uIG9uIHRoZSByaWdodCBzaWRlIG9mIHRoZSBwYWxldHRlIHJvdyBjb3VudGVyLgoyLiBBIG5ldyBudW1iZXJlZCByb3cgYXBwZWFycy4KMy4gRmlsbCBpbiAqKkV4YW0gbmFtZSoqLCAqKlNjb3JlKiosIGFuZCAqKlJhbmtpbmcqKiBmb3IgdGhlIGFkZGl0aW9uYWwgZXhhbS4KNC4gUmVwZWF0IGZvciBhIHRoaXJkIGV4YW0gaWYgbmVlZGVkIChtYXhpbXVtIDMgc2xvdHMpLgoKPiAqKk5vdGU6KiogVGhlICoqKyoqIGJ1dHRvbiBpcyBkaXNhYmxlZCBvbmNlIGFsbCAzIHNsb3RzIGFyZSBmaWxsZWQuIFRvIHJlcGxhY2UgYW4gZXhhbSwgY2xlYXIgYW4gZXhpc3Rpbmcgcm93IGZpcnN0LgoKIyMjIDNkLiBSZWFsLVdvcmxkIEV4YW1wbGUg4oCUIFR1cmtpc2ggWUtTIEV4YW0KClR1cmtleSB1c2VzIHRoZSAqKllLUyoqIHVuaXZlcnNpdHkgZW50cmFuY2Ugc3lzdGVtLCB3aGljaCBpbmNsdWRlcyBzZXZlcmFsIHN1Yi10ZXN0cy4gQSB0eXBpY2FsIHN0dWRlbnQgZW50cnkgbG9va3MgbGlrZSB0aGlzOgoKfCBGaWVsZCB8IEV4YW1wbGUgVmFsdWUgfAp8LS0tfC0tLXwKfCBFeGFtIG5hbWUgfCBZS1Mg4oCTIFNBWSAoU2NpZW5jZSkgfAp8IFNjb3JlIHwgNDg3LjMyIHwKfCBSYW5raW5nIHwgODUwMHRoIHwKClRoZSBTQVkgc3ViLXNjb3JlIGlzIHRoZSBmaWd1cmUgVHVya2lzaCB1bml2ZXJzaXRpZXMgdXNlIHRvIHJhbmsgYXBwbGljYW50cyBmb3Igc2NpZW5jZSBhbmQgZW5naW5lZXJpbmcgZmFjdWx0aWVzLiBFbnRlcmluZyBpdCBnaXZlcyBJRFBpY2tlciB0aGUgZXhhY3QgY3JpdGVyaW9uIHRob3NlIHVuaXZlcnNpdGllcyBhcHBseSwgc28gdGhlIHJlY29tbWVuZGF0aW9uIGxpc3QgbWlycm9ycyByZWFsIGFkbWlzc2lvbiBlbGlnaWJpbGl0eS4KCk90aGVyIGNvbW1vbiBUdXJraXNoIGV4YW0gZW50cmllczoKLSAqKllLUyDigJMgRUEqKiAoRXF1YWxseSBXZWlnaHRlZCkg4oCUIHVzZWQgZm9yIGVjb25vbWljcywgbGF3LCBidXNpbmVzcwotICoqWUtTIOKAkyBTw5ZaKiogKFZlcmJhbCkg4oCUIHVzZWQgZm9yIGh1bWFuaXRpZXMgYW5kIHNvY2lhbCBzY2llbmNlcwotICoqWUtTIOKAkyBExLBMKiogKExhbmd1YWdlKSDigJQgdXNlZCBmb3IgZm9yZWlnbiBsYW5ndWFnZSBkZWdyZWUgcHJvZ3JhbW1lcwoKIVtTY29yZSBwYWxldHRlIHdpdGggWUtTLVNBWSBleGFtIG5hbWUsIG51bWVyaWMgc2NvcmUsIGFuZCByYW5raW5nIGZpbGxlZCBpbiBhcyBhIHJlYWwgZXhhbXBsZV0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3JlY29tbWVuZGF0aW9ucy15a3MtZXhhbXBsZS5wbmcpCgojIyMgM2UuIEFwcGx5aW5nIFlvdXIgU2NvcmVzCgoxLiBBZnRlciBmaWxsaW5nIGluIGFsbCB5b3VyIGV4YW0gcm93cywgY2xpY2sgKipBcHBseSBBbGwgRmlsdGVycyoqIChib3R0b20tcmlnaHQgb2YgdGhlIHJlZmluZW1lbnQgcGFuZWwpLgoyLiBUaGUgcGxhdGZvcm0gc2F2ZXMgeW91ciBzY29yZSBwYWxldHRlIGFuZCB0cmlnZ2VycyBhIG5ldyByZWNvbW1lbmRhdGlvbiBwYXNzLgozLiBUaGUgcGFzcyBjb3VudGVyIGluIHRoZSBzdW1tYXJ5IGJhbm5lciBpbmNyZW1lbnRzIChlLmcuIGZyb20gKioxLzIqKiB0byAqKjIvMioqKS4KNC4gWW91ciByYW5rZWQgbGlzdCB1cGRhdGVzIHRvIHJlZmxlY3QgdW5pdmVyc2l0aWVzIHdob3NlIGFkbWlzc2lvbiBjcml0ZXJpYSB5b3VyIHNjb3JlcyBtZWV0LgoKIVtBcHBseSBBbGwgRmlsdGVycyBidXR0b24gaGlnaGxpZ2h0ZWQgYXQgdGhlIGJvdHRvbSBvZiB0aGUgcmVmaW5lbWVudCBwYW5lbF0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3JlY29tbWVuZGF0aW9ucy1hcHBseS1maWx0ZXJzLnBuZykKCi0tLQoKIyMgNC4gUmVmaW5pbmcgV2l0aCBQZXJzb25hbGl0eSAoVHJhaXQtQmFzZWQgTW9kZSkKCklmIHlvdSBoYXZlIGNvbXBsZXRlZCB0aGUgUGVyc29uYWxpdHkgYXNzZXNzbWVudCBvbiBJRFBpY2tlciwgeW91IGNhbiBsZXQgdGhlIEFJIHVzZSB5b3VyIHBzeWNob2xvZ2ljYWwgdHJhaXQgc2NvcmVzIGluc3RlYWQgb2YgZXhhbSBkYXRhLgoKMS4gSW4gdGhlIHJlZmluZW1lbnQgcGFuZWwsIGNsaWNrIHRoZSAqKlBlcnNvbmFsaXR5KiogdGlsZS4KMi4gVGhlIGV4YW0gc2NvcmUgZmllbGRzIGRpc2FwcGVhciDigJQgbm8gbWFudWFsIGlucHV0IGlzIHJlcXVpcmVkLgozLiBDbGljayAqKkFwcGx5IEFsbCBGaWx0ZXJzKiouCjQuIFRoZSBBSSByZS1yYW5rcyB5b3VyIHJlY29tbWVuZGF0aW9ucyBiYXNlZCBvbiB0cmFpdCBjb21wYXRpYmlsaXR5IHdpdGggZWFjaCB1bml2ZXJzaXR5IG9yIGNhcmVlciBwcm9ncmFtbWUuCgo&#43;ICoqTm90ZToqKiBUaGlzIG1vZGUgcmVxdWlyZXMgYSBjb21wbGV0ZWQgUGVyc29uYWxpdHkgYXNzZXNzbWVudC4gSWYgeW91IGhhdmUgbm90IGZpbmlzaGVkIGl0LCB0aGUgdGlsZSBtYXkgYmUgbG9ja2VkLiBHbyB0byBbQXNzZXNzbWVudF0oL2RvY3Mvc3R1ZGVudC1wYW5lbC9hc3Nlc3NtZW50LykgZmlyc3QuCgohW1BlcnNvbmFsaXR5IHRpbGUgc2VsZWN0ZWQgaW4gdGhlIHJlY29tbWVuZGF0aW9uIGlucHV0IHNlY3Rpb24gd2l0aCBubyBhZGRpdGlvbmFsIGlucHV0IGZpZWxkcyB2aXNpYmxlXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLXBlcnNvbmFsaXR5LW1vZGUucG5nKQoKLS0tCgojIyA1LiBGaWx0ZXJpbmcgYnkgQ291bnRyeQoKVGhlICoqUmVmaW5lIGJ5IENvdW50cnkqKiBkcm9wZG93biBuYXJyb3dzIHJlc3VsdHMgdG8gdW5pdmVyc2l0aWVzIGxvY2F0ZWQgaW4gYSBzcGVjaWZpYyBjb3VudHJ5IGJlZm9yZSB0aGUgQUkgYXBwbGllcyBpdHMgcmFua2luZyBsb2dpYy4KCjEuIEluIHRoZSByZWZpbmVtZW50IHBhbmVsLCBjbGljayB0aGUgKipTZWxlY3QgY291bnRyeSoqIGRyb3Bkb3duIHVuZGVyICoqUmVmaW5lIGJ5OioqLgoyLiBTY3JvbGwgb3IgdHlwZSB0byBmaW5kIHlvdXIgdGFyZ2V0IGNvdW50cnkuCjMuIFNlbGVjdCBpdCDigJQgdGhlIGRyb3Bkb3duIHVwZGF0ZXMgdG8gc2hvdyB0aGUgY2hvc2VuIGNvdW50cnkuCjQuIENsaWNrICoqQXBwbHkgQWxsIEZpbHRlcnMqKiB0byByZWxvYWQgcmVzdWx0cyBmb3IgdGhhdCBjb3VudHJ5IG9ubHkuCgo&#43;ICoqVGlwOioqIENvbWJpbmUgY291bnRyeSBmaWx0ZXJpbmcgd2l0aCBhbiBleGFtIG1vZGUgZm9yIHRoZSB0aWdodGVzdCBzaG9ydGxpc3QuIEZvciBleGFtcGxlLCBzZWxlY3RpbmcgKlR1cmtleSogKyBlbnRlcmluZyBZS1PigJNTQVkgc2NvcmVzIHN1cmZhY2VzIG9ubHkgVHVya2lzaCB1bml2ZXJzaXRpZXMgdGhhdCBhY2NlcHQgeW91ciBzcGVjaWZpYyBzY29yZSByYW5nZS4KCiFbQ291bnRyeSBkcm9wZG93biBvcGVuIHdpdGggYSBjb3VudHJ5IHNlbGVjdGVkIGluIHRoZSBSZWZpbmUgYnkgc2VjdGlvbiBvZiB0aGUgcmVjb21tZW5kYXRpb25zIHBhbmVsXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLWNvdW50cnktZmlsdGVyLnBuZykKCi0tLQoKIyMgNi4gRmlsdGVyaW5nIGJ5IENpdHkKCkFmdGVyIGNvdW50cnktbGV2ZWwgZmlsdGVyaW5nLCB5b3UgY2FuIGRyaWxsIGRvd24gZnVydGhlciBieSBjaXR5IHVzaW5nIHRoZSAqKkZpbHRlciBieSBjaXR5KiogY29udHJvbCB0aGF0IGFwcGVhcnMgYWJvdmUgdGhlIHJlc3VsdHMgbGlzdC4KCjEuIFNjcm9sbCBwYXN0IHRoZSByZWZpbmVtZW50IHBhbmVsIHRvIHRoZSAqKkZpbHRlciBieSBjaXR5Kiogcm93LgoyLiBDbGljayB0aGUgY2l0eSBkcm9wZG93biAoZGVmYXVsdHMgdG8gKipBbGwgY2l0aWVzKiopLgozLiBTZWxlY3QgdGhlIGNpdHkgeW91IHdhbnQg4oCUIG9ubHkgdW5pdmVyc2l0aWVzIGluIHRoYXQgY2l0eSB3aWxsIHNob3cuCgo&#43;ICoqTm90ZToqKiBDaXR5LWxldmVsIGZpbHRlcmluZyBpcyBhcHBsaWVkIGluZGVwZW5kZW50bHkgb2YgdGhlIHJlZmluZW1lbnQgcGFuZWwuIFlvdSBkbyBub3QgbmVlZCB0byBjbGljayAqKkFwcGx5IEFsbCBGaWx0ZXJzKiogYWdhaW4g4oCUIGNpdHkgY2hhbmdlcyB0YWtlIGVmZmVjdCBpbW1lZGlhdGVseS4KCiFbRmlsdGVyIGJ5IGNpdHkgZHJvcGRvd24gc2hvd2luZyBBbGwgY2l0aWVzIGRlZmF1bHQgYW5kIGEgY2l0eSBzZWxlY3Rpb24gaW4gY29udGV4dCBvZiB0aGUgcmVzdWx0cyBsaXN0XSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLWNpdHktZmlsdGVyLnBuZykKCi0tLQoKIyMgNy4gUmVhZGluZyB0aGUgUmVjb21tZW5kYXRpb24gQ2FyZHMKCkVhY2ggdW5pdmVyc2l0eSBjYXJkIGluIHlvdXIgcmVzdWx0cyBsaXN0IGRpc3BsYXlzIGtleSBhZG1pc3Npb24gYW5kIHByb2dyYW1tZSBpbmZvcm1hdGlvbiBhdCBhIGdsYW5jZToKCnwgRWxlbWVudCB8IFdoYXQgaXQgc2hvd3MgfAp8LS0tfC0tLXwKfCAqKlVuaXZlcnNpdHkgbmFtZSoqIHwgRnVsbCBvZmZpY2lhbCBuYW1lIGluY2x1ZGluZyBjaXR5IGFuZCB0eXBlIChzdGF0ZS9wcml2YXRlKSB8CnwgKipQcmVtaXVtIGJhZGdlKiogfCBNYXJrcyB1bml2ZXJzaXRpZXMgYXZhaWxhYmxlIHRvIFByZW1pdW0tdGllciBzdWJzY3JpYmVycyBvbmx5IHwKfCBQcm9ncmFtbWUgZGV0YWlscyB8IEZhY3VsdHksIGRlZ3JlZSB0eXBlLCBhbmQgbGFuZ3VhZ2Ugb2YgaW5zdHJ1Y3Rpb24gfAp8IE1hdGNoIGluZGljYXRvcnMgfCBWaXN1YWwgc2lnbmFscyBzaG93aW5nIGhvdyBjbG9zZWx5IHRoZSB1bml2ZXJzaXR5IGZpdHMgeW91ciBwcm9maWxlIHwKCkNsaWNrIHRoZSB1bml2ZXJzaXR5IG5hbWUgdG8gb3BlbiBpdHMgZnVsbCBkZXRhaWwgcGFnZSBzaG93aW5nIGFsbCBwcm9ncmFtbWVzLCByZXF1aXJlbWVudHMsIGFuZCB0aGUgQUkncyByZWFzb25pbmcgZm9yIHRoZSBtYXRjaC4KCiFbVW5pdmVyc2l0eSByZWNvbW1lbmRhdGlvbiBjYXJkIHNob3dpbmcgbmFtZSwgY2l0eSwgUHJlbWl1bSBiYWRnZSwgYW5kIHByb2dyYW1tZSBkZXRhaWwgc3VtbWFyeV0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3JlY29tbWVuZGF0aW9ucy1jYXJkLWRldGFpbC5wbmcpCgotLS0KCiMjIDguIERvd25sb2FkaW5nIFlvdXIgRnVsbCBSZXBvcnQKCklmIHlvdXIgYWNjb3VudCBwbGFuIHN1cHBvcnRzIGl0LCB5b3UgY2FuIGV4cG9ydCB5b3VyIHJlY29tbWVuZGF0aW9uIHByb2ZpbGUgYXMgYSBQREYuCgoxLiBMb29rIGZvciB0aGUgKipEb3dubG9hZCBNeSBSZXBvcnQqKiBidXR0b24gYXQgdGhlIHRvcCBvZiB0aGUgcmVjb21tZW5kYXRpb25zIHBhZ2UuCjIuIENsaWNrIGl0IGFuZCB3YWl0IGZvciB0aGUgZG9jdW1lbnQgdG8gYmUgcHJlcGFyZWQuCjMuIEEgc2VjdXJlIGxpbmsgb3BlbnMgaW4gYSBuZXcgdGFiIOKAlCBjbGljayBpdCB0byBzYXZlIHRoZSBQREYuCgo&#43;ICoqTm90ZToqKiBJZiB0aGUgYnV0dG9uIGlzIGhpZGRlbiwgcmVwb3J0IGV4cG9ydCBpcyBub3QgZW5hYmxlZCBmb3IgeW91ciBjdXJyZW50IHBsYW4gb3Igb3JnYW5pc2F0aW9uIHBvbGljeS4gQ2hlY2sgeW91ciBzdWJzY3JpcHRpb24gdW5kZXIgKipTZXR0aW5ncyoqLgoKIVtEb3dubG9hZCBNeSBSZXBvcnQgYnV0dG9uIGFuZCBzZWN1cmUgUERGIGxpbmsgaW4gYSBuZXcgdGFiXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVjb21tZW5kYXRpb25zLXJlcG9ydC1kb3dubG9hZC5wbmcpCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSByZWNvbW1lbmRhdGlvbnMgZmVlbCBpbmFjY3VyYXRlIHwgUmV0YWtlIHRoZSBhc3Nlc3NtZW50IGlmIHlvdSBydXNoZWQgdGhyb3VnaCBpdCwgdGhlbiBhcHBseSBmaWx0ZXJzIGFnYWluIHwKfCBJIHdhbnQgY2FyZWVyIHJlc3VsdHMsIG5vdCB1bml2ZXJzaXRpZXMgfCBVc2UgdGhlIEd1aWRhbmNlIFRyYWNrIHN3aXRjaGVyIHRvIGNoYW5nZSBmb2N1cyDigJQgc2VlIFtBc3Nlc3NtZW50XSgvZG9jcy9zdHVkZW50LXBhbmVsL2Fzc2Vzc21lbnQvKSB8CnwgVGhlIFBlcnNvbmFsaXR5IHRpbGUgaXMgbG9ja2VkIHwgQ29tcGxldGUgdGhlIFBlcnNvbmFsaXR5IGFzc2Vzc21lbnQgZmlyc3QgdW5kZXIgdGhlIEFzc2Vzc21lbnQgbW9kdWxlIHwKfCBJIGVudGVyZWQgbXkgWUtTIHNjb3JlIGJ1dCB0aGUgbGlzdCBkaWQgbm90IGNoYW5nZSB8IE1ha2Ugc3VyZSB5b3UgY2xpY2tlZCAqKkFwcGx5IEFsbCBGaWx0ZXJzKiogYWZ0ZXIgZW50ZXJpbmcgdGhlIHNjb3JlIHwKfCBUaGUgKiorKiogYnV0dG9uIHRvIGFkZCBtb3JlIGV4YW1zIGlzIGRpc2FibGVkIHwgWW91IGhhdmUgcmVhY2hlZCB0aGUgMy1leGFtIGxpbWl0LiBDbGVhciBvbmUgcm93IHRvIHJlcGxhY2UgaXQgfAp8IENpdHkgZmlsdGVyIHNob3dzIG5vIHJlc3VsdHMgfCBUaGUgc2VsZWN0ZWQgY291bnRyeSBtYXkgbm90IGhhdmUgY2l0eS1sZXZlbCBkYXRhLiBUcnkgKipBbGwgY2l0aWVzKiogfAp8IFJlcG9ydCBkb3dubG9hZCBmYWlsZWQgfCBXYWl0IDYwIHNlY29uZHMgYW5kIHRyeSBhZ2FpbiDigJQgaW50ZXJtaXR0ZW50IG5ldHdvcmsgZHJvcHMgY2FuIGludGVycnVwdCBQREYgZ2VuZXJhdGlvbiB8CnwgUGFzcyBjb3VudGVyIGlzIHN0dWNrIGF0IDEvMiB8IEEgZmFpbGVkIGZpbHRlciBhcHBseSBtYXkgaGF2ZSBzdG9wcGVkIHRoZSBjb3VudC4gUmUtYXBwbHkgeW91ciBmaWx0ZXJzIGFuZCBjaGVjayB5b3VyIGNvbm5lY3Rpb24gfAo=</script>
 
 <style>
  

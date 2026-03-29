@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/index.json">
+<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/index.xml">
+<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,7 +23,7 @@
 
 <title>IDPicker User Manual | IDPicker Docs</title>
 <meta name="description" content="Complete step-by-step guide to use IDPicker">
-<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/">
+<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="IDPicker User Manual">
   <meta property="og:description" content="Complete step-by-step guide to use IDPicker">
@@ -37,7 +37,8 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="IDPicker User Manual">
   <meta name="twitter:description" content="Complete step-by-step guide to use IDPicker">
-<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -46,7 +47,27 @@
   src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
+
+<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="586">
+<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
+ 
+.td-navbar .navbar-brand__logo svg {
+  display: none !important;
+}
+.td-navbar .navbar-brand__logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 160px;
+  height: 40px;
+  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  flex-shrink: 0;
+}
+
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -81,7 +102,7 @@
     <header>
       <nav class="td-navbar js-navbar-scroll">
 <div class="td-navbar-container container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="150" height="36"><image href="/logo.png" width="200" height="50" preserveAspectRatio="xMinYMid meet"/></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
+  <a class="navbar-brand" href="/docs-idpicker/"><span class="navbar-brand__logo navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zm7.993 21.8577c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zm7.9941 21.8613c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zm7.993 21.8576c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zm7.9941 21.8612c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="navbar-brand__name">IDPicker Docs</span></a>
   <div class="td-navbar__main td-navbar-nav-scroll td-navbar-nav-scroll--indicator" id="main_navbar">
     <div class="scroll-indicator scroll-left"></div>
     <ul class="navbar-nav">
@@ -102,7 +123,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -1011,7 +1032,7 @@ This is the multi-page printable view of this section.
 <h2 id="before-you-begin">Before You Begin</h2>
 <p>Make sure you have:</p>
 <ul>
-<li>The <strong>student login URL</strong> for your environment — see <a href="/docs/getting-started/access-urls/">Access URLs</a></li>
+<li>The <strong>student login URL</strong> for your environment — see <a href="/docs-idpicker/docs/getting-started/access-urls/">Access URLs</a></li>
 <li>A valid email address you can check immediately</li>
 <li>A stable internet connection and an up-to-date browser</li>
 </ul>
@@ -1036,6 +1057,7 @@ This is the multi-page printable view of this section.
 <li>If you see a message about email verification, follow the <a href="#verify-your-email">Verify Your Email</a> section below.</li>
 <li>If you have forgotten your password, use <a href="#forgot-password">Forgot Password</a>.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/authentication-login.png" alt="Student login page showing email and password fields with Sign In button"></p>
 <hr>
 <h2 id="sign-in-with-google">Sign In with Google</h2>
 <p>Faster sign-in without a separate password.</p>
@@ -1051,6 +1073,7 @@ This is the multi-page printable view of this section.
 <li>Your browser may be blocking popups. Allow popups for this site and try again.</li>
 <li>Make sure you are not using a private/incognito window with strict tracking prevention.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/authentication-google-signin.png" alt="Continue with Google button and Google account picker dialog"></p>
 <hr>
 <h2 id="register-a-new-account">Register a New Account</h2>
 <p>New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.</p>
@@ -1077,6 +1100,7 @@ This is the multi-page printable view of this section.
 <li>Consent checkbox not checked → scroll down and tick the box.</li>
 <li>Weak password → make sure it meets all strength requirements shown on screen.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/authentication-register.png" alt="Multi-step registration wizard showing name, email, password, interests, and profile fields"></p>
 <hr>
 <h2 id="verify-your-email">Verify Your Email</h2>
 <p>After registration, IDPicker sends a verification email.</p>
@@ -1093,6 +1117,7 @@ This is the multi-page printable view of this section.
 <li>Enter your email and click <strong>Resend Verification Email</strong>.</li>
 <li>Open the new email and click the fresh link.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/authentication-verify-email.png" alt="Email verification page confirming the link was clicked successfully"></p>
 <hr>
 <h2 id="forgot-password">Forgot Password</h2>
 <p>Use this if you cannot remember your current password.</p>
@@ -1102,6 +1127,7 @@ This is the multi-page printable view of this section.
 <li>Click <strong>Send Reset Link</strong>.</li>
 <li>Check your inbox and spam folder for the reset email.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/authentication-forgot-password.png" alt="Forgot password form with registered email input and Send Reset Link button"></p>
 <hr>
 <h2 id="reset-password-from-the-email-link">Reset Password From the Email Link</h2>
 <p>After requesting a reset, you will receive a link by email.</p>
@@ -1118,6 +1144,7 @@ This is the multi-page printable view of this section.
 <ul>
 <li>Request a new reset link from the <a href="#forgot-password">Forgot Password</a> step above.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/authentication-reset-password.png" alt="Reset password form with new password field, confirm password field, and strength indicator"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1208,6 +1235,7 @@ This is the multi-page printable view of this section.
       </tr>
   </tbody>
 </table>
+<p><img src="/images/user-manual/student-panel/dashboard-overview.png" alt="Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards"></p>
 <hr>
 <h2 id="your-first-5-actions-after-logging-in">Your First 5 Actions After Logging In</h2>
 <p>Follow this sequence whenever you start a new session for maximum efficiency:</p>
@@ -1243,6 +1271,7 @@ This is the multi-page printable view of this section.
 <blockquote>
 <p><strong>Note:</strong> Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/dashboard-assigned-forms.png" alt="Assigned Forms block with a pending form card and Open button highlighted"></p>
 <hr>
 <h2 id="handling-organization-invitations">Handling Organization Invitations</h2>
 <ol>
@@ -1251,6 +1280,7 @@ This is the multi-page printable view of this section.
 <li>Click <strong>Accept</strong> to join or <strong>Decline</strong> to refuse.</li>
 <li>Your decision is saved immediately.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/dashboard-invitations.png" alt="Organization invitation card showing organization name with Accept and Decline buttons"></p>
 <hr>
 <h2 id="reading-notifications">Reading Notifications</h2>
 <ol>
@@ -1266,7 +1296,8 @@ This is the multi-page printable view of this section.
 <li>The dashboard shows a <strong>Resume</strong> prompt card automatically.</li>
 <li>Click <strong>Resume Assessment</strong>.</li>
 <li>You are taken back to exactly where you left off.</li>
-<li>Complete all remaining questions and click <strong>Submit</strong>.</li>
+<li>Complete all remaining questions and click <strong>Submit</strong>.
+<img src="/images/user-manual/student-panel/dashboard-resume-assessment.png" alt="Dashboard showing Resume Assessment prompt card with Continue button"></li>
 </ol>
 <hr>
 <h2 id="exploring-program-cards">Exploring Program Cards</h2>
@@ -1338,6 +1369,7 @@ This is the multi-page printable view of this section.
 <blockquote>
 <p><strong>Tip:</strong> Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/assessment-card-list.png" alt="Assessment card list showing available assessments with Start button"></p>
 <hr>
 <h2 id="resuming-an-incomplete-assessment">Resuming an Incomplete Assessment</h2>
 <p>Life happens. If you close your browser or navigate away, your progress is safely auto-saved.</p>
@@ -1348,6 +1380,7 @@ This is the multi-page printable view of this section.
 <li>You will pick up exactly where you left off.</li>
 <li>Complete the remaining questions and submit.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/assessment-resume.png" alt="Assessment card showing Continue button for a session that was left incomplete"></p>
 <hr>
 <h2 id="retaking-an-assessment">Retaking an Assessment</h2>
 <p>Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:</p>
@@ -1357,6 +1390,7 @@ This is the multi-page printable view of this section.
 <li>A confirmation prompt will ask if you are sure you want to overwrite your previous results. Confirm to proceed.</li>
 <li>Complete the new run and submit.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/assessment-retake-confirm.png" alt="Retake confirmation dialog warning that previous results will be overwritten"></p>
 <hr>
 <h2 id="reviewing-your-results">Reviewing Your Results</h2>
 <p>Once you submit an assessment, the platform instantly generates your results.</p>
@@ -1365,6 +1399,7 @@ This is the multi-page printable view of this section.
 <li>Review the summary and breakdown of your traits or aptitudes.</li>
 <li>Armed with this new data, head over to the <strong>Recommendations</strong> or <strong>Personality</strong> modules to see what the AI has unlocked for you!</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/assessment-results.png" alt="Assessment results summary showing trait scores and breakdown after submission"></p>
 <hr>
 <h2 id="important-note-on-languages">Important Note on Languages</h2>
 <p>If you change your interface language (e.g., from English to Turkish) <em>while</em> an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!</p>
@@ -1408,43 +1443,199 @@ This is the multi-page printable view of this section.
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-b5e2c588194ae1b713cfd5099a07013c">2.4 - Recommendation</h1>
-    <div class="lead">How to interpret your AI-driven career and university recommendations</div>
-	<p>Once you complete your core assessments, IDPicker&rsquo;s AI generates a highly personalized list of recommendations. This guide explains how to use them to make informed decisions about your future.</p>
+    <div class="lead">How to use AI-driven university and career recommendations, refine by exam scores or personality, and filter results by country and city</div>
+	<p>The Recommendations page is the heart of the IDPicker platform. Once your assessments are complete, the AI generates a personalized list of universities or career paths that match your profile. You can then sharpen those results in two powerful ways: by feeding in your real exam scores and rankings, or by leaning entirely on your completed personality profile. This guide walks through every option step by step.</p>
 <hr>
-<h2 id="exploring-your-recommendations">Exploring Your Recommendations</h2>
+<h2 id="1-opening-your-recommendations">1. Opening Your Recommendations</h2>
 <ol>
-<li>In the sidebar, click <strong>Recommendations</strong>.</li>
-<li>The system will load your profile-based track (either <em>Career</em> or <em>University</em>).</li>
-<li>Scroll through the recommendation cards.</li>
-<li>Click into any recommendation to open the detailed view, which explains <em>why</em> the AI believes this is a strong match for your specific assessment results.</li>
+<li>In the left sidebar, click <strong>Recommendations</strong>.</li>
+<li>The page loads your results and displays a summary banner — for example, <strong>&ldquo;Found 3 personalized recommendations&rdquo;</strong> — along with a pass counter (e.g. <strong>1/2</strong>) that tracks how many refinement passes have been applied.</li>
+<li>Scroll down to see your university or career cards ranked by match strength.</li>
+<li>Click any card title to open its full detail view, which explains precisely why the AI selected it for your profile.</li>
 </ol>
 <blockquote>
-<p><strong>Tip:</strong> Keep a personal shortlist of the options that excite you the most to discuss later with your Advisor or AI Mentor!</p>
+<p><strong>Tip:</strong> The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-overview.png" alt="Recommendations summary banner showing found count, pass counter, and ranked university cards below"></p>
 <hr>
-<h2 id="understanding-guidance-tracks">Understanding Guidance Tracks</h2>
-<p>IDPicker provides two distinct tracks depending on your current life stage. The platform automatically defaults to the most relevant track based on your profile:</p>
+<h2 id="2-choosing-a-recommendation-input-mode">2. Choosing a Recommendation Input Mode</h2>
+<p>Before the AI refines your results, you must tell it what data to prioritise. Click <strong>Refine Results</strong> (top-right button) to open the refinement panel, then select one of the two <strong>Recommendation input</strong> modes:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Mode</th>
+          <th>What it uses</th>
+          <th>Best for</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Test Scores</strong></td>
+          <td>Your entrance exam names, scores, and rankings</td>
+          <td>Students who have sat official exams and know their results</td>
+      </tr>
+      <tr>
+          <td><strong>Personality</strong></td>
+          <td>Your completed personality assessment on IDPicker</td>
+          <td>Students who want a purely trait-based match without exam data</td>
+      </tr>
+  </tbody>
+</table>
+<p>Click the tile for the mode you want — the selected tile gets a highlighted border.</p>
+<p><img src="/images/user-manual/student-panel/recommendations-input-mode.png" alt="Recommendation input section showing Test Scores tile and Personality tile with selection highlight"></p>
+<hr>
+<h2 id="3-refining-with-test-scores-exam-based-mode">3. Refining With Test Scores (Exam-Based Mode)</h2>
+<p>This mode lets you enter the entrance exams you have actually sat, together with your score and ranking. Universities use these figures as admission criteria, so providing them produces the most accurate shortlist.</p>
+<h3 id="3a-how-the-score-palette-works">3a. How the Score Palette Works</h3>
+<p>IDPicker supports up to <strong>3 exam slots</strong> (shown as <strong>1/3</strong> in the panel). Each slot captures:</p>
 <ul>
-<li><strong>Career Track:</strong> Recommended for high school students (Grades 9-12) focusing on long-term professional paths.</li>
-<li><strong>University Track:</strong> Recommended for older students focusing directly on higher education program selection.</li>
+<li><strong>Exam name</strong> — the official name of the test (e.g. <em>IELTS</em>, <em>SAT</em>, <em>TOEFL</em>)</li>
+<li><strong>Score</strong> — the numeric result you received</li>
+<li><strong>Ranking</strong> <em>(optional)</em> — your position or percentile, e.g. <em>Top 5%</em> or <em>1000th</em></li>
 </ul>
-<h3 id="switching-between-tracks">Switching Between Tracks</h3>
-<p>You are not locked into your default track. To explore the other side:</p>
+<blockquote>
+<p><strong>Design tip shown in the panel:</strong> Blend aptitude, language, and speciality exams for a balanced story. For example, adding both a language exam (IELTS) and an aptitude exam (SAT) gives the AI richer data to match against university requirements.</p>
+</blockquote>
+<h3 id="3b-adding-your-first-exam-step-by-step">3b. Adding Your First Exam (Step by Step)</h3>
 <ol>
-<li>Scroll to the <strong>Guidance Track</strong> switcher section at the top of the page.</li>
-<li>Click either <strong>Switch to Career</strong> or <strong>Switch to University</strong>.</li>
-<li>Wait a moment for the save confirmation.</li>
-<li>The page will refresh with an entirely new set of tailored recommendations.</li>
+<li>In the refinement panel, confirm <strong>Test Scores</strong> is selected.</li>
+<li>You will see a numbered row labelled <strong>1</strong> with three input fields: <strong>Exam name</strong>, <strong>Score</strong>, and <strong>Ranking (optional)</strong>.</li>
+<li>Click the <strong>Exam name</strong> field and type the name of your exam (e.g. <em>YKS-SAY</em>).</li>
+<li>Click the <strong>Score</strong> field and enter your numeric score.</li>
+<li>Click the <strong>Ranking (optional)</strong> field and enter your rank if known (e.g. <em>Top 5%</em> or <em>15000th</em>).</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/recommendations-exam-slot.png" alt="Exam score palette showing exam name, score, and ranking input fields for the first exam slot"></p>
+<h3 id="3c-adding-a-second-or-third-exam">3c. Adding a Second or Third Exam</h3>
+<ol>
+<li>Click the <strong>+</strong> button on the right side of the palette row counter.</li>
+<li>A new numbered row appears.</li>
+<li>Fill in <strong>Exam name</strong>, <strong>Score</strong>, and <strong>Ranking</strong> for the additional exam.</li>
+<li>Repeat for a third exam if needed (maximum 3 slots).</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> The <strong>+</strong> button is disabled once all 3 slots are filled. To replace an exam, clear an existing row first.</p>
+</blockquote>
+<h3 id="3d-real-world-example--turkish-yks-exam">3d. Real-World Example — Turkish YKS Exam</h3>
+<p>Turkey uses the <strong>YKS</strong> university entrance system, which includes several sub-tests. A typical student entry looks like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Example Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Exam name</td>
+          <td>YKS – SAY (Science)</td>
+      </tr>
+      <tr>
+          <td>Score</td>
+          <td>487.32</td>
+      </tr>
+      <tr>
+          <td>Ranking</td>
+          <td>8500th</td>
+      </tr>
+  </tbody>
+</table>
+<p>The SAY sub-score is the figure Turkish universities use to rank applicants for science and engineering faculties. Entering it gives IDPicker the exact criterion those universities apply, so the recommendation list mirrors real admission eligibility.</p>
+<p>Other common Turkish exam entries:</p>
+<ul>
+<li><strong>YKS – EA</strong> (Equally Weighted) — used for economics, law, business</li>
+<li><strong>YKS – SÖZ</strong> (Verbal) — used for humanities and social sciences</li>
+<li><strong>YKS – DİL</strong> (Language) — used for foreign language degree programmes</li>
+</ul>
+<p><img src="/images/user-manual/student-panel/recommendations-yks-example.png" alt="Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example"></p>
+<h3 id="3e-applying-your-scores">3e. Applying Your Scores</h3>
+<ol>
+<li>After filling in all your exam rows, click <strong>Apply All Filters</strong> (bottom-right of the refinement panel).</li>
+<li>The platform saves your score palette and triggers a new recommendation pass.</li>
+<li>The pass counter in the summary banner increments (e.g. from <strong>1/2</strong> to <strong>2/2</strong>).</li>
+<li>Your ranked list updates to reflect universities whose admission criteria your scores meet.</li>
+</ol>
+<p><img src="/images/user-manual/student-panel/recommendations-apply-filters.png" alt="Apply All Filters button highlighted at the bottom of the refinement panel"></p>
 <hr>
-<h2 id="downloading-your-full-report">Downloading Your Full Report</h2>
-<p>If your account plan supports it, you can export your entire recommendation profile as a portable document.</p>
+<h2 id="4-refining-with-personality-trait-based-mode">4. Refining With Personality (Trait-Based Mode)</h2>
+<p>If you have completed the Personality assessment on IDPicker, you can let the AI use your psychological trait scores instead of exam data.</p>
+<ol>
+<li>In the refinement panel, click the <strong>Personality</strong> tile.</li>
+<li>The exam score fields disappear — no manual input is required.</li>
+<li>Click <strong>Apply All Filters</strong>.</li>
+<li>The AI re-ranks your recommendations based on trait compatibility with each university or career programme.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to <a href="/docs/student-panel/assessment/">Assessment</a> first.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-personality-mode.png" alt="Personality tile selected in the recommendation input section with no additional input fields visible"></p>
+<hr>
+<h2 id="5-filtering-by-country">5. Filtering by Country</h2>
+<p>The <strong>Refine by Country</strong> dropdown narrows results to universities located in a specific country before the AI applies its ranking logic.</p>
+<ol>
+<li>In the refinement panel, click the <strong>Select country</strong> dropdown under <strong>Refine by:</strong>.</li>
+<li>Scroll or type to find your target country.</li>
+<li>Select it — the dropdown updates to show the chosen country.</li>
+<li>Click <strong>Apply All Filters</strong> to reload results for that country only.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Combine country filtering with an exam mode for the tightest shortlist. For example, selecting <em>Turkey</em> + entering YKS–SAY scores surfaces only Turkish universities that accept your specific score range.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-country-filter.png" alt="Country dropdown open with a country selected in the Refine by section of the recommendations panel"></p>
+<hr>
+<h2 id="6-filtering-by-city">6. Filtering by City</h2>
+<p>After country-level filtering, you can drill down further by city using the <strong>Filter by city</strong> control that appears above the results list.</p>
+<ol>
+<li>Scroll past the refinement panel to the <strong>Filter by city</strong> row.</li>
+<li>Click the city dropdown (defaults to <strong>All cities</strong>).</li>
+<li>Select the city you want — only universities in that city will show.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> City-level filtering is applied independently of the refinement panel. You do not need to click <strong>Apply All Filters</strong> again — city changes take effect immediately.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-city-filter.png" alt="Filter by city dropdown showing All cities default and a city selection in context of the results list"></p>
+<hr>
+<h2 id="7-reading-the-recommendation-cards">7. Reading the Recommendation Cards</h2>
+<p>Each university card in your results list displays key admission and programme information at a glance:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>What it shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>University name</strong></td>
+          <td>Full official name including city and type (state/private)</td>
+      </tr>
+      <tr>
+          <td><strong>Premium badge</strong></td>
+          <td>Marks universities available to Premium-tier subscribers only</td>
+      </tr>
+      <tr>
+          <td>Programme details</td>
+          <td>Faculty, degree type, and language of instruction</td>
+      </tr>
+      <tr>
+          <td>Match indicators</td>
+          <td>Visual signals showing how closely the university fits your profile</td>
+      </tr>
+  </tbody>
+</table>
+<p>Click the university name to open its full detail page showing all programmes, requirements, and the AI&rsquo;s reasoning for the match.</p>
+<p><img src="/images/user-manual/student-panel/recommendations-card-detail.png" alt="University recommendation card showing name, city, Premium badge, and programme detail summary"></p>
+<hr>
+<h2 id="8-downloading-your-full-report">8. Downloading Your Full Report</h2>
+<p>If your account plan supports it, you can export your recommendation profile as a PDF.</p>
 <ol>
 <li>Look for the <strong>Download My Report</strong> button at the top of the recommendations page.</li>
-<li>Click the button and wait for the preparation state to finish.</li>
-<li>A new tab will open containing a secure link to your generated PDF report.</li>
+<li>Click it and wait for the document to be prepared.</li>
+<li>A secure link opens in a new tab — click it to save the PDF.</li>
 </ol>
-<p><em>Note: If the download button is completely hidden, report generation is not enabled for your current account tier or organization policy.</em></p>
+<blockquote>
+<p><strong>Note:</strong> If the button is hidden, report export is not enabled for your current plan or organisation policy. Check your subscription under <strong>Settings</strong>.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/recommendations-report-download.png" alt="Download My Report button and secure PDF link in a new tab"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1457,19 +1648,35 @@ This is the multi-page printable view of this section.
   <tbody>
       <tr>
           <td>The recommendations feel inaccurate</td>
-          <td>Your recommendations are strictly tied to your assessment answers. Consider retaking the assessment if you rushed through it.</td>
+          <td>Retake the assessment if you rushed through it, then apply filters again</td>
       </tr>
       <tr>
-          <td>I am seeing universities but I want careers</td>
-          <td>Use the Guidance Track switcher to manually change your focus</td>
+          <td>I want career results, not universities</td>
+          <td>Use the Guidance Track switcher to change focus — see <a href="/docs/student-panel/assessment/">Assessment</a></td>
       </tr>
       <tr>
-          <td>I switched tracks but still see old content</td>
-          <td>Wait for the save confirmation and refresh the page</td>
+          <td>The Personality tile is locked</td>
+          <td>Complete the Personality assessment first under the Assessment module</td>
+      </tr>
+      <tr>
+          <td>I entered my YKS score but the list did not change</td>
+          <td>Make sure you clicked <strong>Apply All Filters</strong> after entering the score</td>
+      </tr>
+      <tr>
+          <td>The <strong>+</strong> button to add more exams is disabled</td>
+          <td>You have reached the 3-exam limit. Clear one row to replace it</td>
+      </tr>
+      <tr>
+          <td>City filter shows no results</td>
+          <td>The selected country may not have city-level data. Try <strong>All cities</strong></td>
       </tr>
       <tr>
           <td>Report download failed</td>
-          <td>Intermittent networks can interrupt generation. Wait 60 seconds and try again</td>
+          <td>Wait 60 seconds and try again — intermittent network drops can interrupt PDF generation</td>
+      </tr>
+      <tr>
+          <td>Pass counter is stuck at 1/2</td>
+          <td>A failed filter apply may have stopped the count. Re-apply your filters and check your connection</td>
       </tr>
   </tbody>
 </table>
@@ -1489,42 +1696,257 @@ This is the multi-page printable view of this section.
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-d17eb9cac1ff28e7c7b79441508ec1f9">2.5 - Personality</h1>
-    <div class="lead">How to read your psychological radar chart and trait breakdowns</div>
-	<p>The Personality module visualizes your psychological traits and provides actionable advice on how to leverage your natural strengths.</p>
+    <div class="lead">How to unlock, read, and act on your personality analysis — radar chart, trait scores, and actionable growth steps</div>
+	<p>The Personality module reveals who you are through eight measured psychological traits. After completing the Personality assessment, you receive a full analysis: an interactive radar chart, a personality overview with strength tiers, quick stat rankings, and individual trait cards with detailed interpretations and concrete action steps. This page explains every section so you can use your results to guide your studies, career choices, and personal growth.</p>
+<blockquote>
+<p><strong>Warning — Take the assessment in a calm, focused environment.</strong> Your personality results are only as accurate as the honesty and mindfulness you bring to the questions. Find a quiet place, set aside at least 15–20 uninterrupted minutes, put your phone away, and answer each question based on how you <em>actually</em> behave — not how you wish you behaved. Rushed or distracted answers will skew your trait scores and reduce the quality of your university and career recommendations.</p>
+</blockquote>
 <hr>
-<h2 id="prerequisite-complete-the-assessment">Prerequisite: Complete the Assessment!</h2>
-<p>Before you can see your personality breakdown, you must complete the Personality self-assessment.</p>
+<h2 id="1-prerequisite-complete-the-personality-assessment">1. Prerequisite: Complete the Personality Assessment</h2>
+<p>The Personality page is locked until you finish the assessment. If you see a locked state:</p>
 <ol>
-<li>From the sidebar, click <strong>Personality</strong>.</li>
-<li>If your assessment is incomplete, the screen will show a lock state.</li>
-<li>Click the prompt to <strong>Complete Assessment</strong> and finish it.</li>
+<li>From the sidebar, click <strong>Assessment</strong>.</li>
+<li>Locate the <strong>Personality</strong> assessment card.</li>
+<li>Click <strong>Start</strong> and work through every question without skipping.</li>
+<li>Submit the assessment when all questions are complete.</li>
+<li>Return to the sidebar and click <strong>Personality</strong> — your full analysis is now unlocked.</li>
 </ol>
+<blockquote>
+<p><strong>Note:</strong> Once you submit, results are generated instantly. You do not need to wait or refresh.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/personality-locked.png" alt="Personality page in locked state with Complete Assessment prompt and link to the assessment module"></p>
 <hr>
-<h2 id="reading-your-radar-chart">Reading Your Radar Chart</h2>
-<p>Once unlocked, the first thing you will see is your interactive <strong>Radar Chart</strong>.</p>
+<h2 id="2-the-personality-insights-header">2. The Personality Insights Header</h2>
+<p>At the top of the page you will see a <strong>Personality Insights</strong> badge and the heading <strong>Your Personality Analysis</strong>, followed by the subline:</p>
+<blockquote>
+<p><em>&ldquo;Explore your unique personality traits through the interactive radar chart below, based on your assessment.&rdquo;</em></p>
+</blockquote>
+<p>Below the heading is the <strong>Export</strong> button — this lets you download your full report at any time. See <a href="#7-exporting-your-personality-report">section 7</a> for full export steps.</p>
+<p><img src="/images/user-manual/student-panel/personality-header.png" alt="Personality Insights header with Export button at the top of the analysis page"></p>
+<hr>
+<h2 id="3-reading-the-radar-chart">3. Reading the Radar Chart</h2>
+<p>The radar chart is the first visual you see after the header. It plots all eight traits simultaneously so you can grasp your overall profile shape at a glance.</p>
+<h3 id="the-eight-traits-on-the-chart">The Eight Traits on the Chart</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Trait</th>
+          <th>Axis position on chart</th>
+          <th>What it measures</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Emotional Balance</strong></td>
+          <td>Top centre</td>
+          <td>How steadily you manage your feelings under pressure</td>
+      </tr>
+      <tr>
+          <td><strong>Social Connection</strong></td>
+          <td>Right</td>
+          <td>Your ability to build and sustain positive relationships</td>
+      </tr>
+      <tr>
+          <td><strong>Mental Agility</strong></td>
+          <td>Lower right</td>
+          <td>Cognitive flexibility and capacity for clear thinking</td>
+      </tr>
+      <tr>
+          <td><strong>Inner Drive</strong></td>
+          <td>Lower right-centre</td>
+          <td>Internal motivation and self-push to reach goals</td>
+      </tr>
+      <tr>
+          <td><strong>Self-Awareness</strong></td>
+          <td>Bottom centre</td>
+          <td>Understanding of your own traits, behaviours, and impact</td>
+      </tr>
+      <tr>
+          <td><strong>Growth Mindset</strong></td>
+          <td>Lower left</td>
+          <td>Openness to learning, challenges, and self-improvement</td>
+      </tr>
+      <tr>
+          <td><strong>Adaptive Thinking</strong></td>
+          <td>Left</td>
+          <td>Thoughtfulness and balanced decision-making</td>
+      </tr>
+      <tr>
+          <td><strong>Goal Focus</strong></td>
+          <td>Upper left</td>
+          <td>Clarity of vision and directed energy toward goals</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="how-to-read-the-chart">How to Read the Chart</h3>
 <ol>
-<li><strong>Hover over the points</strong> on the radar axis to see the exact percentage scoring for each dimension.</li>
-<li>Identify the spikes (your strongest natural traits) and the dips (traits that require more conscious effort).</li>
-<li>The shape of the radar gives you an immediate, visual understanding of your behavioral footprint.</li>
+<li><strong>Look at the overall shape</strong> — a large, even polygon means broadly developed traits. A lopsided shape signals strong peaks and clear growth areas.</li>
+<li><strong>Identify the outermost points</strong> — these are your Top Strengths (scores 7–10).</li>
+<li><strong>Identify the innermost points</strong> — these are your Growth Areas (scores 1–5), which represent the biggest opportunities for self-improvement.</li>
+<li><strong>Hover over any axis point</strong> to see the exact numeric score for that trait.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/personality-radar-chart.png" alt="Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip"></p>
 <hr>
-<h2 id="understanding-trait-cards">Understanding Trait Cards</h2>
-<p>Below the chart, you will find detailed cards for every measured trait.</p>
-<p>Each card breaks down your score into highly actionable sections:</p>
+<h2 id="4-the-personality-overview-panel">4. The Personality Overview Panel</h2>
+<p>Directly below the radar chart, the <strong>Personality Overview</strong> panel gives a written summary of your profile organised into three tiers.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Tier</th>
+          <th>Score range</th>
+          <th>What it means</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Strong Traits</strong></td>
+          <td>Scores 7–10: Exceptional abilities</td>
+          <td>These are your natural strengths — behaviours that come easily and can be leveraged for academic and career success</td>
+      </tr>
+      <tr>
+          <td><strong>Balanced Traits</strong></td>
+          <td>Scores 4–6: Well-developed skills</td>
+          <td>Solid, reliable skills that with moderate attention can become strengths</td>
+      </tr>
+      <tr>
+          <td><strong>Growth Areas</strong></td>
+          <td>Scores 1–3: Development opportunities</td>
+          <td>Traits that are currently underdeveloped and represent your highest-potential areas of improvement</td>
+      </tr>
+  </tbody>
+</table>
+<p>The overview card opens with a paragraph describing the unique pattern of your results and how your traits shape your approach to learning, relationships, and personal growth.</p>
+<p><img src="/images/user-manual/student-panel/personality-overview-panel.png" alt="Personality Overview card showing three tier labels and an introductory paragraph about the student&rsquo;s unique trait pattern"></p>
+<hr>
+<h2 id="5-quick-stats-panel">5. Quick Stats Panel</h2>
+<p>To the right of the Personality Overview is the <strong>Quick Stats</strong> panel. It lists your highest-scoring traits under <strong>Top Strengths</strong> and your lowest-scoring traits under <strong>Growth Areas</strong>, each with their numeric score shown.</p>
+<p><strong>How to use Quick Stats:</strong></p>
 <ul>
-<li><strong>Trait Title &amp; Score:</strong> Your baseline metric.</li>
-<li><strong>Short Description:</strong> A one-sentence summary of what this trait means.</li>
-<li><strong>Detailed Interpretation:</strong> Deep dive into how this score manifests in your daily life and studies.</li>
-<li><strong>Actionable Advice:</strong> Concrete, practical steps on how to use this trait to your advantage (or mitigate its downsides).</li>
+<li>Use the <strong>Top Strengths</strong> list to identify which traits to emphasise in application essays, interviews, and conversations with your advisor.</li>
+<li>Use the <strong>Growth Areas</strong> list to prioritise which Action Steps (from the trait cards below) to work on first.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/personality-quick-stats.png" alt="Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange"></p>
 <hr>
-<h2 id="downloading-your-personality-report">Downloading Your Personality Report</h2>
-<p>Just like recommendations, you can export your psychological profile to share with parents, mentors, or for your own records.</p>
+<h2 id="6-individual-trait-cards">6. Individual Trait Cards</h2>
+<p>Below the overview section, every one of the eight traits has its own card. Each card follows the same structure and tells you exactly what your score means and what to do about it.</p>
+<h3 id="card-anatomy">Card Anatomy</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Element</th>
+          <th>What it shows</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Trait name</strong></td>
+          <td>The name of the measured trait</td>
+      </tr>
+      <tr>
+          <td><strong>Score bar</strong></td>
+          <td>A filled progress bar representing 1–10 scale</td>
+      </tr>
+      <tr>
+          <td><strong>Score number</strong></td>
+          <td>Your exact numeric score</td>
+      </tr>
+      <tr>
+          <td><strong>Level label</strong></td>
+          <td>Colour-coded label: <em>Exceptional</em> (green), <em>Strong</em> (green), <em>Moderate</em> (orange)</td>
+      </tr>
+      <tr>
+          <td><strong>One-liner</strong></td>
+          <td>A single sentence summary of what the score says about you</td>
+      </tr>
+      <tr>
+          <td><strong>Detailed Analysis</strong></td>
+          <td>A paragraph-length explanation of how this trait manifests in your daily life, study habits, and decision-making</td>
+      </tr>
+      <tr>
+          <td><strong>Action Steps</strong></td>
+          <td>One or two concrete, practical things you can do right now to build on a strength or develop a growth area</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="/images/user-manual/student-panel/personality-trait-card.png" alt="Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section"></p>
+<h3 id="the-eight-trait-cards-in-detail">The Eight Trait Cards in Detail</h3>
+<h4 id="growth-mindset">Growth Mindset</h4>
+<p>Your openness to learning, challenges, and self-improvement. A high score here means you see setbacks as fuel for growth rather than failure.</p>
+<p><strong>What to do with a high score:</strong> Keep seeking out challenging courses, new skills, and experiences that push you past your comfort zone.</p>
+<p><strong>What to do with a low score:</strong> Start small — pick one new skill or subject per month and commit to practicing it even when it feels difficult.</p>
+<hr>
+<h4 id="emotional-balance">Emotional Balance</h4>
+<p>How well you regulate your emotions and stay steady under pressure. A high score means you can handle stress, disappointment, and uncertainty without being derailed.</p>
+<p><strong>What to do with a high score:</strong> Use this stability to support peers and take on leadership roles in group projects or student activities.</p>
+<p><strong>What to do with a low score:</strong> Build a small daily routine (journaling, breathing exercises, short walks) that gives your emotions a healthy outlet before pressure builds.</p>
+<hr>
+<h4 id="goal-focus">Goal Focus</h4>
+<p>The clarity of your vision and how directed your energy is toward specific targets. A high score means you rarely waste effort on distractions.</p>
+<p><strong>What to do with a high score:</strong> Write down both short-term and long-term goals and review them weekly to stay calibrated.</p>
+<p><strong>What to do with a low score:</strong> Start with one concrete weekly goal and practise completing it before adding more. Clarity comes from doing, not planning.</p>
+<hr>
+<h4 id="social-connection">Social Connection</h4>
+<p>Your capacity to build meaningful, positive relationships. A high score means you connect easily and bring warmth to group settings.</p>
+<p><strong>What to do with a high score:</strong> Use your social strength to join new groups, clubs, or communities aligned with your career interests — connections open doors.</p>
+<p><strong>What to do with a low score:</strong> Pick one low-stakes social activity per week (a study group, an online forum, a class) to practise connection in a comfortable environment.</p>
+<hr>
+<h4 id="inner-drive">Inner Drive</h4>
+<p>Your internal motivation and the push you generate from within. A high score means you do not need external pressure to stay productive.</p>
+<p><strong>What to do with a high score:</strong> Break bigger goals into smaller milestones — your drive compounds fastest when you can see forward progress regularly.</p>
+<p><strong>What to do with a low score:</strong> Identify what genuinely excites you (not what you think should excite you) and anchor your daily tasks to that.</p>
+<hr>
+<h4 id="adaptive-thinking">Adaptive Thinking</h4>
+<p>Your thoughtfulness and ability to consider multiple options before acting. A high score means you make balanced decisions and avoid impulsive choices.</p>
+<p><strong>What to do with a high score:</strong> Practise applying this skill to everyday decisions — even small daily choices build the habit of measured thinking.</p>
+<p><strong>What to do with a low score:</strong> Before acting on a decision, write down two alternative options and weigh the trade-offs. The habit takes three to four weeks to form.</p>
+<hr>
+<h4 id="mental-agility">Mental Agility</h4>
+<p>Your cognitive flexibility, learning speed, and capacity for clear thinking. A high score means you process new information efficiently and adapt quickly to new environments.</p>
+<p><strong>What to do with a high score:</strong> Challenge yourself with problem-solving activities — maths puzzles, strategy games, or learning a new language keeps this trait sharp.</p>
+<p><strong>What to do with a low score:</strong> Break complex tasks into the smallest possible steps. Cognitive load goes down when you focus on one piece at a time.</p>
+<hr>
+<h4 id="self-awareness">Self-Awareness</h4>
+<p>How clearly you understand your own traits, habits, emotional triggers, and impact on others. A high score means your self-perception aligns with how others actually experience you.</p>
+<p><strong>What to do with a high score:</strong> Continue reflecting on your experiences — journalling, asking for honest feedback, and reviewing your decisions weekly deepens this further.</p>
+<p><strong>What to do with a low score:</strong> After any significant interaction or decision, take five minutes to ask yourself: <em>What did I do well? What would I change?</em> Small reflection habits compound over time.</p>
+<p><img src="/images/user-manual/student-panel/personality-growth-area-cards.png" alt="Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps"></p>
+<hr>
+<h2 id="7-exporting-your-personality-report">7. Exporting Your Personality Report</h2>
+<p>Your full personality analysis can be exported as a PDF to share with parents, advisors, or for personal records.</p>
 <ol>
-<li>Click <strong>Download Report</strong> at the top or bottom of the analysis page.</li>
-<li>Wait a few seconds for the document to generate.</li>
-<li>Click the secure link that opens in a new tab to save the PDF.</li>
+<li>Click the <strong>Export</strong> button at the top of the Personality page (below the header).</li>
+<li>Wait a few seconds while the document is generated.</li>
+<li>A secure link opens in a new tab — click it to download your PDF report.</li>
 </ol>
+<blockquote>
+<p><strong>Note:</strong> If the <strong>Export</strong> button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check <strong>Settings → Subscription</strong> or contact your advisor.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/personality-report-download.png" alt="Export button at the top of the Personality page and the resulting PDF open in a new browser tab"></p>
+<hr>
+<h2 id="8-using-your-personality-results-with-other-platform-features">8. Using Your Personality Results With Other Platform Features</h2>
+<p>Your personality data does not exist in isolation — it feeds directly into other IDPicker modules:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Module</th>
+          <th>How personality connects</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Recommendations</strong></td>
+          <td>Select <em>Personality</em> mode in the Refine panel to match universities and careers to your trait profile instead of exam scores — see <a href="/docs/student-panel/recommendations/">Recommendations</a></td>
+      </tr>
+      <tr>
+          <td><strong>AI Mentorship</strong></td>
+          <td>Your active AI mentor is contextually aware of your personality scores and tailors its guidance accordingly</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor Chat</strong></td>
+          <td>Share your Quick Stats with your advisor to focus your next guidance session on specific Growth Areas</td>
+      </tr>
+  </tbody>
+</table>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1536,16 +1958,28 @@ This is the multi-page printable view of this section.
   </thead>
   <tbody>
       <tr>
-          <td>The entire page is locked</td>
-          <td>You must complete the Personality Assessment first</td>
+          <td>The Personality page is locked</td>
+          <td>Complete the Personality assessment in the Assessment module first</td>
       </tr>
       <tr>
-          <td>The chart loads but the trait cards are blank</td>
-          <td>A network drop may have occurred. Reload the page</td>
+          <td>My scores feel wrong or don&rsquo;t reflect me</td>
+          <td>You may have answered quickly or in a distracted state. Retake the assessment in a calm, focused setting</td>
       </tr>
       <tr>
-          <td>The report button works but no file opens</td>
-          <td>Generation might have temporarily timed out. Wait a moment and retry</td>
+          <td>The radar chart loads but trait cards are blank</td>
+          <td>A network drop occurred mid-load. Reload the page</td>
+      </tr>
+      <tr>
+          <td>I want to retake the assessment</td>
+          <td>Go to Assessment, open the Personality card, and click <strong>Retake</strong> if the option is available</td>
+      </tr>
+      <tr>
+          <td>The Export button is missing</td>
+          <td>Report export may not be enabled for your plan. Check Settings or ask your advisor</td>
+      </tr>
+      <tr>
+          <td>My Growth Mindset score is high but recommendations still feel off</td>
+          <td>Personality mode in Recommendations uses all eight trait scores together. Try combining personality mode with country or exam filters for sharper results</td>
       </tr>
   </tbody>
 </table>
@@ -1581,6 +2015,7 @@ This is the multi-page printable view of this section.
 <blockquote>
 <p><strong>Quota Warning:</strong> Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/ai-mentorship-mentor-chat.png" alt="AI Mentor hub showing personality cards grid and open chat interface with message input box"></p>
 <hr>
 <h2 id="resuming-a-recent-chat">Resuming a Recent Chat</h2>
 <p>You do not have to start over every time.</p>
@@ -1589,6 +2024,7 @@ This is the multi-page printable view of this section.
 <li>Click on a recent thread.</li>
 <li>The chat history will load, and you can pick up the conversation exactly where you left off.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/ai-mentorship-recent-chats.png" alt="Recent chats list in Mentor Hub showing previous conversation threads"></p>
 <hr>
 <h2 id="chatting-with-your-human-advisor">Chatting With Your Human Advisor</h2>
 <p>If your account is linked to an organization or school, your human advisor manages your progress. You can message them directly here.</p>
@@ -1599,6 +2035,7 @@ This is the multi-page printable view of this section.
 <li>Type and send your message. When your advisor replies, you will be notified on your dashboard.</li>
 </ol>
 <p><em>Note: If the advisor section says &ldquo;No advisor linked,&rdquo; your account operates independently and this feature is disabled.</em></p>
+<p><img src="/images/user-manual/student-panel/ai-mentorship-advisor-chat.png" alt="Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1651,6 +2088,7 @@ This is the multi-page printable view of this section.
 <li>Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.</li>
 <li>Review your refined results.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/university-search-keyword.png" alt="University search bar with keyword input and auto-filtered results grid"></p>
 <hr>
 <h2 id="power-filtering">Power Filtering</h2>
 <p>To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).</p>
@@ -1663,6 +2101,7 @@ This is the multi-page printable view of this section.
 <blockquote>
 <p><strong>Warning:</strong> Mixing too many strict filters at once (e.g., <em>Aerospace Engineering</em>, <em>PhD</em>, <em>Turkish language</em>, <em>in Germany</em>) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/university-search-filters.png" alt="University search filter panel showing category, degree type, and language of instruction dropdowns"></p>
 <hr>
 <h2 id="managing-pagination-load-more">Managing Pagination (Load More)</h2>
 <p>When reviewing results:</p>
@@ -1672,6 +2111,7 @@ This is the multi-page printable view of this section.
 <li>You can change how many cards load at once by tweaking the <strong>Page Size</strong> control (e.g., 6, 12, 24).</li>
 </ol>
 <p><em>Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.</em></p>
+<p><img src="/images/user-manual/student-panel/university-search-pagination.png" alt="Pagination controls with page numbers and page size selector at the bottom of university results"></p>
 <hr>
 <h2 id="how-to-compare-programs-efficiently">How to Compare Programs Efficiently</h2>
 <p>When building your shortlist, we recommend focusing on these core factors displayed on every card:</p>
@@ -1740,6 +2180,7 @@ This is the multi-page printable view of this section.
 <li>Type a matching keyword from the file&rsquo;s title, description, or original file name.</li>
 <li>The list will instantly filter to matching documents.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/resources-library.png" alt="Resource library grid showing file cards with assigned and globally visible documents"></p>
 <hr>
 <h2 id="filtering-and-sorting-files">Filtering and Sorting Files</h2>
 <p>If your organization has shared hundreds of files, use these controls to narrow them down:</p>
@@ -1750,6 +2191,7 @@ This is the multi-page printable view of this section.
 <li><strong>Sort By:</strong> Change the ordering from Date Added, Alphabetical Name, or File Size.</li>
 <li><strong>View Mode:</strong> Toggle between the spacious Grid view or the compact List view depending on your preference.</li>
 </ul>
+<p><img src="/images/user-manual/student-panel/resources-filters.png" alt="Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls"></p>
 <hr>
 <h2 id="downloading-a-shared-file">Downloading a Shared File</h2>
 <ol>
@@ -1760,6 +2202,7 @@ This is the multi-page printable view of this section.
 <blockquote>
 <p><strong>If a download fails:</strong> Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.</p>
 </blockquote>
+<p><img src="/images/user-manual/student-panel/resources-download.png" alt="Resource file card with Download button highlighted and browser download prompt"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1817,6 +2260,7 @@ This is the multi-page printable view of this section.
 <li>In the <strong>Description</strong> box, provide as much detail as possible.</li>
 <li>Click <strong>Submit</strong> and wait for the success flash.</li>
 </ol>
+<p><img src="/images/user-manual/student-panel/help-center-new-ticket.png" alt="New ticket form with subject, category, priority, and description fields filled in"></p>
 <hr>
 <h2 id="how-to-write-a-ticket-that-gets-fixed-fast">How to Write a Ticket That Gets Fixed Fast</h2>
 <p>The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:</p>
@@ -1861,6 +2305,7 @@ This is the multi-page printable view of this section.
   </tbody>
 </table>
 <p>If an agent replies requiring more info, you will be notified!</p>
+<p><img src="/images/user-manual/student-panel/help-center-my-tickets.png" alt="My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges"></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2335,7 +2780,7 @@ A: Field set depends on assigned form configuration.</p>
 	<p>As an Advisor, your platform access is tailored to your operational role. This guide covers how to get logged in securely and how to interpret your main dashboard.</p>
 <hr>
 <h2 id="1-advisor-login">1. Advisor Login</h2>
-<p>Depending on your organization&rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See <a href="/docs/getting-started/access-urls/">Access URLs</a> if you are unsure).</p>
+<p>Depending on your organization&rsquo;s setup, you will access the platform either via a custom organization link or the main advisor portal. (See <a href="/docs-idpicker/docs/getting-started/access-urls/">Access URLs</a> if you are unsure).</p>
 <ol>
 <li>Open the Advisor Login page.</li>
 <li>Enter your registered <strong>Email</strong> and <strong>Password</strong>.</li>
@@ -2442,7 +2887,7 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li>Check the boxes for the target groups.</li>
 <li>Click <strong>Save</strong>. The membership updates instantly.</li>
 </ol>
-<p><em>(Note: See the <a href="/docs/advisor-panel/groups/">Groups Management</a> guide for how to create groups in the first place).</em></p>
+<p><em>(Note: See the <a href="/docs-idpicker/docs/advisor-panel/groups/">Groups Management</a> guide for how to create groups in the first place).</em></p>
 <hr>
 <h2 id="bulk-importing-students-excel">Bulk Importing Students (Excel)</h2>
 <p>If you have a large cohort starting simultaneously, do not add them one by one. Use the Bulk Import tool.</p>
@@ -2487,7 +2932,7 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
       </tr>
       <tr>
           <td>I just imported students; how do I message them all?</td>
-          <td>Create a Group for the new cohort, assign them, and then use the <a href="/docs/advisor-panel/notifications/">Notifications</a> module to broadcast a message</td>
+          <td>Create a Group for the new cohort, assign them, and then use the <a href="/docs-idpicker/docs/advisor-panel/notifications/">Notifications</a> module to broadcast a message</td>
       </tr>
   </tbody>
 </table>
@@ -2759,7 +3204,7 @@ A: Retry issuance and validate template/student selection.</p>
 <li>Update the name, description, or adjust the member checkmarks.</li>
 <li>Click <strong>Save</strong> to apply the changes instantly.</li>
 </ol>
-<p><em>Note: You can also add students directly to groups from the <a href="/docs/advisor-panel/students-and-bulk-import/">Students List</a> by using the bulk action menu.</em></p>
+<p><em>Note: You can also add students directly to groups from the <a href="/docs-idpicker/docs/advisor-panel/students-and-bulk-import/">Students List</a> by using the bulk action menu.</em></p>
 <hr>
 <h2 id="3-deleting-a-group">3. Deleting a Group</h2>
 <p>When a group is no longer needed:</p>
@@ -2870,7 +3315,7 @@ A: Retry issuance and validate template/student selection.</p>
       </tr>
       <tr>
           <td>The &ldquo;Selected Groups&rdquo; option is greyed out</td>
-          <td>You cannot target groups if you have not created any groups yet. See the <a href="/docs/advisor-panel/groups/">Groups</a> guide</td>
+          <td>You cannot target groups if you have not created any groups yet. See the <a href="/docs-idpicker/docs/advisor-panel/groups/">Groups</a> guide</td>
       </tr>
   </tbody>
 </table>
@@ -3270,7 +3715,7 @@ A: Reopen ticket and move status back to in_progress.</p>
 <h2 id="1-registering-a-new-parent-account">1. Registering a New Parent Account</h2>
 <p>If you are new to the platform:</p>
 <ol>
-<li>Open the <a href="/docs/getting-started/access-urls/">Parent Registration URL</a>.</li>
+<li>Open the <a href="/docs-idpicker/docs/getting-started/access-urls/">Parent Registration URL</a>.</li>
 <li>Fill out the registration form with your <strong>Email</strong>, <strong>Full Name</strong>, and a <strong>Strong Password</strong>.</li>
 <li>Check the consent checkbox at the bottom of the form.</li>
 <li>Click <strong>Register</strong>.</li>
@@ -3297,7 +3742,7 @@ A: Reopen ticket and move status back to in_progress.</p>
 <li>Click the <strong>Email</strong> field and enter your registered parent email address.</li>
 <li>Click the <strong>Password</strong> field and enter your password.</li>
 <li>Click <strong>Sign In</strong>.</li>
-<li>You will land directly on your <a href="/docs/parent-panel/dashboard-and-linked-overview/">Parent Dashboard</a>.</li>
+<li>You will land directly on your <a href="/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/">Parent Dashboard</a>.</li>
 </ol>
 <p><em>If login fails, double-check your password spelling. Passwords are case-sensitive.</em></p>
 <hr>
@@ -3376,14 +3821,14 @@ A: Reopen ticket and move status back to in_progress.</p>
 </ul>
 </li>
 </ol>
-<p><em>(For more details on managing this link, see the <a href="/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em></p>
+<p><em>(For more details on managing this link, see the <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em></p>
 <hr>
 <h2 id="3-opening-a-student-card">3. Opening a Student Card</h2>
 <p>To dive into the specific details for one child:</p>
 <ol>
 <li>Locate their card on your dashboard.</li>
 <li>Click anywhere on the card (or click <strong>View Student</strong>).</li>
-<li>The platform will navigate to the <a href="/docs/parent-panel/student-detail-journey-map-and-chat/">Student Detail Page</a>, where you can see their full assessment results, progress, and recommendations.</li>
+<li>The platform will navigate to the <a href="/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/">Student Detail Page</a>, where you can see their full assessment results, progress, and recommendations.</li>
 </ol>
 <h3 id="got-multiple-children">Got Multiple Children?</h3>
 <p>No problem. Simply use the <strong>Link Student</strong> form again to request access to your second or third child. They will each appear as a distinct, separate card on your dashboard.</p>
@@ -3508,7 +3953,7 @@ A: Form is configured as non-editable after submit.</p>
 <h2 id="1-requesting-a-link-by-email">1. Requesting a Link by Email</h2>
 <p>If your child&rsquo;s school has not automatically linked your accounts, you must initiate the request from your dashboard.</p>
 <ol>
-<li>Sign in to your <a href="/docs/parent-panel/dashboard-and-linked-overview/">Parent Dashboard</a>.</li>
+<li>Sign in to your <a href="/docs-idpicker/docs/parent-panel/dashboard-and-linked-overview/">Parent Dashboard</a>.</li>
 <li>Locate the <strong>Link Student</strong> form.</li>
 <li>In the input box, carefully type the exact email address your child used to register.</li>
 <li>Click <strong>Send Link Request</strong>.</li>
@@ -3787,7 +4232,7 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Scroll to the <strong>Token Usage</strong> section on the dashboard.</li>
 <li>Adjust the date range filter to look at the last 24 hours or the last 7 days.</li>
 <li>Review the charts for <strong>Input Tokens</strong> (prompts sent to the AI) and <strong>Output Tokens</strong> (responses generated by the AI).</li>
-<li>If you notice a massive, unexplained spike in usage, immediately cross-reference the exact timestamp with the <a href="/docs/admin-panel/system-monitoring-and-governance/">Realtime Logs</a> to identify potential abuse or infinite loops.</li>
+<li>If you notice a massive, unexplained spike in usage, immediately cross-reference the exact timestamp with the <a href="/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">Realtime Logs</a> to identify potential abuse or infinite loops.</li>
 </ol>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
@@ -4955,8 +5400,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.js"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
 

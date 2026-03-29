@@ -13,7 +13,7 @@ IDPicker requires explicit linking between a Parent account and a Student accoun
 
 If your child's school has not automatically linked your accounts, you must initiate the request from your dashboard.
 
-1. Sign in to your [Parent Dashboard](/docs/parent-panel/dashboard-and-linked-overview/).
+1. Sign in to your [Parent Dashboard]({{< relref "/docs/parent-panel/dashboard-and-linked-overview" >}}).
 2. Locate the **Link Student** form.
 3. In the input box, carefully type the exact email address your child used to register.
 4. Click **Send Link Request**.

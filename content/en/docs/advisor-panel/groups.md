@@ -35,7 +35,7 @@ Need to rename a group or add/remove members?
 3. Update the name, description, or adjust the member checkmarks.
 4. Click **Save** to apply the changes instantly.
 
-*Note: You can also add students directly to groups from the [Students List](/docs/advisor-panel/students-and-bulk-import/) by using the bulk action menu.*
+*Note: You can also add students directly to groups from the [Students List]({{< relref "/docs/advisor-panel/students-and-bulk-import" >}}) by using the bulk action menu.*
 
 ---
 

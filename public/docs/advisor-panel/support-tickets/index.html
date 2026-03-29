@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/advisor-panel/support-tickets/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/advisor-panel/support-tickets/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -20,25 +20,24 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Support Tickets | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click advisor support ticket operations">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/support-tickets/">
+<meta name="description" content="How to triage, respond to, and close student-reported issues from the advisor panel">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/support-tickets/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Support Tickets">
-  <meta property="og:description" content="Detailed click-by-click advisor support ticket operations">
+  <meta property="og:description" content="How to triage, respond to, and close student-reported issues from the advisor panel">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
 
   <meta itemprop="name" content="Support Tickets">
-  <meta itemprop="description" content="Detailed click-by-click advisor support ticket operations">
+  <meta itemprop="description" content="How to triage, respond to, and close student-reported issues from the advisor panel">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="177">
+  <meta itemprop="wordCount" content="650">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Support Tickets">
-  <meta name="twitter:description" content="Detailed click-by-click advisor support ticket operations">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+  <meta name="twitter:description" content="How to triage, respond to, and close student-reported issues from the advisor panel">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -313,12 +326,13 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-open-support-tickets">A) Open Support Tickets</a></li>
-    <li><a href="#b-filter-and-prioritize">B) Filter and Prioritize</a></li>
-    <li><a href="#c-review-ticket-details">C) Review Ticket Details</a></li>
-    <li><a href="#d-update-ticket-status">D) Update Ticket Status</a></li>
-    <li><a href="#e-add-resolution-message">E) Add Resolution Message</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#1-opening-the-ticket-queue">1. Opening the Ticket Queue</a></li>
+    <li><a href="#2-filtering-and-prioritising-tickets">2. Filtering and Prioritising Tickets</a></li>
+    <li><a href="#3-reviewing-a-ticket">3. Reviewing a Ticket</a></li>
+    <li><a href="#4-updating-ticket-status">4. Updating Ticket Status</a></li>
+    <li><a href="#5-writing-a-resolution-message">5. Writing a Resolution Message</a></li>
+    <li><a href="#6-reopening-a-ticket">6. Reopening a Ticket</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -342,53 +356,110 @@
 </nav>
 <div class="td-content">
 	<h1>Support Tickets</h1>
-	<div class="lead">Detailed click-by-click advisor support ticket operations</div>
+	<div class="lead">How to triage, respond to, and close student-reported issues from the advisor panel</div>
 	<header class="article-meta">
 		
 </header>
-	<p>Support Tickets page helps advisors track and resolve student-reported issues.</p>
-<h2 id="a-open-support-tickets">A) Open Support Tickets</h2>
+	<p>The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.</p>
+<hr>
+<h2 id="1-opening-the-ticket-queue">1. Opening the Ticket Queue</h2>
 <ol>
-<li>In sidebar, click Support Tickets.</li>
-<li>Wait for ticket list and summary cards.</li>
+<li>In the sidebar, click <strong>Support Tickets</strong>.</li>
+<li>The queue loads with a summary row at the top showing counts by status: <em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>.</li>
+<li>By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by <strong>Priority</strong> immediately.</li>
 </ol>
-<h2 id="b-filter-and-prioritize">B) Filter and Prioritize</h2>
+<blockquote>
+<p><strong>Tip:</strong> Start every support session by filtering for <strong>Priority: Urgent</strong> and <strong>Status: Pending</strong>. These are the issues blocking students right now.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-tickets-queue.png" alt="Support ticket queue showing status summary cards and a filtered list sorted by priority"></p>
+<p><em>Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.</em></p>
+<hr>
+<h2 id="2-filtering-and-prioritising-tickets">2. Filtering and Prioritising Tickets</h2>
 <ol>
-<li>Filter by status (pending, in_progress, resolved, closed).</li>
-<li>Filter by priority (low, medium, high, urgent).</li>
-<li>Sort list for triage order.</li>
-<li>Open most urgent unresolved tickets first.</li>
+<li>Use the <strong>Status</strong> filter dropdown to narrow to a single stage (<em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>).</li>
+<li>Use the <strong>Priority</strong> filter to show only high-urgency items (<em>Low</em>, <em>Medium</em>, <em>High</em>, <em>Urgent</em>).</li>
+<li>Combine both filters for maximum efficiency — e.g., Status: <em>Pending</em> + Priority: <em>High</em> gives you the most critical unresolved work.</li>
+<li>Sort the filtered list by <strong>Created Date</strong> (oldest first) to avoid letting old issues age out.</li>
 </ol>
-<h2 id="c-review-ticket-details">C) Review Ticket Details</h2>
+<hr>
+<h2 id="3-reviewing-a-ticket">3. Reviewing a Ticket</h2>
 <ol>
-<li>Click ticket row/card.</li>
-<li>Read subject and full description.</li>
-<li>Check user details and timestamps.</li>
-<li>Identify category and visibility context.</li>
+<li>Click any ticket row or card to open its detail view.</li>
+<li>Read the <strong>Subject</strong> and full <strong>Description</strong> the student provided.</li>
+<li>Check the <strong>User Details</strong> panel on the right — this shows which student submitted it, their organisation, and their account status.</li>
+<li>Note the <strong>Category</strong> badge (e.g., <em>Account</em>, <em>Assessment</em>, <em>Billing</em>, <em>Technical</em>). This tells you which team should handle it if escalation is needed.</li>
+<li>Check the <strong>Timestamps</strong> — is this a fresh ticket or has it been sitting for days?</li>
 </ol>
-<h2 id="d-update-ticket-status">D) Update Ticket Status</h2>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-detail.png" alt="Ticket detail view showing subject, description, user details panel, category badge, and timestamps"></p>
+<p><em>Image placeholder: Add screenshot of an open ticket detail view with the student info panel, description, and status dropdown visible.</em></p>
+<hr>
+<h2 id="4-updating-ticket-status">4. Updating Ticket Status</h2>
 <ol>
-<li>Open status control.</li>
-<li>Set new status (for example in_progress).</li>
-<li>Save update.</li>
-<li>Confirm status badge changed in list.</li>
+<li>In the ticket detail, locate the <strong>Status</strong> dropdown.</li>
+<li>Change it to match your current work state:
+<ul>
+<li><strong>In Progress</strong> — You have started investigating and the student should expect a reply soon.</li>
+<li><strong>Resolved</strong> — You have applied a fix or provided an answer.</li>
+<li><strong>Closed</strong> — The issue is fully finalized and archived.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> (or the status change auto-saves, depending on your platform version).</li>
+<li>Confirm the status badge in the list view has updated.</li>
 </ol>
-<h2 id="e-add-resolution-message">E) Add Resolution Message</h2>
+<p><em>Note: Do not jump directly from <strong>Pending</strong> to <strong>Resolved</strong> without first setting <strong>In Progress</strong>. This leaves a confusing audit trail and the student has no indication you saw their message.</em></p>
+<hr>
+<h2 id="5-writing-a-resolution-message">5. Writing a Resolution Message</h2>
+<p>Resolution messages are crucial — they are the student-facing reply that appears in their Help Center.</p>
 <ol>
-<li>Open resolution input.</li>
-<li>Write clear resolution notes.</li>
-<li>Save and mark resolved when done.</li>
-<li>Close ticket when finalized.</li>
+<li>In the ticket detail, find the <strong>Resolution Message</strong> text area.</li>
+<li>Write a clear, actionable response:
+<ul>
+<li>Acknowledge the issue.</li>
+<li>Explain what you found or did.</li>
+<li>Give any steps the student needs to take next.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Change the status to <strong>Resolved</strong>.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Status changed but not persisted.
-A: Reopen ticket and verify update request succeeded.</p>
-<p>Q: Too many tickets in one view.
-A: Use status and priority filters together for triage.</p>
-<p>Q: Student says issue still unresolved.
-A: Reopen ticket and move status back to in_progress.</p>
-<p><img src="/images/user-manual/advisor-panel/support-tickets.png" alt="Support Tickets Placeholder"></p>
-<p>Image placeholder: Ticket table with status/priority filters and resolution panel.</p>
+<blockquote>
+<p><strong>Warning:</strong> Some platforms require the Resolution Message to be filled before the status can be changed to <em>Resolved</em>. If saving the status fails silently, check that the resolution field is not blank.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-resolution.png" alt="Resolution message text area filled in with a clear response and the Resolved status selected"></p>
+<p><em>Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.</em></p>
+<hr>
+<h2 id="6-reopening-a-ticket">6. Reopening a Ticket</h2>
+<p>If a student replies that the issue is still happening after you marked it resolved:</p>
+<ol>
+<li>Open the closed or resolved ticket.</li>
+<li>Change the status back to <strong>In Progress</strong>.</li>
+<li>Add an updated Resolution Message acknowledging the continuation.</li>
+<li>Investigate further and repeat the resolution flow.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I changed the status but it did not save</td>
+          <td>Check if the Resolution Message field is required — fill it in and try saving again</td>
+      </tr>
+      <tr>
+          <td>There are too many tickets to manage at once</td>
+          <td>Apply both Status and Priority filters together. Handle Urgent+Pending first, then High+Pending</td>
+      </tr>
+      <tr>
+          <td>A student says their issue is unresolved but the ticket is Closed</td>
+          <td>Reopen it by setting the status back to In Progress, add an updated message, and reinvestigate</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -412,12 +483,30 @@ A: Reopen ticket and move status back to in_progress.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClN1cHBvcnQgVGlja2V0cyBwYWdlIGhlbHBzIGFkdmlzb3JzIHRyYWNrIGFuZCByZXNvbHZlIHN0dWRlbnQtcmVwb3J0ZWQgaXNzdWVzLgoKIyMgQSkgT3BlbiBTdXBwb3J0IFRpY2tldHMKCjEuIEluIHNpZGViYXIsIGNsaWNrIFN1cHBvcnQgVGlja2V0cy4KMi4gV2FpdCBmb3IgdGlja2V0IGxpc3QgYW5kIHN1bW1hcnkgY2FyZHMuCgojIyBCKSBGaWx0ZXIgYW5kIFByaW9yaXRpemUKCjEuIEZpbHRlciBieSBzdGF0dXMgKHBlbmRpbmcsIGluX3Byb2dyZXNzLCByZXNvbHZlZCwgY2xvc2VkKS4KMi4gRmlsdGVyIGJ5IHByaW9yaXR5IChsb3csIG1lZGl1bSwgaGlnaCwgdXJnZW50KS4KMy4gU29ydCBsaXN0IGZvciB0cmlhZ2Ugb3JkZXIuCjQuIE9wZW4gbW9zdCB1cmdlbnQgdW5yZXNvbHZlZCB0aWNrZXRzIGZpcnN0LgoKIyMgQykgUmV2aWV3IFRpY2tldCBEZXRhaWxzCgoxLiBDbGljayB0aWNrZXQgcm93L2NhcmQuCjIuIFJlYWQgc3ViamVjdCBhbmQgZnVsbCBkZXNjcmlwdGlvbi4KMy4gQ2hlY2sgdXNlciBkZXRhaWxzIGFuZCB0aW1lc3RhbXBzLgo0LiBJZGVudGlmeSBjYXRlZ29yeSBhbmQgdmlzaWJpbGl0eSBjb250ZXh0LgoKIyMgRCkgVXBkYXRlIFRpY2tldCBTdGF0dXMKCjEuIE9wZW4gc3RhdHVzIGNvbnRyb2wuCjIuIFNldCBuZXcgc3RhdHVzIChmb3IgZXhhbXBsZSBpbl9wcm9ncmVzcykuCjMuIFNhdmUgdXBkYXRlLgo0LiBDb25maXJtIHN0YXR1cyBiYWRnZSBjaGFuZ2VkIGluIGxpc3QuCgojIyBFKSBBZGQgUmVzb2x1dGlvbiBNZXNzYWdlCgoxLiBPcGVuIHJlc29sdXRpb24gaW5wdXQuCjIuIFdyaXRlIGNsZWFyIHJlc29sdXRpb24gbm90ZXMuCjMuIFNhdmUgYW5kIG1hcmsgcmVzb2x2ZWQgd2hlbiBkb25lLgo0LiBDbG9zZSB0aWNrZXQgd2hlbiBmaW5hbGl6ZWQuCgojIyBDb21tb24gQWR2aXNvciBRdWVzdGlvbnMKClE6IFN0YXR1cyBjaGFuZ2VkIGJ1dCBub3QgcGVyc2lzdGVkLgpBOiBSZW9wZW4gdGlja2V0IGFuZCB2ZXJpZnkgdXBkYXRlIHJlcXVlc3Qgc3VjY2VlZGVkLgoKUTogVG9vIG1hbnkgdGlja2V0cyBpbiBvbmUgdmlldy4KQTogVXNlIHN0YXR1cyBhbmQgcHJpb3JpdHkgZmlsdGVycyB0b2dldGhlciBmb3IgdHJpYWdlLgoKUTogU3R1ZGVudCBzYXlzIGlzc3VlIHN0aWxsIHVucmVzb2x2ZWQuCkE6IFJlb3BlbiB0aWNrZXQgYW5kIG1vdmUgc3RhdHVzIGJhY2sgdG8gaW5fcHJvZ3Jlc3MuCgohW1N1cHBvcnQgVGlja2V0cyBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL3N1cHBvcnQtdGlja2V0cy5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogVGlja2V0IHRhYmxlIHdpdGggc3RhdHVzL3ByaW9yaXR5IGZpbHRlcnMgYW5kIHJlc29sdXRpb24gcGFuZWwuCg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBTdXBwb3J0IFRpY2tldHMgbW9kdWxlIGlzIHlvdXIgZGlyZWN0IGxpbmUgdG8gc3R1ZGVudHMgd2hvIGFyZSBoYXZpbmcgdHJvdWJsZSB3aXRoIHRoZSBwbGF0Zm9ybS4gVGhpcyBndWlkZSBleHBsYWlucyBob3cgdG8gdHJpYWdlIGluY29taW5nIHJlcXVlc3RzLCB1cGRhdGUgdGhlaXIgc3RhdHVzLCBhbmQgd3JpdGUgcmVzb2x1dGlvbiBtZXNzYWdlcyBzbyBzdHVkZW50cyBrbm93IHRoZWlyIGlzc3VlIGlzIGJlaW5nIGhhbmRsZWQuCgotLS0KCiMjIDEuIE9wZW5pbmcgdGhlIFRpY2tldCBRdWV1ZQoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqU3VwcG9ydCBUaWNrZXRzKiouCjIuIFRoZSBxdWV1ZSBsb2FkcyB3aXRoIGEgc3VtbWFyeSByb3cgYXQgdGhlIHRvcCBzaG93aW5nIGNvdW50cyBieSBzdGF0dXM6ICpQZW5kaW5nKiwgKkluIFByb2dyZXNzKiwgKlJlc29sdmVkKiwgKkNsb3NlZCouCjMuIEJ5IGRlZmF1bHQsIHRoZSBsaXN0IGlzIHNvcnRlZCBieSBtb3N0IHJlY2VudCDigJQgb2xkZXN0IHVucmVzb2x2ZWQgaXNzdWVzIG1heSBiZSBidXJpZWQuIFJlb3JkZXIgYnkgKipQcmlvcml0eSoqIGltbWVkaWF0ZWx5LgoKPiAqKlRpcDoqKiBTdGFydCBldmVyeSBzdXBwb3J0IHNlc3Npb24gYnkgZmlsdGVyaW5nIGZvciAqKlByaW9yaXR5OiBVcmdlbnQqKiBhbmQgKipTdGF0dXM6IFBlbmRpbmcqKi4gVGhlc2UgYXJlIHRoZSBpc3N1ZXMgYmxvY2tpbmcgc3R1ZGVudHMgcmlnaHQgbm93LgoKIVtTdXBwb3J0IHRpY2tldCBxdWV1ZSBzaG93aW5nIHN0YXR1cyBzdW1tYXJ5IGNhcmRzIGFuZCBhIGZpbHRlcmVkIGxpc3Qgc29ydGVkIGJ5IHByaW9yaXR5XSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvc3VwcG9ydC10aWNrZXRzLXF1ZXVlLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHN1cHBvcnQgdGlja2V0IHF1ZXVlIHNob3dpbmcgdGhlIHN0YXR1cyBzdW1tYXJ5IGNhcmRzIGF0IHRvcCBhbmQgdGhlIGZpbHRlcmVkIHRpY2tldCBsaXN0IGJlbG93LioKCi0tLQoKIyMgMi4gRmlsdGVyaW5nIGFuZCBQcmlvcml0aXNpbmcgVGlja2V0cwoKMS4gVXNlIHRoZSAqKlN0YXR1cyoqIGZpbHRlciBkcm9wZG93biB0byBuYXJyb3cgdG8gYSBzaW5nbGUgc3RhZ2UgKCpQZW5kaW5nKiwgKkluIFByb2dyZXNzKiwgKlJlc29sdmVkKiwgKkNsb3NlZCopLgoyLiBVc2UgdGhlICoqUHJpb3JpdHkqKiBmaWx0ZXIgdG8gc2hvdyBvbmx5IGhpZ2gtdXJnZW5jeSBpdGVtcyAoKkxvdyosICpNZWRpdW0qLCAqSGlnaCosICpVcmdlbnQqKS4KMy4gQ29tYmluZSBib3RoIGZpbHRlcnMgZm9yIG1heGltdW0gZWZmaWNpZW5jeSDigJQgZS5nLiwgU3RhdHVzOiAqUGVuZGluZyogKyBQcmlvcml0eTogKkhpZ2gqIGdpdmVzIHlvdSB0aGUgbW9zdCBjcml0aWNhbCB1bnJlc29sdmVkIHdvcmsuCjQuIFNvcnQgdGhlIGZpbHRlcmVkIGxpc3QgYnkgKipDcmVhdGVkIERhdGUqKiAob2xkZXN0IGZpcnN0KSB0byBhdm9pZCBsZXR0aW5nIG9sZCBpc3N1ZXMgYWdlIG91dC4KCi0tLQoKIyMgMy4gUmV2aWV3aW5nIGEgVGlja2V0CgoxLiBDbGljayBhbnkgdGlja2V0IHJvdyBvciBjYXJkIHRvIG9wZW4gaXRzIGRldGFpbCB2aWV3LgoyLiBSZWFkIHRoZSAqKlN1YmplY3QqKiBhbmQgZnVsbCAqKkRlc2NyaXB0aW9uKiogdGhlIHN0dWRlbnQgcHJvdmlkZWQuCjMuIENoZWNrIHRoZSAqKlVzZXIgRGV0YWlscyoqIHBhbmVsIG9uIHRoZSByaWdodCDigJQgdGhpcyBzaG93cyB3aGljaCBzdHVkZW50IHN1Ym1pdHRlZCBpdCwgdGhlaXIgb3JnYW5pc2F0aW9uLCBhbmQgdGhlaXIgYWNjb3VudCBzdGF0dXMuCjQuIE5vdGUgdGhlICoqQ2F0ZWdvcnkqKiBiYWRnZSAoZS5nLiwgKkFjY291bnQqLCAqQXNzZXNzbWVudCosICpCaWxsaW5nKiwgKlRlY2huaWNhbCopLiBUaGlzIHRlbGxzIHlvdSB3aGljaCB0ZWFtIHNob3VsZCBoYW5kbGUgaXQgaWYgZXNjYWxhdGlvbiBpcyBuZWVkZWQuCjUuIENoZWNrIHRoZSAqKlRpbWVzdGFtcHMqKiDigJQgaXMgdGhpcyBhIGZyZXNoIHRpY2tldCBvciBoYXMgaXQgYmVlbiBzaXR0aW5nIGZvciBkYXlzPwoKIVtUaWNrZXQgZGV0YWlsIHZpZXcgc2hvd2luZyBzdWJqZWN0LCBkZXNjcmlwdGlvbiwgdXNlciBkZXRhaWxzIHBhbmVsLCBjYXRlZ29yeSBiYWRnZSwgYW5kIHRpbWVzdGFtcHNdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9zdXBwb3J0LXRpY2tldC1kZXRhaWwucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiBhbiBvcGVuIHRpY2tldCBkZXRhaWwgdmlldyB3aXRoIHRoZSBzdHVkZW50IGluZm8gcGFuZWwsIGRlc2NyaXB0aW9uLCBhbmQgc3RhdHVzIGRyb3Bkb3duIHZpc2libGUuKgoKLS0tCgojIyA0LiBVcGRhdGluZyBUaWNrZXQgU3RhdHVzCgoxLiBJbiB0aGUgdGlja2V0IGRldGFpbCwgbG9jYXRlIHRoZSAqKlN0YXR1cyoqIGRyb3Bkb3duLgoyLiBDaGFuZ2UgaXQgdG8gbWF0Y2ggeW91ciBjdXJyZW50IHdvcmsgc3RhdGU6CiAgIC0gKipJbiBQcm9ncmVzcyoqIOKAlCBZb3UgaGF2ZSBzdGFydGVkIGludmVzdGlnYXRpbmcgYW5kIHRoZSBzdHVkZW50IHNob3VsZCBleHBlY3QgYSByZXBseSBzb29uLgogICAtICoqUmVzb2x2ZWQqKiDigJQgWW91IGhhdmUgYXBwbGllZCBhIGZpeCBvciBwcm92aWRlZCBhbiBhbnN3ZXIuCiAgIC0gKipDbG9zZWQqKiDigJQgVGhlIGlzc3VlIGlzIGZ1bGx5IGZpbmFsaXplZCBhbmQgYXJjaGl2ZWQuCjMuIENsaWNrICoqU2F2ZSoqIChvciB0aGUgc3RhdHVzIGNoYW5nZSBhdXRvLXNhdmVzLCBkZXBlbmRpbmcgb24geW91ciBwbGF0Zm9ybSB2ZXJzaW9uKS4KNC4gQ29uZmlybSB0aGUgc3RhdHVzIGJhZGdlIGluIHRoZSBsaXN0IHZpZXcgaGFzIHVwZGF0ZWQuCgoqTm90ZTogRG8gbm90IGp1bXAgZGlyZWN0bHkgZnJvbSAqKlBlbmRpbmcqKiB0byAqKlJlc29sdmVkKiogd2l0aG91dCBmaXJzdCBzZXR0aW5nICoqSW4gUHJvZ3Jlc3MqKi4gVGhpcyBsZWF2ZXMgYSBjb25mdXNpbmcgYXVkaXQgdHJhaWwgYW5kIHRoZSBzdHVkZW50IGhhcyBubyBpbmRpY2F0aW9uIHlvdSBzYXcgdGhlaXIgbWVzc2FnZS4qCgotLS0KCiMjIDUuIFdyaXRpbmcgYSBSZXNvbHV0aW9uIE1lc3NhZ2UKClJlc29sdXRpb24gbWVzc2FnZXMgYXJlIGNydWNpYWwg4oCUIHRoZXkgYXJlIHRoZSBzdHVkZW50LWZhY2luZyByZXBseSB0aGF0IGFwcGVhcnMgaW4gdGhlaXIgSGVscCBDZW50ZXIuCgoxLiBJbiB0aGUgdGlja2V0IGRldGFpbCwgZmluZCB0aGUgKipSZXNvbHV0aW9uIE1lc3NhZ2UqKiB0ZXh0IGFyZWEuCjIuIFdyaXRlIGEgY2xlYXIsIGFjdGlvbmFibGUgcmVzcG9uc2U6CiAgIC0gQWNrbm93bGVkZ2UgdGhlIGlzc3VlLgogICAtIEV4cGxhaW4gd2hhdCB5b3UgZm91bmQgb3IgZGlkLgogICAtIEdpdmUgYW55IHN0ZXBzIHRoZSBzdHVkZW50IG5lZWRzIHRvIHRha2UgbmV4dC4KMy4gQ2xpY2sgKipTYXZlKiouCjQuIENoYW5nZSB0aGUgc3RhdHVzIHRvICoqUmVzb2x2ZWQqKi4KCj4gKipXYXJuaW5nOioqIFNvbWUgcGxhdGZvcm1zIHJlcXVpcmUgdGhlIFJlc29sdXRpb24gTWVzc2FnZSB0byBiZSBmaWxsZWQgYmVmb3JlIHRoZSBzdGF0dXMgY2FuIGJlIGNoYW5nZWQgdG8gKlJlc29sdmVkKi4gSWYgc2F2aW5nIHRoZSBzdGF0dXMgZmFpbHMgc2lsZW50bHksIGNoZWNrIHRoYXQgdGhlIHJlc29sdXRpb24gZmllbGQgaXMgbm90IGJsYW5rLgoKIVtSZXNvbHV0aW9uIG1lc3NhZ2UgdGV4dCBhcmVhIGZpbGxlZCBpbiB3aXRoIGEgY2xlYXIgcmVzcG9uc2UgYW5kIHRoZSBSZXNvbHZlZCBzdGF0dXMgc2VsZWN0ZWRdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9zdXBwb3J0LXRpY2tldC1yZXNvbHV0aW9uLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHJlc29sdXRpb24gbWVzc2FnZSBmaWVsZCBmaWxsZWQgaW4gYWxvbmdzaWRlIHRoZSBzdGF0dXMgZHJvcGRvd24gc2V0IHRvIFJlc29sdmVkLioKCi0tLQoKIyMgNi4gUmVvcGVuaW5nIGEgVGlja2V0CgpJZiBhIHN0dWRlbnQgcmVwbGllcyB0aGF0IHRoZSBpc3N1ZSBpcyBzdGlsbCBoYXBwZW5pbmcgYWZ0ZXIgeW91IG1hcmtlZCBpdCByZXNvbHZlZDoKCjEuIE9wZW4gdGhlIGNsb3NlZCBvciByZXNvbHZlZCB0aWNrZXQuCjIuIENoYW5nZSB0aGUgc3RhdHVzIGJhY2sgdG8gKipJbiBQcm9ncmVzcyoqLgozLiBBZGQgYW4gdXBkYXRlZCBSZXNvbHV0aW9uIE1lc3NhZ2UgYWNrbm93bGVkZ2luZyB0aGUgY29udGludWF0aW9uLgo0LiBJbnZlc3RpZ2F0ZSBmdXJ0aGVyIGFuZCByZXBlYXQgdGhlIHJlc29sdXRpb24gZmxvdy4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBjaGFuZ2VkIHRoZSBzdGF0dXMgYnV0IGl0IGRpZCBub3Qgc2F2ZSB8IENoZWNrIGlmIHRoZSBSZXNvbHV0aW9uIE1lc3NhZ2UgZmllbGQgaXMgcmVxdWlyZWQg4oCUIGZpbGwgaXQgaW4gYW5kIHRyeSBzYXZpbmcgYWdhaW4gfAp8IFRoZXJlIGFyZSB0b28gbWFueSB0aWNrZXRzIHRvIG1hbmFnZSBhdCBvbmNlIHwgQXBwbHkgYm90aCBTdGF0dXMgYW5kIFByaW9yaXR5IGZpbHRlcnMgdG9nZXRoZXIuIEhhbmRsZSBVcmdlbnQrUGVuZGluZyBmaXJzdCwgdGhlbiBIaWdoK1BlbmRpbmcgfAp8IEEgc3R1ZGVudCBzYXlzIHRoZWlyIGlzc3VlIGlzIHVucmVzb2x2ZWQgYnV0IHRoZSB0aWNrZXQgaXMgQ2xvc2VkIHwgUmVvcGVuIGl0IGJ5IHNldHRpbmcgdGhlIHN0YXR1cyBiYWNrIHRvIEluIFByb2dyZXNzLCBhZGQgYW4gdXBkYXRlZCBtZXNzYWdlLCBhbmQgcmVpbnZlc3RpZ2F0ZSB8Cg==</script>
 
 <style>
  

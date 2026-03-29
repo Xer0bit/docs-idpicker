@@ -1,3 +1,21 @@
+{{/* ── IDPicker logo injection: replace Docsy's generic SVG with real logo ── */}}
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 {{ if .RawContent }}
 {{/* Embed page markdown as base64 so special characters can't break the script */}}
 <script id="llm-raw-md" type="text/plain" style="display:none">{{ .RawContent | base64Encode }}</script>

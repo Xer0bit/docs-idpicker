@@ -28,12 +28,12 @@
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
+    <meta property="article:modified_time" content="2026-03-29T18:13:42+05:00">
 
   <meta itemprop="name" content="Assessment">
   <meta itemprop="description" content="How to take, resume, and review self-assessments to unlock your platform recommendations">
-  <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="387">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="471">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Assessment">
   <meta name="twitter:description" content="How to take, resume, and review self-assessments to unlock your platform recommendations">
@@ -47,11 +47,32 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="http://localhost:1313/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
+
+<style>
+ 
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
+  display: none !important;
+}
+.td-navbar .navbar-brand__logo {
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+  flex-shrink: 0;
+}
+</style>
+
 
 <style>
  
@@ -148,6 +169,7 @@
 <p><strong>Tip:</strong> Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/assessment-card-list.png" alt="Assessment card list showing available assessments with Start button"></p>
+<p><em>Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.</em></p>
 <hr>
 <h2 id="resuming-an-incomplete-assessment">Resuming an Incomplete Assessment</h2>
 <p>Life happens. If you close your browser or navigate away, your progress is safely auto-saved.</p>
@@ -159,6 +181,7 @@
 <li>Complete the remaining questions and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-resume.png" alt="Assessment card showing Continue button for a session that was left incomplete"></p>
+<p><em>Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.</em></p>
 <hr>
 <h2 id="retaking-an-assessment">Retaking an Assessment</h2>
 <p>Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:</p>
@@ -169,6 +192,7 @@
 <li>Complete the new run and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-retake-confirm.png" alt="Retake confirmation dialog warning that previous results will be overwritten"></p>
+<p><em>Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.</em></p>
 <hr>
 <h2 id="reviewing-your-results">Reviewing Your Results</h2>
 <p>Once you submit an assessment, the platform instantly generates your results.</p>
@@ -178,6 +202,7 @@
 <li>Armed with this new data, head over to the <strong>Recommendations</strong> or <strong>Personality</strong> modules to see what the AI has unlocked for you!</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-results.png" alt="Assessment results summary showing trait scores and breakdown after submission"></p>
+<p><em>Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.</em></p>
 <hr>
 <h2 id="important-note-on-languages">Important Note on Languages</h2>
 <p>If you change your interface language (e.g., from English to Turkish) <em>while</em> an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!</p>
@@ -232,8 +257,26 @@
 <script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CkFzc2Vzc21lbnRzIGFyZSB0aGUgY29yZSBvZiBJRFBpY2tlci4gQ29tcGxldGluZyB0aGVtIHVubG9ja3MgeW91ciBwZXJzb25hbGl6ZWQgY2FyZWVyIHBhdGhzLCB1bml2ZXJzaXR5IHJlY29tbWVuZGF0aW9ucywgYW5kIHBlcnNvbmFsaXR5IGluc2lnaHRzLgoKLS0tCgojIyBTdGFydGluZyBhIE5ldyBBc3Nlc3NtZW50CgoxLiBGcm9tIHRoZSBsZWZ0IHNpZGViYXIsIGNsaWNrICoqU2VsZiBBc3Nlc3NtZW50KiouCjIuIExvb2sgYXQgdGhlIGF2YWlsYWJsZSBhc3Nlc3NtZW50IGNhcmRzIChlLmcuLCAqUGVyc29uYWxpdHkqLCAqQ2FyZWVyKikuCiAgIC0gKk5vdGU6IFlvdXIgc2Nob29sIG9yIG9yZ2FuaXphdGlvbiBtYXkgYXNzaWduIGN1c3RvbSBhc3Nlc3NtZW50cyBoZXJlIGFzIHdlbGwuKgozLiBDbGljayAqKlN0YXJ0Kiogb24gdGhlIGNhcmQgeW91IHdhbnQgdG8gYmVnaW4uCjQuIFJlYWQgdGhlIHF1ZXN0aW9uIGluc3RydWN0aW9ucyBjYXJlZnVsbHkuCjUuIFNlbGVjdCBvciB0eXBlIHlvdXIgYW5zd2VyLCB0aGVuIGNsaWNrICoqTmV4dCoqLgo2LiBSZXBlYXQgdW50aWwgYWxsIHF1ZXN0aW9ucyBhcmUgYW5zd2VyZWQsIHRoZW4gY2xpY2sgKipTdWJtaXQqKi4KCj4gKipUaXA6KiogRG8gbm90IG92ZXJ0aGluayB5b3VyIGFuc3dlcnMsIGVzcGVjaWFsbHkgZm9yIHBlcnNvbmFsaXR5IHRlc3RzLiBZb3VyIGZpcnN0IGluc3RpbmN0IGlzIHVzdWFsbHkgdGhlIG1vc3QgYWNjdXJhdGUhCgohW0Fzc2Vzc21lbnQgY2FyZCBsaXN0IHNob3dpbmcgYXZhaWxhYmxlIGFzc2Vzc21lbnRzIHdpdGggU3RhcnQgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC1jYXJkLWxpc3QucG5nKQoKLS0tCgojIyBSZXN1bWluZyBhbiBJbmNvbXBsZXRlIEFzc2Vzc21lbnQKCkxpZmUgaGFwcGVucy4gSWYgeW91IGNsb3NlIHlvdXIgYnJvd3NlciBvciBuYXZpZ2F0ZSBhd2F5LCB5b3VyIHByb2dyZXNzIGlzIHNhZmVseSBhdXRvLXNhdmVkLgoKMS4gUmV0dXJuIHRvIHRoZSAqKlNlbGYgQXNzZXNzbWVudCoqIHBhZ2UgKG9yIGNsaWNrIHRoZSBSZXN1bWUgY2FyZCBvbiB5b3VyIERhc2hib2FyZCkuCjIuIFRoZSBhc3Nlc3NtZW50IGNhcmQgd2lsbCBub3cgc2hvdyBhICoqQ29udGludWUqKiBidXR0b24gaW5zdGVhZCBvZiBTdGFydC4KMy4gQ2xpY2sgKipDb250aW51ZSoqLgo0LiBZb3Ugd2lsbCBwaWNrIHVwIGV4YWN0bHkgd2hlcmUgeW91IGxlZnQgb2ZmLiAKNS4gQ29tcGxldGUgdGhlIHJlbWFpbmluZyBxdWVzdGlvbnMgYW5kIHN1Ym1pdC4KCiFbQXNzZXNzbWVudCBjYXJkIHNob3dpbmcgQ29udGludWUgYnV0dG9uIGZvciBhIHNlc3Npb24gdGhhdCB3YXMgbGVmdCBpbmNvbXBsZXRlXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC1yZXN1bWUucG5nKQoKLS0tCgojIyBSZXRha2luZyBhbiBBc3Nlc3NtZW50CgpTb21lIGFzc2Vzc21lbnRzIGFsbG93IHlvdSB0byByZXRha2UgdGhlbSBpZiB5b3UgZmVlbCB5b3VyIHNpdHVhdGlvbiBoYXMgY2hhbmdlZC4gSWYgcmV0YWtlcyBhcmUgZW5hYmxlZCBmb3IgYSBzcGVjaWZpYyB0ZXN0OgoKMS4gT3BlbiB0aGUgY29tcGxldGVkIGFzc2Vzc21lbnQgY2FyZC4KMi4gQ2xpY2sgKipSZXRha2UqKi4KMy4gQSBjb25maXJtYXRpb24gcHJvbXB0IHdpbGwgYXNrIGlmIHlvdSBhcmUgc3VyZSB5b3Ugd2FudCB0byBvdmVyd3JpdGUgeW91ciBwcmV2aW91cyByZXN1bHRzLiBDb25maXJtIHRvIHByb2NlZWQuCjQuIENvbXBsZXRlIHRoZSBuZXcgcnVuIGFuZCBzdWJtaXQuCgohW1JldGFrZSBjb25maXJtYXRpb24gZGlhbG9nIHdhcm5pbmcgdGhhdCBwcmV2aW91cyByZXN1bHRzIHdpbGwgYmUgb3ZlcndyaXR0ZW5dKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9hc3Nlc3NtZW50LXJldGFrZS1jb25maXJtLnBuZykKCi0tLQoKIyMgUmV2aWV3aW5nIFlvdXIgUmVzdWx0cwoKT25jZSB5b3Ugc3VibWl0IGFuIGFzc2Vzc21lbnQsIHRoZSBwbGF0Zm9ybSBpbnN0YW50bHkgZ2VuZXJhdGVzIHlvdXIgcmVzdWx0cy4KCjEuIE9uIHRoZSBjb21wbGV0ZWQgYXNzZXNzbWVudCBjYXJkLCBjbGljayAqKlZpZXcgUmVzdWx0cyoqLgoyLiBSZXZpZXcgdGhlIHN1bW1hcnkgYW5kIGJyZWFrZG93biBvZiB5b3VyIHRyYWl0cyBvciBhcHRpdHVkZXMuCjMuIEFybWVkIHdpdGggdGhpcyBuZXcgZGF0YSwgaGVhZCBvdmVyIHRvIHRoZSAqKlJlY29tbWVuZGF0aW9ucyoqIG9yICoqUGVyc29uYWxpdHkqKiBtb2R1bGVzIHRvIHNlZSB3aGF0IHRoZSBBSSBoYXMgdW5sb2NrZWQgZm9yIHlvdSEKCiFbQXNzZXNzbWVudCByZXN1bHRzIHN1bW1hcnkgc2hvd2luZyB0cmFpdCBzY29yZXMgYW5kIGJyZWFrZG93biBhZnRlciBzdWJtaXNzaW9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC1yZXN1bHRzLnBuZykKCi0tLQoKIyMgSW1wb3J0YW50IE5vdGUgb24gTGFuZ3VhZ2VzCgpJZiB5b3UgY2hhbmdlIHlvdXIgaW50ZXJmYWNlIGxhbmd1YWdlIChlLmcuLCBmcm9tIEVuZ2xpc2ggdG8gVHVya2lzaCkgKndoaWxlKiBhbiBhc3Nlc3NtZW50IGlzIGluIHByb2dyZXNzLCB0aGUgcGxhdGZvcm0gbWF5IHJlcXVpcmUgeW91IHRvIGNvbmZpcm0gYSByZXNldCBvZiB5b3VyIGN1cnJlbnQgaW4tcHJvZ3Jlc3MgcmVzcG9uc2VzIHRvIG1hdGNoIHRoZSBuZXcgbGFuZ3VhZ2Ugc2NoZW1hLiBJdCBpcyBiZXN0IHRvIHN0aWNrIHRvIG9uZSBsYW5ndWFnZSB1bnRpbCB5b3Ugc3VibWl0IQoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBSZWNvbW1lbmRhdGlvbnMgb3IgUGVyc29uYWxpdHkgbWVudXMgYXJlIGxvY2tlZCB8IFlvdSBtdXN0IGNvbXBsZXRlIHlvdXIgY29yZSBhc3Nlc3NtZW50cyBmaXJzdCB0byB1bmxvY2sgdGhlc2UgYXJlYXMgfAp8IFRoZSBTdGFydCBidXR0b24gaXMgbWlzc2luZyBvbiBhIGN1c3RvbSBjYXJkIHwgVGhlIGFzc2Vzc21lbnQgbWF5IGJlIGNsb3NlZCwgY29tcGxldGVkLCBvciBvdXRzaWRlIHlvdXIgb3JnYW5pemF0aW9uJ3MgYWxsb3dlZCB0aW1lIHdpbmRvdyB8CnwgSSBsb3N0IHByb2dyZXNzIHVuZXhwZWN0ZWRseSB8IENoZWNrIGlmIHlvdSBzd2l0Y2hlZCBsYW5ndWFnZXMgbWlkLXRlc3QuIE90aGVyd2lzZSwgZW5zdXJlIHlvdSBoYXZlIGEgc3RhYmxlIG5ldHdvcmsgY29ubmVjdGlvbiB8Cg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CkFzc2Vzc21lbnRzIGFyZSB0aGUgY29yZSBvZiBJRFBpY2tlci4gQ29tcGxldGluZyB0aGVtIHVubG9ja3MgeW91ciBwZXJzb25hbGl6ZWQgY2FyZWVyIHBhdGhzLCB1bml2ZXJzaXR5IHJlY29tbWVuZGF0aW9ucywgYW5kIHBlcnNvbmFsaXR5IGluc2lnaHRzLgoKLS0tCgojIyBTdGFydGluZyBhIE5ldyBBc3Nlc3NtZW50CgoxLiBGcm9tIHRoZSBsZWZ0IHNpZGViYXIsIGNsaWNrICoqU2VsZiBBc3Nlc3NtZW50KiouCjIuIExvb2sgYXQgdGhlIGF2YWlsYWJsZSBhc3Nlc3NtZW50IGNhcmRzIChlLmcuLCAqUGVyc29uYWxpdHkqLCAqQ2FyZWVyKikuCiAgIC0gKk5vdGU6IFlvdXIgc2Nob29sIG9yIG9yZ2FuaXphdGlvbiBtYXkgYXNzaWduIGN1c3RvbSBhc3Nlc3NtZW50cyBoZXJlIGFzIHdlbGwuKgozLiBDbGljayAqKlN0YXJ0Kiogb24gdGhlIGNhcmQgeW91IHdhbnQgdG8gYmVnaW4uCjQuIFJlYWQgdGhlIHF1ZXN0aW9uIGluc3RydWN0aW9ucyBjYXJlZnVsbHkuCjUuIFNlbGVjdCBvciB0eXBlIHlvdXIgYW5zd2VyLCB0aGVuIGNsaWNrICoqTmV4dCoqLgo2LiBSZXBlYXQgdW50aWwgYWxsIHF1ZXN0aW9ucyBhcmUgYW5zd2VyZWQsIHRoZW4gY2xpY2sgKipTdWJtaXQqKi4KCj4gKipUaXA6KiogRG8gbm90IG92ZXJ0aGluayB5b3VyIGFuc3dlcnMsIGVzcGVjaWFsbHkgZm9yIHBlcnNvbmFsaXR5IHRlc3RzLiBZb3VyIGZpcnN0IGluc3RpbmN0IGlzIHVzdWFsbHkgdGhlIG1vc3QgYWNjdXJhdGUhCgohW0Fzc2Vzc21lbnQgY2FyZCBsaXN0IHNob3dpbmcgYXZhaWxhYmxlIGFzc2Vzc21lbnRzIHdpdGggU3RhcnQgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC1jYXJkLWxpc3QucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgU2VsZiBBc3Nlc3NtZW50IHBhZ2Ugc2hvd2luZyB0aGUgbGlzdCBvZiBhc3Nlc3NtZW50IGNhcmRzIHdpdGggYSBTdGFydCBidXR0b24gb24gZWFjaC4qCgotLS0KCiMjIFJlc3VtaW5nIGFuIEluY29tcGxldGUgQXNzZXNzbWVudAoKTGlmZSBoYXBwZW5zLiBJZiB5b3UgY2xvc2UgeW91ciBicm93c2VyIG9yIG5hdmlnYXRlIGF3YXksIHlvdXIgcHJvZ3Jlc3MgaXMgc2FmZWx5IGF1dG8tc2F2ZWQuCgoxLiBSZXR1cm4gdG8gdGhlICoqU2VsZiBBc3Nlc3NtZW50KiogcGFnZSAob3IgY2xpY2sgdGhlIFJlc3VtZSBjYXJkIG9uIHlvdXIgRGFzaGJvYXJkKS4KMi4gVGhlIGFzc2Vzc21lbnQgY2FyZCB3aWxsIG5vdyBzaG93IGEgKipDb250aW51ZSoqIGJ1dHRvbiBpbnN0ZWFkIG9mIFN0YXJ0LgozLiBDbGljayAqKkNvbnRpbnVlKiouCjQuIFlvdSB3aWxsIHBpY2sgdXAgZXhhY3RseSB3aGVyZSB5b3UgbGVmdCBvZmYuIAo1LiBDb21wbGV0ZSB0aGUgcmVtYWluaW5nIHF1ZXN0aW9ucyBhbmQgc3VibWl0LgoKIVtBc3Nlc3NtZW50IGNhcmQgc2hvd2luZyBDb250aW51ZSBidXR0b24gZm9yIGEgc2Vzc2lvbiB0aGF0IHdhcyBsZWZ0IGluY29tcGxldGVdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9hc3Nlc3NtZW50LXJlc3VtZS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIGFuIGFzc2Vzc21lbnQgY2FyZCBpbiB0aGUgcmVzdW1lZCBzdGF0ZSDigJQgc2hvd2luZyB0aGUgQ29udGludWUgYnV0dG9uIGluc3RlYWQgb2YgU3RhcnQuKgoKLS0tCgojIyBSZXRha2luZyBhbiBBc3Nlc3NtZW50CgpTb21lIGFzc2Vzc21lbnRzIGFsbG93IHlvdSB0byByZXRha2UgdGhlbSBpZiB5b3UgZmVlbCB5b3VyIHNpdHVhdGlvbiBoYXMgY2hhbmdlZC4gSWYgcmV0YWtlcyBhcmUgZW5hYmxlZCBmb3IgYSBzcGVjaWZpYyB0ZXN0OgoKMS4gT3BlbiB0aGUgY29tcGxldGVkIGFzc2Vzc21lbnQgY2FyZC4KMi4gQ2xpY2sgKipSZXRha2UqKi4KMy4gQSBjb25maXJtYXRpb24gcHJvbXB0IHdpbGwgYXNrIGlmIHlvdSBhcmUgc3VyZSB5b3Ugd2FudCB0byBvdmVyd3JpdGUgeW91ciBwcmV2aW91cyByZXN1bHRzLiBDb25maXJtIHRvIHByb2NlZWQuCjQuIENvbXBsZXRlIHRoZSBuZXcgcnVuIGFuZCBzdWJtaXQuCgohW1JldGFrZSBjb25maXJtYXRpb24gZGlhbG9nIHdhcm5pbmcgdGhhdCBwcmV2aW91cyByZXN1bHRzIHdpbGwgYmUgb3ZlcndyaXR0ZW5dKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9hc3Nlc3NtZW50LXJldGFrZS1jb25maXJtLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHJldGFrZSBjb25maXJtYXRpb24gZGlhbG9nIOKAlCBzaG93IHRoZSB3YXJuaW5nIG1lc3NhZ2UgYW5kIHRoZSBDb25maXJtL0NhbmNlbCBidXR0b25zLioKCi0tLQoKIyMgUmV2aWV3aW5nIFlvdXIgUmVzdWx0cwoKT25jZSB5b3Ugc3VibWl0IGFuIGFzc2Vzc21lbnQsIHRoZSBwbGF0Zm9ybSBpbnN0YW50bHkgZ2VuZXJhdGVzIHlvdXIgcmVzdWx0cy4KCjEuIE9uIHRoZSBjb21wbGV0ZWQgYXNzZXNzbWVudCBjYXJkLCBjbGljayAqKlZpZXcgUmVzdWx0cyoqLgoyLiBSZXZpZXcgdGhlIHN1bW1hcnkgYW5kIGJyZWFrZG93biBvZiB5b3VyIHRyYWl0cyBvciBhcHRpdHVkZXMuCjMuIEFybWVkIHdpdGggdGhpcyBuZXcgZGF0YSwgaGVhZCBvdmVyIHRvIHRoZSAqKlJlY29tbWVuZGF0aW9ucyoqIG9yICoqUGVyc29uYWxpdHkqKiBtb2R1bGVzIHRvIHNlZSB3aGF0IHRoZSBBSSBoYXMgdW5sb2NrZWQgZm9yIHlvdSEKCiFbQXNzZXNzbWVudCByZXN1bHRzIHN1bW1hcnkgc2hvd2luZyB0cmFpdCBzY29yZXMgYW5kIGJyZWFrZG93biBhZnRlciBzdWJtaXNzaW9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC1yZXN1bHRzLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHJlc3VsdHMgc3VtbWFyeSBwYWdlIOKAlCBzaG93IHRyYWl0IHNjb3JlcywgdGhlIGJyZWFrZG93biBjaGFydCwgYW5kIHRoZSBWaWV3IFJlc3VsdHMgYnV0dG9uIG9uIHRoZSBjb21wbGV0ZWQgY2FyZC4qCgotLS0KCiMjIEltcG9ydGFudCBOb3RlIG9uIExhbmd1YWdlcwoKSWYgeW91IGNoYW5nZSB5b3VyIGludGVyZmFjZSBsYW5ndWFnZSAoZS5nLiwgZnJvbSBFbmdsaXNoIHRvIFR1cmtpc2gpICp3aGlsZSogYW4gYXNzZXNzbWVudCBpcyBpbiBwcm9ncmVzcywgdGhlIHBsYXRmb3JtIG1heSByZXF1aXJlIHlvdSB0byBjb25maXJtIGEgcmVzZXQgb2YgeW91ciBjdXJyZW50IGluLXByb2dyZXNzIHJlc3BvbnNlcyB0byBtYXRjaCB0aGUgbmV3IGxhbmd1YWdlIHNjaGVtYS4gSXQgaXMgYmVzdCB0byBzdGljayB0byBvbmUgbGFuZ3VhZ2UgdW50aWwgeW91IHN1Ym1pdCEKCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgUmVjb21tZW5kYXRpb25zIG9yIFBlcnNvbmFsaXR5IG1lbnVzIGFyZSBsb2NrZWQgfCBZb3UgbXVzdCBjb21wbGV0ZSB5b3VyIGNvcmUgYXNzZXNzbWVudHMgZmlyc3QgdG8gdW5sb2NrIHRoZXNlIGFyZWFzIHwKfCBUaGUgU3RhcnQgYnV0dG9uIGlzIG1pc3Npbmcgb24gYSBjdXN0b20gY2FyZCB8IFRoZSBhc3Nlc3NtZW50IG1heSBiZSBjbG9zZWQsIGNvbXBsZXRlZCwgb3Igb3V0c2lkZSB5b3VyIG9yZ2FuaXphdGlvbidzIGFsbG93ZWQgdGltZSB3aW5kb3cgfAp8IEkgbG9zdCBwcm9ncmVzcyB1bmV4cGVjdGVkbHkgfCBDaGVjayBpZiB5b3Ugc3dpdGNoZWQgbGFuZ3VhZ2VzIG1pZC10ZXN0LiBPdGhlcndpc2UsIGVuc3VyZSB5b3UgaGF2ZSBhIHN0YWJsZSBuZXR3b3JrIGNvbm5lY3Rpb24gfAo=</script>
 
 <style>
  

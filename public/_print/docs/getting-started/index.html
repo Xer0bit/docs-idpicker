@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/index.xml">
-<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/index.json">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/getting-started/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/getting-started/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/getting-started/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,7 +23,7 @@
 
 <title>Getting Started | IDPicker Docs</title>
 <meta name="description" content="Access URLs, login flow, and first-time setup">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/getting-started/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/getting-started/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Getting Started">
   <meta property="og:description" content="Access URLs, login flow, and first-time setup">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Getting Started">
   <meta name="twitter:description" content="Access URLs, login flow, and first-time setup">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -170,7 +177,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>1: <a href="#pg-66c93933444d37877051ad38074e8a75">Overview</a></li>
+<li>1: <a href="#pg-4b323090a49ad3622bf8484df9507945">Roles and Permissions</a></li>
 
 
     
@@ -178,7 +185,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2: <a href="#pg-90bebb99cbbb9f16d89dcd5249151bda">Quick Start</a></li>
+<li>2: <a href="#pg-66c93933444d37877051ad38074e8a75">Overview</a></li>
 
 
     
@@ -186,7 +193,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>3: <a href="#pg-324fd544102edea8c62bff65c4ba95d6">Access URLs</a></li>
+<li>3: <a href="#pg-90bebb99cbbb9f16d89dcd5249151bda">Quick Start</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-324fd544102edea8c62bff65c4ba95d6">Access URLs</a></li>
 
 
     
@@ -218,28 +233,378 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="">
     
-	<h1 id="pg-66c93933444d37877051ad38074e8a75">1 - Overview</h1>
-    <div class="lead">What IDPicker does and how users move through the platform</div>
-	<p>IDPicker helps students evaluate strengths, explore academic and career options, and get guided recommendations.</p>
-<h2 id="primary-user-roles">Primary User Roles</h2>
+	<h1 id="pg-4b323090a49ad3622bf8484df9507945">1 - Roles and Permissions</h1>
+    <div class="lead">A side-by-side comparison of what each user role can access and do on the IDPicker platform</div>
+	<p>IDPicker has five distinct user roles, each with a specific set of capabilities. Understanding what each role can and cannot do helps you set up accounts correctly and avoid confusion about access rights.</p>
+<hr>
+<h2 id="1-the-five-roles-at-a-glance">1. The Five Roles at a Glance</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>Who holds it</th>
+          <th>Primary purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Super Admin</strong></td>
+          <td>Platform owner / IT operations staff</td>
+          <td>Full control of technical settings, all organisations, global content, and billing</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor</strong></td>
+          <td>Head counselor or primary school contact</td>
+          <td>Manages their student roster, runs forms, distributes resources, chats with families</td>
+      </tr>
+      <tr>
+          <td><strong>Sub-Advisor</strong></td>
+          <td>Assistant counselor or specialist staff</td>
+          <td>Operates within a restricted subset of the Advisor&rsquo;s permissions and student scope</td>
+      </tr>
+      <tr>
+          <td><strong>Student</strong></td>
+          <td>The young person using the platform</td>
+          <td>Completes assessments, explores recommendations, chats with their advisor and AI mentor</td>
+      </tr>
+      <tr>
+          <td><strong>Parent / Guardian</strong></td>
+          <td>Parent or legal guardian of a student</td>
+          <td>Monitors a linked child&rsquo;s progress and communicates with the advisor</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="2-permission-comparison-table">2. Permission Comparison Table</h2>
+<h3 id="students-and-core-assessment">Students and Core Assessment</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Take self-assessments</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>View own assessment results</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>Read-only view</td>
+      </tr>
+      <tr>
+          <td>View any student&rsquo;s results</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Scoped only</td>
+          <td>—</td>
+          <td>Own child only</td>
+      </tr>
+      <tr>
+          <td>Edit another user&rsquo;s answers</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="forms-and-documents">Forms and Documents</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Create global forms</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Create organisation forms</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Submit a form response</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>View form responses</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>Own only</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Upload application documents</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Review / verify documents</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="communication">Communication</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Send notifications to all students</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Send notifications to own cohort</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Chat with their advisor</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Chat with a student&rsquo;s parent</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Join a family group chat</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="user-and-organisation-management">User and Organisation Management</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Create organisations</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Invite advisors</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Invite sub-advisors</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Import students in bulk</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Link a parent to a student</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>Request only</td>
+      </tr>
+      <tr>
+          <td>Delete any account</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ai-and-content">AI and Content</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Edit global AI system prompts</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Edit organisation-level prompts</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Use AI mentor chat</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Issue certificates</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Generate a Journey Map PDF</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="3-how-sub-advisor-permissions-work">3. How Sub-Advisor Permissions Work</h2>
+<p>Sub-Advisors do not have a fixed permission set. Their access is configured entirely by their primary Advisor using the <strong>Permission Matrix</strong>.</p>
 <ul>
-<li>Student</li>
-<li>Advisor</li>
-<li>Parent</li>
+<li>An Advisor can grant a Sub-Advisor access to <em>any combination</em> of modules they themselves hold.</li>
+<li>An Advisor <strong>cannot</strong> grant a Sub-Advisor more rights than the Advisor has.</li>
+<li>Sub-Advisors can also be scoped to a specific student group — for example, only the students in &ldquo;Class of 2026&rdquo; — so they cannot see any other students even within the same organisation.</li>
 </ul>
-<h2 id="panel-entry-points">Panel Entry Points</h2>
+<blockquote>
+<p><strong>Example:</strong> An Advisor might create a Sub-Advisor account for an office assistant, giving them access only to <em>Forms</em> and <em>Notifications</em> but no access to <em>Students</em>, <em>Groups</em>, or <em>Support Tickets</em>.</p>
+</blockquote>
+<hr>
+<h2 id="4-how-parent-access-works">4. How Parent Access Works</h2>
+<p>Parents have a deliberately limited view to protect student privacy:</p>
 <ul>
-<li>Student Panel: main user learning and recommendation workspace</li>
-<li>Advisor Panel: supervision, student support, and sub-advisor administration</li>
-<li>Parent Panel: visibility for linked students</li>
+<li>A parent can only see data for students they are explicitly linked to.</li>
+<li>The student controls the link — they must approve a parent&rsquo;s request from their own dashboard.</li>
+<li>Parents can view progress, recommendations, and Journey Maps, but they cannot edit anything.</li>
+<li>In schools where Parent Chat is enabled, parents can message the advisor through a secure thread that is separate from the student-advisor channel.</li>
 </ul>
-<h2 id="student-account-types">Student Account Types</h2>
-<ul>
-<li>Linked Student: account linked to parent visibility model</li>
-<li>Individual Student: independent account with direct access only</li>
-</ul>
-<p><img src="/images/user-manual/getting-started/platform-entry-points.png" alt="Platform Entry Points Placeholder"></p>
-<p>Image placeholder: Add screenshot or diagram showing where each role signs in.</p>
+<p><img src="/images/user-manual/getting-started/roles-diagram.png" alt="Diagram showing the relationship between Admin, Advisor, Sub-Advisor, Student, and Parent roles with arrows indicating who can see or manage whom"></p>
+<p><em>Image placeholder: Add a diagram showing the five roles and the directional relationships between them \u2014 e.g., Admin oversees all, Advisor manages Sub-Advisor and Students, Parent links to Student.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A sub-advisor says they cannot see a specific student</td>
+          <td>Check their Assigned Scope in Sub-Advisor Management — they may only be scoped to certain groups, and the student is in a different group</td>
+      </tr>
+      <tr>
+          <td>A parent can see their child but cannot chat with the advisor</td>
+          <td>Family Chat must be enabled by the Advisor. The advisor can open the Chat module and confirm the parent thread is active</td>
+      </tr>
+      <tr>
+          <td>I need to give an advisor admin-level access to one feature only</td>
+          <td>Use the Sub-Admin (Admin-level) permission matrix rather than making them a full Super Admin</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -255,38 +620,147 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-90bebb99cbbb9f16d89dcd5249151bda">2 - Quick Start</h1>
-    <div class="lead">Complete first-run flow from login to first recommended action</div>
-	<h2 id="step-1-open-the-login-page">Step 1: Open the Login Page</h2>
-<p>Use the correct login URL for your environment.</p>
-<p><img src="/images/user-manual/getting-started/login-page.png" alt="Login URL Page Placeholder"></p>
-<p>Image placeholder: Add screenshot of login page with visible URL in browser bar.</p>
-<h2 id="step-2-sign-in">Step 2: Sign In</h2>
+	<h1 id="pg-66c93933444d37877051ad38074e8a75">2 - Overview</h1>
+    <div class="lead">What IDPicker is, who uses it, and how each role fits together</div>
+	<p>IDPicker is a career and university guidance platform that helps students discover their strengths, explore academic pathways, and receive AI-powered recommendations — all within a supervised ecosystem connecting students, advisors, and parents.</p>
+<hr>
+<h2 id="1-what-idpicker-does">1. What IDPicker Does</h2>
+<p>IDPicker guides students through a structured self-discovery and decision-making journey using three core engines:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Engine</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Psychometric Assessments</strong></td>
+          <td>Measures personality traits, aptitudes, and interests using validated questionnaires</td>
+      </tr>
+      <tr>
+          <td><strong>AI Recommendations</strong></td>
+          <td>Matches universities and career programmes to each student&rsquo;s unique profile</td>
+      </tr>
+      <tr>
+          <td><strong>AI Mentorship</strong></td>
+          <td>Provides on-demand guidance conversations powered by the student&rsquo;s own assessment data</td>
+      </tr>
+  </tbody>
+</table>
+<p>The platform is used by individual students, school-based advisors managing hundreds of students, parents tracking their child&rsquo;s progress, and organizational super-admins governing the entire deployment.</p>
+<p><img src="/images/user-manual/getting-started/platform-overview.png" alt="IDPicker platform workflow overview — from assessment to recommendation"></p>
+<p><em>Image placeholder: Add a simple workflow diagram showing the student journey: Register → Assessment → Personality → Recommendations → AI Mentor.</em></p>
+<hr>
+<h2 id="2-the-five-user-roles">2. The Five User Roles</h2>
+<p>Every account on IDPicker belongs to exactly one role. Each role has its own login panel and access scope.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>Who they are</th>
+          <th>What they can do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Student</strong></td>
+          <td>The primary end-user</td>
+          <td>Take assessments, view personality profile, get recommendations, use AI mentor, upload documents</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor</strong></td>
+          <td>Teacher, counselor, or guidance staff</td>
+          <td>Manage student rosters, assign forms, issue certificates, run family chats, configure sub-advisors</td>
+      </tr>
+      <tr>
+          <td><strong>Sub-Advisor</strong></td>
+          <td>Assistant to a primary advisor</td>
+          <td>A scoped-down advisor with access only to the students and modules the primary advisor grants</td>
+      </tr>
+      <tr>
+          <td><strong>Parent / Guardian</strong></td>
+          <td>A student&rsquo;s family member</td>
+          <td>View linked child&rsquo;s progress, chat with advisor, download Journey Map</td>
+      </tr>
+      <tr>
+          <td><strong>Admin</strong></td>
+          <td>Platform operator or school IT lead</td>
+          <td>Configure organizations, manage global assessments and AI prompts, monitor usage and system health</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> A person can only hold one role per account. If a teacher is also a parent, they need two separate accounts registered with different email addresses.</p>
+</blockquote>
+<hr>
+<h2 id="3-the-student-journey">3. The Student Journey</h2>
+<p>The typical student experience follows this sequence:</p>
 <ol>
-<li>Enter email/username.</li>
-<li>Enter password.</li>
-<li>Click Sign In.</li>
+<li><strong>Register</strong> — Create an account or accept an advisor&rsquo;s invitation link.</li>
+<li><strong>Complete Assessment</strong> — Answer the psychometric questionnaire (usually 15–30 minutes).</li>
+<li><strong>Review Personality</strong> — Explore the radar chart and trait cards generated from the assessment.</li>
+<li><strong>Get Recommendations</strong> — Refine the AI shortlist using exam scores or personality mode.</li>
+<li><strong>Chat with AI Mentor</strong> — Ask the persona-based mentor questions about career paths and university choices.</li>
+<li><strong>Search Universities</strong> — Browse and filter the university database directly.</li>
+<li><strong>Upload Documents</strong> — Submit required application documents through the secure document tracker.</li>
+<li><strong>Download Report</strong> — Export a full recommendations or personality PDF for external use.</li>
 </ol>
-<p>For OAuth login, click the provider button (for example Google) if enabled.</p>
-<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign In Form Placeholder"></p>
-<p>Image placeholder: Add screenshot of filled sign-in form (mask sensitive data).</p>
-<h2 id="step-3-create-first-item">Step 3: Create First Item</h2>
-<p>After login, open Dashboard and start the first guided workflow:</p>
-<ol>
-<li>Open AI Mentor, or</li>
-<li>Start Assessment.</li>
-</ol>
-<p><img src="/images/user-manual/getting-started/first-action.png" alt="First Action Placeholder"></p>
-<p>Image placeholder: Add screenshot of the first action card highlighted on dashboard.</p>
-<h2 id="step-4-verify-result">Step 4: Verify Result</h2>
-<p>Confirm success by checking:</p>
-<ol>
-<li>Dashboard loads without errors.</li>
-<li>Profile information is accessible.</li>
-<li>At least one feature interaction is recorded.</li>
-</ol>
-<p><img src="/images/user-manual/getting-started/setup-complete.png" alt="Setup Complete Placeholder"></p>
-<p>Image placeholder: Add screenshot confirming first successful interaction.</p>
+<hr>
+<h2 id="4-how-advisors-students-and-parents-connect">4. How Advisors, Students, and Parents Connect</h2>
+<p>IDPicker is designed as a <strong>supervised platform</strong>. Relationships between roles are explicit and governed:</p>
+<ul>
+<li><strong>Advisor → Student:</strong> An advisor invites students by email, or students register under the advisor&rsquo;s organization link. The advisor can see all assigned students&rsquo; progress.</li>
+<li><strong>Student → Parent:</strong> The student approves or denies a parent link request. No parent can access a student&rsquo;s data without the student&rsquo;s consent.</li>
+<li><strong>Advisor → Sub-Advisor:</strong> The primary advisor creates sub-advisor accounts, assigns specific student groups to them, and controls which modules they can access.</li>
+<li><strong>Admin → All:</strong> Platform admins have global visibility across all organizations for support and governance.</li>
+</ul>
+<p><img src="/images/user-manual/getting-started/role-relationships.png" alt="Diagram showing the relationship between advisor, student, and parent accounts"></p>
+<p><em>Image placeholder: Add a simple diagram showing how advisor, student, and parent accounts link together with arrows indicating who initiates each connection.</em></p>
+<hr>
+<h2 id="5-two-types-of-student-accounts">5. Two Types of Student Accounts</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>How it works</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Organization Student</strong></td>
+          <td>Registered under a school or agency. The advisor manages their account and progress is visible to the organization.</td>
+      </tr>
+      <tr>
+          <td><strong>Independent Student</strong></td>
+          <td>Registered directly (not through an organization). No advisor oversight. Subscription-based features apply directly.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I am not sure which panel to use</td>
+          <td>Your invitation email or onboarding link will take you directly to the correct panel for your role</td>
+      </tr>
+      <tr>
+          <td>I forgot my login URL</td>
+          <td>See the <a href="/docs/getting-started/access-urls/">Access URLs</a> page for all environment-specific login addresses</td>
+      </tr>
+      <tr>
+          <td>I need to act as both advisor and parent</td>
+          <td>Register two separate accounts with different email addresses — one for each role</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -302,7 +776,164 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-324fd544102edea8c62bff65c4ba95d6">3 - Access URLs</h1>
+	<h1 id="pg-90bebb99cbbb9f16d89dcd5249151bda">3 - Quick Start</h1>
+    <div class="lead">Complete first-run walkthrough from opening IDPicker to getting your first recommendations</div>
+	<p>This guide is for brand-new users — students, advisors, and parents — who want to get from zero to their first meaningful action in under 15 minutes. Follow the section that matches your role.</p>
+<hr>
+<h2 id="1-opening-the-right-login-page">1. Opening the Right Login Page</h2>
+<p>IDPicker has separate login portals for each role. Before anything else, make sure you are on the correct URL.</p>
+<ol>
+<li>Open your browser and navigate to the login address provided by your school, organization, or invitation email.</li>
+<li>Confirm the page title matches your role (e.g., <em>Student Login</em>, <em>Advisor Login</em>).</li>
+<li>If you are unsure of the correct URL, see the <a href="/docs/getting-started/access-urls/">Access URLs</a> page.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/login-page.png" alt="Student login page URL in browser bar and the sign-in form"></p>
+<p><em>Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.</em></p>
+<hr>
+<h2 id="2-signing-in-or-creating-your-account">2. Signing In or Creating Your Account</h2>
+<h3 id="if-you-already-have-an-account">If you already have an account</h3>
+<ol>
+<li>Enter your registered <strong>Email</strong> and <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>If your organization supports it, click <strong>Continue with Google</strong> instead for one-click access.</li>
+</ol>
+<h3 id="if-you-are-a-new-student-registering-yourself">If you are a new student registering yourself</h3>
+<ol>
+<li>Click <strong>Sign Up</strong> on the login page.</li>
+<li>Complete the multi-step wizard: name, email, password, interests, and profile.</li>
+<li>Check your inbox for the <strong>verification email</strong> and click the link inside.</li>
+<li>Return to the login page and sign in.</li>
+</ol>
+<h3 id="if-you-received-an-invitation-link">If you received an invitation link</h3>
+<ol>
+<li>Open the invitation email from IDPicker.</li>
+<li>Click the <strong>Setup Password</strong> button or link.</li>
+<li>Set a strong password and confirm it.</li>
+<li>You are automatically signed in and placed in the correct panel.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign-in form with email/password fields and Continue with Google button"></p>
+<p><em>Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.</em></p>
+<hr>
+<h2 id="3-student-first-run-assessment--personality--recommendations">3. Student First Run: Assessment → Personality → Recommendations</h2>
+<h3 id="step-1--complete-your-assessment">Step 1 — Complete your assessment</h3>
+<ol>
+<li>After signing in, you land on the <strong>Student Dashboard</strong>.</li>
+<li>Find the <strong>Self Assessment</strong> card or click <strong>Self Assessment</strong> in the sidebar.</li>
+<li>Click <strong>Start</strong> on the available assessment.</li>
+<li>Answer every question honestly — there are no wrong answers.</li>
+<li>Click <strong>Submit</strong> when you finish.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> The assessment takes 15–30 minutes. Find a quiet moment to complete it — your first instinct answers are always the most accurate.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/student-first-assessment.png" alt="Student dashboard with the Self Assessment card highlighted and a Start button"></p>
+<p><em>Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.</em></p>
+<h3 id="step-2--explore-your-personality-profile">Step 2 — Explore your Personality profile</h3>
+<ol>
+<li>After submission, click <strong>Personality</strong> in the sidebar.</li>
+<li>Review the <strong>radar chart</strong> showing your 8 personality traits.</li>
+<li>Read the <strong>Personality Overview</strong> card and <strong>Quick Stats</strong> panel.</li>
+<li>Scroll down to explore individual trait cards with action steps.</li>
+</ol>
+<h3 id="step-3--get-your-first-recommendations">Step 3 — Get your first Recommendations</h3>
+<ol>
+<li>Click <strong>Recommendations</strong> in the sidebar.</li>
+<li>Click <strong>Refine Results</strong> to open the refinement panel.</li>
+<li>Choose your input mode:
+<ul>
+<li>Select <strong>Test Scores</strong> if you have exam results to enter.</li>
+<li>Select <strong>Personality</strong> to use your trait profile directly.</li>
+</ul>
+</li>
+<li>Fill in your data and click <strong>Apply All Filters</strong>.</li>
+<li>Review the ranked list of universities and programmes that match your profile.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/student-first-recommendations.png" alt="Recommendations page showing ranked university cards after applying filters"></p>
+<p><em>Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.</em></p>
+<hr>
+<h2 id="4-advisor-first-run-dashboard--student-roster--first-notification">4. Advisor First Run: Dashboard → Student Roster → First Notification</h2>
+<h3 id="step-1--review-your-dashboard">Step 1 — Review your dashboard</h3>
+<ol>
+<li>Sign in to the Advisor Panel.</li>
+<li>Look at the <strong>KPI widgets</strong> at the top — total students, pending forms, and recent activity.</li>
+<li>Check the <strong>Assigned Forms</strong> block for any forms requiring attention.</li>
+</ol>
+<h3 id="step-2--view-your-student-roster">Step 2 — View your student roster</h3>
+<ol>
+<li>Click <strong>Students</strong> in the sidebar.</li>
+<li>Browse your roster — each row shows a student&rsquo;s name, email, and latest activity signal.</li>
+<li>Click any student to open their full profile.</li>
+</ol>
+<h3 id="step-3--send-your-first-notification">Step 3 — Send your first notification</h3>
+<ol>
+<li>Click <strong>Notifications</strong> in the sidebar.</li>
+<li>Click <strong>Create Notification</strong>.</li>
+<li>Write a welcome message and set the target to <strong>All Students</strong>.</li>
+<li>Click <strong>Send</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/advisor-first-run.png" alt="Advisor dashboard with KPI widgets and sidebar navigation highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.</em></p>
+<hr>
+<h2 id="5-parent-first-run-link-your-child--view-their-progress">5. Parent First Run: Link Your Child → View Their Progress</h2>
+<h3 id="step-1--link-your-childs-account">Step 1 — Link your child&rsquo;s account</h3>
+<ol>
+<li>Sign in to the Parent Panel.</li>
+<li>On the dashboard, find the <strong>Link Student</strong> form.</li>
+<li>Enter the exact email address your child used to register.</li>
+<li>Click <strong>Send Link Request</strong>.</li>
+<li>Wait for your child to approve the request from their student dashboard.</li>
+</ol>
+<h3 id="step-2--open-their-profile">Step 2 — Open their profile</h3>
+<ol>
+<li>Once linked, their card appears on your dashboard.</li>
+<li>Click <strong>View Student</strong> to open their full detail page.</li>
+<li>Review their assessment progress, recommendations summary, and advisor activity.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/parent-first-run.png" alt="Parent dashboard showing a linked student card with View Student button"></p>
+<p><em>Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I signed in but landed on the wrong panel</td>
+          <td>Log out and use the correct login URL for your role — see <a href="/docs/getting-started/access-urls/">Access URLs</a></td>
+      </tr>
+      <tr>
+          <td>I clicked Start on the assessment but the page is blank</td>
+          <td>Refresh the page. If it persists, try a different browser (Chrome or Firefox recommended)</td>
+      </tr>
+      <tr>
+          <td>My child never received my link request</td>
+          <td>Ask them to log in to their student dashboard and look for a notification about a pending parent link approval</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-324fd544102edea8c62bff65c4ba95d6">4 - Access URLs</h1>
     <div class="lead">Exact URLs for login and panel access</div>
 	<p>Use this page as the single source of truth for platform URLs.</p>
 <h2 id="production-urls">Production URLs</h2>
@@ -392,9 +1023,27 @@ This is the multi-page printable view of this section.
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgc2VjdGlvbiBoZWxwcyB1c2VycyBzdGFydCBmcm9tIHRoZSBjb3JyZWN0IFVSTCBhbmQgY29tcGxldGUgZmlyc3QgbG9naW4gc3VjY2Vzc2Z1bGx5Lgo=</script>

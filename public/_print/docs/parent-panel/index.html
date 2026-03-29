@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/index.xml">
-<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/index.json">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/parent-panel/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/parent-panel/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/parent-panel/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,7 +23,7 @@
 
 <title>Parent Panel | IDPicker Docs</title>
 <meta name="description" content="Complete click-by-click parent operations manual">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/parent-panel/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Parent Panel">
   <meta property="og:description" content="Complete click-by-click parent operations manual">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Parent Panel">
   <meta name="twitter:description" content="Complete click-by-click parent operations manual">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -382,8 +389,9 @@ This is the multi-page printable view of this section.
 </ul>
 </li>
 </ol>
-<p><em>(For more details on managing this link, see the <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em></p>
-<hr>
+<p><em>(For more details on managing this link, see the <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em>
+<img src="/images/user-manual/parent-panel/dashboard-overview.png" alt="Parent dashboard showing linked children cards with progress percentages and the Link Student form"></p>
+<h2 id="image-placeholder-add-screenshot-of-the-parent-dashboard-showing-at-least-one-child-card-with-progress-data-and-the-link-student-input-field"><em>Image placeholder: Add screenshot of the parent dashboard showing at least one child card with progress data and the Link Student input field.</em></h2>
 <h2 id="3-opening-a-student-card">3. Opening a Student Card</h2>
 <p>To dive into the specific details for one child:</p>
 <ol>
@@ -393,6 +401,8 @@ This is the multi-page printable view of this section.
 </ol>
 <h3 id="got-multiple-children">Got Multiple Children?</h3>
 <p>No problem. Simply use the <strong>Link Student</strong> form again to request access to your second or third child. They will each appear as a distinct, separate card on your dashboard.</p>
+<p><img src="/images/user-manual/parent-panel/student-card.png" alt="Student card on parent dashboard with the View Student button highlighted"></p>
+<p><em>Image placeholder: Add screenshot of a student card on the parent dashboard with the View Student button visible.</em></p>
 <hr>
 <h2 id="4-refreshing-stale-data">4. Refreshing Stale Data</h2>
 <p>If you know your child just finished an assessment, but your dashboard still says &ldquo;Incomplete&rdquo;:</p>
@@ -441,57 +451,134 @@ This is the multi-page printable view of this section.
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-4e9897a38f12ec302739ed54af868b51">3 - Parent Forms</h1>
-    <div class="lead">Detailed click-by-click parent form response</div>
-	<p>Parent panel supports dynamic form responses through <code>/form/{responseId}</code> routes.</p>
-<h2 id="a-open-parent-form">A) Open Parent Form</h2>
-<ol>
-<li>Open form link from dashboard, notification, or direct URL.</li>
-<li>Wait for form load.</li>
-<li>Confirm form title/description is visible.</li>
-<li>If organization banner exists, review context section at top.</li>
-</ol>
-<h2 id="b-fill-form-fields-click-by-click">B) Fill Form Fields (Click-by-Click)</h2>
-<p>For each question:</p>
-<ol>
-<li>Read label and required marker.</li>
-<li>Enter/select answer according to field type.</li>
-<li>Continue until all required fields are complete.</li>
-</ol>
-<p>Supported field types include:</p>
+    <div class="lead">How to open, fill in, and submit forms assigned to you as a parent or guardian</div>
+	<p>Advisors and administrators can assign forms to parents for collecting consent, supplementary information, or progress feedback. This guide walks you through opening, completing, and submitting a form from the parent panel.</p>
+<hr>
+<h2 id="1-finding-a-form-to-complete">1. Finding a Form to Complete</h2>
+<p>Forms assigned to you appear in two places:</p>
 <ul>
-<li>text</li>
-<li>email</li>
-<li>number</li>
-<li>textarea</li>
-<li>dropdown</li>
-<li>date/time/datetime</li>
-<li>rating</li>
-<li>radio</li>
-<li>checkbox</li>
+<li><strong>Dashboard notification banner</strong> — A highlighted card appears when you have a pending form requiring a response.</li>
+<li><strong>Notifications panel</strong> — Click the bell icon in the top menu and look for a notification labelled <em>Form Assigned</em>.</li>
 </ul>
-<h2 id="c-submit-form">C) Submit Form</h2>
 <ol>
-<li>Scroll to submit action.</li>
-<li>Click Submit.</li>
-<li>Wait for success toast.</li>
-<li>Confirm form state updates.</li>
+<li>Click the notification or the dashboard banner to open the form directly.</li>
+<li>Alternatively, navigate to <strong>Forms</strong> in the sidebar to see all forms assigned to your account.</li>
+<li>Forms with a <strong>Pending</strong> status badge still require your response. Forms marked <strong>Submitted</strong> are read-only.</li>
 </ol>
-<h2 id="d-read-only-form-state">D) Read-Only Form State</h2>
-<p>If a response already exists and edit is disabled:</p>
-<ul>
-<li>Form displays prior answers.</li>
-<li>Inputs are non-editable.</li>
-<li>Parent can review but not change.</li>
-</ul>
-<h2 id="common-parent-questions">Common Parent Questions</h2>
-<p>Q: Form did not load.
-A: Link may be invalid/expired or response ID may be incorrect.</p>
-<p>Q: Submit failed.
-A: Recheck required fields and retry.</p>
-<p>Q: Why cannot I edit previous answer?
-A: Form is configured as non-editable after submit.</p>
-<p><img src="/images/user-manual/parent-panel/parent-form-response.png" alt="Parent Form Placeholder"></p>
-<p>Image placeholder: Parent form with mixed question types and submit action.</p>
+<p><img src="/images/user-manual/parent-panel/parent-forms-list.png" alt="Parent forms list showing form names, submission status badges, and due dates"></p>
+<p><em>Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.</em></p>
+<hr>
+<h2 id="2-reading-the-form-context">2. Reading the Form Context</h2>
+<p>Before filling anything in:</p>
+<ol>
+<li>Read the <strong>Form Title</strong> and the <strong>Description</strong> at the top of the page — the description explains why the form is being collected and what you need to provide.</li>
+<li>If the form belongs to a specific programme or application, an <strong>Organisation Banner</strong> may appear at the top with contextual information.</li>
+<li>Note any <strong>Due Date</strong> shown near the title — forms with deadlines will warn you if you are approaching them.</li>
+</ol>
+<hr>
+<h2 id="3-completing-each-field">3. Completing Each Field</h2>
+<p>Work through the form one question at a time:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field type</th>
+          <th>How to fill it in</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Text / Email</strong></td>
+          <td>Click the input box and type your answer</td>
+      </tr>
+      <tr>
+          <td><strong>Number</strong></td>
+          <td>Type a numerical value; the field rejects letters</td>
+      </tr>
+      <tr>
+          <td><strong>Long Text</strong></td>
+          <td>Click the textarea and write your full response; supports multiple lines</td>
+      </tr>
+      <tr>
+          <td><strong>Dropdown</strong></td>
+          <td>Click the dropdown arrow and select one option from the list</td>
+      </tr>
+      <tr>
+          <td><strong>Radio</strong></td>
+          <td>Click the circle next to your chosen single option</td>
+      </tr>
+      <tr>
+          <td><strong>Checkbox</strong></td>
+          <td>Click each box that applies; you may select multiple</td>
+      </tr>
+      <tr>
+          <td><strong>Date / Time</strong></td>
+          <td>Click the calendar or clock icon and pick from the picker</td>
+      </tr>
+      <tr>
+          <td><strong>Rating</strong></td>
+          <td>Click the star or number that represents your rating</td>
+      </tr>
+  </tbody>
+</table>
+<p>Fields marked with a red asterisk <code>*</code> are <strong>required</strong> — you cannot submit the form until they are completed.</p>
+<blockquote>
+<p><strong>Tip:</strong> Use <strong>Tab</strong> to move between fields quickly. The form saves your draft automatically as you fill it in, so you can leave and return without losing progress.</p>
+</blockquote>
+<p><img src="/images/user-manual/parent-panel/parent-form-filling.png" alt="Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers"></p>
+<p><em>Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.</em></p>
+<hr>
+<h2 id="4-reviewing-before-submitting">4. Reviewing Before Submitting</h2>
+<p>Before clicking <strong>Submit</strong>:</p>
+<ol>
+<li>Scroll back through the form to read your answers.</li>
+<li>Make sure every required field (<code>*</code>) has a value.</li>
+<li>Look for any <strong>Validation Error</strong> messages highlighted in red — these appear if a field received input in the wrong format (e.g., letters in a number field).</li>
+</ol>
+<hr>
+<h2 id="5-submitting-the-form">5. Submitting the Form</h2>
+<ol>
+<li>Click the <strong>Submit</strong> button at the bottom of the form.</li>
+<li>Wait for the green success notification to appear: <em>&ldquo;Your response has been submitted.&rdquo;</em></li>
+<li>The form status in your <strong>Forms</strong> list changes from <em>Pending</em> to <em>Submitted</em>.</li>
+</ol>
+<p><img src="/images/user-manual/parent-panel/parent-form-submitted.png" alt="Success notification after form submission and the form title now showing Submitted status"></p>
+<p><em>Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.</em></p>
+<hr>
+<h2 id="6-viewing-a-submitted-form">6. Viewing a Submitted Form</h2>
+<p>After submission, you can still review your answers:</p>
+<ol>
+<li>Go to <strong>Forms</strong> in the sidebar.</li>
+<li>Click any form with a <em>Submitted</em> badge.</li>
+<li>The form opens in <strong>read-only mode</strong> — all your answers are visible but the fields are disabled. You cannot change a submitted response unless the advisor or admin reopens the form for you.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The form did not load</td>
+          <td>The link may be expired or the form may have been retracted. Contact your advisor to confirm the form is still active</td>
+      </tr>
+      <tr>
+          <td>Submit failed with a validation error</td>
+          <td>Scroll up — a red error message will be visible next to the field(s) that have a problem. Fix each one and try submitting again</td>
+      </tr>
+      <tr>
+          <td>I cannot edit my answers after submitting</td>
+          <td>Forms lock after submission by design. Ask your advisor to reopen the form if you need to make a correction</td>
+      </tr>
+      <tr>
+          <td>I do not see the form in my dashboard</td>
+          <td>Check the <strong>Notifications</strong> panel first. If it is not there, ask your advisor to confirm the form was assigned to your account</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -524,6 +611,8 @@ A: Form is configured as non-editable after submit.</p>
 <li><strong>Instant Link:</strong> The student appears immediately on your dashboard.</li>
 <li><strong>Pending Link:</strong> The request is sent to your child. They must log in to their student dashboard and click &ldquo;Approve&rdquo; before you can see any of their data.</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/link-student-form.png" alt="Link student form showing an email input field and Send Link Request button, with a Pending confirmation message below"></p>
+<p><em>Image placeholder: Add screenshot of the Link Student form with an email address entered and the pending confirmation state visible.</em></p>
 <hr>
 <h2 id="2-opening-the-linked-student-profile">2. Opening the Linked Student Profile</h2>
 <p>Once a link is established, your child appears as a card on your dashboard.</p>
@@ -559,6 +648,8 @@ A: Form is configured as non-editable after submit.</p>
 <li>Modify their profile data (like email or password)</li>
 <li>See private, restricted journal entries or private notes intended only for the advisor</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/linked-student-profile.png" alt="Linked student profile view showing assessment progress, recommendation summary, and journey map section"></p>
+<p><em>Image placeholder: Add screenshot of the linked student profile page showing the progress, recommendations, and journey map sections available to the parent.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -609,6 +700,8 @@ A: Form is configured as non-editable after submit.</p>
 <li><strong>Recommendations Summary:</strong> A high-level view of the career paths or universities the AI has suggested for them based on their results.</li>
 <li><strong>Mentorship Activity:</strong> See if your child has been utilizing the AI mentors or checking in with their human advisor.</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/student-detail-overview.png" alt="Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator"></p>
+<p><em>Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.</em></p>
 <hr>
 <h2 id="2-generating-the-journey-map">2. Generating the Journey Map</h2>
 <p>The Journey Map is a comprehensive, exportable report that synthesizes your child&rsquo;s entire profile into a single document. It is highly useful for college applications or external counseling.</p>
@@ -626,6 +719,8 @@ A: Form is configured as non-editable after submit.</p>
 <li>Once you are satisfied with the included data, click <strong>Generate &amp; Download Journey Map</strong>.</li>
 <li>The system will process the file (this takes a few seconds) and open a secure PDF download link in a new tab.</li>
 </ol>
+<p><img src="/images/user-manual/parent-panel/journey-map-generator.png" alt="Journey Map section showing data point checkboxes, Preview button, and Generate &amp; Download button"></p>
+<p><em>Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate &amp; Download button visible.</em></p>
 <hr>
 <h2 id="3-chatting-with-the-advisor">3. Chatting with the Advisor</h2>
 <p>If your child&rsquo;s school has enabled Family Chat, you can communicate directly with their assigned advisor from this page.</p>
@@ -697,9 +792,27 @@ A: Form is configured as non-editable after submit.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBQYXJlbnQgUGFuZWwgYWxsb3dzIGd1YXJkaWFucyB0byBsaW5rIHN0dWRlbnQgYWNjb3VudHMsIG1vbml0b3IgcHJvZ3Jlc3MsIHJldmlldyByZWNvbW1lbmRhdGlvbnMsIGFuZCBjb21tdW5pY2F0ZSB3aXRoIGFkdmlzb3Igd29ya2Zsb3dzLgoKIyMgV2hvIFNob3VsZCBVc2UgVGhpcyBHdWlkZQoKLSBQYXJlbnQvZ3VhcmRpYW4gdXNlcnMgb2YgSURQaWNrZXIKLSBTdXBwb3J0IHRlYW1zIGhlbHBpbmcgcGFyZW50IG9uYm9hcmRpbmcKLSBRQSB0ZWFtcyB2YWxpZGF0aW5nIHBhcmVudC1mYWNpbmcgam91cm5leXMKCiMjIFN1Z2dlc3RlZCBSZWFkaW5nIE9yZGVyCgoxLiBBdXRoZW50aWNhdGlvbiBhbmQgYWNjb3VudCBzZXR1cAoyLiBMaW5raW5nIGEgc3R1ZGVudCBhY2NvdW50CjMuIFBhcmVudCBkYXNoYm9hcmQgYW5kIGxpbmtlZCBzdHVkZW50IG92ZXJ2aWV3CjQuIFN0dWRlbnQgZGV0YWlsLCBqb3VybmV5IG1hcCwgYW5kIGFkdmlzb3IgY2hhdAo1LiBQYXJlbnQgZm9ybSByZXNwb25zZXMKNi4gVHJvdWJsZXNob290aW5nIGFuZCBzdXBwb3J0IHBhdGhzCgojIyBDb3JlIEZlYXR1cmVzICYgUmVzcG9uc2liaWxpdGllcwoKLSBQYXJlbnQgb25seSBzZWVzIGxpbmtlZCBzdHVkZW50IGRhdGEuCi0gU3R1ZGVudC1vbmx5IHByaXZhdGUgc2V0dGluZ3MgYXJlIG5vdCBlZGl0YWJsZSBieSBwYXJlbnQuCi0gTGlua2luZyByZXF1aXJlcyBib3RoIHNpZGVzIG9mIHRoZSB3b3JrZmxvdyB0byBhbGlnbi4KLSBVbmxpbmsgcmVtb3ZlcyB2aXNpYmlsaXR5IHRvIHRoZSBzdHVkZW50IGZyb20gcGFyZW50IGNvbnRleHQuCgojIyBTY3JlZW5zaG90IENoZWNrbGlzdAoKMS4gUGFyZW50IGxvZ2luIHNjcmVlbgoyLiBQYXJlbnQgcmVnaXN0cmF0aW9uIGFuZCB2ZXJpZmljYXRpb24gZmxvdwozLiBEYXNoYm9hcmQgbGlua2VkLXN0dWRlbnQgc3VtbWFyeSBjYXJkcwo0LiBMaW5rLXN0dWRlbnQgZm9ybSBzdWJtaXNzaW9uIGFuZCBzdGF0dXMKNS4gU3R1ZGVudCBkZXRhaWwgcGFnZSB3aXRoIHRhYnMvc2VjdGlvbnMKNi4gSm91cm5leSBtYXAgcHJldmlldyBhbmQgZG93bmxvYWQKNy4gQWR2aXNvciBjaGF0IGFuZCB1bnJlYWQgaW5kaWNhdG9ycwo4LiBQYXJlbnQgZm9ybSByZXNwb25zZSBwYWdlCgohW1BhcmVudCBQYW5lbCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9wYXJlbnQtcGFuZWwvcGFyZW50LW92ZXJ2aWV3LnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBQYXJlbnQgZGFzaGJvYXJkIHdpdGggbGlua2VkIHN0dWRlbnQgc3VtbWFyeSBjYXJkcyBhbmQgb3ZlcnZpZXcgc3RhdHMuCg==</script>

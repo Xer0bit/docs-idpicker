@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/categories/index.xml">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/categories/index.xml">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -21,7 +21,7 @@
 
 <title>Categories | IDPicker Docs</title>
 <meta name="description" content="Documentation for IDPicker">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/categories/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/categories/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Categories">
   <meta property="og:description" content="Documentation for IDPicker">
@@ -33,8 +33,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Categories">
   <meta name="twitter:description" content="Documentation for IDPicker">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -44,26 +43,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -119,7 +126,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -151,9 +158,181 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CjxkaXYgY2xhc3M9Imhlcm8tc2VjdGlvbiI&#43;CiAgPGgxPklEUGlja2VyIERvY3VtZW50YXRpb248L2gxPgogIDxwPlRoZSBjb21wbGV0ZSBndWlkZSB0byBtYXN0ZXJpbmcgdGhlIElEUGlja2VyIGNhcmVlciBhbmQgdW5pdmVyc2l0eSBndWlkYW5jZSBwbGF0Zm9ybS48L3A&#43;CjwvZGl2PgoKPGRpdiBjbGFzcz0iaG9tZS1ncmlkIj4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL2dldHRpbmctc3RhcnRlZC8iIGNsYXNzPSJob21lLWNhcmQiPgogICAgPGgzPvCfmoAgR2V0dGluZyBTdGFydGVkPC9oMz4KICAgIDxwPlNldCB1cCB5b3VyIGFjY291bnQsIGxlYXJuIHRoZSBhY2Nlc3MgVVJMcywgYW5kIHZpZXcgdGhlIHF1aWNrIHN0YXJ0IGd1aWRlLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;OkyBTdHVkZW50IFBhbmVsPC9oMz4KICAgIDxwPkNvbXBsZXRlIHdvcmtmbG93IGZvciBzdHVkZW50cyBmcm9tIGFzc2Vzc21lbnRzIHRvIHVuaXZlcnNpdHkgc2VhcmNoLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9hZHZpc29yLXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RpSBBZHZpc29yIFBhbmVsPC9oMz4KICAgIDxwPk1hbmFnZSBuZXN0ZWQgc3R1ZGVudHMsIGJ1bGsgaW1wb3J0IGdyb3VwcywgYW5kIHRyYWNrIHJlc3BvbnNlcy48L3A&#43;CiAgPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvcGFyZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RqiBQYXJlbnQgUGFuZWw8L2gzPgogICAgPHA&#43;VW5kZXJzdGFuZCB0aGUgcGFyZW50IGRhc2hib2FyZCBhbmQgbGlua2VkIHN0dWRlbnQgdmlzaWJpbGl0eS48L3A&#43;CiAgPC9hPgo8L2Rpdj4KCjxoMiBjbGFzcz0iaG9tZS1zZWN0aW9uLXRpdGxlIj5Qb3B1bGFyIFF1aWNrIExpbmtzPC9oMj4KPGRpdiBjbGFzcz0iaG9tZS1saW5rcyI&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsL2F1dGhlbnRpY2F0aW9uLyI&#43;QXV0aGVudGljYXRpb248L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC8iPkRhc2hib2FyZDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC8iPkFzc2Vzc21lbnRzPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3Mvc3R1ZGVudC1wYW5lbC9haS1tZW50b3JzaGlwLyI&#43;QUkgTWVudG9yc2hpcDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvdW5pdmVyc2l0eS1zZWFyY2gvIj5Vbml2ZXJzaXR5IFNlYXJjaDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL2Fkdmlzb3ItcGFuZWwvZm9ybXMtYW5kLXJlc3BvbnNlcy8iPkZvcm1zICYgUmVzcG9uc2VzPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvYWR2aXNvci1wYW5lbC9zdHVkZW50cy1hbmQtYnVsay1pbXBvcnQvIj5CdWxrIEltcG9ydDwvYT4KPC9kaXY&#43;Cg==</script>
+
+<style>
+ 
+.page-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+.page-meta-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+.page-meta-bar__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: #F1F5F9;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+ 
+.btn-copy-llm {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.45rem;
+  border: 1.5px solid #DDD6FE;
+  background: linear-gradient(135deg, #F5F3FF 0%, #EDE9FD 100%);
+  color: #5B45E5;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1), 0 1px 2px rgba(91,69,229,0.06);
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+.btn-copy-llm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  transition: background 0.18s;
+}
+.btn-copy-llm:hover {
+  border-color: #A78BFA;
+  color: #4338CA;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(91,69,229,0.18);
+}
+.btn-copy-llm:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(91,69,229,0.1);
+}
+.btn-copy-llm.state--copied {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+  border-color: #6EE7B7;
+  color: #065F46;
+  box-shadow: 0 1px 3px rgba(16,185,129,0.1);
+  transform: none;
+}
+.btn-copy-llm svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  stroke-width: 2.2;
+  transition: transform 0.2s;
+}
+.btn-copy-llm:hover svg { transform: translateY(-1px); }
+</style>
+
+<script>
+(function () {
+  const COPY_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+  const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
+  const DOC_ICON   = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+
+  function injectBar() {
+    const rawEl  = document.getElementById('llm-raw-md');
+    const h1     = document.querySelector('.td-content > h1');
+    if (!rawEl || !h1) return;
+
+    
+    const bar = document.createElement('div');
+    bar.className = 'page-meta-bar';
+
+    
+    const left = document.createElement('div');
+    left.className = 'page-meta-bar__left';
+    left.innerHTML = `<span class="page-meta-bar__pill">${DOC_ICON} &nbsp;Documentation</span>`;
+    bar.appendChild(left);
+
+    
+    const btn = document.createElement('button');
+    btn.className = 'btn-copy-llm';
+    btn.type = 'button';
+    btn.title = 'Copy this page as Markdown for pasting into an LLM (Claude, GPT, Gemini…)';
+    btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+
+    btn.addEventListener('click', function () {
+      try {
+        const encoded   = rawEl.textContent.trim();
+        const markdown  = atob(encoded);
+        const payload   = `\x3C!-- Source: ${window.location.href} -->\n\n${markdown}`;
+
+        navigator.clipboard.writeText(payload).then(function () {
+          btn.innerHTML = CHECK_ICON + ' &nbsp;Copied!';
+          btn.classList.add('state--copied');
+          setTimeout(function () {
+            btn.innerHTML = COPY_ICON + ' &nbsp;Copy for LLM';
+            btn.classList.remove('state--copied');
+          }, 2200);
+        }).catch(function (err) {
+          console.warn('[LLM Copy] clipboard write failed:', err);
+        });
+      } catch (e) {
+        console.error('[LLM Copy] failed', e);
+      }
+    });
+
+    bar.appendChild(btn);
+
+    
+    h1.parentNode.insertBefore(bar, h1);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectBar);
+  } else {
+    injectBar();
+  }
+})();
+</script>
 
 
   </body>

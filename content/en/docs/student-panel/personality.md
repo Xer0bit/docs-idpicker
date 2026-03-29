@@ -25,6 +25,8 @@ The Personality page is locked until you finish the assessment. If you see a loc
 
 ![Personality page in locked state with Complete Assessment prompt and link to the assessment module](/images/user-manual/student-panel/personality-locked.png)
 
+*Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.*
+
 ---
 
 ## 2. The Personality Insights Header
@@ -36,6 +38,8 @@ At the top of the page you will see a **Personality Insights** badge and the hea
 Below the heading is the **Export** button — this lets you download your full report at any time. See [section 7](#7-exporting-your-personality-report) for full export steps.
 
 ![Personality Insights header with Export button at the top of the analysis page](/images/user-manual/student-panel/personality-header.png)
+
+*Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the "Your Personality Analysis" heading, and the Export button.*
 
 ---
 
@@ -65,6 +69,8 @@ The radar chart is the first visual you see after the header. It plots all eight
 
 ![Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip](/images/user-manual/student-panel/personality-radar-chart.png)
 
+*Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.*
+
 ---
 
 ## 4. The Personality Overview Panel
@@ -81,6 +87,8 @@ The overview card opens with a paragraph describing the unique pattern of your r
 
 ![Personality Overview card showing three tier labels and an introductory paragraph about the student's unique trait pattern](/images/user-manual/student-panel/personality-overview-panel.png)
 
+*Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.*
+
 ---
 
 ## 5. Quick Stats Panel
@@ -93,6 +101,8 @@ To the right of the Personality Overview is the **Quick Stats** panel. It lists 
 - Use the **Growth Areas** list to prioritise which Action Steps (from the trait cards below) to work on first.
 
 ![Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange](/images/user-manual/student-panel/personality-quick-stats.png)
+
+*Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.*
 
 ---
 
@@ -113,6 +123,8 @@ Below the overview section, every one of the eight traits has its own card. Each
 | **Action Steps** | One or two concrete, practical things you can do right now to build on a strength or develop a growth area |
 
 ![Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section](/images/user-manual/student-panel/personality-trait-card.png)
+
+*Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.*
 
 ### The Eight Trait Cards in Detail
 
@@ -188,6 +200,8 @@ How clearly you understand your own traits, habits, emotional triggers, and impa
 
 ![Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps](/images/user-manual/student-panel/personality-growth-area-cards.png)
 
+*Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.*
+
 ---
 
 ## 7. Exporting Your Personality Report
@@ -201,6 +215,8 @@ Your full personality analysis can be exported as a PDF to share with parents, a
 > **Note:** If the **Export** button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check **Settings → Subscription** or contact your advisor.
 
 ![Export button at the top of the Personality page and the resulting PDF open in a new browser tab](/images/user-manual/student-panel/personality-report-download.png)
+
+*Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.*
 
 ---
 

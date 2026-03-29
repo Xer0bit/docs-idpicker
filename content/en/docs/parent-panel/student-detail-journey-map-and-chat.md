@@ -17,6 +17,10 @@ At the top of the student detail page, you will see their **Basic Profile** (nam
 - **Recommendations Summary:** A high-level view of the career paths or universities the AI has suggested for them based on their results.
 - **Mentorship Activity:** See if your child has been utilizing the AI mentors or checking in with their human advisor.
 
+![Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator](/images/user-manual/parent-panel/student-detail-overview.png)
+
+*Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.*
+
 ---
 
 ## 2. Generating the Journey Map
@@ -32,6 +36,10 @@ The Journey Map is a comprehensive, exportable report that synthesizes your chil
 3. Click **Preview** to see a structural mockup of the data before committing to the download.
 4. Once you are satisfied with the included data, click **Generate & Download Journey Map**.
 5. The system will process the file (this takes a few seconds) and open a secure PDF download link in a new tab.
+
+![Journey Map section showing data point checkboxes, Preview button, and Generate & Download button](/images/user-manual/parent-panel/journey-map-generator.png)
+
+*Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate & Download button visible.*
 
 ---
 

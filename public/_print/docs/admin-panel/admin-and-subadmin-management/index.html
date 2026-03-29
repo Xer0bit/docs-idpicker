@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>Admin and Subadmin Management | IDPicker Docs</title>
 <meta name="description" content="How to govern internal platform access and manage subadmin permission scopes">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/admin-panel/admin-and-subadmin-management/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Admin and Subadmin Management">
   <meta property="og:description" content="How to govern internal platform access and manage subadmin permission scopes">
@@ -33,12 +33,11 @@
   <meta itemprop="name" content="Admin and Subadmin Management">
   <meta itemprop="description" content="How to govern internal platform access and manage subadmin permission scopes">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="352">
+  <meta itemprop="wordCount" content="393">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Admin and Subadmin Management">
   <meta name="twitter:description" content="How to govern internal platform access and manage subadmin permission scopes">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -160,6 +167,8 @@
 <li>Select their foundational Role (e.g., <em>Super Admin</em> vs <em>Content Admin</em>).</li>
 <li>Click <strong>Save</strong>.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/admin-create.png" alt="Add admin form showing email, username, name fields, role dropdown, and Save button"></p>
+<p><em>Image placeholder: Add screenshot of the Add Admin form with all required fields filled in and the role selector visible.</em></p>
 <hr>
 <h2 id="2-managing-the-permission-matrix">2. Managing the Permission Matrix</h2>
 <p>The true power of IDPicker&rsquo;s internal security is the Permission Matrix, which configures access on a highly granular, per-module basis.</p>
@@ -176,6 +185,8 @@
 <li>Click <strong>Save Permissions</strong>.</li>
 </ol>
 <p><em>Important: If the subadmin is currently logged in, you must instruct them to refresh their page or log out/in for the new permissions to apply to their session token immediately.</em></p>
+<p><img src="/images/user-manual/admin-panel/admin-permissions-matrix.png" alt="Permission matrix editor showing module list with Write, Read, and None radio buttons for each module"></p>
+<p><em>Image placeholder: Add screenshot of the permission matrix with some modules set to Write, some to Read, and some to None.</em></p>
 <hr>
 <h2 id="3-subadmin-self-auditing">3. Subadmin Self-Auditing</h2>
 <p>If you are a subadmin and believe you are missing access to a module you need to perform your job:</p>
@@ -231,12 +242,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">Ck5vdCBhbGwgYWRtaW5pc3RyYXRvcnMgbmVlZCBmdWxsIGFjY2VzcyB0byBldmVyeSBzZXR0aW5nLiBUaGlzIG1vZHVsZSBhbGxvd3MgeW91IHRvIGNyZWF0ZSBpbnRlcm5hbCBzdGFmZiBhY2NvdW50cyBhbmQgcmlnb3JvdXNseSBkZWZlbmQgeW91ciBvcmdhbml6YXRpb24ncyBzZWN1cml0eSBwb3N0dXJlIGJ5IGVuZm9yY2luZyBsZWFzdC1wcml2aWxlZ2UgYWNjZXNzLgoKLS0tCgojIyAxLiBDcmVhdGluZyBhbiBBZG1pbiBVc2VyCgoxLiBPcGVuIHRoZSAqKkFkbWluIE1hbmFnZW1lbnQqKiBwYWdlLgoyLiBDbGljayAqKkFkZCBBZG1pbioqLgozLiBGaWxsIGluIHRoZSByZXF1aXJlZCBpZGVudGl0eSBmaWVsZHM6CiAgIC0gRW1haWwgKE11c3QgYmUgdW5pcXVlIGFjcm9zcyB0aGUgcGxhdGZvcm0pCiAgIC0gVXNlcm5hbWUKICAgLSBGaXJzdCAvIExhc3QgTmFtZQo0LiBTZXQgYSBzdHJvbmcgdGVtcG9yYXJ5IHBhc3N3b3JkLiBUaGUgbmV3IGFkbWluIHNob3VsZCBjaGFuZ2UgdGhpcyBpbW1lZGlhdGVseSB1cG9uIHRoZWlyIGZpcnN0IGxvZ2luLgo1LiBTZWxlY3QgdGhlaXIgZm91bmRhdGlvbmFsIFJvbGUgKGUuZy4sICpTdXBlciBBZG1pbiogdnMgKkNvbnRlbnQgQWRtaW4qKS4KNi4gQ2xpY2sgKipTYXZlKiouCgotLS0KCiMjIDIuIE1hbmFnaW5nIHRoZSBQZXJtaXNzaW9uIE1hdHJpeAoKVGhlIHRydWUgcG93ZXIgb2YgSURQaWNrZXIncyBpbnRlcm5hbCBzZWN1cml0eSBpcyB0aGUgUGVybWlzc2lvbiBNYXRyaXgsIHdoaWNoIGNvbmZpZ3VyZXMgYWNjZXNzIG9uIGEgaGlnaGx5IGdyYW51bGFyLCBwZXItbW9kdWxlIGJhc2lzLgoKMS4gTG9jYXRlIHRoZSB0YXJnZXQgYWRtaW4gaW4geW91ciBhY3RpdmUgbGlzdCBhbmQgY2xpY2sgdG8gb3BlbiB0aGVpciAqKlBlcm1pc3Npb24gUGFuZWwqKi4KMi4gRm9yIGV2ZXJ5IG1vZHVsZSAoVXNlcnMsIEFzc2Vzc21lbnRzLCBTdXBwb3J0LCBGaW5hbmNpYWxzLCBldGMuKSwgc2V0IHRoZWlyIHNwZWNpZmljIGFjY2VzcyBzY29wZToKICAgLSAqKldyaXRlOioqIEZ1bGwgcmVhZC9lZGl0L2RlbGV0ZSBhdXRob3JpdHkuCiAgIC0gKipSZWFkOioqIENhbiB2aWV3IHRoZSBkYXRhLCBidXQgY2Fubm90IGNoYW5nZSBpdC4KICAgLSAqKk5vbmU6KiogVGhlIG1vZHVsZSBpcyBjb21wbGV0ZWx5IGhpZGRlbi4KMy4gSWYgeW91ciBwbGF0Zm9ybSB1c2VzIG11bHRpLXRlbmFuY3ksIHlvdSBjYW4gYWxzbyByZXN0cmljdCB0aGVpciBzY29wZSB0byBzcGVjaWZpYyAqT3JnYW5pemF0aW9ucyogcmF0aGVyIHRoYW4gZ2xvYmFsIGFjY2Vzcy4KNC4gQ2xpY2sgKipTYXZlIFBlcm1pc3Npb25zKiouIAoKKkltcG9ydGFudDogSWYgdGhlIHN1YmFkbWluIGlzIGN1cnJlbnRseSBsb2dnZWQgaW4sIHlvdSBtdXN0IGluc3RydWN0IHRoZW0gdG8gcmVmcmVzaCB0aGVpciBwYWdlIG9yIGxvZyBvdXQvaW4gZm9yIHRoZSBuZXcgcGVybWlzc2lvbnMgdG8gYXBwbHkgdG8gdGhlaXIgc2Vzc2lvbiB0b2tlbiBpbW1lZGlhdGVseS4qCgotLS0KCiMjIDMuIFN1YmFkbWluIFNlbGYtQXVkaXRpbmcKCklmIHlvdSBhcmUgYSBzdWJhZG1pbiBhbmQgYmVsaWV2ZSB5b3UgYXJlIG1pc3NpbmcgYWNjZXNzIHRvIGEgbW9kdWxlIHlvdSBuZWVkIHRvIHBlcmZvcm0geW91ciBqb2I6CgoxLiBPcGVuIHRoZSAqKlN1YmFkbWluIFZpZXcqKiBmcm9tIHRoZSBzaWRlYmFyLgoyLiBSZXZpZXcgeW91ciBlZmZlY3RpdmUgcGVybWlzc2lvbiBzdW1tYXJ5LiBJdCBsaXN0cyBleGFjdGx5IHdoYXQgeW91IGFyZSBhdXRob3JpemVkIHRvIGRvLgozLiBJZiB0aGVyZSBpcyBhIGRpc2NyZXBhbmN5LCByZWFjaCBvdXQgdG8geW91ciBQcmltYXJ5IEFkbWluIHRvIHVwZGF0ZSB5b3VyIG1hdHJpeC4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgQSBzdWJhZG1pbiBjYW4gc2VlIHRoZSBVc2VyIGxpc3QsIGJ1dCB0aGUgIkRlbGV0ZSIgYnV0dG9uIGlzIG1pc3NpbmcgfCBZb3UgZ3JhbnRlZCB0aGVtICJSZWFkIiBhY2Nlc3MgdG8gdGhlIFVzZXJzIG1vZHVsZS4gVGhleSBuZWVkICJXcml0ZSIgYWNjZXNzIHRvIGV4ZWN1dGUgZGVsZXRpb25zIG9yIGVkaXRzIHwKfCBJIHVwZGF0ZWQgcGVybWlzc2lvbnMgYnV0IHRoZXkgc2F5IG5vdGhpbmcgY2hhbmdlZCB8IFRoZSBzdWJhZG1pbiBtdXN0IG1hbnVhbGx5IHRyaWdnZXIgdGhlICJSZWZyZXNoIFBlcm1pc3Npb25zIiBhY3Rpb24gb3IgZnVsbHkgcmUtYXV0aGVudGljYXRlIHRvIGdlbmVyYXRlIGEgbmV3IHBlcm1pc3Npb24gdG9rZW4gfAp8IENhbiBzdWJhZG1pbnMgY3JlYXRlIG90aGVyIHN1YmFkbWlucz8gfCBVc3VhbGx5IG5vLCB1bmxlc3MgdGhleSBoYXZlIGV4cGxpY2l0ICJXcml0ZSIgYWNjZXNzIG9uIHRoZSBBZG1pbiBNYW5hZ2VtZW50IG1vZHVsZSBpdHNlbGYgfAo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">Ck5vdCBhbGwgYWRtaW5pc3RyYXRvcnMgbmVlZCBmdWxsIGFjY2VzcyB0byBldmVyeSBzZXR0aW5nLiBUaGlzIG1vZHVsZSBhbGxvd3MgeW91IHRvIGNyZWF0ZSBpbnRlcm5hbCBzdGFmZiBhY2NvdW50cyBhbmQgcmlnb3JvdXNseSBkZWZlbmQgeW91ciBvcmdhbml6YXRpb24ncyBzZWN1cml0eSBwb3N0dXJlIGJ5IGVuZm9yY2luZyBsZWFzdC1wcml2aWxlZ2UgYWNjZXNzLgoKLS0tCgojIyAxLiBDcmVhdGluZyBhbiBBZG1pbiBVc2VyCgoxLiBPcGVuIHRoZSAqKkFkbWluIE1hbmFnZW1lbnQqKiBwYWdlLgoyLiBDbGljayAqKkFkZCBBZG1pbioqLgozLiBGaWxsIGluIHRoZSByZXF1aXJlZCBpZGVudGl0eSBmaWVsZHM6CiAgIC0gRW1haWwgKE11c3QgYmUgdW5pcXVlIGFjcm9zcyB0aGUgcGxhdGZvcm0pCiAgIC0gVXNlcm5hbWUKICAgLSBGaXJzdCAvIExhc3QgTmFtZQo0LiBTZXQgYSBzdHJvbmcgdGVtcG9yYXJ5IHBhc3N3b3JkLiBUaGUgbmV3IGFkbWluIHNob3VsZCBjaGFuZ2UgdGhpcyBpbW1lZGlhdGVseSB1cG9uIHRoZWlyIGZpcnN0IGxvZ2luLgo1LiBTZWxlY3QgdGhlaXIgZm91bmRhdGlvbmFsIFJvbGUgKGUuZy4sICpTdXBlciBBZG1pbiogdnMgKkNvbnRlbnQgQWRtaW4qKS4KNi4gQ2xpY2sgKipTYXZlKiouCgohW0FkZCBhZG1pbiBmb3JtIHNob3dpbmcgZW1haWwsIHVzZXJuYW1lLCBuYW1lIGZpZWxkcywgcm9sZSBkcm9wZG93biwgYW5kIFNhdmUgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL2FkbWluLWNyZWF0ZS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBBZGQgQWRtaW4gZm9ybSB3aXRoIGFsbCByZXF1aXJlZCBmaWVsZHMgZmlsbGVkIGluIGFuZCB0aGUgcm9sZSBzZWxlY3RvciB2aXNpYmxlLioKCi0tLQoKIyMgMi4gTWFuYWdpbmcgdGhlIFBlcm1pc3Npb24gTWF0cml4CgpUaGUgdHJ1ZSBwb3dlciBvZiBJRFBpY2tlcidzIGludGVybmFsIHNlY3VyaXR5IGlzIHRoZSBQZXJtaXNzaW9uIE1hdHJpeCwgd2hpY2ggY29uZmlndXJlcyBhY2Nlc3Mgb24gYSBoaWdobHkgZ3JhbnVsYXIsIHBlci1tb2R1bGUgYmFzaXMuCgoxLiBMb2NhdGUgdGhlIHRhcmdldCBhZG1pbiBpbiB5b3VyIGFjdGl2ZSBsaXN0IGFuZCBjbGljayB0byBvcGVuIHRoZWlyICoqUGVybWlzc2lvbiBQYW5lbCoqLgoyLiBGb3IgZXZlcnkgbW9kdWxlIChVc2VycywgQXNzZXNzbWVudHMsIFN1cHBvcnQsIEZpbmFuY2lhbHMsIGV0Yy4pLCBzZXQgdGhlaXIgc3BlY2lmaWMgYWNjZXNzIHNjb3BlOgogICAtICoqV3JpdGU6KiogRnVsbCByZWFkL2VkaXQvZGVsZXRlIGF1dGhvcml0eS4KICAgLSAqKlJlYWQ6KiogQ2FuIHZpZXcgdGhlIGRhdGEsIGJ1dCBjYW5ub3QgY2hhbmdlIGl0LgogICAtICoqTm9uZToqKiBUaGUgbW9kdWxlIGlzIGNvbXBsZXRlbHkgaGlkZGVuLgozLiBJZiB5b3VyIHBsYXRmb3JtIHVzZXMgbXVsdGktdGVuYW5jeSwgeW91IGNhbiBhbHNvIHJlc3RyaWN0IHRoZWlyIHNjb3BlIHRvIHNwZWNpZmljICpPcmdhbml6YXRpb25zKiByYXRoZXIgdGhhbiBnbG9iYWwgYWNjZXNzLgo0LiBDbGljayAqKlNhdmUgUGVybWlzc2lvbnMqKi4gCgoqSW1wb3J0YW50OiBJZiB0aGUgc3ViYWRtaW4gaXMgY3VycmVudGx5IGxvZ2dlZCBpbiwgeW91IG11c3QgaW5zdHJ1Y3QgdGhlbSB0byByZWZyZXNoIHRoZWlyIHBhZ2Ugb3IgbG9nIG91dC9pbiBmb3IgdGhlIG5ldyBwZXJtaXNzaW9ucyB0byBhcHBseSB0byB0aGVpciBzZXNzaW9uIHRva2VuIGltbWVkaWF0ZWx5LioKCiFbUGVybWlzc2lvbiBtYXRyaXggZWRpdG9yIHNob3dpbmcgbW9kdWxlIGxpc3Qgd2l0aCBXcml0ZSwgUmVhZCwgYW5kIE5vbmUgcmFkaW8gYnV0dG9ucyBmb3IgZWFjaCBtb2R1bGVdKC9pbWFnZXMvdXNlci1tYW51YWwvYWRtaW4tcGFuZWwvYWRtaW4tcGVybWlzc2lvbnMtbWF0cml4LnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHBlcm1pc3Npb24gbWF0cml4IHdpdGggc29tZSBtb2R1bGVzIHNldCB0byBXcml0ZSwgc29tZSB0byBSZWFkLCBhbmQgc29tZSB0byBOb25lLioKCi0tLQoKIyMgMy4gU3ViYWRtaW4gU2VsZi1BdWRpdGluZwoKSWYgeW91IGFyZSBhIHN1YmFkbWluIGFuZCBiZWxpZXZlIHlvdSBhcmUgbWlzc2luZyBhY2Nlc3MgdG8gYSBtb2R1bGUgeW91IG5lZWQgdG8gcGVyZm9ybSB5b3VyIGpvYjoKCjEuIE9wZW4gdGhlICoqU3ViYWRtaW4gVmlldyoqIGZyb20gdGhlIHNpZGViYXIuCjIuIFJldmlldyB5b3VyIGVmZmVjdGl2ZSBwZXJtaXNzaW9uIHN1bW1hcnkuIEl0IGxpc3RzIGV4YWN0bHkgd2hhdCB5b3UgYXJlIGF1dGhvcml6ZWQgdG8gZG8uCjMuIElmIHRoZXJlIGlzIGEgZGlzY3JlcGFuY3ksIHJlYWNoIG91dCB0byB5b3VyIFByaW1hcnkgQWRtaW4gdG8gdXBkYXRlIHlvdXIgbWF0cml4LgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBBIHN1YmFkbWluIGNhbiBzZWUgdGhlIFVzZXIgbGlzdCwgYnV0IHRoZSAiRGVsZXRlIiBidXR0b24gaXMgbWlzc2luZyB8IFlvdSBncmFudGVkIHRoZW0gIlJlYWQiIGFjY2VzcyB0byB0aGUgVXNlcnMgbW9kdWxlLiBUaGV5IG5lZWQgIldyaXRlIiBhY2Nlc3MgdG8gZXhlY3V0ZSBkZWxldGlvbnMgb3IgZWRpdHMgfAp8IEkgdXBkYXRlZCBwZXJtaXNzaW9ucyBidXQgdGhleSBzYXkgbm90aGluZyBjaGFuZ2VkIHwgVGhlIHN1YmFkbWluIG11c3QgbWFudWFsbHkgdHJpZ2dlciB0aGUgIlJlZnJlc2ggUGVybWlzc2lvbnMiIGFjdGlvbiBvciBmdWxseSByZS1hdXRoZW50aWNhdGUgdG8gZ2VuZXJhdGUgYSBuZXcgcGVybWlzc2lvbiB0b2tlbiB8CnwgQ2FuIHN1YmFkbWlucyBjcmVhdGUgb3RoZXIgc3ViYWRtaW5zPyB8IFVzdWFsbHkgbm8sIHVubGVzcyB0aGV5IGhhdmUgZXhwbGljaXQgIldyaXRlIiBhY2Nlc3Mgb24gdGhlIEFkbWluIE1hbmFnZW1lbnQgbW9kdWxlIGl0c2VsZiB8Cg==</script>
 
 <style>
  

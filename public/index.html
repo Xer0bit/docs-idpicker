@@ -27,7 +27,7 @@
 🎓 Student Panel Complete workflow for students from assessments to university search.
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
-⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
+Popular Quick Links Authentication Dashboard Assessments AI Mentorship University Search Forms &amp; Responses Bulk Import">
 <meta property="og:url" content="http://localhost:1313/docs-idpicker/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="IDPicker Docs">
@@ -36,7 +36,7 @@
 🎓 Student Panel Complete workflow for students from assessments to university search.
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
-⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
+Popular Quick Links Authentication Dashboard Assessments AI Mentorship University Search Forms &amp; Responses Bulk Import">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
@@ -46,9 +46,9 @@
 🎓 Student Panel Complete workflow for students from assessments to university search.
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
-⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
-  <meta itemprop="dateModified" content="2026-03-24T11:55:57+05:00">
-  <meta itemprop="wordCount" content="91">
+Popular Quick Links Authentication Dashboard Assessments AI Mentorship University Search Forms &amp; Responses Bulk Import">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="81">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="IDPicker Docs">
   <meta name="twitter:description" content="IDPicker Documentation The complete guide to mastering the IDPicker career and university guidance platform.
@@ -56,7 +56,7 @@
 🎓 Student Panel Complete workflow for students from assessments to university search.
 👥 Advisor Panel Manage nested students, bulk import groups, and track responses.
 👪 Parent Panel Understand the parent dashboard and linked student visibility.
-⚙️ Admin Panel System configuration, prompts, translations, and global governance.">
+Popular Quick Links Authentication Dashboard Assessments AI Mentorship University Search Forms &amp; Responses Bulk Import">
 <link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -67,11 +67,32 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="http://localhost:1313/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
+
+<style>
+ 
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
+  display: none !important;
+}
+.td-navbar .navbar-brand__logo {
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+  flex-shrink: 0;
+}
+</style>
+
 
 <style>
  
@@ -175,12 +196,6 @@
           <p class="text-secondary mb-0 small">Understand the parent dashboard and linked student visibility.</p>
         </a>
       </div>
-      <div>
-        <a href="/docs-idpicker/docs/admin-panel/login-and-dashboard/" class="card h-100 text-decoration-none home-card p-4 border-0 shadow-sm" style="transition: transform 0.2s; border-radius: 12px; border: 1px solid #E5E7EB !important;">
-          <h3 class="h5 fw-bold text-dark mb-2">Admin Panel</h3>
-          <p class="text-secondary mb-0 small">System configuration, prompts, translations, and global governance.</p>
-        </a>
-      </div>
     </div>
 
     
@@ -238,8 +253,26 @@
 <script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CjxkaXYgY2xhc3M9Imhlcm8tc2VjdGlvbiI&#43;CiAgPGgxPklEUGlja2VyIERvY3VtZW50YXRpb248L2gxPgogIDxwPlRoZSBjb21wbGV0ZSBndWlkZSB0byBtYXN0ZXJpbmcgdGhlIElEUGlja2VyIGNhcmVlciBhbmQgdW5pdmVyc2l0eSBndWlkYW5jZSBwbGF0Zm9ybS48L3A&#43;CjwvZGl2PgoKPGRpdiBjbGFzcz0iaG9tZS1ncmlkIj4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL2dldHRpbmctc3RhcnRlZC8iIGNsYXNzPSJob21lLWNhcmQiPgogICAgPGgzPvCfmoAgR2V0dGluZyBTdGFydGVkPC9oMz4KICAgIDxwPlNldCB1cCB5b3VyIGFjY291bnQsIGxlYXJuIHRoZSBhY2Nlc3MgVVJMcywgYW5kIHZpZXcgdGhlIHF1aWNrIHN0YXJ0IGd1aWRlLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;OkyBTdHVkZW50IFBhbmVsPC9oMz4KICAgIDxwPkNvbXBsZXRlIHdvcmtmbG93IGZvciBzdHVkZW50cyBmcm9tIGFzc2Vzc21lbnRzIHRvIHVuaXZlcnNpdHkgc2VhcmNoLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9hZHZpc29yLXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RpSBBZHZpc29yIFBhbmVsPC9oMz4KICAgIDxwPk1hbmFnZSBuZXN0ZWQgc3R1ZGVudHMsIGJ1bGsgaW1wb3J0IGdyb3VwcywgYW5kIHRyYWNrIHJlc3BvbnNlcy48L3A&#43;CiAgPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvcGFyZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RqiBQYXJlbnQgUGFuZWw8L2gzPgogICAgPHA&#43;VW5kZXJzdGFuZCB0aGUgcGFyZW50IGRhc2hib2FyZCBhbmQgbGlua2VkIHN0dWRlbnQgdmlzaWJpbGl0eS48L3A&#43;CiAgPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvYWRtaW4tcGFuZWwvIiBjbGFzcz0iaG9tZS1jYXJkIj4KICAgIDxoMz7impnvuI8gQWRtaW4gUGFuZWw8L2gzPgogICAgPHA&#43;U3lzdGVtIGNvbmZpZ3VyYXRpb24sIHByb21wdHMsIHRyYW5zbGF0aW9ucywgYW5kIGdsb2JhbCBnb3Zlcm5hbmNlLjwvcD4KICA8L2E&#43;CjwvZGl2PgoKPGgyIGNsYXNzPSJob21lLXNlY3Rpb24tdGl0bGUiPlBvcHVsYXIgUXVpY2sgTGlua3M8L2gyPgo8ZGl2IGNsYXNzPSJob21lLWxpbmtzIj4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvYXV0aGVudGljYXRpb24vIj5BdXRoZW50aWNhdGlvbjwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvZGFzaGJvYXJkLyI&#43;RGFzaGJvYXJkPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3Mvc3R1ZGVudC1wYW5lbC9hc3Nlc3NtZW50LyI&#43;QXNzZXNzbWVudHM8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsL2FpLW1lbnRvcnNoaXAvIj5BSSBNZW50b3JzaGlwPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3Mvc3R1ZGVudC1wYW5lbC91bml2ZXJzaXR5LXNlYXJjaC8iPlVuaXZlcnNpdHkgU2VhcmNoPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvYWR2aXNvci1wYW5lbC9mb3Jtcy1hbmQtcmVzcG9uc2VzLyI&#43;Rm9ybXMgJiBSZXNwb25zZXM8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9hZHZpc29yLXBhbmVsL3N0dWRlbnRzLWFuZC1idWxrLWltcG9ydC8iPkJ1bGsgSW1wb3J0PC9hPgo8L2Rpdj4K</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CjxkaXYgY2xhc3M9Imhlcm8tc2VjdGlvbiI&#43;CiAgPGgxPklEUGlja2VyIERvY3VtZW50YXRpb248L2gxPgogIDxwPlRoZSBjb21wbGV0ZSBndWlkZSB0byBtYXN0ZXJpbmcgdGhlIElEUGlja2VyIGNhcmVlciBhbmQgdW5pdmVyc2l0eSBndWlkYW5jZSBwbGF0Zm9ybS48L3A&#43;CjwvZGl2PgoKPGRpdiBjbGFzcz0iaG9tZS1ncmlkIj4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL2dldHRpbmctc3RhcnRlZC8iIGNsYXNzPSJob21lLWNhcmQiPgogICAgPGgzPvCfmoAgR2V0dGluZyBTdGFydGVkPC9oMz4KICAgIDxwPlNldCB1cCB5b3VyIGFjY291bnQsIGxlYXJuIHRoZSBhY2Nlc3MgVVJMcywgYW5kIHZpZXcgdGhlIHF1aWNrIHN0YXJ0IGd1aWRlLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;OkyBTdHVkZW50IFBhbmVsPC9oMz4KICAgIDxwPkNvbXBsZXRlIHdvcmtmbG93IGZvciBzdHVkZW50cyBmcm9tIGFzc2Vzc21lbnRzIHRvIHVuaXZlcnNpdHkgc2VhcmNoLjwvcD4KICA8L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9hZHZpc29yLXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RpSBBZHZpc29yIFBhbmVsPC9oMz4KICAgIDxwPk1hbmFnZSBuZXN0ZWQgc3R1ZGVudHMsIGJ1bGsgaW1wb3J0IGdyb3VwcywgYW5kIHRyYWNrIHJlc3BvbnNlcy48L3A&#43;CiAgPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvcGFyZW50LXBhbmVsLyIgY2xhc3M9ImhvbWUtY2FyZCI&#43;CiAgICA8aDM&#43;8J&#43;RqiBQYXJlbnQgUGFuZWw8L2gzPgogICAgPHA&#43;VW5kZXJzdGFuZCB0aGUgcGFyZW50IGRhc2hib2FyZCBhbmQgbGlua2VkIHN0dWRlbnQgdmlzaWJpbGl0eS48L3A&#43;CiAgPC9hPgo8L2Rpdj4KCjxoMiBjbGFzcz0iaG9tZS1zZWN0aW9uLXRpdGxlIj5Qb3B1bGFyIFF1aWNrIExpbmtzPC9oMj4KPGRpdiBjbGFzcz0iaG9tZS1saW5rcyI&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsL2F1dGhlbnRpY2F0aW9uLyI&#43;QXV0aGVudGljYXRpb248L2E&#43;CiAgPGEgaHJlZj0iL2RvY3MtaWRwaWNrZXIvZG9jcy9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC8iPkRhc2hib2FyZDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvYXNzZXNzbWVudC8iPkFzc2Vzc21lbnRzPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3Mvc3R1ZGVudC1wYW5lbC9haS1tZW50b3JzaGlwLyI&#43;QUkgTWVudG9yc2hpcDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL3N0dWRlbnQtcGFuZWwvdW5pdmVyc2l0eS1zZWFyY2gvIj5Vbml2ZXJzaXR5IFNlYXJjaDwvYT4KICA8YSBocmVmPSIvZG9jcy1pZHBpY2tlci9kb2NzL2Fkdmlzb3ItcGFuZWwvZm9ybXMtYW5kLXJlc3BvbnNlcy8iPkZvcm1zICYgUmVzcG9uc2VzPC9hPgogIDxhIGhyZWY9Ii9kb2NzLWlkcGlja2VyL2RvY3MvYWR2aXNvci1wYW5lbC9zdHVkZW50cy1hbmQtYnVsay1pbXBvcnQvIj5CdWxrIEltcG9ydDwvYT4KPC9kaXY&#43;Cg==</script>
 
 <style>
  

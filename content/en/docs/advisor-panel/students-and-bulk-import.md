@@ -24,6 +24,10 @@ When you open the **Students** module from the sidebar, you see your entire auth
 ### Viewing Student Details
 Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.
 
+![Student roster list showing search bar, filter dropdowns, and student rows with name and email columns](/images/user-manual/advisor-panel/students-roster.png)
+
+*Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.*
+
 ---
 
 ## Managing Group Assignments
@@ -58,6 +62,10 @@ If you have a large cohort starting simultaneously, do not add them one by one. 
 - **File Limits:** There is a maximum file size limit (usually a few megabytes).
 - **Duplicates:** If an email already exists in the system, that row will be skipped/flagged.
 - **Group Assignment:** Imported students are *not* automatically placed in a group upon import. You must assign them afterward.
+
+![Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button](/images/user-manual/advisor-panel/students-bulk-import.png)
+
+*Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.*
 
 ---
 

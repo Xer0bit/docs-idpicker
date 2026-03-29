@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>Enrollment, Family Chat, and Assessments | IDPicker Docs</title>
 <meta name="description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/enrollment-family-chat-and-assessments/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Enrollment, Family Chat, and Assessments">
   <meta property="og:description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
@@ -33,12 +33,11 @@
   <meta itemprop="name" content="Enrollment, Family Chat, and Assessments">
   <meta itemprop="description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="389">
+  <meta itemprop="wordCount" content="425">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Enrollment, Family Chat, and Assessments">
   <meta name="twitter:description" content="How to handle incoming requests, chat with parents, and configure custom assessments">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -154,6 +161,8 @@
 <li>Click <strong>Approve</strong> to admit them (which grants them full platform access and adds them to your Students roster).</li>
 <li>Click <strong>Deny</strong> if they do not belong.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons"></p>
+<p><em>Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.</em></p>
 <hr>
 <h2 id="2-using-family-chat">2. Using Family Chat</h2>
 <p>IDPicker recognizes that guidance is a collaborative effort between the advisor, the student, and the parents.</p>
@@ -172,6 +181,8 @@
 <blockquote>
 <p><strong>Tip:</strong> If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/family-chat.png" alt="Family chat interface showing student thread, parent thread, and family thread tabs with message composer at bottom"></p>
+<p><em>Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.</em></p>
 <hr>
 <h2 id="3-custom-assessments">3. Custom Assessments</h2>
 <p>While IDPicker provides built-in psychological and career assessments, your organization may want to issue bespoke quizzes (e.g., a &ldquo;Math Placement Exam&rdquo; or &ldquo;Mid-Year Feedback&rdquo;).</p>
@@ -229,12 +240,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHRocmVlIGRpc3RpbmN0IG9wZXJhdGlvbmFsIGZsb3dzIHRoYXQgYWR2aXNvcnMgaGFuZGxlIGRhaWx5OiBhcHByb3ZpbmcgbmV3IHN0dWRlbnRzLCBtYW5hZ2luZyBtdWx0aWRpcmVjdGlvbmFsIGNoYXRzLCBhbmQgc2V0dGluZyB1cCBvcmdhbml6YXRpb25hbCBhc3Nlc3NtZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgRW5yb2xsbWVudCBSZXF1ZXN0cwoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3MgY29uZmlndXJhdGlvbiwgc3R1ZGVudHMgd2hvIHJlZ2lzdGVyIG1heSBub3Qgam9pbiB5b3VyIHJvc3RlciBhdXRvbWF0aWNhbGx5LiBUaGV5IG1heSBsYW5kIGluIGFuIGFwcHJvdmFsIHF1ZXVlLgoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRW5yb2xsbWVudCBSZXF1ZXN0cyoqLgoyLiBBIGxpc3Qgb2YgcGVuZGluZyBzdHVkZW50IGFjY291bnRzIHdpbGwgYXBwZWFyLgozLiBDbGljayBpbnRvIGEgcmVxdWVzdCB0byByZXZpZXcgdGhlIGluZGl2aWR1YWwncyBwcm9maWxlIHRvIHZlcmlmeSB0aGV5IGJlbG9uZyB0byB5b3VyIG9yZ2FuaXphdGlvbi4KNC4gQ2xpY2sgKipBcHByb3ZlKiogdG8gYWRtaXQgdGhlbSAod2hpY2ggZ3JhbnRzIHRoZW0gZnVsbCBwbGF0Zm9ybSBhY2Nlc3MgYW5kIGFkZHMgdGhlbSB0byB5b3VyIFN0dWRlbnRzIHJvc3RlcikuCjUuIENsaWNrICoqRGVueSoqIGlmIHRoZXkgZG8gbm90IGJlbG9uZy4KCi0tLQoKIyMgMi4gVXNpbmcgRmFtaWx5IENoYXQKCklEUGlja2VyIHJlY29nbml6ZXMgdGhhdCBndWlkYW5jZSBpcyBhIGNvbGxhYm9yYXRpdmUgZWZmb3J0IGJldHdlZW4gdGhlIGFkdmlzb3IsIHRoZSBzdHVkZW50LCBhbmQgdGhlIHBhcmVudHMuIAoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRmFtaWx5IENoYXQqKiAob3IgbmF2aWdhdGUgdG8gdGhlIENoYXQgbW9kdWxlKS4KMi4gWW91IHdpbGwgc2VlIGRpZmZlcmVudCBtZXNzYWdlIHRocmVhZHMgY2F0ZWdvcml6ZWQgYnkgc2NvcGU6CiAgIC0gKipTdHVkZW50IFRocmVhZHM6KiogRGlyZWN0IDEtb24tMSBjaGF0cyB3aXRoIHRoZSBzdHVkZW50LgogICAtICoqUGFyZW50IFRocmVhZHM6KiogRGlyZWN0IGNoYXRzIHdpdGggdGhlIGxpbmtlZCBwYXJlbnQuCiAgIC0gKipGYW1pbHkgVGhyZWFkczoqKiBNdWx0aS1wYXJ0eSB0aHJlYWRzIGludm9sdmluZyBib3RoIHRoZSBzdHVkZW50IGFuZCB0aGUgcGFyZW50KHMpLgozLiBTZWxlY3QgYSB0aHJlYWQsIHR5cGUgeW91ciBtZXNzYWdlIGluIHRoZSBjb21wb3NlciwgYW5kIGhpdCAqKlNlbmQqKi4KNC4gQSByZWQgYmFkZ2Ugd2lsbCBhcHBlYXIgbmV4dCB0byBuYW1lcyB3aGVuIHRoZXkgcmVwbHkuCgo&#43;ICoqVGlwOioqIElmIGEgcGFyZW50IHRocmVhZCBpcyBkaXNhYmxlZCwgaXQgbWVhbnMgdGhlIHN0dWRlbnQgaGFzIG5vdCB5ZXQgYXBwcm92ZWQgYSBwYXJlbnQgbGlua2FnZSByZXF1ZXN0IG9uIHRoZWlyIGVuZC4KCi0tLQoKIyMgMy4gQ3VzdG9tIEFzc2Vzc21lbnRzCgpXaGlsZSBJRFBpY2tlciBwcm92aWRlcyBidWlsdC1pbiBwc3ljaG9sb2dpY2FsIGFuZCBjYXJlZXIgYXNzZXNzbWVudHMsIHlvdXIgb3JnYW5pemF0aW9uIG1heSB3YW50IHRvIGlzc3VlIGJlc3Bva2UgcXVpenplcyAoZS5nLiwgYSAiTWF0aCBQbGFjZW1lbnQgRXhhbSIgb3IgIk1pZC1ZZWFyIEZlZWRiYWNrIikuCgoxLiBJbiB0aGUgc2lkZWJhciwgY2xpY2sgKipBc3Nlc3NtZW50cyoqLgoyLiBDbGljayAqKkNyZWF0ZSBBc3Nlc3NtZW50KiogKG9yIGNsb25lIGFuIGV4aXN0aW5nIHRlbXBsYXRlKS4KMy4gQnVpbGQgeW91ciBxdWVzdGlvbnMgKE11bHRpcGxlIENob2ljZSwgUmF0aW5nIFNjYWxlcywgU2hvcnQgQW5zd2VyKS4KNC4gQ29uZmlndXJlIHRoZSB2aXNpYmlsaXR5IHBhcmFtZXRlcnMgKGUuZy4sIFdoaWNoIGdyb3VwcyBnZXQgdGhpcz8gRG9lcyBpdCBleHBpcmU/KS4KNS4gKipQdWJsaXNoKiogdGhlIGFzc2Vzc21lbnQuIEl0IHdpbGwgaW1tZWRpYXRlbHkgYXBwZWFyIG9uIHRoZSB0YXJnZXRlZCBzdHVkZW50cycgKlNlbGYgQXNzZXNzbWVudCogZGFzaGJvYXJkLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBUaGUgQXBwcm92ZS9EZW55IGJ1dHRvbnMgaW4gRW5yb2xsbWVudCBhcmUgbWlzc2luZyB8IFlvdXIgYWNjb3VudCBtaWdodCBiZSBhIHJlc3RyaWN0ZWQgc3ViLWFkdmlzb3IsIG9yIHRoZSByZXF1ZXN0IGlzIGFscmVhZHkgcHJvY2Vzc2VkLiBDaGVjayB0aGUgIlJlc29sdmVkIiB0YWIgfAp8IEkgc2VudCBhIGZhbWlseSBjaGF0IGJ1dCB0aGUgcGFyZW50IGRpZCBub3QgcmVwbHkgfCBQYXJlbnRzIHJlY2VpdmUgZW1haWwgbm90aWZpY2F0aW9ucyBhYm91dCB1bnJlYWQgbWVzc2FnZXMsIGJ1dCB0aGV5IHN0aWxsIGhhdmUgdG8gbG9nIGluIHRvIHJlYWQgdGhlbS4gTWVudGlvbiBpdCBkdXJpbmcgYSBwaG9uZSBjYWxsIHwKfCBJIG5lZWQgdG8gZml4IGEgdHlwbyBpbiBhIFB1Ymxpc2hlZCBBc3Nlc3NtZW50IHwgT25jZSBhbiBhc3Nlc3NtZW50IHN0YXJ0cyByZWNlaXZpbmcgYW5zd2Vycywgc3RydWN0dXJhbCBlZGl0cyBtYXkgYmUgbG9ja2VkLiBGaXggdHlwb3MgaW1tZWRpYXRlbHkgYmVmb3JlIGRpc3RyaWJ1dGluZywgb3IgZHVwbGljYXRlIHRoZSBhc3Nlc3NtZW50IGFuZCBwYXVzZSB0aGUgb2xkIG9uZSB8Cg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHRocmVlIGRpc3RpbmN0IG9wZXJhdGlvbmFsIGZsb3dzIHRoYXQgYWR2aXNvcnMgaGFuZGxlIGRhaWx5OiBhcHByb3ZpbmcgbmV3IHN0dWRlbnRzLCBtYW5hZ2luZyBtdWx0aWRpcmVjdGlvbmFsIGNoYXRzLCBhbmQgc2V0dGluZyB1cCBvcmdhbml6YXRpb25hbCBhc3Nlc3NtZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgRW5yb2xsbWVudCBSZXF1ZXN0cwoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3MgY29uZmlndXJhdGlvbiwgc3R1ZGVudHMgd2hvIHJlZ2lzdGVyIG1heSBub3Qgam9pbiB5b3VyIHJvc3RlciBhdXRvbWF0aWNhbGx5LiBUaGV5IG1heSBsYW5kIGluIGFuIGFwcHJvdmFsIHF1ZXVlLgoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRW5yb2xsbWVudCBSZXF1ZXN0cyoqLgoyLiBBIGxpc3Qgb2YgcGVuZGluZyBzdHVkZW50IGFjY291bnRzIHdpbGwgYXBwZWFyLgozLiBDbGljayBpbnRvIGEgcmVxdWVzdCB0byByZXZpZXcgdGhlIGluZGl2aWR1YWwncyBwcm9maWxlIHRvIHZlcmlmeSB0aGV5IGJlbG9uZyB0byB5b3VyIG9yZ2FuaXphdGlvbi4KNC4gQ2xpY2sgKipBcHByb3ZlKiogdG8gYWRtaXQgdGhlbSAod2hpY2ggZ3JhbnRzIHRoZW0gZnVsbCBwbGF0Zm9ybSBhY2Nlc3MgYW5kIGFkZHMgdGhlbSB0byB5b3VyIFN0dWRlbnRzIHJvc3RlcikuCjUuIENsaWNrICoqRGVueSoqIGlmIHRoZXkgZG8gbm90IGJlbG9uZy4KCiFbRW5yb2xsbWVudCByZXF1ZXN0cyBsaXN0IHNob3dpbmcgcGVuZGluZyBzdHVkZW50IGNhcmRzIHdpdGggcHJvZmlsZSBwcmV2aWV3LCBhbmQgQXBwcm92ZSBhbmQgRGVueSBidXR0b25zXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvZW5yb2xsbWVudC1yZXF1ZXN0cy5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBlbnJvbGxtZW50IHJlcXVlc3RzIHF1ZXVlIHNob3dpbmcgcGVuZGluZyBzdHVkZW50IGNhcmRzIHdpdGggQXBwcm92ZSBhbmQgRGVueSBidXR0b25zLioKCi0tLQoKIyMgMi4gVXNpbmcgRmFtaWx5IENoYXQKCklEUGlja2VyIHJlY29nbml6ZXMgdGhhdCBndWlkYW5jZSBpcyBhIGNvbGxhYm9yYXRpdmUgZWZmb3J0IGJldHdlZW4gdGhlIGFkdmlzb3IsIHRoZSBzdHVkZW50LCBhbmQgdGhlIHBhcmVudHMuIAoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqRmFtaWx5IENoYXQqKiAob3IgbmF2aWdhdGUgdG8gdGhlIENoYXQgbW9kdWxlKS4KMi4gWW91IHdpbGwgc2VlIGRpZmZlcmVudCBtZXNzYWdlIHRocmVhZHMgY2F0ZWdvcml6ZWQgYnkgc2NvcGU6CiAgIC0gKipTdHVkZW50IFRocmVhZHM6KiogRGlyZWN0IDEtb24tMSBjaGF0cyB3aXRoIHRoZSBzdHVkZW50LgogICAtICoqUGFyZW50IFRocmVhZHM6KiogRGlyZWN0IGNoYXRzIHdpdGggdGhlIGxpbmtlZCBwYXJlbnQuCiAgIC0gKipGYW1pbHkgVGhyZWFkczoqKiBNdWx0aS1wYXJ0eSB0aHJlYWRzIGludm9sdmluZyBib3RoIHRoZSBzdHVkZW50IGFuZCB0aGUgcGFyZW50KHMpLgozLiBTZWxlY3QgYSB0aHJlYWQsIHR5cGUgeW91ciBtZXNzYWdlIGluIHRoZSBjb21wb3NlciwgYW5kIGhpdCAqKlNlbmQqKi4KNC4gQSByZWQgYmFkZ2Ugd2lsbCBhcHBlYXIgbmV4dCB0byBuYW1lcyB3aGVuIHRoZXkgcmVwbHkuCgo&#43;ICoqVGlwOioqIElmIGEgcGFyZW50IHRocmVhZCBpcyBkaXNhYmxlZCwgaXQgbWVhbnMgdGhlIHN0dWRlbnQgaGFzIG5vdCB5ZXQgYXBwcm92ZWQgYSBwYXJlbnQgbGlua2FnZSByZXF1ZXN0IG9uIHRoZWlyIGVuZC4KCiFbRmFtaWx5IGNoYXQgaW50ZXJmYWNlIHNob3dpbmcgc3R1ZGVudCB0aHJlYWQsIHBhcmVudCB0aHJlYWQsIGFuZCBmYW1pbHkgdGhyZWFkIHRhYnMgd2l0aCBtZXNzYWdlIGNvbXBvc2VyIGF0IGJvdHRvbV0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL2ZhbWlseS1jaGF0LnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIGZhbWlseSBjaGF0IHBhbmVsIHNob3dpbmcgdGhlIGRpZmZlcmVudCB0aHJlYWQgdHlwZXMgYW5kIGFuIG9wZW4gY29udmVyc2F0aW9uLioKCi0tLQoKIyMgMy4gQ3VzdG9tIEFzc2Vzc21lbnRzCgpXaGlsZSBJRFBpY2tlciBwcm92aWRlcyBidWlsdC1pbiBwc3ljaG9sb2dpY2FsIGFuZCBjYXJlZXIgYXNzZXNzbWVudHMsIHlvdXIgb3JnYW5pemF0aW9uIG1heSB3YW50IHRvIGlzc3VlIGJlc3Bva2UgcXVpenplcyAoZS5nLiwgYSAiTWF0aCBQbGFjZW1lbnQgRXhhbSIgb3IgIk1pZC1ZZWFyIEZlZWRiYWNrIikuCgoxLiBJbiB0aGUgc2lkZWJhciwgY2xpY2sgKipBc3Nlc3NtZW50cyoqLgoyLiBDbGljayAqKkNyZWF0ZSBBc3Nlc3NtZW50KiogKG9yIGNsb25lIGFuIGV4aXN0aW5nIHRlbXBsYXRlKS4KMy4gQnVpbGQgeW91ciBxdWVzdGlvbnMgKE11bHRpcGxlIENob2ljZSwgUmF0aW5nIFNjYWxlcywgU2hvcnQgQW5zd2VyKS4KNC4gQ29uZmlndXJlIHRoZSB2aXNpYmlsaXR5IHBhcmFtZXRlcnMgKGUuZy4sIFdoaWNoIGdyb3VwcyBnZXQgdGhpcz8gRG9lcyBpdCBleHBpcmU/KS4KNS4gKipQdWJsaXNoKiogdGhlIGFzc2Vzc21lbnQuIEl0IHdpbGwgaW1tZWRpYXRlbHkgYXBwZWFyIG9uIHRoZSB0YXJnZXRlZCBzdHVkZW50cycgKlNlbGYgQXNzZXNzbWVudCogZGFzaGJvYXJkLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBUaGUgQXBwcm92ZS9EZW55IGJ1dHRvbnMgaW4gRW5yb2xsbWVudCBhcmUgbWlzc2luZyB8IFlvdXIgYWNjb3VudCBtaWdodCBiZSBhIHJlc3RyaWN0ZWQgc3ViLWFkdmlzb3IsIG9yIHRoZSByZXF1ZXN0IGlzIGFscmVhZHkgcHJvY2Vzc2VkLiBDaGVjayB0aGUgIlJlc29sdmVkIiB0YWIgfAp8IEkgc2VudCBhIGZhbWlseSBjaGF0IGJ1dCB0aGUgcGFyZW50IGRpZCBub3QgcmVwbHkgfCBQYXJlbnRzIHJlY2VpdmUgZW1haWwgbm90aWZpY2F0aW9ucyBhYm91dCB1bnJlYWQgbWVzc2FnZXMsIGJ1dCB0aGV5IHN0aWxsIGhhdmUgdG8gbG9nIGluIHRvIHJlYWQgdGhlbS4gTWVudGlvbiBpdCBkdXJpbmcgYSBwaG9uZSBjYWxsIHwKfCBJIG5lZWQgdG8gZml4IGEgdHlwbyBpbiBhIFB1Ymxpc2hlZCBBc3Nlc3NtZW50IHwgT25jZSBhbiBhc3Nlc3NtZW50IHN0YXJ0cyByZWNlaXZpbmcgYW5zd2Vycywgc3RydWN0dXJhbCBlZGl0cyBtYXkgYmUgbG9ja2VkLiBGaXggdHlwb3MgaW1tZWRpYXRlbHkgYmVmb3JlIGRpc3RyaWJ1dGluZywgb3IgZHVwbGljYXRlIHRoZSBhc3Nlc3NtZW50IGFuZCBwYXVzZSB0aGUgb2xkIG9uZSB8Cg==</script>
 
 <style>
  

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/index.xml">
-<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/index.json">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,7 +23,7 @@
 
 <title>IDPicker User Manual | IDPicker Docs</title>
 <meta name="description" content="Complete step-by-step guide to use IDPicker">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="IDPicker User Manual">
   <meta property="og:description" content="Complete step-by-step guide to use IDPicker">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="IDPicker User Manual">
   <meta name="twitter:description" content="Complete step-by-step guide to use IDPicker">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -185,7 +192,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>1.1: <a href="#pg-66c93933444d37877051ad38074e8a75">Overview</a></li>
+<li>1.1: <a href="#pg-4b323090a49ad3622bf8484df9507945">Roles and Permissions</a></li>
 
 
     
@@ -193,7 +200,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>1.2: <a href="#pg-90bebb99cbbb9f16d89dcd5249151bda">Quick Start</a></li>
+<li>1.2: <a href="#pg-66c93933444d37877051ad38074e8a75">Overview</a></li>
 
 
     
@@ -201,7 +208,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>1.3: <a href="#pg-324fd544102edea8c62bff65c4ba95d6">Access URLs</a></li>
+<li>1.3: <a href="#pg-90bebb99cbbb9f16d89dcd5249151bda">Quick Start</a></li>
+
+
+    
+  
+    
+    
+	
+<li>1.4: <a href="#pg-324fd544102edea8c62bff65c4ba95d6">Access URLs</a></li>
 
 
     
@@ -300,7 +315,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2.10: <a href="#pg-ff52b84a8dc6fed7b57cdf8fac640307">Subscription</a></li>
+<li>2.10: <a href="#pg-4eb22d703460ad0fa1f00b8c951a33bf">Notifications</a></li>
 
 
     
@@ -308,7 +323,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2.11: <a href="#pg-847ffb300422d1e360c64d538a9a20a5">Account and Settings</a></li>
+<li>2.11: <a href="#pg-ff52b84a8dc6fed7b57cdf8fac640307">Subscription</a></li>
 
 
     
@@ -316,7 +331,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2.12: <a href="#pg-1ba11b1cbbe8b69c70ff36bd70acd221">Language</a></li>
+<li>2.12: <a href="#pg-847ffb300422d1e360c64d538a9a20a5">Account and Settings</a></li>
 
 
     
@@ -324,7 +339,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2.13: <a href="#pg-f0266080fa0bf72694f75d6bc2dd0a9e">Certificates and Application Documents</a></li>
+<li>2.13: <a href="#pg-1ba11b1cbbe8b69c70ff36bd70acd221">Language</a></li>
 
 
     
@@ -332,7 +347,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>2.14: <a href="#pg-7ab95ee925fb5f7be5b072fd4e1387d1">Assigned Forms</a></li>
+<li>2.14: <a href="#pg-f0266080fa0bf72694f75d6bc2dd0a9e">Certificates and Application Documents</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2.15: <a href="#pg-7ab95ee925fb5f7be5b072fd4e1387d1">Assigned Forms</a></li>
 
 
     
@@ -659,6 +682,14 @@ This is the multi-page printable view of this section.
 
     
   
+    
+    
+	
+<li>8.2: <a href="#pg-dbab37f93e145eb07dbd2362106ccd61">Glossary</a></li>
+
+
+    
+  
 
     </ul>
     
@@ -774,28 +805,378 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="">
     
-	<h1 id="pg-66c93933444d37877051ad38074e8a75">1.1 - Overview</h1>
-    <div class="lead">What IDPicker does and how users move through the platform</div>
-	<p>IDPicker helps students evaluate strengths, explore academic and career options, and get guided recommendations.</p>
-<h2 id="primary-user-roles">Primary User Roles</h2>
+	<h1 id="pg-4b323090a49ad3622bf8484df9507945">1.1 - Roles and Permissions</h1>
+    <div class="lead">A side-by-side comparison of what each user role can access and do on the IDPicker platform</div>
+	<p>IDPicker has five distinct user roles, each with a specific set of capabilities. Understanding what each role can and cannot do helps you set up accounts correctly and avoid confusion about access rights.</p>
+<hr>
+<h2 id="1-the-five-roles-at-a-glance">1. The Five Roles at a Glance</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>Who holds it</th>
+          <th>Primary purpose</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Super Admin</strong></td>
+          <td>Platform owner / IT operations staff</td>
+          <td>Full control of technical settings, all organisations, global content, and billing</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor</strong></td>
+          <td>Head counselor or primary school contact</td>
+          <td>Manages their student roster, runs forms, distributes resources, chats with families</td>
+      </tr>
+      <tr>
+          <td><strong>Sub-Advisor</strong></td>
+          <td>Assistant counselor or specialist staff</td>
+          <td>Operates within a restricted subset of the Advisor&rsquo;s permissions and student scope</td>
+      </tr>
+      <tr>
+          <td><strong>Student</strong></td>
+          <td>The young person using the platform</td>
+          <td>Completes assessments, explores recommendations, chats with their advisor and AI mentor</td>
+      </tr>
+      <tr>
+          <td><strong>Parent / Guardian</strong></td>
+          <td>Parent or legal guardian of a student</td>
+          <td>Monitors a linked child&rsquo;s progress and communicates with the advisor</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="2-permission-comparison-table">2. Permission Comparison Table</h2>
+<h3 id="students-and-core-assessment">Students and Core Assessment</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Take self-assessments</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>View own assessment results</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>Read-only view</td>
+      </tr>
+      <tr>
+          <td>View any student&rsquo;s results</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>Scoped only</td>
+          <td>—</td>
+          <td>Own child only</td>
+      </tr>
+      <tr>
+          <td>Edit another user&rsquo;s answers</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="forms-and-documents">Forms and Documents</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Create global forms</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Create organisation forms</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Submit a form response</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>View form responses</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>Own only</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Upload application documents</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Review / verify documents</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="communication">Communication</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Send notifications to all students</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Send notifications to own cohort</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Chat with their advisor</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+      <tr>
+          <td>Chat with a student&rsquo;s parent</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Join a family group chat</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="user-and-organisation-management">User and Organisation Management</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Create organisations</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Invite advisors</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Invite sub-advisors</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Import students in bulk</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Link a parent to a student</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>Request only</td>
+      </tr>
+      <tr>
+          <td>Delete any account</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ai-and-content">AI and Content</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Super Admin</th>
+          <th>Advisor</th>
+          <th>Sub-Advisor</th>
+          <th>Student</th>
+          <th>Parent</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Edit global AI system prompts</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Edit organisation-level prompts</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Use AI mentor chat</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Issue certificates</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>If permitted</td>
+          <td>—</td>
+          <td>—</td>
+      </tr>
+      <tr>
+          <td>Generate a Journey Map PDF</td>
+          <td>✅</td>
+          <td>—</td>
+          <td>—</td>
+          <td>✅</td>
+          <td>✅</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="3-how-sub-advisor-permissions-work">3. How Sub-Advisor Permissions Work</h2>
+<p>Sub-Advisors do not have a fixed permission set. Their access is configured entirely by their primary Advisor using the <strong>Permission Matrix</strong>.</p>
 <ul>
-<li>Student</li>
-<li>Advisor</li>
-<li>Parent</li>
+<li>An Advisor can grant a Sub-Advisor access to <em>any combination</em> of modules they themselves hold.</li>
+<li>An Advisor <strong>cannot</strong> grant a Sub-Advisor more rights than the Advisor has.</li>
+<li>Sub-Advisors can also be scoped to a specific student group — for example, only the students in &ldquo;Class of 2026&rdquo; — so they cannot see any other students even within the same organisation.</li>
 </ul>
-<h2 id="panel-entry-points">Panel Entry Points</h2>
+<blockquote>
+<p><strong>Example:</strong> An Advisor might create a Sub-Advisor account for an office assistant, giving them access only to <em>Forms</em> and <em>Notifications</em> but no access to <em>Students</em>, <em>Groups</em>, or <em>Support Tickets</em>.</p>
+</blockquote>
+<hr>
+<h2 id="4-how-parent-access-works">4. How Parent Access Works</h2>
+<p>Parents have a deliberately limited view to protect student privacy:</p>
 <ul>
-<li>Student Panel: main user learning and recommendation workspace</li>
-<li>Advisor Panel: supervision, student support, and sub-advisor administration</li>
-<li>Parent Panel: visibility for linked students</li>
+<li>A parent can only see data for students they are explicitly linked to.</li>
+<li>The student controls the link — they must approve a parent&rsquo;s request from their own dashboard.</li>
+<li>Parents can view progress, recommendations, and Journey Maps, but they cannot edit anything.</li>
+<li>In schools where Parent Chat is enabled, parents can message the advisor through a secure thread that is separate from the student-advisor channel.</li>
 </ul>
-<h2 id="student-account-types">Student Account Types</h2>
-<ul>
-<li>Linked Student: account linked to parent visibility model</li>
-<li>Individual Student: independent account with direct access only</li>
-</ul>
-<p><img src="/images/user-manual/getting-started/platform-entry-points.png" alt="Platform Entry Points Placeholder"></p>
-<p>Image placeholder: Add screenshot or diagram showing where each role signs in.</p>
+<p><img src="/images/user-manual/getting-started/roles-diagram.png" alt="Diagram showing the relationship between Admin, Advisor, Sub-Advisor, Student, and Parent roles with arrows indicating who can see or manage whom"></p>
+<p><em>Image placeholder: Add a diagram showing the five roles and the directional relationships between them \u2014 e.g., Admin oversees all, Advisor manages Sub-Advisor and Students, Parent links to Student.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A sub-advisor says they cannot see a specific student</td>
+          <td>Check their Assigned Scope in Sub-Advisor Management — they may only be scoped to certain groups, and the student is in a different group</td>
+      </tr>
+      <tr>
+          <td>A parent can see their child but cannot chat with the advisor</td>
+          <td>Family Chat must be enabled by the Advisor. The advisor can open the Chat module and confirm the parent thread is active</td>
+      </tr>
+      <tr>
+          <td>I need to give an advisor admin-level access to one feature only</td>
+          <td>Use the Sub-Admin (Admin-level) permission matrix rather than making them a full Super Admin</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -811,38 +1192,147 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-90bebb99cbbb9f16d89dcd5249151bda">1.2 - Quick Start</h1>
-    <div class="lead">Complete first-run flow from login to first recommended action</div>
-	<h2 id="step-1-open-the-login-page">Step 1: Open the Login Page</h2>
-<p>Use the correct login URL for your environment.</p>
-<p><img src="/images/user-manual/getting-started/login-page.png" alt="Login URL Page Placeholder"></p>
-<p>Image placeholder: Add screenshot of login page with visible URL in browser bar.</p>
-<h2 id="step-2-sign-in">Step 2: Sign In</h2>
+	<h1 id="pg-66c93933444d37877051ad38074e8a75">1.2 - Overview</h1>
+    <div class="lead">What IDPicker is, who uses it, and how each role fits together</div>
+	<p>IDPicker is a career and university guidance platform that helps students discover their strengths, explore academic pathways, and receive AI-powered recommendations — all within a supervised ecosystem connecting students, advisors, and parents.</p>
+<hr>
+<h2 id="1-what-idpicker-does">1. What IDPicker Does</h2>
+<p>IDPicker guides students through a structured self-discovery and decision-making journey using three core engines:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Engine</th>
+          <th>What it does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Psychometric Assessments</strong></td>
+          <td>Measures personality traits, aptitudes, and interests using validated questionnaires</td>
+      </tr>
+      <tr>
+          <td><strong>AI Recommendations</strong></td>
+          <td>Matches universities and career programmes to each student&rsquo;s unique profile</td>
+      </tr>
+      <tr>
+          <td><strong>AI Mentorship</strong></td>
+          <td>Provides on-demand guidance conversations powered by the student&rsquo;s own assessment data</td>
+      </tr>
+  </tbody>
+</table>
+<p>The platform is used by individual students, school-based advisors managing hundreds of students, parents tracking their child&rsquo;s progress, and organizational super-admins governing the entire deployment.</p>
+<p><img src="/images/user-manual/getting-started/platform-overview.png" alt="IDPicker platform workflow overview — from assessment to recommendation"></p>
+<p><em>Image placeholder: Add a simple workflow diagram showing the student journey: Register → Assessment → Personality → Recommendations → AI Mentor.</em></p>
+<hr>
+<h2 id="2-the-five-user-roles">2. The Five User Roles</h2>
+<p>Every account on IDPicker belongs to exactly one role. Each role has its own login panel and access scope.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>Who they are</th>
+          <th>What they can do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Student</strong></td>
+          <td>The primary end-user</td>
+          <td>Take assessments, view personality profile, get recommendations, use AI mentor, upload documents</td>
+      </tr>
+      <tr>
+          <td><strong>Advisor</strong></td>
+          <td>Teacher, counselor, or guidance staff</td>
+          <td>Manage student rosters, assign forms, issue certificates, run family chats, configure sub-advisors</td>
+      </tr>
+      <tr>
+          <td><strong>Sub-Advisor</strong></td>
+          <td>Assistant to a primary advisor</td>
+          <td>A scoped-down advisor with access only to the students and modules the primary advisor grants</td>
+      </tr>
+      <tr>
+          <td><strong>Parent / Guardian</strong></td>
+          <td>A student&rsquo;s family member</td>
+          <td>View linked child&rsquo;s progress, chat with advisor, download Journey Map</td>
+      </tr>
+      <tr>
+          <td><strong>Admin</strong></td>
+          <td>Platform operator or school IT lead</td>
+          <td>Configure organizations, manage global assessments and AI prompts, monitor usage and system health</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> A person can only hold one role per account. If a teacher is also a parent, they need two separate accounts registered with different email addresses.</p>
+</blockquote>
+<hr>
+<h2 id="3-the-student-journey">3. The Student Journey</h2>
+<p>The typical student experience follows this sequence:</p>
 <ol>
-<li>Enter email/username.</li>
-<li>Enter password.</li>
-<li>Click Sign In.</li>
+<li><strong>Register</strong> — Create an account or accept an advisor&rsquo;s invitation link.</li>
+<li><strong>Complete Assessment</strong> — Answer the psychometric questionnaire (usually 15–30 minutes).</li>
+<li><strong>Review Personality</strong> — Explore the radar chart and trait cards generated from the assessment.</li>
+<li><strong>Get Recommendations</strong> — Refine the AI shortlist using exam scores or personality mode.</li>
+<li><strong>Chat with AI Mentor</strong> — Ask the persona-based mentor questions about career paths and university choices.</li>
+<li><strong>Search Universities</strong> — Browse and filter the university database directly.</li>
+<li><strong>Upload Documents</strong> — Submit required application documents through the secure document tracker.</li>
+<li><strong>Download Report</strong> — Export a full recommendations or personality PDF for external use.</li>
 </ol>
-<p>For OAuth login, click the provider button (for example Google) if enabled.</p>
-<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign In Form Placeholder"></p>
-<p>Image placeholder: Add screenshot of filled sign-in form (mask sensitive data).</p>
-<h2 id="step-3-create-first-item">Step 3: Create First Item</h2>
-<p>After login, open Dashboard and start the first guided workflow:</p>
-<ol>
-<li>Open AI Mentor, or</li>
-<li>Start Assessment.</li>
-</ol>
-<p><img src="/images/user-manual/getting-started/first-action.png" alt="First Action Placeholder"></p>
-<p>Image placeholder: Add screenshot of the first action card highlighted on dashboard.</p>
-<h2 id="step-4-verify-result">Step 4: Verify Result</h2>
-<p>Confirm success by checking:</p>
-<ol>
-<li>Dashboard loads without errors.</li>
-<li>Profile information is accessible.</li>
-<li>At least one feature interaction is recorded.</li>
-</ol>
-<p><img src="/images/user-manual/getting-started/setup-complete.png" alt="Setup Complete Placeholder"></p>
-<p>Image placeholder: Add screenshot confirming first successful interaction.</p>
+<hr>
+<h2 id="4-how-advisors-students-and-parents-connect">4. How Advisors, Students, and Parents Connect</h2>
+<p>IDPicker is designed as a <strong>supervised platform</strong>. Relationships between roles are explicit and governed:</p>
+<ul>
+<li><strong>Advisor → Student:</strong> An advisor invites students by email, or students register under the advisor&rsquo;s organization link. The advisor can see all assigned students&rsquo; progress.</li>
+<li><strong>Student → Parent:</strong> The student approves or denies a parent link request. No parent can access a student&rsquo;s data without the student&rsquo;s consent.</li>
+<li><strong>Advisor → Sub-Advisor:</strong> The primary advisor creates sub-advisor accounts, assigns specific student groups to them, and controls which modules they can access.</li>
+<li><strong>Admin → All:</strong> Platform admins have global visibility across all organizations for support and governance.</li>
+</ul>
+<p><img src="/images/user-manual/getting-started/role-relationships.png" alt="Diagram showing the relationship between advisor, student, and parent accounts"></p>
+<p><em>Image placeholder: Add a simple diagram showing how advisor, student, and parent accounts link together with arrows indicating who initiates each connection.</em></p>
+<hr>
+<h2 id="5-two-types-of-student-accounts">5. Two Types of Student Accounts</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>How it works</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Organization Student</strong></td>
+          <td>Registered under a school or agency. The advisor manages their account and progress is visible to the organization.</td>
+      </tr>
+      <tr>
+          <td><strong>Independent Student</strong></td>
+          <td>Registered directly (not through an organization). No advisor oversight. Subscription-based features apply directly.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I am not sure which panel to use</td>
+          <td>Your invitation email or onboarding link will take you directly to the correct panel for your role</td>
+      </tr>
+      <tr>
+          <td>I forgot my login URL</td>
+          <td>See the <a href="/docs/getting-started/access-urls/">Access URLs</a> page for all environment-specific login addresses</td>
+      </tr>
+      <tr>
+          <td>I need to act as both advisor and parent</td>
+          <td>Register two separate accounts with different email addresses — one for each role</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -858,7 +1348,164 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-324fd544102edea8c62bff65c4ba95d6">1.3 - Access URLs</h1>
+	<h1 id="pg-90bebb99cbbb9f16d89dcd5249151bda">1.3 - Quick Start</h1>
+    <div class="lead">Complete first-run walkthrough from opening IDPicker to getting your first recommendations</div>
+	<p>This guide is for brand-new users — students, advisors, and parents — who want to get from zero to their first meaningful action in under 15 minutes. Follow the section that matches your role.</p>
+<hr>
+<h2 id="1-opening-the-right-login-page">1. Opening the Right Login Page</h2>
+<p>IDPicker has separate login portals for each role. Before anything else, make sure you are on the correct URL.</p>
+<ol>
+<li>Open your browser and navigate to the login address provided by your school, organization, or invitation email.</li>
+<li>Confirm the page title matches your role (e.g., <em>Student Login</em>, <em>Advisor Login</em>).</li>
+<li>If you are unsure of the correct URL, see the <a href="/docs/getting-started/access-urls/">Access URLs</a> page.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/login-page.png" alt="Student login page URL in browser bar and the sign-in form"></p>
+<p><em>Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.</em></p>
+<hr>
+<h2 id="2-signing-in-or-creating-your-account">2. Signing In or Creating Your Account</h2>
+<h3 id="if-you-already-have-an-account">If you already have an account</h3>
+<ol>
+<li>Enter your registered <strong>Email</strong> and <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>If your organization supports it, click <strong>Continue with Google</strong> instead for one-click access.</li>
+</ol>
+<h3 id="if-you-are-a-new-student-registering-yourself">If you are a new student registering yourself</h3>
+<ol>
+<li>Click <strong>Sign Up</strong> on the login page.</li>
+<li>Complete the multi-step wizard: name, email, password, interests, and profile.</li>
+<li>Check your inbox for the <strong>verification email</strong> and click the link inside.</li>
+<li>Return to the login page and sign in.</li>
+</ol>
+<h3 id="if-you-received-an-invitation-link">If you received an invitation link</h3>
+<ol>
+<li>Open the invitation email from IDPicker.</li>
+<li>Click the <strong>Setup Password</strong> button or link.</li>
+<li>Set a strong password and confirm it.</li>
+<li>You are automatically signed in and placed in the correct panel.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign-in form with email/password fields and Continue with Google button"></p>
+<p><em>Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.</em></p>
+<hr>
+<h2 id="3-student-first-run-assessment--personality--recommendations">3. Student First Run: Assessment → Personality → Recommendations</h2>
+<h3 id="step-1--complete-your-assessment">Step 1 — Complete your assessment</h3>
+<ol>
+<li>After signing in, you land on the <strong>Student Dashboard</strong>.</li>
+<li>Find the <strong>Self Assessment</strong> card or click <strong>Self Assessment</strong> in the sidebar.</li>
+<li>Click <strong>Start</strong> on the available assessment.</li>
+<li>Answer every question honestly — there are no wrong answers.</li>
+<li>Click <strong>Submit</strong> when you finish.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> The assessment takes 15–30 minutes. Find a quiet moment to complete it — your first instinct answers are always the most accurate.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/student-first-assessment.png" alt="Student dashboard with the Self Assessment card highlighted and a Start button"></p>
+<p><em>Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.</em></p>
+<h3 id="step-2--explore-your-personality-profile">Step 2 — Explore your Personality profile</h3>
+<ol>
+<li>After submission, click <strong>Personality</strong> in the sidebar.</li>
+<li>Review the <strong>radar chart</strong> showing your 8 personality traits.</li>
+<li>Read the <strong>Personality Overview</strong> card and <strong>Quick Stats</strong> panel.</li>
+<li>Scroll down to explore individual trait cards with action steps.</li>
+</ol>
+<h3 id="step-3--get-your-first-recommendations">Step 3 — Get your first Recommendations</h3>
+<ol>
+<li>Click <strong>Recommendations</strong> in the sidebar.</li>
+<li>Click <strong>Refine Results</strong> to open the refinement panel.</li>
+<li>Choose your input mode:
+<ul>
+<li>Select <strong>Test Scores</strong> if you have exam results to enter.</li>
+<li>Select <strong>Personality</strong> to use your trait profile directly.</li>
+</ul>
+</li>
+<li>Fill in your data and click <strong>Apply All Filters</strong>.</li>
+<li>Review the ranked list of universities and programmes that match your profile.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/student-first-recommendations.png" alt="Recommendations page showing ranked university cards after applying filters"></p>
+<p><em>Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.</em></p>
+<hr>
+<h2 id="4-advisor-first-run-dashboard--student-roster--first-notification">4. Advisor First Run: Dashboard → Student Roster → First Notification</h2>
+<h3 id="step-1--review-your-dashboard">Step 1 — Review your dashboard</h3>
+<ol>
+<li>Sign in to the Advisor Panel.</li>
+<li>Look at the <strong>KPI widgets</strong> at the top — total students, pending forms, and recent activity.</li>
+<li>Check the <strong>Assigned Forms</strong> block for any forms requiring attention.</li>
+</ol>
+<h3 id="step-2--view-your-student-roster">Step 2 — View your student roster</h3>
+<ol>
+<li>Click <strong>Students</strong> in the sidebar.</li>
+<li>Browse your roster — each row shows a student&rsquo;s name, email, and latest activity signal.</li>
+<li>Click any student to open their full profile.</li>
+</ol>
+<h3 id="step-3--send-your-first-notification">Step 3 — Send your first notification</h3>
+<ol>
+<li>Click <strong>Notifications</strong> in the sidebar.</li>
+<li>Click <strong>Create Notification</strong>.</li>
+<li>Write a welcome message and set the target to <strong>All Students</strong>.</li>
+<li>Click <strong>Send</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/advisor-first-run.png" alt="Advisor dashboard with KPI widgets and sidebar navigation highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.</em></p>
+<hr>
+<h2 id="5-parent-first-run-link-your-child--view-their-progress">5. Parent First Run: Link Your Child → View Their Progress</h2>
+<h3 id="step-1--link-your-childs-account">Step 1 — Link your child&rsquo;s account</h3>
+<ol>
+<li>Sign in to the Parent Panel.</li>
+<li>On the dashboard, find the <strong>Link Student</strong> form.</li>
+<li>Enter the exact email address your child used to register.</li>
+<li>Click <strong>Send Link Request</strong>.</li>
+<li>Wait for your child to approve the request from their student dashboard.</li>
+</ol>
+<h3 id="step-2--open-their-profile">Step 2 — Open their profile</h3>
+<ol>
+<li>Once linked, their card appears on your dashboard.</li>
+<li>Click <strong>View Student</strong> to open their full detail page.</li>
+<li>Review their assessment progress, recommendations summary, and advisor activity.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/parent-first-run.png" alt="Parent dashboard showing a linked student card with View Student button"></p>
+<p><em>Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I signed in but landed on the wrong panel</td>
+          <td>Log out and use the correct login URL for your role — see <a href="/docs/getting-started/access-urls/">Access URLs</a></td>
+      </tr>
+      <tr>
+          <td>I clicked Start on the assessment but the page is blank</td>
+          <td>Refresh the page. If it persists, try a different browser (Chrome or Firefox recommended)</td>
+      </tr>
+      <tr>
+          <td>My child never received my link request</td>
+          <td>Ask them to log in to their student dashboard and look for a notification about a pending parent link approval</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-324fd544102edea8c62bff65c4ba95d6">1.4 - Access URLs</h1>
     <div class="lead">Exact URLs for login and panel access</div>
 	<p>Use this page as the single source of truth for platform URLs.</p>
 <h2 id="production-urls">Production URLs</h2>
@@ -1058,6 +1705,7 @@ This is the multi-page printable view of this section.
 <li>If you have forgotten your password, use <a href="#forgot-password">Forgot Password</a>.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-login.png" alt="Student login page showing email and password fields with Sign In button"></p>
+<p><em>Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.</em></p>
 <hr>
 <h2 id="sign-in-with-google">Sign In with Google</h2>
 <p>Faster sign-in without a separate password.</p>
@@ -1074,6 +1722,7 @@ This is the multi-page printable view of this section.
 <li>Make sure you are not using a private/incognito window with strict tracking prevention.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-google-signin.png" alt="Continue with Google button and Google account picker dialog"></p>
+<p><em>Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.</em></p>
 <hr>
 <h2 id="register-a-new-account">Register a New Account</h2>
 <p>New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.</p>
@@ -1101,6 +1750,7 @@ This is the multi-page printable view of this section.
 <li>Weak password → make sure it meets all strength requirements shown on screen.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-register.png" alt="Multi-step registration wizard showing name, email, password, interests, and profile fields"></p>
+<p><em>Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.</em></p>
 <hr>
 <h2 id="verify-your-email">Verify Your Email</h2>
 <p>After registration, IDPicker sends a verification email.</p>
@@ -1118,6 +1768,7 @@ This is the multi-page printable view of this section.
 <li>Open the new email and click the fresh link.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/authentication-verify-email.png" alt="Email verification page confirming the link was clicked successfully"></p>
+<p><em>Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.</em></p>
 <hr>
 <h2 id="forgot-password">Forgot Password</h2>
 <p>Use this if you cannot remember your current password.</p>
@@ -1128,6 +1779,7 @@ This is the multi-page printable view of this section.
 <li>Check your inbox and spam folder for the reset email.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/authentication-forgot-password.png" alt="Forgot password form with registered email input and Send Reset Link button"></p>
+<p><em>Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.</em></p>
 <hr>
 <h2 id="reset-password-from-the-email-link">Reset Password From the Email Link</h2>
 <p>After requesting a reset, you will receive a link by email.</p>
@@ -1145,6 +1797,7 @@ This is the multi-page printable view of this section.
 <li>Request a new reset link from the <a href="#forgot-password">Forgot Password</a> step above.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-reset-password.png" alt="Reset password form with new password field, confirm password field, and strength indicator"></p>
+<p><em>Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1236,6 +1889,7 @@ This is the multi-page printable view of this section.
   </tbody>
 </table>
 <p><img src="/images/user-manual/student-panel/dashboard-overview.png" alt="Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards"></p>
+<p><em>Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.</em></p>
 <hr>
 <h2 id="your-first-5-actions-after-logging-in">Your First 5 Actions After Logging In</h2>
 <p>Follow this sequence whenever you start a new session for maximum efficiency:</p>
@@ -1272,6 +1926,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/dashboard-assigned-forms.png" alt="Assigned Forms block with a pending form card and Open button highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.</em></p>
 <hr>
 <h2 id="handling-organization-invitations">Handling Organization Invitations</h2>
 <ol>
@@ -1281,6 +1936,7 @@ This is the multi-page printable view of this section.
 <li>Your decision is saved immediately.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/dashboard-invitations.png" alt="Organization invitation card showing organization name with Accept and Decline buttons"></p>
+<p><em>Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.</em></p>
 <hr>
 <h2 id="reading-notifications">Reading Notifications</h2>
 <ol>
@@ -1299,6 +1955,7 @@ This is the multi-page printable view of this section.
 <li>Complete all remaining questions and click <strong>Submit</strong>.
 <img src="/images/user-manual/student-panel/dashboard-resume-assessment.png" alt="Dashboard showing Resume Assessment prompt card with Continue button"></li>
 </ol>
+<p><em>Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.</em></p>
 <hr>
 <h2 id="exploring-program-cards">Exploring Program Cards</h2>
 <ul>
@@ -1370,6 +2027,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/assessment-card-list.png" alt="Assessment card list showing available assessments with Start button"></p>
+<p><em>Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.</em></p>
 <hr>
 <h2 id="resuming-an-incomplete-assessment">Resuming an Incomplete Assessment</h2>
 <p>Life happens. If you close your browser or navigate away, your progress is safely auto-saved.</p>
@@ -1381,6 +2039,7 @@ This is the multi-page printable view of this section.
 <li>Complete the remaining questions and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-resume.png" alt="Assessment card showing Continue button for a session that was left incomplete"></p>
+<p><em>Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.</em></p>
 <hr>
 <h2 id="retaking-an-assessment">Retaking an Assessment</h2>
 <p>Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:</p>
@@ -1391,6 +2050,7 @@ This is the multi-page printable view of this section.
 <li>Complete the new run and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-retake-confirm.png" alt="Retake confirmation dialog warning that previous results will be overwritten"></p>
+<p><em>Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.</em></p>
 <hr>
 <h2 id="reviewing-your-results">Reviewing Your Results</h2>
 <p>Once you submit an assessment, the platform instantly generates your results.</p>
@@ -1400,6 +2060,7 @@ This is the multi-page printable view of this section.
 <li>Armed with this new data, head over to the <strong>Recommendations</strong> or <strong>Personality</strong> modules to see what the AI has unlocked for you!</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-results.png" alt="Assessment results summary showing trait scores and breakdown after submission"></p>
+<p><em>Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.</em></p>
 <hr>
 <h2 id="important-note-on-languages">Important Note on Languages</h2>
 <p>If you change your interface language (e.g., from English to Turkish) <em>while</em> an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!</p>
@@ -1457,6 +2118,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-overview.png" alt="Recommendations summary banner showing found count, pass counter, and ranked university cards below"></p>
+<p><em>Image placeholder: Add screenshot of the Recommendations page — show the summary banner with found count and pass counter, and at least 2 university cards ranked below it.</em></p>
 <hr>
 <h2 id="2-choosing-a-recommendation-input-mode">2. Choosing a Recommendation Input Mode</h2>
 <p>Before the AI refines your results, you must tell it what data to prioritise. Click <strong>Refine Results</strong> (top-right button) to open the refinement panel, then select one of the two <strong>Recommendation input</strong> modes:</p>
@@ -1483,6 +2145,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>Click the tile for the mode you want — the selected tile gets a highlighted border.</p>
 <p><img src="/images/user-manual/student-panel/recommendations-input-mode.png" alt="Recommendation input section showing Test Scores tile and Personality tile with selection highlight"></p>
+<p><em>Image placeholder: Add screenshot of the refinement panel showing both input mode tiles (Test Scores and Personality) with one selected and highlighted.</em></p>
 <hr>
 <h2 id="3-refining-with-test-scores-exam-based-mode">3. Refining With Test Scores (Exam-Based Mode)</h2>
 <p>This mode lets you enter the entrance exams you have actually sat, together with your score and ranking. Universities use these figures as admission criteria, so providing them produces the most accurate shortlist.</p>
@@ -1505,6 +2168,7 @@ This is the multi-page printable view of this section.
 <li>Click the <strong>Ranking (optional)</strong> field and enter your rank if known (e.g. <em>Top 5%</em> or <em>15000th</em>).</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/recommendations-exam-slot.png" alt="Exam score palette showing exam name, score, and ranking input fields for the first exam slot"></p>
+<p><em>Image placeholder: Add screenshot of the exam score palette with the first slot’s Exam name, Score, and Ranking (optional) fields visible and empty.</em></p>
 <h3 id="3c-adding-a-second-or-third-exam">3c. Adding a Second or Third Exam</h3>
 <ol>
 <li>Click the <strong>+</strong> button on the right side of the palette row counter.</li>
@@ -1547,6 +2211,7 @@ This is the multi-page printable view of this section.
 <li><strong>YKS – DİL</strong> (Language) — used for foreign language degree programmes</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/recommendations-yks-example.png" alt="Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example"></p>
+<p><em>Image placeholder: Add screenshot of the score palette with YKS–SAY entered as exam name, a numeric score, and a ranking value filled in as a demonstrative example.</em></p>
 <h3 id="3e-applying-your-scores">3e. Applying Your Scores</h3>
 <ol>
 <li>After filling in all your exam rows, click <strong>Apply All Filters</strong> (bottom-right of the refinement panel).</li>
@@ -1555,6 +2220,7 @@ This is the multi-page printable view of this section.
 <li>Your ranked list updates to reflect universities whose admission criteria your scores meet.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/recommendations-apply-filters.png" alt="Apply All Filters button highlighted at the bottom of the refinement panel"></p>
+<p><em>Image placeholder: Add screenshot of the Apply All Filters button at the bottom of the refinement panel, highlighted or in focus.</em></p>
 <hr>
 <h2 id="4-refining-with-personality-trait-based-mode">4. Refining With Personality (Trait-Based Mode)</h2>
 <p>If you have completed the Personality assessment on IDPicker, you can let the AI use your psychological trait scores instead of exam data.</p>
@@ -1568,6 +2234,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to <a href="/docs/student-panel/assessment/">Assessment</a> first.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-personality-mode.png" alt="Personality tile selected in the recommendation input section with no additional input fields visible"></p>
+<p><em>Image placeholder: Add screenshot of the refinement panel with the Personality tile selected — no exam input fields should be visible.</em></p>
 <hr>
 <h2 id="5-filtering-by-country">5. Filtering by Country</h2>
 <p>The <strong>Refine by Country</strong> dropdown narrows results to universities located in a specific country before the AI applies its ranking logic.</p>
@@ -1581,6 +2248,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> Combine country filtering with an exam mode for the tightest shortlist. For example, selecting <em>Turkey</em> + entering YKS–SAY scores surfaces only Turkish universities that accept your specific score range.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-country-filter.png" alt="Country dropdown open with a country selected in the Refine by section of the recommendations panel"></p>
+<p><em>Image placeholder: Add screenshot of the country dropdown open with a country selected inside the Refine by section.</em></p>
 <hr>
 <h2 id="6-filtering-by-city">6. Filtering by City</h2>
 <p>After country-level filtering, you can drill down further by city using the <strong>Filter by city</strong> control that appears above the results list.</p>
@@ -1593,6 +2261,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> City-level filtering is applied independently of the refinement panel. You do not need to click <strong>Apply All Filters</strong> again — city changes take effect immediately.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-city-filter.png" alt="Filter by city dropdown showing All cities default and a city selection in context of the results list"></p>
+<p><em>Image placeholder: Add screenshot of the Filter by city row above the results — show the dropdown open with All cities default and one city option highlighted.</em></p>
 <hr>
 <h2 id="7-reading-the-recommendation-cards">7. Reading the Recommendation Cards</h2>
 <p>Each university card in your results list displays key admission and programme information at a glance:</p>
@@ -1624,6 +2293,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>Click the university name to open its full detail page showing all programmes, requirements, and the AI&rsquo;s reasoning for the match.</p>
 <p><img src="/images/user-manual/student-panel/recommendations-card-detail.png" alt="University recommendation card showing name, city, Premium badge, and programme detail summary"></p>
+<p><em>Image placeholder: Add screenshot of a recommendation card showing university name, city, Premium badge, and programme detail summary (mask any real student data).</em></p>
 <hr>
 <h2 id="8-downloading-your-full-report">8. Downloading Your Full Report</h2>
 <p>If your account plan supports it, you can export your recommendation profile as a PDF.</p>
@@ -1636,6 +2306,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> If the button is hidden, report export is not enabled for your current plan or organisation policy. Check your subscription under <strong>Settings</strong>.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-report-download.png" alt="Download My Report button and secure PDF link in a new tab"></p>
+<p><em>Image placeholder: Add screenshot of the Download My Report button at the top of the page, and optionally the PDF open in a new browser tab.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1715,6 +2386,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> Once you submit, results are generated instantly. You do not need to wait or refresh.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/personality-locked.png" alt="Personality page in locked state with Complete Assessment prompt and link to the assessment module"></p>
+<p><em>Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.</em></p>
 <hr>
 <h2 id="2-the-personality-insights-header">2. The Personality Insights Header</h2>
 <p>At the top of the page you will see a <strong>Personality Insights</strong> badge and the heading <strong>Your Personality Analysis</strong>, followed by the subline:</p>
@@ -1723,6 +2395,7 @@ This is the multi-page printable view of this section.
 </blockquote>
 <p>Below the heading is the <strong>Export</strong> button — this lets you download your full report at any time. See <a href="#7-exporting-your-personality-report">section 7</a> for full export steps.</p>
 <p><img src="/images/user-manual/student-panel/personality-header.png" alt="Personality Insights header with Export button at the top of the analysis page"></p>
+<p><em>Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the &ldquo;Your Personality Analysis&rdquo; heading, and the Export button.</em></p>
 <hr>
 <h2 id="3-reading-the-radar-chart">3. Reading the Radar Chart</h2>
 <p>The radar chart is the first visual you see after the header. It plots all eight traits simultaneously so you can grasp your overall profile shape at a glance.</p>
@@ -1786,6 +2459,7 @@ This is the multi-page printable view of this section.
 <li><strong>Hover over any axis point</strong> to see the exact numeric score for that trait.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/personality-radar-chart.png" alt="Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip"></p>
+<p><em>Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.</em></p>
 <hr>
 <h2 id="4-the-personality-overview-panel">4. The Personality Overview Panel</h2>
 <p>Directly below the radar chart, the <strong>Personality Overview</strong> panel gives a written summary of your profile organised into three tiers.</p>
@@ -1817,6 +2491,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>The overview card opens with a paragraph describing the unique pattern of your results and how your traits shape your approach to learning, relationships, and personal growth.</p>
 <p><img src="/images/user-manual/student-panel/personality-overview-panel.png" alt="Personality Overview card showing three tier labels and an introductory paragraph about the student&rsquo;s unique trait pattern"></p>
+<p><em>Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.</em></p>
 <hr>
 <h2 id="5-quick-stats-panel">5. Quick Stats Panel</h2>
 <p>To the right of the Personality Overview is the <strong>Quick Stats</strong> panel. It lists your highest-scoring traits under <strong>Top Strengths</strong> and your lowest-scoring traits under <strong>Growth Areas</strong>, each with their numeric score shown.</p>
@@ -1826,6 +2501,7 @@ This is the multi-page printable view of this section.
 <li>Use the <strong>Growth Areas</strong> list to prioritise which Action Steps (from the trait cards below) to work on first.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/personality-quick-stats.png" alt="Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange"></p>
+<p><em>Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.</em></p>
 <hr>
 <h2 id="6-individual-trait-cards">6. Individual Trait Cards</h2>
 <p>Below the overview section, every one of the eight traits has its own card. Each card follows the same structure and tells you exactly what your score means and what to do about it.</p>
@@ -1869,6 +2545,7 @@ This is the multi-page printable view of this section.
   </tbody>
 </table>
 <p><img src="/images/user-manual/student-panel/personality-trait-card.png" alt="Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section"></p>
+<p><em>Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.</em></p>
 <h3 id="the-eight-trait-cards-in-detail">The Eight Trait Cards in Detail</h3>
 <h4 id="growth-mindset">Growth Mindset</h4>
 <p>Your openness to learning, challenges, and self-improvement. A high score here means you see setbacks as fuel for growth rather than failure.</p>
@@ -1910,6 +2587,7 @@ This is the multi-page printable view of this section.
 <p><strong>What to do with a high score:</strong> Continue reflecting on your experiences — journalling, asking for honest feedback, and reviewing your decisions weekly deepens this further.</p>
 <p><strong>What to do with a low score:</strong> After any significant interaction or decision, take five minutes to ask yourself: <em>What did I do well? What would I change?</em> Small reflection habits compound over time.</p>
 <p><img src="/images/user-manual/student-panel/personality-growth-area-cards.png" alt="Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps"></p>
+<p><em>Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.</em></p>
 <hr>
 <h2 id="7-exporting-your-personality-report">7. Exporting Your Personality Report</h2>
 <p>Your full personality analysis can be exported as a PDF to share with parents, advisors, or for personal records.</p>
@@ -1922,6 +2600,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> If the <strong>Export</strong> button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check <strong>Settings → Subscription</strong> or contact your advisor.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/personality-report-download.png" alt="Export button at the top of the Personality page and the resulting PDF open in a new browser tab"></p>
+<p><em>Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.</em></p>
 <hr>
 <h2 id="8-using-your-personality-results-with-other-platform-features">8. Using Your Personality Results With Other Platform Features</h2>
 <p>Your personality data does not exist in isolation — it feeds directly into other IDPicker modules:</p>
@@ -2016,6 +2695,7 @@ This is the multi-page printable view of this section.
 <p><strong>Quota Warning:</strong> Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-mentor-chat.png" alt="AI Mentor hub showing personality cards grid and open chat interface with message input box"></p>
+<p><em>Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.</em></p>
 <hr>
 <h2 id="resuming-a-recent-chat">Resuming a Recent Chat</h2>
 <p>You do not have to start over every time.</p>
@@ -2025,6 +2705,7 @@ This is the multi-page printable view of this section.
 <li>The chat history will load, and you can pick up the conversation exactly where you left off.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-recent-chats.png" alt="Recent chats list in Mentor Hub showing previous conversation threads"></p>
+<p><em>Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.</em></p>
 <hr>
 <h2 id="chatting-with-your-human-advisor">Chatting With Your Human Advisor</h2>
 <p>If your account is linked to an organization or school, your human advisor manages your progress. You can message them directly here.</p>
@@ -2036,6 +2717,7 @@ This is the multi-page printable view of this section.
 </ol>
 <p><em>Note: If the advisor section says &ldquo;No advisor linked,&rdquo; your account operates independently and this feature is disabled.</em></p>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-advisor-chat.png" alt="Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button"></p>
+<p><em>Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2089,6 +2771,7 @@ This is the multi-page printable view of this section.
 <li>Review your refined results.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/university-search-keyword.png" alt="University search bar with keyword input and auto-filtered results grid"></p>
+<p><em>Image placeholder: Add screenshot of the university search bar with a keyword typed in and the auto-filtered results grid below it.</em></p>
 <hr>
 <h2 id="power-filtering">Power Filtering</h2>
 <p>To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).</p>
@@ -2102,6 +2785,7 @@ This is the multi-page printable view of this section.
 <p><strong>Warning:</strong> Mixing too many strict filters at once (e.g., <em>Aerospace Engineering</em>, <em>PhD</em>, <em>Turkish language</em>, <em>in Germany</em>) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/university-search-filters.png" alt="University search filter panel showing category, degree type, and language of instruction dropdowns"></p>
+<p><em>Image placeholder: Add screenshot of the filter panel with the Category, Degree Type, and Language of Instruction dropdowns visible.</em></p>
 <hr>
 <h2 id="managing-pagination-load-more">Managing Pagination (Load More)</h2>
 <p>When reviewing results:</p>
@@ -2112,6 +2796,7 @@ This is the multi-page printable view of this section.
 </ol>
 <p><em>Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.</em></p>
 <p><img src="/images/user-manual/student-panel/university-search-pagination.png" alt="Pagination controls with page numbers and page size selector at the bottom of university results"></p>
+<p><em>Image placeholder: Add screenshot of the pagination bar at the bottom of the results — show page numbers, the active page highlighted, and the page size selector.</em></p>
 <hr>
 <h2 id="how-to-compare-programs-efficiently">How to Compare Programs Efficiently</h2>
 <p>When building your shortlist, we recommend focusing on these core factors displayed on every card:</p>
@@ -2181,6 +2866,7 @@ This is the multi-page printable view of this section.
 <li>The list will instantly filter to matching documents.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/resources-library.png" alt="Resource library grid showing file cards with assigned and globally visible documents"></p>
+<p><em>Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.</em></p>
 <hr>
 <h2 id="filtering-and-sorting-files">Filtering and Sorting Files</h2>
 <p>If your organization has shared hundreds of files, use these controls to narrow them down:</p>
@@ -2192,6 +2878,7 @@ This is the multi-page printable view of this section.
 <li><strong>View Mode:</strong> Toggle between the spacious Grid view or the compact List view depending on your preference.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/resources-filters.png" alt="Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls"></p>
+<p><em>Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.</em></p>
 <hr>
 <h2 id="downloading-a-shared-file">Downloading a Shared File</h2>
 <ol>
@@ -2203,6 +2890,7 @@ This is the multi-page printable view of this section.
 <p><strong>If a download fails:</strong> Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/resources-download.png" alt="Resource file card with Download button highlighted and browser download prompt"></p>
+<p><em>Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2261,6 +2949,7 @@ This is the multi-page printable view of this section.
 <li>Click <strong>Submit</strong> and wait for the success flash.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/help-center-new-ticket.png" alt="New ticket form with subject, category, priority, and description fields filled in"></p>
+<p><em>Image placeholder: Add screenshot of the New Ticket form — all fields visible: subject, category, priority dropdown, and description box.</em></p>
 <hr>
 <h2 id="how-to-write-a-ticket-that-gets-fixed-fast">How to Write a Ticket That Gets Fixed Fast</h2>
 <p>The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:</p>
@@ -2306,6 +2995,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>If an agent replies requiring more info, you will be notified!</p>
 <p><img src="/images/user-manual/student-panel/help-center-my-tickets.png" alt="My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges"></p>
+<p><em>Image placeholder: Add screenshot of the My Tickets tab showing at least 2-3 tickets with different status badges (Pending, In Progress, Resolved).</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2345,7 +3035,134 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-ff52b84a8dc6fed7b57cdf8fac640307">2.10 - Subscription</h1>
+	<h1 id="pg-4eb22d703460ad0fa1f00b8c951a33bf">2.10 - Notifications</h1>
+    <div class="lead">How to read, manage, and act on platform notifications in your student account</div>
+	<p>IDPicker keeps you informed through a built-in notification system. Whenever your advisor sends you a message, assigns you a form, or an action requires your attention, a notification appears in your inbox so nothing falls through the cracks.</p>
+<hr>
+<h2 id="1-opening-your-notification-inbox">1. Opening Your Notification Inbox</h2>
+<ol>
+<li>Look for the <strong>Bell icon</strong> in the top navigation bar.</li>
+<li>A red badge on the bell shows how many unread notifications you have.</li>
+<li>Click the bell to open the <strong>Notification Dropdown</strong> — this shows your five most recent messages.</li>
+<li>Click <strong>View All Notifications</strong> at the bottom of the dropdown to open the full inbox page.</li>
+</ol>
+<p><img src="/images/user-manual/student-panel/notifications-dropdown.png" alt="Notification bell icon with a red unread badge and the dropdown panel showing recent notifications"></p>
+<p><em>Image placeholder: Add screenshot of the notification bell in the navbar with the dropdown open, showing recent notification items and the View All link.</em></p>
+<hr>
+<h2 id="2-reading-a-notification">2. Reading a Notification</h2>
+<ol>
+<li>In the full notifications list, unread items appear with a highlighted background or a blue dot indicator.</li>
+<li>Click any notification row to open it.</li>
+<li>The detail view shows:
+<ul>
+<li><strong>Title</strong> of the notification</li>
+<li><strong>Full message body</strong> — may include instructions or links to take action</li>
+<li><strong>Sender</strong> (e.g., your advisor&rsquo;s name, or <em>IDPicker System</em>)</li>
+<li><strong>Timestamp</strong> — when it was sent</li>
+</ul>
+</li>
+<li>After you open it, the notification is automatically marked as <strong>Read</strong> and the unread badge count decreases.</li>
+</ol>
+<hr>
+<h2 id="3-marking-all-as-read">3. Marking All as Read</h2>
+<p>If you have many unread notifications and want to clear the badge quickly:</p>
+<ol>
+<li>On the full notifications list page, click <strong>Mark All as Read</strong>.</li>
+<li>All notification rows are instantly marked as read.</li>
+<li>The red badge on the bell icon disappears.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Marking notifications as read does not delete them. They remain in your list for reference.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/notifications-inbox.png" alt="Notifications inbox showing unread rows highlighted and the Mark All as Read button at the top"></p>
+<p><em>Image placeholder: Add screenshot of the full notifications inbox page with several unread rows and the Mark All as Read button visible.</em></p>
+<hr>
+<h2 id="4-types-of-notifications">4. Types of Notifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>What it means</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Advisor Message</strong></td>
+          <td>Your advisor sent you a note or update</td>
+          <td>Read the message and reply in the Chat module if needed</td>
+      </tr>
+      <tr>
+          <td><strong>Form Assigned</strong></td>
+          <td>An advisor or admin has added a new form for you to complete</td>
+          <td>Click the notification to go directly to the form and fill it in</td>
+      </tr>
+      <tr>
+          <td><strong>Assessment Reminder</strong></td>
+          <td>A scheduled or overdue assessment needs your attention</td>
+          <td>Click through to open the assessment and complete it</td>
+      </tr>
+      <tr>
+          <td><strong>Parent Link Request Received</strong></td>
+          <td>A parent has requested to view your account</td>
+          <td>Go to your Account Settings to approve or deny the link request</td>
+      </tr>
+      <tr>
+          <td><strong>Certificate Issued</strong></td>
+          <td>Your advisor has issued you a new certificate</td>
+          <td>Find it in the Certificates and Documents section to download</td>
+      </tr>
+      <tr>
+          <td><strong>Application Document Update</strong></td>
+          <td>Your advisor reviewed and updated the status of a document you uploaded</td>
+          <td>Check your Application Documents section for feedback</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="5-acting-on-a-notification">5. Acting on a Notification</h2>
+<p>Most notifications include a direct action link inside the message body. Click the link to jump straight to the relevant page — for example, clicking a <em>Form Assigned</em> notification takes you directly to the form&rsquo;s fill screen.</p>
+<p>If a notification does not have a direct link, use the sidebar navigation to go to the relevant module manually.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My bell shows a badge count but I cannot find unread notifications</td>
+          <td>Open the full inbox and look for the blue dot or highlighted row. The count may include system-level notices that appear without a visible highlight in all browsers</td>
+      </tr>
+      <tr>
+          <td>I accidentally marked everything as read before seeing a message</td>
+          <td>The notifications are still in your list. Scroll through and look for any you have not acted on yet</td>
+      </tr>
+      <tr>
+          <td>I am not receiving notifications about my forms</td>
+          <td>Check with your advisor to confirm the form was assigned to your account specifically. Also verify your notifications settings have not been muted</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ff52b84a8dc6fed7b57cdf8fac640307">2.11 - Subscription</h1>
     <div class="lead">Detailed guide to limits, quotas, and upgrade paths</div>
 	<p>This guide explains how students identify free-plan limits and use upgrade paths.</p>
 <h2 id="understand-feature-limits">Understand Feature Limits</h2>
@@ -2402,7 +3219,7 @@ A: Check quota indicators shown in quota-controlled features.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-847ffb300422d1e360c64d538a9a20a5">2.11 - Account and Settings</h1>
+	<h1 id="pg-847ffb300422d1e360c64d538a9a20a5">2.12 - Account and Settings</h1>
     <div class="lead">Detailed click-by-click profile and settings walkthrough</div>
 	<p>This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.</p>
 <h2 id="a-edit-profile-click-by-click">A) Edit Profile (Click-by-Click)</h2>
@@ -2495,7 +3312,7 @@ A: Confirmation word is strict; type exactly as shown.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-1ba11b1cbbe8b69c70ff36bd70acd221">2.12 - Language</h1>
+	<h1 id="pg-1ba11b1cbbe8b69c70ff36bd70acd221">2.13 - Language</h1>
     <div class="lead">Detailed click-by-click language switching walkthrough</div>
 	<p>Student panel supports English and Turkish.</p>
 <h2 id="switch-language-normal-case">Switch Language (Normal Case)</h2>
@@ -2546,7 +3363,7 @@ A: Refresh page once and verify language persisted.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f0266080fa0bf72694f75d6bc2dd0a9e">2.13 - Certificates and Application Documents</h1>
+	<h1 id="pg-f0266080fa0bf72694f75d6bc2dd0a9e">2.14 - Certificates and Application Documents</h1>
     <div class="lead">Detailed click-by-click certificates and document workflow</div>
 	<p>This guide covers two high-value student workflows: earned certificates and application document submission.</p>
 <h2 id="a-certificates-click-by-click">A) Certificates (Click-by-Click)</h2>
@@ -2632,7 +3449,7 @@ A: Review invalid reason and upload corrected document.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-7ab95ee925fb5f7be5b072fd4e1387d1">2.14 - Assigned Forms</h1>
+	<h1 id="pg-7ab95ee925fb5f7be5b072fd4e1387d1">2.15 - Assigned Forms</h1>
     <div class="lead">Detailed click-by-click assigned forms walkthrough</div>
 	<p>Assigned forms are organization/advisor forms that students complete from dashboard or direct link.</p>
 <h2 id="open-assigned-form-from-dashboard">Open Assigned Form from Dashboard</h2>
@@ -2791,6 +3608,8 @@ A: Field set depends on assigned form configuration.</p>
 <p><strong>Why is my dashboard missing certain modules?</strong>
 If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/login.png" alt="Advisor login page showing the email, password fields, and Sign In button"></p>
+<p><em>Image placeholder: Add screenshot of the advisor login page with email and password fields visible.</em></p>
 <hr>
 <h2 id="2-setting-up-your-account-first-time">2. Setting Up Your Account (First Time)</h2>
 <p>If you were invited to join as an advisor or sub-advisor by your organization lead:</p>
@@ -2819,6 +3638,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li><strong>Main Navigation (Sidebar):</strong> Use the sidebar to quickly jump between managing Students, organizing Groups, distributing Resources, or handling Support/Chat.</li>
 </ul>
 <p><em>Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.</em></p>
+<p><img src="/images/user-manual/advisor-panel/dashboard.png" alt="Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation"></p>
+<p><em>Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2878,6 +3699,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 </ol>
 <h3 id="viewing-student-details">Viewing Student Details</h3>
 <p>Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.</p>
+<p><img src="/images/user-manual/advisor-panel/students-roster.png" alt="Student roster list showing search bar, filter dropdowns, and student rows with name and email columns"></p>
+<p><em>Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.</em></p>
 <hr>
 <h2 id="managing-group-assignments">Managing Group Assignments</h2>
 <p>To help organize your communications, you can assign students to Groups right from the roster.</p>
@@ -2912,6 +3735,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li><strong>Duplicates:</strong> If an email already exists in the system, that row will be skipped/flagged.</li>
 <li><strong>Group Assignment:</strong> Imported students are <em>not</em> automatically placed in a group upon import. You must assign them afterward.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/students-bulk-import.png" alt="Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button"></p>
+<p><em>Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -2952,55 +3777,112 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-9392ddd8e96bdb8778f491c63448ebac">3.3 - Certificates and Application Documents</h1>
-    <div class="lead">Detailed click-by-click advisor document and credential workflows</div>
-	<p>This guide covers advisor certificate operations and application document review.</p>
-<h2 id="a-certificates-workflow">A) Certificates Workflow</h2>
+    <div class="lead">How to issue achievement certificates and review student application document uploads</div>
+	<p>This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.</p>
+<hr>
+<h2 id="1-issuing-a-certificate">1. Issuing a Certificate</h2>
+<p>Certificates are formal, advisor-generated recognitions that appear in the student&rsquo;s Certificates module and can be downloaded as PDFs.</p>
 <ol>
-<li>In sidebar, open Certificates.</li>
-<li>Review available certificate templates/items.</li>
-<li>Open template/detail.</li>
-<li>Configure issuance data as needed.</li>
-<li>Send/issue certificate to selected student(s).</li>
-<li>Confirm status (sent, pending, failed or equivalent).</li>
-</ol>
-<h2 id="b-application-documents-overview">B) Application Documents Overview</h2>
-<ol>
-<li>In sidebar, open Application Documents.</li>
-<li>Review student collections list.</li>
-<li>Filter by status and review state.</li>
-<li>Open a student collection detail.</li>
-</ol>
-<h2 id="c-review-student-documents-click-by-click">C) Review Student Documents (Click-by-Click)</h2>
-<ol>
-<li>Open specific step/category in student collection.</li>
-<li>Open uploaded file metadata and preview/download.</li>
-<li>Set review status:
+<li>In the sidebar, click <strong>Certificates</strong>.</li>
+<li>Click <strong>Issue Certificate</strong>.</li>
+<li>A certificate builder dialog opens. Fill in:
 <ul>
-<li>Verified</li>
-<li>Invalid</li>
-<li>Pending (if re-evaluation needed)</li>
+<li><strong>Student</strong> — Search and select the recipient.</li>
+<li><strong>Certificate Type</strong> — Choose from available templates (e.g., <em>Assessment Completion</em>, <em>Programme Readiness</em>, <em>Participation</em>).</li>
+<li><strong>Issue Date</strong> — Defaults to today; change if back-dating is required.</li>
+<li><strong>Notes</strong> <em>(Optional)</em> — Add a personalised message that will appear on the certificate document.</li>
 </ul>
 </li>
-<li>If invalid, provide reason/comment.</li>
-<li>Save review outcome.</li>
+<li>Click <strong>Issue</strong>.</li>
+<li>The certificate is immediately added to the student&rsquo;s account. They will see it in their <strong>Certificates and Documents</strong> section and receive a notification.</li>
 </ol>
-<h2 id="d-collection-level-status-updates">D) Collection-Level Status Updates</h2>
+<blockquote>
+<p><strong>Note:</strong> Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/certificates-issue.png" alt="Certificate builder dialog showing student selector, type dropdown, and issue date field"></p>
+<p><em>Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.</em></p>
+<hr>
+<h2 id="2-reviewing-issued-certificates">2. Reviewing Issued Certificates</h2>
+<p>To keep track of what has been issued:</p>
 <ol>
-<li>Review completion progress.</li>
-<li>If complete and valid, move toward approval state.</li>
-<li>If missing/invalid files remain, return with revision request.</li>
+<li>On the <strong>Certificates</strong> page, you see a table of all certificates you have issued.</li>
+<li>Filter by <strong>Student Name</strong> or <strong>Certificate Type</strong> to narrow the list.</li>
+<li>Each row shows the issue date, student name, type, and current status (<em>Active</em> or <em>Revoked</em>).</li>
+<li>Click any row to open the certificate detail and preview the generated document.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Student uploaded file but not visible.
-A: Refresh collection detail and verify step filter.</p>
-<p>Q: Student asks why file was rejected.
-A: Ensure invalid reason/comment is clearly written before save.</p>
-<p>Q: Certificate action failed.
-A: Retry issuance and validate template/student selection.</p>
-<p><img src="/images/user-manual/advisor-panel/certificates.png" alt="Certificates Advisor Placeholder"></p>
-<p>Image placeholder: Certificate operations panel with template and status.</p>
-<p><img src="/images/user-manual/advisor-panel/application-documents-review.png" alt="Application Documents Advisor Placeholder"></p>
-<p>Image placeholder: Student document review table with status actions.</p>
+<hr>
+<h2 id="3-revoking-a-certificate">3. Revoking a Certificate</h2>
+<p>If a certificate was issued by mistake or needs to be corrected:</p>
+<ol>
+<li>Find the certificate in your issued list.</li>
+<li>Click the action menu <code>(...)</code> next to it and select <strong>Revoke</strong>.</li>
+<li>Confirm the revocation prompt.</li>
+<li>The certificate is immediately marked as <em>Revoked</em> and disappears from the student&rsquo;s active certificate list.</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Revoking a certificate cannot be undone for audit trail purposes. If you need to correct an error, revoke the original and issue a new one.</p>
+</blockquote>
+<hr>
+<h2 id="4-reviewing-student-application-documents">4. Reviewing Student Application Documents</h2>
+<p>Students upload supporting documents (transcripts, passports, language certificates) as part of their application process. Your job is to verify, flag, or reject each uploaded file.</p>
+<ol>
+<li>In the sidebar, click <strong>Application Documents</strong>.</li>
+<li>The list shows all students who have active document collections, each with a completion progress bar.</li>
+<li>Click a student row to open their <strong>Document Collection</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/application-documents-list.png" alt="Application documents list with student rows, completion progress bars, and a review button"></p>
+<p><em>Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.</em></p>
+<hr>
+<h2 id="5-verifying-individual-documents">5. Verifying Individual Documents</h2>
+<ol>
+<li>Inside a student&rsquo;s collection, you see a checklist of required document steps.</li>
+<li>Click on a specific step (e.g., <em>High School Transcript</em>).</li>
+<li>The uploaded file appears — click <strong>Preview</strong> or <strong>Download</strong> to inspect it.</li>
+<li>Set the review status:
+<ul>
+<li><strong>Verified</strong> — The document is valid and meets requirements.</li>
+<li><strong>Pending</strong> — You need more time to verify, or you are waiting for additional context.</li>
+<li><strong>Invalid</strong> — The document is incorrect, expired, or does not meet requirements.</li>
+</ul>
+</li>
+<li>If you mark the file <strong>Invalid</strong>, fill in the <strong>Reason</strong> field with a clear explanation so the student knows exactly what to fix.</li>
+<li>Click <strong>Save Review</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/document-review-panel.png" alt="Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field"></p>
+<p><em>Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.</em></p>
+<hr>
+<h2 id="6-completing-a-collection">6. Completing a Collection</h2>
+<p>Once all individual document steps are verified:</p>
+<ol>
+<li>Return to the collection overview for the student.</li>
+<li>Confirm all steps show a green <em>Verified</em> badge.</li>
+<li>Click <strong>Approve Collection</strong> to formally mark the student&rsquo;s application document set as complete.</li>
+<li>The student receives a notification that their documents have been approved.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A student says they uploaded a file but I cannot see it</td>
+          <td>Refresh the collection detail page — if it still does not appear, verify the student completed the upload step rather than just selecting the file</td>
+      </tr>
+      <tr>
+          <td>I need to leave a note for a student about a rejected document</td>
+          <td>Use the <strong>Reason</strong> field when setting a step to Invalid. The student can read this note in their own document panel</td>
+      </tr>
+      <tr>
+          <td>I issued a certificate with the wrong date</td>
+          <td>Revoke the original certificate immediately and re-issue a new one with the correct date</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -3029,6 +3911,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>Click <strong>Approve</strong> to admit them (which grants them full platform access and adds them to your Students roster).</li>
 <li>Click <strong>Deny</strong> if they do not belong.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons"></p>
+<p><em>Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.</em></p>
 <hr>
 <h2 id="2-using-family-chat">2. Using Family Chat</h2>
 <p>IDPicker recognizes that guidance is a collaborative effort between the advisor, the student, and the parents.</p>
@@ -3047,6 +3931,8 @@ A: Retry issuance and validate template/student selection.</p>
 <blockquote>
 <p><strong>Tip:</strong> If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/family-chat.png" alt="Family chat interface showing student thread, parent thread, and family thread tabs with message composer at bottom"></p>
+<p><em>Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.</em></p>
 <hr>
 <h2 id="3-custom-assessments">3. Custom Assessments</h2>
 <p>While IDPicker provides built-in psychological and career assessments, your organization may want to issue bespoke quizzes (e.g., a &ldquo;Math Placement Exam&rdquo; or &ldquo;Mid-Year Feedback&rdquo;).</p>
@@ -3119,6 +4005,8 @@ A: Retry issuance and validate template/student selection.</p>
 </ol>
 <h3 id="preview-before-publishing">Preview Before Publishing</h3>
 <p>Always click the <strong>Preview</strong> action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.</p>
+<p><img src="/images/user-manual/advisor-panel/forms-builder.png" alt="Form builder interface showing the title field, question editor panel, and a preview of the first question"></p>
+<p><em>Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.</em></p>
 <hr>
 <h2 id="2-managing-existing-forms">2. Managing Existing Forms</h2>
 <p>You can manage your forms from the main Forms list view:</p>
@@ -3136,6 +4024,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>A table will load showing a list of every student who submitted the form and the timestamp.</li>
 <li>Click on an individual response row to drill down and read the specific answers provided by that student.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/forms-responses.png" alt="Form responses table listing student names, submission timestamps, and a row-click drill-down panel"></p>
+<p><em>Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student&rsquo;s answers.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -3195,6 +4085,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li><strong>Be Specific:</strong> &ldquo;Group A&rdquo; becomes impossible to manage after a few months.</li>
 <li><strong>Review Often:</strong> Clean up and delete groups when a cohort graduates or finishes a campaign.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/groups-create.png" alt="Create group dialog showing group name field, description field, and student selector checkboxes"></p>
+<p><em>Image placeholder: Add screenshot of the create group dialog with the name field filled in and several students selected in the member selector.</em></p>
 <hr>
 <h2 id="2-editing-an-existing-group">2. Editing an Existing Group</h2>
 <p>Need to rename a group or add/remove members?</p>
@@ -3217,6 +4109,8 @@ A: Retry issuance and validate template/student selection.</p>
 <blockquote>
 <p><strong>Warning:</strong> Deleting a group <strong>does not</strong> delete the student accounts inside it. It only removes the organizational tag grouping them together.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/groups-list.png" alt="Groups list showing group cards with member counts, edit buttons, and action menus"></p>
+<p><em>Image placeholder: Add screenshot of the groups list showing several group cards or rows with member count badges and action menus.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -3277,6 +4171,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>Click <strong>Send</strong> (or <strong>Create</strong>).</li>
 <li>The notification is immediately dispatched and will appear in your history list.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/notifications-compose.png" alt="Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button"></p>
+<p><em>Image placeholder: Add screenshot of the notification composer with a title, message, and group selection visible before clicking Send.</em></p>
 <hr>
 <h2 id="2-reviewing-delivery-and-effectiveness">2. Reviewing Delivery and Effectiveness</h2>
 <p>Unlike email, platform notifications allow you to track engagement. In your notification history list, you can verify:</p>
@@ -3287,6 +4183,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li><strong>Read Count:</strong> How many students have clicked on the notification to read the full body.</li>
 <li><strong>Unread Count:</strong> How many students have ignored or not yet seen the alert.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/notifications-history.png" alt="Notification history list showing past broadcasts with recipient count, read count, and unread count columns"></p>
+<p><em>Image placeholder: Add screenshot of the notification history table showing several past notifications with their read and unread counts.</em></p>
 <hr>
 <h2 id="3-filtering-your-broadcast-history">3. Filtering Your Broadcast History</h2>
 <p>If you need to check what you sent months ago:</p>
@@ -3335,55 +4233,88 @@ A: Retry issuance and validate template/student selection.</p>
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-aee00ad17b9bb7d0ce8e55a26e2ac206">3.8 - Profile, Prompts, and Interests</h1>
-    <div class="lead">Detailed click-by-click advisor configuration workflows</div>
-	<p>This guide covers advisor profile settings and advanced content/configuration modules.</p>
-<h2 id="a-profile-management">A) Profile Management</h2>
+    <div class="lead">How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data</div>
+	<p>This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.</p>
+<hr>
+<h2 id="1-updating-your-advisor-profile">1. Updating Your Advisor Profile</h2>
+<p>Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.</p>
 <ol>
-<li>In sidebar, click Profile.</li>
-<li>Review personal and organization details.</li>
-<li>Click Edit.</li>
-<li>Update text fields (name, bio, contact, organization data where available).</li>
-<li>Upload avatar/banner if supported.</li>
-<li>Click Save.</li>
-<li>Confirm updated preview.</li>
-</ol>
-<h2 id="b-prompts-module">B) Prompts Module</h2>
-<ol>
-<li>In sidebar, click Prompts.</li>
-<li>Open prompt list by category/subcategory.</li>
-<li>Select prompt template to edit.</li>
-<li>Update content carefully.</li>
-<li>Validate syntax/placeholders.</li>
-<li>Save changes.</li>
-<li>Reopen to confirm version/state.</li>
-</ol>
-<h2 id="c-interests-module">C) Interests Module</h2>
-<ol>
-<li>In sidebar, click Interests.</li>
-<li>Review student interest records and statuses.</li>
-<li>Open detail for a student/entry.</li>
-<li>Update status or related metadata if action is available.</li>
-<li>Save and verify list refresh.</li>
-</ol>
-<h2 id="best-practices">Best Practices</h2>
+<li>In the sidebar, click your <strong>Avatar</strong> or <strong>Profile</strong> link.</li>
+<li>Click <strong>Edit Profile</strong>.</li>
+<li>Update any of the following:
 <ul>
-<li>Keep prompt edits versioned and reviewed before broad usage.</li>
-<li>Use profile info that matches advisor organization branding.</li>
-<li>Process interests updates consistently to support recommendation quality.</li>
+<li><strong>Display Name</strong> and <strong>Title</strong> (e.g., <em>Senior Career Counselor</em>)</li>
+<li><strong>Bio</strong> — A short paragraph about your background and specialties</li>
+<li><strong>Avatar</strong> — Upload a clear headshot (recommended: square, at least 400×400 px)</li>
+<li><strong>Contact Details</strong> — Office hours, phone extension, or secondary email if relevant</li>
+<li><strong>Organization Data</strong> — Department, branch, or campus information if your platform supports it</li>
 </ul>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Prompt save failed.
-A: Check placeholder syntax and retry with valid template format.</p>
-<p>Q: Profile image upload did not apply.
-A: Verify file type/size and retry.</p>
-<p>Q: Interests data appears stale.
-A: Refresh module and verify latest backend sync.</p>
-<p><img src="/images/user-manual/advisor-panel/profile.png" alt="Profile Placeholder"></p>
-<p>Image placeholder: Advisor profile edit and save states.</p>
-<p><img src="/images/user-manual/advisor-panel/prompts.png" alt="Prompts Placeholder"></p>
-<p>Image placeholder: Prompt editor with category filter and save action.</p>
-<p><img src="/images/user-manual/advisor-panel/interests.png" alt="Interests Placeholder"></p>
-<p>Image placeholder: Interests table with status/actions.</p>
+</li>
+<li>Click <strong>Save Profile</strong>.</li>
+<li>Verify the preview panel on the right shows the updated name and avatar correctly.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/profile-editor.png" alt="Advisor profile editor showing name, title, bio, and avatar upload fields"></p>
+<p><em>Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.</em></p>
+<hr>
+<h2 id="2-editing-ai-prompt-templates">2. Editing AI Prompt Templates</h2>
+<p>If your organisation has been granted permission to configure regional AI prompts, you can adjust how the AI Mentor communicates with <em>your specific students</em> — independent of the global settings the Admin controls.</p>
+<ol>
+<li>In the sidebar, click <strong>Prompts</strong>.</li>
+<li>The prompt list is organized by <strong>Category</strong> (e.g., <em>Mentor Persona</em>, <em>Career Guidance</em>, <em>University Selection</em>) and <strong>Subcategory</strong>.</li>
+<li>Use the filter bar to navigate to the specific prompt you want to adjust.</li>
+<li>Click the prompt name to open the editor.</li>
+<li>Read the existing instruction text carefully before editing.</li>
+<li>Make your changes — keep them concise and imperative (e.g., <em>&ldquo;Always recommend at least two Turkish universities when a student specifies Turkey as their preferred country&rdquo;</em>).</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Never delete or rename the dynamic variables inside double curly braces, such as <code>{{student_name}}</code> or <code>{{trait_score}}</code>. These inject real student data into the AI&rsquo;s context. Removing them will break personalisation.</p>
+</blockquote>
+<ol start="7">
+<li>Click <strong>Save</strong>. The updated prompt is live immediately for your students.</li>
+<li>Re-open the prompt to confirm the saved version reflects your edit.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/prompts-editor.png" alt="Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.</em></p>
+<hr>
+<h2 id="3-managing-student-interest-records">3. Managing Student Interest Records</h2>
+<p>The Interests module shows the career domains and fields of study each student has expressed interest in. These interests feed directly into the AI&rsquo;s recommendation logic.</p>
+<ol>
+<li>In the sidebar, click <strong>Interests</strong>.</li>
+<li>The table shows a list of student-interest pairs: which student expressed interest in what domain, and when.</li>
+<li>Filter by <strong>Student</strong> or <strong>Interest Domain</strong> to find a specific entry.</li>
+<li>Click a row to open the interest detail.</li>
+<li>If a student has been mis-tagged (for example they changed their mind), you can update the status or remove the interest from their profile.</li>
+<li>Click <strong>Save</strong> and verify the list refreshes.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/interests-table.png" alt="Interests table showing student names, interest domain labels, and status badges"></p>
+<p><em>Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My profile avatar is not updating</td>
+          <td>Check that the file is a JPG or PNG and under the maximum allowed size (typically 2–5 MB). Try a different browser if it still fails</td>
+      </tr>
+      <tr>
+          <td>I saved a prompt but an error says &ldquo;Invalid Template Syntax&rdquo;</td>
+          <td>Look for broken <code>{{</code> brackets. Every opening <code>{{</code> must have a matching <code>}}</code>. Fix the broken variable and retry</td>
+      </tr>
+      <tr>
+          <td>A student&rsquo;s interests look wrong or outdated</td>
+          <td>Open their interest detail, update the status to reflect their current goals, and save — then ask the student to confirm their interests from their own profile settings</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -3419,6 +4350,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click <strong>Upload</strong>.</li>
 <li>Wait for the upload to complete and verify the file appears in your library list.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/resources-upload.png" alt="Resource upload dialog showing file drop zone, name field, description field, and visibility toggle"></p>
+<p><em>Image placeholder: Add screenshot of the resource upload dialog with all metadata fields filled in and visibility set.</em></p>
 <hr>
 <h2 id="2-managing-visibility-and-assignments">2. Managing Visibility and Assignments</h2>
 <p>Uploading a file is only half the job. You must ensure the right students can see it.</p>
@@ -3443,6 +4376,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li><strong>Sort By:</strong> Reorder the grid by the date added, the alphabetical name, or the raw file size.</li>
 <li><strong>View Mode Toggle:</strong> Switch from the visual <em>Grid View</em> to the dense <em>List View</em> if you are managing dozens of files at once.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/resources-library.png" alt="Resources library in grid view showing file cards with title, type badge, visibility label, and action menu"></p>
+<p><em>Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.</em></p>
 <hr>
 <h2 id="4-deleting-an-outdated-resource">4. Deleting an Outdated Resource</h2>
 <p>When a syllabus or brochure is no longer accurate:</p>
@@ -3518,6 +4453,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click <strong>Save / Create</strong>.</li>
 <li>The system will email them an invitation link to set up their password.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-advisor creation form showing name, email, scope selector, and permission checkboxes"></p>
+<p><em>Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.</em></p>
 <hr>
 <h2 id="2-editing-sub-advisor-permissions">2. Editing Sub-Advisor Permissions</h2>
 <p>If a sub-advisor&rsquo;s role changes, you can adjust their access on the fly.</p>
@@ -3526,8 +4463,10 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click on the target sub-advisor&rsquo;s name.</li>
 <li>Scroll down to the Permission Matrix.</li>
 <li>Toggle specific module access on or off as needed. You can also change which exact groups they govern here.</li>
-<li>Click <strong>Save</strong>. The changes will apply the next time they log in or refresh their page.</li>
+<li>Click <strong>Save</strong>. The changes will apply the next time they log in or refresh their page.
+<img src="/images/user-manual/advisor-panel/sub-advisor-permissions.png" alt="Permission matrix editor for a sub-advisor showing module toggles with some enabled and some disabled"></li>
 </ol>
+<p><em>Image placeholder: Add screenshot of the sub-advisor permission matrix editor with some modules toggled on and others off.</em></p>
 <h3 id="validating-their-access">Validating Their Access</h3>
 <p>If you want to be completely sure you set the permissions correctly:</p>
 <ol>
@@ -3584,50 +4523,107 @@ A: Refresh module and verify latest backend sync.</p>
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-bf1c95615bc3f7d9ddc2e10a93365509">3.11 - Support Tickets</h1>
-    <div class="lead">Detailed click-by-click advisor support ticket operations</div>
-	<p>Support Tickets page helps advisors track and resolve student-reported issues.</p>
-<h2 id="a-open-support-tickets">A) Open Support Tickets</h2>
+    <div class="lead">How to triage, respond to, and close student-reported issues from the advisor panel</div>
+	<p>The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.</p>
+<hr>
+<h2 id="1-opening-the-ticket-queue">1. Opening the Ticket Queue</h2>
 <ol>
-<li>In sidebar, click Support Tickets.</li>
-<li>Wait for ticket list and summary cards.</li>
+<li>In the sidebar, click <strong>Support Tickets</strong>.</li>
+<li>The queue loads with a summary row at the top showing counts by status: <em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>.</li>
+<li>By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by <strong>Priority</strong> immediately.</li>
 </ol>
-<h2 id="b-filter-and-prioritize">B) Filter and Prioritize</h2>
+<blockquote>
+<p><strong>Tip:</strong> Start every support session by filtering for <strong>Priority: Urgent</strong> and <strong>Status: Pending</strong>. These are the issues blocking students right now.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-tickets-queue.png" alt="Support ticket queue showing status summary cards and a filtered list sorted by priority"></p>
+<p><em>Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.</em></p>
+<hr>
+<h2 id="2-filtering-and-prioritising-tickets">2. Filtering and Prioritising Tickets</h2>
 <ol>
-<li>Filter by status (pending, in_progress, resolved, closed).</li>
-<li>Filter by priority (low, medium, high, urgent).</li>
-<li>Sort list for triage order.</li>
-<li>Open most urgent unresolved tickets first.</li>
+<li>Use the <strong>Status</strong> filter dropdown to narrow to a single stage (<em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>).</li>
+<li>Use the <strong>Priority</strong> filter to show only high-urgency items (<em>Low</em>, <em>Medium</em>, <em>High</em>, <em>Urgent</em>).</li>
+<li>Combine both filters for maximum efficiency — e.g., Status: <em>Pending</em> + Priority: <em>High</em> gives you the most critical unresolved work.</li>
+<li>Sort the filtered list by <strong>Created Date</strong> (oldest first) to avoid letting old issues age out.</li>
 </ol>
-<h2 id="c-review-ticket-details">C) Review Ticket Details</h2>
+<hr>
+<h2 id="3-reviewing-a-ticket">3. Reviewing a Ticket</h2>
 <ol>
-<li>Click ticket row/card.</li>
-<li>Read subject and full description.</li>
-<li>Check user details and timestamps.</li>
-<li>Identify category and visibility context.</li>
+<li>Click any ticket row or card to open its detail view.</li>
+<li>Read the <strong>Subject</strong> and full <strong>Description</strong> the student provided.</li>
+<li>Check the <strong>User Details</strong> panel on the right — this shows which student submitted it, their organisation, and their account status.</li>
+<li>Note the <strong>Category</strong> badge (e.g., <em>Account</em>, <em>Assessment</em>, <em>Billing</em>, <em>Technical</em>). This tells you which team should handle it if escalation is needed.</li>
+<li>Check the <strong>Timestamps</strong> — is this a fresh ticket or has it been sitting for days?</li>
 </ol>
-<h2 id="d-update-ticket-status">D) Update Ticket Status</h2>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-detail.png" alt="Ticket detail view showing subject, description, user details panel, category badge, and timestamps"></p>
+<p><em>Image placeholder: Add screenshot of an open ticket detail view with the student info panel, description, and status dropdown visible.</em></p>
+<hr>
+<h2 id="4-updating-ticket-status">4. Updating Ticket Status</h2>
 <ol>
-<li>Open status control.</li>
-<li>Set new status (for example in_progress).</li>
-<li>Save update.</li>
-<li>Confirm status badge changed in list.</li>
+<li>In the ticket detail, locate the <strong>Status</strong> dropdown.</li>
+<li>Change it to match your current work state:
+<ul>
+<li><strong>In Progress</strong> — You have started investigating and the student should expect a reply soon.</li>
+<li><strong>Resolved</strong> — You have applied a fix or provided an answer.</li>
+<li><strong>Closed</strong> — The issue is fully finalized and archived.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> (or the status change auto-saves, depending on your platform version).</li>
+<li>Confirm the status badge in the list view has updated.</li>
 </ol>
-<h2 id="e-add-resolution-message">E) Add Resolution Message</h2>
+<p><em>Note: Do not jump directly from <strong>Pending</strong> to <strong>Resolved</strong> without first setting <strong>In Progress</strong>. This leaves a confusing audit trail and the student has no indication you saw their message.</em></p>
+<hr>
+<h2 id="5-writing-a-resolution-message">5. Writing a Resolution Message</h2>
+<p>Resolution messages are crucial — they are the student-facing reply that appears in their Help Center.</p>
 <ol>
-<li>Open resolution input.</li>
-<li>Write clear resolution notes.</li>
-<li>Save and mark resolved when done.</li>
-<li>Close ticket when finalized.</li>
+<li>In the ticket detail, find the <strong>Resolution Message</strong> text area.</li>
+<li>Write a clear, actionable response:
+<ul>
+<li>Acknowledge the issue.</li>
+<li>Explain what you found or did.</li>
+<li>Give any steps the student needs to take next.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Change the status to <strong>Resolved</strong>.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Status changed but not persisted.
-A: Reopen ticket and verify update request succeeded.</p>
-<p>Q: Too many tickets in one view.
-A: Use status and priority filters together for triage.</p>
-<p>Q: Student says issue still unresolved.
-A: Reopen ticket and move status back to in_progress.</p>
-<p><img src="/images/user-manual/advisor-panel/support-tickets.png" alt="Support Tickets Placeholder"></p>
-<p>Image placeholder: Ticket table with status/priority filters and resolution panel.</p>
+<blockquote>
+<p><strong>Warning:</strong> Some platforms require the Resolution Message to be filled before the status can be changed to <em>Resolved</em>. If saving the status fails silently, check that the resolution field is not blank.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-resolution.png" alt="Resolution message text area filled in with a clear response and the Resolved status selected"></p>
+<p><em>Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.</em></p>
+<hr>
+<h2 id="6-reopening-a-ticket">6. Reopening a Ticket</h2>
+<p>If a student replies that the issue is still happening after you marked it resolved:</p>
+<ol>
+<li>Open the closed or resolved ticket.</li>
+<li>Change the status back to <strong>In Progress</strong>.</li>
+<li>Add an updated Resolution Message acknowledging the continuation.</li>
+<li>Investigate further and repeat the resolution flow.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I changed the status but it did not save</td>
+          <td>Check if the Resolution Message field is required — fill it in and try saving again</td>
+      </tr>
+      <tr>
+          <td>There are too many tickets to manage at once</td>
+          <td>Apply both Status and Priority filters together. Handle Urgent+Pending first, then High+Pending</td>
+      </tr>
+      <tr>
+          <td>A student says their issue is unresolved but the ticket is Closed</td>
+          <td>Reopen it by setting the status back to In Progress, add an updated message, and reinvestigate</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -3821,8 +4817,9 @@ A: Reopen ticket and move status back to in_progress.</p>
 </ul>
 </li>
 </ol>
-<p><em>(For more details on managing this link, see the <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em></p>
-<hr>
+<p><em>(For more details on managing this link, see the <a href="/docs-idpicker/docs/parent-panel/linked-student-guide/">Linked Student Guide</a>.)</em>
+<img src="/images/user-manual/parent-panel/dashboard-overview.png" alt="Parent dashboard showing linked children cards with progress percentages and the Link Student form"></p>
+<h2 id="image-placeholder-add-screenshot-of-the-parent-dashboard-showing-at-least-one-child-card-with-progress-data-and-the-link-student-input-field"><em>Image placeholder: Add screenshot of the parent dashboard showing at least one child card with progress data and the Link Student input field.</em></h2>
 <h2 id="3-opening-a-student-card">3. Opening a Student Card</h2>
 <p>To dive into the specific details for one child:</p>
 <ol>
@@ -3832,6 +4829,8 @@ A: Reopen ticket and move status back to in_progress.</p>
 </ol>
 <h3 id="got-multiple-children">Got Multiple Children?</h3>
 <p>No problem. Simply use the <strong>Link Student</strong> form again to request access to your second or third child. They will each appear as a distinct, separate card on your dashboard.</p>
+<p><img src="/images/user-manual/parent-panel/student-card.png" alt="Student card on parent dashboard with the View Student button highlighted"></p>
+<p><em>Image placeholder: Add screenshot of a student card on the parent dashboard with the View Student button visible.</em></p>
 <hr>
 <h2 id="4-refreshing-stale-data">4. Refreshing Stale Data</h2>
 <p>If you know your child just finished an assessment, but your dashboard still says &ldquo;Incomplete&rdquo;:</p>
@@ -3880,57 +4879,134 @@ A: Reopen ticket and move status back to in_progress.</p>
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-4e9897a38f12ec302739ed54af868b51">4.3 - Parent Forms</h1>
-    <div class="lead">Detailed click-by-click parent form response</div>
-	<p>Parent panel supports dynamic form responses through <code>/form/{responseId}</code> routes.</p>
-<h2 id="a-open-parent-form">A) Open Parent Form</h2>
-<ol>
-<li>Open form link from dashboard, notification, or direct URL.</li>
-<li>Wait for form load.</li>
-<li>Confirm form title/description is visible.</li>
-<li>If organization banner exists, review context section at top.</li>
-</ol>
-<h2 id="b-fill-form-fields-click-by-click">B) Fill Form Fields (Click-by-Click)</h2>
-<p>For each question:</p>
-<ol>
-<li>Read label and required marker.</li>
-<li>Enter/select answer according to field type.</li>
-<li>Continue until all required fields are complete.</li>
-</ol>
-<p>Supported field types include:</p>
+    <div class="lead">How to open, fill in, and submit forms assigned to you as a parent or guardian</div>
+	<p>Advisors and administrators can assign forms to parents for collecting consent, supplementary information, or progress feedback. This guide walks you through opening, completing, and submitting a form from the parent panel.</p>
+<hr>
+<h2 id="1-finding-a-form-to-complete">1. Finding a Form to Complete</h2>
+<p>Forms assigned to you appear in two places:</p>
 <ul>
-<li>text</li>
-<li>email</li>
-<li>number</li>
-<li>textarea</li>
-<li>dropdown</li>
-<li>date/time/datetime</li>
-<li>rating</li>
-<li>radio</li>
-<li>checkbox</li>
+<li><strong>Dashboard notification banner</strong> — A highlighted card appears when you have a pending form requiring a response.</li>
+<li><strong>Notifications panel</strong> — Click the bell icon in the top menu and look for a notification labelled <em>Form Assigned</em>.</li>
 </ul>
-<h2 id="c-submit-form">C) Submit Form</h2>
 <ol>
-<li>Scroll to submit action.</li>
-<li>Click Submit.</li>
-<li>Wait for success toast.</li>
-<li>Confirm form state updates.</li>
+<li>Click the notification or the dashboard banner to open the form directly.</li>
+<li>Alternatively, navigate to <strong>Forms</strong> in the sidebar to see all forms assigned to your account.</li>
+<li>Forms with a <strong>Pending</strong> status badge still require your response. Forms marked <strong>Submitted</strong> are read-only.</li>
 </ol>
-<h2 id="d-read-only-form-state">D) Read-Only Form State</h2>
-<p>If a response already exists and edit is disabled:</p>
-<ul>
-<li>Form displays prior answers.</li>
-<li>Inputs are non-editable.</li>
-<li>Parent can review but not change.</li>
-</ul>
-<h2 id="common-parent-questions">Common Parent Questions</h2>
-<p>Q: Form did not load.
-A: Link may be invalid/expired or response ID may be incorrect.</p>
-<p>Q: Submit failed.
-A: Recheck required fields and retry.</p>
-<p>Q: Why cannot I edit previous answer?
-A: Form is configured as non-editable after submit.</p>
-<p><img src="/images/user-manual/parent-panel/parent-form-response.png" alt="Parent Form Placeholder"></p>
-<p>Image placeholder: Parent form with mixed question types and submit action.</p>
+<p><img src="/images/user-manual/parent-panel/parent-forms-list.png" alt="Parent forms list showing form names, submission status badges, and due dates"></p>
+<p><em>Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.</em></p>
+<hr>
+<h2 id="2-reading-the-form-context">2. Reading the Form Context</h2>
+<p>Before filling anything in:</p>
+<ol>
+<li>Read the <strong>Form Title</strong> and the <strong>Description</strong> at the top of the page — the description explains why the form is being collected and what you need to provide.</li>
+<li>If the form belongs to a specific programme or application, an <strong>Organisation Banner</strong> may appear at the top with contextual information.</li>
+<li>Note any <strong>Due Date</strong> shown near the title — forms with deadlines will warn you if you are approaching them.</li>
+</ol>
+<hr>
+<h2 id="3-completing-each-field">3. Completing Each Field</h2>
+<p>Work through the form one question at a time:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field type</th>
+          <th>How to fill it in</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Text / Email</strong></td>
+          <td>Click the input box and type your answer</td>
+      </tr>
+      <tr>
+          <td><strong>Number</strong></td>
+          <td>Type a numerical value; the field rejects letters</td>
+      </tr>
+      <tr>
+          <td><strong>Long Text</strong></td>
+          <td>Click the textarea and write your full response; supports multiple lines</td>
+      </tr>
+      <tr>
+          <td><strong>Dropdown</strong></td>
+          <td>Click the dropdown arrow and select one option from the list</td>
+      </tr>
+      <tr>
+          <td><strong>Radio</strong></td>
+          <td>Click the circle next to your chosen single option</td>
+      </tr>
+      <tr>
+          <td><strong>Checkbox</strong></td>
+          <td>Click each box that applies; you may select multiple</td>
+      </tr>
+      <tr>
+          <td><strong>Date / Time</strong></td>
+          <td>Click the calendar or clock icon and pick from the picker</td>
+      </tr>
+      <tr>
+          <td><strong>Rating</strong></td>
+          <td>Click the star or number that represents your rating</td>
+      </tr>
+  </tbody>
+</table>
+<p>Fields marked with a red asterisk <code>*</code> are <strong>required</strong> — you cannot submit the form until they are completed.</p>
+<blockquote>
+<p><strong>Tip:</strong> Use <strong>Tab</strong> to move between fields quickly. The form saves your draft automatically as you fill it in, so you can leave and return without losing progress.</p>
+</blockquote>
+<p><img src="/images/user-manual/parent-panel/parent-form-filling.png" alt="Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers"></p>
+<p><em>Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.</em></p>
+<hr>
+<h2 id="4-reviewing-before-submitting">4. Reviewing Before Submitting</h2>
+<p>Before clicking <strong>Submit</strong>:</p>
+<ol>
+<li>Scroll back through the form to read your answers.</li>
+<li>Make sure every required field (<code>*</code>) has a value.</li>
+<li>Look for any <strong>Validation Error</strong> messages highlighted in red — these appear if a field received input in the wrong format (e.g., letters in a number field).</li>
+</ol>
+<hr>
+<h2 id="5-submitting-the-form">5. Submitting the Form</h2>
+<ol>
+<li>Click the <strong>Submit</strong> button at the bottom of the form.</li>
+<li>Wait for the green success notification to appear: <em>&ldquo;Your response has been submitted.&rdquo;</em></li>
+<li>The form status in your <strong>Forms</strong> list changes from <em>Pending</em> to <em>Submitted</em>.</li>
+</ol>
+<p><img src="/images/user-manual/parent-panel/parent-form-submitted.png" alt="Success notification after form submission and the form title now showing Submitted status"></p>
+<p><em>Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.</em></p>
+<hr>
+<h2 id="6-viewing-a-submitted-form">6. Viewing a Submitted Form</h2>
+<p>After submission, you can still review your answers:</p>
+<ol>
+<li>Go to <strong>Forms</strong> in the sidebar.</li>
+<li>Click any form with a <em>Submitted</em> badge.</li>
+<li>The form opens in <strong>read-only mode</strong> — all your answers are visible but the fields are disabled. You cannot change a submitted response unless the advisor or admin reopens the form for you.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The form did not load</td>
+          <td>The link may be expired or the form may have been retracted. Contact your advisor to confirm the form is still active</td>
+      </tr>
+      <tr>
+          <td>Submit failed with a validation error</td>
+          <td>Scroll up — a red error message will be visible next to the field(s) that have a problem. Fix each one and try submitting again</td>
+      </tr>
+      <tr>
+          <td>I cannot edit my answers after submitting</td>
+          <td>Forms lock after submission by design. Ask your advisor to reopen the form if you need to make a correction</td>
+      </tr>
+      <tr>
+          <td>I do not see the form in my dashboard</td>
+          <td>Check the <strong>Notifications</strong> panel first. If it is not there, ask your advisor to confirm the form was assigned to your account</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -3963,6 +5039,8 @@ A: Form is configured as non-editable after submit.</p>
 <li><strong>Instant Link:</strong> The student appears immediately on your dashboard.</li>
 <li><strong>Pending Link:</strong> The request is sent to your child. They must log in to their student dashboard and click &ldquo;Approve&rdquo; before you can see any of their data.</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/link-student-form.png" alt="Link student form showing an email input field and Send Link Request button, with a Pending confirmation message below"></p>
+<p><em>Image placeholder: Add screenshot of the Link Student form with an email address entered and the pending confirmation state visible.</em></p>
 <hr>
 <h2 id="2-opening-the-linked-student-profile">2. Opening the Linked Student Profile</h2>
 <p>Once a link is established, your child appears as a card on your dashboard.</p>
@@ -3998,6 +5076,8 @@ A: Form is configured as non-editable after submit.</p>
 <li>Modify their profile data (like email or password)</li>
 <li>See private, restricted journal entries or private notes intended only for the advisor</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/linked-student-profile.png" alt="Linked student profile view showing assessment progress, recommendation summary, and journey map section"></p>
+<p><em>Image placeholder: Add screenshot of the linked student profile page showing the progress, recommendations, and journey map sections available to the parent.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -4048,6 +5128,8 @@ A: Form is configured as non-editable after submit.</p>
 <li><strong>Recommendations Summary:</strong> A high-level view of the career paths or universities the AI has suggested for them based on their results.</li>
 <li><strong>Mentorship Activity:</strong> See if your child has been utilizing the AI mentors or checking in with their human advisor.</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/student-detail-overview.png" alt="Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator"></p>
+<p><em>Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.</em></p>
 <hr>
 <h2 id="2-generating-the-journey-map">2. Generating the Journey Map</h2>
 <p>The Journey Map is a comprehensive, exportable report that synthesizes your child&rsquo;s entire profile into a single document. It is highly useful for college applications or external counseling.</p>
@@ -4065,6 +5147,8 @@ A: Form is configured as non-editable after submit.</p>
 <li>Once you are satisfied with the included data, click <strong>Generate &amp; Download Journey Map</strong>.</li>
 <li>The system will process the file (this takes a few seconds) and open a secure PDF download link in a new tab.</li>
 </ol>
+<p><img src="/images/user-manual/parent-panel/journey-map-generator.png" alt="Journey Map section showing data point checkboxes, Preview button, and Generate &amp; Download button"></p>
+<p><em>Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate &amp; Download button visible.</em></p>
 <hr>
 <h2 id="3-chatting-with-the-advisor">3. Chatting with the Advisor</h2>
 <p>If your child&rsquo;s school has enabled Family Chat, you can communicate directly with their assigned advisor from this page.</p>
@@ -4225,6 +5309,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li><strong>Registration Trend Chart:</strong> Look for sudden spikes or drops in daily sign-ups.</li>
 <li><strong>System Activity Panel:</strong> A generalized event feed tracking high-level system actions.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/admin-dashboard.png" alt="Admin dashboard showing global KPI cards, registration trend chart, and recent assessments feed"></p>
+<p><em>Image placeholder: Add screenshot of the full admin dashboard with KPI cards at the top, trend chart, and system activity panel.</em></p>
 <hr>
 <h2 id="3-monitoring-ai-token-usage">3. Monitoring AI Token Usage</h2>
 <p>Because the AI Mentor and generation features consume API tokens, monitoring usage is critical for cost control.</p>
@@ -4234,6 +5320,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Review the charts for <strong>Input Tokens</strong> (prompts sent to the AI) and <strong>Output Tokens</strong> (responses generated by the AI).</li>
 <li>If you notice a massive, unexplained spike in usage, immediately cross-reference the exact timestamp with the <a href="/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">Realtime Logs</a> to identify potential abuse or infinite loops.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/token-usage.png" alt="Token usage section showing a date range filter with input and output token charts side by side"></p>
+<p><em>Image placeholder: Add screenshot of the token usage section showing the date filter and the input/output token charts.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -4287,6 +5375,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Click <strong>Save</strong>. The organization is now active and its admin can begin inviting students.</li>
 <li><em>To edit or delete an organization, use the action menu next to its name in the list view.</em></li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/organization-list.png" alt="Organization list showing school names, primary admin, location, and action menus, with Create Organization button"></p>
+<p><em>Image placeholder: Add screenshot of the organization management list with several school rows and the Create Organization button.</em></p>
 <hr>
 <h2 id="2-auditing-student-accounts">2. Auditing Student Accounts</h2>
 <p>While Advisors manage their own rosters, Super Admins have global visibility over every student in the system for support and auditing purposes.</p>
@@ -4302,6 +5392,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 </li>
 <li><strong>Global Deletion:</strong> If requested for GDPR/CCPA compliance, you can hard-delete a student from this menu. <em>Use extreme caution and always confirm before executing.</em></li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/student-management.png" alt="Student management search showing name/email search results with expanded row displaying verification and activity details"></p>
+<p><em>Image placeholder: Add screenshot of the student management global search results with an expanded row showing account verification status and activity data.</em></p>
 <hr>
 <h2 id="3-managing-parent-accounts">3. Managing Parent Accounts</h2>
 <p>Parents exist independently but are relationally linked to students.</p>
@@ -4378,6 +5470,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Select their foundational Role (e.g., <em>Super Admin</em> vs <em>Content Admin</em>).</li>
 <li>Click <strong>Save</strong>.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/admin-create.png" alt="Add admin form showing email, username, name fields, role dropdown, and Save button"></p>
+<p><em>Image placeholder: Add screenshot of the Add Admin form with all required fields filled in and the role selector visible.</em></p>
 <hr>
 <h2 id="2-managing-the-permission-matrix">2. Managing the Permission Matrix</h2>
 <p>The true power of IDPicker&rsquo;s internal security is the Permission Matrix, which configures access on a highly granular, per-module basis.</p>
@@ -4394,6 +5488,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Click <strong>Save Permissions</strong>.</li>
 </ol>
 <p><em>Important: If the subadmin is currently logged in, you must instruct them to refresh their page or log out/in for the new permissions to apply to their session token immediately.</em></p>
+<p><img src="/images/user-manual/admin-panel/admin-permissions-matrix.png" alt="Permission matrix editor showing module list with Write, Read, and None radio buttons for each module"></p>
+<p><em>Image placeholder: Add screenshot of the permission matrix with some modules set to Write, some to Read, and some to None.</em></p>
 <hr>
 <h2 id="3-subadmin-self-auditing">3. Subadmin Self-Auditing</h2>
 <p>If you are a subadmin and believe you are missing access to a module you need to perform your job:</p>
@@ -4468,6 +5564,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <blockquote>
 <p><strong>Testing is Mandatory:</strong> Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.</p>
 </blockquote>
+<p><img src="/images/user-manual/admin-panel/assessment-builder.png" alt="Assessment builder showing question editor with rating scale and multiple choice fields, and question list sidebar"></p>
+<p><em>Image placeholder: Add screenshot of the assessment builder with the question list panel on the left and the question editor open on the right.</em></p>
 <hr>
 <h2 id="2-bulk-importing-assessments">2. Bulk Importing Assessments</h2>
 <p>If you already have established paper-based psychometrics, you can import them directly rather than typing hundreds of questions manually.</p>
@@ -4478,6 +5576,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Review the Import Preview. The system will flag any rows with invalid schemas or missing options.</li>
 <li>If the preview is clean, click <strong>Confirm Import</strong>.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/assessment-import-preview.png" alt="Bulk import preview table showing question rows with type and options columns, and rows flagged with validation errors"></p>
+<p><em>Image placeholder: Add screenshot of the bulk import preview table with valid rows and at least one flagged validation error row.</em></p>
 <hr>
 <h2 id="3-global-forms-management">3. Global Forms Management</h2>
 <p>Global Forms are distinct from Assessments—they are used for temporary data collection, surveys, or registration funnels.</p>
@@ -4540,6 +5640,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li><strong>CRITICAL:</strong> Do not delete dynamic variables (e.g., <code>{{student_name}}</code> or <code>{{assessment_score}}</code>). Removing these breaks the AI&rsquo;s contextual awareness.</li>
 <li>Validate the syntax and click <strong>Save</strong>. The updated prompt version is now live instantly.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/prompts-editor.png" alt="Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button"></p>
+<p><em>Image placeholder: Add screenshot of the prompt editor with a category selected and the code editor showing dynamic variables like {{student_name}} highlighted.</em></p>
 <hr>
 <h2 id="2-interface-translations-localization">2. Interface Translations (Localization)</h2>
 <p>If you need to fix a typo in the UI, or launch the platform in a brand new language, use the Translations manager.</p>
@@ -4551,6 +5653,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>If you are adding a completely new phrase required by a recent UI update, use the <strong>Create Translation</strong> action to add the missing key.</li>
 </ol>
 <p><em>Cache Warning: Translations are heavily cached in users&rsquo; browsers for speed. Force clear your local browser cache to verify the UI updated correctly.</em></p>
+<p><img src="/images/user-manual/admin-panel/translations-manager.png" alt="Translations manager showing namespace dropdown, locale selector, search bar, and an editable translation key row"></p>
+<p><em>Image placeholder: Add screenshot of the translations manager showing the namespace/locale filters and a translation row being edited.</em></p>
 <hr>
 <h2 id="3-configuring-mentor-personalities">3. Configuring Mentor Personalities</h2>
 <p>You can directly manage the roster of AI Mentors available to students.</p>
@@ -4613,6 +5717,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Click <strong>Save</strong>. The user will see your response on their local Help Center dashboard.</li>
 </ol>
 <p><em>Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory &ldquo;Resolution Message&rdquo; field before trying to change the status to Resolved.</em></p>
+<p><img src="/images/user-manual/admin-panel/support-tickets-admin.png" alt="Global support ticket queue showing filter controls, ticket rows with priority and status badges, and a resolution message field"></p>
+<p><em>Image placeholder: Add screenshot of the admin support ticket queue filtered to Urgent + Pending, with an open ticket showing the resolution message field.</em></p>
 <hr>
 <h2 id="2-generating-global-notifications">2. Generating Global Notifications</h2>
 <p>While Advisors notify their specific students, Super Admins can push alerts globally across all active organizations on the platform.</p>
@@ -4629,6 +5735,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>Write your Title and Message, then hit <strong>Send</strong>.</li>
 <li>Once sent, verify it appears correctly in your broadcast history.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/notifications-global.png" alt="Global notification composer showing target scope dropdown set to All Students, title and message fields, and Send button"></p>
+<p><em>Image placeholder: Add screenshot of the global notification composer with target scope, title, and message filled in before sending.</em></p>
 <hr>
 <h2 id="3-demo-approvals-and-admission-criteria">3. Demo Approvals and Admission Criteria</h2>
 <p>If IDPicker is operating a gated launch or pilot program, you must manually approve access.</p>
@@ -4688,6 +5796,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 <li>If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.</li>
 <li>The status page helps isolate whether a reported bug is a local user error or a widespread server outage.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/status-page.png" alt="Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded"></p>
+<p><em>Image placeholder: Add screenshot of the status page showing all service health blocks, with any current degraded or offline indicators visible.</em></p>
 <hr>
 <h2 id="2-using-realtime-logs">2. Using Realtime Logs</h2>
 <p>When a user reports a persistent crash, the Realtime Logs are your best diagnostic tool.</p>
@@ -4702,6 +5812,8 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 </li>
 <li>Look for sudden bursts or cascading error statements. These can be exported and sent to your engineering team.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/realtime-logs.png" alt="Realtime logs stream showing live error and fatal level log entries with source filter set to ai-generation"></p>
+<p><em>Image placeholder: Add screenshot of the realtime logs stream with the ERROR filter active and several log entries visible.</em></p>
 <hr>
 <h2 id="3-free-use-policy-management">3. Free-Use Policy Management</h2>
 <p>If your platform offers a &ldquo;freemium&rdquo; tier, you need to govern exactly how much free API processing the average user can consume before hitting a paywall.</p>
@@ -5299,6 +6411,111 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
     
 	
   
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-dbab37f93e145eb07dbd2362106ccd61">8.2 - Glossary</h1>
+    <div class="lead">Definitions for IDPicker-specific terms, Turkish university exam codes, and platform concepts</div>
+	<p>This glossary defines key terms used throughout the IDPicker documentation. When a term in a guide is unclear, look it up here first.</p>
+<hr>
+<h2 id="a">A</h2>
+<p><strong>AI Mentor</strong>
+One of the AI-powered conversational agents available to students. Each AI Mentor has a distinct persona and area of expertise (e.g., Career Guidance, Psychological Support, University Selection). Students choose a mentor to chat with inside the AI Mentorship module.</p>
+<p><strong>Application Documents</strong>
+A structured collection of files (transcripts, passports, language certificates, reference letters) that a student uploads as part of a university or programme application. Advisors review and verify each file.</p>
+<hr>
+<h2 id="b">B</h2>
+<p><strong>Bulk Import</strong>
+The process of uploading an Excel (<code>.xlsx</code>) file containing multiple student records to add them all to the platform at once. The required columns are <code>email</code>, <code>first_name</code>, and <code>last_name</code>.</p>
+<hr>
+<h2 id="c">C</h2>
+<p><strong>Certificate</strong>
+A formal recognition document that an advisor issues to a student from within the platform. Certificates can be downloaded as PDFs and typically record completion of a programme, assessment, or milestone.</p>
+<hr>
+<h2 id="d">D</h2>
+<p><strong>DİL (Dil Puanı)</strong>
+A score type used by the Turkish university entrance examination system (YKS). DİL scores come from the Foreign Language Test (YDT) and are used for applications to foreign language programmes.</p>
+<hr>
+<h2 id="e">E</h2>
+<p><strong>EA (Eşit Ağırlık)</strong>
+A composite YKS score type that combines Verbal and Quantitative skills equally. EA scores are required by fields such as Law, Economics, and some Management programmes.</p>
+<hr>
+<h2 id="f">F</h2>
+<p><strong>Family Chat</strong>
+A real-time messaging interface that connects three parties — a student, their advisor, and their linked parent — in a single shared thread. The parent must be linked to the student before the family thread is available.</p>
+<p><strong>Family Thread</strong>
+See <em>Family Chat</em>. Specifically refers to the multi-participant message thread that includes the student, advisor, and parent simultaneously, as distinct from the private student-advisor thread or the private parent-advisor thread.</p>
+<hr>
+<h2 id="g">G</h2>
+<p><strong>Groups</strong>
+Organisational labels that an advisor creates to segment their student roster. Forms, resources, and notifications can be targeted at a specific group rather than at every individual student separately.</p>
+<hr>
+<h2 id="i">I</h2>
+<p><strong>Independent Student</strong>
+A student who registers directly on IDPicker without being invited by a school or organisation. Independent students access platform features using a personal subscription plan and are not attached to an advisor by default.</p>
+<hr>
+<h2 id="j">J</h2>
+<p><strong>Journey Map</strong>
+A comprehensive exportable report that aggregates a student&rsquo;s full IDPicker profile into a single document. It is generated on demand and can include demographics, personality traits, career ambitions, and social/health indicators.</p>
+<hr>
+<h2 id="o">O</h2>
+<p><strong>Organisation Student</strong>
+A student who was invited to IDPicker by an advisor or administrator from a school or organisation. Organisation students are automatically linked to that advisor&rsquo;s roster and typically access the platform without paying directly.</p>
+<hr>
+<h2 id="p">P</h2>
+<p><strong>Pass Counter</strong>
+A metric on some assessment modules that tracks how many times a student has attempted or passed through a test gate. Advisors can view pass counts to gauge student engagement.</p>
+<p><strong>Personality Tiers</strong>
+The categorisation system used to rank a student&rsquo;s psychological trait scores:</p>
+<ul>
+<li><strong>Strong Areas</strong> — Traits where the student&rsquo;s score places them in the top percentile band.</li>
+<li><strong>Balanced Areas</strong> — Traits where scores fall in the mid-range, indicating solid but not exceptional development.</li>
+<li><strong>Growth Areas</strong> — Traits where scores indicate the most room for development and coaching.</li>
+</ul>
+<p><strong>Prompt (AI Prompt)</strong>
+An instruction block sent to the underlying AI model that controls how the AI Mentor behaves, what tone it uses, and what kind of advice it gives. Admins manage global prompts; advisors may manage organisation-level prompts if granted permission.</p>
+<hr>
+<h2 id="r">R</h2>
+<p><strong>Refinement Panel</strong>
+An interface within the Recommendations module that allows a student to apply additional filters (by country, sector, score type, or interest tag) to narrow down or re-rank their AI-generated university or career suggestions.</p>
+<p><strong>Roles</strong>
+See the <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/">Roles and Permissions</a> page for a full breakdown.</p>
+<hr>
+<h2 id="s">S</h2>
+<p><strong>SAY (Sayısal Puan)</strong>
+A YKS score type derived primarily from the Mathematics and Science Test (TYT + AYT). SAY scores are required for applications to Engineering, Medicine, and natural sciences programmes.</p>
+<p><strong>Score Palette</strong>
+A visual display component that renders a student&rsquo;s exam scores (SAY, EA, SÖZ, DİL) side by side, making it easy for students and advisors to compare performance across score types at a glance.</p>
+<p><strong>SÖZ (Sözel Puan)</strong>
+A YKS score type derived primarily from the Verbal (Turkish Language and Literature, History, Geography) portions of the AYT exam. SÖZ scores are used for applications to programmes in Humanities, Education, and Social Sciences.</p>
+<p><strong>Sub-Advisor</strong>
+An assistant counselor account created and managed by a primary Advisor. Sub-advisors have a restricted permission set and may be scoped to a specific student group. See <a href="/docs-idpicker/docs/advisor-panel/sub-advisor-management/">Sub-Advisor Management</a>.</p>
+<p><strong>Subscription</strong>
+An IDPicker payment plan that unlocks premium features for a student or organisation. Subscription tiers vary by the level of access granted (e.g., number of AI mentor chats, number of full PDF reports).</p>
+<hr>
+<h2 id="t">T</h2>
+<p><strong>Token Usage</strong>
+The count of AI API input and output tokens consumed by the AI Mentor and report generation features on the platform. Super Admins monitor token usage from the dashboard to control costs and detect anomalies.</p>
+<hr>
+<h2 id="u">U</h2>
+<p><strong>University Search</strong>
+A module in the student panel that allows students to browse and filter universities by country, programme type, language of instruction, and exam score requirements. Search results can be saved to a shortlist.</p>
+<hr>
+<h2 id="y">Y</h2>
+<p><strong>YKS (Yükseköğretim Kurumları Sınavı)</strong>
+The Turkish national university entrance examination system. YKS consists of two stages: the TYT (Temel Yeterlilik Testi) and the AYT (Alan Yeterlilik Testi). The results are converted into four score types: SAY, EA, SÖZ, and DİL, each used for different programme categories.</p>
+
+</div>
+
+
+
+    
+	
+  
 
     
 	
@@ -5400,9 +6617,27 @@ If you lose your password, click <strong>Forgot Password</strong>, enter your em
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgbWFudWFsIGV4cGxhaW5zIGV4YWN0bHkgaG93IHRvIHVzZSB0aGUgSURQaWNrZXIgcGxhdGZvcm0gZnJvbSBsb2dpbiB0byBhZHZhbmNlZCB3b3JrZmxvd3MuCgojIyBDb3JlIEZlYXR1cmVzICYgUmVzcG9uc2liaWxpdGllcwoKLSBFeGFjdCBhY2Nlc3MgVVJMcyBhbmQgZW50cnkgcG9pbnRzCi0gTG9naW4gYW5kIGFjY291bnQgc2V0dXAgZmxvdwotIFN0dWRlbnQgcGFuZWwgd29ya2Zsb3dzIGZyb20gc3RhcnQgdG8gZmluaXNoCi0gQWR2aXNvciBwYW5lbCBvcGVyYXRpb25zLCBpbmNsdWRpbmcgc3ViLWFkdmlzb3Igc2V0dXAKLSBQYXJlbnQgcGFuZWwgd29ya2Zsb3dzCi0gQWRtaW4gcGFuZWwgb3BlcmF0aW9ucyBmb3IgZ292ZXJuYW5jZSBhbmQgcGxhdGZvcm0gY29udHJvbAotIExpbmtlZCBzdHVkZW50IHZzIGluZGl2aWR1YWwgc3R1ZGVudCBiZWhhdmlvcgotIFNjcmVlbnNob3QgcGxhY2Vob2xkZXJzIGZvciBldmVyeSBtYWpvciBzdGVwCgojIyBTdWdnZXN0ZWQgUmVhZGluZyBPcmRlcgoKMS4gUHJvZHVjdCBTY29wZSBhbmQgUm9sZXMKMi4gR2V0dGluZyBTdGFydGVkIChVUkxzIGFuZCBMb2dpbikKMy4gU3R1ZGVudCBQYW5lbCBDb21wbGV0ZSBHdWlkZQo0LiBBZHZpc29yIFBhbmVsIENvbXBsZXRlIEd1aWRlCjUuIFBhcmVudCBQYW5lbCBDb21wbGV0ZSBHdWlkZQo2LiBBZG1pbiBQYW5lbCBDb21wbGV0ZSBHdWlkZQo3LiBIZWxwIGFuZCBUcm91Ymxlc2hvb3RpbmcKCiFbSURQaWNrZXIgUGxhdGZvcm0gT3ZlcnZpZXcgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvcHJvZHVjdC9wbGF0Zm9ybS1vdmVydmlldy5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogQWRkIGEgaGlnaC1sZXZlbCBwbGF0Zm9ybSBkaWFncmFtIHNob3dpbmcgU3R1ZGVudCwgQWR2aXNvciwgUGFyZW50LCBhbmQgQWRtaW4gcGFuZWxzIGFuZCBuYXZpZ2F0aW9uIHBhdGhzLgo=</script>

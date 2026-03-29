@@ -22,6 +22,8 @@ Sometimes things break or you encounter a feature you do not understand. The Hel
 
 ![New ticket form with subject, category, priority, and description fields filled in](/images/user-manual/student-panel/help-center-new-ticket.png)
 
+*Image placeholder: Add screenshot of the New Ticket form — all fields visible: subject, category, priority dropdown, and description box.*
+
 ---
 
 ## How to Write a Ticket That Gets Fixed Fast
@@ -53,6 +55,8 @@ Once submitted, you can monitor the status of your request without sending dupli
 If an agent replies requiring more info, you will be notified!
 
 ![My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges](/images/user-manual/student-panel/help-center-my-tickets.png)
+
+*Image placeholder: Add screenshot of the My Tickets tab showing at least 2-3 tickets with different status badges (Pending, In Progress, Resolved).*
 
 ---
 

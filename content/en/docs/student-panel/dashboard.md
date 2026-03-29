@@ -24,6 +24,8 @@ When you land on the dashboard, you will see several content blocks:
 
 ![Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards](/images/user-manual/student-panel/dashboard-overview.png)
 
+*Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.*
+
 ---
 
 ## Your First 5 Actions After Logging In
@@ -62,6 +64,8 @@ Forms are created by your advisor and require your response.
 
 ![Assigned Forms block with a pending form card and Open button highlighted](/images/user-manual/student-panel/dashboard-assigned-forms.png)
 
+*Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.*
+
 ---
 
 ## Handling Organization Invitations
@@ -72,6 +76,8 @@ Forms are created by your advisor and require your response.
 4. Your decision is saved immediately.
 
 ![Organization invitation card showing organization name with Accept and Decline buttons](/images/user-manual/student-panel/dashboard-invitations.png)
+
+*Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.*
 
 ---
 
@@ -93,6 +99,9 @@ If you started an assessment and did not finish it:
 3. You are taken back to exactly where you left off.
 4. Complete all remaining questions and click **Submit**.
 ![Dashboard showing Resume Assessment prompt card with Continue button](/images/user-manual/student-panel/dashboard-resume-assessment.png)
+
+*Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.*
+
 ---
 
 ## Exploring Program Cards

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/getting-started/quick-start/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -20,25 +20,24 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Quick Start | IDPicker Docs</title>
-<meta name="description" content="Complete first-run flow from login to first recommended action">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/getting-started/quick-start/">
+<meta name="description" content="Complete first-run walkthrough from opening IDPicker to getting your first recommendations">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/getting-started/quick-start/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Quick Start">
-  <meta property="og:description" content="Complete first-run flow from login to first recommended action">
+  <meta property="og:description" content="Complete first-run walkthrough from opening IDPicker to getting your first recommendations">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-19T00:55:27+05:00">
 
   <meta itemprop="name" content="Quick Start">
-  <meta itemprop="description" content="Complete first-run flow from login to first recommended action">
+  <meta itemprop="description" content="Complete first-run walkthrough from opening IDPicker to getting your first recommendations">
   <meta itemprop="dateModified" content="2026-03-19T00:55:27+05:00">
-  <meta itemprop="wordCount" content="125">
+  <meta itemprop="wordCount" content="823">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Quick Start">
-  <meta name="twitter:description" content="Complete first-run flow from login to first recommended action">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+  <meta name="twitter:description" content="Complete first-run walkthrough from opening IDPicker to getting your first recommendations">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -139,40 +146,150 @@
             
 <div class="td-content">
 	<h1>Quick Start</h1>
-	<div class="lead">Complete first-run flow from login to first recommended action</div>
+	<div class="lead">Complete first-run walkthrough from opening IDPicker to getting your first recommendations</div>
 	<header class="article-meta">
 		
 </header>
-	<h2 id="step-1-open-the-login-page">Step 1: Open the Login Page</h2>
-<p>Use the correct login URL for your environment.</p>
-<p><img src="/images/user-manual/getting-started/login-page.png" alt="Login URL Page Placeholder"></p>
-<p>Image placeholder: Add screenshot of login page with visible URL in browser bar.</p>
-<h2 id="step-2-sign-in">Step 2: Sign In</h2>
+	<p>This guide is for brand-new users — students, advisors, and parents — who want to get from zero to their first meaningful action in under 15 minutes. Follow the section that matches your role.</p>
+<hr>
+<h2 id="1-opening-the-right-login-page">1. Opening the Right Login Page</h2>
+<p>IDPicker has separate login portals for each role. Before anything else, make sure you are on the correct URL.</p>
 <ol>
-<li>Enter email/username.</li>
-<li>Enter password.</li>
-<li>Click Sign In.</li>
+<li>Open your browser and navigate to the login address provided by your school, organization, or invitation email.</li>
+<li>Confirm the page title matches your role (e.g., <em>Student Login</em>, <em>Advisor Login</em>).</li>
+<li>If you are unsure of the correct URL, see the <a href="/docs/getting-started/access-urls/">Access URLs</a> page.</li>
 </ol>
-<p>For OAuth login, click the provider button (for example Google) if enabled.</p>
-<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign In Form Placeholder"></p>
-<p>Image placeholder: Add screenshot of filled sign-in form (mask sensitive data).</p>
-<h2 id="step-3-create-first-item">Step 3: Create First Item</h2>
-<p>After login, open Dashboard and start the first guided workflow:</p>
+<blockquote>
+<p><strong>Tip:</strong> Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/login-page.png" alt="Student login page URL in browser bar and the sign-in form"></p>
+<p><em>Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.</em></p>
+<hr>
+<h2 id="2-signing-in-or-creating-your-account">2. Signing In or Creating Your Account</h2>
+<h3 id="if-you-already-have-an-account">If you already have an account</h3>
 <ol>
-<li>Open AI Mentor, or</li>
-<li>Start Assessment.</li>
+<li>Enter your registered <strong>Email</strong> and <strong>Password</strong>.</li>
+<li>Click <strong>Sign In</strong>.</li>
+<li>If your organization supports it, click <strong>Continue with Google</strong> instead for one-click access.</li>
 </ol>
-<p><img src="/images/user-manual/getting-started/first-action.png" alt="First Action Placeholder"></p>
-<p>Image placeholder: Add screenshot of the first action card highlighted on dashboard.</p>
-<h2 id="step-4-verify-result">Step 4: Verify Result</h2>
-<p>Confirm success by checking:</p>
+<h3 id="if-you-are-a-new-student-registering-yourself">If you are a new student registering yourself</h3>
 <ol>
-<li>Dashboard loads without errors.</li>
-<li>Profile information is accessible.</li>
-<li>At least one feature interaction is recorded.</li>
+<li>Click <strong>Sign Up</strong> on the login page.</li>
+<li>Complete the multi-step wizard: name, email, password, interests, and profile.</li>
+<li>Check your inbox for the <strong>verification email</strong> and click the link inside.</li>
+<li>Return to the login page and sign in.</li>
 </ol>
-<p><img src="/images/user-manual/getting-started/setup-complete.png" alt="Setup Complete Placeholder"></p>
-<p>Image placeholder: Add screenshot confirming first successful interaction.</p>
+<h3 id="if-you-received-an-invitation-link">If you received an invitation link</h3>
+<ol>
+<li>Open the invitation email from IDPicker.</li>
+<li>Click the <strong>Setup Password</strong> button or link.</li>
+<li>Set a strong password and confirm it.</li>
+<li>You are automatically signed in and placed in the correct panel.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/sign-in-form.png" alt="Sign-in form with email/password fields and Continue with Google button"></p>
+<p><em>Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.</em></p>
+<hr>
+<h2 id="3-student-first-run-assessment--personality--recommendations">3. Student First Run: Assessment → Personality → Recommendations</h2>
+<h3 id="step-1--complete-your-assessment">Step 1 — Complete your assessment</h3>
+<ol>
+<li>After signing in, you land on the <strong>Student Dashboard</strong>.</li>
+<li>Find the <strong>Self Assessment</strong> card or click <strong>Self Assessment</strong> in the sidebar.</li>
+<li>Click <strong>Start</strong> on the available assessment.</li>
+<li>Answer every question honestly — there are no wrong answers.</li>
+<li>Click <strong>Submit</strong> when you finish.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> The assessment takes 15–30 minutes. Find a quiet moment to complete it — your first instinct answers are always the most accurate.</p>
+</blockquote>
+<p><img src="/images/user-manual/getting-started/student-first-assessment.png" alt="Student dashboard with the Self Assessment card highlighted and a Start button"></p>
+<p><em>Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.</em></p>
+<h3 id="step-2--explore-your-personality-profile">Step 2 — Explore your Personality profile</h3>
+<ol>
+<li>After submission, click <strong>Personality</strong> in the sidebar.</li>
+<li>Review the <strong>radar chart</strong> showing your 8 personality traits.</li>
+<li>Read the <strong>Personality Overview</strong> card and <strong>Quick Stats</strong> panel.</li>
+<li>Scroll down to explore individual trait cards with action steps.</li>
+</ol>
+<h3 id="step-3--get-your-first-recommendations">Step 3 — Get your first Recommendations</h3>
+<ol>
+<li>Click <strong>Recommendations</strong> in the sidebar.</li>
+<li>Click <strong>Refine Results</strong> to open the refinement panel.</li>
+<li>Choose your input mode:
+<ul>
+<li>Select <strong>Test Scores</strong> if you have exam results to enter.</li>
+<li>Select <strong>Personality</strong> to use your trait profile directly.</li>
+</ul>
+</li>
+<li>Fill in your data and click <strong>Apply All Filters</strong>.</li>
+<li>Review the ranked list of universities and programmes that match your profile.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/student-first-recommendations.png" alt="Recommendations page showing ranked university cards after applying filters"></p>
+<p><em>Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.</em></p>
+<hr>
+<h2 id="4-advisor-first-run-dashboard--student-roster--first-notification">4. Advisor First Run: Dashboard → Student Roster → First Notification</h2>
+<h3 id="step-1--review-your-dashboard">Step 1 — Review your dashboard</h3>
+<ol>
+<li>Sign in to the Advisor Panel.</li>
+<li>Look at the <strong>KPI widgets</strong> at the top — total students, pending forms, and recent activity.</li>
+<li>Check the <strong>Assigned Forms</strong> block for any forms requiring attention.</li>
+</ol>
+<h3 id="step-2--view-your-student-roster">Step 2 — View your student roster</h3>
+<ol>
+<li>Click <strong>Students</strong> in the sidebar.</li>
+<li>Browse your roster — each row shows a student&rsquo;s name, email, and latest activity signal.</li>
+<li>Click any student to open their full profile.</li>
+</ol>
+<h3 id="step-3--send-your-first-notification">Step 3 — Send your first notification</h3>
+<ol>
+<li>Click <strong>Notifications</strong> in the sidebar.</li>
+<li>Click <strong>Create Notification</strong>.</li>
+<li>Write a welcome message and set the target to <strong>All Students</strong>.</li>
+<li>Click <strong>Send</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/advisor-first-run.png" alt="Advisor dashboard with KPI widgets and sidebar navigation highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.</em></p>
+<hr>
+<h2 id="5-parent-first-run-link-your-child--view-their-progress">5. Parent First Run: Link Your Child → View Their Progress</h2>
+<h3 id="step-1--link-your-childs-account">Step 1 — Link your child&rsquo;s account</h3>
+<ol>
+<li>Sign in to the Parent Panel.</li>
+<li>On the dashboard, find the <strong>Link Student</strong> form.</li>
+<li>Enter the exact email address your child used to register.</li>
+<li>Click <strong>Send Link Request</strong>.</li>
+<li>Wait for your child to approve the request from their student dashboard.</li>
+</ol>
+<h3 id="step-2--open-their-profile">Step 2 — Open their profile</h3>
+<ol>
+<li>Once linked, their card appears on your dashboard.</li>
+<li>Click <strong>View Student</strong> to open their full detail page.</li>
+<li>Review their assessment progress, recommendations summary, and advisor activity.</li>
+</ol>
+<p><img src="/images/user-manual/getting-started/parent-first-run.png" alt="Parent dashboard showing a linked student card with View Student button"></p>
+<p><em>Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I signed in but landed on the wrong panel</td>
+          <td>Log out and use the correct login URL for your role — see <a href="/docs/getting-started/access-urls/">Access URLs</a></td>
+      </tr>
+      <tr>
+          <td>I clicked Start on the assessment but the page is blank</td>
+          <td>Refresh the page. If it persists, try a different browser (Chrome or Firefox recommended)</td>
+      </tr>
+      <tr>
+          <td>My child never received my link request</td>
+          <td>Ask them to log in to their student dashboard and look for a notification about a pending parent link approval</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -196,12 +313,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CiMjIFN0ZXAgMTogT3BlbiB0aGUgTG9naW4gUGFnZQoKVXNlIHRoZSBjb3JyZWN0IGxvZ2luIFVSTCBmb3IgeW91ciBlbnZpcm9ubWVudC4KCiFbTG9naW4gVVJMIFBhZ2UgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvZ2V0dGluZy1zdGFydGVkL2xvZ2luLXBhZ2UucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIGxvZ2luIHBhZ2Ugd2l0aCB2aXNpYmxlIFVSTCBpbiBicm93c2VyIGJhci4KCiMjIFN0ZXAgMjogU2lnbiBJbgoKMS4gRW50ZXIgZW1haWwvdXNlcm5hbWUuCjIuIEVudGVyIHBhc3N3b3JkLgozLiBDbGljayBTaWduIEluLgoKRm9yIE9BdXRoIGxvZ2luLCBjbGljayB0aGUgcHJvdmlkZXIgYnV0dG9uIChmb3IgZXhhbXBsZSBHb29nbGUpIGlmIGVuYWJsZWQuCgohW1NpZ24gSW4gRm9ybSBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9nZXR0aW5nLXN0YXJ0ZWQvc2lnbi1pbi1mb3JtLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiBmaWxsZWQgc2lnbi1pbiBmb3JtIChtYXNrIHNlbnNpdGl2ZSBkYXRhKS4KCiMjIFN0ZXAgMzogQ3JlYXRlIEZpcnN0IEl0ZW0KCkFmdGVyIGxvZ2luLCBvcGVuIERhc2hib2FyZCBhbmQgc3RhcnQgdGhlIGZpcnN0IGd1aWRlZCB3b3JrZmxvdzoKMS4gT3BlbiBBSSBNZW50b3IsIG9yCjIuIFN0YXJ0IEFzc2Vzc21lbnQuCgohW0ZpcnN0IEFjdGlvbiBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9nZXR0aW5nLXN0YXJ0ZWQvZmlyc3QtYWN0aW9uLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgZmlyc3QgYWN0aW9uIGNhcmQgaGlnaGxpZ2h0ZWQgb24gZGFzaGJvYXJkLgoKIyMgU3RlcCA0OiBWZXJpZnkgUmVzdWx0CgpDb25maXJtIHN1Y2Nlc3MgYnkgY2hlY2tpbmc6CjEuIERhc2hib2FyZCBsb2FkcyB3aXRob3V0IGVycm9ycy4KMi4gUHJvZmlsZSBpbmZvcm1hdGlvbiBpcyBhY2Nlc3NpYmxlLgozLiBBdCBsZWFzdCBvbmUgZmVhdHVyZSBpbnRlcmFjdGlvbiBpcyByZWNvcmRlZC4KCiFbU2V0dXAgQ29tcGxldGUgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvZ2V0dGluZy1zdGFydGVkL3NldHVwLWNvbXBsZXRlLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBjb25maXJtaW5nIGZpcnN0IHN1Y2Nlc3NmdWwgaW50ZXJhY3Rpb24uCg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgaXMgZm9yIGJyYW5kLW5ldyB1c2VycyDigJQgc3R1ZGVudHMsIGFkdmlzb3JzLCBhbmQgcGFyZW50cyDigJQgd2hvIHdhbnQgdG8gZ2V0IGZyb20gemVybyB0byB0aGVpciBmaXJzdCBtZWFuaW5nZnVsIGFjdGlvbiBpbiB1bmRlciAxNSBtaW51dGVzLiBGb2xsb3cgdGhlIHNlY3Rpb24gdGhhdCBtYXRjaGVzIHlvdXIgcm9sZS4KCi0tLQoKIyMgMS4gT3BlbmluZyB0aGUgUmlnaHQgTG9naW4gUGFnZQoKSURQaWNrZXIgaGFzIHNlcGFyYXRlIGxvZ2luIHBvcnRhbHMgZm9yIGVhY2ggcm9sZS4gQmVmb3JlIGFueXRoaW5nIGVsc2UsIG1ha2Ugc3VyZSB5b3UgYXJlIG9uIHRoZSBjb3JyZWN0IFVSTC4KCjEuIE9wZW4geW91ciBicm93c2VyIGFuZCBuYXZpZ2F0ZSB0byB0aGUgbG9naW4gYWRkcmVzcyBwcm92aWRlZCBieSB5b3VyIHNjaG9vbCwgb3JnYW5pemF0aW9uLCBvciBpbnZpdGF0aW9uIGVtYWlsLgoyLiBDb25maXJtIHRoZSBwYWdlIHRpdGxlIG1hdGNoZXMgeW91ciByb2xlIChlLmcuLCAqU3R1ZGVudCBMb2dpbiosICpBZHZpc29yIExvZ2luKikuCjMuIElmIHlvdSBhcmUgdW5zdXJlIG9mIHRoZSBjb3JyZWN0IFVSTCwgc2VlIHRoZSBbQWNjZXNzIFVSTHNdKC9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscy8pIHBhZ2UuCgo&#43;ICoqVGlwOioqIEJvb2ttYXJrIHlvdXIgbG9naW4gcGFnZSB0aGUgZmlyc3QgdGltZSB5b3UgdXNlIGl0LiBUaGVyZSBhcmUgbXVsdGlwbGUgcG9ydGFsIGFkZHJlc3NlcyBhbmQgZ29pbmcgdG8gdGhlIHdyb25nIG9uZSB3aWxsIHByZXZlbnQgc2lnbi1pbi4KCiFbU3R1ZGVudCBsb2dpbiBwYWdlIFVSTCBpbiBicm93c2VyIGJhciBhbmQgdGhlIHNpZ24taW4gZm9ybV0oL2ltYWdlcy91c2VyLW1hbnVhbC9nZXR0aW5nLXN0YXJ0ZWQvbG9naW4tcGFnZS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBsb2dpbiBwYWdlIHdpdGggdGhlIGJyb3dzZXIgYWRkcmVzcyBiYXIgdmlzaWJsZSBzaG93aW5nIHRoZSBjb3JyZWN0IFVSTC4qCgotLS0KCiMjIDIuIFNpZ25pbmcgSW4gb3IgQ3JlYXRpbmcgWW91ciBBY2NvdW50CgojIyMgSWYgeW91IGFscmVhZHkgaGF2ZSBhbiBhY2NvdW50CgoxLiBFbnRlciB5b3VyIHJlZ2lzdGVyZWQgKipFbWFpbCoqIGFuZCAqKlBhc3N3b3JkKiouCjIuIENsaWNrICoqU2lnbiBJbioqLgozLiBJZiB5b3VyIG9yZ2FuaXphdGlvbiBzdXBwb3J0cyBpdCwgY2xpY2sgKipDb250aW51ZSB3aXRoIEdvb2dsZSoqIGluc3RlYWQgZm9yIG9uZS1jbGljayBhY2Nlc3MuCgojIyMgSWYgeW91IGFyZSBhIG5ldyBzdHVkZW50IHJlZ2lzdGVyaW5nIHlvdXJzZWxmCgoxLiBDbGljayAqKlNpZ24gVXAqKiBvbiB0aGUgbG9naW4gcGFnZS4KMi4gQ29tcGxldGUgdGhlIG11bHRpLXN0ZXAgd2l6YXJkOiBuYW1lLCBlbWFpbCwgcGFzc3dvcmQsIGludGVyZXN0cywgYW5kIHByb2ZpbGUuCjMuIENoZWNrIHlvdXIgaW5ib3ggZm9yIHRoZSAqKnZlcmlmaWNhdGlvbiBlbWFpbCoqIGFuZCBjbGljayB0aGUgbGluayBpbnNpZGUuCjQuIFJldHVybiB0byB0aGUgbG9naW4gcGFnZSBhbmQgc2lnbiBpbi4KCiMjIyBJZiB5b3UgcmVjZWl2ZWQgYW4gaW52aXRhdGlvbiBsaW5rCgoxLiBPcGVuIHRoZSBpbnZpdGF0aW9uIGVtYWlsIGZyb20gSURQaWNrZXIuCjIuIENsaWNrIHRoZSAqKlNldHVwIFBhc3N3b3JkKiogYnV0dG9uIG9yIGxpbmsuCjMuIFNldCBhIHN0cm9uZyBwYXNzd29yZCBhbmQgY29uZmlybSBpdC4KNC4gWW91IGFyZSBhdXRvbWF0aWNhbGx5IHNpZ25lZCBpbiBhbmQgcGxhY2VkIGluIHRoZSBjb3JyZWN0IHBhbmVsLgoKIVtTaWduLWluIGZvcm0gd2l0aCBlbWFpbC9wYXNzd29yZCBmaWVsZHMgYW5kIENvbnRpbnVlIHdpdGggR29vZ2xlIGJ1dHRvbl0oL2ltYWdlcy91c2VyLW1hbnVhbC9nZXR0aW5nLXN0YXJ0ZWQvc2lnbi1pbi1mb3JtLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIGNvbXBsZXRlZCBzaWduLWluIGZvcm0gd2l0aCBib3RoIGVtYWlsIGxvZ2luIGFuZCBHb29nbGUgbG9naW4gb3B0aW9ucyB2aXNpYmxlLioKCi0tLQoKIyMgMy4gU3R1ZGVudCBGaXJzdCBSdW46IEFzc2Vzc21lbnQg4oaSIFBlcnNvbmFsaXR5IOKGkiBSZWNvbW1lbmRhdGlvbnMKCiMjIyBTdGVwIDEg4oCUIENvbXBsZXRlIHlvdXIgYXNzZXNzbWVudAoKMS4gQWZ0ZXIgc2lnbmluZyBpbiwgeW91IGxhbmQgb24gdGhlICoqU3R1ZGVudCBEYXNoYm9hcmQqKi4KMi4gRmluZCB0aGUgKipTZWxmIEFzc2Vzc21lbnQqKiBjYXJkIG9yIGNsaWNrICoqU2VsZiBBc3Nlc3NtZW50KiogaW4gdGhlIHNpZGViYXIuCjMuIENsaWNrICoqU3RhcnQqKiBvbiB0aGUgYXZhaWxhYmxlIGFzc2Vzc21lbnQuCjQuIEFuc3dlciBldmVyeSBxdWVzdGlvbiBob25lc3RseSDigJQgdGhlcmUgYXJlIG5vIHdyb25nIGFuc3dlcnMuCjUuIENsaWNrICoqU3VibWl0Kiogd2hlbiB5b3UgZmluaXNoLgoKPiAqKlRpcDoqKiBUaGUgYXNzZXNzbWVudCB0YWtlcyAxNeKAkzMwIG1pbnV0ZXMuIEZpbmQgYSBxdWlldCBtb21lbnQgdG8gY29tcGxldGUgaXQg4oCUIHlvdXIgZmlyc3QgaW5zdGluY3QgYW5zd2VycyBhcmUgYWx3YXlzIHRoZSBtb3N0IGFjY3VyYXRlLgoKIVtTdHVkZW50IGRhc2hib2FyZCB3aXRoIHRoZSBTZWxmIEFzc2Vzc21lbnQgY2FyZCBoaWdobGlnaHRlZCBhbmQgYSBTdGFydCBidXR0b25dKC9pbWFnZXMvdXNlci1tYW51YWwvZ2V0dGluZy1zdGFydGVkL3N0dWRlbnQtZmlyc3QtYXNzZXNzbWVudC5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBzdHVkZW50IGRhc2hib2FyZCB3aXRoIHRoZSBhc3Nlc3NtZW50IGNhcmQgaGlnaGxpZ2h0ZWQgYW5kIFN0YXJ0IGJ1dHRvbiB2aXNpYmxlLioKCiMjIyBTdGVwIDIg4oCUIEV4cGxvcmUgeW91ciBQZXJzb25hbGl0eSBwcm9maWxlCgoxLiBBZnRlciBzdWJtaXNzaW9uLCBjbGljayAqKlBlcnNvbmFsaXR5KiogaW4gdGhlIHNpZGViYXIuCjIuIFJldmlldyB0aGUgKipyYWRhciBjaGFydCoqIHNob3dpbmcgeW91ciA4IHBlcnNvbmFsaXR5IHRyYWl0cy4KMy4gUmVhZCB0aGUgKipQZXJzb25hbGl0eSBPdmVydmlldyoqIGNhcmQgYW5kICoqUXVpY2sgU3RhdHMqKiBwYW5lbC4KNC4gU2Nyb2xsIGRvd24gdG8gZXhwbG9yZSBpbmRpdmlkdWFsIHRyYWl0IGNhcmRzIHdpdGggYWN0aW9uIHN0ZXBzLgoKIyMjIFN0ZXAgMyDigJQgR2V0IHlvdXIgZmlyc3QgUmVjb21tZW5kYXRpb25zCgoxLiBDbGljayAqKlJlY29tbWVuZGF0aW9ucyoqIGluIHRoZSBzaWRlYmFyLgoyLiBDbGljayAqKlJlZmluZSBSZXN1bHRzKiogdG8gb3BlbiB0aGUgcmVmaW5lbWVudCBwYW5lbC4KMy4gQ2hvb3NlIHlvdXIgaW5wdXQgbW9kZToKICAgLSBTZWxlY3QgKipUZXN0IFNjb3JlcyoqIGlmIHlvdSBoYXZlIGV4YW0gcmVzdWx0cyB0byBlbnRlci4KICAgLSBTZWxlY3QgKipQZXJzb25hbGl0eSoqIHRvIHVzZSB5b3VyIHRyYWl0IHByb2ZpbGUgZGlyZWN0bHkuCjQuIEZpbGwgaW4geW91ciBkYXRhIGFuZCBjbGljayAqKkFwcGx5IEFsbCBGaWx0ZXJzKiouCjUuIFJldmlldyB0aGUgcmFua2VkIGxpc3Qgb2YgdW5pdmVyc2l0aWVzIGFuZCBwcm9ncmFtbWVzIHRoYXQgbWF0Y2ggeW91ciBwcm9maWxlLgoKIVtSZWNvbW1lbmRhdGlvbnMgcGFnZSBzaG93aW5nIHJhbmtlZCB1bml2ZXJzaXR5IGNhcmRzIGFmdGVyIGFwcGx5aW5nIGZpbHRlcnNdKC9pbWFnZXMvdXNlci1tYW51YWwvZ2V0dGluZy1zdGFydGVkL3N0dWRlbnQtZmlyc3QtcmVjb21tZW5kYXRpb25zLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHJlY29tbWVuZGF0aW9ucyByZXN1bHRzIHBhZ2Ugd2l0aCBhdCBsZWFzdCAzIHJhbmtlZCB1bml2ZXJzaXR5IGNhcmRzIHZpc2libGUgYWZ0ZXIgYSBmaWx0ZXIgaGFzIGJlZW4gYXBwbGllZC4qCgotLS0KCiMjIDQuIEFkdmlzb3IgRmlyc3QgUnVuOiBEYXNoYm9hcmQg4oaSIFN0dWRlbnQgUm9zdGVyIOKGkiBGaXJzdCBOb3RpZmljYXRpb24KCiMjIyBTdGVwIDEg4oCUIFJldmlldyB5b3VyIGRhc2hib2FyZAoKMS4gU2lnbiBpbiB0byB0aGUgQWR2aXNvciBQYW5lbC4KMi4gTG9vayBhdCB0aGUgKipLUEkgd2lkZ2V0cyoqIGF0IHRoZSB0b3Ag4oCUIHRvdGFsIHN0dWRlbnRzLCBwZW5kaW5nIGZvcm1zLCBhbmQgcmVjZW50IGFjdGl2aXR5LgozLiBDaGVjayB0aGUgKipBc3NpZ25lZCBGb3JtcyoqIGJsb2NrIGZvciBhbnkgZm9ybXMgcmVxdWlyaW5nIGF0dGVudGlvbi4KCiMjIyBTdGVwIDIg4oCUIFZpZXcgeW91ciBzdHVkZW50IHJvc3RlcgoKMS4gQ2xpY2sgKipTdHVkZW50cyoqIGluIHRoZSBzaWRlYmFyLgoyLiBCcm93c2UgeW91ciByb3N0ZXIg4oCUIGVhY2ggcm93IHNob3dzIGEgc3R1ZGVudCdzIG5hbWUsIGVtYWlsLCBhbmQgbGF0ZXN0IGFjdGl2aXR5IHNpZ25hbC4KMy4gQ2xpY2sgYW55IHN0dWRlbnQgdG8gb3BlbiB0aGVpciBmdWxsIHByb2ZpbGUuCgojIyMgU3RlcCAzIOKAlCBTZW5kIHlvdXIgZmlyc3Qgbm90aWZpY2F0aW9uCgoxLiBDbGljayAqKk5vdGlmaWNhdGlvbnMqKiBpbiB0aGUgc2lkZWJhci4KMi4gQ2xpY2sgKipDcmVhdGUgTm90aWZpY2F0aW9uKiouCjMuIFdyaXRlIGEgd2VsY29tZSBtZXNzYWdlIGFuZCBzZXQgdGhlIHRhcmdldCB0byAqKkFsbCBTdHVkZW50cyoqLgo0LiBDbGljayAqKlNlbmQqKi4KCiFbQWR2aXNvciBkYXNoYm9hcmQgd2l0aCBLUEkgd2lkZ2V0cyBhbmQgc2lkZWJhciBuYXZpZ2F0aW9uIGhpZ2hsaWdodGVkXSgvaW1hZ2VzL3VzZXItbWFudWFsL2dldHRpbmctc3RhcnRlZC9hZHZpc29yLWZpcnN0LXJ1bi5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBhZHZpc29yIGRhc2hib2FyZCBmaXJzdC1sb2FkIHN0YXRlIGhpZ2hsaWdodGluZyB0aGUgS1BJIHdpZGdldHMgYW5kIHNpZGViYXIuKgoKLS0tCgojIyA1LiBQYXJlbnQgRmlyc3QgUnVuOiBMaW5rIFlvdXIgQ2hpbGQg4oaSIFZpZXcgVGhlaXIgUHJvZ3Jlc3MKCiMjIyBTdGVwIDEg4oCUIExpbmsgeW91ciBjaGlsZCdzIGFjY291bnQKCjEuIFNpZ24gaW4gdG8gdGhlIFBhcmVudCBQYW5lbC4KMi4gT24gdGhlIGRhc2hib2FyZCwgZmluZCB0aGUgKipMaW5rIFN0dWRlbnQqKiBmb3JtLgozLiBFbnRlciB0aGUgZXhhY3QgZW1haWwgYWRkcmVzcyB5b3VyIGNoaWxkIHVzZWQgdG8gcmVnaXN0ZXIuCjQuIENsaWNrICoqU2VuZCBMaW5rIFJlcXVlc3QqKi4KNS4gV2FpdCBmb3IgeW91ciBjaGlsZCB0byBhcHByb3ZlIHRoZSByZXF1ZXN0IGZyb20gdGhlaXIgc3R1ZGVudCBkYXNoYm9hcmQuCgojIyMgU3RlcCAyIOKAlCBPcGVuIHRoZWlyIHByb2ZpbGUKCjEuIE9uY2UgbGlua2VkLCB0aGVpciBjYXJkIGFwcGVhcnMgb24geW91ciBkYXNoYm9hcmQuCjIuIENsaWNrICoqVmlldyBTdHVkZW50KiogdG8gb3BlbiB0aGVpciBmdWxsIGRldGFpbCBwYWdlLgozLiBSZXZpZXcgdGhlaXIgYXNzZXNzbWVudCBwcm9ncmVzcywgcmVjb21tZW5kYXRpb25zIHN1bW1hcnksIGFuZCBhZHZpc29yIGFjdGl2aXR5LgoKIVtQYXJlbnQgZGFzaGJvYXJkIHNob3dpbmcgYSBsaW5rZWQgc3R1ZGVudCBjYXJkIHdpdGggVmlldyBTdHVkZW50IGJ1dHRvbl0oL2ltYWdlcy91c2VyLW1hbnVhbC9nZXR0aW5nLXN0YXJ0ZWQvcGFyZW50LWZpcnN0LXJ1bi5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBwYXJlbnQgZGFzaGJvYXJkIHdpdGggYSBsaW5rZWQgc3R1ZGVudCBjYXJkIGFuZCB0aGUgVmlldyBTdHVkZW50IGJ1dHRvbiB2aXNpYmxlLioKCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBzaWduZWQgaW4gYnV0IGxhbmRlZCBvbiB0aGUgd3JvbmcgcGFuZWwgfCBMb2cgb3V0IGFuZCB1c2UgdGhlIGNvcnJlY3QgbG9naW4gVVJMIGZvciB5b3VyIHJvbGUg4oCUIHNlZSBbQWNjZXNzIFVSTHNdKC9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscy8pIHwKfCBJIGNsaWNrZWQgU3RhcnQgb24gdGhlIGFzc2Vzc21lbnQgYnV0IHRoZSBwYWdlIGlzIGJsYW5rIHwgUmVmcmVzaCB0aGUgcGFnZS4gSWYgaXQgcGVyc2lzdHMsIHRyeSBhIGRpZmZlcmVudCBicm93c2VyIChDaHJvbWUgb3IgRmlyZWZveCByZWNvbW1lbmRlZCkgfAp8IE15IGNoaWxkIG5ldmVyIHJlY2VpdmVkIG15IGxpbmsgcmVxdWVzdCB8IEFzayB0aGVtIHRvIGxvZyBpbiB0byB0aGVpciBzdHVkZW50IGRhc2hib2FyZCBhbmQgbG9vayBmb3IgYSBub3RpZmljYXRpb24gYWJvdXQgYSBwZW5kaW5nIHBhcmVudCBsaW5rIGFwcHJvdmFsIHwK</script>
 
 <style>
  

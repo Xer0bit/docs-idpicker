@@ -20,6 +20,10 @@ The system prompts dictate exactly how the AI Mentors behave, what tone they use
 5. **CRITICAL:** Do not delete dynamic variables (e.g., `{{student_name}}` or `{{assessment_score}}`). Removing these breaks the AI's contextual awareness.
 6. Validate the syntax and click **Save**. The updated prompt version is now live instantly.
 
+![Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button](/images/user-manual/admin-panel/prompts-editor.png)
+
+*Image placeholder: Add screenshot of the prompt editor with a category selected and the code editor showing dynamic variables like {{student_name}} highlighted.*
+
 ---
 
 ## 2. Interface Translations (Localization)
@@ -33,6 +37,10 @@ If you need to fix a typo in the UI, or launch the platform in a brand new langu
 5. If you are adding a completely new phrase required by a recent UI update, use the **Create Translation** action to add the missing key.
 
 *Cache Warning: Translations are heavily cached in users' browsers for speed. Force clear your local browser cache to verify the UI updated correctly.*
+
+![Translations manager showing namespace dropdown, locale selector, search bar, and an editable translation key row](/images/user-manual/admin-panel/translations-manager.png)
+
+*Image placeholder: Add screenshot of the translations manager showing the namespace/locale filters and a translation row being edited.*
 
 ---
 

@@ -23,6 +23,10 @@ The Notifications module is your mass-communication tool. Instead of sending hun
 7. Click **Send** (or **Create**).
 8. The notification is immediately dispatched and will appear in your history list.
 
+![Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button](/images/user-manual/advisor-panel/notifications-compose.png)
+
+*Image placeholder: Add screenshot of the notification composer with a title, message, and group selection visible before clicking Send.*
+
 ---
 
 ## 2. Reviewing Delivery and Effectiveness
@@ -34,6 +38,10 @@ Unlike email, platform notifications allow you to track engagement. In your noti
 - **Total Recipients:** The absolute number of unique students who received the ping.
 - **Read Count:** How many students have clicked on the notification to read the full body.
 - **Unread Count:** How many students have ignored or not yet seen the alert.
+
+![Notification history list showing past broadcasts with recipient count, read count, and unread count columns](/images/user-manual/advisor-panel/notifications-history.png)
+
+*Image placeholder: Add screenshot of the notification history table showing several past notifications with their read and unread counts.*
 
 ---
 

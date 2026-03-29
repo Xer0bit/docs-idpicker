@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/index.xml">
-<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/index.json">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,7 +23,7 @@
 
 <title>Advisor Panel | IDPicker Docs</title>
 <meta name="description" content="Complete click-by-click advisor operations manual">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Advisor Panel">
   <meta property="og:description" content="Complete click-by-click advisor operations manual">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Advisor Panel">
   <meta name="twitter:description" content="Complete click-by-click advisor operations manual">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -347,6 +354,8 @@ This is the multi-page printable view of this section.
 <p><strong>Why is my dashboard missing certain modules?</strong>
 If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/login.png" alt="Advisor login page showing the email, password fields, and Sign In button"></p>
+<p><em>Image placeholder: Add screenshot of the advisor login page with email and password fields visible.</em></p>
 <hr>
 <h2 id="2-setting-up-your-account-first-time">2. Setting Up Your Account (First Time)</h2>
 <p>If you were invited to join as an advisor or sub-advisor by your organization lead:</p>
@@ -375,6 +384,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li><strong>Main Navigation (Sidebar):</strong> Use the sidebar to quickly jump between managing Students, organizing Groups, distributing Resources, or handling Support/Chat.</li>
 </ul>
 <p><em>Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.</em></p>
+<p><img src="/images/user-manual/advisor-panel/dashboard.png" alt="Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation"></p>
+<p><em>Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -434,6 +445,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 </ol>
 <h3 id="viewing-student-details">Viewing Student Details</h3>
 <p>Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.</p>
+<p><img src="/images/user-manual/advisor-panel/students-roster.png" alt="Student roster list showing search bar, filter dropdowns, and student rows with name and email columns"></p>
+<p><em>Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.</em></p>
 <hr>
 <h2 id="managing-group-assignments">Managing Group Assignments</h2>
 <p>To help organize your communications, you can assign students to Groups right from the roster.</p>
@@ -468,6 +481,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li><strong>Duplicates:</strong> If an email already exists in the system, that row will be skipped/flagged.</li>
 <li><strong>Group Assignment:</strong> Imported students are <em>not</em> automatically placed in a group upon import. You must assign them afterward.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/students-bulk-import.png" alt="Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button"></p>
+<p><em>Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -508,55 +523,112 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-9392ddd8e96bdb8778f491c63448ebac">3 - Certificates and Application Documents</h1>
-    <div class="lead">Detailed click-by-click advisor document and credential workflows</div>
-	<p>This guide covers advisor certificate operations and application document review.</p>
-<h2 id="a-certificates-workflow">A) Certificates Workflow</h2>
+    <div class="lead">How to issue achievement certificates and review student application document uploads</div>
+	<p>This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.</p>
+<hr>
+<h2 id="1-issuing-a-certificate">1. Issuing a Certificate</h2>
+<p>Certificates are formal, advisor-generated recognitions that appear in the student&rsquo;s Certificates module and can be downloaded as PDFs.</p>
 <ol>
-<li>In sidebar, open Certificates.</li>
-<li>Review available certificate templates/items.</li>
-<li>Open template/detail.</li>
-<li>Configure issuance data as needed.</li>
-<li>Send/issue certificate to selected student(s).</li>
-<li>Confirm status (sent, pending, failed or equivalent).</li>
-</ol>
-<h2 id="b-application-documents-overview">B) Application Documents Overview</h2>
-<ol>
-<li>In sidebar, open Application Documents.</li>
-<li>Review student collections list.</li>
-<li>Filter by status and review state.</li>
-<li>Open a student collection detail.</li>
-</ol>
-<h2 id="c-review-student-documents-click-by-click">C) Review Student Documents (Click-by-Click)</h2>
-<ol>
-<li>Open specific step/category in student collection.</li>
-<li>Open uploaded file metadata and preview/download.</li>
-<li>Set review status:
+<li>In the sidebar, click <strong>Certificates</strong>.</li>
+<li>Click <strong>Issue Certificate</strong>.</li>
+<li>A certificate builder dialog opens. Fill in:
 <ul>
-<li>Verified</li>
-<li>Invalid</li>
-<li>Pending (if re-evaluation needed)</li>
+<li><strong>Student</strong> — Search and select the recipient.</li>
+<li><strong>Certificate Type</strong> — Choose from available templates (e.g., <em>Assessment Completion</em>, <em>Programme Readiness</em>, <em>Participation</em>).</li>
+<li><strong>Issue Date</strong> — Defaults to today; change if back-dating is required.</li>
+<li><strong>Notes</strong> <em>(Optional)</em> — Add a personalised message that will appear on the certificate document.</li>
 </ul>
 </li>
-<li>If invalid, provide reason/comment.</li>
-<li>Save review outcome.</li>
+<li>Click <strong>Issue</strong>.</li>
+<li>The certificate is immediately added to the student&rsquo;s account. They will see it in their <strong>Certificates and Documents</strong> section and receive a notification.</li>
 </ol>
-<h2 id="d-collection-level-status-updates">D) Collection-Level Status Updates</h2>
+<blockquote>
+<p><strong>Note:</strong> Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/certificates-issue.png" alt="Certificate builder dialog showing student selector, type dropdown, and issue date field"></p>
+<p><em>Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.</em></p>
+<hr>
+<h2 id="2-reviewing-issued-certificates">2. Reviewing Issued Certificates</h2>
+<p>To keep track of what has been issued:</p>
 <ol>
-<li>Review completion progress.</li>
-<li>If complete and valid, move toward approval state.</li>
-<li>If missing/invalid files remain, return with revision request.</li>
+<li>On the <strong>Certificates</strong> page, you see a table of all certificates you have issued.</li>
+<li>Filter by <strong>Student Name</strong> or <strong>Certificate Type</strong> to narrow the list.</li>
+<li>Each row shows the issue date, student name, type, and current status (<em>Active</em> or <em>Revoked</em>).</li>
+<li>Click any row to open the certificate detail and preview the generated document.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Student uploaded file but not visible.
-A: Refresh collection detail and verify step filter.</p>
-<p>Q: Student asks why file was rejected.
-A: Ensure invalid reason/comment is clearly written before save.</p>
-<p>Q: Certificate action failed.
-A: Retry issuance and validate template/student selection.</p>
-<p><img src="/images/user-manual/advisor-panel/certificates.png" alt="Certificates Advisor Placeholder"></p>
-<p>Image placeholder: Certificate operations panel with template and status.</p>
-<p><img src="/images/user-manual/advisor-panel/application-documents-review.png" alt="Application Documents Advisor Placeholder"></p>
-<p>Image placeholder: Student document review table with status actions.</p>
+<hr>
+<h2 id="3-revoking-a-certificate">3. Revoking a Certificate</h2>
+<p>If a certificate was issued by mistake or needs to be corrected:</p>
+<ol>
+<li>Find the certificate in your issued list.</li>
+<li>Click the action menu <code>(...)</code> next to it and select <strong>Revoke</strong>.</li>
+<li>Confirm the revocation prompt.</li>
+<li>The certificate is immediately marked as <em>Revoked</em> and disappears from the student&rsquo;s active certificate list.</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Revoking a certificate cannot be undone for audit trail purposes. If you need to correct an error, revoke the original and issue a new one.</p>
+</blockquote>
+<hr>
+<h2 id="4-reviewing-student-application-documents">4. Reviewing Student Application Documents</h2>
+<p>Students upload supporting documents (transcripts, passports, language certificates) as part of their application process. Your job is to verify, flag, or reject each uploaded file.</p>
+<ol>
+<li>In the sidebar, click <strong>Application Documents</strong>.</li>
+<li>The list shows all students who have active document collections, each with a completion progress bar.</li>
+<li>Click a student row to open their <strong>Document Collection</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/application-documents-list.png" alt="Application documents list with student rows, completion progress bars, and a review button"></p>
+<p><em>Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.</em></p>
+<hr>
+<h2 id="5-verifying-individual-documents">5. Verifying Individual Documents</h2>
+<ol>
+<li>Inside a student&rsquo;s collection, you see a checklist of required document steps.</li>
+<li>Click on a specific step (e.g., <em>High School Transcript</em>).</li>
+<li>The uploaded file appears — click <strong>Preview</strong> or <strong>Download</strong> to inspect it.</li>
+<li>Set the review status:
+<ul>
+<li><strong>Verified</strong> — The document is valid and meets requirements.</li>
+<li><strong>Pending</strong> — You need more time to verify, or you are waiting for additional context.</li>
+<li><strong>Invalid</strong> — The document is incorrect, expired, or does not meet requirements.</li>
+</ul>
+</li>
+<li>If you mark the file <strong>Invalid</strong>, fill in the <strong>Reason</strong> field with a clear explanation so the student knows exactly what to fix.</li>
+<li>Click <strong>Save Review</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/document-review-panel.png" alt="Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field"></p>
+<p><em>Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.</em></p>
+<hr>
+<h2 id="6-completing-a-collection">6. Completing a Collection</h2>
+<p>Once all individual document steps are verified:</p>
+<ol>
+<li>Return to the collection overview for the student.</li>
+<li>Confirm all steps show a green <em>Verified</em> badge.</li>
+<li>Click <strong>Approve Collection</strong> to formally mark the student&rsquo;s application document set as complete.</li>
+<li>The student receives a notification that their documents have been approved.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A student says they uploaded a file but I cannot see it</td>
+          <td>Refresh the collection detail page — if it still does not appear, verify the student completed the upload step rather than just selecting the file</td>
+      </tr>
+      <tr>
+          <td>I need to leave a note for a student about a rejected document</td>
+          <td>Use the <strong>Reason</strong> field when setting a step to Invalid. The student can read this note in their own document panel</td>
+      </tr>
+      <tr>
+          <td>I issued a certificate with the wrong date</td>
+          <td>Revoke the original certificate immediately and re-issue a new one with the correct date</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -585,6 +657,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>Click <strong>Approve</strong> to admit them (which grants them full platform access and adds them to your Students roster).</li>
 <li>Click <strong>Deny</strong> if they do not belong.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/enrollment-requests.png" alt="Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons"></p>
+<p><em>Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.</em></p>
 <hr>
 <h2 id="2-using-family-chat">2. Using Family Chat</h2>
 <p>IDPicker recognizes that guidance is a collaborative effort between the advisor, the student, and the parents.</p>
@@ -603,6 +677,8 @@ A: Retry issuance and validate template/student selection.</p>
 <blockquote>
 <p><strong>Tip:</strong> If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/family-chat.png" alt="Family chat interface showing student thread, parent thread, and family thread tabs with message composer at bottom"></p>
+<p><em>Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.</em></p>
 <hr>
 <h2 id="3-custom-assessments">3. Custom Assessments</h2>
 <p>While IDPicker provides built-in psychological and career assessments, your organization may want to issue bespoke quizzes (e.g., a &ldquo;Math Placement Exam&rdquo; or &ldquo;Mid-Year Feedback&rdquo;).</p>
@@ -675,6 +751,8 @@ A: Retry issuance and validate template/student selection.</p>
 </ol>
 <h3 id="preview-before-publishing">Preview Before Publishing</h3>
 <p>Always click the <strong>Preview</strong> action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.</p>
+<p><img src="/images/user-manual/advisor-panel/forms-builder.png" alt="Form builder interface showing the title field, question editor panel, and a preview of the first question"></p>
+<p><em>Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.</em></p>
 <hr>
 <h2 id="2-managing-existing-forms">2. Managing Existing Forms</h2>
 <p>You can manage your forms from the main Forms list view:</p>
@@ -692,6 +770,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>A table will load showing a list of every student who submitted the form and the timestamp.</li>
 <li>Click on an individual response row to drill down and read the specific answers provided by that student.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/forms-responses.png" alt="Form responses table listing student names, submission timestamps, and a row-click drill-down panel"></p>
+<p><em>Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student&rsquo;s answers.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -751,6 +831,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li><strong>Be Specific:</strong> &ldquo;Group A&rdquo; becomes impossible to manage after a few months.</li>
 <li><strong>Review Often:</strong> Clean up and delete groups when a cohort graduates or finishes a campaign.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/groups-create.png" alt="Create group dialog showing group name field, description field, and student selector checkboxes"></p>
+<p><em>Image placeholder: Add screenshot of the create group dialog with the name field filled in and several students selected in the member selector.</em></p>
 <hr>
 <h2 id="2-editing-an-existing-group">2. Editing an Existing Group</h2>
 <p>Need to rename a group or add/remove members?</p>
@@ -773,6 +855,8 @@ A: Retry issuance and validate template/student selection.</p>
 <blockquote>
 <p><strong>Warning:</strong> Deleting a group <strong>does not</strong> delete the student accounts inside it. It only removes the organizational tag grouping them together.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/groups-list.png" alt="Groups list showing group cards with member counts, edit buttons, and action menus"></p>
+<p><em>Image placeholder: Add screenshot of the groups list showing several group cards or rows with member count badges and action menus.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -833,6 +917,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li>Click <strong>Send</strong> (or <strong>Create</strong>).</li>
 <li>The notification is immediately dispatched and will appear in your history list.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/notifications-compose.png" alt="Notification composer showing title field, message body, target type dropdown set to Selected Groups, and the Send button"></p>
+<p><em>Image placeholder: Add screenshot of the notification composer with a title, message, and group selection visible before clicking Send.</em></p>
 <hr>
 <h2 id="2-reviewing-delivery-and-effectiveness">2. Reviewing Delivery and Effectiveness</h2>
 <p>Unlike email, platform notifications allow you to track engagement. In your notification history list, you can verify:</p>
@@ -843,6 +929,8 @@ A: Retry issuance and validate template/student selection.</p>
 <li><strong>Read Count:</strong> How many students have clicked on the notification to read the full body.</li>
 <li><strong>Unread Count:</strong> How many students have ignored or not yet seen the alert.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/notifications-history.png" alt="Notification history list showing past broadcasts with recipient count, read count, and unread count columns"></p>
+<p><em>Image placeholder: Add screenshot of the notification history table showing several past notifications with their read and unread counts.</em></p>
 <hr>
 <h2 id="3-filtering-your-broadcast-history">3. Filtering Your Broadcast History</h2>
 <p>If you need to check what you sent months ago:</p>
@@ -891,55 +979,88 @@ A: Retry issuance and validate template/student selection.</p>
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-aee00ad17b9bb7d0ce8e55a26e2ac206">8 - Profile, Prompts, and Interests</h1>
-    <div class="lead">Detailed click-by-click advisor configuration workflows</div>
-	<p>This guide covers advisor profile settings and advanced content/configuration modules.</p>
-<h2 id="a-profile-management">A) Profile Management</h2>
+    <div class="lead">How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data</div>
+	<p>This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.</p>
+<hr>
+<h2 id="1-updating-your-advisor-profile">1. Updating Your Advisor Profile</h2>
+<p>Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.</p>
 <ol>
-<li>In sidebar, click Profile.</li>
-<li>Review personal and organization details.</li>
-<li>Click Edit.</li>
-<li>Update text fields (name, bio, contact, organization data where available).</li>
-<li>Upload avatar/banner if supported.</li>
-<li>Click Save.</li>
-<li>Confirm updated preview.</li>
-</ol>
-<h2 id="b-prompts-module">B) Prompts Module</h2>
-<ol>
-<li>In sidebar, click Prompts.</li>
-<li>Open prompt list by category/subcategory.</li>
-<li>Select prompt template to edit.</li>
-<li>Update content carefully.</li>
-<li>Validate syntax/placeholders.</li>
-<li>Save changes.</li>
-<li>Reopen to confirm version/state.</li>
-</ol>
-<h2 id="c-interests-module">C) Interests Module</h2>
-<ol>
-<li>In sidebar, click Interests.</li>
-<li>Review student interest records and statuses.</li>
-<li>Open detail for a student/entry.</li>
-<li>Update status or related metadata if action is available.</li>
-<li>Save and verify list refresh.</li>
-</ol>
-<h2 id="best-practices">Best Practices</h2>
+<li>In the sidebar, click your <strong>Avatar</strong> or <strong>Profile</strong> link.</li>
+<li>Click <strong>Edit Profile</strong>.</li>
+<li>Update any of the following:
 <ul>
-<li>Keep prompt edits versioned and reviewed before broad usage.</li>
-<li>Use profile info that matches advisor organization branding.</li>
-<li>Process interests updates consistently to support recommendation quality.</li>
+<li><strong>Display Name</strong> and <strong>Title</strong> (e.g., <em>Senior Career Counselor</em>)</li>
+<li><strong>Bio</strong> — A short paragraph about your background and specialties</li>
+<li><strong>Avatar</strong> — Upload a clear headshot (recommended: square, at least 400×400 px)</li>
+<li><strong>Contact Details</strong> — Office hours, phone extension, or secondary email if relevant</li>
+<li><strong>Organization Data</strong> — Department, branch, or campus information if your platform supports it</li>
 </ul>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Prompt save failed.
-A: Check placeholder syntax and retry with valid template format.</p>
-<p>Q: Profile image upload did not apply.
-A: Verify file type/size and retry.</p>
-<p>Q: Interests data appears stale.
-A: Refresh module and verify latest backend sync.</p>
-<p><img src="/images/user-manual/advisor-panel/profile.png" alt="Profile Placeholder"></p>
-<p>Image placeholder: Advisor profile edit and save states.</p>
-<p><img src="/images/user-manual/advisor-panel/prompts.png" alt="Prompts Placeholder"></p>
-<p>Image placeholder: Prompt editor with category filter and save action.</p>
-<p><img src="/images/user-manual/advisor-panel/interests.png" alt="Interests Placeholder"></p>
-<p>Image placeholder: Interests table with status/actions.</p>
+</li>
+<li>Click <strong>Save Profile</strong>.</li>
+<li>Verify the preview panel on the right shows the updated name and avatar correctly.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/profile-editor.png" alt="Advisor profile editor showing name, title, bio, and avatar upload fields"></p>
+<p><em>Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.</em></p>
+<hr>
+<h2 id="2-editing-ai-prompt-templates">2. Editing AI Prompt Templates</h2>
+<p>If your organisation has been granted permission to configure regional AI prompts, you can adjust how the AI Mentor communicates with <em>your specific students</em> — independent of the global settings the Admin controls.</p>
+<ol>
+<li>In the sidebar, click <strong>Prompts</strong>.</li>
+<li>The prompt list is organized by <strong>Category</strong> (e.g., <em>Mentor Persona</em>, <em>Career Guidance</em>, <em>University Selection</em>) and <strong>Subcategory</strong>.</li>
+<li>Use the filter bar to navigate to the specific prompt you want to adjust.</li>
+<li>Click the prompt name to open the editor.</li>
+<li>Read the existing instruction text carefully before editing.</li>
+<li>Make your changes — keep them concise and imperative (e.g., <em>&ldquo;Always recommend at least two Turkish universities when a student specifies Turkey as their preferred country&rdquo;</em>).</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Never delete or rename the dynamic variables inside double curly braces, such as <code>{{student_name}}</code> or <code>{{trait_score}}</code>. These inject real student data into the AI&rsquo;s context. Removing them will break personalisation.</p>
+</blockquote>
+<ol start="7">
+<li>Click <strong>Save</strong>. The updated prompt is live immediately for your students.</li>
+<li>Re-open the prompt to confirm the saved version reflects your edit.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/prompts-editor.png" alt="Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.</em></p>
+<hr>
+<h2 id="3-managing-student-interest-records">3. Managing Student Interest Records</h2>
+<p>The Interests module shows the career domains and fields of study each student has expressed interest in. These interests feed directly into the AI&rsquo;s recommendation logic.</p>
+<ol>
+<li>In the sidebar, click <strong>Interests</strong>.</li>
+<li>The table shows a list of student-interest pairs: which student expressed interest in what domain, and when.</li>
+<li>Filter by <strong>Student</strong> or <strong>Interest Domain</strong> to find a specific entry.</li>
+<li>Click a row to open the interest detail.</li>
+<li>If a student has been mis-tagged (for example they changed their mind), you can update the status or remove the interest from their profile.</li>
+<li>Click <strong>Save</strong> and verify the list refreshes.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/interests-table.png" alt="Interests table showing student names, interest domain labels, and status badges"></p>
+<p><em>Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My profile avatar is not updating</td>
+          <td>Check that the file is a JPG or PNG and under the maximum allowed size (typically 2–5 MB). Try a different browser if it still fails</td>
+      </tr>
+      <tr>
+          <td>I saved a prompt but an error says &ldquo;Invalid Template Syntax&rdquo;</td>
+          <td>Look for broken <code>{{</code> brackets. Every opening <code>{{</code> must have a matching <code>}}</code>. Fix the broken variable and retry</td>
+      </tr>
+      <tr>
+          <td>A student&rsquo;s interests look wrong or outdated</td>
+          <td>Open their interest detail, update the status to reflect their current goals, and save — then ask the student to confirm their interests from their own profile settings</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -975,6 +1096,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click <strong>Upload</strong>.</li>
 <li>Wait for the upload to complete and verify the file appears in your library list.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/resources-upload.png" alt="Resource upload dialog showing file drop zone, name field, description field, and visibility toggle"></p>
+<p><em>Image placeholder: Add screenshot of the resource upload dialog with all metadata fields filled in and visibility set.</em></p>
 <hr>
 <h2 id="2-managing-visibility-and-assignments">2. Managing Visibility and Assignments</h2>
 <p>Uploading a file is only half the job. You must ensure the right students can see it.</p>
@@ -999,6 +1122,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li><strong>Sort By:</strong> Reorder the grid by the date added, the alphabetical name, or the raw file size.</li>
 <li><strong>View Mode Toggle:</strong> Switch from the visual <em>Grid View</em> to the dense <em>List View</em> if you are managing dozens of files at once.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/resources-library.png" alt="Resources library in grid view showing file cards with title, type badge, visibility label, and action menu"></p>
+<p><em>Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.</em></p>
 <hr>
 <h2 id="4-deleting-an-outdated-resource">4. Deleting an Outdated Resource</h2>
 <p>When a syllabus or brochure is no longer accurate:</p>
@@ -1074,6 +1199,8 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click <strong>Save / Create</strong>.</li>
 <li>The system will email them an invitation link to set up their password.</li>
 </ol>
+<p><img src="/images/user-manual/advisor-panel/sub-advisor-create.png" alt="Sub-advisor creation form showing name, email, scope selector, and permission checkboxes"></p>
+<p><em>Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.</em></p>
 <hr>
 <h2 id="2-editing-sub-advisor-permissions">2. Editing Sub-Advisor Permissions</h2>
 <p>If a sub-advisor&rsquo;s role changes, you can adjust their access on the fly.</p>
@@ -1082,8 +1209,10 @@ A: Refresh module and verify latest backend sync.</p>
 <li>Click on the target sub-advisor&rsquo;s name.</li>
 <li>Scroll down to the Permission Matrix.</li>
 <li>Toggle specific module access on or off as needed. You can also change which exact groups they govern here.</li>
-<li>Click <strong>Save</strong>. The changes will apply the next time they log in or refresh their page.</li>
+<li>Click <strong>Save</strong>. The changes will apply the next time they log in or refresh their page.
+<img src="/images/user-manual/advisor-panel/sub-advisor-permissions.png" alt="Permission matrix editor for a sub-advisor showing module toggles with some enabled and some disabled"></li>
 </ol>
+<p><em>Image placeholder: Add screenshot of the sub-advisor permission matrix editor with some modules toggled on and others off.</em></p>
 <h3 id="validating-their-access">Validating Their Access</h3>
 <p>If you want to be completely sure you set the permissions correctly:</p>
 <ol>
@@ -1140,50 +1269,107 @@ A: Refresh module and verify latest backend sync.</p>
 <div class="td-content" style="page-break-before: always">
     
 	<h1 id="pg-bf1c95615bc3f7d9ddc2e10a93365509">11 - Support Tickets</h1>
-    <div class="lead">Detailed click-by-click advisor support ticket operations</div>
-	<p>Support Tickets page helps advisors track and resolve student-reported issues.</p>
-<h2 id="a-open-support-tickets">A) Open Support Tickets</h2>
+    <div class="lead">How to triage, respond to, and close student-reported issues from the advisor panel</div>
+	<p>The Support Tickets module is your direct line to students who are having trouble with the platform. This guide explains how to triage incoming requests, update their status, and write resolution messages so students know their issue is being handled.</p>
+<hr>
+<h2 id="1-opening-the-ticket-queue">1. Opening the Ticket Queue</h2>
 <ol>
-<li>In sidebar, click Support Tickets.</li>
-<li>Wait for ticket list and summary cards.</li>
+<li>In the sidebar, click <strong>Support Tickets</strong>.</li>
+<li>The queue loads with a summary row at the top showing counts by status: <em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>.</li>
+<li>By default, the list is sorted by most recent — oldest unresolved issues may be buried. Reorder by <strong>Priority</strong> immediately.</li>
 </ol>
-<h2 id="b-filter-and-prioritize">B) Filter and Prioritize</h2>
+<blockquote>
+<p><strong>Tip:</strong> Start every support session by filtering for <strong>Priority: Urgent</strong> and <strong>Status: Pending</strong>. These are the issues blocking students right now.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-tickets-queue.png" alt="Support ticket queue showing status summary cards and a filtered list sorted by priority"></p>
+<p><em>Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.</em></p>
+<hr>
+<h2 id="2-filtering-and-prioritising-tickets">2. Filtering and Prioritising Tickets</h2>
 <ol>
-<li>Filter by status (pending, in_progress, resolved, closed).</li>
-<li>Filter by priority (low, medium, high, urgent).</li>
-<li>Sort list for triage order.</li>
-<li>Open most urgent unresolved tickets first.</li>
+<li>Use the <strong>Status</strong> filter dropdown to narrow to a single stage (<em>Pending</em>, <em>In Progress</em>, <em>Resolved</em>, <em>Closed</em>).</li>
+<li>Use the <strong>Priority</strong> filter to show only high-urgency items (<em>Low</em>, <em>Medium</em>, <em>High</em>, <em>Urgent</em>).</li>
+<li>Combine both filters for maximum efficiency — e.g., Status: <em>Pending</em> + Priority: <em>High</em> gives you the most critical unresolved work.</li>
+<li>Sort the filtered list by <strong>Created Date</strong> (oldest first) to avoid letting old issues age out.</li>
 </ol>
-<h2 id="c-review-ticket-details">C) Review Ticket Details</h2>
+<hr>
+<h2 id="3-reviewing-a-ticket">3. Reviewing a Ticket</h2>
 <ol>
-<li>Click ticket row/card.</li>
-<li>Read subject and full description.</li>
-<li>Check user details and timestamps.</li>
-<li>Identify category and visibility context.</li>
+<li>Click any ticket row or card to open its detail view.</li>
+<li>Read the <strong>Subject</strong> and full <strong>Description</strong> the student provided.</li>
+<li>Check the <strong>User Details</strong> panel on the right — this shows which student submitted it, their organisation, and their account status.</li>
+<li>Note the <strong>Category</strong> badge (e.g., <em>Account</em>, <em>Assessment</em>, <em>Billing</em>, <em>Technical</em>). This tells you which team should handle it if escalation is needed.</li>
+<li>Check the <strong>Timestamps</strong> — is this a fresh ticket or has it been sitting for days?</li>
 </ol>
-<h2 id="d-update-ticket-status">D) Update Ticket Status</h2>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-detail.png" alt="Ticket detail view showing subject, description, user details panel, category badge, and timestamps"></p>
+<p><em>Image placeholder: Add screenshot of an open ticket detail view with the student info panel, description, and status dropdown visible.</em></p>
+<hr>
+<h2 id="4-updating-ticket-status">4. Updating Ticket Status</h2>
 <ol>
-<li>Open status control.</li>
-<li>Set new status (for example in_progress).</li>
-<li>Save update.</li>
-<li>Confirm status badge changed in list.</li>
+<li>In the ticket detail, locate the <strong>Status</strong> dropdown.</li>
+<li>Change it to match your current work state:
+<ul>
+<li><strong>In Progress</strong> — You have started investigating and the student should expect a reply soon.</li>
+<li><strong>Resolved</strong> — You have applied a fix or provided an answer.</li>
+<li><strong>Closed</strong> — The issue is fully finalized and archived.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> (or the status change auto-saves, depending on your platform version).</li>
+<li>Confirm the status badge in the list view has updated.</li>
 </ol>
-<h2 id="e-add-resolution-message">E) Add Resolution Message</h2>
+<p><em>Note: Do not jump directly from <strong>Pending</strong> to <strong>Resolved</strong> without first setting <strong>In Progress</strong>. This leaves a confusing audit trail and the student has no indication you saw their message.</em></p>
+<hr>
+<h2 id="5-writing-a-resolution-message">5. Writing a Resolution Message</h2>
+<p>Resolution messages are crucial — they are the student-facing reply that appears in their Help Center.</p>
 <ol>
-<li>Open resolution input.</li>
-<li>Write clear resolution notes.</li>
-<li>Save and mark resolved when done.</li>
-<li>Close ticket when finalized.</li>
+<li>In the ticket detail, find the <strong>Resolution Message</strong> text area.</li>
+<li>Write a clear, actionable response:
+<ul>
+<li>Acknowledge the issue.</li>
+<li>Explain what you found or did.</li>
+<li>Give any steps the student needs to take next.</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Change the status to <strong>Resolved</strong>.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Status changed but not persisted.
-A: Reopen ticket and verify update request succeeded.</p>
-<p>Q: Too many tickets in one view.
-A: Use status and priority filters together for triage.</p>
-<p>Q: Student says issue still unresolved.
-A: Reopen ticket and move status back to in_progress.</p>
-<p><img src="/images/user-manual/advisor-panel/support-tickets.png" alt="Support Tickets Placeholder"></p>
-<p>Image placeholder: Ticket table with status/priority filters and resolution panel.</p>
+<blockquote>
+<p><strong>Warning:</strong> Some platforms require the Resolution Message to be filled before the status can be changed to <em>Resolved</em>. If saving the status fails silently, check that the resolution field is not blank.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/support-ticket-resolution.png" alt="Resolution message text area filled in with a clear response and the Resolved status selected"></p>
+<p><em>Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.</em></p>
+<hr>
+<h2 id="6-reopening-a-ticket">6. Reopening a Ticket</h2>
+<p>If a student replies that the issue is still happening after you marked it resolved:</p>
+<ol>
+<li>Open the closed or resolved ticket.</li>
+<li>Change the status back to <strong>In Progress</strong>.</li>
+<li>Add an updated Resolution Message acknowledging the continuation.</li>
+<li>Investigate further and repeat the resolution flow.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>I changed the status but it did not save</td>
+          <td>Check if the Resolution Message field is required — fill it in and try saving again</td>
+      </tr>
+      <tr>
+          <td>There are too many tickets to manage at once</td>
+          <td>Apply both Status and Priority filters together. Handle Urgent+Pending first, then High+Pending</td>
+      </tr>
+      <tr>
+          <td>A student says their issue is unresolved but the ticket is Closed</td>
+          <td>Reopen it by setting the status back to In Progress, add an updated message, and reinvestigate</td>
+      </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -1213,9 +1399,27 @@ A: Reopen ticket and move status back to in_progress.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClVzZSB0aGlzIHNlY3Rpb24gYXMgdGhlIHByaW1hcnkgb3BlcmF0aW9uYWwgbWFudWFsIGZvciBhZHZpc29yIGFuZCBzdWItYWR2aXNvciB3b3JrZmxvd3MuCgojIyBXaG8gU2hvdWxkIFVzZSBUaGlzIEd1aWRlCgotIEFkdmlzb3IgdXNlcnMgbWFuYWdpbmcgc3R1ZGVudHMsIGdyb3VwcywgYW5kIG9wZXJhdGlvbnMKLSBTdWItYWR2aXNvciB1c2VycyB3aXRoIGRlbGVnYXRlZCBwZXJtaXNzaW9ucwotIFN1cHBvcnQvUUEgdGVhbXMgdmFsaWRhdGluZyBhZHZpc29yLXNpZGUgZmxvd3MKCiMjIFN1Z2dlc3RlZCBSZWFkaW5nIE9yZGVyCgoxLiBMb2dpbiBhbmQgZGFzaGJvYXJkIG92ZXJ2aWV3CjIuIFN0dWRlbnRzIGFuZCBidWxrIGltcG9ydAozLiBHcm91cHMgYW5kIG1lbWJlcnNoaXAgY29udHJvbAo0LiBGb3JtcyBhbmQgcmVzcG9uc2VzCjUuIFJlc291cmNlcyBhbmQgZGlzdHJpYnV0aW9uCjYuIFN1cHBvcnQgdGlja2V0cwo3LiBOb3RpZmljYXRpb25zIGFuZCB0YXJnZXRpbmcKOC4gQ2VydGlmaWNhdGVzIGFuZCBhcHBsaWNhdGlvbiBkb2N1bWVudHMKOS4gU3ViLWFkdmlzb3IgbWFuYWdlbWVudCBhbmQgcGVybWlzc2lvbnMKMTAuIEVucm9sbG1lbnQgcmVxdWVzdHMsIGZhbWlseSBjaGF0LCBhbmQgYXNzZXNzbWVudHMKMTEuIFByb2ZpbGUsIHByb21wdHMsIGFuZCBpbnRlcmVzdHMKCiMjIENvcmUgRmVhdHVyZXMgJiBSZXNwb25zaWJpbGl0aWVzCgotIE1hbmFnZSBzdHVkZW50IGFjY291bnRzIGFuZCBwYXJlbnQtbGlua2VkIHZpc2liaWxpdHkKLSBPcmdhbml6ZSBjb2hvcnRzIHdpdGggZ3JvdXBzIGFuZCBhc3NpZ25tZW50cwotIENyZWF0ZSBhbmQgbW9uaXRvciBmb3Jtcy9zdXJ2ZXlzCi0gU2hhcmUgcmVzb3VyY2VzIGFuZCB0cmFjayBzdXBwb3J0IHRpY2tldHMKLSBTZW5kIGJyb2FkY2FzdHMgdG8gc3R1ZGVudHMgYW5kIGdyb3VwcwotIE1hbmFnZSBkb2N1bWVudCByZXZpZXcgYW5kIGNlcnRpZmljYXRlIG9wZXJhdGlvbnMKLSBEZWxlZ2F0ZSB3b3JrIHRocm91Z2ggc3ViLWFkdmlzb3IgYWNjb3VudHMKCiMjIFNjcmVlbnNob3QgQ2hlY2tsaXN0CgoxLiBBZHZpc29yIGxvZ2luIHBhZ2UgYW5kIHN1Y2Nlc3NmdWwgZGFzaGJvYXJkCjIuIFN0dWRlbnRzIHRhYmxlIHdpdGggZmlsdGVycyBhbmQgZGV0YWlsIG9wZW4KMy4gQnVsayBpbXBvcnQgZmlsZSB1cGxvYWQgYW5kIHByZXZpZXcKNC4gR3JvdXAgY3JlYXRlL2VkaXQgZGlhbG9nIHdpdGggc3R1ZGVudCBhc3NpZ25tZW50CjUuIEZvcm1zIGxpc3Qgd2l0aCBzdGF0dXMgZmlsdGVycyBhbmQgYWN0aW9ucwo2LiBSZXNvdXJjZXMgcGFnZSB3aXRoIHVwbG9hZCBhbmQgYXNzaWdubWVudAo3LiBTdXBwb3J0IHRpY2tldCBkYXNoYm9hcmQgd2l0aCBzdGF0dXMgdXBkYXRlCjguIE5vdGlmaWNhdGlvbiBjcmVhdGlvbiBtb2RhbCB3aXRoIHRhcmdldCBzZWxlY3Rpb24KOS4gQ2VydGlmaWNhdGVzIHBhZ2UgYW5kIGFwcGxpY2F0aW9uIGRvY3VtZW50cyByZXZpZXcKMTAuIFN1Yi1hZHZpc29yIHBlcm1pc3Npb25zIGFuZCBhc3NpZ25tZW50IHZpZXcKMTEuIEVucm9sbG1lbnQgcmVxdWVzdCBhcHByb3ZlL2RlbnkgYWN0aW9ucwoxMi4gRmFtaWx5IGNoYXQgdGFicyBhbmQgY29udmVyc2F0aW9uIHBhbmUKMTMuIEFzc2Vzc21lbnQgbWFuYWdlbWVudCB3b3JrZmxvdwoxNC4gUHJvZmlsZSwgcHJvbXB0cywgYW5kIGludGVyZXN0cyBwYWdlcwoKIVtBZHZpc29yIFBhbmVsIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvYWR2aXNvci1vdmVydmlldy5wbmcpCgpJbWFnZSBwbGFjZWhvbGRlcjogQWRkIG1haW4gYWR2aXNvciBkYXNoYm9hcmQgd2l0aCBwcmltYXJ5IG1vZHVsZXMgaGlnaGxpZ2h0ZWQuCg==</script>

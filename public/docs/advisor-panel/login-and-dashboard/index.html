@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/advisor-panel/login-and-dashboard/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/advisor-panel/login-and-dashboard/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -21,24 +21,23 @@
 
 <title>Advisor Login and Dashboard | IDPicker Docs</title>
 <meta name="description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/login-and-dashboard/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/login-and-dashboard/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Advisor Login and Dashboard">
   <meta property="og:description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
+    <meta property="article:modified_time" content="2026-03-29T18:13:42+05:00">
 
   <meta itemprop="name" content="Advisor Login and Dashboard">
   <meta itemprop="description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
-  <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="421">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="459">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Advisor Login and Dashboard">
   <meta name="twitter:description" content="How to access your advisor account, manage sub-advisor permissions, and use the dashboard overview">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -359,6 +372,8 @@
 <p><strong>Why is my dashboard missing certain modules?</strong>
 If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.</p>
 </blockquote>
+<p><img src="/images/user-manual/advisor-panel/login.png" alt="Advisor login page showing the email, password fields, and Sign In button"></p>
+<p><em>Image placeholder: Add screenshot of the advisor login page with email and password fields visible.</em></p>
 <hr>
 <h2 id="2-setting-up-your-account-first-time">2. Setting Up Your Account (First Time)</h2>
 <p>If you were invited to join as an advisor or sub-advisor by your organization lead:</p>
@@ -387,6 +402,8 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 <li><strong>Main Navigation (Sidebar):</strong> Use the sidebar to quickly jump between managing Students, organizing Groups, distributing Resources, or handling Support/Chat.</li>
 </ul>
 <p><em>Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.</em></p>
+<p><img src="/images/user-manual/advisor-panel/dashboard.png" alt="Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation"></p>
+<p><em>Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -434,12 +451,30 @@ If you are a &ldquo;Sub-Advisor,&rdquo; your access is strictly limited to the p
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CkFzIGFuIEFkdmlzb3IsIHlvdXIgcGxhdGZvcm0gYWNjZXNzIGlzIHRhaWxvcmVkIHRvIHlvdXIgb3BlcmF0aW9uYWwgcm9sZS4gVGhpcyBndWlkZSBjb3ZlcnMgaG93IHRvIGdldCBsb2dnZWQgaW4gc2VjdXJlbHkgYW5kIGhvdyB0byBpbnRlcnByZXQgeW91ciBtYWluIGRhc2hib2FyZC4KCi0tLQoKIyMgMS4gQWR2aXNvciBMb2dpbgoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3Mgc2V0dXAsIHlvdSB3aWxsIGFjY2VzcyB0aGUgcGxhdGZvcm0gZWl0aGVyIHZpYSBhIGN1c3RvbSBvcmdhbml6YXRpb24gbGluayBvciB0aGUgbWFpbiBhZHZpc29yIHBvcnRhbC4gKFNlZSBbQWNjZXNzIFVSTHNdKHt7PCByZWxyZWYgIi9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscyIgPn19KSBpZiB5b3UgYXJlIHVuc3VyZSkuCgoxLiBPcGVuIHRoZSBBZHZpc29yIExvZ2luIHBhZ2UuCjIuIEVudGVyIHlvdXIgcmVnaXN0ZXJlZCAqKkVtYWlsKiogYW5kICoqUGFzc3dvcmQqKi4KMy4gQ2xpY2sgKipTaWduIEluKiouCjQuIFRoZSBzeXN0ZW0gaW5pdGlhbGl6ZXMgeW91ciBzcGVjaWZpYyByb2xlIGFuZCBwZXJtaXNzaW9uIHNldCwgdGhlbiBkcm9wcyB5b3Ugb250byB5b3VyIERhc2hib2FyZC4KCj4gKipXaHkgaXMgbXkgZGFzaGJvYXJkIG1pc3NpbmcgY2VydGFpbiBtb2R1bGVzPyoqCj4gSWYgeW91IGFyZSBhICJTdWItQWR2aXNvciwiIHlvdXIgYWNjZXNzIGlzIHN0cmljdGx5IGxpbWl0ZWQgdG8gdGhlIHBlcm1pc3Npb25zIHlvdXIgcHJpbWFyeSBBZHZpc29yIGRlbGVnYXRlZCB0byB5b3UuIElmIHlvdSBjYW5ub3Qgc2VlIGEgbW9kdWxlLCB5b3UgZG8gbm90IGhhdmUgcGVybWlzc2lvbiBmb3IgaXQuCgotLS0KCiMjIDIuIFNldHRpbmcgVXAgWW91ciBBY2NvdW50IChGaXJzdCBUaW1lKQoKSWYgeW91IHdlcmUgaW52aXRlZCB0byBqb2luIGFzIGFuIGFkdmlzb3Igb3Igc3ViLWFkdmlzb3IgYnkgeW91ciBvcmdhbml6YXRpb24gbGVhZDoKCjEuIENoZWNrIHlvdXIgZW1haWwgZm9yIGFuIGludml0YXRpb24gZnJvbSBJRFBpY2tlci4KMi4gQ2xpY2sgdGhlICoqU2V0dXAgUGFzc3dvcmQqKiBsaW5rIGluIHRoYXQgZW1haWwuCjMuIFlvdSB3aWxsIGJlIHRha2VuIHRvIGEgc2VjdXJlIHRva2VuLXZhbGlkYXRpb24gcGFnZS4KNC4gRW50ZXIgYSBzdHJvbmcgbmV3IHBhc3N3b3JkLCBjb25maXJtIGl0LCBhbmQgc3VibWl0IHRvIGFjdGl2YXRlIHlvdXIgYWNjb3VudC4KNS4gUmV0dXJuIGRpcmVjdGx5IHRvIHRoZSBsb2dpbiBwYWdlIGFuZCBzaWduIGluLgoKLS0tCgojIyAzLiBQYXNzd29yZCBSZXNldCBGbG93CgpJZiB5b3UgaGF2ZSBmb3Jnb3R0ZW4geW91ciBwYXNzd29yZDoKMS4gT24gdGhlIGxvZ2luIHBhZ2UsIGNsaWNrICoqRm9yZ290IFBhc3N3b3JkKiouCjIuIEVudGVyIHlvdXIgYWR2aXNvciBlbWFpbCBhZGRyZXNzLgozLiBZb3Ugd2lsbCByZWNlaXZlIGEgcmVzZXQgbGluay4gQ2xpY2sgaXQsIHNldCBhIG5ldyBwYXNzd29yZCwgYW5kIHZlcmlmeSB0aGUgc3RyZW5ndGggaW5kaWNhdG9yLgo0LiBJZiB0aGUgbGluayBzYXlzIGl0IGlzIGV4cGlyZWQsIGltbWVkaWF0ZWx5IHJlcXVlc3QgYSBuZXcgb25lIGZyb20gdGhlIGxvZ2luIHBhZ2UuCgotLS0KCiMjIDQuIFVuZGVyc3RhbmRpbmcgWW91ciBEYXNoYm9hcmQKClRoZSBBZHZpc29yIERhc2hib2FyZCBzZXJ2ZXMgYXMgeW91ciBkYWlseSBjb21tYW5kIGNlbnRlci4KCi0gKipLUEkgV2lkZ2V0cyAoVG9wIFJvdyk6KiogVGhlc2UgYmxvY2tzIHNob3cgcXVpY2sgbWV0cmljcyByZWdhcmRpbmcgeW91ciBsaW5rZWQgc3R1ZGVudHMsIHN1Y2ggYXMgdG90YWwgc3R1ZGVudCBjb3VudCwgcmVjZW50bHkgY29tcGxldGVkIGFzc2Vzc21lbnRzLCBhbmQgcGVuZGluZyBmb3Jtcy4KLSAqKkFzc2lnbmVkIEZvcm1zIEJsb2NrOioqIEltbWVkaWF0ZWx5IHNlZSB3aGljaCBvZiB5b3VyIGZvcm1zIGN1cnJlbnRseSBoYXZlIHBlbmRpbmcgcmVzcG9uc2VzIGZyb20gc3R1ZGVudHMuCi0gKipNYWluIE5hdmlnYXRpb24gKFNpZGViYXIpOioqIFVzZSB0aGUgc2lkZWJhciB0byBxdWlja2x5IGp1bXAgYmV0d2VlbiBtYW5hZ2luZyBTdHVkZW50cywgb3JnYW5pemluZyBHcm91cHMsIGRpc3RyaWJ1dGluZyBSZXNvdXJjZXMsIG9yIGhhbmRsaW5nIFN1cHBvcnQvQ2hhdC4KCipUaXA6IElmIHlvdXIgcGxhdGZvcm0gc3VwcG9ydHMgbXVsdGlwbGUgbGFuZ3VhZ2VzLCB1c2UgdGhlIGxhbmd1YWdlIHRvZ2dsZSBpbiB0aGUgaGVhZGVyIHRvIHN3aXRjaCB5b3VyIGludGVyZmFjZSBsYW5ndWFnZSBpbnN0YW50bHkuKgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBJIGxvZ2dlZCBpbiBidXQgY2Fubm90IHNlZSB0aGUgIkdyb3VwcyIgbW9kdWxlIHwgWW91ciBhY2NvdW50IGlzIGxpa2VseSBhIFN1Yi1BZHZpc29yIHdpdGggcmVzdHJpY3RlZCBwZXJtaXNzaW9ucyB8CnwgTXkgZGFzaGJvYXJkIGxvb2tzIHBhcnRpYWxseSBsb2FkZWQgb3IgYnJva2VuIHwgV2FpdCBhIGZldyBzZWNvbmRzIGZvciBhbGwgdW5kZXJseWluZyBBUEkgY2FsbHMgdG8gZmluaXNoLCB0aGVuIHJlZnJlc2ggdGhlIHBhZ2Ugb25jZSB8CnwgVGhlIHBhc3N3b3JkIHNldHVwIGxpbmsgaW4gbXkgZW1haWwgZG9lc24ndCB3b3JrIHwgU2VjdXJpdHkgdG9rZW5zIGV4cGlyZSBxdWlja2x5LiBBc2sgeW91ciBhZG1pbmlzdHJhdG9yIHRvIHJlc2VuZCB0aGUgaW52aXRhdGlvbiwgb3IgdXNlIHRoZSAiRm9yZ290IFBhc3N3b3JkIiBmbG93IGlmIHRoZSBhY2NvdW50IHdhcyBhbHJlYWR5IGNyZWF0ZWQgfAo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CkFzIGFuIEFkdmlzb3IsIHlvdXIgcGxhdGZvcm0gYWNjZXNzIGlzIHRhaWxvcmVkIHRvIHlvdXIgb3BlcmF0aW9uYWwgcm9sZS4gVGhpcyBndWlkZSBjb3ZlcnMgaG93IHRvIGdldCBsb2dnZWQgaW4gc2VjdXJlbHkgYW5kIGhvdyB0byBpbnRlcnByZXQgeW91ciBtYWluIGRhc2hib2FyZC4KCi0tLQoKIyMgMS4gQWR2aXNvciBMb2dpbgoKRGVwZW5kaW5nIG9uIHlvdXIgb3JnYW5pemF0aW9uJ3Mgc2V0dXAsIHlvdSB3aWxsIGFjY2VzcyB0aGUgcGxhdGZvcm0gZWl0aGVyIHZpYSBhIGN1c3RvbSBvcmdhbml6YXRpb24gbGluayBvciB0aGUgbWFpbiBhZHZpc29yIHBvcnRhbC4gKFNlZSBbQWNjZXNzIFVSTHNdKHt7PCByZWxyZWYgIi9kb2NzL2dldHRpbmctc3RhcnRlZC9hY2Nlc3MtdXJscyIgPn19KSBpZiB5b3UgYXJlIHVuc3VyZSkuCgoxLiBPcGVuIHRoZSBBZHZpc29yIExvZ2luIHBhZ2UuCjIuIEVudGVyIHlvdXIgcmVnaXN0ZXJlZCAqKkVtYWlsKiogYW5kICoqUGFzc3dvcmQqKi4KMy4gQ2xpY2sgKipTaWduIEluKiouCjQuIFRoZSBzeXN0ZW0gaW5pdGlhbGl6ZXMgeW91ciBzcGVjaWZpYyByb2xlIGFuZCBwZXJtaXNzaW9uIHNldCwgdGhlbiBkcm9wcyB5b3Ugb250byB5b3VyIERhc2hib2FyZC4KCj4gKipXaHkgaXMgbXkgZGFzaGJvYXJkIG1pc3NpbmcgY2VydGFpbiBtb2R1bGVzPyoqCj4gSWYgeW91IGFyZSBhICJTdWItQWR2aXNvciwiIHlvdXIgYWNjZXNzIGlzIHN0cmljdGx5IGxpbWl0ZWQgdG8gdGhlIHBlcm1pc3Npb25zIHlvdXIgcHJpbWFyeSBBZHZpc29yIGRlbGVnYXRlZCB0byB5b3UuIElmIHlvdSBjYW5ub3Qgc2VlIGEgbW9kdWxlLCB5b3UgZG8gbm90IGhhdmUgcGVybWlzc2lvbiBmb3IgaXQuCgohW0Fkdmlzb3IgbG9naW4gcGFnZSBzaG93aW5nIHRoZSBlbWFpbCwgcGFzc3dvcmQgZmllbGRzLCBhbmQgU2lnbiBJbiBidXR0b25dKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9sb2dpbi5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBhZHZpc29yIGxvZ2luIHBhZ2Ugd2l0aCBlbWFpbCBhbmQgcGFzc3dvcmQgZmllbGRzIHZpc2libGUuKgoKLS0tCgojIyAyLiBTZXR0aW5nIFVwIFlvdXIgQWNjb3VudCAoRmlyc3QgVGltZSkKCklmIHlvdSB3ZXJlIGludml0ZWQgdG8gam9pbiBhcyBhbiBhZHZpc29yIG9yIHN1Yi1hZHZpc29yIGJ5IHlvdXIgb3JnYW5pemF0aW9uIGxlYWQ6CgoxLiBDaGVjayB5b3VyIGVtYWlsIGZvciBhbiBpbnZpdGF0aW9uIGZyb20gSURQaWNrZXIuCjIuIENsaWNrIHRoZSAqKlNldHVwIFBhc3N3b3JkKiogbGluayBpbiB0aGF0IGVtYWlsLgozLiBZb3Ugd2lsbCBiZSB0YWtlbiB0byBhIHNlY3VyZSB0b2tlbi12YWxpZGF0aW9uIHBhZ2UuCjQuIEVudGVyIGEgc3Ryb25nIG5ldyBwYXNzd29yZCwgY29uZmlybSBpdCwgYW5kIHN1Ym1pdCB0byBhY3RpdmF0ZSB5b3VyIGFjY291bnQuCjUuIFJldHVybiBkaXJlY3RseSB0byB0aGUgbG9naW4gcGFnZSBhbmQgc2lnbiBpbi4KCi0tLQoKIyMgMy4gUGFzc3dvcmQgUmVzZXQgRmxvdwoKSWYgeW91IGhhdmUgZm9yZ290dGVuIHlvdXIgcGFzc3dvcmQ6CjEuIE9uIHRoZSBsb2dpbiBwYWdlLCBjbGljayAqKkZvcmdvdCBQYXNzd29yZCoqLgoyLiBFbnRlciB5b3VyIGFkdmlzb3IgZW1haWwgYWRkcmVzcy4KMy4gWW91IHdpbGwgcmVjZWl2ZSBhIHJlc2V0IGxpbmsuIENsaWNrIGl0LCBzZXQgYSBuZXcgcGFzc3dvcmQsIGFuZCB2ZXJpZnkgdGhlIHN0cmVuZ3RoIGluZGljYXRvci4KNC4gSWYgdGhlIGxpbmsgc2F5cyBpdCBpcyBleHBpcmVkLCBpbW1lZGlhdGVseSByZXF1ZXN0IGEgbmV3IG9uZSBmcm9tIHRoZSBsb2dpbiBwYWdlLgoKLS0tCgojIyA0LiBVbmRlcnN0YW5kaW5nIFlvdXIgRGFzaGJvYXJkCgpUaGUgQWR2aXNvciBEYXNoYm9hcmQgc2VydmVzIGFzIHlvdXIgZGFpbHkgY29tbWFuZCBjZW50ZXIuCgotICoqS1BJIFdpZGdldHMgKFRvcCBSb3cpOioqIFRoZXNlIGJsb2NrcyBzaG93IHF1aWNrIG1ldHJpY3MgcmVnYXJkaW5nIHlvdXIgbGlua2VkIHN0dWRlbnRzLCBzdWNoIGFzIHRvdGFsIHN0dWRlbnQgY291bnQsIHJlY2VudGx5IGNvbXBsZXRlZCBhc3Nlc3NtZW50cywgYW5kIHBlbmRpbmcgZm9ybXMuCi0gKipBc3NpZ25lZCBGb3JtcyBCbG9jazoqKiBJbW1lZGlhdGVseSBzZWUgd2hpY2ggb2YgeW91ciBmb3JtcyBjdXJyZW50bHkgaGF2ZSBwZW5kaW5nIHJlc3BvbnNlcyBmcm9tIHN0dWRlbnRzLgotICoqTWFpbiBOYXZpZ2F0aW9uIChTaWRlYmFyKToqKiBVc2UgdGhlIHNpZGViYXIgdG8gcXVpY2tseSBqdW1wIGJldHdlZW4gbWFuYWdpbmcgU3R1ZGVudHMsIG9yZ2FuaXppbmcgR3JvdXBzLCBkaXN0cmlidXRpbmcgUmVzb3VyY2VzLCBvciBoYW5kbGluZyBTdXBwb3J0L0NoYXQuCgoqVGlwOiBJZiB5b3VyIHBsYXRmb3JtIHN1cHBvcnRzIG11bHRpcGxlIGxhbmd1YWdlcywgdXNlIHRoZSBsYW5ndWFnZSB0b2dnbGUgaW4gdGhlIGhlYWRlciB0byBzd2l0Y2ggeW91ciBpbnRlcmZhY2UgbGFuZ3VhZ2UgaW5zdGFudGx5LioKCiFbQWR2aXNvciBkYXNoYm9hcmQgc2hvd2luZyBLUEkgd2lkZ2V0cywgYXNzaWduZWQgZm9ybXMgYmxvY2ssIGFuZCBzaWRlYmFyIG5hdmlnYXRpb25dKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9kYXNoYm9hcmQucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgZnVsbCBhZHZpc29yIGRhc2hib2FyZCB3aXRoIEtQSSB3aWRnZXRzIGF0IHRoZSB0b3AgYW5kIHRoZSBzaWRlYmFyIG1vZHVsZXMgbGlzdGVkIG9uIHRoZSBsZWZ0LioKCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBsb2dnZWQgaW4gYnV0IGNhbm5vdCBzZWUgdGhlICJHcm91cHMiIG1vZHVsZSB8IFlvdXIgYWNjb3VudCBpcyBsaWtlbHkgYSBTdWItQWR2aXNvciB3aXRoIHJlc3RyaWN0ZWQgcGVybWlzc2lvbnMgfAp8IE15IGRhc2hib2FyZCBsb29rcyBwYXJ0aWFsbHkgbG9hZGVkIG9yIGJyb2tlbiB8IFdhaXQgYSBmZXcgc2Vjb25kcyBmb3IgYWxsIHVuZGVybHlpbmcgQVBJIGNhbGxzIHRvIGZpbmlzaCwgdGhlbiByZWZyZXNoIHRoZSBwYWdlIG9uY2UgfAp8IFRoZSBwYXNzd29yZCBzZXR1cCBsaW5rIGluIG15IGVtYWlsIGRvZXNuJ3Qgd29yayB8IFNlY3VyaXR5IHRva2VucyBleHBpcmUgcXVpY2tseS4gQXNrIHlvdXIgYWRtaW5pc3RyYXRvciB0byByZXNlbmQgdGhlIGludml0YXRpb24sIG9yIHVzZSB0aGUgIkZvcmdvdCBQYXNzd29yZCIgZmxvdyBpZiB0aGUgYWNjb3VudCB3YXMgYWxyZWFkeSBjcmVhdGVkIHwK</script>
 
 <style>
  

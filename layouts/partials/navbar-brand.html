@@ -1,8 +1,8 @@
+{{ $logo := resources.Get "icons/logo.png" }}
 <a class="navbar-brand" href="{{ "/" | relLangURL }}" aria-label="IDPicker">
-  <span class="navbar-brand__logo">
-    {{ $logo := resources.Get "icons/logo.png" }}
+  <span class="navbar-brand__logo" style="display:flex;align-items:center;">
     {{ if $logo }}
-    <img src="{{ $logo.RelPermalink }}" alt="IDPicker" height="40" style="max-height:40px; width:auto; display:block;">
+    <img src="{{ $logo.RelPermalink }}" alt="IDPicker" height="40" style="max-height:40px;width:auto;display:block;">
     {{ end }}
   </span>
 </a>

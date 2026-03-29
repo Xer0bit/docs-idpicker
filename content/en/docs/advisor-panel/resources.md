@@ -22,6 +22,10 @@ The Resources module operates as a secure file-sharing library. Advisors can upl
 6. Click **Upload**.
 7. Wait for the upload to complete and verify the file appears in your library list.
 
+![Resource upload dialog showing file drop zone, name field, description field, and visibility toggle](/images/user-manual/advisor-panel/resources-upload.png)
+
+*Image placeholder: Add screenshot of the resource upload dialog with all metadata fields filled in and visibility set.*
+
 ---
 
 ## 2. Managing Visibility and Assignments
@@ -47,6 +51,10 @@ As your library grows, use the built-in filters to find what you need quickly:
 - **Visibility Filter:** See exactly which files are currently hiding behind "Assigned Only" status.
 - **Sort By:** Reorder the grid by the date added, the alphabetical name, or the raw file size.
 - **View Mode Toggle:** Switch from the visual *Grid View* to the dense *List View* if you are managing dozens of files at once.
+
+![Resources library in grid view showing file cards with title, type badge, visibility label, and action menu](/images/user-manual/advisor-panel/resources-library.png)
+
+*Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.*
 
 ---
 

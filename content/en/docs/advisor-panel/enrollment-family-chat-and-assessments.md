@@ -19,6 +19,10 @@ Depending on your organization's configuration, students who register may not jo
 4. Click **Approve** to admit them (which grants them full platform access and adds them to your Students roster).
 5. Click **Deny** if they do not belong.
 
+![Enrollment requests list showing pending student cards with profile preview, and Approve and Deny buttons](/images/user-manual/advisor-panel/enrollment-requests.png)
+
+*Image placeholder: Add screenshot of the enrollment requests queue showing pending student cards with Approve and Deny buttons.*
+
 ---
 
 ## 2. Using Family Chat
@@ -34,6 +38,10 @@ IDPicker recognizes that guidance is a collaborative effort between the advisor,
 4. A red badge will appear next to names when they reply.
 
 > **Tip:** If a parent thread is disabled, it means the student has not yet approved a parent linkage request on their end.
+
+![Family chat interface showing student thread, parent thread, and family thread tabs with message composer at bottom](/images/user-manual/advisor-panel/family-chat.png)
+
+*Image placeholder: Add screenshot of the family chat panel showing the different thread types and an open conversation.*
 
 ---
 

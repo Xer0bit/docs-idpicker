@@ -22,6 +22,10 @@ When a student or advisor submits a Help Center request, it routes to this globa
 
 *Note: If a ticket transition fails silently, re-open it. You likely forgot to fill out a mandatory "Resolution Message" field before trying to change the status to Resolved.*
 
+![Global support ticket queue showing filter controls, ticket rows with priority and status badges, and a resolution message field](/images/user-manual/admin-panel/support-tickets-admin.png)
+
+*Image placeholder: Add screenshot of the admin support ticket queue filtered to Urgent + Pending, with an open ticket showing the resolution message field.*
+
 ---
 
 ## 2. Generating Global Notifications
@@ -36,6 +40,10 @@ While Advisors notify their specific students, Super Admins can push alerts glob
    - **Selected Groups:** Specific subsets if necessary.
 4. Write your Title and Message, then hit **Send**.
 5. Once sent, verify it appears correctly in your broadcast history.
+
+![Global notification composer showing target scope dropdown set to All Students, title and message fields, and Send button](/images/user-manual/admin-panel/notifications-global.png)
+
+*Image placeholder: Add screenshot of the global notification composer with target scope, title, and message filled in before sending.*
 
 ---
 

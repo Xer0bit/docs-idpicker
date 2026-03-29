@@ -1,65 +1,80 @@
 ---
 title: "Profile, Prompts, and Interests"
-description: "Detailed click-by-click advisor configuration workflows"
+description: "How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data"
 weight: 38
 draft: false
 ---
 
-This guide covers advisor profile settings and advanced content/configuration modules.
+This guide covers three configuration areas that affect both your own advisor identity and how IDPicker's AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.
 
-## A) Profile Management
+---
 
-1. In sidebar, click Profile.
-2. Review personal and organization details.
-3. Click Edit.
-4. Update text fields (name, bio, contact, organization data where available).
-5. Upload avatar/banner if supported.
-6. Click Save.
-7. Confirm updated preview.
+## 1. Updating Your Advisor Profile
 
-## B) Prompts Module
+Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.
 
-1. In sidebar, click Prompts.
-2. Open prompt list by category/subcategory.
-3. Select prompt template to edit.
-4. Update content carefully.
-5. Validate syntax/placeholders.
-6. Save changes.
-7. Reopen to confirm version/state.
+1. In the sidebar, click your **Avatar** or **Profile** link.
+2. Click **Edit Profile**.
+3. Update any of the following:
+   - **Display Name** and **Title** (e.g., *Senior Career Counselor*)
+   - **Bio** — A short paragraph about your background and specialties
+   - **Avatar** — Upload a clear headshot (recommended: square, at least 400×400 px)
+   - **Contact Details** — Office hours, phone extension, or secondary email if relevant
+   - **Organization Data** — Department, branch, or campus information if your platform supports it
+4. Click **Save Profile**.
+5. Verify the preview panel on the right shows the updated name and avatar correctly.
 
-## C) Interests Module
+![Advisor profile editor showing name, title, bio, and avatar upload fields](/images/user-manual/advisor-panel/profile-editor.png)
 
-1. In sidebar, click Interests.
-2. Review student interest records and statuses.
-3. Open detail for a student/entry.
-4. Update status or related metadata if action is available.
-5. Save and verify list refresh.
+*Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.*
 
-## Best Practices
+---
 
-- Keep prompt edits versioned and reviewed before broad usage.
-- Use profile info that matches advisor organization branding.
-- Process interests updates consistently to support recommendation quality.
+## 2. Editing AI Prompt Templates
 
-## Common Advisor Questions
+If your organisation has been granted permission to configure regional AI prompts, you can adjust how the AI Mentor communicates with *your specific students* — independent of the global settings the Admin controls.
 
-Q: Prompt save failed.
-A: Check placeholder syntax and retry with valid template format.
+1. In the sidebar, click **Prompts**.
+2. The prompt list is organized by **Category** (e.g., *Mentor Persona*, *Career Guidance*, *University Selection*) and **Subcategory**.
+3. Use the filter bar to navigate to the specific prompt you want to adjust.
+4. Click the prompt name to open the editor.
+5. Read the existing instruction text carefully before editing.
+6. Make your changes — keep them concise and imperative (e.g., *"Always recommend at least two Turkish universities when a student specifies Turkey as their preferred country"*).
 
-Q: Profile image upload did not apply.
-A: Verify file type/size and retry.
+> **Warning:** Never delete or rename the dynamic variables inside double curly braces, such as `{{student_name}}` or `{{trait_score}}`. These inject real student data into the AI's context. Removing them will break personalisation.
 
-Q: Interests data appears stale.
-A: Refresh module and verify latest backend sync.
+7. Click **Save**. The updated prompt is live immediately for your students.
+8. Re-open the prompt to confirm the saved version reflects your edit.
 
-![Profile Placeholder](/images/user-manual/advisor-panel/profile.png)
+![Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted](/images/user-manual/advisor-panel/prompts-editor.png)
 
-Image placeholder: Advisor profile edit and save states.
+*Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.*
 
-![Prompts Placeholder](/images/user-manual/advisor-panel/prompts.png)
+---
 
-Image placeholder: Prompt editor with category filter and save action.
+## 3. Managing Student Interest Records
 
-![Interests Placeholder](/images/user-manual/advisor-panel/interests.png)
+The Interests module shows the career domains and fields of study each student has expressed interest in. These interests feed directly into the AI's recommendation logic.
 
-Image placeholder: Interests table with status/actions.
+1. In the sidebar, click **Interests**.
+2. The table shows a list of student-interest pairs: which student expressed interest in what domain, and when.
+3. Filter by **Student** or **Interest Domain** to find a specific entry.
+4. Click a row to open the interest detail.
+5. If a student has been mis-tagged (for example they changed their mind), you can update the status or remove the interest from their profile.
+6. Click **Save** and verify the list refreshes.
+
+> **Note:** Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.
+
+![Interests table showing student names, interest domain labels, and status badges](/images/user-manual/advisor-panel/interests-table.png)
+
+*Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.*
+
+---
+
+## Common Questions
+
+| Situation | What to do |
+|---|---|
+| My profile avatar is not updating | Check that the file is a JPG or PNG and under the maximum allowed size (typically 2–5 MB). Try a different browser if it still fails |
+| I saved a prompt but an error says "Invalid Template Syntax" | Look for broken `{{` brackets. Every opening `{{` must have a matching `}}`. Fix the broken variable and retry |
+| A student's interests look wrong or outdated | Open their interest detail, update the status to reflect their current goals, and save — then ask the student to confirm their interests from their own profile settings |

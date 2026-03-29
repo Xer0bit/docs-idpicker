@@ -24,6 +24,8 @@ Know exactly what you are looking for?
 
 ![Resource library grid showing file cards with assigned and globally visible documents](/images/user-manual/student-panel/resources-library.png)
 
+*Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.*
+
 ---
 
 ## Filtering and Sorting Files
@@ -38,6 +40,8 @@ If your organization has shared hundreds of files, use these controls to narrow 
 
 ![Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls](/images/user-manual/student-panel/resources-filters.png)
 
+*Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.*
+
 ---
 
 ## Downloading a Shared File
@@ -49,6 +53,8 @@ If your organization has shared hundreds of files, use these controls to narrow 
 > **If a download fails:** Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.
 
 ![Resource file card with Download button highlighted and browser download prompt](/images/user-manual/student-panel/resources-download.png)
+
+*Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.*
 
 ---
 

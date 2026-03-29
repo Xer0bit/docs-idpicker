@@ -1,25 +1,33 @@
 {{/* Branding: Open Graph + Twitter Card logo */}}
-<meta property="og:image" content="{{ "logo.png" | absURL }}">
+{{ $logo := resources.Get "icons/logo.png" }}
+{{ if $logo }}
+<meta property="og:image" content="{{ $logo.Permalink }}">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="{{ "logo.png" | absURL }}">
+<meta name="twitter:image" content="{{ $logo.Permalink }}">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
-/* ── Logo override: hide Docsy's default SVG, inject our PNG ── */
-.td-navbar .navbar-brand__logo svg {
+/* ── Logo: hide Docsy's bundled SVG, replace with IDPicker logo via pseudo-element ── */
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('{{ "logo.png" | relURL }}') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('{{ $logo.RelPermalink }}') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
+{{ end }}
 
-/* Bruteforce hide the generic Docsy text in the navbar so only our pristine brand logo shows */
+<style>
+/* Hide Docsy brand text and SVG — logo injected via JS */
 .td-navbar .navbar-brand__name {
   display: none !important;
   opacity: 0 !important;

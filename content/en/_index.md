@@ -28,10 +28,6 @@ menu:
     <h3>👪 Parent Panel</h3>
     <p>Understand the parent dashboard and linked student visibility.</p>
   </a>
-  <a href="/docs-idpicker/docs/admin-panel/" class="home-card">
-    <h3>⚙️ Admin Panel</h3>
-    <p>System configuration, prompts, translations, and global governance.</p>
-  </a>
 </div>
 
 <h2 class="home-section-title">Popular Quick Links</h2>

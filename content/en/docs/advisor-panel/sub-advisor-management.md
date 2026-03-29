@@ -23,6 +23,10 @@ If you are a primary Advisor managing a large organization, you can invite sub-a
 6. Click **Save / Create**.
 7. The system will email them an invitation link to set up their password.
 
+![Sub-advisor creation form showing name, email, scope selector, and permission checkboxes](/images/user-manual/advisor-panel/sub-advisor-create.png)
+
+*Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.*
+
 ---
 
 ## 2. Editing Sub-Advisor Permissions
@@ -34,7 +38,9 @@ If a sub-advisor's role changes, you can adjust their access on the fly.
 3. Scroll down to the Permission Matrix.
 4. Toggle specific module access on or off as needed. You can also change which exact groups they govern here.
 5. Click **Save**. The changes will apply the next time they log in or refresh their page.
+![Permission matrix editor for a sub-advisor showing module toggles with some enabled and some disabled](/images/user-manual/advisor-panel/sub-advisor-permissions.png)
 
+*Image placeholder: Add screenshot of the sub-advisor permission matrix editor with some modules toggled on and others off.*
 ### Validating Their Access
 If you want to be completely sure you set the permissions correctly:
 1. Ask the sub-advisor to log in while you watch, OR

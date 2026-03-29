@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/student-panel/assigned-forms/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>Assigned Forms | IDPicker Docs</title>
 <meta name="description" content="Detailed click-by-click assigned forms walkthrough">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/student-panel/assigned-forms/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/student-panel/assigned-forms/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Assigned Forms">
   <meta property="og:description" content="Detailed click-by-click assigned forms walkthrough">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Assigned Forms">
   <meta name="twitter:description" content="Detailed click-by-click assigned forms walkthrough">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -213,9 +220,27 @@ A: Field set depends on assigned form configuration.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">CkFzc2lnbmVkIGZvcm1zIGFyZSBvcmdhbml6YXRpb24vYWR2aXNvciBmb3JtcyB0aGF0IHN0dWRlbnRzIGNvbXBsZXRlIGZyb20gZGFzaGJvYXJkIG9yIGRpcmVjdCBsaW5rLgoKIyMgT3BlbiBBc3NpZ25lZCBGb3JtIGZyb20gRGFzaGJvYXJkCgoxLiBPcGVuIERhc2hib2FyZC4KMi4gTG9jYXRlIEFzc2lnbmVkIEZvcm1zIGJsb2NrLgozLiBDbGljayBPcGVuIEZvcm0gb24gcGVuZGluZyBpdGVtLgo0LiBXYWl0IGZvciBmb3JtIHBhZ2UgdG8gbG9hZC4KCiMjIFVuZGVyc3RhbmQgRm9ybSBIZWFkZXIKCkF0IHRvcCwgeW91IG1heSBzZWU6CgotIE9yZ2FuaXphdGlvbiBiYW5uZXIgaW1hZ2UKLSBGb3JtIHRpdGxlCi0gRm9ybSBkZXNjcmlwdGlvbgotIEVkaXRhYmlsaXR5IHN0YXRlCgojIyBDb21wbGV0ZSBGb3JtIEZpZWxkcyAoQ2xpY2stYnktQ2xpY2spCgpGb3IgZWFjaCBmaWVsZDoKCjEuIFJlYWQgbGFiZWwgYW5kIHJlcXVpcmVkIGluZGljYXRvci4KMi4gQ2xpY2sgaW5wdXQgY29udHJvbC4KMy4gRW50ZXIvc2VsZWN0IHJlc3BvbnNlLgo0LiBDb250aW51ZSB0byBuZXh0IGZpZWxkLgoKU3VwcG9ydGVkIGZpZWxkIHBhdHRlcm5zIGluY2x1ZGUgdGV4dCwgdGV4dGFyZWEsIG51bWJlciwgZW1haWwsIGRyb3Bkb3duLCByYWRpbywgY2hlY2tib3gsIGRhdGUvdGltZS9kYXRldGltZSwgYW5kIHJhdGluZy4KCiMjIFN1Ym1pdCBSZXNwb25zZQoKMS4gU2Nyb2xsIHRvIHN1Ym1pdCBhY3Rpb24uCjIuIENsaWNrIFN1Ym1pdC4KMy4gV2FpdCBmb3Igc3VjY2VzcyBtZXNzYWdlLgo0LiBSZXR1cm4gdG8gZGFzaGJvYXJkLgoKIyMgSWYgRm9ybSBJcyBSZWFkLU9ubHkKCklmIGFscmVhZHkgc3VibWl0dGVkIGFuZCBlZGl0aW5nIGlzIGRpc2FibGVkOgoKLSBJbnB1dHMgYXJlIGxvY2tlZC4KLSBZb3UgY2FuIHJldmlldyBwcmV2aW91cyByZXNwb25zZSBidXQgY2Fubm90IG1vZGlmeS4KCiMjIENvbW1vbiBTdHVkZW50IFF1ZXN0aW9ucwoKUTogSSBzdWJtaXR0ZWQgYnV0IGNhbm5vdCBlZGl0IG5vdy4KQTogRm9ybSBpcyBjb25maWd1cmVkIHdpdGggbm8gcG9zdC1zdWJtaXQgZWRpdGluZy4KClE6IFJlcXVpcmVkIGZpZWxkIHdhcm5pbmcgYXBwZWFycy4KQTogRmlsbCBhbGwgcmVxdWlyZWQgZmllbGRzIG1hcmtlZCB3aXRoIHJlcXVpcmVkIGluZGljYXRvci4KClE6IEkgY2Fubm90IHNlZSBvbmUgZmllbGQgbXkgZnJpZW5kIGhhcy4KQTogRmllbGQgc2V0IGRlcGVuZHMgb24gYXNzaWduZWQgZm9ybSBjb25maWd1cmF0aW9uLgoKIVtBc3NpZ25lZCBGb3JtcyBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Fzc2lnbmVkLWZvcm1zLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBc3NpZ25lZCBmb3JtIHdpdGggbWl4ZWQgZmllbGQgdHlwZXMgYW5kIGZpbmFsIHN1Ym1pdCBidXR0b24uCg==</script>

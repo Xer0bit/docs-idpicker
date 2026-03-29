@@ -47,11 +47,32 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="http://localhost:1313/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
+
+<style>
+ 
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
+  display: none !important;
+}
+.td-navbar .navbar-brand__logo {
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
+  flex-shrink: 0;
+}
+</style>
+
 
 <style>
  
@@ -228,7 +249,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>10: <a href="#pg-ff52b84a8dc6fed7b57cdf8fac640307">Subscription</a></li>
+<li>10: <a href="#pg-4eb22d703460ad0fa1f00b8c951a33bf">Notifications</a></li>
 
 
     
@@ -236,7 +257,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>11: <a href="#pg-847ffb300422d1e360c64d538a9a20a5">Account and Settings</a></li>
+<li>11: <a href="#pg-ff52b84a8dc6fed7b57cdf8fac640307">Subscription</a></li>
 
 
     
@@ -244,7 +265,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>12: <a href="#pg-1ba11b1cbbe8b69c70ff36bd70acd221">Language</a></li>
+<li>12: <a href="#pg-847ffb300422d1e360c64d538a9a20a5">Account and Settings</a></li>
 
 
     
@@ -252,7 +273,7 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>13: <a href="#pg-f0266080fa0bf72694f75d6bc2dd0a9e">Certificates and Application Documents</a></li>
+<li>13: <a href="#pg-1ba11b1cbbe8b69c70ff36bd70acd221">Language</a></li>
 
 
     
@@ -260,7 +281,15 @@ This is the multi-page printable view of this section.
     
     
 	
-<li>14: <a href="#pg-7ab95ee925fb5f7be5b072fd4e1387d1">Assigned Forms</a></li>
+<li>14: <a href="#pg-f0266080fa0bf72694f75d6bc2dd0a9e">Certificates and Application Documents</a></li>
+
+
+    
+  
+    
+    
+	
+<li>15: <a href="#pg-7ab95ee925fb5f7be5b072fd4e1387d1">Assigned Forms</a></li>
 
 
     
@@ -386,6 +415,7 @@ This is the multi-page printable view of this section.
 <li>If you have forgotten your password, use <a href="#forgot-password">Forgot Password</a>.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-login.png" alt="Student login page showing email and password fields with Sign In button"></p>
+<p><em>Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.</em></p>
 <hr>
 <h2 id="sign-in-with-google">Sign In with Google</h2>
 <p>Faster sign-in without a separate password.</p>
@@ -402,6 +432,7 @@ This is the multi-page printable view of this section.
 <li>Make sure you are not using a private/incognito window with strict tracking prevention.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-google-signin.png" alt="Continue with Google button and Google account picker dialog"></p>
+<p><em>Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.</em></p>
 <hr>
 <h2 id="register-a-new-account">Register a New Account</h2>
 <p>New students follow a multi-step wizard. The exact steps depend on whether you received an invitation link.</p>
@@ -429,6 +460,7 @@ This is the multi-page printable view of this section.
 <li>Weak password → make sure it meets all strength requirements shown on screen.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-register.png" alt="Multi-step registration wizard showing name, email, password, interests, and profile fields"></p>
+<p><em>Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.</em></p>
 <hr>
 <h2 id="verify-your-email">Verify Your Email</h2>
 <p>After registration, IDPicker sends a verification email.</p>
@@ -446,6 +478,7 @@ This is the multi-page printable view of this section.
 <li>Open the new email and click the fresh link.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/authentication-verify-email.png" alt="Email verification page confirming the link was clicked successfully"></p>
+<p><em>Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.</em></p>
 <hr>
 <h2 id="forgot-password">Forgot Password</h2>
 <p>Use this if you cannot remember your current password.</p>
@@ -456,6 +489,7 @@ This is the multi-page printable view of this section.
 <li>Check your inbox and spam folder for the reset email.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/authentication-forgot-password.png" alt="Forgot password form with registered email input and Send Reset Link button"></p>
+<p><em>Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.</em></p>
 <hr>
 <h2 id="reset-password-from-the-email-link">Reset Password From the Email Link</h2>
 <p>After requesting a reset, you will receive a link by email.</p>
@@ -473,6 +507,7 @@ This is the multi-page printable view of this section.
 <li>Request a new reset link from the <a href="#forgot-password">Forgot Password</a> step above.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/authentication-reset-password.png" alt="Reset password form with new password field, confirm password field, and strength indicator"></p>
+<p><em>Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -564,6 +599,7 @@ This is the multi-page printable view of this section.
   </tbody>
 </table>
 <p><img src="/images/user-manual/student-panel/dashboard-overview.png" alt="Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards"></p>
+<p><em>Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.</em></p>
 <hr>
 <h2 id="your-first-5-actions-after-logging-in">Your First 5 Actions After Logging In</h2>
 <p>Follow this sequence whenever you start a new session for maximum efficiency:</p>
@@ -600,6 +636,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/dashboard-assigned-forms.png" alt="Assigned Forms block with a pending form card and Open button highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.</em></p>
 <hr>
 <h2 id="handling-organization-invitations">Handling Organization Invitations</h2>
 <ol>
@@ -609,6 +646,7 @@ This is the multi-page printable view of this section.
 <li>Your decision is saved immediately.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/dashboard-invitations.png" alt="Organization invitation card showing organization name with Accept and Decline buttons"></p>
+<p><em>Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.</em></p>
 <hr>
 <h2 id="reading-notifications">Reading Notifications</h2>
 <ol>
@@ -627,6 +665,7 @@ This is the multi-page printable view of this section.
 <li>Complete all remaining questions and click <strong>Submit</strong>.
 <img src="/images/user-manual/student-panel/dashboard-resume-assessment.png" alt="Dashboard showing Resume Assessment prompt card with Continue button"></li>
 </ol>
+<p><em>Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.</em></p>
 <hr>
 <h2 id="exploring-program-cards">Exploring Program Cards</h2>
 <ul>
@@ -698,6 +737,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/assessment-card-list.png" alt="Assessment card list showing available assessments with Start button"></p>
+<p><em>Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.</em></p>
 <hr>
 <h2 id="resuming-an-incomplete-assessment">Resuming an Incomplete Assessment</h2>
 <p>Life happens. If you close your browser or navigate away, your progress is safely auto-saved.</p>
@@ -709,6 +749,7 @@ This is the multi-page printable view of this section.
 <li>Complete the remaining questions and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-resume.png" alt="Assessment card showing Continue button for a session that was left incomplete"></p>
+<p><em>Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.</em></p>
 <hr>
 <h2 id="retaking-an-assessment">Retaking an Assessment</h2>
 <p>Some assessments allow you to retake them if you feel your situation has changed. If retakes are enabled for a specific test:</p>
@@ -719,6 +760,7 @@ This is the multi-page printable view of this section.
 <li>Complete the new run and submit.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-retake-confirm.png" alt="Retake confirmation dialog warning that previous results will be overwritten"></p>
+<p><em>Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.</em></p>
 <hr>
 <h2 id="reviewing-your-results">Reviewing Your Results</h2>
 <p>Once you submit an assessment, the platform instantly generates your results.</p>
@@ -728,6 +770,7 @@ This is the multi-page printable view of this section.
 <li>Armed with this new data, head over to the <strong>Recommendations</strong> or <strong>Personality</strong> modules to see what the AI has unlocked for you!</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/assessment-results.png" alt="Assessment results summary showing trait scores and breakdown after submission"></p>
+<p><em>Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.</em></p>
 <hr>
 <h2 id="important-note-on-languages">Important Note on Languages</h2>
 <p>If you change your interface language (e.g., from English to Turkish) <em>while</em> an assessment is in progress, the platform may require you to confirm a reset of your current in-progress responses to match the new language schema. It is best to stick to one language until you submit!</p>
@@ -785,6 +828,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> The pass counter next to the summary banner increments each time you apply a new set of filters. Use it to compare how your results change between refinement passes.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-overview.png" alt="Recommendations summary banner showing found count, pass counter, and ranked university cards below"></p>
+<p><em>Image placeholder: Add screenshot of the Recommendations page — show the summary banner with found count and pass counter, and at least 2 university cards ranked below it.</em></p>
 <hr>
 <h2 id="2-choosing-a-recommendation-input-mode">2. Choosing a Recommendation Input Mode</h2>
 <p>Before the AI refines your results, you must tell it what data to prioritise. Click <strong>Refine Results</strong> (top-right button) to open the refinement panel, then select one of the two <strong>Recommendation input</strong> modes:</p>
@@ -811,6 +855,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>Click the tile for the mode you want — the selected tile gets a highlighted border.</p>
 <p><img src="/images/user-manual/student-panel/recommendations-input-mode.png" alt="Recommendation input section showing Test Scores tile and Personality tile with selection highlight"></p>
+<p><em>Image placeholder: Add screenshot of the refinement panel showing both input mode tiles (Test Scores and Personality) with one selected and highlighted.</em></p>
 <hr>
 <h2 id="3-refining-with-test-scores-exam-based-mode">3. Refining With Test Scores (Exam-Based Mode)</h2>
 <p>This mode lets you enter the entrance exams you have actually sat, together with your score and ranking. Universities use these figures as admission criteria, so providing them produces the most accurate shortlist.</p>
@@ -833,6 +878,7 @@ This is the multi-page printable view of this section.
 <li>Click the <strong>Ranking (optional)</strong> field and enter your rank if known (e.g. <em>Top 5%</em> or <em>15000th</em>).</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/recommendations-exam-slot.png" alt="Exam score palette showing exam name, score, and ranking input fields for the first exam slot"></p>
+<p><em>Image placeholder: Add screenshot of the exam score palette with the first slot’s Exam name, Score, and Ranking (optional) fields visible and empty.</em></p>
 <h3 id="3c-adding-a-second-or-third-exam">3c. Adding a Second or Third Exam</h3>
 <ol>
 <li>Click the <strong>+</strong> button on the right side of the palette row counter.</li>
@@ -875,6 +921,7 @@ This is the multi-page printable view of this section.
 <li><strong>YKS – DİL</strong> (Language) — used for foreign language degree programmes</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/recommendations-yks-example.png" alt="Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example"></p>
+<p><em>Image placeholder: Add screenshot of the score palette with YKS–SAY entered as exam name, a numeric score, and a ranking value filled in as a demonstrative example.</em></p>
 <h3 id="3e-applying-your-scores">3e. Applying Your Scores</h3>
 <ol>
 <li>After filling in all your exam rows, click <strong>Apply All Filters</strong> (bottom-right of the refinement panel).</li>
@@ -883,6 +930,7 @@ This is the multi-page printable view of this section.
 <li>Your ranked list updates to reflect universities whose admission criteria your scores meet.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/recommendations-apply-filters.png" alt="Apply All Filters button highlighted at the bottom of the refinement panel"></p>
+<p><em>Image placeholder: Add screenshot of the Apply All Filters button at the bottom of the refinement panel, highlighted or in focus.</em></p>
 <hr>
 <h2 id="4-refining-with-personality-trait-based-mode">4. Refining With Personality (Trait-Based Mode)</h2>
 <p>If you have completed the Personality assessment on IDPicker, you can let the AI use your psychological trait scores instead of exam data.</p>
@@ -896,6 +944,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> This mode requires a completed Personality assessment. If you have not finished it, the tile may be locked. Go to <a href="/docs/student-panel/assessment/">Assessment</a> first.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-personality-mode.png" alt="Personality tile selected in the recommendation input section with no additional input fields visible"></p>
+<p><em>Image placeholder: Add screenshot of the refinement panel with the Personality tile selected — no exam input fields should be visible.</em></p>
 <hr>
 <h2 id="5-filtering-by-country">5. Filtering by Country</h2>
 <p>The <strong>Refine by Country</strong> dropdown narrows results to universities located in a specific country before the AI applies its ranking logic.</p>
@@ -909,6 +958,7 @@ This is the multi-page printable view of this section.
 <p><strong>Tip:</strong> Combine country filtering with an exam mode for the tightest shortlist. For example, selecting <em>Turkey</em> + entering YKS–SAY scores surfaces only Turkish universities that accept your specific score range.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-country-filter.png" alt="Country dropdown open with a country selected in the Refine by section of the recommendations panel"></p>
+<p><em>Image placeholder: Add screenshot of the country dropdown open with a country selected inside the Refine by section.</em></p>
 <hr>
 <h2 id="6-filtering-by-city">6. Filtering by City</h2>
 <p>After country-level filtering, you can drill down further by city using the <strong>Filter by city</strong> control that appears above the results list.</p>
@@ -921,6 +971,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> City-level filtering is applied independently of the refinement panel. You do not need to click <strong>Apply All Filters</strong> again — city changes take effect immediately.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-city-filter.png" alt="Filter by city dropdown showing All cities default and a city selection in context of the results list"></p>
+<p><em>Image placeholder: Add screenshot of the Filter by city row above the results — show the dropdown open with All cities default and one city option highlighted.</em></p>
 <hr>
 <h2 id="7-reading-the-recommendation-cards">7. Reading the Recommendation Cards</h2>
 <p>Each university card in your results list displays key admission and programme information at a glance:</p>
@@ -952,6 +1003,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>Click the university name to open its full detail page showing all programmes, requirements, and the AI&rsquo;s reasoning for the match.</p>
 <p><img src="/images/user-manual/student-panel/recommendations-card-detail.png" alt="University recommendation card showing name, city, Premium badge, and programme detail summary"></p>
+<p><em>Image placeholder: Add screenshot of a recommendation card showing university name, city, Premium badge, and programme detail summary (mask any real student data).</em></p>
 <hr>
 <h2 id="8-downloading-your-full-report">8. Downloading Your Full Report</h2>
 <p>If your account plan supports it, you can export your recommendation profile as a PDF.</p>
@@ -964,6 +1016,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> If the button is hidden, report export is not enabled for your current plan or organisation policy. Check your subscription under <strong>Settings</strong>.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/recommendations-report-download.png" alt="Download My Report button and secure PDF link in a new tab"></p>
+<p><em>Image placeholder: Add screenshot of the Download My Report button at the top of the page, and optionally the PDF open in a new browser tab.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1043,6 +1096,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> Once you submit, results are generated instantly. You do not need to wait or refresh.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/personality-locked.png" alt="Personality page in locked state with Complete Assessment prompt and link to the assessment module"></p>
+<p><em>Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.</em></p>
 <hr>
 <h2 id="2-the-personality-insights-header">2. The Personality Insights Header</h2>
 <p>At the top of the page you will see a <strong>Personality Insights</strong> badge and the heading <strong>Your Personality Analysis</strong>, followed by the subline:</p>
@@ -1051,6 +1105,7 @@ This is the multi-page printable view of this section.
 </blockquote>
 <p>Below the heading is the <strong>Export</strong> button — this lets you download your full report at any time. See <a href="#7-exporting-your-personality-report">section 7</a> for full export steps.</p>
 <p><img src="/images/user-manual/student-panel/personality-header.png" alt="Personality Insights header with Export button at the top of the analysis page"></p>
+<p><em>Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the &ldquo;Your Personality Analysis&rdquo; heading, and the Export button.</em></p>
 <hr>
 <h2 id="3-reading-the-radar-chart">3. Reading the Radar Chart</h2>
 <p>The radar chart is the first visual you see after the header. It plots all eight traits simultaneously so you can grasp your overall profile shape at a glance.</p>
@@ -1114,6 +1169,7 @@ This is the multi-page printable view of this section.
 <li><strong>Hover over any axis point</strong> to see the exact numeric score for that trait.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/personality-radar-chart.png" alt="Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip"></p>
+<p><em>Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.</em></p>
 <hr>
 <h2 id="4-the-personality-overview-panel">4. The Personality Overview Panel</h2>
 <p>Directly below the radar chart, the <strong>Personality Overview</strong> panel gives a written summary of your profile organised into three tiers.</p>
@@ -1145,6 +1201,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>The overview card opens with a paragraph describing the unique pattern of your results and how your traits shape your approach to learning, relationships, and personal growth.</p>
 <p><img src="/images/user-manual/student-panel/personality-overview-panel.png" alt="Personality Overview card showing three tier labels and an introductory paragraph about the student&rsquo;s unique trait pattern"></p>
+<p><em>Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.</em></p>
 <hr>
 <h2 id="5-quick-stats-panel">5. Quick Stats Panel</h2>
 <p>To the right of the Personality Overview is the <strong>Quick Stats</strong> panel. It lists your highest-scoring traits under <strong>Top Strengths</strong> and your lowest-scoring traits under <strong>Growth Areas</strong>, each with their numeric score shown.</p>
@@ -1154,6 +1211,7 @@ This is the multi-page printable view of this section.
 <li>Use the <strong>Growth Areas</strong> list to prioritise which Action Steps (from the trait cards below) to work on first.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/personality-quick-stats.png" alt="Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange"></p>
+<p><em>Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.</em></p>
 <hr>
 <h2 id="6-individual-trait-cards">6. Individual Trait Cards</h2>
 <p>Below the overview section, every one of the eight traits has its own card. Each card follows the same structure and tells you exactly what your score means and what to do about it.</p>
@@ -1197,6 +1255,7 @@ This is the multi-page printable view of this section.
   </tbody>
 </table>
 <p><img src="/images/user-manual/student-panel/personality-trait-card.png" alt="Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section"></p>
+<p><em>Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.</em></p>
 <h3 id="the-eight-trait-cards-in-detail">The Eight Trait Cards in Detail</h3>
 <h4 id="growth-mindset">Growth Mindset</h4>
 <p>Your openness to learning, challenges, and self-improvement. A high score here means you see setbacks as fuel for growth rather than failure.</p>
@@ -1238,6 +1297,7 @@ This is the multi-page printable view of this section.
 <p><strong>What to do with a high score:</strong> Continue reflecting on your experiences — journalling, asking for honest feedback, and reviewing your decisions weekly deepens this further.</p>
 <p><strong>What to do with a low score:</strong> After any significant interaction or decision, take five minutes to ask yourself: <em>What did I do well? What would I change?</em> Small reflection habits compound over time.</p>
 <p><img src="/images/user-manual/student-panel/personality-growth-area-cards.png" alt="Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps"></p>
+<p><em>Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.</em></p>
 <hr>
 <h2 id="7-exporting-your-personality-report">7. Exporting Your Personality Report</h2>
 <p>Your full personality analysis can be exported as a PDF to share with parents, advisors, or for personal records.</p>
@@ -1250,6 +1310,7 @@ This is the multi-page printable view of this section.
 <p><strong>Note:</strong> If the <strong>Export</strong> button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check <strong>Settings → Subscription</strong> or contact your advisor.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/personality-report-download.png" alt="Export button at the top of the Personality page and the resulting PDF open in a new browser tab"></p>
+<p><em>Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.</em></p>
 <hr>
 <h2 id="8-using-your-personality-results-with-other-platform-features">8. Using Your Personality Results With Other Platform Features</h2>
 <p>Your personality data does not exist in isolation — it feeds directly into other IDPicker modules:</p>
@@ -1344,6 +1405,7 @@ This is the multi-page printable view of this section.
 <p><strong>Quota Warning:</strong> Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-mentor-chat.png" alt="AI Mentor hub showing personality cards grid and open chat interface with message input box"></p>
+<p><em>Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.</em></p>
 <hr>
 <h2 id="resuming-a-recent-chat">Resuming a Recent Chat</h2>
 <p>You do not have to start over every time.</p>
@@ -1353,6 +1415,7 @@ This is the multi-page printable view of this section.
 <li>The chat history will load, and you can pick up the conversation exactly where you left off.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-recent-chats.png" alt="Recent chats list in Mentor Hub showing previous conversation threads"></p>
+<p><em>Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.</em></p>
 <hr>
 <h2 id="chatting-with-your-human-advisor">Chatting With Your Human Advisor</h2>
 <p>If your account is linked to an organization or school, your human advisor manages your progress. You can message them directly here.</p>
@@ -1364,6 +1427,7 @@ This is the multi-page printable view of this section.
 </ol>
 <p><em>Note: If the advisor section says &ldquo;No advisor linked,&rdquo; your account operates independently and this feature is disabled.</em></p>
 <p><img src="/images/user-manual/student-panel/ai-mentorship-advisor-chat.png" alt="Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button"></p>
+<p><em>Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1417,6 +1481,7 @@ This is the multi-page printable view of this section.
 <li>Review your refined results.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/university-search-keyword.png" alt="University search bar with keyword input and auto-filtered results grid"></p>
+<p><em>Image placeholder: Add screenshot of the university search bar with a keyword typed in and the auto-filtered results grid below it.</em></p>
 <hr>
 <h2 id="power-filtering">Power Filtering</h2>
 <p>To drill down into specific criteria, use the filter panel on the left (or in the top dropdowns, depending on your device).</p>
@@ -1430,6 +1495,7 @@ This is the multi-page printable view of this section.
 <p><strong>Warning:</strong> Mixing too many strict filters at once (e.g., <em>Aerospace Engineering</em>, <em>PhD</em>, <em>Turkish language</em>, <em>in Germany</em>) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/university-search-filters.png" alt="University search filter panel showing category, degree type, and language of instruction dropdowns"></p>
+<p><em>Image placeholder: Add screenshot of the filter panel with the Category, Degree Type, and Language of Instruction dropdowns visible.</em></p>
 <hr>
 <h2 id="managing-pagination-load-more">Managing Pagination (Load More)</h2>
 <p>When reviewing results:</p>
@@ -1440,6 +1506,7 @@ This is the multi-page printable view of this section.
 </ol>
 <p><em>Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.</em></p>
 <p><img src="/images/user-manual/student-panel/university-search-pagination.png" alt="Pagination controls with page numbers and page size selector at the bottom of university results"></p>
+<p><em>Image placeholder: Add screenshot of the pagination bar at the bottom of the results — show page numbers, the active page highlighted, and the page size selector.</em></p>
 <hr>
 <h2 id="how-to-compare-programs-efficiently">How to Compare Programs Efficiently</h2>
 <p>When building your shortlist, we recommend focusing on these core factors displayed on every card:</p>
@@ -1509,6 +1576,7 @@ This is the multi-page printable view of this section.
 <li>The list will instantly filter to matching documents.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/resources-library.png" alt="Resource library grid showing file cards with assigned and globally visible documents"></p>
+<p><em>Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.</em></p>
 <hr>
 <h2 id="filtering-and-sorting-files">Filtering and Sorting Files</h2>
 <p>If your organization has shared hundreds of files, use these controls to narrow them down:</p>
@@ -1520,6 +1588,7 @@ This is the multi-page printable view of this section.
 <li><strong>View Mode:</strong> Toggle between the spacious Grid view or the compact List view depending on your preference.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/resources-filters.png" alt="Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls"></p>
+<p><em>Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.</em></p>
 <hr>
 <h2 id="downloading-a-shared-file">Downloading a Shared File</h2>
 <ol>
@@ -1531,6 +1600,7 @@ This is the multi-page printable view of this section.
 <p><strong>If a download fails:</strong> Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/resources-download.png" alt="Resource file card with Download button highlighted and browser download prompt"></p>
+<p><em>Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1589,6 +1659,7 @@ This is the multi-page printable view of this section.
 <li>Click <strong>Submit</strong> and wait for the success flash.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/help-center-new-ticket.png" alt="New ticket form with subject, category, priority, and description fields filled in"></p>
+<p><em>Image placeholder: Add screenshot of the New Ticket form — all fields visible: subject, category, priority dropdown, and description box.</em></p>
 <hr>
 <h2 id="how-to-write-a-ticket-that-gets-fixed-fast">How to Write a Ticket That Gets Fixed Fast</h2>
 <p>The support team wants to help, but they cannot see your screen. Provide these details to speed up resolution:</p>
@@ -1634,6 +1705,7 @@ This is the multi-page printable view of this section.
 </table>
 <p>If an agent replies requiring more info, you will be notified!</p>
 <p><img src="/images/user-manual/student-panel/help-center-my-tickets.png" alt="My Tickets tab showing a list of submitted tickets with Pending, In Progress, and Resolved status badges"></p>
+<p><em>Image placeholder: Add screenshot of the My Tickets tab showing at least 2-3 tickets with different status badges (Pending, In Progress, Resolved).</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -1673,7 +1745,134 @@ This is the multi-page printable view of this section.
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-ff52b84a8dc6fed7b57cdf8fac640307">10 - Subscription</h1>
+	<h1 id="pg-4eb22d703460ad0fa1f00b8c951a33bf">10 - Notifications</h1>
+    <div class="lead">How to read, manage, and act on platform notifications in your student account</div>
+	<p>IDPicker keeps you informed through a built-in notification system. Whenever your advisor sends you a message, assigns you a form, or an action requires your attention, a notification appears in your inbox so nothing falls through the cracks.</p>
+<hr>
+<h2 id="1-opening-your-notification-inbox">1. Opening Your Notification Inbox</h2>
+<ol>
+<li>Look for the <strong>Bell icon</strong> in the top navigation bar.</li>
+<li>A red badge on the bell shows how many unread notifications you have.</li>
+<li>Click the bell to open the <strong>Notification Dropdown</strong> — this shows your five most recent messages.</li>
+<li>Click <strong>View All Notifications</strong> at the bottom of the dropdown to open the full inbox page.</li>
+</ol>
+<p><img src="/images/user-manual/student-panel/notifications-dropdown.png" alt="Notification bell icon with a red unread badge and the dropdown panel showing recent notifications"></p>
+<p><em>Image placeholder: Add screenshot of the notification bell in the navbar with the dropdown open, showing recent notification items and the View All link.</em></p>
+<hr>
+<h2 id="2-reading-a-notification">2. Reading a Notification</h2>
+<ol>
+<li>In the full notifications list, unread items appear with a highlighted background or a blue dot indicator.</li>
+<li>Click any notification row to open it.</li>
+<li>The detail view shows:
+<ul>
+<li><strong>Title</strong> of the notification</li>
+<li><strong>Full message body</strong> — may include instructions or links to take action</li>
+<li><strong>Sender</strong> (e.g., your advisor&rsquo;s name, or <em>IDPicker System</em>)</li>
+<li><strong>Timestamp</strong> — when it was sent</li>
+</ul>
+</li>
+<li>After you open it, the notification is automatically marked as <strong>Read</strong> and the unread badge count decreases.</li>
+</ol>
+<hr>
+<h2 id="3-marking-all-as-read">3. Marking All as Read</h2>
+<p>If you have many unread notifications and want to clear the badge quickly:</p>
+<ol>
+<li>On the full notifications list page, click <strong>Mark All as Read</strong>.</li>
+<li>All notification rows are instantly marked as read.</li>
+<li>The red badge on the bell icon disappears.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Marking notifications as read does not delete them. They remain in your list for reference.</p>
+</blockquote>
+<p><img src="/images/user-manual/student-panel/notifications-inbox.png" alt="Notifications inbox showing unread rows highlighted and the Mark All as Read button at the top"></p>
+<p><em>Image placeholder: Add screenshot of the full notifications inbox page with several unread rows and the Mark All as Read button visible.</em></p>
+<hr>
+<h2 id="4-types-of-notifications">4. Types of Notifications</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Type</th>
+          <th>What it means</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Advisor Message</strong></td>
+          <td>Your advisor sent you a note or update</td>
+          <td>Read the message and reply in the Chat module if needed</td>
+      </tr>
+      <tr>
+          <td><strong>Form Assigned</strong></td>
+          <td>An advisor or admin has added a new form for you to complete</td>
+          <td>Click the notification to go directly to the form and fill it in</td>
+      </tr>
+      <tr>
+          <td><strong>Assessment Reminder</strong></td>
+          <td>A scheduled or overdue assessment needs your attention</td>
+          <td>Click through to open the assessment and complete it</td>
+      </tr>
+      <tr>
+          <td><strong>Parent Link Request Received</strong></td>
+          <td>A parent has requested to view your account</td>
+          <td>Go to your Account Settings to approve or deny the link request</td>
+      </tr>
+      <tr>
+          <td><strong>Certificate Issued</strong></td>
+          <td>Your advisor has issued you a new certificate</td>
+          <td>Find it in the Certificates and Documents section to download</td>
+      </tr>
+      <tr>
+          <td><strong>Application Document Update</strong></td>
+          <td>Your advisor reviewed and updated the status of a document you uploaded</td>
+          <td>Check your Application Documents section for feedback</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="5-acting-on-a-notification">5. Acting on a Notification</h2>
+<p>Most notifications include a direct action link inside the message body. Click the link to jump straight to the relevant page — for example, clicking a <em>Form Assigned</em> notification takes you directly to the form&rsquo;s fill screen.</p>
+<p>If a notification does not have a direct link, use the sidebar navigation to go to the relevant module manually.</p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My bell shows a badge count but I cannot find unread notifications</td>
+          <td>Open the full inbox and look for the blue dot or highlighted row. The count may include system-level notices that appear without a visible highlight in all browsers</td>
+      </tr>
+      <tr>
+          <td>I accidentally marked everything as read before seeing a message</td>
+          <td>The notifications are still in your list. Scroll through and look for any you have not acted on yet</td>
+      </tr>
+      <tr>
+          <td>I am not receiving notifications about my forms</td>
+          <td>Check with your advisor to confirm the form was assigned to your account specifically. Also verify your notifications settings have not been muted</td>
+      </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-ff52b84a8dc6fed7b57cdf8fac640307">11 - Subscription</h1>
     <div class="lead">Detailed guide to limits, quotas, and upgrade paths</div>
 	<p>This guide explains how students identify free-plan limits and use upgrade paths.</p>
 <h2 id="understand-feature-limits">Understand Feature Limits</h2>
@@ -1730,7 +1929,7 @@ A: Check quota indicators shown in quota-controlled features.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-847ffb300422d1e360c64d538a9a20a5">11 - Account and Settings</h1>
+	<h1 id="pg-847ffb300422d1e360c64d538a9a20a5">12 - Account and Settings</h1>
     <div class="lead">Detailed click-by-click profile and settings walkthrough</div>
 	<p>This guide explains how students edit profile, manage parent links, switch guidance track, and delete account safely.</p>
 <h2 id="a-edit-profile-click-by-click">A) Edit Profile (Click-by-Click)</h2>
@@ -1823,7 +2022,7 @@ A: Confirmation word is strict; type exactly as shown.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-1ba11b1cbbe8b69c70ff36bd70acd221">12 - Language</h1>
+	<h1 id="pg-1ba11b1cbbe8b69c70ff36bd70acd221">13 - Language</h1>
     <div class="lead">Detailed click-by-click language switching walkthrough</div>
 	<p>Student panel supports English and Turkish.</p>
 <h2 id="switch-language-normal-case">Switch Language (Normal Case)</h2>
@@ -1874,7 +2073,7 @@ A: Refresh page once and verify language persisted.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f0266080fa0bf72694f75d6bc2dd0a9e">13 - Certificates and Application Documents</h1>
+	<h1 id="pg-f0266080fa0bf72694f75d6bc2dd0a9e">14 - Certificates and Application Documents</h1>
     <div class="lead">Detailed click-by-click certificates and document workflow</div>
 	<p>This guide covers two high-value student workflows: earned certificates and application document submission.</p>
 <h2 id="a-certificates-click-by-click">A) Certificates (Click-by-Click)</h2>
@@ -1960,7 +2159,7 @@ A: Review invalid reason and upload corrected document.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-7ab95ee925fb5f7be5b072fd4e1387d1">14 - Assigned Forms</h1>
+	<h1 id="pg-7ab95ee925fb5f7be5b072fd4e1387d1">15 - Assigned Forms</h1>
     <div class="lead">Detailed click-by-click assigned forms walkthrough</div>
 	<p>Assigned forms are organization/advisor forms that students complete from dashboard or direct link.</p>
 <h2 id="open-assigned-form-from-dashboard">Open Assigned Form from Dashboard</h2>
@@ -2041,6 +2240,24 @@ A: Field set depends on assigned form configuration.</p>
     <script src="/docs-idpicker/js/main.js"></script>
 <script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBTdHVkZW50IFBhbmVsIGlzIHRoZSBtYWluIHdvcmtzcGFjZSBmb3Igc3R1ZGVudHMgaW4gSURQaWNrZXIuCgpUaGlzIHNlY3Rpb24gaXMgd3JpdHRlbiBmb3IgcmVhbCBwcm9kdWN0IGJlaGF2aW9yIGluIHRoZSBjdXJyZW50IHN0dWRlbnQgbW9kdWxlIGltcGxlbWVudGF0aW9uLiBVc2UgaXQgYXMgdGhlIHByaW1hcnkgZ3VpZGUgZm9yIG9uYm9hcmRpbmcsIGRhaWx5IHVzYWdlLCBhbmQgdHJvdWJsZXNob290aW5nLgoKIyMgV2hvIFNob3VsZCBVc2UgVGhpcyBHdWlkZQoKLSBTdHVkZW50cyB1c2luZyBJRFBpY2tlciBmb3IgY2FyZWVyIGFuZCB1bml2ZXJzaXR5IGd1aWRhbmNlCi0gQWR2aXNvcnMgb25ib2FyZGluZyBzdHVkZW50cyBhbmQgdmFsaWRhdGluZyBzdHVkZW50IGpvdXJuZXlzCi0gUUEgYW5kIHN1cHBvcnQgdGVhbXMgdmVyaWZ5aW5nIHN0dWRlbnQtZmFjaW5nIGZsb3dzCgojIyBTdWdnZXN0ZWQgUmVhZGluZyBPcmRlcgoKMS4gQXV0aGVudGljYXRpb24gYW5kIGxvZ2luCjIuIERhc2hib2FyZCBvdmVydmlldwozLiBTZWxmLWFzc2Vzc21lbnQgYW5kIGNvbXBsZXRpb24KNC4gUmVjb21tZW5kYXRpb25zIGFuZCB0cmFjayBzd2l0Y2hpbmcKNS4gUGVyc29uYWxpdHkgYW5hbHlzaXMgYW5kIHJlcG9ydAo2LiBBSSBtZW50b3IgYW5kIGFkdmlzb3IgY2hhdAo3LiBVbml2ZXJzaXR5IHNlYXJjaAo4LiBSZXNvdXJjZXMKOS4gSGVscCBjZW50ZXIKMTAuIFN1YnNjcmlwdGlvbiBhbmQgcHJlbWl1bSBsaW1pdHMKMTEuIFByb2ZpbGUgYW5kIHNldHRpbmdzCjEyLiBMYW5ndWFnZSBzd2l0Y2hpbmcKMTMuIENlcnRpZmljYXRlcyBhbmQgYXBwbGljYXRpb24gZG9jdW1lbnRzCjE0LiBBc3NpZ25lZCBmb3JtcwoKIyMgQ29yZSBGZWF0dXJlcyAmIFJlc3BvbnNpYmlsaXRpZXMKClRoaXMgZG9jdW1lbnRhdGlvbiBjb3ZlcnM6CgotIFNpZ24gaW4sIHJlZ2lzdHJhdGlvbiwgZW1haWwgdmVyaWZpY2F0aW9uLCBwYXNzd29yZCByZXNldAotIERhc2hib2FyZCBzZWN0aW9uczogcmVwb3J0cywgbm90aWZpY2F0aW9ucywgZm9ybXMsIGludml0YXRpb25zLCBwcm9tb3RlZCBwcm9ncmFtcwotIEFzc2Vzc21lbnQgbGlmZWN5Y2xlOiBzdGFydCwgY29udGludWUsIGNvbXBsZXRlLCByZXRha2UsIHJlc3VsdHMKLSBSZWNvbW1lbmRhdGlvbnMgZm9yIGJvdGggY2FyZWVyIGFuZCB1bml2ZXJzaXR5IHRyYWNrcwotIFBlcnNvbmFsaXR5IHRyYWl0cywgY2hhcnQgaW50ZXJwcmV0YXRpb24sIHJlcG9ydCBkb3dubG9hZAotIE1lbnRvciBwZXJzb25hbGl0aWVzLCBhZHZpc29yIGNoYXQsIGNoYXQgcXVvdGEgYXdhcmVuZXNzCi0gVW5pdmVyc2l0eSBjYXRhbG9nIHNlYXJjaCwgZmlsdGVycywgYW5kIHBhZ2luYXRpb24KLSBTaGFyZWQgcmVzb3VyY2VzIGJyb3dzaW5nIGFuZCBzZWN1cmUgZG93bmxvYWQKLSBTdXBwb3J0IHRpY2tldCBjcmVhdGlvbiBhbmQgc3RhdHVzIGZvbGxvdy11cAotIFBhcmVudCBsaW5raW5nIGFuZCBhY2NvdW50IG1hbmFnZW1lbnQKLSBDZXJ0aWZpY2F0ZSB2aWV3aW5nIGFuZCBhcHBsaWNhdGlvbiBkb2N1bWVudCB1cGxvYWRzCi0gQXNzaWduZWQgb3JnYW5pemF0aW9uIGZvcm1zIHdpdGggZHluYW1pYyBmaWVsZCB0eXBlcwoKIyMgU2NyZWVuc2hvdCBDaGVja2xpc3QKClVzZSB0aGlzIGxpc3Qgd2hpbGUgYWRkaW5nIGltYWdlczoKCjEuIExvZ2luIHBhZ2UgYW5kIEdvb2dsZSBzaWduLWluCjIuIERhc2hib2FyZCBob21lIChhbGwgbW9kdWxlcyB2aXNpYmxlKQozLiBBc3Nlc3NtZW50IGxpc3QgKGRlZmF1bHQgKyBvcmdhbml6YXRpb24gYXNzZXNzbWVudCBjYXJkKQo0LiBBc3Nlc3NtZW50IGluIHByb2dyZXNzIGFuZCByZXN1bHRzIHNjcmVlbgo1LiBSZWNvbW1lbmRhdGlvbnMgc2NyZWVuIChjYXJlZXIgYW5kIHVuaXZlcnNpdHkpCjYuIFBlcnNvbmFsaXR5IGNoYXJ0IGFuZCB0cmFpdCBjYXJkcwo3LiBNZW50b3Igc2VsZWN0aW9uIGFuZCBhY3RpdmUgY2hhdAo4LiBVbml2ZXJzaXR5IHNlYXJjaCBmaWx0ZXJzICsgcmVzdWx0IGNhcmRzCjkuIFJlc291cmNlcyBmaWx0ZXJzIGFuZCBkb3dubG9hZCBhY3Rpb24KMTAuIEhlbHAgY2VudGVyIG5ldyB0aWNrZXQgKyB0aWNrZXQgbGlzdAoxMS4gU2V0dGluZ3MgKHBhcmVudCBsaW5rIGFuZCBhY2NvdW50IGRlbGV0aW9uIGNvbmZpcm1hdGlvbikKMTIuIExhbmd1YWdlIHN3aXRjaCBkaWFsb2cgZHVyaW5nIGluLXByb2dyZXNzIGFzc2Vzc21lbnQKMTMuIENlcnRpZmljYXRlcyBsaXN0IGFuZCBjZXJ0aWZpY2F0ZSBkZXRhaWwgZGlhbG9nCjE0LiBBcHBsaWNhdGlvbiBkb2N1bWVudHMgc3RlcCB1cGxvYWQgd29ya2Zsb3cKMTUuIEFzc2lnbmVkIGZvcm0gcmVzcG9uc2UgcGFnZQoKIVtTdHVkZW50IFBhbmVsIERhc2hib2FyZCBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC1tYWluLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgdGhlIHByaW1hcnkgZGFzaGJvYXJkIHNjcmVlbnNob3Qgd2l0aCBjb3JlIG1vZHVsZXMgbGFiZWxlZC4K</script>

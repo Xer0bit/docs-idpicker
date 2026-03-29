@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>System Monitoring and Governance | IDPicker Docs</title>
 <meta name="description" content="How to check service health, read realtime logs, and manage free-use policies">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/admin-panel/system-monitoring-and-governance/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="System Monitoring and Governance">
   <meta property="og:description" content="How to check service health, read realtime logs, and manage free-use policies">
@@ -33,12 +33,11 @@
   <meta itemprop="name" content="System Monitoring and Governance">
   <meta itemprop="description" content="How to check service health, read realtime logs, and manage free-use policies">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="410">
+  <meta itemprop="wordCount" content="450">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="System Monitoring and Governance">
   <meta name="twitter:description" content="How to check service health, read realtime logs, and manage free-use policies">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -152,6 +159,8 @@
 <li>If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.</li>
 <li>The status page helps isolate whether a reported bug is a local user error or a widespread server outage.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/status-page.png" alt="Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded"></p>
+<p><em>Image placeholder: Add screenshot of the status page showing all service health blocks, with any current degraded or offline indicators visible.</em></p>
 <hr>
 <h2 id="2-using-realtime-logs">2. Using Realtime Logs</h2>
 <p>When a user reports a persistent crash, the Realtime Logs are your best diagnostic tool.</p>
@@ -166,6 +175,8 @@
 </li>
 <li>Look for sudden bursts or cascading error statements. These can be exported and sent to your engineering team.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/realtime-logs.png" alt="Realtime logs stream showing live error and fatal level log entries with source filter set to ai-generation"></p>
+<p><em>Image placeholder: Add screenshot of the realtime logs stream with the ERROR filter active and several log entries visible.</em></p>
 <hr>
 <h2 id="3-free-use-policy-management">3. Free-Use Policy Management</h2>
 <p>If your platform offers a &ldquo;freemium&rdquo; tier, you need to govern exactly how much free API processing the average user can consume before hitting a paywall.</p>
@@ -230,12 +241,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">CkZvciB0ZWNobmljYWwgYWRtaW5pc3RyYXRvcnMsIHRoaXMgc2VjdGlvbiBhY3RzIGFzIHlvdXIgaW5mcmFzdHJ1Y3R1cmUgZGFzaGJvYXJkLiBIZXJlIHlvdSBjYW4gbW9uaXRvciBzZXJ2ZXIgaGVhbHRoLCBjYXRjaCBidWdzIGFzIHRoZXkgaGFwcGVuLCBhbmQgY29udHJvbCB0aGUgZmluYW5jaWFsIGxldmVycyBvZiBmcmVlIHVzYWdlLgoKLS0tCgojIyAxLiBSZXZpZXdpbmcgdGhlIFN0YXR1cyBNb2R1bGUKCjEuIE9wZW4gdGhlICoqU3RhdHVzKiogcGFnZSBmcm9tIHRoZSBzaWRlYmFyLgoyLiBSZXZpZXcgdGhlIGNvcmUgc2VydmljZSBoZWFsdGggYmxvY2tzIChEYXRhYmFzZSwgQVBJLCBBSSBTZXJ2aWNlcywgU3RvcmFnZSkuCjMuIElmIGFueSBjb21wb25lbnQgaXMgZmxhZ2dlZCB5ZWxsb3cgKERlZ3JhZGVkKSBvciByZWQgKE9mZmxpbmUpLCBpbW1lZGlhdGVseSBjcm9zcy1yZWZlcmVuY2UgeW91ciBpbmZyYXN0cnVjdHVyZSBhbGVydHMuCjQuIFRoZSBzdGF0dXMgcGFnZSBoZWxwcyBpc29sYXRlIHdoZXRoZXIgYSByZXBvcnRlZCBidWcgaXMgYSBsb2NhbCB1c2VyIGVycm9yIG9yIGEgd2lkZXNwcmVhZCBzZXJ2ZXIgb3V0YWdlLgoKLS0tCgojIyAyLiBVc2luZyBSZWFsdGltZSBMb2dzCgpXaGVuIGEgdXNlciByZXBvcnRzIGEgcGVyc2lzdGVudCBjcmFzaCwgdGhlIFJlYWx0aW1lIExvZ3MgYXJlIHlvdXIgYmVzdCBkaWFnbm9zdGljIHRvb2wuCgoxLiBPcGVuIHRoZSAqKlJlYWx0aW1lIExvZ3MqKiBtb2R1bGUuCjIuIENsaWNrICoqU3RhcnQgU3RyZWFtKiogdG8gd2F0Y2ggbGl2ZSBldmVudHMgaGl0IHRoZSBiYWNrZW5kIGluIHJlYWwtdGltZS4KMy4gQXBwbHkgZmlsdGVyczoKICAgLSBTZXQgbG9nIGxldmVsIHRvIGBFUlJPUmAgb3IgYEZBVEFMYCB0byBzdHJpcCBvdXQgdGhlIG5vaXNlLgogICAtIFNldCB0aGUgc291cmNlIGZpbHRlciBpZiB5b3UgYXJlIHRyYWNpbmcgYSBzcGVjaWZpYyBtb2R1bGUgKGUuZy4sIGBzdHJpcGUtd2ViaG9va2Agb3IgYGFpLWdlbmVyYXRpb25gKS4KNC4gTG9vayBmb3Igc3VkZGVuIGJ1cnN0cyBvciBjYXNjYWRpbmcgZXJyb3Igc3RhdGVtZW50cy4gVGhlc2UgY2FuIGJlIGV4cG9ydGVkIGFuZCBzZW50IHRvIHlvdXIgZW5naW5lZXJpbmcgdGVhbS4KCi0tLQoKIyMgMy4gRnJlZS1Vc2UgUG9saWN5IE1hbmFnZW1lbnQKCklmIHlvdXIgcGxhdGZvcm0gb2ZmZXJzIGEgImZyZWVtaXVtIiB0aWVyLCB5b3UgbmVlZCB0byBnb3Zlcm4gZXhhY3RseSBob3cgbXVjaCBmcmVlIEFQSSBwcm9jZXNzaW5nIHRoZSBhdmVyYWdlIHVzZXIgY2FuIGNvbnN1bWUgYmVmb3JlIGhpdHRpbmcgYSBwYXl3YWxsLgoKMS4gT3BlbiAqKkZyZWUgVXNlIE1hbmFnZW1lbnQqKi4KMi4gUmV2aWV3IHRoZSBjdXJyZW50IGxpbWl0IGNhcHMgKGUuZy4sICpNYXggRnJlZSBBSSBDaGF0IE1lc3NhZ2VzID0gMTAqLCAqTWF4IEZyZWUgUmVwb3J0cyA9IDEqKS4KMy4gQWRqdXN0IHRoZSBsaW1pdHMgdXAgb3IgZG93biBkZXBlbmRpbmcgb24geW91ciBjdXJyZW50IG1hcmtldGluZyBzdHJhdGVneSBvciB0b2tlbiBidWRnZXQuCjQuIENsaWNrICoqU2F2ZSoqLiBUaGUgdXBkYXRlZCB0aHJlc2hvbGRzIGltbWVkaWF0ZWx5IGFwcGx5IHRvIHRoZSBnYXRpbmcgbG9naWMgb24gdGhlIHN0dWRlbnQgYXBwcy4KCi0tLQoKIyMgNC4gQ2VydGlmaWNhdGVzIGFuZCBDb21wbGlhbmNlIERvY3VtZW50cwoKMS4gT3BlbiB0aGUgKipDZXJ0aWZpY2F0ZXMqKiBvciAqKkFwcGxpY2F0aW9uIERvY3VtZW50cyoqIHF1ZXVlLgoyLiBSZXZpZXcgcGVuZGluZyBkb2N1bWVudCB2YWxpZGF0aW9ucyBzdWJtaXR0ZWQgYnkgdXNlcnMgKGUuZy4sIHByb29mIG9mIGhpZ2ggc2Nob29sIGdyYWR1YXRpb24gb3IgbGFuZ3VhZ2UgcHJvZmljaWVuY3kpLgozLiBBcHBseSByZXZpZXcgZGVjaXNpb25zIChWZXJpZnkgLyBSZWplY3QpIGJhc2VkIG9uIHlvdXIgZ292ZXJuYW5jZSBwb2xpY3kuCjQuIEFkZCBpbnRlcm5hbCBhdWRpdCBub3RlcyB0byBldmVyeSByZWplY3Rpb24gZm9yIGNvbXBsaWFuY2UgdHJhY2tpbmcuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSBSZWFsdGltZSBMb2dzIHZpZXcgaXMgY29tcGxldGVseSBlbXB0eSB8IEVuc3VyZSB5b3UgY2xpY2tlZCAiU3RhcnQgU3RyZWFtIi4gQWxzbyBjaGVjayBpZiB5b3VyIGV4YWN0IGZpbHRlciBjb21iaW5hdGlvbiBpcyB0b28gcmVzdHJpY3RpdmUgKGUuZy4sIGxvb2tpbmcgZm9yIEZBVEFMIGxvZ3Mgb24gYW4gZW50aXJlbHkgaGVhbHRoeSBzeXN0ZW0pIHwKfCBJIHNlZSBhIG1hc3NpdmUgc3Bpa2UgaW4gRVJST1IgbG9ncyBidXQgdGhlIFN0YXR1cyBwYWdlIHNheXMgIkhlYWx0aHkiIHwgQSBzcGVjaWZpYyBlZGdlLWNhc2UgZmVhdHVyZSBtaWdodCBiZSBjcmFzaGluZyAoZ2VuZXJhdGluZyBsb2dzKSB3aXRob3V0IGFjdHVhbGx5IHRha2luZyB0aGUgY29yZSBkYXRhYmFzZSBvZmZsaW5lLiBJbnZlc3RpZ2F0ZSB0aGUgbG9nIHN0YWNrIHRyYWNlIGltbWVkaWF0ZWx5IHwKfCBJIHVwZGF0ZWQgdGhlIEZyZWUtVXNlIGxpbWl0IGJ1dCBzdHVkZW50cyBzYXkgdGhleSBhcmUgc3RpbGwgYmxvY2tlZCB8IEdsb2JhbCBwbGF0Zm9ybSBzZXR0aW5ncyBvZnRlbiByZWx5IG9uIG11bHRpLXN0YWdlIGNhY2hpbmcuIFZlcmlmeSB0aGUgZW52aXJvbm1lbnQgdmFyaWFibGUgcHJvcGFnYXRlZCBjb3JyZWN0bHksIG9yIHdhaXQgNSBtaW51dGVzIGZvciB0aGUgY2FjaGUgVFRMIHRvIGV4cGlyZSB8Cg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CkZvciB0ZWNobmljYWwgYWRtaW5pc3RyYXRvcnMsIHRoaXMgc2VjdGlvbiBhY3RzIGFzIHlvdXIgaW5mcmFzdHJ1Y3R1cmUgZGFzaGJvYXJkLiBIZXJlIHlvdSBjYW4gbW9uaXRvciBzZXJ2ZXIgaGVhbHRoLCBjYXRjaCBidWdzIGFzIHRoZXkgaGFwcGVuLCBhbmQgY29udHJvbCB0aGUgZmluYW5jaWFsIGxldmVycyBvZiBmcmVlIHVzYWdlLgoKLS0tCgojIyAxLiBSZXZpZXdpbmcgdGhlIFN0YXR1cyBNb2R1bGUKCjEuIE9wZW4gdGhlICoqU3RhdHVzKiogcGFnZSBmcm9tIHRoZSBzaWRlYmFyLgoyLiBSZXZpZXcgdGhlIGNvcmUgc2VydmljZSBoZWFsdGggYmxvY2tzIChEYXRhYmFzZSwgQVBJLCBBSSBTZXJ2aWNlcywgU3RvcmFnZSkuCjMuIElmIGFueSBjb21wb25lbnQgaXMgZmxhZ2dlZCB5ZWxsb3cgKERlZ3JhZGVkKSBvciByZWQgKE9mZmxpbmUpLCBpbW1lZGlhdGVseSBjcm9zcy1yZWZlcmVuY2UgeW91ciBpbmZyYXN0cnVjdHVyZSBhbGVydHMuCjQuIFRoZSBzdGF0dXMgcGFnZSBoZWxwcyBpc29sYXRlIHdoZXRoZXIgYSByZXBvcnRlZCBidWcgaXMgYSBsb2NhbCB1c2VyIGVycm9yIG9yIGEgd2lkZXNwcmVhZCBzZXJ2ZXIgb3V0YWdlLgoKIVtTdGF0dXMgcGFnZSBzaG93aW5nIHNlcnZpY2UgaGVhbHRoIGJsb2NrcyBmb3IgRGF0YWJhc2UsIEFQSSwgQUkgU2VydmljZXMsIGFuZCBTdG9yYWdlIOKAlCBvbmUgZmxhZ2dlZCBhcyBEZWdyYWRlZF0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZG1pbi1wYW5lbC9zdGF0dXMtcGFnZS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBzdGF0dXMgcGFnZSBzaG93aW5nIGFsbCBzZXJ2aWNlIGhlYWx0aCBibG9ja3MsIHdpdGggYW55IGN1cnJlbnQgZGVncmFkZWQgb3Igb2ZmbGluZSBpbmRpY2F0b3JzIHZpc2libGUuKgoKLS0tCgojIyAyLiBVc2luZyBSZWFsdGltZSBMb2dzCgpXaGVuIGEgdXNlciByZXBvcnRzIGEgcGVyc2lzdGVudCBjcmFzaCwgdGhlIFJlYWx0aW1lIExvZ3MgYXJlIHlvdXIgYmVzdCBkaWFnbm9zdGljIHRvb2wuCgoxLiBPcGVuIHRoZSAqKlJlYWx0aW1lIExvZ3MqKiBtb2R1bGUuCjIuIENsaWNrICoqU3RhcnQgU3RyZWFtKiogdG8gd2F0Y2ggbGl2ZSBldmVudHMgaGl0IHRoZSBiYWNrZW5kIGluIHJlYWwtdGltZS4KMy4gQXBwbHkgZmlsdGVyczoKICAgLSBTZXQgbG9nIGxldmVsIHRvIGBFUlJPUmAgb3IgYEZBVEFMYCB0byBzdHJpcCBvdXQgdGhlIG5vaXNlLgogICAtIFNldCB0aGUgc291cmNlIGZpbHRlciBpZiB5b3UgYXJlIHRyYWNpbmcgYSBzcGVjaWZpYyBtb2R1bGUgKGUuZy4sIGBzdHJpcGUtd2ViaG9va2Agb3IgYGFpLWdlbmVyYXRpb25gKS4KNC4gTG9vayBmb3Igc3VkZGVuIGJ1cnN0cyBvciBjYXNjYWRpbmcgZXJyb3Igc3RhdGVtZW50cy4gVGhlc2UgY2FuIGJlIGV4cG9ydGVkIGFuZCBzZW50IHRvIHlvdXIgZW5naW5lZXJpbmcgdGVhbS4KCiFbUmVhbHRpbWUgbG9ncyBzdHJlYW0gc2hvd2luZyBsaXZlIGVycm9yIGFuZCBmYXRhbCBsZXZlbCBsb2cgZW50cmllcyB3aXRoIHNvdXJjZSBmaWx0ZXIgc2V0IHRvIGFpLWdlbmVyYXRpb25dKC9pbWFnZXMvdXNlci1tYW51YWwvYWRtaW4tcGFuZWwvcmVhbHRpbWUtbG9ncy5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSByZWFsdGltZSBsb2dzIHN0cmVhbSB3aXRoIHRoZSBFUlJPUiBmaWx0ZXIgYWN0aXZlIGFuZCBzZXZlcmFsIGxvZyBlbnRyaWVzIHZpc2libGUuKgoKLS0tCgojIyAzLiBGcmVlLVVzZSBQb2xpY3kgTWFuYWdlbWVudAoKSWYgeW91ciBwbGF0Zm9ybSBvZmZlcnMgYSAiZnJlZW1pdW0iIHRpZXIsIHlvdSBuZWVkIHRvIGdvdmVybiBleGFjdGx5IGhvdyBtdWNoIGZyZWUgQVBJIHByb2Nlc3NpbmcgdGhlIGF2ZXJhZ2UgdXNlciBjYW4gY29uc3VtZSBiZWZvcmUgaGl0dGluZyBhIHBheXdhbGwuCgoxLiBPcGVuICoqRnJlZSBVc2UgTWFuYWdlbWVudCoqLgoyLiBSZXZpZXcgdGhlIGN1cnJlbnQgbGltaXQgY2FwcyAoZS5nLiwgKk1heCBGcmVlIEFJIENoYXQgTWVzc2FnZXMgPSAxMCosICpNYXggRnJlZSBSZXBvcnRzID0gMSopLgozLiBBZGp1c3QgdGhlIGxpbWl0cyB1cCBvciBkb3duIGRlcGVuZGluZyBvbiB5b3VyIGN1cnJlbnQgbWFya2V0aW5nIHN0cmF0ZWd5IG9yIHRva2VuIGJ1ZGdldC4KNC4gQ2xpY2sgKipTYXZlKiouIFRoZSB1cGRhdGVkIHRocmVzaG9sZHMgaW1tZWRpYXRlbHkgYXBwbHkgdG8gdGhlIGdhdGluZyBsb2dpYyBvbiB0aGUgc3R1ZGVudCBhcHBzLgoKLS0tCgojIyA0LiBDZXJ0aWZpY2F0ZXMgYW5kIENvbXBsaWFuY2UgRG9jdW1lbnRzCgoxLiBPcGVuIHRoZSAqKkNlcnRpZmljYXRlcyoqIG9yICoqQXBwbGljYXRpb24gRG9jdW1lbnRzKiogcXVldWUuCjIuIFJldmlldyBwZW5kaW5nIGRvY3VtZW50IHZhbGlkYXRpb25zIHN1Ym1pdHRlZCBieSB1c2VycyAoZS5nLiwgcHJvb2Ygb2YgaGlnaCBzY2hvb2wgZ3JhZHVhdGlvbiBvciBsYW5ndWFnZSBwcm9maWNpZW5jeSkuCjMuIEFwcGx5IHJldmlldyBkZWNpc2lvbnMgKFZlcmlmeSAvIFJlamVjdCkgYmFzZWQgb24geW91ciBnb3Zlcm5hbmNlIHBvbGljeS4KNC4gQWRkIGludGVybmFsIGF1ZGl0IG5vdGVzIHRvIGV2ZXJ5IHJlamVjdGlvbiBmb3IgY29tcGxpYW5jZSB0cmFja2luZy4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgVGhlIFJlYWx0aW1lIExvZ3MgdmlldyBpcyBjb21wbGV0ZWx5IGVtcHR5IHwgRW5zdXJlIHlvdSBjbGlja2VkICJTdGFydCBTdHJlYW0iLiBBbHNvIGNoZWNrIGlmIHlvdXIgZXhhY3QgZmlsdGVyIGNvbWJpbmF0aW9uIGlzIHRvbyByZXN0cmljdGl2ZSAoZS5nLiwgbG9va2luZyBmb3IgRkFUQUwgbG9ncyBvbiBhbiBlbnRpcmVseSBoZWFsdGh5IHN5c3RlbSkgfAp8IEkgc2VlIGEgbWFzc2l2ZSBzcGlrZSBpbiBFUlJPUiBsb2dzIGJ1dCB0aGUgU3RhdHVzIHBhZ2Ugc2F5cyAiSGVhbHRoeSIgfCBBIHNwZWNpZmljIGVkZ2UtY2FzZSBmZWF0dXJlIG1pZ2h0IGJlIGNyYXNoaW5nIChnZW5lcmF0aW5nIGxvZ3MpIHdpdGhvdXQgYWN0dWFsbHkgdGFraW5nIHRoZSBjb3JlIGRhdGFiYXNlIG9mZmxpbmUuIEludmVzdGlnYXRlIHRoZSBsb2cgc3RhY2sgdHJhY2UgaW1tZWRpYXRlbHkgfAp8IEkgdXBkYXRlZCB0aGUgRnJlZS1Vc2UgbGltaXQgYnV0IHN0dWRlbnRzIHNheSB0aGV5IGFyZSBzdGlsbCBibG9ja2VkIHwgR2xvYmFsIHBsYXRmb3JtIHNldHRpbmdzIG9mdGVuIHJlbHkgb24gbXVsdGktc3RhZ2UgY2FjaGluZy4gVmVyaWZ5IHRoZSBlbnZpcm9ubWVudCB2YXJpYWJsZSBwcm9wYWdhdGVkIGNvcnJlY3RseSwgb3Igd2FpdCA1IG1pbnV0ZXMgZm9yIHRoZSBjYWNoZSBUVEwgdG8gZXhwaXJlIHwK</script>
 
 <style>
  

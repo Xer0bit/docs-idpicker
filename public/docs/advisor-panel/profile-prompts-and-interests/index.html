@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/advisor-panel/profile-prompts-and-interests/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/advisor-panel/profile-prompts-and-interests/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -20,25 +20,24 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Profile, Prompts, and Interests | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click advisor configuration workflows">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/">
+<meta name="description" content="How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/profile-prompts-and-interests/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Profile, Prompts, and Interests">
-  <meta property="og:description" content="Detailed click-by-click advisor configuration workflows">
+  <meta property="og:description" content="How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
 
   <meta itemprop="name" content="Profile, Prompts, and Interests">
-  <meta itemprop="description" content="Detailed click-by-click advisor configuration workflows">
+  <meta itemprop="description" content="How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="197">
+  <meta itemprop="wordCount" content="612">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Profile, Prompts, and Interests">
-  <meta name="twitter:description" content="Detailed click-by-click advisor configuration workflows">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+  <meta name="twitter:description" content="How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -313,11 +326,10 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-profile-management">A) Profile Management</a></li>
-    <li><a href="#b-prompts-module">B) Prompts Module</a></li>
-    <li><a href="#c-interests-module">C) Interests Module</a></li>
-    <li><a href="#best-practices">Best Practices</a></li>
-    <li><a href="#common-advisor-questions">Common Advisor Questions</a></li>
+    <li><a href="#1-updating-your-advisor-profile">1. Updating Your Advisor Profile</a></li>
+    <li><a href="#2-editing-ai-prompt-templates">2. Editing AI Prompt Templates</a></li>
+    <li><a href="#3-managing-student-interest-records">3. Managing Student Interest Records</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -341,58 +353,91 @@
 </nav>
 <div class="td-content">
 	<h1>Profile, Prompts, and Interests</h1>
-	<div class="lead">Detailed click-by-click advisor configuration workflows</div>
+	<div class="lead">How to update your advisor profile, fine-tune AI prompts for your students, and manage interest data</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide covers advisor profile settings and advanced content/configuration modules.</p>
-<h2 id="a-profile-management">A) Profile Management</h2>
+	<p>This guide covers three configuration areas that affect both your own advisor identity and how IDPicker&rsquo;s AI behaves for your specific student cohort: your profile, the AI prompt templates, and the student interest records.</p>
+<hr>
+<h2 id="1-updating-your-advisor-profile">1. Updating Your Advisor Profile</h2>
+<p>Your profile information appears inside student and parent-facing chat windows when they interact with you. Keeping it accurate builds trust.</p>
 <ol>
-<li>In sidebar, click Profile.</li>
-<li>Review personal and organization details.</li>
-<li>Click Edit.</li>
-<li>Update text fields (name, bio, contact, organization data where available).</li>
-<li>Upload avatar/banner if supported.</li>
-<li>Click Save.</li>
-<li>Confirm updated preview.</li>
-</ol>
-<h2 id="b-prompts-module">B) Prompts Module</h2>
-<ol>
-<li>In sidebar, click Prompts.</li>
-<li>Open prompt list by category/subcategory.</li>
-<li>Select prompt template to edit.</li>
-<li>Update content carefully.</li>
-<li>Validate syntax/placeholders.</li>
-<li>Save changes.</li>
-<li>Reopen to confirm version/state.</li>
-</ol>
-<h2 id="c-interests-module">C) Interests Module</h2>
-<ol>
-<li>In sidebar, click Interests.</li>
-<li>Review student interest records and statuses.</li>
-<li>Open detail for a student/entry.</li>
-<li>Update status or related metadata if action is available.</li>
-<li>Save and verify list refresh.</li>
-</ol>
-<h2 id="best-practices">Best Practices</h2>
+<li>In the sidebar, click your <strong>Avatar</strong> or <strong>Profile</strong> link.</li>
+<li>Click <strong>Edit Profile</strong>.</li>
+<li>Update any of the following:
 <ul>
-<li>Keep prompt edits versioned and reviewed before broad usage.</li>
-<li>Use profile info that matches advisor organization branding.</li>
-<li>Process interests updates consistently to support recommendation quality.</li>
+<li><strong>Display Name</strong> and <strong>Title</strong> (e.g., <em>Senior Career Counselor</em>)</li>
+<li><strong>Bio</strong> — A short paragraph about your background and specialties</li>
+<li><strong>Avatar</strong> — Upload a clear headshot (recommended: square, at least 400×400 px)</li>
+<li><strong>Contact Details</strong> — Office hours, phone extension, or secondary email if relevant</li>
+<li><strong>Organization Data</strong> — Department, branch, or campus information if your platform supports it</li>
 </ul>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Prompt save failed.
-A: Check placeholder syntax and retry with valid template format.</p>
-<p>Q: Profile image upload did not apply.
-A: Verify file type/size and retry.</p>
-<p>Q: Interests data appears stale.
-A: Refresh module and verify latest backend sync.</p>
-<p><img src="/images/user-manual/advisor-panel/profile.png" alt="Profile Placeholder"></p>
-<p>Image placeholder: Advisor profile edit and save states.</p>
-<p><img src="/images/user-manual/advisor-panel/prompts.png" alt="Prompts Placeholder"></p>
-<p>Image placeholder: Prompt editor with category filter and save action.</p>
-<p><img src="/images/user-manual/advisor-panel/interests.png" alt="Interests Placeholder"></p>
-<p>Image placeholder: Interests table with status/actions.</p>
+</li>
+<li>Click <strong>Save Profile</strong>.</li>
+<li>Verify the preview panel on the right shows the updated name and avatar correctly.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/profile-editor.png" alt="Advisor profile editor showing name, title, bio, and avatar upload fields"></p>
+<p><em>Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.</em></p>
+<hr>
+<h2 id="2-editing-ai-prompt-templates">2. Editing AI Prompt Templates</h2>
+<p>If your organisation has been granted permission to configure regional AI prompts, you can adjust how the AI Mentor communicates with <em>your specific students</em> — independent of the global settings the Admin controls.</p>
+<ol>
+<li>In the sidebar, click <strong>Prompts</strong>.</li>
+<li>The prompt list is organized by <strong>Category</strong> (e.g., <em>Mentor Persona</em>, <em>Career Guidance</em>, <em>University Selection</em>) and <strong>Subcategory</strong>.</li>
+<li>Use the filter bar to navigate to the specific prompt you want to adjust.</li>
+<li>Click the prompt name to open the editor.</li>
+<li>Read the existing instruction text carefully before editing.</li>
+<li>Make your changes — keep them concise and imperative (e.g., <em>&ldquo;Always recommend at least two Turkish universities when a student specifies Turkey as their preferred country&rdquo;</em>).</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Never delete or rename the dynamic variables inside double curly braces, such as <code>{{student_name}}</code> or <code>{{trait_score}}</code>. These inject real student data into the AI&rsquo;s context. Removing them will break personalisation.</p>
+</blockquote>
+<ol start="7">
+<li>Click <strong>Save</strong>. The updated prompt is live immediately for your students.</li>
+<li>Re-open the prompt to confirm the saved version reflects your edit.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/prompts-editor.png" alt="Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.</em></p>
+<hr>
+<h2 id="3-managing-student-interest-records">3. Managing Student Interest Records</h2>
+<p>The Interests module shows the career domains and fields of study each student has expressed interest in. These interests feed directly into the AI&rsquo;s recommendation logic.</p>
+<ol>
+<li>In the sidebar, click <strong>Interests</strong>.</li>
+<li>The table shows a list of student-interest pairs: which student expressed interest in what domain, and when.</li>
+<li>Filter by <strong>Student</strong> or <strong>Interest Domain</strong> to find a specific entry.</li>
+<li>Click a row to open the interest detail.</li>
+<li>If a student has been mis-tagged (for example they changed their mind), you can update the status or remove the interest from their profile.</li>
+<li>Click <strong>Save</strong> and verify the list refreshes.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/interests-table.png" alt="Interests table showing student names, interest domain labels, and status badges"></p>
+<p><em>Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.</em></p>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>My profile avatar is not updating</td>
+          <td>Check that the file is a JPG or PNG and under the maximum allowed size (typically 2–5 MB). Try a different browser if it still fails</td>
+      </tr>
+      <tr>
+          <td>I saved a prompt but an error says &ldquo;Invalid Template Syntax&rdquo;</td>
+          <td>Look for broken <code>{{</code> brackets. Every opening <code>{{</code> must have a matching <code>}}</code>. Fix the broken variable and retry</td>
+      </tr>
+      <tr>
+          <td>A student&rsquo;s interests look wrong or outdated</td>
+          <td>Open their interest detail, update the status to reflect their current goals, and save — then ask the student to confirm their interests from their own profile settings</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -416,12 +461,30 @@ A: Refresh module and verify latest backend sync.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIGFkdmlzb3IgcHJvZmlsZSBzZXR0aW5ncyBhbmQgYWR2YW5jZWQgY29udGVudC9jb25maWd1cmF0aW9uIG1vZHVsZXMuCgojIyBBKSBQcm9maWxlIE1hbmFnZW1lbnQKCjEuIEluIHNpZGViYXIsIGNsaWNrIFByb2ZpbGUuCjIuIFJldmlldyBwZXJzb25hbCBhbmQgb3JnYW5pemF0aW9uIGRldGFpbHMuCjMuIENsaWNrIEVkaXQuCjQuIFVwZGF0ZSB0ZXh0IGZpZWxkcyAobmFtZSwgYmlvLCBjb250YWN0LCBvcmdhbml6YXRpb24gZGF0YSB3aGVyZSBhdmFpbGFibGUpLgo1LiBVcGxvYWQgYXZhdGFyL2Jhbm5lciBpZiBzdXBwb3J0ZWQuCjYuIENsaWNrIFNhdmUuCjcuIENvbmZpcm0gdXBkYXRlZCBwcmV2aWV3LgoKIyMgQikgUHJvbXB0cyBNb2R1bGUKCjEuIEluIHNpZGViYXIsIGNsaWNrIFByb21wdHMuCjIuIE9wZW4gcHJvbXB0IGxpc3QgYnkgY2F0ZWdvcnkvc3ViY2F0ZWdvcnkuCjMuIFNlbGVjdCBwcm9tcHQgdGVtcGxhdGUgdG8gZWRpdC4KNC4gVXBkYXRlIGNvbnRlbnQgY2FyZWZ1bGx5Lgo1LiBWYWxpZGF0ZSBzeW50YXgvcGxhY2Vob2xkZXJzLgo2LiBTYXZlIGNoYW5nZXMuCjcuIFJlb3BlbiB0byBjb25maXJtIHZlcnNpb24vc3RhdGUuCgojIyBDKSBJbnRlcmVzdHMgTW9kdWxlCgoxLiBJbiBzaWRlYmFyLCBjbGljayBJbnRlcmVzdHMuCjIuIFJldmlldyBzdHVkZW50IGludGVyZXN0IHJlY29yZHMgYW5kIHN0YXR1c2VzLgozLiBPcGVuIGRldGFpbCBmb3IgYSBzdHVkZW50L2VudHJ5Lgo0LiBVcGRhdGUgc3RhdHVzIG9yIHJlbGF0ZWQgbWV0YWRhdGEgaWYgYWN0aW9uIGlzIGF2YWlsYWJsZS4KNS4gU2F2ZSBhbmQgdmVyaWZ5IGxpc3QgcmVmcmVzaC4KCiMjIEJlc3QgUHJhY3RpY2VzCgotIEtlZXAgcHJvbXB0IGVkaXRzIHZlcnNpb25lZCBhbmQgcmV2aWV3ZWQgYmVmb3JlIGJyb2FkIHVzYWdlLgotIFVzZSBwcm9maWxlIGluZm8gdGhhdCBtYXRjaGVzIGFkdmlzb3Igb3JnYW5pemF0aW9uIGJyYW5kaW5nLgotIFByb2Nlc3MgaW50ZXJlc3RzIHVwZGF0ZXMgY29uc2lzdGVudGx5IHRvIHN1cHBvcnQgcmVjb21tZW5kYXRpb24gcXVhbGl0eS4KCiMjIENvbW1vbiBBZHZpc29yIFF1ZXN0aW9ucwoKUTogUHJvbXB0IHNhdmUgZmFpbGVkLgpBOiBDaGVjayBwbGFjZWhvbGRlciBzeW50YXggYW5kIHJldHJ5IHdpdGggdmFsaWQgdGVtcGxhdGUgZm9ybWF0LgoKUTogUHJvZmlsZSBpbWFnZSB1cGxvYWQgZGlkIG5vdCBhcHBseS4KQTogVmVyaWZ5IGZpbGUgdHlwZS9zaXplIGFuZCByZXRyeS4KClE6IEludGVyZXN0cyBkYXRhIGFwcGVhcnMgc3RhbGUuCkE6IFJlZnJlc2ggbW9kdWxlIGFuZCB2ZXJpZnkgbGF0ZXN0IGJhY2tlbmQgc3luYy4KCiFbUHJvZmlsZSBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL3Byb2ZpbGUucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEFkdmlzb3IgcHJvZmlsZSBlZGl0IGFuZCBzYXZlIHN0YXRlcy4KCiFbUHJvbXB0cyBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL3Byb21wdHMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IFByb21wdCBlZGl0b3Igd2l0aCBjYXRlZ29yeSBmaWx0ZXIgYW5kIHNhdmUgYWN0aW9uLgoKIVtJbnRlcmVzdHMgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9pbnRlcmVzdHMucG5nKQoKSW1hZ2UgcGxhY2Vob2xkZXI6IEludGVyZXN0cyB0YWJsZSB3aXRoIHN0YXR1cy9hY3Rpb25zLgo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHRocmVlIGNvbmZpZ3VyYXRpb24gYXJlYXMgdGhhdCBhZmZlY3QgYm90aCB5b3VyIG93biBhZHZpc29yIGlkZW50aXR5IGFuZCBob3cgSURQaWNrZXIncyBBSSBiZWhhdmVzIGZvciB5b3VyIHNwZWNpZmljIHN0dWRlbnQgY29ob3J0OiB5b3VyIHByb2ZpbGUsIHRoZSBBSSBwcm9tcHQgdGVtcGxhdGVzLCBhbmQgdGhlIHN0dWRlbnQgaW50ZXJlc3QgcmVjb3Jkcy4KCi0tLQoKIyMgMS4gVXBkYXRpbmcgWW91ciBBZHZpc29yIFByb2ZpbGUKCllvdXIgcHJvZmlsZSBpbmZvcm1hdGlvbiBhcHBlYXJzIGluc2lkZSBzdHVkZW50IGFuZCBwYXJlbnQtZmFjaW5nIGNoYXQgd2luZG93cyB3aGVuIHRoZXkgaW50ZXJhY3Qgd2l0aCB5b3UuIEtlZXBpbmcgaXQgYWNjdXJhdGUgYnVpbGRzIHRydXN0LgoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrIHlvdXIgKipBdmF0YXIqKiBvciAqKlByb2ZpbGUqKiBsaW5rLgoyLiBDbGljayAqKkVkaXQgUHJvZmlsZSoqLgozLiBVcGRhdGUgYW55IG9mIHRoZSBmb2xsb3dpbmc6CiAgIC0gKipEaXNwbGF5IE5hbWUqKiBhbmQgKipUaXRsZSoqIChlLmcuLCAqU2VuaW9yIENhcmVlciBDb3Vuc2Vsb3IqKQogICAtICoqQmlvKiog4oCUIEEgc2hvcnQgcGFyYWdyYXBoIGFib3V0IHlvdXIgYmFja2dyb3VuZCBhbmQgc3BlY2lhbHRpZXMKICAgLSAqKkF2YXRhcioqIOKAlCBVcGxvYWQgYSBjbGVhciBoZWFkc2hvdCAocmVjb21tZW5kZWQ6IHNxdWFyZSwgYXQgbGVhc3QgNDAww5c0MDAgcHgpCiAgIC0gKipDb250YWN0IERldGFpbHMqKiDigJQgT2ZmaWNlIGhvdXJzLCBwaG9uZSBleHRlbnNpb24sIG9yIHNlY29uZGFyeSBlbWFpbCBpZiByZWxldmFudAogICAtICoqT3JnYW5pemF0aW9uIERhdGEqKiDigJQgRGVwYXJ0bWVudCwgYnJhbmNoLCBvciBjYW1wdXMgaW5mb3JtYXRpb24gaWYgeW91ciBwbGF0Zm9ybSBzdXBwb3J0cyBpdAo0LiBDbGljayAqKlNhdmUgUHJvZmlsZSoqLgo1LiBWZXJpZnkgdGhlIHByZXZpZXcgcGFuZWwgb24gdGhlIHJpZ2h0IHNob3dzIHRoZSB1cGRhdGVkIG5hbWUgYW5kIGF2YXRhciBjb3JyZWN0bHkuCgohW0Fkdmlzb3IgcHJvZmlsZSBlZGl0b3Igc2hvd2luZyBuYW1lLCB0aXRsZSwgYmlvLCBhbmQgYXZhdGFyIHVwbG9hZCBmaWVsZHNdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9wcm9maWxlLWVkaXRvci5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBwcm9maWxlIGVkaXRvciB3aXRoIG5hbWUsIGJpbywgYW5kIGF2YXRhciB1cGxvYWQgZmllbGRzIGluIGFuIGVkaXRlZCBzdGF0ZS4qCgotLS0KCiMjIDIuIEVkaXRpbmcgQUkgUHJvbXB0IFRlbXBsYXRlcwoKSWYgeW91ciBvcmdhbmlzYXRpb24gaGFzIGJlZW4gZ3JhbnRlZCBwZXJtaXNzaW9uIHRvIGNvbmZpZ3VyZSByZWdpb25hbCBBSSBwcm9tcHRzLCB5b3UgY2FuIGFkanVzdCBob3cgdGhlIEFJIE1lbnRvciBjb21tdW5pY2F0ZXMgd2l0aCAqeW91ciBzcGVjaWZpYyBzdHVkZW50cyog4oCUIGluZGVwZW5kZW50IG9mIHRoZSBnbG9iYWwgc2V0dGluZ3MgdGhlIEFkbWluIGNvbnRyb2xzLgoKMS4gSW4gdGhlIHNpZGViYXIsIGNsaWNrICoqUHJvbXB0cyoqLgoyLiBUaGUgcHJvbXB0IGxpc3QgaXMgb3JnYW5pemVkIGJ5ICoqQ2F0ZWdvcnkqKiAoZS5nLiwgKk1lbnRvciBQZXJzb25hKiwgKkNhcmVlciBHdWlkYW5jZSosICpVbml2ZXJzaXR5IFNlbGVjdGlvbiopIGFuZCAqKlN1YmNhdGVnb3J5KiouCjMuIFVzZSB0aGUgZmlsdGVyIGJhciB0byBuYXZpZ2F0ZSB0byB0aGUgc3BlY2lmaWMgcHJvbXB0IHlvdSB3YW50IHRvIGFkanVzdC4KNC4gQ2xpY2sgdGhlIHByb21wdCBuYW1lIHRvIG9wZW4gdGhlIGVkaXRvci4KNS4gUmVhZCB0aGUgZXhpc3RpbmcgaW5zdHJ1Y3Rpb24gdGV4dCBjYXJlZnVsbHkgYmVmb3JlIGVkaXRpbmcuCjYuIE1ha2UgeW91ciBjaGFuZ2VzIOKAlCBrZWVwIHRoZW0gY29uY2lzZSBhbmQgaW1wZXJhdGl2ZSAoZS5nLiwgKiJBbHdheXMgcmVjb21tZW5kIGF0IGxlYXN0IHR3byBUdXJraXNoIHVuaXZlcnNpdGllcyB3aGVuIGEgc3R1ZGVudCBzcGVjaWZpZXMgVHVya2V5IGFzIHRoZWlyIHByZWZlcnJlZCBjb3VudHJ5IiopLgoKPiAqKldhcm5pbmc6KiogTmV2ZXIgZGVsZXRlIG9yIHJlbmFtZSB0aGUgZHluYW1pYyB2YXJpYWJsZXMgaW5zaWRlIGRvdWJsZSBjdXJseSBicmFjZXMsIHN1Y2ggYXMgYHt7c3R1ZGVudF9uYW1lfX1gIG9yIGB7e3RyYWl0X3Njb3JlfX1gLiBUaGVzZSBpbmplY3QgcmVhbCBzdHVkZW50IGRhdGEgaW50byB0aGUgQUkncyBjb250ZXh0LiBSZW1vdmluZyB0aGVtIHdpbGwgYnJlYWsgcGVyc29uYWxpc2F0aW9uLgoKNy4gQ2xpY2sgKipTYXZlKiouIFRoZSB1cGRhdGVkIHByb21wdCBpcyBsaXZlIGltbWVkaWF0ZWx5IGZvciB5b3VyIHN0dWRlbnRzLgo4LiBSZS1vcGVuIHRoZSBwcm9tcHQgdG8gY29uZmlybSB0aGUgc2F2ZWQgdmVyc2lvbiByZWZsZWN0cyB5b3VyIGVkaXQuCgohW1Byb21wdCBlZGl0b3Igc2hvd2luZyBjYXRlZ29yeSBmaWx0ZXIsIHByb21wdCB0ZXh0IGFyZWEsIGFuZCBkeW5hbWljIHZhcmlhYmxlIHBsYWNlaG9sZGVycyBoaWdobGlnaHRlZF0oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL3Byb21wdHMtZWRpdG9yLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHByb21wdCBlZGl0b3Igc2hvd2luZyBhIGZpbGxlZCBwcm9tcHQgd2l0aCBoaWdobGlnaHRlZCBkeW5hbWljIHZhcmlhYmxlcyBhbmQgdGhlIFNhdmUgYnV0dG9uLioKCi0tLQoKIyMgMy4gTWFuYWdpbmcgU3R1ZGVudCBJbnRlcmVzdCBSZWNvcmRzCgpUaGUgSW50ZXJlc3RzIG1vZHVsZSBzaG93cyB0aGUgY2FyZWVyIGRvbWFpbnMgYW5kIGZpZWxkcyBvZiBzdHVkeSBlYWNoIHN0dWRlbnQgaGFzIGV4cHJlc3NlZCBpbnRlcmVzdCBpbi4gVGhlc2UgaW50ZXJlc3RzIGZlZWQgZGlyZWN0bHkgaW50byB0aGUgQUkncyByZWNvbW1lbmRhdGlvbiBsb2dpYy4KCjEuIEluIHRoZSBzaWRlYmFyLCBjbGljayAqKkludGVyZXN0cyoqLgoyLiBUaGUgdGFibGUgc2hvd3MgYSBsaXN0IG9mIHN0dWRlbnQtaW50ZXJlc3QgcGFpcnM6IHdoaWNoIHN0dWRlbnQgZXhwcmVzc2VkIGludGVyZXN0IGluIHdoYXQgZG9tYWluLCBhbmQgd2hlbi4KMy4gRmlsdGVyIGJ5ICoqU3R1ZGVudCoqIG9yICoqSW50ZXJlc3QgRG9tYWluKiogdG8gZmluZCBhIHNwZWNpZmljIGVudHJ5Lgo0LiBDbGljayBhIHJvdyB0byBvcGVuIHRoZSBpbnRlcmVzdCBkZXRhaWwuCjUuIElmIGEgc3R1ZGVudCBoYXMgYmVlbiBtaXMtdGFnZ2VkIChmb3IgZXhhbXBsZSB0aGV5IGNoYW5nZWQgdGhlaXIgbWluZCksIHlvdSBjYW4gdXBkYXRlIHRoZSBzdGF0dXMgb3IgcmVtb3ZlIHRoZSBpbnRlcmVzdCBmcm9tIHRoZWlyIHByb2ZpbGUuCjYuIENsaWNrICoqU2F2ZSoqIGFuZCB2ZXJpZnkgdGhlIGxpc3QgcmVmcmVzaGVzLgoKPiAqKk5vdGU6KiogSW50ZXJlc3RzIHNldCBkaXJlY3RseSBieSBzdHVkZW50cyBvbiB0aGVpciBvd24gcHJvZmlsZXMgdGFrZSBwcmlvcml0eSBpbiB0aGUgcmVjb21tZW5kYXRpb24gZW5naW5lLiBDaGFuZ2VzIHlvdSBtYWtlIGhlcmUgbWF5IGJlIG92ZXJyaWRkZW4gaWYgdGhlIHN0dWRlbnQgcmUtc2V0cyB0aGVpciBwcmVmZXJlbmNlcyBmcm9tIHRoZWlyIG93biBhY2NvdW50LgoKIVtJbnRlcmVzdHMgdGFibGUgc2hvd2luZyBzdHVkZW50IG5hbWVzLCBpbnRlcmVzdCBkb21haW4gbGFiZWxzLCBhbmQgc3RhdHVzIGJhZGdlc10oL2ltYWdlcy91c2VyLW1hbnVhbC9hZHZpc29yLXBhbmVsL2ludGVyZXN0cy10YWJsZS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBpbnRlcmVzdHMgdGFibGUgd2l0aCBzdHVkZW50IG5hbWVzLCBpbnRlcmVzdCBkb21haW5zLCBhbmQgYW55IHN0YXR1cy9hY3Rpb24gYnV0dG9ucyB2aXNpYmxlLioKCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgTXkgcHJvZmlsZSBhdmF0YXIgaXMgbm90IHVwZGF0aW5nIHwgQ2hlY2sgdGhhdCB0aGUgZmlsZSBpcyBhIEpQRyBvciBQTkcgYW5kIHVuZGVyIHRoZSBtYXhpbXVtIGFsbG93ZWQgc2l6ZSAodHlwaWNhbGx5IDLigJM1IE1CKS4gVHJ5IGEgZGlmZmVyZW50IGJyb3dzZXIgaWYgaXQgc3RpbGwgZmFpbHMgfAp8IEkgc2F2ZWQgYSBwcm9tcHQgYnV0IGFuIGVycm9yIHNheXMgIkludmFsaWQgVGVtcGxhdGUgU3ludGF4IiB8IExvb2sgZm9yIGJyb2tlbiBge3tgIGJyYWNrZXRzLiBFdmVyeSBvcGVuaW5nIGB7e2AgbXVzdCBoYXZlIGEgbWF0Y2hpbmcgYH19YC4gRml4IHRoZSBicm9rZW4gdmFyaWFibGUgYW5kIHJldHJ5IHwKfCBBIHN0dWRlbnQncyBpbnRlcmVzdHMgbG9vayB3cm9uZyBvciBvdXRkYXRlZCB8IE9wZW4gdGhlaXIgaW50ZXJlc3QgZGV0YWlsLCB1cGRhdGUgdGhlIHN0YXR1cyB0byByZWZsZWN0IHRoZWlyIGN1cnJlbnQgZ29hbHMsIGFuZCBzYXZlIOKAlCB0aGVuIGFzayB0aGUgc3R1ZGVudCB0byBjb25maXJtIHRoZWlyIGludGVyZXN0cyBmcm9tIHRoZWlyIG93biBwcm9maWxlIHNldHRpbmdzIHwK</script>
 
 <style>
  

@@ -40,6 +40,8 @@ This is the fastest path for returning students.
 
 ![Student login page showing email and password fields with Sign In button](/images/user-manual/student-panel/authentication-login.png)
 
+*Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.*
+
 ---
 
 ## Sign In with Google
@@ -57,6 +59,8 @@ Faster sign-in without a separate password.
 - Make sure you are not using a private/incognito window with strict tracking prevention.
 
 ![Continue with Google button and Google account picker dialog](/images/user-manual/student-panel/authentication-google-signin.png)
+
+*Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.*
 
 ---
 
@@ -83,6 +87,8 @@ New students follow a multi-step wizard. The exact steps depend on whether you r
 
 ![Multi-step registration wizard showing name, email, password, interests, and profile fields](/images/user-manual/student-panel/authentication-register.png)
 
+*Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.*
+
 ---
 
 ## Verify Your Email
@@ -103,6 +109,8 @@ After registration, IDPicker sends a verification email.
 
 ![Email verification page confirming the link was clicked successfully](/images/user-manual/student-panel/authentication-verify-email.png)
 
+*Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.*
+
 ---
 
 ## Forgot Password
@@ -115,6 +123,8 @@ Use this if you cannot remember your current password.
 4. Check your inbox and spam folder for the reset email.
 
 ![Forgot password form with registered email input and Send Reset Link button](/images/user-manual/student-panel/authentication-forgot-password.png)
+
+*Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.*
 
 ---
 
@@ -134,6 +144,8 @@ After requesting a reset, you will receive a link by email.
 - Request a new reset link from the [Forgot Password](#forgot-password) step above.
 
 ![Reset password form with new password field, confirm password field, and strength indicator](/images/user-manual/student-panel/authentication-reset-password.png)
+
+*Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.*
 
 ---
 

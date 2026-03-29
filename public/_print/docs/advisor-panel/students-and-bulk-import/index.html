@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,24 +21,23 @@
 
 <title>Students and Bulk Import | IDPicker Docs</title>
 <meta name="description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/students-and-bulk-import/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/students-and-bulk-import/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Students and Bulk Import">
   <meta property="og:description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
+    <meta property="article:modified_time" content="2026-03-29T18:13:42+05:00">
 
   <meta itemprop="name" content="Students and Bulk Import">
   <meta itemprop="description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
-  <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="431">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="475">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Students and Bulk Import">
   <meta name="twitter:description" content="How to search your student roster, review profiles, and perform bulk imports from Excel">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -161,6 +168,8 @@
 </ol>
 <h3 id="viewing-student-details">Viewing Student Details</h3>
 <p>Click on any student row or card to open their detailed profile. Here you get full context on their background, activities, and current plateau.</p>
+<p><img src="/images/user-manual/advisor-panel/students-roster.png" alt="Student roster list showing search bar, filter dropdowns, and student rows with name and email columns"></p>
+<p><em>Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.</em></p>
 <hr>
 <h2 id="managing-group-assignments">Managing Group Assignments</h2>
 <p>To help organize your communications, you can assign students to Groups right from the roster.</p>
@@ -195,6 +204,8 @@
 <li><strong>Duplicates:</strong> If an email already exists in the system, that row will be skipped/flagged.</li>
 <li><strong>Group Assignment:</strong> Imported students are <em>not</em> automatically placed in a group upon import. You must assign them afterward.</li>
 </ul>
+<p><img src="/images/user-manual/advisor-panel/students-bulk-import.png" alt="Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button"></p>
+<p><em>Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -242,12 +253,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBTdHVkZW50cyBtb2R1bGUgaXMgeW91ciBDUk0gZm9yIG1hbmFnaW5nIHRoZSBpbmRpdmlkdWFscyB5b3UgYWR2aXNlLiBZb3UgY2FuIHZpZXcgdGhlaXIgcHJvZ3Jlc3MgaW5kaXZpZHVhbGx5LCBhc3NpZ24gdGhlbSB0byBncm91cHMsIG9yIGltcG9ydCBodW5kcmVkcyBvZiBzdHVkZW50cyBhdCBvbmNlLgoKLS0tCgojIyBTZWFyY2hpbmcgYW5kIEZpbHRlcmluZyBZb3VyIFJvc3RlcgoKV2hlbiB5b3Ugb3BlbiB0aGUgKipTdHVkZW50cyoqIG1vZHVsZSBmcm9tIHRoZSBzaWRlYmFyLCB5b3Ugc2VlIHlvdXIgZW50aXJlIGF1dGhvcml6ZWQgcm9zdGVyLgoKMS4gKipTZWFyY2g6KiogVXNlIHRoZSBzZWFyY2ggYmFyIHRvIGZpbmQgYSBzdHVkZW50IHF1aWNrbHkgYnkgbmFtZSBvciBlbWFpbC4KMi4gKipGaWx0ZXI6KiogTmFycm93IGRvd24geW91ciBsaXN0IHVzaW5nIHRoZSBkcm9wLWRvd24gZmlsdGVycy4gWW91IGNhbiBmaWx0ZXIgYnk6CiAgIC0gQXNzaWduZWQgR3JvdXBzCiAgIC0gQ2hhdCBzdGF0dXMgKGUuZy4sIGF3YWl0aW5nIHJlcGx5KQogICAtIEFzc2Vzc21lbnQgc2lnbmFscyAoZS5nLiwgY29tcGxldGVkLCBtaXNzaW5nKQogICAtIEpvaW5lZCBkYXRlIG9yIGxvY2F0aW9uCjMuICoqU29ydDoqKiBDbGljayB0aGUgY29sdW1uIGhlYWRlcnMgKE5hbWUsIEVtYWlsLCBKb2luZWQgRGF0ZSkgdG8gcmVvcmRlciB0aGUgbGlzdC4KCiMjIyBWaWV3aW5nIFN0dWRlbnQgRGV0YWlscwpDbGljayBvbiBhbnkgc3R1ZGVudCByb3cgb3IgY2FyZCB0byBvcGVuIHRoZWlyIGRldGFpbGVkIHByb2ZpbGUuIEhlcmUgeW91IGdldCBmdWxsIGNvbnRleHQgb24gdGhlaXIgYmFja2dyb3VuZCwgYWN0aXZpdGllcywgYW5kIGN1cnJlbnQgcGxhdGVhdS4KCi0tLQoKIyMgTWFuYWdpbmcgR3JvdXAgQXNzaWdubWVudHMKClRvIGhlbHAgb3JnYW5pemUgeW91ciBjb21tdW5pY2F0aW9ucywgeW91IGNhbiBhc3NpZ24gc3R1ZGVudHMgdG8gR3JvdXBzIHJpZ2h0IGZyb20gdGhlIHJvc3Rlci4KCjEuIEZyb20gdGhlIFN0dWRlbnRzIGxpc3QsIHNlbGVjdCB0aGUgY2hlY2tib3ggbmV4dCB0byBvbmUgb3IgbW9yZSBzdHVkZW50cy4KMi4gQ2xpY2sgdGhlICoqQXNzaWduIHRvIEdyb3VwKiogYWN0aW9uIGJ1dHRvbi4KMy4gQ2hlY2sgdGhlIGJveGVzIGZvciB0aGUgdGFyZ2V0IGdyb3Vwcy4KNC4gQ2xpY2sgKipTYXZlKiouIFRoZSBtZW1iZXJzaGlwIHVwZGF0ZXMgaW5zdGFudGx5LgoKKihOb3RlOiBTZWUgdGhlIFtHcm91cHMgTWFuYWdlbWVudF0oe3s8IHJlbHJlZiAiL2RvY3MvYWR2aXNvci1wYW5lbC9ncm91cHMiID59fSkgZ3VpZGUgZm9yIGhvdyB0byBjcmVhdGUgZ3JvdXBzIGluIHRoZSBmaXJzdCBwbGFjZSkuKgoKLS0tCgojIyBCdWxrIEltcG9ydGluZyBTdHVkZW50cyAoRXhjZWwpCgpJZiB5b3UgaGF2ZSBhIGxhcmdlIGNvaG9ydCBzdGFydGluZyBzaW11bHRhbmVvdXNseSwgZG8gbm90IGFkZCB0aGVtIG9uZSBieSBvbmUuIFVzZSB0aGUgQnVsayBJbXBvcnQgdG9vbC4KCjEuIE9uIHRoZSBTdHVkZW50cyBwYWdlLCBjbGljayAqKkJ1bGsgQWN0aW9ucyA&#43;IEltcG9ydCoqLgoyLiBQcmVwYXJlIHlvdXIgYC54bHN4YCBvciBgLnhsc2AgZmlsZS4gWW91ciBzcHJlYWRzaGVldCAqKm11c3QqKiBjb250YWluIHRoZXNlIHRocmVlIGV4YWN0IGNvbHVtbiBoZWFkZXJzIGluIHRoZSBmaXJzdCByb3c6CiAgIC0gYGVtYWlsYAogICAtIGBmaXJzdF9uYW1lYAogICAtIGBsYXN0X25hbWVgCjMuIFVwbG9hZCB0aGUgZmlsZS4KNC4gVGhlIHN5c3RlbSB3aWxsIHBhcnNlIHRoZSBmaWxlIGFuZCBzaG93IGEgKipQcmV2aWV3IFRhYmxlKiouCjUuIFNlbGVjdCB0aGUgcm93cyB5b3Ugd2lzaCB0byBhY3R1YWxseSBpbXBvcnQsIG9yIHNlbGVjdCBhbGwuCjYuIENsaWNrICoqQ29uZmlybSBJbXBvcnQqKi4KNy4gV2FpdC4gVGhlIHN5c3RlbSB3aWxsIHN1bW1hcml6ZSBzdWNjZXNzZXMgYW5kIGFueSBza2lwcGVkIHJvd3MgKGZhaWx1cmVzKS4KCiMjIyBJbXBvcnRhbnQgSW1wb3J0IFJ1bGVzCi0gKipGaWxlIExpbWl0czoqKiBUaGVyZSBpcyBhIG1heGltdW0gZmlsZSBzaXplIGxpbWl0ICh1c3VhbGx5IGEgZmV3IG1lZ2FieXRlcykuCi0gKipEdXBsaWNhdGVzOioqIElmIGFuIGVtYWlsIGFscmVhZHkgZXhpc3RzIGluIHRoZSBzeXN0ZW0sIHRoYXQgcm93IHdpbGwgYmUgc2tpcHBlZC9mbGFnZ2VkLgotICoqR3JvdXAgQXNzaWdubWVudDoqKiBJbXBvcnRlZCBzdHVkZW50cyBhcmUgKm5vdCogYXV0b21hdGljYWxseSBwbGFjZWQgaW4gYSBncm91cCB1cG9uIGltcG9ydC4gWW91IG11c3QgYXNzaWduIHRoZW0gYWZ0ZXJ3YXJkLgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBJIHVwbG9hZGVkIGFuIEV4Y2VsIGZpbGUgYnV0IHRoZSBwcmV2aWV3IGlzIHRvdGFsbHkgYmxhbmsgfCBNYWtlIHN1cmUgeW91ciBmaWxlIGlzIGEgdmFsaWQgYC54bHN4YCBhbmQgZXhhY3RseSBtYXRjaGVzIHRoZSByZXF1aXJlZCBsb3dlcmNhc2UgaGVhZGVyIG5hbWVzIChgZW1haWxgLCBgZmlyc3RfbmFtZWAsIGBsYXN0X25hbWVgKSB8CnwgVGhlIGZpbHRlcnMgc2F5ICIwIHN0dWRlbnRzIGZvdW5kIiBidXQgSSBrbm93IHRoZXkgZXhpc3QgfCBZb3UgbGlrZWx5IGhhdmUgY29uZmxpY3RpbmcgZmlsdGVycyBhcHBsaWVkLiBDbGVhciBhbGwgZmlsdGVycyBhbmQgcmVhcHBseSB0aGVtIG9uZSBieSBvbmUgfAp8IEkganVzdCBpbXBvcnRlZCBzdHVkZW50czsgaG93IGRvIEkgbWVzc2FnZSB0aGVtIGFsbD8gfCBDcmVhdGUgYSBHcm91cCBmb3IgdGhlIG5ldyBjb2hvcnQsIGFzc2lnbiB0aGVtLCBhbmQgdGhlbiB1c2UgdGhlIFtOb3RpZmljYXRpb25zXSh7ezwgcmVscmVmICIvZG9jcy9hZHZpc29yLXBhbmVsL25vdGlmaWNhdGlvbnMiID59fSkgbW9kdWxlIHRvIGJyb2FkY2FzdCBhIG1lc3NhZ2UgfAo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBTdHVkZW50cyBtb2R1bGUgaXMgeW91ciBDUk0gZm9yIG1hbmFnaW5nIHRoZSBpbmRpdmlkdWFscyB5b3UgYWR2aXNlLiBZb3UgY2FuIHZpZXcgdGhlaXIgcHJvZ3Jlc3MgaW5kaXZpZHVhbGx5LCBhc3NpZ24gdGhlbSB0byBncm91cHMsIG9yIGltcG9ydCBodW5kcmVkcyBvZiBzdHVkZW50cyBhdCBvbmNlLgoKLS0tCgojIyBTZWFyY2hpbmcgYW5kIEZpbHRlcmluZyBZb3VyIFJvc3RlcgoKV2hlbiB5b3Ugb3BlbiB0aGUgKipTdHVkZW50cyoqIG1vZHVsZSBmcm9tIHRoZSBzaWRlYmFyLCB5b3Ugc2VlIHlvdXIgZW50aXJlIGF1dGhvcml6ZWQgcm9zdGVyLgoKMS4gKipTZWFyY2g6KiogVXNlIHRoZSBzZWFyY2ggYmFyIHRvIGZpbmQgYSBzdHVkZW50IHF1aWNrbHkgYnkgbmFtZSBvciBlbWFpbC4KMi4gKipGaWx0ZXI6KiogTmFycm93IGRvd24geW91ciBsaXN0IHVzaW5nIHRoZSBkcm9wLWRvd24gZmlsdGVycy4gWW91IGNhbiBmaWx0ZXIgYnk6CiAgIC0gQXNzaWduZWQgR3JvdXBzCiAgIC0gQ2hhdCBzdGF0dXMgKGUuZy4sIGF3YWl0aW5nIHJlcGx5KQogICAtIEFzc2Vzc21lbnQgc2lnbmFscyAoZS5nLiwgY29tcGxldGVkLCBtaXNzaW5nKQogICAtIEpvaW5lZCBkYXRlIG9yIGxvY2F0aW9uCjMuICoqU29ydDoqKiBDbGljayB0aGUgY29sdW1uIGhlYWRlcnMgKE5hbWUsIEVtYWlsLCBKb2luZWQgRGF0ZSkgdG8gcmVvcmRlciB0aGUgbGlzdC4KCiMjIyBWaWV3aW5nIFN0dWRlbnQgRGV0YWlscwpDbGljayBvbiBhbnkgc3R1ZGVudCByb3cgb3IgY2FyZCB0byBvcGVuIHRoZWlyIGRldGFpbGVkIHByb2ZpbGUuIEhlcmUgeW91IGdldCBmdWxsIGNvbnRleHQgb24gdGhlaXIgYmFja2dyb3VuZCwgYWN0aXZpdGllcywgYW5kIGN1cnJlbnQgcGxhdGVhdS4KCiFbU3R1ZGVudCByb3N0ZXIgbGlzdCBzaG93aW5nIHNlYXJjaCBiYXIsIGZpbHRlciBkcm9wZG93bnMsIGFuZCBzdHVkZW50IHJvd3Mgd2l0aCBuYW1lIGFuZCBlbWFpbCBjb2x1bW5zXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvc3R1ZGVudHMtcm9zdGVyLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHN0dWRlbnRzIG1vZHVsZSBzaG93aW5nIHRoZSBzZWFyY2ggYmFyLCBmaWx0ZXIgY29udHJvbHMsIGFuZCBzZXZlcmFsIHN0dWRlbnQgcm93cy4qCgotLS0KCiMjIE1hbmFnaW5nIEdyb3VwIEFzc2lnbm1lbnRzCgpUbyBoZWxwIG9yZ2FuaXplIHlvdXIgY29tbXVuaWNhdGlvbnMsIHlvdSBjYW4gYXNzaWduIHN0dWRlbnRzIHRvIEdyb3VwcyByaWdodCBmcm9tIHRoZSByb3N0ZXIuCgoxLiBGcm9tIHRoZSBTdHVkZW50cyBsaXN0LCBzZWxlY3QgdGhlIGNoZWNrYm94IG5leHQgdG8gb25lIG9yIG1vcmUgc3R1ZGVudHMuCjIuIENsaWNrIHRoZSAqKkFzc2lnbiB0byBHcm91cCoqIGFjdGlvbiBidXR0b24uCjMuIENoZWNrIHRoZSBib3hlcyBmb3IgdGhlIHRhcmdldCBncm91cHMuCjQuIENsaWNrICoqU2F2ZSoqLiBUaGUgbWVtYmVyc2hpcCB1cGRhdGVzIGluc3RhbnRseS4KCiooTm90ZTogU2VlIHRoZSBbR3JvdXBzIE1hbmFnZW1lbnRdKHt7PCByZWxyZWYgIi9kb2NzL2Fkdmlzb3ItcGFuZWwvZ3JvdXBzIiA&#43;fX0pIGd1aWRlIGZvciBob3cgdG8gY3JlYXRlIGdyb3VwcyBpbiB0aGUgZmlyc3QgcGxhY2UpLioKCi0tLQoKIyMgQnVsayBJbXBvcnRpbmcgU3R1ZGVudHMgKEV4Y2VsKQoKSWYgeW91IGhhdmUgYSBsYXJnZSBjb2hvcnQgc3RhcnRpbmcgc2ltdWx0YW5lb3VzbHksIGRvIG5vdCBhZGQgdGhlbSBvbmUgYnkgb25lLiBVc2UgdGhlIEJ1bGsgSW1wb3J0IHRvb2wuCgoxLiBPbiB0aGUgU3R1ZGVudHMgcGFnZSwgY2xpY2sgKipCdWxrIEFjdGlvbnMgPiBJbXBvcnQqKi4KMi4gUHJlcGFyZSB5b3VyIGAueGxzeGAgb3IgYC54bHNgIGZpbGUuIFlvdXIgc3ByZWFkc2hlZXQgKiptdXN0KiogY29udGFpbiB0aGVzZSB0aHJlZSBleGFjdCBjb2x1bW4gaGVhZGVycyBpbiB0aGUgZmlyc3Qgcm93OgogICAtIGBlbWFpbGAKICAgLSBgZmlyc3RfbmFtZWAKICAgLSBgbGFzdF9uYW1lYAozLiBVcGxvYWQgdGhlIGZpbGUuCjQuIFRoZSBzeXN0ZW0gd2lsbCBwYXJzZSB0aGUgZmlsZSBhbmQgc2hvdyBhICoqUHJldmlldyBUYWJsZSoqLgo1LiBTZWxlY3QgdGhlIHJvd3MgeW91IHdpc2ggdG8gYWN0dWFsbHkgaW1wb3J0LCBvciBzZWxlY3QgYWxsLgo2LiBDbGljayAqKkNvbmZpcm0gSW1wb3J0KiouCjcuIFdhaXQuIFRoZSBzeXN0ZW0gd2lsbCBzdW1tYXJpemUgc3VjY2Vzc2VzIGFuZCBhbnkgc2tpcHBlZCByb3dzIChmYWlsdXJlcykuCgojIyMgSW1wb3J0YW50IEltcG9ydCBSdWxlcwotICoqRmlsZSBMaW1pdHM6KiogVGhlcmUgaXMgYSBtYXhpbXVtIGZpbGUgc2l6ZSBsaW1pdCAodXN1YWxseSBhIGZldyBtZWdhYnl0ZXMpLgotICoqRHVwbGljYXRlczoqKiBJZiBhbiBlbWFpbCBhbHJlYWR5IGV4aXN0cyBpbiB0aGUgc3lzdGVtLCB0aGF0IHJvdyB3aWxsIGJlIHNraXBwZWQvZmxhZ2dlZC4KLSAqKkdyb3VwIEFzc2lnbm1lbnQ6KiogSW1wb3J0ZWQgc3R1ZGVudHMgYXJlICpub3QqIGF1dG9tYXRpY2FsbHkgcGxhY2VkIGluIGEgZ3JvdXAgdXBvbiBpbXBvcnQuIFlvdSBtdXN0IGFzc2lnbiB0aGVtIGFmdGVyd2FyZC4KCiFbQnVsayBpbXBvcnQgZGlhbG9nIHNob3dpbmcgdGhlIGZpbGUgdXBsb2FkIGFyZWEsIHByZXZpZXcgdGFibGUgd2l0aCByb3dzIGFuZCBjaGVja2JveGVzLCBhbmQgQ29uZmlybSBJbXBvcnQgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvc3R1ZGVudHMtYnVsay1pbXBvcnQucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgYnVsayBpbXBvcnQgZmxvdyDigJQgc2hvdyB0aGUgZmlsZSB1cGxvYWQgc3RlcCBvciB0aGUgcHJldmlldyB0YWJsZSB3aXRoIHN0dWRlbnQgcm93cyByZWFkeSB0byBiZSBjb25maXJtZWQuKgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBJIHVwbG9hZGVkIGFuIEV4Y2VsIGZpbGUgYnV0IHRoZSBwcmV2aWV3IGlzIHRvdGFsbHkgYmxhbmsgfCBNYWtlIHN1cmUgeW91ciBmaWxlIGlzIGEgdmFsaWQgYC54bHN4YCBhbmQgZXhhY3RseSBtYXRjaGVzIHRoZSByZXF1aXJlZCBsb3dlcmNhc2UgaGVhZGVyIG5hbWVzIChgZW1haWxgLCBgZmlyc3RfbmFtZWAsIGBsYXN0X25hbWVgKSB8CnwgVGhlIGZpbHRlcnMgc2F5ICIwIHN0dWRlbnRzIGZvdW5kIiBidXQgSSBrbm93IHRoZXkgZXhpc3QgfCBZb3UgbGlrZWx5IGhhdmUgY29uZmxpY3RpbmcgZmlsdGVycyBhcHBsaWVkLiBDbGVhciBhbGwgZmlsdGVycyBhbmQgcmVhcHBseSB0aGVtIG9uZSBieSBvbmUgfAp8IEkganVzdCBpbXBvcnRlZCBzdHVkZW50czsgaG93IGRvIEkgbWVzc2FnZSB0aGVtIGFsbD8gfCBDcmVhdGUgYSBHcm91cCBmb3IgdGhlIG5ldyBjb2hvcnQsIGFzc2lnbiB0aGVtLCBhbmQgdGhlbiB1c2UgdGhlIFtOb3RpZmljYXRpb25zXSh7ezwgcmVscmVmICIvZG9jcy9hZHZpc29yLXBhbmVsL25vdGlmaWNhdGlvbnMiID59fSkgbW9kdWxlIHRvIGJyb2FkY2FzdCBhIG1lc3NhZ2UgfAo=</script>
 
 <style>
  

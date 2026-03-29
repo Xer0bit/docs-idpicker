@@ -25,6 +25,10 @@ While Advisors can create localized forms for their specific students, Super Adm
 
 > **Testing is Mandatory:** Before distributing a global assessment to thousands of students, use a test student account to verify the logic, spelling, and user experience.
 
+![Assessment builder showing question editor with rating scale and multiple choice fields, and question list sidebar](/images/user-manual/admin-panel/assessment-builder.png)
+
+*Image placeholder: Add screenshot of the assessment builder with the question list panel on the left and the question editor open on the right.*
+
 ---
 
 ## 2. Bulk Importing Assessments
@@ -36,6 +40,10 @@ If you already have established paper-based psychometrics, you can import them d
 3. Select and upload the file.
 4. Review the Import Preview. The system will flag any rows with invalid schemas or missing options.
 5. If the preview is clean, click **Confirm Import**.
+
+![Bulk import preview table showing question rows with type and options columns, and rows flagged with validation errors](/images/user-manual/admin-panel/assessment-import-preview.png)
+
+*Image placeholder: Add screenshot of the bulk import preview table with valid rows and at least one flagged validation error row.*
 
 ---
 

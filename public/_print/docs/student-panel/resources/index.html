@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/student-panel/resources/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,24 +21,23 @@
 
 <title>Resources | IDPicker Docs</title>
 <meta name="description" content="How to find, filter, and download learning materials shared by your advisor">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/student-panel/resources/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/student-panel/resources/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Resources">
   <meta property="og:description" content="How to find, filter, and download learning materials shared by your advisor">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
+    <meta property="article:modified_time" content="2026-03-29T18:13:42+05:00">
 
   <meta itemprop="name" content="Resources">
   <meta itemprop="description" content="How to find, filter, and download learning materials shared by your advisor">
-  <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="332">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="406">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Resources">
   <meta name="twitter:description" content="How to find, filter, and download learning materials shared by your advisor">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -159,6 +166,7 @@
 <li>The list will instantly filter to matching documents.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/resources-library.png" alt="Resource library grid showing file cards with assigned and globally visible documents"></p>
+<p><em>Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.</em></p>
 <hr>
 <h2 id="filtering-and-sorting-files">Filtering and Sorting Files</h2>
 <p>If your organization has shared hundreds of files, use these controls to narrow them down:</p>
@@ -170,6 +178,7 @@
 <li><strong>View Mode:</strong> Toggle between the spacious Grid view or the compact List view depending on your preference.</li>
 </ul>
 <p><img src="/images/user-manual/student-panel/resources-filters.png" alt="Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls"></p>
+<p><em>Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.</em></p>
 <hr>
 <h2 id="downloading-a-shared-file">Downloading a Shared File</h2>
 <ol>
@@ -181,6 +190,7 @@
 <p><strong>If a download fails:</strong> Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/resources-download.png" alt="Resource file card with Download button highlighted and browser download prompt"></p>
+<p><em>Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.</em></p>
 <hr>
 <h2 id="common-questions">Common Questions</h2>
 <table>
@@ -228,12 +238,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBSZXNvdXJjZXMgbW9kdWxlIGFjdHMgYXMgeW91ciBwZXJzb25hbCBkaWdpdGFsIGxpYnJhcnkuIFdoZW5ldmVyIHlvdXIgYWR2aXNvciwgc2Nob29sLCBvciBvcmdhbml6YXRpb24gc2hhcmVzIGEgaGVscGZ1bCBkb2N1bWVudCwgc3ByZWFkc2hlZXQsIG9yIFBERiwgaXQgbGFuZHMgaGVyZS4KCi0tLQoKIyMgQnJvd3NpbmcgdGhlIFJlc291cmNlIExpYnJhcnkKCjEuIEZyb20gdGhlIG1haW4gc2lkZWJhciwgY2xpY2sgKipSZXNvdXJjZXMqKi4KMi4gV2FpdCBhIHNlY29uZCBmb3IgeW91ciBwZXJzb25hbGl6ZWQgZmlsZSBncmlkIHRvIGxvYWQuCjMuIFlvdSB3aWxsIGltbWVkaWF0ZWx5IHNlZSBmaWxlcyB0aGF0IGFyZSBleHBsaWNpdGx5IGFzc2lnbmVkIHRvIHlvdSwgYXMgd2VsbCBhcyBnbG9iYWxseSB2aXNpYmxlIGZpbGVzIHNoYXJlZCBieSB5b3VyIG9yZ2FuaXphdGlvbi4KCiMjIyBTZWFyY2hpbmcgYnkgS2V5d29yZAoKS25vdyBleGFjdGx5IHdoYXQgeW91IGFyZSBsb29raW5nIGZvcj8KMS4gQ2xpY2sgdGhlICoqU2VhcmNoKiogYmFyLgoyLiBUeXBlIGEgbWF0Y2hpbmcga2V5d29yZCBmcm9tIHRoZSBmaWxlJ3MgdGl0bGUsIGRlc2NyaXB0aW9uLCBvciBvcmlnaW5hbCBmaWxlIG5hbWUuCjMuIFRoZSBsaXN0IHdpbGwgaW5zdGFudGx5IGZpbHRlciB0byBtYXRjaGluZyBkb2N1bWVudHMuCgohW1Jlc291cmNlIGxpYnJhcnkgZ3JpZCBzaG93aW5nIGZpbGUgY2FyZHMgd2l0aCBhc3NpZ25lZCBhbmQgZ2xvYmFsbHkgdmlzaWJsZSBkb2N1bWVudHNdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9yZXNvdXJjZXMtbGlicmFyeS5wbmcpCgotLS0KCiMjIEZpbHRlcmluZyBhbmQgU29ydGluZyBGaWxlcwoKSWYgeW91ciBvcmdhbml6YXRpb24gaGFzIHNoYXJlZCBodW5kcmVkcyBvZiBmaWxlcywgdXNlIHRoZXNlIGNvbnRyb2xzIHRvIG5hcnJvdyB0aGVtIGRvd246CgotICoqRmlsZSBUeXBlIEZpbHRlcjoqKiBPbmx5IHdhbnQgdG8gc2VlIFBERnMgb3IgRXhjZWwgc2hlZXRzPyBTZWxlY3QgdGhlIGV4YWN0IGZvcm1hdC4KLSAqKlNpemUgRmlsdGVyOioqIFNlbGVjdCBTbWFsbCwgTWVkaXVtLCBvciBMYXJnZSBmaWxlcyAoaGVscGZ1bCBpZiB5b3UgYXJlIG9uIGEgc2xvdyBjZWxsdWxhciBjb25uZWN0aW9uKS4KLSAqKlZpc2liaWxpdHkgRmlsdGVyOioqIENob29zZSBiZXR3ZWVuICpBbGwqLCAqR2xvYmFsbHkgVmlzaWJsZSosIG9yICpEaXJlY3RseSBBc3NpZ25lZCouCi0gKipTb3J0IEJ5OioqIENoYW5nZSB0aGUgb3JkZXJpbmcgZnJvbSBEYXRlIEFkZGVkLCBBbHBoYWJldGljYWwgTmFtZSwgb3IgRmlsZSBTaXplLgotICoqVmlldyBNb2RlOioqIFRvZ2dsZSBiZXR3ZWVuIHRoZSBzcGFjaW91cyBHcmlkIHZpZXcgb3IgdGhlIGNvbXBhY3QgTGlzdCB2aWV3IGRlcGVuZGluZyBvbiB5b3VyIHByZWZlcmVuY2UuCgohW1Jlc291cmNlIGZpbHRlciBiYXIgc2hvd2luZyBmaWxlIHR5cGUsIHNpemUsIHZpc2liaWxpdHkgZmlsdGVycyBhbmQgc29ydC1ieSBhbmQgdmlldyBtb2RlIGNvbnRyb2xzXSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVzb3VyY2VzLWZpbHRlcnMucG5nKQoKLS0tCgojIyBEb3dubG9hZGluZyBhIFNoYXJlZCBGaWxlCgoxLiBMb2NhdGUgdGhlIGNhcmQgb3Igcm93IG9mIHRoZSBmaWxlIHlvdSBuZWVkLgoyLiBDbGljayB0aGUgKipEb3dubG9hZCoqIGJ1dHRvbi4KMy4gWW91ciBicm93c2VyIHdpbGwgaGFuZGxlIHRoZSBzZWN1cmUgZG93bmxvYWQuIENoZWNrIHlvdXIgY29tcHV0ZXIncyBgRG93bmxvYWRzYCBmb2xkZXIgd2hlbiBpdCBmaW5pc2hlcy4KCj4gKipJZiBhIGRvd25sb2FkIGZhaWxzOioqIENoZWNrIHlvdXIgaW50ZXJuZXQgY29ubmVjdGlvbiBmaXJzdC4gSWYgaXQgc3RpbGwgZmFpbHMsIHJlZnJlc2ggdGhlIGVudGlyZSBwYWdlIHRvIGVuc3VyZSB5b3VyIGxvZ2luIHNlc3Npb24gaGFzIG5vdCBxdWlldGx5IGV4cGlyZWQsIHRoZW4gdHJ5IGRvd25sb2FkaW5nIGFnYWluLgoKIVtSZXNvdXJjZSBmaWxlIGNhcmQgd2l0aCBEb3dubG9hZCBidXR0b24gaGlnaGxpZ2h0ZWQgYW5kIGJyb3dzZXIgZG93bmxvYWQgcHJvbXB0XSgvaW1hZ2VzL3VzZXItbWFudWFsL3N0dWRlbnQtcGFuZWwvcmVzb3VyY2VzLWRvd25sb2FkLnBuZykKCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgTXkgYWR2aXNvciBzYWlkIHRoZXkgc2hhcmVkIGEgZmlsZSwgYnV0IEkgY2Fubm90IHNlZSBpdCB8IFRoZXkgbWF5IGhhdmUgZm9yZ290dGVuIHRvIGFzc2lnbiBpdCBkaXJlY3RseSB0byB5b3VyIGVtYWlsLiBBc2sgdGhlbSB0byB2ZXJpZnkgdGhlIHZpc2liaWxpdHkgc2V0dGluZ3Mgb24gdGhlaXIgZW5kLiB8CnwgVGhlIGZpbGUgbGlzdCBrZWVwcyBzaHVmZmxpbmcgd2hlbiBJIGNsaWNrIHRoaW5ncyB8IFRoZSAqU29ydCBCeSogb3B0aW9uIGFwcGxpZXMgaW5zdGFudGx5IHdoZW5ldmVyIGEgZmlsdGVyIGNoYW5nZXMgfAp8IEEgZmlsZSBjYXJkIGlzIG1pc3NpbmcgYSBkZXNjcmlwdGlvbiB8IEFkdmlzb3JzIGFyZSBub3Qgc3RyaWN0bHkgcmVxdWlyZWQgdG8gdHlwZSBvdXQgZXh0ZW5zaXZlIGRlc2NyaXB0aW9ucyB3aGVuIHVwbG9hZGluZyB8Cg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBSZXNvdXJjZXMgbW9kdWxlIGFjdHMgYXMgeW91ciBwZXJzb25hbCBkaWdpdGFsIGxpYnJhcnkuIFdoZW5ldmVyIHlvdXIgYWR2aXNvciwgc2Nob29sLCBvciBvcmdhbml6YXRpb24gc2hhcmVzIGEgaGVscGZ1bCBkb2N1bWVudCwgc3ByZWFkc2hlZXQsIG9yIFBERiwgaXQgbGFuZHMgaGVyZS4KCi0tLQoKIyMgQnJvd3NpbmcgdGhlIFJlc291cmNlIExpYnJhcnkKCjEuIEZyb20gdGhlIG1haW4gc2lkZWJhciwgY2xpY2sgKipSZXNvdXJjZXMqKi4KMi4gV2FpdCBhIHNlY29uZCBmb3IgeW91ciBwZXJzb25hbGl6ZWQgZmlsZSBncmlkIHRvIGxvYWQuCjMuIFlvdSB3aWxsIGltbWVkaWF0ZWx5IHNlZSBmaWxlcyB0aGF0IGFyZSBleHBsaWNpdGx5IGFzc2lnbmVkIHRvIHlvdSwgYXMgd2VsbCBhcyBnbG9iYWxseSB2aXNpYmxlIGZpbGVzIHNoYXJlZCBieSB5b3VyIG9yZ2FuaXphdGlvbi4KCiMjIyBTZWFyY2hpbmcgYnkgS2V5d29yZAoKS25vdyBleGFjdGx5IHdoYXQgeW91IGFyZSBsb29raW5nIGZvcj8KMS4gQ2xpY2sgdGhlICoqU2VhcmNoKiogYmFyLgoyLiBUeXBlIGEgbWF0Y2hpbmcga2V5d29yZCBmcm9tIHRoZSBmaWxlJ3MgdGl0bGUsIGRlc2NyaXB0aW9uLCBvciBvcmlnaW5hbCBmaWxlIG5hbWUuCjMuIFRoZSBsaXN0IHdpbGwgaW5zdGFudGx5IGZpbHRlciB0byBtYXRjaGluZyBkb2N1bWVudHMuCgohW1Jlc291cmNlIGxpYnJhcnkgZ3JpZCBzaG93aW5nIGZpbGUgY2FyZHMgd2l0aCBhc3NpZ25lZCBhbmQgZ2xvYmFsbHkgdmlzaWJsZSBkb2N1bWVudHNdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9yZXNvdXJjZXMtbGlicmFyeS5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSByZXNvdXJjZSBsaWJyYXJ5IGluIGdyaWQgdmlldyDigJQgc2hvdyBzZXZlcmFsIGZpbGUgY2FyZHMgd2l0aCBmaWxlIHR5cGUgaWNvbnMsIG5hbWVzLCBhbmQgdmlzaWJpbGl0eSBsYWJlbHMuKgoKLS0tCgojIyBGaWx0ZXJpbmcgYW5kIFNvcnRpbmcgRmlsZXMKCklmIHlvdXIgb3JnYW5pemF0aW9uIGhhcyBzaGFyZWQgaHVuZHJlZHMgb2YgZmlsZXMsIHVzZSB0aGVzZSBjb250cm9scyB0byBuYXJyb3cgdGhlbSBkb3duOgoKLSAqKkZpbGUgVHlwZSBGaWx0ZXI6KiogT25seSB3YW50IHRvIHNlZSBQREZzIG9yIEV4Y2VsIHNoZWV0cz8gU2VsZWN0IHRoZSBleGFjdCBmb3JtYXQuCi0gKipTaXplIEZpbHRlcjoqKiBTZWxlY3QgU21hbGwsIE1lZGl1bSwgb3IgTGFyZ2UgZmlsZXMgKGhlbHBmdWwgaWYgeW91IGFyZSBvbiBhIHNsb3cgY2VsbHVsYXIgY29ubmVjdGlvbikuCi0gKipWaXNpYmlsaXR5IEZpbHRlcjoqKiBDaG9vc2UgYmV0d2VlbiAqQWxsKiwgKkdsb2JhbGx5IFZpc2libGUqLCBvciAqRGlyZWN0bHkgQXNzaWduZWQqLgotICoqU29ydCBCeToqKiBDaGFuZ2UgdGhlIG9yZGVyaW5nIGZyb20gRGF0ZSBBZGRlZCwgQWxwaGFiZXRpY2FsIE5hbWUsIG9yIEZpbGUgU2l6ZS4KLSAqKlZpZXcgTW9kZToqKiBUb2dnbGUgYmV0d2VlbiB0aGUgc3BhY2lvdXMgR3JpZCB2aWV3IG9yIHRoZSBjb21wYWN0IExpc3QgdmlldyBkZXBlbmRpbmcgb24geW91ciBwcmVmZXJlbmNlLgoKIVtSZXNvdXJjZSBmaWx0ZXIgYmFyIHNob3dpbmcgZmlsZSB0eXBlLCBzaXplLCB2aXNpYmlsaXR5IGZpbHRlcnMgYW5kIHNvcnQtYnkgYW5kIHZpZXcgbW9kZSBjb250cm9sc10oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL3Jlc291cmNlcy1maWx0ZXJzLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIGZpbHRlciBiYXIgYXQgdGhlIHRvcCBvZiB0aGUgcmVzb3VyY2UgbGlicmFyeSDigJQgZmlsZSB0eXBlLCBzaXplLCB2aXNpYmlsaXR5IGRyb3Bkb3ducyBhbmQgdGhlIHNvcnQtYnkgYW5kIHZpZXctbW9kZSBjb250cm9scy4qCgotLS0KCiMjIERvd25sb2FkaW5nIGEgU2hhcmVkIEZpbGUKCjEuIExvY2F0ZSB0aGUgY2FyZCBvciByb3cgb2YgdGhlIGZpbGUgeW91IG5lZWQuCjIuIENsaWNrIHRoZSAqKkRvd25sb2FkKiogYnV0dG9uLgozLiBZb3VyIGJyb3dzZXIgd2lsbCBoYW5kbGUgdGhlIHNlY3VyZSBkb3dubG9hZC4gQ2hlY2sgeW91ciBjb21wdXRlcidzIGBEb3dubG9hZHNgIGZvbGRlciB3aGVuIGl0IGZpbmlzaGVzLgoKPiAqKklmIGEgZG93bmxvYWQgZmFpbHM6KiogQ2hlY2sgeW91ciBpbnRlcm5ldCBjb25uZWN0aW9uIGZpcnN0LiBJZiBpdCBzdGlsbCBmYWlscywgcmVmcmVzaCB0aGUgZW50aXJlIHBhZ2UgdG8gZW5zdXJlIHlvdXIgbG9naW4gc2Vzc2lvbiBoYXMgbm90IHF1aWV0bHkgZXhwaXJlZCwgdGhlbiB0cnkgZG93bmxvYWRpbmcgYWdhaW4uCgohW1Jlc291cmNlIGZpbGUgY2FyZCB3aXRoIERvd25sb2FkIGJ1dHRvbiBoaWdobGlnaHRlZCBhbmQgYnJvd3NlciBkb3dubG9hZCBwcm9tcHRdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9yZXNvdXJjZXMtZG93bmxvYWQucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiBhIGZpbGUgY2FyZCB3aXRoIHRoZSBEb3dubG9hZCBidXR0b24gaGlnaGxpZ2h0ZWQsIGFuZCBvcHRpb25hbGx5IHRoZSBicm93c2Vy4oCZcyBkb3dubG9hZCBiYXIgYXBwZWFyaW5nIGF0IHRoZSBib3R0b20uKgoKLS0tCgojIyBDb21tb24gUXVlc3Rpb25zCgp8IFNpdHVhdGlvbiB8IFdoYXQgdG8gZG8gfAp8LS0tfC0tLXwKfCBNeSBhZHZpc29yIHNhaWQgdGhleSBzaGFyZWQgYSBmaWxlLCBidXQgSSBjYW5ub3Qgc2VlIGl0IHwgVGhleSBtYXkgaGF2ZSBmb3Jnb3R0ZW4gdG8gYXNzaWduIGl0IGRpcmVjdGx5IHRvIHlvdXIgZW1haWwuIEFzayB0aGVtIHRvIHZlcmlmeSB0aGUgdmlzaWJpbGl0eSBzZXR0aW5ncyBvbiB0aGVpciBlbmQuIHwKfCBUaGUgZmlsZSBsaXN0IGtlZXBzIHNodWZmbGluZyB3aGVuIEkgY2xpY2sgdGhpbmdzIHwgVGhlICpTb3J0IEJ5KiBvcHRpb24gYXBwbGllcyBpbnN0YW50bHkgd2hlbmV2ZXIgYSBmaWx0ZXIgY2hhbmdlcyB8CnwgQSBmaWxlIGNhcmQgaXMgbWlzc2luZyBhIGRlc2NyaXB0aW9uIHwgQWR2aXNvcnMgYXJlIG5vdCBzdHJpY3RseSByZXF1aXJlZCB0byB0eXBlIG91dCBleHRlbnNpdmUgZGVzY3JpcHRpb25zIHdoZW4gdXBsb2FkaW5nIHwK</script>
 
 <style>
  

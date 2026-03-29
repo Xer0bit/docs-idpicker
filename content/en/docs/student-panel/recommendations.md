@@ -20,6 +20,8 @@ The Recommendations page is the heart of the IDPicker platform. Once your assess
 
 ![Recommendations summary banner showing found count, pass counter, and ranked university cards below](/images/user-manual/student-panel/recommendations-overview.png)
 
+*Image placeholder: Add screenshot of the Recommendations page — show the summary banner with found count and pass counter, and at least 2 university cards ranked below it.*
+
 ---
 
 ## 2. Choosing a Recommendation Input Mode
@@ -34,6 +36,8 @@ Before the AI refines your results, you must tell it what data to prioritise. Cl
 Click the tile for the mode you want — the selected tile gets a highlighted border.
 
 ![Recommendation input section showing Test Scores tile and Personality tile with selection highlight](/images/user-manual/student-panel/recommendations-input-mode.png)
+
+*Image placeholder: Add screenshot of the refinement panel showing both input mode tiles (Test Scores and Personality) with one selected and highlighted.*
 
 ---
 
@@ -60,6 +64,8 @@ IDPicker supports up to **3 exam slots** (shown as **1/3** in the panel). Each s
 5. Click the **Ranking (optional)** field and enter your rank if known (e.g. *Top 5%* or *15000th*).
 
 ![Exam score palette showing exam name, score, and ranking input fields for the first exam slot](/images/user-manual/student-panel/recommendations-exam-slot.png)
+
+*Image placeholder: Add screenshot of the exam score palette with the first slot’s Exam name, Score, and Ranking (optional) fields visible and empty.*
 
 ### 3c. Adding a Second or Third Exam
 
@@ -89,6 +95,8 @@ Other common Turkish exam entries:
 
 ![Score palette with YKS-SAY exam name, numeric score, and ranking filled in as a real example](/images/user-manual/student-panel/recommendations-yks-example.png)
 
+*Image placeholder: Add screenshot of the score palette with YKS–SAY entered as exam name, a numeric score, and a ranking value filled in as a demonstrative example.*
+
 ### 3e. Applying Your Scores
 
 1. After filling in all your exam rows, click **Apply All Filters** (bottom-right of the refinement panel).
@@ -97,6 +105,8 @@ Other common Turkish exam entries:
 4. Your ranked list updates to reflect universities whose admission criteria your scores meet.
 
 ![Apply All Filters button highlighted at the bottom of the refinement panel](/images/user-manual/student-panel/recommendations-apply-filters.png)
+
+*Image placeholder: Add screenshot of the Apply All Filters button at the bottom of the refinement panel, highlighted or in focus.*
 
 ---
 
@@ -113,6 +123,8 @@ If you have completed the Personality assessment on IDPicker, you can let the AI
 
 ![Personality tile selected in the recommendation input section with no additional input fields visible](/images/user-manual/student-panel/recommendations-personality-mode.png)
 
+*Image placeholder: Add screenshot of the refinement panel with the Personality tile selected — no exam input fields should be visible.*
+
 ---
 
 ## 5. Filtering by Country
@@ -128,6 +140,8 @@ The **Refine by Country** dropdown narrows results to universities located in a 
 
 ![Country dropdown open with a country selected in the Refine by section of the recommendations panel](/images/user-manual/student-panel/recommendations-country-filter.png)
 
+*Image placeholder: Add screenshot of the country dropdown open with a country selected inside the Refine by section.*
+
 ---
 
 ## 6. Filtering by City
@@ -141,6 +155,8 @@ After country-level filtering, you can drill down further by city using the **Fi
 > **Note:** City-level filtering is applied independently of the refinement panel. You do not need to click **Apply All Filters** again — city changes take effect immediately.
 
 ![Filter by city dropdown showing All cities default and a city selection in context of the results list](/images/user-manual/student-panel/recommendations-city-filter.png)
+
+*Image placeholder: Add screenshot of the Filter by city row above the results — show the dropdown open with All cities default and one city option highlighted.*
 
 ---
 
@@ -159,6 +175,8 @@ Click the university name to open its full detail page showing all programmes, r
 
 ![University recommendation card showing name, city, Premium badge, and programme detail summary](/images/user-manual/student-panel/recommendations-card-detail.png)
 
+*Image placeholder: Add screenshot of a recommendation card showing university name, city, Premium badge, and programme detail summary (mask any real student data).*
+
 ---
 
 ## 8. Downloading Your Full Report
@@ -172,6 +190,8 @@ If your account plan supports it, you can export your recommendation profile as 
 > **Note:** If the button is hidden, report export is not enabled for your current plan or organisation policy. Check your subscription under **Settings**.
 
 ![Download My Report button and secure PDF link in a new tab](/images/user-manual/student-panel/recommendations-report-download.png)
+
+*Image placeholder: Add screenshot of the Download My Report button at the top of the page, and optionally the PDF open in a new browser tab.*
 
 ---
 

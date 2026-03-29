@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/parent-panel/student-detail-journey-map-and-chat/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/parent-panel/student-detail-journey-map-and-chat/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -21,7 +21,7 @@
 
 <title>Student Detail, Journey Map, and Advisor Chat | IDPicker Docs</title>
 <meta name="description" content="How to monitor your child&#39;s progress, export their Journey Map, and communicate with advisors">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/parent-panel/student-detail-journey-map-and-chat/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Student Detail, Journey Map, and Advisor Chat">
   <meta property="og:description" content="How to monitor your child&#39;s progress, export their Journey Map, and communicate with advisors">
@@ -33,12 +33,11 @@
   <meta itemprop="name" content="Student Detail, Journey Map, and Advisor Chat">
   <meta itemprop="description" content="How to monitor your child&#39;s progress, export their Journey Map, and communicate with advisors">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="455">
+  <meta itemprop="wordCount" content="494">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Student Detail, Journey Map, and Advisor Chat">
   <meta name="twitter:description" content="How to monitor your child&#39;s progress, export their Journey Map, and communicate with advisors">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -354,6 +367,8 @@
 <li><strong>Recommendations Summary:</strong> A high-level view of the career paths or universities the AI has suggested for them based on their results.</li>
 <li><strong>Mentorship Activity:</strong> See if your child has been utilizing the AI mentors or checking in with their human advisor.</li>
 </ul>
+<p><img src="/images/user-manual/parent-panel/student-detail-overview.png" alt="Student detail page showing assessment progress checklist, recommendations summary, and mentorship activity indicator"></p>
+<p><em>Image placeholder: Add screenshot of the student detail page top section showing progress blocks and recommendation summary.</em></p>
 <hr>
 <h2 id="2-generating-the-journey-map">2. Generating the Journey Map</h2>
 <p>The Journey Map is a comprehensive, exportable report that synthesizes your child&rsquo;s entire profile into a single document. It is highly useful for college applications or external counseling.</p>
@@ -371,6 +386,8 @@
 <li>Once you are satisfied with the included data, click <strong>Generate &amp; Download Journey Map</strong>.</li>
 <li>The system will process the file (this takes a few seconds) and open a secure PDF download link in a new tab.</li>
 </ol>
+<p><img src="/images/user-manual/parent-panel/journey-map-generator.png" alt="Journey Map section showing data point checkboxes, Preview button, and Generate &amp; Download button"></p>
+<p><em>Image placeholder: Add screenshot of the Journey Map section with several data point checkboxes selected and the Generate &amp; Download button visible.</em></p>
 <hr>
 <h2 id="3-chatting-with-the-advisor">3. Chatting with the Advisor</h2>
 <p>If your child&rsquo;s school has enabled Family Chat, you can communicate directly with their assigned advisor from this page.</p>
@@ -436,12 +453,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">Ck9uY2UgeW91IG9wZW4gYSBsaW5rZWQgc3R1ZGVudCdzIHByb2ZpbGUgZnJvbSB5b3VyIGRhc2hib2FyZCwgeW91IGdhaW4gYWNjZXNzIHRvIHBvd2VyZnVsIHRyYWNraW5nIHRvb2xzIGFuZCBkaXJlY3QgY29tbXVuaWNhdGlvbiBsaW5lcyB3aXRoIHRoZWlyIGVkdWNhdGlvbmFsIHRlYW0uCgotLS0KCiMjIDEuIFJldmlld2luZyBQcm9ncmVzcyBhbmQgSW5zaWdodHMKCkF0IHRoZSB0b3Agb2YgdGhlIHN0dWRlbnQgZGV0YWlsIHBhZ2UsIHlvdSB3aWxsIHNlZSB0aGVpciAqKkJhc2ljIFByb2ZpbGUqKiAobmFtZSwgYWdlLCBncmFkZSkuIEJlbG93IHRoaXMsIHRoZSBwYWdlIGlzIGJyb2tlbiBkb3duIGludG8gaW5zaWdodCBibG9ja3M6CgotICoqQXNzZXNzbWVudCBQcm9ncmVzczoqKiBRdWlja2x5IHNlZSB3aGljaCByZXF1aXJlZCBwc3ljaG9sb2dpY2FsIG9yIGVkdWNhdGlvbmFsIGFzc2Vzc21lbnRzIHlvdXIgY2hpbGQgaGFzIGNvbXBsZXRlZCwgYW5kIHdoaWNoIGFyZSBzdGlsbCBwZW5kaW5nLgotICoqUmVjb21tZW5kYXRpb25zIFN1bW1hcnk6KiogQSBoaWdoLWxldmVsIHZpZXcgb2YgdGhlIGNhcmVlciBwYXRocyBvciB1bml2ZXJzaXRpZXMgdGhlIEFJIGhhcyBzdWdnZXN0ZWQgZm9yIHRoZW0gYmFzZWQgb24gdGhlaXIgcmVzdWx0cy4KLSAqKk1lbnRvcnNoaXAgQWN0aXZpdHk6KiogU2VlIGlmIHlvdXIgY2hpbGQgaGFzIGJlZW4gdXRpbGl6aW5nIHRoZSBBSSBtZW50b3JzIG9yIGNoZWNraW5nIGluIHdpdGggdGhlaXIgaHVtYW4gYWR2aXNvci4KCi0tLQoKIyMgMi4gR2VuZXJhdGluZyB0aGUgSm91cm5leSBNYXAKClRoZSBKb3VybmV5IE1hcCBpcyBhIGNvbXByZWhlbnNpdmUsIGV4cG9ydGFibGUgcmVwb3J0IHRoYXQgc3ludGhlc2l6ZXMgeW91ciBjaGlsZCdzIGVudGlyZSBwcm9maWxlIGludG8gYSBzaW5nbGUgZG9jdW1lbnQuIEl0IGlzIGhpZ2hseSB1c2VmdWwgZm9yIGNvbGxlZ2UgYXBwbGljYXRpb25zIG9yIGV4dGVybmFsIGNvdW5zZWxpbmcuCgoxLiBTY3JvbGwgdG8gdGhlICoqSm91cm5leSBNYXAqKiBzZWN0aW9uIG9uIHRoZSBkZXRhaWwgcGFnZS4KMi4gU2VsZWN0IHRoZSBzcGVjaWZpYyAqKkRhdGEgUG9pbnRzKiogeW91IHdhbnQgaW5jbHVkZWQgaW4gdGhlIHJlcG9ydC4gWW91IGNhbiBjaGVjayBvciB1bmNoZWNrIGNhdGVnb3JpZXMgbGlrZToKICAgLSAqRGVtb2dyYXBoaWNzICYgRWR1Y2F0aW9uKgogICAtICpQc3ljaG9sb2dpY2FsIFRyYWl0cyoKICAgLSAqQ2FyZWVyIEFtYml0aW9ucyoKICAgLSAqU29jaWFsLCBGYW1pbHkgJiBIZWFsdGggTWV0cmljcyoKMy4gQ2xpY2sgKipQcmV2aWV3KiogdG8gc2VlIGEgc3RydWN0dXJhbCBtb2NrdXAgb2YgdGhlIGRhdGEgYmVmb3JlIGNvbW1pdHRpbmcgdG8gdGhlIGRvd25sb2FkLgo0LiBPbmNlIHlvdSBhcmUgc2F0aXNmaWVkIHdpdGggdGhlIGluY2x1ZGVkIGRhdGEsIGNsaWNrICoqR2VuZXJhdGUgJiBEb3dubG9hZCBKb3VybmV5IE1hcCoqLgo1LiBUaGUgc3lzdGVtIHdpbGwgcHJvY2VzcyB0aGUgZmlsZSAodGhpcyB0YWtlcyBhIGZldyBzZWNvbmRzKSBhbmQgb3BlbiBhIHNlY3VyZSBQREYgZG93bmxvYWQgbGluayBpbiBhIG5ldyB0YWIuCgotLS0KCiMjIDMuIENoYXR0aW5nIHdpdGggdGhlIEFkdmlzb3IKCklmIHlvdXIgY2hpbGQncyBzY2hvb2wgaGFzIGVuYWJsZWQgRmFtaWx5IENoYXQsIHlvdSBjYW4gY29tbXVuaWNhdGUgZGlyZWN0bHkgd2l0aCB0aGVpciBhc3NpZ25lZCBhZHZpc29yIGZyb20gdGhpcyBwYWdlLgoKMS4gTG9jYXRlIHRoZSAqKkFkdmlzb3IgQ2hhdCoqIHBhbmVsIG9uIHRoZSBzdHVkZW50IGRldGFpbCBwYWdlLgoyLiBBIHJlZCBiYWRnZSB3aWxsIGluZGljYXRlIGlmIHlvdSBoYXZlIHVucmVhZCBtZXNzYWdlcy4KMy4gQ2xpY2sgdG8gb3BlbiB0aGUgc2VjdXJlIGNoYXQgdGhyZWFkLgo0LiBZb3UgY2FuIHJlYWQgcGFzdCBtZXNzYWdlcywgYXNrIHF1ZXN0aW9ucywgYW5kIGNvb3JkaW5hdGUgc3VwcG9ydCBzdHJhdGVnaWVzIGRpcmVjdGx5IHRocm91Z2ggdGhlIHBsYXRmb3JtLgoKLS0tCgojIyA0LiBNYW5hZ2luZyBTdWJzY3JpcHRpb24gUGxhbnMKCklmIElEUGlja2VyIGlzIG9mZmVyZWQgdG8geW91IGFzIGEgZGlyZWN0LXRvLWNvbnN1bWVyIHByb2R1Y3QgKHJhdGhlciB0aGFuIHRocm91Z2ggYSBzY2hvb2wpLCB5b3UgY29udHJvbCB0aGUgYmlsbGluZy4KCjEuIFNjcm9sbCB0byB0aGUgKipTdWJzY3JpcHRpb24qKiBhcmVhLgoyLiBSZXZpZXcgeW91ciBjaGlsZCdzIGN1cnJlbnQgYWN0aXZlIHBsYW4gdGllci4KMy4gQ29tcGFyZSBhdmFpbGFibGUgdXBncmFkZXMgKGUuZy4sIHVubG9ja2luZyBmdWxsIFBERiByZXBvcnRzIG9yIHVubGltaXRlZCBtZW50b3IgY2hhdHMpLgo0LiBDbGljayB0byBpbml0aWF0ZSB0aGUgc2VjdXJlIHN0cmlwZS9jaGVja291dCBmbG93IHRvIHVwZ3JhZGUgdGhlaXIgYWNjb3VudCBpbnN0YW50bHkuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSBKb3VybmV5IE1hcCBwcmV2aWV3IGlzIHRvdGFsbHkgZW1wdHkgfCBZb3UgbXVzdCBzZWxlY3QgYXQgbGVhc3Qgb25lIGRhdGEgcG9pbnQgY2hlY2tib3ggKGxpa2UgIkVkdWNhdGlvbiIpIGJlZm9yZSB0aGUgcHJldmlldyB3aWxsIGdlbmVyYXRlIHwKfCBUaGUgSm91cm5leSBtYXAgZG93bmxvYWRlZCwgYnV0IHBhZ2VzIGFyZSBibGFuayB8IFlvdXIgY2hpbGQgbWF5IG5vdCBoYXZlIGNvbXBsZXRlZCBlbm91Z2ggYXNzZXNzbWVudHMgdG8gcG9wdWxhdGUgdGhvc2Ugc3BlY2lmaWMgc2VjdGlvbnMgeWV0IHwKfCBJIHNlZSBhIGhpZ2ggdW5yZWFkIGNvdW50LCBidXQgbm8gbmV3IG1lc3NhZ2VzIGluIHRoZSBBZHZpc29yIENoYXQgfCBUcnkgcmVmcmVzaGluZyB0aGUgcGFnZS4gSW4gcmFyZSBjYXNlcywgdGhlIHVucmVhZCBjb3VudCBtYXkgcmVmbGVjdCBtZXNzYWdlcyBzZW50IHN0cmljdGx5IHRvIHlvdXIgY2hpbGQgKFN0dWRlbnQtQWR2aXNvciB0aHJlYWQpIHJhdGhlciB0aGFuIHRoZSBQYXJlbnQtQWR2aXNvciB0aHJlYWQgfAo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">Ck9uY2UgeW91IG9wZW4gYSBsaW5rZWQgc3R1ZGVudCdzIHByb2ZpbGUgZnJvbSB5b3VyIGRhc2hib2FyZCwgeW91IGdhaW4gYWNjZXNzIHRvIHBvd2VyZnVsIHRyYWNraW5nIHRvb2xzIGFuZCBkaXJlY3QgY29tbXVuaWNhdGlvbiBsaW5lcyB3aXRoIHRoZWlyIGVkdWNhdGlvbmFsIHRlYW0uCgotLS0KCiMjIDEuIFJldmlld2luZyBQcm9ncmVzcyBhbmQgSW5zaWdodHMKCkF0IHRoZSB0b3Agb2YgdGhlIHN0dWRlbnQgZGV0YWlsIHBhZ2UsIHlvdSB3aWxsIHNlZSB0aGVpciAqKkJhc2ljIFByb2ZpbGUqKiAobmFtZSwgYWdlLCBncmFkZSkuIEJlbG93IHRoaXMsIHRoZSBwYWdlIGlzIGJyb2tlbiBkb3duIGludG8gaW5zaWdodCBibG9ja3M6CgotICoqQXNzZXNzbWVudCBQcm9ncmVzczoqKiBRdWlja2x5IHNlZSB3aGljaCByZXF1aXJlZCBwc3ljaG9sb2dpY2FsIG9yIGVkdWNhdGlvbmFsIGFzc2Vzc21lbnRzIHlvdXIgY2hpbGQgaGFzIGNvbXBsZXRlZCwgYW5kIHdoaWNoIGFyZSBzdGlsbCBwZW5kaW5nLgotICoqUmVjb21tZW5kYXRpb25zIFN1bW1hcnk6KiogQSBoaWdoLWxldmVsIHZpZXcgb2YgdGhlIGNhcmVlciBwYXRocyBvciB1bml2ZXJzaXRpZXMgdGhlIEFJIGhhcyBzdWdnZXN0ZWQgZm9yIHRoZW0gYmFzZWQgb24gdGhlaXIgcmVzdWx0cy4KLSAqKk1lbnRvcnNoaXAgQWN0aXZpdHk6KiogU2VlIGlmIHlvdXIgY2hpbGQgaGFzIGJlZW4gdXRpbGl6aW5nIHRoZSBBSSBtZW50b3JzIG9yIGNoZWNraW5nIGluIHdpdGggdGhlaXIgaHVtYW4gYWR2aXNvci4KCiFbU3R1ZGVudCBkZXRhaWwgcGFnZSBzaG93aW5nIGFzc2Vzc21lbnQgcHJvZ3Jlc3MgY2hlY2tsaXN0LCByZWNvbW1lbmRhdGlvbnMgc3VtbWFyeSwgYW5kIG1lbnRvcnNoaXAgYWN0aXZpdHkgaW5kaWNhdG9yXSgvaW1hZ2VzL3VzZXItbWFudWFsL3BhcmVudC1wYW5lbC9zdHVkZW50LWRldGFpbC1vdmVydmlldy5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBzdHVkZW50IGRldGFpbCBwYWdlIHRvcCBzZWN0aW9uIHNob3dpbmcgcHJvZ3Jlc3MgYmxvY2tzIGFuZCByZWNvbW1lbmRhdGlvbiBzdW1tYXJ5LioKCi0tLQoKIyMgMi4gR2VuZXJhdGluZyB0aGUgSm91cm5leSBNYXAKClRoZSBKb3VybmV5IE1hcCBpcyBhIGNvbXByZWhlbnNpdmUsIGV4cG9ydGFibGUgcmVwb3J0IHRoYXQgc3ludGhlc2l6ZXMgeW91ciBjaGlsZCdzIGVudGlyZSBwcm9maWxlIGludG8gYSBzaW5nbGUgZG9jdW1lbnQuIEl0IGlzIGhpZ2hseSB1c2VmdWwgZm9yIGNvbGxlZ2UgYXBwbGljYXRpb25zIG9yIGV4dGVybmFsIGNvdW5zZWxpbmcuCgoxLiBTY3JvbGwgdG8gdGhlICoqSm91cm5leSBNYXAqKiBzZWN0aW9uIG9uIHRoZSBkZXRhaWwgcGFnZS4KMi4gU2VsZWN0IHRoZSBzcGVjaWZpYyAqKkRhdGEgUG9pbnRzKiogeW91IHdhbnQgaW5jbHVkZWQgaW4gdGhlIHJlcG9ydC4gWW91IGNhbiBjaGVjayBvciB1bmNoZWNrIGNhdGVnb3JpZXMgbGlrZToKICAgLSAqRGVtb2dyYXBoaWNzICYgRWR1Y2F0aW9uKgogICAtICpQc3ljaG9sb2dpY2FsIFRyYWl0cyoKICAgLSAqQ2FyZWVyIEFtYml0aW9ucyoKICAgLSAqU29jaWFsLCBGYW1pbHkgJiBIZWFsdGggTWV0cmljcyoKMy4gQ2xpY2sgKipQcmV2aWV3KiogdG8gc2VlIGEgc3RydWN0dXJhbCBtb2NrdXAgb2YgdGhlIGRhdGEgYmVmb3JlIGNvbW1pdHRpbmcgdG8gdGhlIGRvd25sb2FkLgo0LiBPbmNlIHlvdSBhcmUgc2F0aXNmaWVkIHdpdGggdGhlIGluY2x1ZGVkIGRhdGEsIGNsaWNrICoqR2VuZXJhdGUgJiBEb3dubG9hZCBKb3VybmV5IE1hcCoqLgo1LiBUaGUgc3lzdGVtIHdpbGwgcHJvY2VzcyB0aGUgZmlsZSAodGhpcyB0YWtlcyBhIGZldyBzZWNvbmRzKSBhbmQgb3BlbiBhIHNlY3VyZSBQREYgZG93bmxvYWQgbGluayBpbiBhIG5ldyB0YWIuCgohW0pvdXJuZXkgTWFwIHNlY3Rpb24gc2hvd2luZyBkYXRhIHBvaW50IGNoZWNrYm94ZXMsIFByZXZpZXcgYnV0dG9uLCBhbmQgR2VuZXJhdGUgJiBEb3dubG9hZCBidXR0b25dKC9pbWFnZXMvdXNlci1tYW51YWwvcGFyZW50LXBhbmVsL2pvdXJuZXktbWFwLWdlbmVyYXRvci5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBKb3VybmV5IE1hcCBzZWN0aW9uIHdpdGggc2V2ZXJhbCBkYXRhIHBvaW50IGNoZWNrYm94ZXMgc2VsZWN0ZWQgYW5kIHRoZSBHZW5lcmF0ZSAmIERvd25sb2FkIGJ1dHRvbiB2aXNpYmxlLioKCi0tLQoKIyMgMy4gQ2hhdHRpbmcgd2l0aCB0aGUgQWR2aXNvcgoKSWYgeW91ciBjaGlsZCdzIHNjaG9vbCBoYXMgZW5hYmxlZCBGYW1pbHkgQ2hhdCwgeW91IGNhbiBjb21tdW5pY2F0ZSBkaXJlY3RseSB3aXRoIHRoZWlyIGFzc2lnbmVkIGFkdmlzb3IgZnJvbSB0aGlzIHBhZ2UuCgoxLiBMb2NhdGUgdGhlICoqQWR2aXNvciBDaGF0KiogcGFuZWwgb24gdGhlIHN0dWRlbnQgZGV0YWlsIHBhZ2UuCjIuIEEgcmVkIGJhZGdlIHdpbGwgaW5kaWNhdGUgaWYgeW91IGhhdmUgdW5yZWFkIG1lc3NhZ2VzLgozLiBDbGljayB0byBvcGVuIHRoZSBzZWN1cmUgY2hhdCB0aHJlYWQuCjQuIFlvdSBjYW4gcmVhZCBwYXN0IG1lc3NhZ2VzLCBhc2sgcXVlc3Rpb25zLCBhbmQgY29vcmRpbmF0ZSBzdXBwb3J0IHN0cmF0ZWdpZXMgZGlyZWN0bHkgdGhyb3VnaCB0aGUgcGxhdGZvcm0uCgotLS0KCiMjIDQuIE1hbmFnaW5nIFN1YnNjcmlwdGlvbiBQbGFucwoKSWYgSURQaWNrZXIgaXMgb2ZmZXJlZCB0byB5b3UgYXMgYSBkaXJlY3QtdG8tY29uc3VtZXIgcHJvZHVjdCAocmF0aGVyIHRoYW4gdGhyb3VnaCBhIHNjaG9vbCksIHlvdSBjb250cm9sIHRoZSBiaWxsaW5nLgoKMS4gU2Nyb2xsIHRvIHRoZSAqKlN1YnNjcmlwdGlvbioqIGFyZWEuCjIuIFJldmlldyB5b3VyIGNoaWxkJ3MgY3VycmVudCBhY3RpdmUgcGxhbiB0aWVyLgozLiBDb21wYXJlIGF2YWlsYWJsZSB1cGdyYWRlcyAoZS5nLiwgdW5sb2NraW5nIGZ1bGwgUERGIHJlcG9ydHMgb3IgdW5saW1pdGVkIG1lbnRvciBjaGF0cykuCjQuIENsaWNrIHRvIGluaXRpYXRlIHRoZSBzZWN1cmUgc3RyaXBlL2NoZWNrb3V0IGZsb3cgdG8gdXBncmFkZSB0aGVpciBhY2NvdW50IGluc3RhbnRseS4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgVGhlIEpvdXJuZXkgTWFwIHByZXZpZXcgaXMgdG90YWxseSBlbXB0eSB8IFlvdSBtdXN0IHNlbGVjdCBhdCBsZWFzdCBvbmUgZGF0YSBwb2ludCBjaGVja2JveCAobGlrZSAiRWR1Y2F0aW9uIikgYmVmb3JlIHRoZSBwcmV2aWV3IHdpbGwgZ2VuZXJhdGUgfAp8IFRoZSBKb3VybmV5IG1hcCBkb3dubG9hZGVkLCBidXQgcGFnZXMgYXJlIGJsYW5rIHwgWW91ciBjaGlsZCBtYXkgbm90IGhhdmUgY29tcGxldGVkIGVub3VnaCBhc3Nlc3NtZW50cyB0byBwb3B1bGF0ZSB0aG9zZSBzcGVjaWZpYyBzZWN0aW9ucyB5ZXQgfAp8IEkgc2VlIGEgaGlnaCB1bnJlYWQgY291bnQsIGJ1dCBubyBuZXcgbWVzc2FnZXMgaW4gdGhlIEFkdmlzb3IgQ2hhdCB8IFRyeSByZWZyZXNoaW5nIHRoZSBwYWdlLiBJbiByYXJlIGNhc2VzLCB0aGUgdW5yZWFkIGNvdW50IG1heSByZWZsZWN0IG1lc3NhZ2VzIHNlbnQgc3RyaWN0bHkgdG8geW91ciBjaGlsZCAoU3R1ZGVudC1BZHZpc29yIHRocmVhZCkgcmF0aGVyIHRoYW4gdGhlIFBhcmVudC1BZHZpc29yIHRocmVhZCB8Cg==</script>
 
 <style>
  

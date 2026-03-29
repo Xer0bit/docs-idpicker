@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/student-panel/dashboard/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/student-panel/dashboard/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -21,24 +21,23 @@
 
 <title>Dashboard | IDPicker Docs</title>
 <meta name="description" content="Understanding every block on the student dashboard and how to use them effectively">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/student-panel/dashboard/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/student-panel/dashboard/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Dashboard">
   <meta property="og:description" content="Understanding every block on the student dashboard and how to use them effectively">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
-    <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
+    <meta property="article:modified_time" content="2026-03-29T18:13:42+05:00">
 
   <meta itemprop="name" content="Dashboard">
   <meta itemprop="description" content="Understanding every block on the student dashboard and how to use them effectively">
-  <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="580">
+  <meta itemprop="dateModified" content="2026-03-29T18:13:42+05:00">
+  <meta itemprop="wordCount" content="658">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Dashboard">
   <meta name="twitter:description" content="Understanding every block on the student dashboard and how to use them effectively">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -395,6 +408,7 @@
   </tbody>
 </table>
 <p><img src="/images/user-manual/student-panel/dashboard-overview.png" alt="Student dashboard overview showing Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards"></p>
+<p><em>Image placeholder: Add full-width screenshot of the student dashboard showing all major blocks: Assessment Reports, Assigned Forms, Invitations, Notifications, and Program cards.</em></p>
 <hr>
 <h2 id="your-first-5-actions-after-logging-in">Your First 5 Actions After Logging In</h2>
 <p>Follow this sequence whenever you start a new session for maximum efficiency:</p>
@@ -431,6 +445,7 @@
 <p><strong>Note:</strong> Submitted forms are removed automatically from the pending list. If a form disappears, it was already submitted or removed by the advisor.</p>
 </blockquote>
 <p><img src="/images/user-manual/student-panel/dashboard-assigned-forms.png" alt="Assigned Forms block with a pending form card and Open button highlighted"></p>
+<p><em>Image placeholder: Add screenshot of the Assigned Forms block with at least one pending form card and the Open button visible.</em></p>
 <hr>
 <h2 id="handling-organization-invitations">Handling Organization Invitations</h2>
 <ol>
@@ -440,6 +455,7 @@
 <li>Your decision is saved immediately.</li>
 </ol>
 <p><img src="/images/user-manual/student-panel/dashboard-invitations.png" alt="Organization invitation card showing organization name with Accept and Decline buttons"></p>
+<p><em>Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.</em></p>
 <hr>
 <h2 id="reading-notifications">Reading Notifications</h2>
 <ol>
@@ -458,6 +474,7 @@
 <li>Complete all remaining questions and click <strong>Submit</strong>.
 <img src="/images/user-manual/student-panel/dashboard-resume-assessment.png" alt="Dashboard showing Resume Assessment prompt card with Continue button"></li>
 </ol>
+<p><em>Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.</em></p>
 <hr>
 <h2 id="exploring-program-cards">Exploring Program Cards</h2>
 <ul>
@@ -516,12 +533,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBEYXNoYm9hcmQgaXMgdGhlIGZpcnN0IHRoaW5nIHlvdSBzZWUgYWZ0ZXIgbG9nZ2luZyBpbi4gSXQgZ2l2ZXMgeW91IGEgYmlyZCdzLWV5ZSB2aWV3IG9mIGV2ZXJ5dGhpbmcgdGhhdCBuZWVkcyB5b3VyIGF0dGVudGlvbiDigJQgYXNzZXNzbWVudHMsIG5vdGlmaWNhdGlvbnMsIGZvcm1zLCBpbnZpdGF0aW9ucywgYW5kIHByb2dyYW0gcmVjb21tZW5kYXRpb25zLgoKLS0tCgojIyBXaGF0IFlvdSBTZWUgb24gdGhlIERhc2hib2FyZAoKV2hlbiB5b3UgbGFuZCBvbiB0aGUgZGFzaGJvYXJkLCB5b3Ugd2lsbCBzZWUgc2V2ZXJhbCBjb250ZW50IGJsb2NrczoKCnwgQmxvY2sgfCBXaGF0IEl0IFNob3dzIHwgV2hhdCB0byBEbyB8CnwtLS18LS0tfC0tLXwKfCAqKkFzc2Vzc21lbnQgUmVwb3J0cyoqIHwgWW91ciBsYXRlc3QgY29tcGxldGVkIGFzc2Vzc21lbnQgb3V0cHV0IHwgRG93bmxvYWQgb3IgdmlldyB5b3VyIHJlcG9ydCB8CnwgKipBc3NpZ25lZCBGb3JtcyoqIHwgRm9ybXMgc2VudCB0byB5b3UgYnkgeW91ciBhZHZpc29yIG9yIG9yZ2FuaXphdGlvbiB8IE9wZW4gYW5kIHJlc3BvbmQgfAp8ICoqT3JnYW5pemF0aW9uIEludml0YXRpb25zKiogfCBQZW5kaW5nIGludml0YXRpb25zIHRvIGpvaW4gYW4gb3JnYW5pemF0aW9uIHwgQWNjZXB0IG9yIERlY2xpbmUgfAp8ICoqTm90aWZpY2F0aW9ucyoqIHwgU3lzdGVtIGFuZCBhZHZpc29yIGFubm91bmNlbWVudHMgfCBSZWFkIGFuZCBhY3Qgb24gcmVsZXZhbnQgaXRlbXMgfAp8ICoqUHJvbW90ZWQgUHJvZ3JhbXMqKiB8IEhpZ2hsaWdodGVkIHVuaXZlcnNpdHkvY2FyZWVyIHByb2dyYW1zIHwgQnJvd3NlIGFuZCBleHBsb3JlIHwKfCAqKlJhbmRvbSBQcm9ncmFtcyoqIHwgRXhwbG9yYXRvcnkgcHJvZ3JhbSBkaXNjb3ZlcnkgfCBDbGljayBpbnRvIGFueSB0aGF0IGxvb2sgaW50ZXJlc3RpbmcgfAoKIVtTdHVkZW50IGRhc2hib2FyZCBvdmVydmlldyBzaG93aW5nIEFzc2Vzc21lbnQgUmVwb3J0cywgQXNzaWduZWQgRm9ybXMsIEludml0YXRpb25zLCBOb3RpZmljYXRpb25zLCBhbmQgUHJvZ3JhbSBjYXJkc10oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC1vdmVydmlldy5wbmcpCgotLS0KCiMjIFlvdXIgRmlyc3QgNSBBY3Rpb25zIEFmdGVyIExvZ2dpbmcgSW4KCkZvbGxvdyB0aGlzIHNlcXVlbmNlIHdoZW5ldmVyIHlvdSBzdGFydCBhIG5ldyBzZXNzaW9uIGZvciBtYXhpbXVtIGVmZmljaWVuY3k6CgoxLiAqKkNoZWNrIE5vdGlmaWNhdGlvbnMqKiDigJQgTG9vayBmb3IgYW55IG5ldyBhbm5vdW5jZW1lbnRzIGZyb20geW91ciBhZHZpc29yIG9yIHBsYXRmb3JtLgoyLiAqKk9wZW4gQXNzaWduZWQgRm9ybXMqKiDigJQgSWYgYSBmb3JtIGlzIHBlbmRpbmcsIGNvbXBsZXRlIGl0IG5vdyBiZWZvcmUgaXQgc2xpcHMgYXdheS4KMy4gKipSZXN1bWUgYW4gQXNzZXNzbWVudCoqIOKAlCBJZiB5b3UgbGVmdCBhbiBhc3Nlc3NtZW50IGluIHByb2dyZXNzLCB0aGUgZGFzaGJvYXJkIHNob3dzIGEgcmVzdW1lIHByb21wdC4KNC4gKipCcm93c2UgUmVjb21tZW5kYXRpb25zKiog4oCUIENsaWNrIFJlY29tbWVuZGF0aW9ucyBpbiB0aGUgc2lkZWJhciB0byBjaGVjayB5b3VyIGxhdGVzdCBjYXJlZXIgb3IgdW5pdmVyc2l0eSBtYXRjaGVzLgo1LiAqKkV4cGxvcmUgUHJvZ3JhbSBDYXJkcyoqIOKAlCBCcm93c2UgcHJvbW90ZWQgYW5kIHJhbmRvbSBwcm9ncmFtcyB0byBkaXNjb3ZlciBuZXcgb3B0aW9ucy4KCi0tLQoKIyMgVXNpbmcgdGhlIEFzc2Vzc21lbnQgUmVwb3J0cyBCbG9jawoKMS4gTG9jYXRlIHRoZSAqKkFzc2Vzc21lbnQgUmVwb3J0cyoqIGJsb2NrIG9uIHlvdXIgZGFzaGJvYXJkLgoyLiBJZiBhIHJlcG9ydCBpcyBhdmFpbGFibGUsIGNsaWNrIHRoZSAqKlZpZXcqKiBvciAqKkRvd25sb2FkKiogYnV0dG9uLgozLiBJZiB0aGUgYnV0dG9uIGFwcGVhcnMgbG9ja2VkIG9yIHJlc3RyaWN0ZWQ6CiAgIC0gWW91ciBhc3Nlc3NtZW50IG1heSBub3QgYmUgY29tcGxldGUgeWV0IOKGkiBnbyB0byAqKlNlbGYgQXNzZXNzbWVudCoqIGluIHRoZSBzaWRlYmFyLgogICAtIFlvdXIgYWNjb3VudCBwbGFuIG1heSBub3QgaW5jbHVkZSByZXBvcnQgZG93bmxvYWRzIOKGkiBjaGVjayB5b3VyIHN1YnNjcmlwdGlvbiBpbiBTZXR0aW5ncy4KCi0tLQoKIyMgVXNpbmcgdGhlIEFzc2lnbmVkIEZvcm1zIEJsb2NrCgpGb3JtcyBhcmUgY3JlYXRlZCBieSB5b3VyIGFkdmlzb3IgYW5kIHJlcXVpcmUgeW91ciByZXNwb25zZS4KCjEuIExvY2F0ZSAqKkFzc2lnbmVkIEZvcm1zKiogb24gdGhlIGRhc2hib2FyZC4KMi4gQ2xpY2sgKipPcGVuKiogb24gYW55IHBlbmRpbmcgZm9ybS4KMy4gQ29tcGxldGUgYWxsIGZpZWxkcyBvbiB0aGUgZm9ybSBwYWdlLgo0LiBDbGljayAqKlN1Ym1pdCoqLgo1LiBZb3UgYXJlIHJldHVybmVkIHRvIHRoZSBkYXNoYm9hcmQgYW5kIHRoZSBmb3JtIGRpc2FwcGVhcnMgZnJvbSB0aGUgcGVuZGluZyBsaXN0LgoKPiAqKk5vdGU6KiogU3VibWl0dGVkIGZvcm1zIGFyZSByZW1vdmVkIGF1dG9tYXRpY2FsbHkgZnJvbSB0aGUgcGVuZGluZyBsaXN0LiBJZiBhIGZvcm0gZGlzYXBwZWFycywgaXQgd2FzIGFscmVhZHkgc3VibWl0dGVkIG9yIHJlbW92ZWQgYnkgdGhlIGFkdmlzb3IuCgohW0Fzc2lnbmVkIEZvcm1zIGJsb2NrIHdpdGggYSBwZW5kaW5nIGZvcm0gY2FyZCBhbmQgT3BlbiBidXR0b24gaGlnaGxpZ2h0ZWRdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9kYXNoYm9hcmQtYXNzaWduZWQtZm9ybXMucG5nKQoKLS0tCgojIyBIYW5kbGluZyBPcmdhbml6YXRpb24gSW52aXRhdGlvbnMKCjEuIEZpbmQgdGhlICoqSW52aXRhdGlvbnMqKiBibG9jayBvbiB0aGUgZGFzaGJvYXJkLgoyLiBDbGljayBhbiBpbnZpdGF0aW9uIGNhcmQgdG8gcmV2aWV3IHRoZSBvcmdhbml6YXRpb24gbmFtZSBhbmQgY29udGV4dC4KMy4gQ2xpY2sgKipBY2NlcHQqKiB0byBqb2luIG9yICoqRGVjbGluZSoqIHRvIHJlZnVzZS4KNC4gWW91ciBkZWNpc2lvbiBpcyBzYXZlZCBpbW1lZGlhdGVseS4KCiFbT3JnYW5pemF0aW9uIGludml0YXRpb24gY2FyZCBzaG93aW5nIG9yZ2FuaXphdGlvbiBuYW1lIHdpdGggQWNjZXB0IGFuZCBEZWNsaW5lIGJ1dHRvbnNdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9kYXNoYm9hcmQtaW52aXRhdGlvbnMucG5nKQoKLS0tCgojIyBSZWFkaW5nIE5vdGlmaWNhdGlvbnMKCjEuIExvY2F0ZSB0aGUgKipOb3RpZmljYXRpb25zKiogYmxvY2suCjIuIENsaWNrIG9uIGFueSBub3RpZmljYXRpb24gdGhhdCBsb29rcyByZWxldmFudC4KMy4gSXQgbWF5IHRha2UgeW91IGRpcmVjdGx5IHRvIHRoZSByZWxhdGVkIG1vZHVsZSAoZm9ybSwgYXNzZXNzbWVudCwgcmVjb21tZW5kYXRpb24sIGV0Yy4pLgo0LiBBZnRlciByZXZpZXdpbmcgYWxsLCByZXR1cm4gdG8gdGhlIG1haW4gZGFzaGJvYXJkLgoKLS0tCgojIyBSZXN1bWluZyBhbiBJbi1Qcm9ncmVzcyBBc3Nlc3NtZW50CgpJZiB5b3Ugc3RhcnRlZCBhbiBhc3Nlc3NtZW50IGFuZCBkaWQgbm90IGZpbmlzaCBpdDoKCjEuIFRoZSBkYXNoYm9hcmQgc2hvd3MgYSAqKlJlc3VtZSoqIHByb21wdCBjYXJkIGF1dG9tYXRpY2FsbHkuCjIuIENsaWNrICoqUmVzdW1lIEFzc2Vzc21lbnQqKi4KMy4gWW91IGFyZSB0YWtlbiBiYWNrIHRvIGV4YWN0bHkgd2hlcmUgeW91IGxlZnQgb2ZmLgo0LiBDb21wbGV0ZSBhbGwgcmVtYWluaW5nIHF1ZXN0aW9ucyBhbmQgY2xpY2sgKipTdWJtaXQqKi4KIVtEYXNoYm9hcmQgc2hvd2luZyBSZXN1bWUgQXNzZXNzbWVudCBwcm9tcHQgY2FyZCB3aXRoIENvbnRpbnVlIGJ1dHRvbl0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC1yZXN1bWUtYXNzZXNzbWVudC5wbmcpCi0tLQoKIyMgRXhwbG9yaW5nIFByb2dyYW0gQ2FyZHMKCi0gKipQcm9tb3RlZCBwcm9ncmFtcyoqIGFyZSBzcGVjaWZpY2FsbHkgZmVhdHVyZWQgYnkgdGhlIHBsYXRmb3JtIG9yIHlvdXIgb3JnYW5pemF0aW9uLgotICoqUmFuZG9tIHByb2dyYW1zKiogYXJlIHN1cmZhY2VkIGZvciBvcGVuIGV4cGxvcmF0aW9uLgoKQ2xpY2sgYW55IHByb2dyYW0gY2FyZCB0byB2aWV3IGl0cyBkZXRhaWxzLiBUbyBzZWFyY2ggYW5kIGZpbHRlciBtb3JlIHByZWNpc2VseSwgb3BlbiAqKlVuaXZlcnNpdHkgU2VhcmNoKiogZnJvbSB0aGUgc2lkZWJhci4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgRGFzaGJvYXJkIGFwcGVhcnMgZW1wdHkgb24gZmlyc3QgbG9naW4gfCBOb3JtYWwg4oCUIGRhdGEgcG9wdWxhdGVzIGFzIHlvdSBjb21wbGV0ZSBhc3Nlc3NtZW50cywgcmVjZWl2ZSBmb3JtcywgYW5kIGdldCBpbnZpdGF0aW9ucyB8CnwgQSBmb3JtIEkgbmVlZCBpcyBtaXNzaW5nIHwgQ2hlY2sgd2l0aCB5b3VyIGFkdmlzb3Ig4oCUIHRoZXkgbWF5IG5vdCBoYXZlIGFzc2lnbmVkIGl0IHlldCwgb3IgeW91IG1heSBoYXZlIGFscmVhZHkgc3VibWl0dGVkIGl0IHwKfCBSZXBvcnQgZG93bmxvYWQgYnV0dG9uIGlzIGdyZXllZCBvdXQgfCBDb21wbGV0ZSB5b3VyIGFzc2Vzc21lbnQgZmlyc3QsIG9yIGNoZWNrIHlvdXIgc3Vic2NyaXB0aW9uIHBsYW4gfAp8IFJlY29tbWVuZGF0aW9ucyBibG9jayBub3QgdmlzaWJsZSB8IEl0IG1heSBvbmx5IGFwcGVhciBhZnRlciB5b3VyIGZpcnN0IGFzc2Vzc21lbnQgaXMgY29tcGxldGUgfAo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBEYXNoYm9hcmQgaXMgdGhlIGZpcnN0IHRoaW5nIHlvdSBzZWUgYWZ0ZXIgbG9nZ2luZyBpbi4gSXQgZ2l2ZXMgeW91IGEgYmlyZCdzLWV5ZSB2aWV3IG9mIGV2ZXJ5dGhpbmcgdGhhdCBuZWVkcyB5b3VyIGF0dGVudGlvbiDigJQgYXNzZXNzbWVudHMsIG5vdGlmaWNhdGlvbnMsIGZvcm1zLCBpbnZpdGF0aW9ucywgYW5kIHByb2dyYW0gcmVjb21tZW5kYXRpb25zLgoKLS0tCgojIyBXaGF0IFlvdSBTZWUgb24gdGhlIERhc2hib2FyZAoKV2hlbiB5b3UgbGFuZCBvbiB0aGUgZGFzaGJvYXJkLCB5b3Ugd2lsbCBzZWUgc2V2ZXJhbCBjb250ZW50IGJsb2NrczoKCnwgQmxvY2sgfCBXaGF0IEl0IFNob3dzIHwgV2hhdCB0byBEbyB8CnwtLS18LS0tfC0tLXwKfCAqKkFzc2Vzc21lbnQgUmVwb3J0cyoqIHwgWW91ciBsYXRlc3QgY29tcGxldGVkIGFzc2Vzc21lbnQgb3V0cHV0IHwgRG93bmxvYWQgb3IgdmlldyB5b3VyIHJlcG9ydCB8CnwgKipBc3NpZ25lZCBGb3JtcyoqIHwgRm9ybXMgc2VudCB0byB5b3UgYnkgeW91ciBhZHZpc29yIG9yIG9yZ2FuaXphdGlvbiB8IE9wZW4gYW5kIHJlc3BvbmQgfAp8ICoqT3JnYW5pemF0aW9uIEludml0YXRpb25zKiogfCBQZW5kaW5nIGludml0YXRpb25zIHRvIGpvaW4gYW4gb3JnYW5pemF0aW9uIHwgQWNjZXB0IG9yIERlY2xpbmUgfAp8ICoqTm90aWZpY2F0aW9ucyoqIHwgU3lzdGVtIGFuZCBhZHZpc29yIGFubm91bmNlbWVudHMgfCBSZWFkIGFuZCBhY3Qgb24gcmVsZXZhbnQgaXRlbXMgfAp8ICoqUHJvbW90ZWQgUHJvZ3JhbXMqKiB8IEhpZ2hsaWdodGVkIHVuaXZlcnNpdHkvY2FyZWVyIHByb2dyYW1zIHwgQnJvd3NlIGFuZCBleHBsb3JlIHwKfCAqKlJhbmRvbSBQcm9ncmFtcyoqIHwgRXhwbG9yYXRvcnkgcHJvZ3JhbSBkaXNjb3ZlcnkgfCBDbGljayBpbnRvIGFueSB0aGF0IGxvb2sgaW50ZXJlc3RpbmcgfAoKIVtTdHVkZW50IGRhc2hib2FyZCBvdmVydmlldyBzaG93aW5nIEFzc2Vzc21lbnQgUmVwb3J0cywgQXNzaWduZWQgRm9ybXMsIEludml0YXRpb25zLCBOb3RpZmljYXRpb25zLCBhbmQgUHJvZ3JhbSBjYXJkc10oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC1vdmVydmlldy5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBmdWxsLXdpZHRoIHNjcmVlbnNob3Qgb2YgdGhlIHN0dWRlbnQgZGFzaGJvYXJkIHNob3dpbmcgYWxsIG1ham9yIGJsb2NrczogQXNzZXNzbWVudCBSZXBvcnRzLCBBc3NpZ25lZCBGb3JtcywgSW52aXRhdGlvbnMsIE5vdGlmaWNhdGlvbnMsIGFuZCBQcm9ncmFtIGNhcmRzLioKCi0tLQoKIyMgWW91ciBGaXJzdCA1IEFjdGlvbnMgQWZ0ZXIgTG9nZ2luZyBJbgoKRm9sbG93IHRoaXMgc2VxdWVuY2Ugd2hlbmV2ZXIgeW91IHN0YXJ0IGEgbmV3IHNlc3Npb24gZm9yIG1heGltdW0gZWZmaWNpZW5jeToKCjEuICoqQ2hlY2sgTm90aWZpY2F0aW9ucyoqIOKAlCBMb29rIGZvciBhbnkgbmV3IGFubm91bmNlbWVudHMgZnJvbSB5b3VyIGFkdmlzb3Igb3IgcGxhdGZvcm0uCjIuICoqT3BlbiBBc3NpZ25lZCBGb3JtcyoqIOKAlCBJZiBhIGZvcm0gaXMgcGVuZGluZywgY29tcGxldGUgaXQgbm93IGJlZm9yZSBpdCBzbGlwcyBhd2F5LgozLiAqKlJlc3VtZSBhbiBBc3Nlc3NtZW50Kiog4oCUIElmIHlvdSBsZWZ0IGFuIGFzc2Vzc21lbnQgaW4gcHJvZ3Jlc3MsIHRoZSBkYXNoYm9hcmQgc2hvd3MgYSByZXN1bWUgcHJvbXB0Lgo0LiAqKkJyb3dzZSBSZWNvbW1lbmRhdGlvbnMqKiDigJQgQ2xpY2sgUmVjb21tZW5kYXRpb25zIGluIHRoZSBzaWRlYmFyIHRvIGNoZWNrIHlvdXIgbGF0ZXN0IGNhcmVlciBvciB1bml2ZXJzaXR5IG1hdGNoZXMuCjUuICoqRXhwbG9yZSBQcm9ncmFtIENhcmRzKiog4oCUIEJyb3dzZSBwcm9tb3RlZCBhbmQgcmFuZG9tIHByb2dyYW1zIHRvIGRpc2NvdmVyIG5ldyBvcHRpb25zLgoKLS0tCgojIyBVc2luZyB0aGUgQXNzZXNzbWVudCBSZXBvcnRzIEJsb2NrCgoxLiBMb2NhdGUgdGhlICoqQXNzZXNzbWVudCBSZXBvcnRzKiogYmxvY2sgb24geW91ciBkYXNoYm9hcmQuCjIuIElmIGEgcmVwb3J0IGlzIGF2YWlsYWJsZSwgY2xpY2sgdGhlICoqVmlldyoqIG9yICoqRG93bmxvYWQqKiBidXR0b24uCjMuIElmIHRoZSBidXR0b24gYXBwZWFycyBsb2NrZWQgb3IgcmVzdHJpY3RlZDoKICAgLSBZb3VyIGFzc2Vzc21lbnQgbWF5IG5vdCBiZSBjb21wbGV0ZSB5ZXQg4oaSIGdvIHRvICoqU2VsZiBBc3Nlc3NtZW50KiogaW4gdGhlIHNpZGViYXIuCiAgIC0gWW91ciBhY2NvdW50IHBsYW4gbWF5IG5vdCBpbmNsdWRlIHJlcG9ydCBkb3dubG9hZHMg4oaSIGNoZWNrIHlvdXIgc3Vic2NyaXB0aW9uIGluIFNldHRpbmdzLgoKLS0tCgojIyBVc2luZyB0aGUgQXNzaWduZWQgRm9ybXMgQmxvY2sKCkZvcm1zIGFyZSBjcmVhdGVkIGJ5IHlvdXIgYWR2aXNvciBhbmQgcmVxdWlyZSB5b3VyIHJlc3BvbnNlLgoKMS4gTG9jYXRlICoqQXNzaWduZWQgRm9ybXMqKiBvbiB0aGUgZGFzaGJvYXJkLgoyLiBDbGljayAqKk9wZW4qKiBvbiBhbnkgcGVuZGluZyBmb3JtLgozLiBDb21wbGV0ZSBhbGwgZmllbGRzIG9uIHRoZSBmb3JtIHBhZ2UuCjQuIENsaWNrICoqU3VibWl0KiouCjUuIFlvdSBhcmUgcmV0dXJuZWQgdG8gdGhlIGRhc2hib2FyZCBhbmQgdGhlIGZvcm0gZGlzYXBwZWFycyBmcm9tIHRoZSBwZW5kaW5nIGxpc3QuCgo&#43;ICoqTm90ZToqKiBTdWJtaXR0ZWQgZm9ybXMgYXJlIHJlbW92ZWQgYXV0b21hdGljYWxseSBmcm9tIHRoZSBwZW5kaW5nIGxpc3QuIElmIGEgZm9ybSBkaXNhcHBlYXJzLCBpdCB3YXMgYWxyZWFkeSBzdWJtaXR0ZWQgb3IgcmVtb3ZlZCBieSB0aGUgYWR2aXNvci4KCiFbQXNzaWduZWQgRm9ybXMgYmxvY2sgd2l0aCBhIHBlbmRpbmcgZm9ybSBjYXJkIGFuZCBPcGVuIGJ1dHRvbiBoaWdobGlnaHRlZF0oL2ltYWdlcy91c2VyLW1hbnVhbC9zdHVkZW50LXBhbmVsL2Rhc2hib2FyZC1hc3NpZ25lZC1mb3Jtcy5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSBBc3NpZ25lZCBGb3JtcyBibG9jayB3aXRoIGF0IGxlYXN0IG9uZSBwZW5kaW5nIGZvcm0gY2FyZCBhbmQgdGhlIE9wZW4gYnV0dG9uIHZpc2libGUuKgoKLS0tCgojIyBIYW5kbGluZyBPcmdhbml6YXRpb24gSW52aXRhdGlvbnMKCjEuIEZpbmQgdGhlICoqSW52aXRhdGlvbnMqKiBibG9jayBvbiB0aGUgZGFzaGJvYXJkLgoyLiBDbGljayBhbiBpbnZpdGF0aW9uIGNhcmQgdG8gcmV2aWV3IHRoZSBvcmdhbml6YXRpb24gbmFtZSBhbmQgY29udGV4dC4KMy4gQ2xpY2sgKipBY2NlcHQqKiB0byBqb2luIG9yICoqRGVjbGluZSoqIHRvIHJlZnVzZS4KNC4gWW91ciBkZWNpc2lvbiBpcyBzYXZlZCBpbW1lZGlhdGVseS4KCiFbT3JnYW5pemF0aW9uIGludml0YXRpb24gY2FyZCBzaG93aW5nIG9yZ2FuaXphdGlvbiBuYW1lIHdpdGggQWNjZXB0IGFuZCBEZWNsaW5lIGJ1dHRvbnNdKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9kYXNoYm9hcmQtaW52aXRhdGlvbnMucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiBhbiBvcmdhbml6YXRpb24gaW52aXRhdGlvbiBjYXJkIHNob3dpbmcgdGhlIG9yZ2FuaXphdGlvbiBuYW1lIGFuZCBib3RoIEFjY2VwdCBhbmQgRGVjbGluZSBidXR0b25zLioKCi0tLQoKIyMgUmVhZGluZyBOb3RpZmljYXRpb25zCgoxLiBMb2NhdGUgdGhlICoqTm90aWZpY2F0aW9ucyoqIGJsb2NrLgoyLiBDbGljayBvbiBhbnkgbm90aWZpY2F0aW9uIHRoYXQgbG9va3MgcmVsZXZhbnQuCjMuIEl0IG1heSB0YWtlIHlvdSBkaXJlY3RseSB0byB0aGUgcmVsYXRlZCBtb2R1bGUgKGZvcm0sIGFzc2Vzc21lbnQsIHJlY29tbWVuZGF0aW9uLCBldGMuKS4KNC4gQWZ0ZXIgcmV2aWV3aW5nIGFsbCwgcmV0dXJuIHRvIHRoZSBtYWluIGRhc2hib2FyZC4KCi0tLQoKIyMgUmVzdW1pbmcgYW4gSW4tUHJvZ3Jlc3MgQXNzZXNzbWVudAoKSWYgeW91IHN0YXJ0ZWQgYW4gYXNzZXNzbWVudCBhbmQgZGlkIG5vdCBmaW5pc2ggaXQ6CgoxLiBUaGUgZGFzaGJvYXJkIHNob3dzIGEgKipSZXN1bWUqKiBwcm9tcHQgY2FyZCBhdXRvbWF0aWNhbGx5LgoyLiBDbGljayAqKlJlc3VtZSBBc3Nlc3NtZW50KiouCjMuIFlvdSBhcmUgdGFrZW4gYmFjayB0byBleGFjdGx5IHdoZXJlIHlvdSBsZWZ0IG9mZi4KNC4gQ29tcGxldGUgYWxsIHJlbWFpbmluZyBxdWVzdGlvbnMgYW5kIGNsaWNrICoqU3VibWl0KiouCiFbRGFzaGJvYXJkIHNob3dpbmcgUmVzdW1lIEFzc2Vzc21lbnQgcHJvbXB0IGNhcmQgd2l0aCBDb250aW51ZSBidXR0b25dKC9pbWFnZXMvdXNlci1tYW51YWwvc3R1ZGVudC1wYW5lbC9kYXNoYm9hcmQtcmVzdW1lLWFzc2Vzc21lbnQucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgZGFzaGJvYXJkIFJlc3VtZSBBc3Nlc3NtZW50IHByb21wdCBjYXJkIHdpdGggdGhlIENvbnRpbnVlIGJ1dHRvbiBoaWdobGlnaHRlZC4qCgotLS0KCiMjIEV4cGxvcmluZyBQcm9ncmFtIENhcmRzCgotICoqUHJvbW90ZWQgcHJvZ3JhbXMqKiBhcmUgc3BlY2lmaWNhbGx5IGZlYXR1cmVkIGJ5IHRoZSBwbGF0Zm9ybSBvciB5b3VyIG9yZ2FuaXphdGlvbi4KLSAqKlJhbmRvbSBwcm9ncmFtcyoqIGFyZSBzdXJmYWNlZCBmb3Igb3BlbiBleHBsb3JhdGlvbi4KCkNsaWNrIGFueSBwcm9ncmFtIGNhcmQgdG8gdmlldyBpdHMgZGV0YWlscy4gVG8gc2VhcmNoIGFuZCBmaWx0ZXIgbW9yZSBwcmVjaXNlbHksIG9wZW4gKipVbml2ZXJzaXR5IFNlYXJjaCoqIGZyb20gdGhlIHNpZGViYXIuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IERhc2hib2FyZCBhcHBlYXJzIGVtcHR5IG9uIGZpcnN0IGxvZ2luIHwgTm9ybWFsIOKAlCBkYXRhIHBvcHVsYXRlcyBhcyB5b3UgY29tcGxldGUgYXNzZXNzbWVudHMsIHJlY2VpdmUgZm9ybXMsIGFuZCBnZXQgaW52aXRhdGlvbnMgfAp8IEEgZm9ybSBJIG5lZWQgaXMgbWlzc2luZyB8IENoZWNrIHdpdGggeW91ciBhZHZpc29yIOKAlCB0aGV5IG1heSBub3QgaGF2ZSBhc3NpZ25lZCBpdCB5ZXQsIG9yIHlvdSBtYXkgaGF2ZSBhbHJlYWR5IHN1Ym1pdHRlZCBpdCB8CnwgUmVwb3J0IGRvd25sb2FkIGJ1dHRvbiBpcyBncmV5ZWQgb3V0IHwgQ29tcGxldGUgeW91ciBhc3Nlc3NtZW50IGZpcnN0LCBvciBjaGVjayB5b3VyIHN1YnNjcmlwdGlvbiBwbGFuIHwKfCBSZWNvbW1lbmRhdGlvbnMgYmxvY2sgbm90IHZpc2libGUgfCBJdCBtYXkgb25seSBhcHBlYXIgYWZ0ZXIgeW91ciBmaXJzdCBhc3Nlc3NtZW50IGlzIGNvbXBsZXRlIHwK</script>
 
 <style>
  

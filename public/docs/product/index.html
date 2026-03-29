@@ -1,13 +1,13 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://xer0bit.github.io/docs-idpicker/docs/product/index.xml">
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/product/">
-<link rel="alternate" type="application/json" href="https://xer0bit.github.io/docs-idpicker/docs/product/index.json">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs-idpicker/docs/product/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/product/">
+<link rel="alternate" type="application/json" href="http://localhost:1313/docs-idpicker/docs/product/index.json">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -23,7 +23,7 @@
 
 <title>Product Scope and Roles | IDPicker Docs</title>
 <meta name="description" content="IDPicker panel architecture, actor model, and account types">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/product/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/product/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Product Scope and Roles">
   <meta property="og:description" content="IDPicker panel architecture, actor model, and account types">
@@ -37,8 +37,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Product Scope and Roles">
   <meta name="twitter:description" content="IDPicker panel architecture, actor model, and account types">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -413,9 +426,27 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
+
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
+
 
 
 <script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgc2VjdGlvbiBkZWZpbmVzIGhvdyBJRFBpY2tlciBpcyBzdHJ1Y3R1cmVkIGFjcm9zcyB1c2VyIHJvbGVzIGFuZCBwYW5lbCByZXNwb25zaWJpbGl0aWVzLgoKIyMgQ29yZSBQYW5lbHMKCi0gU3R1ZGVudCBQYW5lbAotIEFkdmlzb3IgUGFuZWwKLSBQYXJlbnQgUGFuZWwKLSBBZG1pbiBQYW5lbAoKIyMgQWNjb3VudCBUeXBlIE1vZGVsIChTdHVkZW50KQoKLSBMaW5rZWQgU3R1ZGVudDogY29ubmVjdGVkIHRvIHBhcmVudC9ndWFyZGlhbiBhbmQgY2FuIGhhdmUgc2hhcmVkIHZpc2liaWxpdHkgZm9yIHNlbGVjdGVkIHByb2dyZXNzIGFyZWFzLgotIEluZGl2aWR1YWwgU3R1ZGVudDogaW5kZXBlbmRlbnQgYWNjb3VudCB3aXRoIHNlbGYtbWFuYWdlZCBwcmVmZXJlbmNlcyBhbmQgZGlyZWN0IHBsYXRmb3JtIHVzYWdlLgoKIyMgUm9sZSBTdW1tYXJ5Cgp8IFJvbGUgfCBQcmltYXJ5IEdvYWwgfCBLZXkgQ2FwYWJpbGl0aWVzIHwKfC0tLXwtLS18LS0tfAp8IFN0dWRlbnQgfCBDYXJlZXIgYW5kIHVuaXZlcnNpdHkgcGxhbm5pbmcgfCBBc3Nlc3NtZW50cywgcmVjb21tZW5kYXRpb25zLCBtZW50b3JzaGlwLCByZXNvdXJjZXMgfAp8IEFkdmlzb3IgfCBTdHVkZW50IGd1aWRhbmNlIGFuZCBzdXBlcnZpc2lvbiB8IE1hbmFnZSBzdHVkZW50cywgY3JlYXRlIHN1Yi1hZHZpc29ycywgbW9uaXRvciBvdXRjb21lcyB8CnwgUGFyZW50IHwgUHJvZ3Jlc3MgdmlzaWJpbGl0eSBhbmQgc3VwcG9ydCB8IEFjY2VzcyBsaW5rZWQgc3R1ZGVudCBpbnNpZ2h0cyBhbmQgc3VwcG9ydCB0b29scyB8CnwgQWRtaW4gfCBQbGF0Zm9ybSBnb3Zlcm5hbmNlIGFuZCBvcGVyYXRpb25zIHwgTWFuYWdlIHVzZXJzL29yZ3MsIHBlcm1pc3Npb25zLCBwcm9tcHRzL3RyYW5zbGF0aW9ucywgbW9uaXRvcmluZyB8CgohW1JvbGUgYW5kIFBhbmVsIEFyY2hpdGVjdHVyZSBQbGFjZWhvbGRlcl0oL2ltYWdlcy91c2VyLW1hbnVhbC9wcm9kdWN0L3JvbGUtcGFuZWwtYXJjaGl0ZWN0dXJlLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgYXJjaGl0ZWN0dXJlIGRpYWdyYW0gc2hvd2luZyByb2xlIGJvdW5kYXJpZXMsIHBhbmVsIGVudHJ5IHBvaW50cywgYW5kIHNoYXJlZCBtb2R1bGVzLCBpbmNsdWRpbmcgYWRtaW4gZ292ZXJuYW5jZSBmbG93cy4K</script>

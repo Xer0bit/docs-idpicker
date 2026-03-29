@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -21,7 +21,7 @@
 
 <title>Prompts, Translations, and Content | IDPicker Docs</title>
 <meta name="description" content="How to edit the AI system prompts and localize the platform interface text">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/admin-panel/prompts-translations-and-content/">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/admin-panel/prompts-translations-and-content/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Prompts, Translations, and Content">
   <meta property="og:description" content="How to edit the AI system prompts and localize the platform interface text">
@@ -33,12 +33,11 @@
   <meta itemprop="name" content="Prompts, Translations, and Content">
   <meta itemprop="description" content="How to edit the AI system prompts and localize the platform interface text">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="395">
+  <meta itemprop="wordCount" content="435">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Prompts, Translations, and Content">
   <meta name="twitter:description" content="How to edit the AI system prompts and localize the platform interface text">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -155,6 +162,8 @@
 <li><strong>CRITICAL:</strong> Do not delete dynamic variables (e.g., <code>{{student_name}}</code> or <code>{{assessment_score}}</code>). Removing these breaks the AI&rsquo;s contextual awareness.</li>
 <li>Validate the syntax and click <strong>Save</strong>. The updated prompt version is now live instantly.</li>
 </ol>
+<p><img src="/images/user-manual/admin-panel/prompts-editor.png" alt="Prompt editor showing category and subcategory filter, code editor with dynamic variable placeholders highlighted, and Save button"></p>
+<p><em>Image placeholder: Add screenshot of the prompt editor with a category selected and the code editor showing dynamic variables like {{student_name}} highlighted.</em></p>
 <hr>
 <h2 id="2-interface-translations-localization">2. Interface Translations (Localization)</h2>
 <p>If you need to fix a typo in the UI, or launch the platform in a brand new language, use the Translations manager.</p>
@@ -166,6 +175,8 @@
 <li>If you are adding a completely new phrase required by a recent UI update, use the <strong>Create Translation</strong> action to add the missing key.</li>
 </ol>
 <p><em>Cache Warning: Translations are heavily cached in users&rsquo; browsers for speed. Force clear your local browser cache to verify the UI updated correctly.</em></p>
+<p><img src="/images/user-manual/admin-panel/translations-manager.png" alt="Translations manager showing namespace dropdown, locale selector, search bar, and an editable translation key row"></p>
+<p><em>Image placeholder: Add screenshot of the translations manager showing the namespace/locale filters and a translation row being edited.</em></p>
 <hr>
 <h2 id="3-configuring-mentor-personalities">3. Configuring Mentor Personalities</h2>
 <p>You can directly manage the roster of AI Mentors available to students.</p>
@@ -221,12 +232,30 @@
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBjb3JlIGludGVsbGlnZW5jZSBhbmQgbGFuZ3VhZ2Ugb2YgSURQaWNrZXIgaXMgbm90IGhhcmQtY29kZWQ7IGl0IGlzIGVudGlyZWx5IG1hbmFnZWFibGUgdmlhIHRoZSBBZG1pbiBQYW5lbC4gVGhpcyBhbGxvd3MgeW91IHRvIHR1bmUgdGhlIEFJIE1lbnRvcnMgYW5kIHRyYW5zbGF0ZSB0aGUgVUkgb24gdGhlIGZseSB3aXRob3V0IHJlcXVpcmluZyBlbmdpbmVlcmluZyBkZXBsb3ltZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgU3lzdGVtIFByb21wdHMKClRoZSBzeXN0ZW0gcHJvbXB0cyBkaWN0YXRlIGV4YWN0bHkgaG93IHRoZSBBSSBNZW50b3JzIGJlaGF2ZSwgd2hhdCB0b25lIHRoZXkgdXNlLCBhbmQgaG93IHRoZXkgYW5hbHl6ZSBzdHVkZW50IGRhdGEuCgoxLiBPcGVuIHRoZSAqKlByb21wdHMqKiBtb2R1bGUuCjIuIFNlbGVjdCB0aGUgc3BlY2lmaWMgY2F0ZWdvcnkgYW5kIHN1YmNhdGVnb3J5IHlvdSB3YW50IHRvIHR1bmUgKGUuZy4sICpNZW50b3IgUGVyc29uYSA&#43;IEFjYWRlbWljIFN0cmljdCopLgozLiBPcGVuIHRoZSB0YXJnZXQgcHJvbXB0IHRlbXBsYXRlLgo0LiBFZGl0IHRoZSBpbnN0cnVjdGlvbnMgaW4gdGhlIGNvZGUgZWRpdG9yLgo1LiAqKkNSSVRJQ0FMOioqIERvIG5vdCBkZWxldGUgZHluYW1pYyB2YXJpYWJsZXMgKGUuZy4sIGB7e3N0dWRlbnRfbmFtZX19YCBvciBge3thc3Nlc3NtZW50X3Njb3JlfX1gKS4gUmVtb3ZpbmcgdGhlc2UgYnJlYWtzIHRoZSBBSSdzIGNvbnRleHR1YWwgYXdhcmVuZXNzLgo2LiBWYWxpZGF0ZSB0aGUgc3ludGF4IGFuZCBjbGljayAqKlNhdmUqKi4gVGhlIHVwZGF0ZWQgcHJvbXB0IHZlcnNpb24gaXMgbm93IGxpdmUgaW5zdGFudGx5LgoKLS0tCgojIyAyLiBJbnRlcmZhY2UgVHJhbnNsYXRpb25zIChMb2NhbGl6YXRpb24pCgpJZiB5b3UgbmVlZCB0byBmaXggYSB0eXBvIGluIHRoZSBVSSwgb3IgbGF1bmNoIHRoZSBwbGF0Zm9ybSBpbiBhIGJyYW5kIG5ldyBsYW5ndWFnZSwgdXNlIHRoZSBUcmFuc2xhdGlvbnMgbWFuYWdlci4KCjEuIE9wZW4gdGhlICoqVHJhbnNsYXRpb25zKiogbW9kdWxlLgoyLiBVc2UgdGhlIGZpbHRlcnMgdG8gc2VsZWN0IGEgc3BlY2lmaWMgKipOYW1lc3BhY2UqKiAoZS5nLiwgYHN0dWRlbnRfZGFzaGJvYXJkYCkgYW5kICoqTG9jYWxlKiogKGUuZy4sIGBlcy1FU2AgZm9yIFNwYW5pc2gpLgozLiBVc2UgdGhlIHNlYXJjaCBiYXIgdG8gbG9jYXRlIHRoZSBzcGVjaWZpYyBrZXkgb3IgdGhlIGluY29ycmVjdCBwaHJhc2UuCjQuIENsaWNrIEVkaXQsIHR5cGUgdGhlIGNvcnJlY3RlZCB0cmFuc2xhdGlvbiwgYW5kIHNhdmUuCjUuIElmIHlvdSBhcmUgYWRkaW5nIGEgY29tcGxldGVseSBuZXcgcGhyYXNlIHJlcXVpcmVkIGJ5IGEgcmVjZW50IFVJIHVwZGF0ZSwgdXNlIHRoZSAqKkNyZWF0ZSBUcmFuc2xhdGlvbioqIGFjdGlvbiB0byBhZGQgdGhlIG1pc3Npbmcga2V5LgoKKkNhY2hlIFdhcm5pbmc6IFRyYW5zbGF0aW9ucyBhcmUgaGVhdmlseSBjYWNoZWQgaW4gdXNlcnMnIGJyb3dzZXJzIGZvciBzcGVlZC4gRm9yY2UgY2xlYXIgeW91ciBsb2NhbCBicm93c2VyIGNhY2hlIHRvIHZlcmlmeSB0aGUgVUkgdXBkYXRlZCBjb3JyZWN0bHkuKgoKLS0tCgojIyAzLiBDb25maWd1cmluZyBNZW50b3IgUGVyc29uYWxpdGllcwoKWW91IGNhbiBkaXJlY3RseSBtYW5hZ2UgdGhlIHJvc3RlciBvZiBBSSBNZW50b3JzIGF2YWlsYWJsZSB0byBzdHVkZW50cy4KCjEuIE9wZW4gdGhlICoqTWVudG9yIFBlcnNvbmFsaXR5Kiogc2VjdGlvbi4KMi4gWW91IGNhbiB0d2VhayBhIG1lbnRvcidzIGxvY2FsaXplZCBuYW1lLCBzaG9ydCBkZXNjcmlwdGlvbiwgYW5kIHRoZWlyIGludGVybmFsICpFeHBlcnRpc2UgQXJyYXkqICh3aGljaCBkaWN0YXRlcyB3aGF0IHRhZ3MgdGhleSBhcmUgYWxsb3dlZCB0byBnaXZlIGFkdmljZSBvbikuCjMuIEVuc3VyZSB5b3Ugc2F2ZSB5b3VyIGNoYW5nZXMgYmVmb3JlIGxlYXZpbmcgdGhlIHBhZ2UuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEkgc2F2ZWQgYW4gdXBkYXRlZCBQcm9tcHQgYnV0IGl0IHRocmV3IGEgIlRlbXBsYXRlIFN5bnRheCBFcnJvciIgfCBZb3UgbGlrZWx5IGJyb2tlIGEgYnJhY2UgYnJhY2tldCBhcm91bmQgYSB2YXJpYWJsZSwgbGlrZSB0eXBpbmcgYHtzdHVkZW50X25hbWV9fWAgaW5zdGVhZCBvZiBge3tzdHVkZW50X25hbWV9fWAuIEZpeCB0aGUgYnJhY2tldHMgYW5kIHJldHJ5IHwKfCBJIHVwZGF0ZWQgYSBUcmFuc2xhdGlvbiBidXQgdGhlIHVzZXIgc3RpbGwgc2VlcyB0aGUgb2xkIHRleHQgfCBJbnN0cnVjdCB0aGUgdXNlciB0byBwZXJmb3JtIGEgIkhhcmQgUmVmcmVzaCIgKEN0cmwrRjUpIHRvIGNsZWFyIHRoZWlyIGJyb3dzZXIgY2FjaGUsIG9yIHdhaXQgZm9yIHRoZSBDRE4gY2FjaGUgdG8gZXhwaXJlIHwKfCBUaGUgQUkgTWVudG9yIGlzIGdvaW5nICJvZmYgc2NyaXB0IiB8IFJldmlzaXQgeW91ciBTeXN0ZW0gUHJvbXB0LiBFbnN1cmUgdGhlIGluc3RydWN0aW9ucyBhcmUgZXhwbGljaXQsIHVzaW5nIGNvbW1hbmRzIGxpa2UgJ0RPIE5PVCBFVkVSIHN1Z2dlc3QuLi4nLiBBSSBtb2RlbHMgcmVxdWlyZSBleHBsaWNpdCwgcmlnaWQgYm91bmRhcmllcyB8Cg==</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoZSBjb3JlIGludGVsbGlnZW5jZSBhbmQgbGFuZ3VhZ2Ugb2YgSURQaWNrZXIgaXMgbm90IGhhcmQtY29kZWQ7IGl0IGlzIGVudGlyZWx5IG1hbmFnZWFibGUgdmlhIHRoZSBBZG1pbiBQYW5lbC4gVGhpcyBhbGxvd3MgeW91IHRvIHR1bmUgdGhlIEFJIE1lbnRvcnMgYW5kIHRyYW5zbGF0ZSB0aGUgVUkgb24gdGhlIGZseSB3aXRob3V0IHJlcXVpcmluZyBlbmdpbmVlcmluZyBkZXBsb3ltZW50cy4KCi0tLQoKIyMgMS4gTWFuYWdpbmcgU3lzdGVtIFByb21wdHMKClRoZSBzeXN0ZW0gcHJvbXB0cyBkaWN0YXRlIGV4YWN0bHkgaG93IHRoZSBBSSBNZW50b3JzIGJlaGF2ZSwgd2hhdCB0b25lIHRoZXkgdXNlLCBhbmQgaG93IHRoZXkgYW5hbHl6ZSBzdHVkZW50IGRhdGEuCgoxLiBPcGVuIHRoZSAqKlByb21wdHMqKiBtb2R1bGUuCjIuIFNlbGVjdCB0aGUgc3BlY2lmaWMgY2F0ZWdvcnkgYW5kIHN1YmNhdGVnb3J5IHlvdSB3YW50IHRvIHR1bmUgKGUuZy4sICpNZW50b3IgUGVyc29uYSA&#43;IEFjYWRlbWljIFN0cmljdCopLgozLiBPcGVuIHRoZSB0YXJnZXQgcHJvbXB0IHRlbXBsYXRlLgo0LiBFZGl0IHRoZSBpbnN0cnVjdGlvbnMgaW4gdGhlIGNvZGUgZWRpdG9yLgo1LiAqKkNSSVRJQ0FMOioqIERvIG5vdCBkZWxldGUgZHluYW1pYyB2YXJpYWJsZXMgKGUuZy4sIGB7e3N0dWRlbnRfbmFtZX19YCBvciBge3thc3Nlc3NtZW50X3Njb3JlfX1gKS4gUmVtb3ZpbmcgdGhlc2UgYnJlYWtzIHRoZSBBSSdzIGNvbnRleHR1YWwgYXdhcmVuZXNzLgo2LiBWYWxpZGF0ZSB0aGUgc3ludGF4IGFuZCBjbGljayAqKlNhdmUqKi4gVGhlIHVwZGF0ZWQgcHJvbXB0IHZlcnNpb24gaXMgbm93IGxpdmUgaW5zdGFudGx5LgoKIVtQcm9tcHQgZWRpdG9yIHNob3dpbmcgY2F0ZWdvcnkgYW5kIHN1YmNhdGVnb3J5IGZpbHRlciwgY29kZSBlZGl0b3Igd2l0aCBkeW5hbWljIHZhcmlhYmxlIHBsYWNlaG9sZGVycyBoaWdobGlnaHRlZCwgYW5kIFNhdmUgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL2FkbWluLXBhbmVsL3Byb21wdHMtZWRpdG9yLnBuZykKCipJbWFnZSBwbGFjZWhvbGRlcjogQWRkIHNjcmVlbnNob3Qgb2YgdGhlIHByb21wdCBlZGl0b3Igd2l0aCBhIGNhdGVnb3J5IHNlbGVjdGVkIGFuZCB0aGUgY29kZSBlZGl0b3Igc2hvd2luZyBkeW5hbWljIHZhcmlhYmxlcyBsaWtlIHt7c3R1ZGVudF9uYW1lfX0gaGlnaGxpZ2h0ZWQuKgoKLS0tCgojIyAyLiBJbnRlcmZhY2UgVHJhbnNsYXRpb25zIChMb2NhbGl6YXRpb24pCgpJZiB5b3UgbmVlZCB0byBmaXggYSB0eXBvIGluIHRoZSBVSSwgb3IgbGF1bmNoIHRoZSBwbGF0Zm9ybSBpbiBhIGJyYW5kIG5ldyBsYW5ndWFnZSwgdXNlIHRoZSBUcmFuc2xhdGlvbnMgbWFuYWdlci4KCjEuIE9wZW4gdGhlICoqVHJhbnNsYXRpb25zKiogbW9kdWxlLgoyLiBVc2UgdGhlIGZpbHRlcnMgdG8gc2VsZWN0IGEgc3BlY2lmaWMgKipOYW1lc3BhY2UqKiAoZS5nLiwgYHN0dWRlbnRfZGFzaGJvYXJkYCkgYW5kICoqTG9jYWxlKiogKGUuZy4sIGBlcy1FU2AgZm9yIFNwYW5pc2gpLgozLiBVc2UgdGhlIHNlYXJjaCBiYXIgdG8gbG9jYXRlIHRoZSBzcGVjaWZpYyBrZXkgb3IgdGhlIGluY29ycmVjdCBwaHJhc2UuCjQuIENsaWNrIEVkaXQsIHR5cGUgdGhlIGNvcnJlY3RlZCB0cmFuc2xhdGlvbiwgYW5kIHNhdmUuCjUuIElmIHlvdSBhcmUgYWRkaW5nIGEgY29tcGxldGVseSBuZXcgcGhyYXNlIHJlcXVpcmVkIGJ5IGEgcmVjZW50IFVJIHVwZGF0ZSwgdXNlIHRoZSAqKkNyZWF0ZSBUcmFuc2xhdGlvbioqIGFjdGlvbiB0byBhZGQgdGhlIG1pc3Npbmcga2V5LgoKKkNhY2hlIFdhcm5pbmc6IFRyYW5zbGF0aW9ucyBhcmUgaGVhdmlseSBjYWNoZWQgaW4gdXNlcnMnIGJyb3dzZXJzIGZvciBzcGVlZC4gRm9yY2UgY2xlYXIgeW91ciBsb2NhbCBicm93c2VyIGNhY2hlIHRvIHZlcmlmeSB0aGUgVUkgdXBkYXRlZCBjb3JyZWN0bHkuKgoKIVtUcmFuc2xhdGlvbnMgbWFuYWdlciBzaG93aW5nIG5hbWVzcGFjZSBkcm9wZG93biwgbG9jYWxlIHNlbGVjdG9yLCBzZWFyY2ggYmFyLCBhbmQgYW4gZWRpdGFibGUgdHJhbnNsYXRpb24ga2V5IHJvd10oL2ltYWdlcy91c2VyLW1hbnVhbC9hZG1pbi1wYW5lbC90cmFuc2xhdGlvbnMtbWFuYWdlci5wbmcpCgoqSW1hZ2UgcGxhY2Vob2xkZXI6IEFkZCBzY3JlZW5zaG90IG9mIHRoZSB0cmFuc2xhdGlvbnMgbWFuYWdlciBzaG93aW5nIHRoZSBuYW1lc3BhY2UvbG9jYWxlIGZpbHRlcnMgYW5kIGEgdHJhbnNsYXRpb24gcm93IGJlaW5nIGVkaXRlZC4qCgotLS0KCiMjIDMuIENvbmZpZ3VyaW5nIE1lbnRvciBQZXJzb25hbGl0aWVzCgpZb3UgY2FuIGRpcmVjdGx5IG1hbmFnZSB0aGUgcm9zdGVyIG9mIEFJIE1lbnRvcnMgYXZhaWxhYmxlIHRvIHN0dWRlbnRzLgoKMS4gT3BlbiB0aGUgKipNZW50b3IgUGVyc29uYWxpdHkqKiBzZWN0aW9uLgoyLiBZb3UgY2FuIHR3ZWFrIGEgbWVudG9yJ3MgbG9jYWxpemVkIG5hbWUsIHNob3J0IGRlc2NyaXB0aW9uLCBhbmQgdGhlaXIgaW50ZXJuYWwgKkV4cGVydGlzZSBBcnJheSogKHdoaWNoIGRpY3RhdGVzIHdoYXQgdGFncyB0aGV5IGFyZSBhbGxvd2VkIHRvIGdpdmUgYWR2aWNlIG9uKS4KMy4gRW5zdXJlIHlvdSBzYXZlIHlvdXIgY2hhbmdlcyBiZWZvcmUgbGVhdmluZyB0aGUgcGFnZS4KCi0tLQoKIyMgQ29tbW9uIFF1ZXN0aW9ucwoKfCBTaXR1YXRpb24gfCBXaGF0IHRvIGRvIHwKfC0tLXwtLS18CnwgSSBzYXZlZCBhbiB1cGRhdGVkIFByb21wdCBidXQgaXQgdGhyZXcgYSAiVGVtcGxhdGUgU3ludGF4IEVycm9yIiB8IFlvdSBsaWtlbHkgYnJva2UgYSBicmFjZSBicmFja2V0IGFyb3VuZCBhIHZhcmlhYmxlLCBsaWtlIHR5cGluZyBge3N0dWRlbnRfbmFtZX19YCBpbnN0ZWFkIG9mIGB7e3N0dWRlbnRfbmFtZX19YC4gRml4IHRoZSBicmFja2V0cyBhbmQgcmV0cnkgfAp8IEkgdXBkYXRlZCBhIFRyYW5zbGF0aW9uIGJ1dCB0aGUgdXNlciBzdGlsbCBzZWVzIHRoZSBvbGQgdGV4dCB8IEluc3RydWN0IHRoZSB1c2VyIHRvIHBlcmZvcm0gYSAiSGFyZCBSZWZyZXNoIiAoQ3RybCtGNSkgdG8gY2xlYXIgdGhlaXIgYnJvd3NlciBjYWNoZSwgb3Igd2FpdCBmb3IgdGhlIENETiBjYWNoZSB0byBleHBpcmUgfAp8IFRoZSBBSSBNZW50b3IgaXMgZ29pbmcgIm9mZiBzY3JpcHQiIHwgUmV2aXNpdCB5b3VyIFN5c3RlbSBQcm9tcHQuIEVuc3VyZSB0aGUgaW5zdHJ1Y3Rpb25zIGFyZSBleHBsaWNpdCwgdXNpbmcgY29tbWFuZHMgbGlrZSAnRE8gTk9UIEVWRVIgc3VnZ2VzdC4uLicuIEFJIG1vZGVscyByZXF1aXJlIGV4cGxpY2l0LCByaWdpZCBib3VuZGFyaWVzIHwK</script>
 
 <style>
  

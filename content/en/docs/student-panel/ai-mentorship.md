@@ -24,6 +24,8 @@ IDPicker provides multiple AI personalities, each tuned for specific types of ad
 
 ![AI Mentor hub showing personality cards grid and open chat interface with message input box](/images/user-manual/student-panel/ai-mentorship-mentor-chat.png)
 
+*Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.*
+
 ---
 
 ## Resuming a Recent Chat
@@ -35,6 +37,8 @@ You do not have to start over every time.
 3. The chat history will load, and you can pick up the conversation exactly where you left off.
 
 ![Recent chats list in Mentor Hub showing previous conversation threads](/images/user-manual/student-panel/ai-mentorship-recent-chats.png)
+
+*Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.*
 
 ---
 
@@ -50,6 +54,8 @@ If your account is linked to an organization or school, your human advisor manag
 *Note: If the advisor section says "No advisor linked," your account operates independently and this feature is disabled.*
 
 ![Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button](/images/user-manual/student-panel/ai-mentorship-advisor-chat.png)
+
+*Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.*
 
 ---
 

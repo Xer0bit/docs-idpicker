@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="canonical" type="text/html" href="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -20,25 +20,24 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Certificates and Application Documents | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click advisor document and credential workflows">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/">
+<meta name="description" content="How to issue achievement certificates and review student application document uploads">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/advisor-panel/certificates-and-application-documents/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Certificates and Application Documents">
-  <meta property="og:description" content="Detailed click-by-click advisor document and credential workflows">
+  <meta property="og:description" content="How to issue achievement certificates and review student application document uploads">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T04:21:38+05:00">
 
   <meta itemprop="name" content="Certificates and Application Documents">
-  <meta itemprop="description" content="Detailed click-by-click advisor document and credential workflows">
+  <meta itemprop="description" content="How to issue achievement certificates and review student application document uploads">
   <meta itemprop="dateModified" content="2026-03-24T04:21:38+05:00">
-  <meta itemprop="wordCount" content="183">
+  <meta itemprop="wordCount" content="679">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Certificates and Application Documents">
-  <meta name="twitter:description" content="Detailed click-by-click advisor document and credential workflows">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+  <meta name="twitter:description" content="How to issue achievement certificates and review student application document uploads">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -139,58 +146,115 @@
             
 <div class="td-content">
 	<h1>Certificates and Application Documents</h1>
-	<div class="lead">Detailed click-by-click advisor document and credential workflows</div>
+	<div class="lead">How to issue achievement certificates and review student application document uploads</div>
 	<header class="article-meta">
 		
 </header>
-	<p>This guide covers advisor certificate operations and application document review.</p>
-<h2 id="a-certificates-workflow">A) Certificates Workflow</h2>
+	<p>This guide covers two closely related features: issuing platform-generated certificates to recognise student achievements, and reviewing the application documents students upload as part of their university or programme applications.</p>
+<hr>
+<h2 id="1-issuing-a-certificate">1. Issuing a Certificate</h2>
+<p>Certificates are formal, advisor-generated recognitions that appear in the student&rsquo;s Certificates module and can be downloaded as PDFs.</p>
 <ol>
-<li>In sidebar, open Certificates.</li>
-<li>Review available certificate templates/items.</li>
-<li>Open template/detail.</li>
-<li>Configure issuance data as needed.</li>
-<li>Send/issue certificate to selected student(s).</li>
-<li>Confirm status (sent, pending, failed or equivalent).</li>
-</ol>
-<h2 id="b-application-documents-overview">B) Application Documents Overview</h2>
-<ol>
-<li>In sidebar, open Application Documents.</li>
-<li>Review student collections list.</li>
-<li>Filter by status and review state.</li>
-<li>Open a student collection detail.</li>
-</ol>
-<h2 id="c-review-student-documents-click-by-click">C) Review Student Documents (Click-by-Click)</h2>
-<ol>
-<li>Open specific step/category in student collection.</li>
-<li>Open uploaded file metadata and preview/download.</li>
-<li>Set review status:
+<li>In the sidebar, click <strong>Certificates</strong>.</li>
+<li>Click <strong>Issue Certificate</strong>.</li>
+<li>A certificate builder dialog opens. Fill in:
 <ul>
-<li>Verified</li>
-<li>Invalid</li>
-<li>Pending (if re-evaluation needed)</li>
+<li><strong>Student</strong> — Search and select the recipient.</li>
+<li><strong>Certificate Type</strong> — Choose from available templates (e.g., <em>Assessment Completion</em>, <em>Programme Readiness</em>, <em>Participation</em>).</li>
+<li><strong>Issue Date</strong> — Defaults to today; change if back-dating is required.</li>
+<li><strong>Notes</strong> <em>(Optional)</em> — Add a personalised message that will appear on the certificate document.</li>
 </ul>
 </li>
-<li>If invalid, provide reason/comment.</li>
-<li>Save review outcome.</li>
+<li>Click <strong>Issue</strong>.</li>
+<li>The certificate is immediately added to the student&rsquo;s account. They will see it in their <strong>Certificates and Documents</strong> section and receive a notification.</li>
 </ol>
-<h2 id="d-collection-level-status-updates">D) Collection-Level Status Updates</h2>
+<blockquote>
+<p><strong>Note:</strong> Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.</p>
+</blockquote>
+<p><img src="/images/user-manual/advisor-panel/certificates-issue.png" alt="Certificate builder dialog showing student selector, type dropdown, and issue date field"></p>
+<p><em>Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.</em></p>
+<hr>
+<h2 id="2-reviewing-issued-certificates">2. Reviewing Issued Certificates</h2>
+<p>To keep track of what has been issued:</p>
 <ol>
-<li>Review completion progress.</li>
-<li>If complete and valid, move toward approval state.</li>
-<li>If missing/invalid files remain, return with revision request.</li>
+<li>On the <strong>Certificates</strong> page, you see a table of all certificates you have issued.</li>
+<li>Filter by <strong>Student Name</strong> or <strong>Certificate Type</strong> to narrow the list.</li>
+<li>Each row shows the issue date, student name, type, and current status (<em>Active</em> or <em>Revoked</em>).</li>
+<li>Click any row to open the certificate detail and preview the generated document.</li>
 </ol>
-<h2 id="common-advisor-questions">Common Advisor Questions</h2>
-<p>Q: Student uploaded file but not visible.
-A: Refresh collection detail and verify step filter.</p>
-<p>Q: Student asks why file was rejected.
-A: Ensure invalid reason/comment is clearly written before save.</p>
-<p>Q: Certificate action failed.
-A: Retry issuance and validate template/student selection.</p>
-<p><img src="/images/user-manual/advisor-panel/certificates.png" alt="Certificates Advisor Placeholder"></p>
-<p>Image placeholder: Certificate operations panel with template and status.</p>
-<p><img src="/images/user-manual/advisor-panel/application-documents-review.png" alt="Application Documents Advisor Placeholder"></p>
-<p>Image placeholder: Student document review table with status actions.</p>
+<hr>
+<h2 id="3-revoking-a-certificate">3. Revoking a Certificate</h2>
+<p>If a certificate was issued by mistake or needs to be corrected:</p>
+<ol>
+<li>Find the certificate in your issued list.</li>
+<li>Click the action menu <code>(...)</code> next to it and select <strong>Revoke</strong>.</li>
+<li>Confirm the revocation prompt.</li>
+<li>The certificate is immediately marked as <em>Revoked</em> and disappears from the student&rsquo;s active certificate list.</li>
+</ol>
+<blockquote>
+<p><strong>Warning:</strong> Revoking a certificate cannot be undone for audit trail purposes. If you need to correct an error, revoke the original and issue a new one.</p>
+</blockquote>
+<hr>
+<h2 id="4-reviewing-student-application-documents">4. Reviewing Student Application Documents</h2>
+<p>Students upload supporting documents (transcripts, passports, language certificates) as part of their application process. Your job is to verify, flag, or reject each uploaded file.</p>
+<ol>
+<li>In the sidebar, click <strong>Application Documents</strong>.</li>
+<li>The list shows all students who have active document collections, each with a completion progress bar.</li>
+<li>Click a student row to open their <strong>Document Collection</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/application-documents-list.png" alt="Application documents list with student rows, completion progress bars, and a review button"></p>
+<p><em>Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.</em></p>
+<hr>
+<h2 id="5-verifying-individual-documents">5. Verifying Individual Documents</h2>
+<ol>
+<li>Inside a student&rsquo;s collection, you see a checklist of required document steps.</li>
+<li>Click on a specific step (e.g., <em>High School Transcript</em>).</li>
+<li>The uploaded file appears — click <strong>Preview</strong> or <strong>Download</strong> to inspect it.</li>
+<li>Set the review status:
+<ul>
+<li><strong>Verified</strong> — The document is valid and meets requirements.</li>
+<li><strong>Pending</strong> — You need more time to verify, or you are waiting for additional context.</li>
+<li><strong>Invalid</strong> — The document is incorrect, expired, or does not meet requirements.</li>
+</ul>
+</li>
+<li>If you mark the file <strong>Invalid</strong>, fill in the <strong>Reason</strong> field with a clear explanation so the student knows exactly what to fix.</li>
+<li>Click <strong>Save Review</strong>.</li>
+</ol>
+<p><img src="/images/user-manual/advisor-panel/document-review-panel.png" alt="Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field"></p>
+<p><em>Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.</em></p>
+<hr>
+<h2 id="6-completing-a-collection">6. Completing a Collection</h2>
+<p>Once all individual document steps are verified:</p>
+<ol>
+<li>Return to the collection overview for the student.</li>
+<li>Confirm all steps show a green <em>Verified</em> badge.</li>
+<li>Click <strong>Approve Collection</strong> to formally mark the student&rsquo;s application document set as complete.</li>
+<li>The student receives a notification that their documents have been approved.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A student says they uploaded a file but I cannot see it</td>
+          <td>Refresh the collection detail page — if it still does not appear, verify the student completed the upload step rather than just selecting the file</td>
+      </tr>
+      <tr>
+          <td>I need to leave a note for a student about a rejected document</td>
+          <td>Use the <strong>Reason</strong> field when setting a step to Invalid. The student can read this note in their own document panel</td>
+      </tr>
+      <tr>
+          <td>I issued a certificate with the wrong date</td>
+          <td>Revoke the original certificate immediately and re-issue a new one with the correct date</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -214,12 +278,30 @@ A: Retry issuance and validate template/student selection.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIGFkdmlzb3IgY2VydGlmaWNhdGUgb3BlcmF0aW9ucyBhbmQgYXBwbGljYXRpb24gZG9jdW1lbnQgcmV2aWV3LgoKIyMgQSkgQ2VydGlmaWNhdGVzIFdvcmtmbG93CgoxLiBJbiBzaWRlYmFyLCBvcGVuIENlcnRpZmljYXRlcy4KMi4gUmV2aWV3IGF2YWlsYWJsZSBjZXJ0aWZpY2F0ZSB0ZW1wbGF0ZXMvaXRlbXMuCjMuIE9wZW4gdGVtcGxhdGUvZGV0YWlsLgo0LiBDb25maWd1cmUgaXNzdWFuY2UgZGF0YSBhcyBuZWVkZWQuCjUuIFNlbmQvaXNzdWUgY2VydGlmaWNhdGUgdG8gc2VsZWN0ZWQgc3R1ZGVudChzKS4KNi4gQ29uZmlybSBzdGF0dXMgKHNlbnQsIHBlbmRpbmcsIGZhaWxlZCBvciBlcXVpdmFsZW50KS4KCiMjIEIpIEFwcGxpY2F0aW9uIERvY3VtZW50cyBPdmVydmlldwoKMS4gSW4gc2lkZWJhciwgb3BlbiBBcHBsaWNhdGlvbiBEb2N1bWVudHMuCjIuIFJldmlldyBzdHVkZW50IGNvbGxlY3Rpb25zIGxpc3QuCjMuIEZpbHRlciBieSBzdGF0dXMgYW5kIHJldmlldyBzdGF0ZS4KNC4gT3BlbiBhIHN0dWRlbnQgY29sbGVjdGlvbiBkZXRhaWwuCgojIyBDKSBSZXZpZXcgU3R1ZGVudCBEb2N1bWVudHMgKENsaWNrLWJ5LUNsaWNrKQoKMS4gT3BlbiBzcGVjaWZpYyBzdGVwL2NhdGVnb3J5IGluIHN0dWRlbnQgY29sbGVjdGlvbi4KMi4gT3BlbiB1cGxvYWRlZCBmaWxlIG1ldGFkYXRhIGFuZCBwcmV2aWV3L2Rvd25sb2FkLgozLiBTZXQgcmV2aWV3IHN0YXR1czoKICAgLSBWZXJpZmllZAogICAtIEludmFsaWQKICAgLSBQZW5kaW5nIChpZiByZS1ldmFsdWF0aW9uIG5lZWRlZCkKNC4gSWYgaW52YWxpZCwgcHJvdmlkZSByZWFzb24vY29tbWVudC4KNS4gU2F2ZSByZXZpZXcgb3V0Y29tZS4KCiMjIEQpIENvbGxlY3Rpb24tTGV2ZWwgU3RhdHVzIFVwZGF0ZXMKCjEuIFJldmlldyBjb21wbGV0aW9uIHByb2dyZXNzLgoyLiBJZiBjb21wbGV0ZSBhbmQgdmFsaWQsIG1vdmUgdG93YXJkIGFwcHJvdmFsIHN0YXRlLgozLiBJZiBtaXNzaW5nL2ludmFsaWQgZmlsZXMgcmVtYWluLCByZXR1cm4gd2l0aCByZXZpc2lvbiByZXF1ZXN0LgoKIyMgQ29tbW9uIEFkdmlzb3IgUXVlc3Rpb25zCgpROiBTdHVkZW50IHVwbG9hZGVkIGZpbGUgYnV0IG5vdCB2aXNpYmxlLgpBOiBSZWZyZXNoIGNvbGxlY3Rpb24gZGV0YWlsIGFuZCB2ZXJpZnkgc3RlcCBmaWx0ZXIuCgpROiBTdHVkZW50IGFza3Mgd2h5IGZpbGUgd2FzIHJlamVjdGVkLgpBOiBFbnN1cmUgaW52YWxpZCByZWFzb24vY29tbWVudCBpcyBjbGVhcmx5IHdyaXR0ZW4gYmVmb3JlIHNhdmUuCgpROiBDZXJ0aWZpY2F0ZSBhY3Rpb24gZmFpbGVkLgpBOiBSZXRyeSBpc3N1YW5jZSBhbmQgdmFsaWRhdGUgdGVtcGxhdGUvc3R1ZGVudCBzZWxlY3Rpb24uCgohW0NlcnRpZmljYXRlcyBBZHZpc29yIFBsYWNlaG9sZGVyXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvY2VydGlmaWNhdGVzLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBDZXJ0aWZpY2F0ZSBvcGVyYXRpb25zIHBhbmVsIHdpdGggdGVtcGxhdGUgYW5kIHN0YXR1cy4KCiFbQXBwbGljYXRpb24gRG9jdW1lbnRzIEFkdmlzb3IgUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9hcHBsaWNhdGlvbi1kb2N1bWVudHMtcmV2aWV3LnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBTdHVkZW50IGRvY3VtZW50IHJldmlldyB0YWJsZSB3aXRoIHN0YXR1cyBhY3Rpb25zLgo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">ClRoaXMgZ3VpZGUgY292ZXJzIHR3byBjbG9zZWx5IHJlbGF0ZWQgZmVhdHVyZXM6IGlzc3VpbmcgcGxhdGZvcm0tZ2VuZXJhdGVkIGNlcnRpZmljYXRlcyB0byByZWNvZ25pc2Ugc3R1ZGVudCBhY2hpZXZlbWVudHMsIGFuZCByZXZpZXdpbmcgdGhlIGFwcGxpY2F0aW9uIGRvY3VtZW50cyBzdHVkZW50cyB1cGxvYWQgYXMgcGFydCBvZiB0aGVpciB1bml2ZXJzaXR5IG9yIHByb2dyYW1tZSBhcHBsaWNhdGlvbnMuCgotLS0KCiMjIDEuIElzc3VpbmcgYSBDZXJ0aWZpY2F0ZQoKQ2VydGlmaWNhdGVzIGFyZSBmb3JtYWwsIGFkdmlzb3ItZ2VuZXJhdGVkIHJlY29nbml0aW9ucyB0aGF0IGFwcGVhciBpbiB0aGUgc3R1ZGVudCdzIENlcnRpZmljYXRlcyBtb2R1bGUgYW5kIGNhbiBiZSBkb3dubG9hZGVkIGFzIFBERnMuCgoxLiBJbiB0aGUgc2lkZWJhciwgY2xpY2sgKipDZXJ0aWZpY2F0ZXMqKi4KMi4gQ2xpY2sgKipJc3N1ZSBDZXJ0aWZpY2F0ZSoqLgozLiBBIGNlcnRpZmljYXRlIGJ1aWxkZXIgZGlhbG9nIG9wZW5zLiBGaWxsIGluOgogICAtICoqU3R1ZGVudCoqIOKAlCBTZWFyY2ggYW5kIHNlbGVjdCB0aGUgcmVjaXBpZW50LgogICAtICoqQ2VydGlmaWNhdGUgVHlwZSoqIOKAlCBDaG9vc2UgZnJvbSBhdmFpbGFibGUgdGVtcGxhdGVzIChlLmcuLCAqQXNzZXNzbWVudCBDb21wbGV0aW9uKiwgKlByb2dyYW1tZSBSZWFkaW5lc3MqLCAqUGFydGljaXBhdGlvbiopLgogICAtICoqSXNzdWUgRGF0ZSoqIOKAlCBEZWZhdWx0cyB0byB0b2RheTsgY2hhbmdlIGlmIGJhY2stZGF0aW5nIGlzIHJlcXVpcmVkLgogICAtICoqTm90ZXMqKiAqKE9wdGlvbmFsKSog4oCUIEFkZCBhIHBlcnNvbmFsaXNlZCBtZXNzYWdlIHRoYXQgd2lsbCBhcHBlYXIgb24gdGhlIGNlcnRpZmljYXRlIGRvY3VtZW50Lgo0LiBDbGljayAqKklzc3VlKiouCjUuIFRoZSBjZXJ0aWZpY2F0ZSBpcyBpbW1lZGlhdGVseSBhZGRlZCB0byB0aGUgc3R1ZGVudCdzIGFjY291bnQuIFRoZXkgd2lsbCBzZWUgaXQgaW4gdGhlaXIgKipDZXJ0aWZpY2F0ZXMgYW5kIERvY3VtZW50cyoqIHNlY3Rpb24gYW5kIHJlY2VpdmUgYSBub3RpZmljYXRpb24uCgo&#43;ICoqTm90ZToqKiBPbmNlIGEgY2VydGlmaWNhdGUgaXMgaXNzdWVkLCBpdCBjYW5ub3QgYmUgZWRpdGVkLiBJZiB5b3UgbWFkZSBhbiBlcnJvciwgeW91IG11c3QgcmV2b2tlIHRoZSBjZXJ0aWZpY2F0ZSBhbmQgcmVpc3N1ZSBhIGNvcnJlY3RlZCBvbmUuCgohW0NlcnRpZmljYXRlIGJ1aWxkZXIgZGlhbG9nIHNob3dpbmcgc3R1ZGVudCBzZWxlY3RvciwgdHlwZSBkcm9wZG93biwgYW5kIGlzc3VlIGRhdGUgZmllbGRdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9jZXJ0aWZpY2F0ZXMtaXNzdWUucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgY2VydGlmaWNhdGUgYnVpbGRlciBkaWFsb2cgd2l0aCBhbGwgZmllbGRzIGZpbGxlZCBpbiBiZWZvcmUgY2xpY2tpbmcgSXNzdWUuKgoKLS0tCgojIyAyLiBSZXZpZXdpbmcgSXNzdWVkIENlcnRpZmljYXRlcwoKVG8ga2VlcCB0cmFjayBvZiB3aGF0IGhhcyBiZWVuIGlzc3VlZDoKCjEuIE9uIHRoZSAqKkNlcnRpZmljYXRlcyoqIHBhZ2UsIHlvdSBzZWUgYSB0YWJsZSBvZiBhbGwgY2VydGlmaWNhdGVzIHlvdSBoYXZlIGlzc3VlZC4KMi4gRmlsdGVyIGJ5ICoqU3R1ZGVudCBOYW1lKiogb3IgKipDZXJ0aWZpY2F0ZSBUeXBlKiogdG8gbmFycm93IHRoZSBsaXN0LgozLiBFYWNoIHJvdyBzaG93cyB0aGUgaXNzdWUgZGF0ZSwgc3R1ZGVudCBuYW1lLCB0eXBlLCBhbmQgY3VycmVudCBzdGF0dXMgKCpBY3RpdmUqIG9yICpSZXZva2VkKikuCjQuIENsaWNrIGFueSByb3cgdG8gb3BlbiB0aGUgY2VydGlmaWNhdGUgZGV0YWlsIGFuZCBwcmV2aWV3IHRoZSBnZW5lcmF0ZWQgZG9jdW1lbnQuCgotLS0KCiMjIDMuIFJldm9raW5nIGEgQ2VydGlmaWNhdGUKCklmIGEgY2VydGlmaWNhdGUgd2FzIGlzc3VlZCBieSBtaXN0YWtlIG9yIG5lZWRzIHRvIGJlIGNvcnJlY3RlZDoKCjEuIEZpbmQgdGhlIGNlcnRpZmljYXRlIGluIHlvdXIgaXNzdWVkIGxpc3QuCjIuIENsaWNrIHRoZSBhY3Rpb24gbWVudSBgKC4uLilgIG5leHQgdG8gaXQgYW5kIHNlbGVjdCAqKlJldm9rZSoqLgozLiBDb25maXJtIHRoZSByZXZvY2F0aW9uIHByb21wdC4KNC4gVGhlIGNlcnRpZmljYXRlIGlzIGltbWVkaWF0ZWx5IG1hcmtlZCBhcyAqUmV2b2tlZCogYW5kIGRpc2FwcGVhcnMgZnJvbSB0aGUgc3R1ZGVudCdzIGFjdGl2ZSBjZXJ0aWZpY2F0ZSBsaXN0LgoKPiAqKldhcm5pbmc6KiogUmV2b2tpbmcgYSBjZXJ0aWZpY2F0ZSBjYW5ub3QgYmUgdW5kb25lIGZvciBhdWRpdCB0cmFpbCBwdXJwb3Nlcy4gSWYgeW91IG5lZWQgdG8gY29ycmVjdCBhbiBlcnJvciwgcmV2b2tlIHRoZSBvcmlnaW5hbCBhbmQgaXNzdWUgYSBuZXcgb25lLgoKLS0tCgojIyA0LiBSZXZpZXdpbmcgU3R1ZGVudCBBcHBsaWNhdGlvbiBEb2N1bWVudHMKClN0dWRlbnRzIHVwbG9hZCBzdXBwb3J0aW5nIGRvY3VtZW50cyAodHJhbnNjcmlwdHMsIHBhc3Nwb3J0cywgbGFuZ3VhZ2UgY2VydGlmaWNhdGVzKSBhcyBwYXJ0IG9mIHRoZWlyIGFwcGxpY2F0aW9uIHByb2Nlc3MuIFlvdXIgam9iIGlzIHRvIHZlcmlmeSwgZmxhZywgb3IgcmVqZWN0IGVhY2ggdXBsb2FkZWQgZmlsZS4KCjEuIEluIHRoZSBzaWRlYmFyLCBjbGljayAqKkFwcGxpY2F0aW9uIERvY3VtZW50cyoqLgoyLiBUaGUgbGlzdCBzaG93cyBhbGwgc3R1ZGVudHMgd2hvIGhhdmUgYWN0aXZlIGRvY3VtZW50IGNvbGxlY3Rpb25zLCBlYWNoIHdpdGggYSBjb21wbGV0aW9uIHByb2dyZXNzIGJhci4KMy4gQ2xpY2sgYSBzdHVkZW50IHJvdyB0byBvcGVuIHRoZWlyICoqRG9jdW1lbnQgQ29sbGVjdGlvbioqLgoKIVtBcHBsaWNhdGlvbiBkb2N1bWVudHMgbGlzdCB3aXRoIHN0dWRlbnQgcm93cywgY29tcGxldGlvbiBwcm9ncmVzcyBiYXJzLCBhbmQgYSByZXZpZXcgYnV0dG9uXSgvaW1hZ2VzL3VzZXItbWFudWFsL2Fkdmlzb3ItcGFuZWwvYXBwbGljYXRpb24tZG9jdW1lbnRzLWxpc3QucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgYXBwbGljYXRpb24gZG9jdW1lbnRzIGxpc3Qgc2hvd2luZyBzZXZlcmFsIHN0dWRlbnQgcm93cyB3aXRoIHRoZWlyIHByb2dyZXNzIGJhcnMuKgoKLS0tCgojIyA1LiBWZXJpZnlpbmcgSW5kaXZpZHVhbCBEb2N1bWVudHMKCjEuIEluc2lkZSBhIHN0dWRlbnQncyBjb2xsZWN0aW9uLCB5b3Ugc2VlIGEgY2hlY2tsaXN0IG9mIHJlcXVpcmVkIGRvY3VtZW50IHN0ZXBzLgoyLiBDbGljayBvbiBhIHNwZWNpZmljIHN0ZXAgKGUuZy4sICpIaWdoIFNjaG9vbCBUcmFuc2NyaXB0KikuCjMuIFRoZSB1cGxvYWRlZCBmaWxlIGFwcGVhcnMg4oCUIGNsaWNrICoqUHJldmlldyoqIG9yICoqRG93bmxvYWQqKiB0byBpbnNwZWN0IGl0Lgo0LiBTZXQgdGhlIHJldmlldyBzdGF0dXM6CiAgIC0gKipWZXJpZmllZCoqIOKAlCBUaGUgZG9jdW1lbnQgaXMgdmFsaWQgYW5kIG1lZXRzIHJlcXVpcmVtZW50cy4KICAgLSAqKlBlbmRpbmcqKiDigJQgWW91IG5lZWQgbW9yZSB0aW1lIHRvIHZlcmlmeSwgb3IgeW91IGFyZSB3YWl0aW5nIGZvciBhZGRpdGlvbmFsIGNvbnRleHQuCiAgIC0gKipJbnZhbGlkKiog4oCUIFRoZSBkb2N1bWVudCBpcyBpbmNvcnJlY3QsIGV4cGlyZWQsIG9yIGRvZXMgbm90IG1lZXQgcmVxdWlyZW1lbnRzLgo1LiBJZiB5b3UgbWFyayB0aGUgZmlsZSAqKkludmFsaWQqKiwgZmlsbCBpbiB0aGUgKipSZWFzb24qKiBmaWVsZCB3aXRoIGEgY2xlYXIgZXhwbGFuYXRpb24gc28gdGhlIHN0dWRlbnQga25vd3MgZXhhY3RseSB3aGF0IHRvIGZpeC4KNi4gQ2xpY2sgKipTYXZlIFJldmlldyoqLgoKIVtEb2N1bWVudCByZXZpZXcgcGFuZWwgc2hvd2luZyBmaWxlIHByZXZpZXcsIHN0YXR1cyBkcm9wZG93biAoVmVyaWZpZWQvUGVuZGluZy9JbnZhbGlkKSwgYW5kIHRoZSByZWFzb24gZmllbGRdKC9pbWFnZXMvdXNlci1tYW51YWwvYWR2aXNvci1wYW5lbC9kb2N1bWVudC1yZXZpZXctcGFuZWwucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgZG9jdW1lbnQgcmV2aWV3IHBhbmVsIGZvciBhIHNpbmdsZSBkb2N1bWVudCBzdGVwIOKAlCBzaG93IHRoZSBmaWxlIHByZXZpZXcgYXJlYSwgc3RhdHVzIGRyb3Bkb3duLCBhbmQgcmVhc29uIHRleHQgZmllbGQuKgoKLS0tCgojIyA2LiBDb21wbGV0aW5nIGEgQ29sbGVjdGlvbgoKT25jZSBhbGwgaW5kaXZpZHVhbCBkb2N1bWVudCBzdGVwcyBhcmUgdmVyaWZpZWQ6CgoxLiBSZXR1cm4gdG8gdGhlIGNvbGxlY3Rpb24gb3ZlcnZpZXcgZm9yIHRoZSBzdHVkZW50LgoyLiBDb25maXJtIGFsbCBzdGVwcyBzaG93IGEgZ3JlZW4gKlZlcmlmaWVkKiBiYWRnZS4KMy4gQ2xpY2sgKipBcHByb3ZlIENvbGxlY3Rpb24qKiB0byBmb3JtYWxseSBtYXJrIHRoZSBzdHVkZW50J3MgYXBwbGljYXRpb24gZG9jdW1lbnQgc2V0IGFzIGNvbXBsZXRlLgo0LiBUaGUgc3R1ZGVudCByZWNlaXZlcyBhIG5vdGlmaWNhdGlvbiB0aGF0IHRoZWlyIGRvY3VtZW50cyBoYXZlIGJlZW4gYXBwcm92ZWQuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IEEgc3R1ZGVudCBzYXlzIHRoZXkgdXBsb2FkZWQgYSBmaWxlIGJ1dCBJIGNhbm5vdCBzZWUgaXQgfCBSZWZyZXNoIHRoZSBjb2xsZWN0aW9uIGRldGFpbCBwYWdlIOKAlCBpZiBpdCBzdGlsbCBkb2VzIG5vdCBhcHBlYXIsIHZlcmlmeSB0aGUgc3R1ZGVudCBjb21wbGV0ZWQgdGhlIHVwbG9hZCBzdGVwIHJhdGhlciB0aGFuIGp1c3Qgc2VsZWN0aW5nIHRoZSBmaWxlIHwKfCBJIG5lZWQgdG8gbGVhdmUgYSBub3RlIGZvciBhIHN0dWRlbnQgYWJvdXQgYSByZWplY3RlZCBkb2N1bWVudCB8IFVzZSB0aGUgKipSZWFzb24qKiBmaWVsZCB3aGVuIHNldHRpbmcgYSBzdGVwIHRvIEludmFsaWQuIFRoZSBzdHVkZW50IGNhbiByZWFkIHRoaXMgbm90ZSBpbiB0aGVpciBvd24gZG9jdW1lbnQgcGFuZWwgfAp8IEkgaXNzdWVkIGEgY2VydGlmaWNhdGUgd2l0aCB0aGUgd3JvbmcgZGF0ZSB8IFJldm9rZSB0aGUgb3JpZ2luYWwgY2VydGlmaWNhdGUgaW1tZWRpYXRlbHkgYW5kIHJlLWlzc3VlIGEgbmV3IG9uZSB3aXRoIHRoZSBjb3JyZWN0IGRhdGUgfAo=</script>
 
 <style>
  

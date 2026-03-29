@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="en" class="no-js">
-  <head>
+  <head><script src="/docs-idpicker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docs-idpicker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="alternate" type="text/html" href="https://xer0bit.github.io/docs-idpicker/_print/docs/parent-panel/forms/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs-idpicker/_print/docs/parent-panel/forms/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docs-idpicker/favicons/favicon.ico" >
@@ -20,25 +20,24 @@
 <link rel="icon" type="image/png" href="/docs-idpicker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Parent Forms | IDPicker Docs</title>
-<meta name="description" content="Detailed click-by-click parent form response">
-<meta property="og:url" content="https://xer0bit.github.io/docs-idpicker/docs/parent-panel/forms/">
+<meta name="description" content="How to open, fill in, and submit forms assigned to you as a parent or guardian">
+<meta property="og:url" content="http://localhost:1313/docs-idpicker/docs/parent-panel/forms/">
   <meta property="og:site_name" content="IDPicker Docs">
   <meta property="og:title" content="Parent Forms">
-  <meta property="og:description" content="Detailed click-by-click parent form response">
+  <meta property="og:description" content="How to open, fill in, and submit forms assigned to you as a parent or guardian">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
     <meta property="article:modified_time" content="2026-03-24T05:06:47+05:00">
 
   <meta itemprop="name" content="Parent Forms">
-  <meta itemprop="description" content="Detailed click-by-click parent form response">
+  <meta itemprop="description" content="How to open, fill in, and submit forms assigned to you as a parent or guardian">
   <meta itemprop="dateModified" content="2026-03-24T05:06:47+05:00">
-  <meta itemprop="wordCount" content="176">
+  <meta itemprop="wordCount" content="690">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Parent Forms">
-  <meta name="twitter:description" content="Detailed click-by-click parent form response">
-<link rel="preload" href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" as="style" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
-<link href="/docs-idpicker/scss/main.min.87ffb0dc3f8b127c55e66361865799cd399fe44add99eeb667a39c9a827f3d36.css" rel="stylesheet" integrity="sha256-h/&#43;w3D&#43;LEnxV5mNhhleZzTmf5Erdme62Z6OcmoJ/PTY=" crossorigin="anonymous">
+  <meta name="twitter:description" content="How to open, fill in, and submit forms assigned to you as a parent or guardian">
+<link href="/docs-idpicker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,26 +47,34 @@
   integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
   crossorigin="anonymous"></script>
 
-<meta property="og:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+
+
+<meta property="og:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta property="og:image:width" content="1800">
 <meta property="og:image:height" content="586">
-<meta name="twitter:image" content="https://xer0bit.github.io/docs-idpicker/logo.png">
+<meta name="twitter:image" content="http://localhost:1313/docs-idpicker/icons/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 
 <style>
  
-.td-navbar .navbar-brand__logo svg {
+.td-navbar .navbar-brand__logo svg,
+.td-navbar .navbar-brand__logo img:not(.idpicker-logo) {
   display: none !important;
 }
 .td-navbar .navbar-brand__logo {
-  display: flex !important;
-  align-items: center !important;
-  width: 160px;
-  height: 40px;
-  background: url('/docs-idpicker/logo.png') no-repeat left center / contain;
+  display: block !important;
+  width: 160px !important;
+  height: 40px !important;
+  background-image: url('/docs-idpicker/icons/logo.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: contain !important;
   flex-shrink: 0;
 }
+</style>
 
+
+<style>
  
 .td-navbar .navbar-brand__name {
   display: none !important;
@@ -123,7 +130,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -148,7 +155,7 @@
     aria-label='Search this site…'
     autocomplete="off"
     
-    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.8816bdc043605ed8977ba182688bf674.json"
+    data-offline-search-index-json-src="/docs-idpicker/offline-search-index.json"
     data-offline-search-base-href="/"
     data-offline-search-max-results="10"
   >
@@ -164,7 +171,9 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsgetting-started-li">
     <a href="/docs-idpicker/docs/getting-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docs-idpickerdocsgetting-started"><span class="">Getting Started</span></a>
     <ul class="ul-2 foldable">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedroles-and-permissions-li">
+    <a href="/docs-idpicker/docs/getting-started/roles-and-permissions/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedroles-and-permissions"><span class="">Roles and Permissions</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedoverview-li">
     <a href="/docs-idpicker/docs/getting-started/overview/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedoverview"><span class="">Overview</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsgetting-startedquick-start-li">
     <a href="/docs-idpicker/docs/getting-started/quick-start/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsgetting-startedquick-start"><span class="">Quick Start</span></a>
@@ -193,6 +202,8 @@
     <a href="/docs-idpicker/docs/student-panel/resources/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelresources"><span class="">Resources</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelhelp-center-li">
     <a href="/docs-idpicker/docs/student-panel/help-center/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelhelp-center"><span class="">Help Center</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelnotifications-li">
+    <a href="/docs-idpicker/docs/student-panel/notifications/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelnotifications"><span class="">Notifications</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelsubscription-li">
     <a href="/docs-idpicker/docs/student-panel/subscription/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsstudent-panelsubscription"><span class="">Subscription</span></a>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsstudent-panelaccount-settings-li">
@@ -282,6 +293,8 @@
     <ul class="ul-2 foldable">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceconfiguration-li">
     <a href="/docs-idpicker/docs/reference/configuration/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceconfiguration"><span class="">Configuration Reference</span></a>
+  </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docs-idpickerdocsreferenceglossary-li">
+    <a href="/docs-idpicker/docs/reference/glossary/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docs-idpickerdocsreferenceglossary"><span class="">Glossary</span></a>
   </li>
     </ul>
   </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs-idpickerdocsusage-li">
@@ -313,11 +326,13 @@
     </div>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#a-open-parent-form">A) Open Parent Form</a></li>
-    <li><a href="#b-fill-form-fields-click-by-click">B) Fill Form Fields (Click-by-Click)</a></li>
-    <li><a href="#c-submit-form">C) Submit Form</a></li>
-    <li><a href="#d-read-only-form-state">D) Read-Only Form State</a></li>
-    <li><a href="#common-parent-questions">Common Parent Questions</a></li>
+    <li><a href="#1-finding-a-form-to-complete">1. Finding a Form to Complete</a></li>
+    <li><a href="#2-reading-the-form-context">2. Reading the Form Context</a></li>
+    <li><a href="#3-completing-each-field">3. Completing Each Field</a></li>
+    <li><a href="#4-reviewing-before-submitting">4. Reviewing Before Submitting</a></li>
+    <li><a href="#5-submitting-the-form">5. Submitting the Form</a></li>
+    <li><a href="#6-viewing-a-submitted-form">6. Viewing a Submitted Form</a></li>
+    <li><a href="#common-questions">Common Questions</a></li>
   </ul>
 </nav>
   </div>
@@ -341,60 +356,137 @@
 </nav>
 <div class="td-content">
 	<h1>Parent Forms</h1>
-	<div class="lead">Detailed click-by-click parent form response</div>
+	<div class="lead">How to open, fill in, and submit forms assigned to you as a parent or guardian</div>
 	<header class="article-meta">
 		
 </header>
-	<p>Parent panel supports dynamic form responses through <code>/form/{responseId}</code> routes.</p>
-<h2 id="a-open-parent-form">A) Open Parent Form</h2>
-<ol>
-<li>Open form link from dashboard, notification, or direct URL.</li>
-<li>Wait for form load.</li>
-<li>Confirm form title/description is visible.</li>
-<li>If organization banner exists, review context section at top.</li>
-</ol>
-<h2 id="b-fill-form-fields-click-by-click">B) Fill Form Fields (Click-by-Click)</h2>
-<p>For each question:</p>
-<ol>
-<li>Read label and required marker.</li>
-<li>Enter/select answer according to field type.</li>
-<li>Continue until all required fields are complete.</li>
-</ol>
-<p>Supported field types include:</p>
+	<p>Advisors and administrators can assign forms to parents for collecting consent, supplementary information, or progress feedback. This guide walks you through opening, completing, and submitting a form from the parent panel.</p>
+<hr>
+<h2 id="1-finding-a-form-to-complete">1. Finding a Form to Complete</h2>
+<p>Forms assigned to you appear in two places:</p>
 <ul>
-<li>text</li>
-<li>email</li>
-<li>number</li>
-<li>textarea</li>
-<li>dropdown</li>
-<li>date/time/datetime</li>
-<li>rating</li>
-<li>radio</li>
-<li>checkbox</li>
+<li><strong>Dashboard notification banner</strong> — A highlighted card appears when you have a pending form requiring a response.</li>
+<li><strong>Notifications panel</strong> — Click the bell icon in the top menu and look for a notification labelled <em>Form Assigned</em>.</li>
 </ul>
-<h2 id="c-submit-form">C) Submit Form</h2>
 <ol>
-<li>Scroll to submit action.</li>
-<li>Click Submit.</li>
-<li>Wait for success toast.</li>
-<li>Confirm form state updates.</li>
+<li>Click the notification or the dashboard banner to open the form directly.</li>
+<li>Alternatively, navigate to <strong>Forms</strong> in the sidebar to see all forms assigned to your account.</li>
+<li>Forms with a <strong>Pending</strong> status badge still require your response. Forms marked <strong>Submitted</strong> are read-only.</li>
 </ol>
-<h2 id="d-read-only-form-state">D) Read-Only Form State</h2>
-<p>If a response already exists and edit is disabled:</p>
-<ul>
-<li>Form displays prior answers.</li>
-<li>Inputs are non-editable.</li>
-<li>Parent can review but not change.</li>
-</ul>
-<h2 id="common-parent-questions">Common Parent Questions</h2>
-<p>Q: Form did not load.
-A: Link may be invalid/expired or response ID may be incorrect.</p>
-<p>Q: Submit failed.
-A: Recheck required fields and retry.</p>
-<p>Q: Why cannot I edit previous answer?
-A: Form is configured as non-editable after submit.</p>
-<p><img src="/images/user-manual/parent-panel/parent-form-response.png" alt="Parent Form Placeholder"></p>
-<p>Image placeholder: Parent form with mixed question types and submit action.</p>
+<p><img src="/images/user-manual/parent-panel/parent-forms-list.png" alt="Parent forms list showing form names, submission status badges, and due dates"></p>
+<p><em>Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.</em></p>
+<hr>
+<h2 id="2-reading-the-form-context">2. Reading the Form Context</h2>
+<p>Before filling anything in:</p>
+<ol>
+<li>Read the <strong>Form Title</strong> and the <strong>Description</strong> at the top of the page — the description explains why the form is being collected and what you need to provide.</li>
+<li>If the form belongs to a specific programme or application, an <strong>Organisation Banner</strong> may appear at the top with contextual information.</li>
+<li>Note any <strong>Due Date</strong> shown near the title — forms with deadlines will warn you if you are approaching them.</li>
+</ol>
+<hr>
+<h2 id="3-completing-each-field">3. Completing Each Field</h2>
+<p>Work through the form one question at a time:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field type</th>
+          <th>How to fill it in</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Text / Email</strong></td>
+          <td>Click the input box and type your answer</td>
+      </tr>
+      <tr>
+          <td><strong>Number</strong></td>
+          <td>Type a numerical value; the field rejects letters</td>
+      </tr>
+      <tr>
+          <td><strong>Long Text</strong></td>
+          <td>Click the textarea and write your full response; supports multiple lines</td>
+      </tr>
+      <tr>
+          <td><strong>Dropdown</strong></td>
+          <td>Click the dropdown arrow and select one option from the list</td>
+      </tr>
+      <tr>
+          <td><strong>Radio</strong></td>
+          <td>Click the circle next to your chosen single option</td>
+      </tr>
+      <tr>
+          <td><strong>Checkbox</strong></td>
+          <td>Click each box that applies; you may select multiple</td>
+      </tr>
+      <tr>
+          <td><strong>Date / Time</strong></td>
+          <td>Click the calendar or clock icon and pick from the picker</td>
+      </tr>
+      <tr>
+          <td><strong>Rating</strong></td>
+          <td>Click the star or number that represents your rating</td>
+      </tr>
+  </tbody>
+</table>
+<p>Fields marked with a red asterisk <code>*</code> are <strong>required</strong> — you cannot submit the form until they are completed.</p>
+<blockquote>
+<p><strong>Tip:</strong> Use <strong>Tab</strong> to move between fields quickly. The form saves your draft automatically as you fill it in, so you can leave and return without losing progress.</p>
+</blockquote>
+<p><img src="/images/user-manual/parent-panel/parent-form-filling.png" alt="Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers"></p>
+<p><em>Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.</em></p>
+<hr>
+<h2 id="4-reviewing-before-submitting">4. Reviewing Before Submitting</h2>
+<p>Before clicking <strong>Submit</strong>:</p>
+<ol>
+<li>Scroll back through the form to read your answers.</li>
+<li>Make sure every required field (<code>*</code>) has a value.</li>
+<li>Look for any <strong>Validation Error</strong> messages highlighted in red — these appear if a field received input in the wrong format (e.g., letters in a number field).</li>
+</ol>
+<hr>
+<h2 id="5-submitting-the-form">5. Submitting the Form</h2>
+<ol>
+<li>Click the <strong>Submit</strong> button at the bottom of the form.</li>
+<li>Wait for the green success notification to appear: <em>&ldquo;Your response has been submitted.&rdquo;</em></li>
+<li>The form status in your <strong>Forms</strong> list changes from <em>Pending</em> to <em>Submitted</em>.</li>
+</ol>
+<p><img src="/images/user-manual/parent-panel/parent-form-submitted.png" alt="Success notification after form submission and the form title now showing Submitted status"></p>
+<p><em>Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.</em></p>
+<hr>
+<h2 id="6-viewing-a-submitted-form">6. Viewing a Submitted Form</h2>
+<p>After submission, you can still review your answers:</p>
+<ol>
+<li>Go to <strong>Forms</strong> in the sidebar.</li>
+<li>Click any form with a <em>Submitted</em> badge.</li>
+<li>The form opens in <strong>read-only mode</strong> — all your answers are visible but the fields are disabled. You cannot change a submitted response unless the advisor or admin reopens the form for you.</li>
+</ol>
+<hr>
+<h2 id="common-questions">Common Questions</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Situation</th>
+          <th>What to do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>The form did not load</td>
+          <td>The link may be expired or the form may have been retracted. Contact your advisor to confirm the form is still active</td>
+      </tr>
+      <tr>
+          <td>Submit failed with a validation error</td>
+          <td>Scroll up — a red error message will be visible next to the field(s) that have a problem. Fix each one and try submitting again</td>
+      </tr>
+      <tr>
+          <td>I cannot edit my answers after submitting</td>
+          <td>Forms lock after submission by design. Ask your advisor to reopen the form if you need to make a correction</td>
+      </tr>
+      <tr>
+          <td>I do not see the form in my dashboard</td>
+          <td>Check the <strong>Notifications</strong> panel first. If it is not there, ask your advisor to confirm the form was assigned to your account</td>
+      </tr>
+  </tbody>
+</table>
 
 	
 </div>
@@ -418,12 +510,30 @@ A: Form is configured as non-editable after submit.</p>
 </footer>
 
     </div>
-    <script src="/docs-idpicker/js/main.min.c60de03ed52a34012f330c3e18c526426ec97efa9822bedfadbf14ffe917bc3e.js" integrity="sha256-xg3gPtUqNAEvMww&#43;GMUmQm7JfvqYIr7frb8U/&#43;kXvD4=" crossorigin="anonymous"></script>
-<script defer src="/docs-idpicker/js/click-to-copy.min.24576ff9fe9f85bb1948ecae52ce227cafce53757a3ad52301f2a79260f6b97d.js" integrity="sha256-JFdv&#43;f6fhbsZSOyuUs4ifK/OU3V6OtUjAfKnkmD2uX0=" crossorigin="anonymous"></script>
+    <script src="/docs-idpicker/js/main.js"></script>
+<script defer src="/docs-idpicker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docs-idpicker/js/tabpane-persist.js'></script>
 
+<script>
+(function() {
+  function injectLogo() {
+    var logoEl = document.querySelector('.td-navbar .navbar-brand__logo');
+    if (!logoEl) return;
+    logoEl.innerHTML = '<img src="/docs-idpicker/logo.png" alt="IDPicker" style="height:36px;width:auto;max-width:180px;display:block;">';
+    logoEl.style.background = 'none';
+    logoEl.style.width = 'auto';
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectLogo);
+  } else {
+    injectLogo();
+  }
+})();
+</script>
 
-<script id="llm-raw-md" type="text/plain" style="display:none">ClBhcmVudCBwYW5lbCBzdXBwb3J0cyBkeW5hbWljIGZvcm0gcmVzcG9uc2VzIHRocm91Z2ggYC9mb3JtL3tyZXNwb25zZUlkfWAgcm91dGVzLgoKIyMgQSkgT3BlbiBQYXJlbnQgRm9ybQoKMS4gT3BlbiBmb3JtIGxpbmsgZnJvbSBkYXNoYm9hcmQsIG5vdGlmaWNhdGlvbiwgb3IgZGlyZWN0IFVSTC4KMi4gV2FpdCBmb3IgZm9ybSBsb2FkLgozLiBDb25maXJtIGZvcm0gdGl0bGUvZGVzY3JpcHRpb24gaXMgdmlzaWJsZS4KNC4gSWYgb3JnYW5pemF0aW9uIGJhbm5lciBleGlzdHMsIHJldmlldyBjb250ZXh0IHNlY3Rpb24gYXQgdG9wLgoKIyMgQikgRmlsbCBGb3JtIEZpZWxkcyAoQ2xpY2stYnktQ2xpY2spCgpGb3IgZWFjaCBxdWVzdGlvbjoKCjEuIFJlYWQgbGFiZWwgYW5kIHJlcXVpcmVkIG1hcmtlci4KMi4gRW50ZXIvc2VsZWN0IGFuc3dlciBhY2NvcmRpbmcgdG8gZmllbGQgdHlwZS4KMy4gQ29udGludWUgdW50aWwgYWxsIHJlcXVpcmVkIGZpZWxkcyBhcmUgY29tcGxldGUuCgpTdXBwb3J0ZWQgZmllbGQgdHlwZXMgaW5jbHVkZToKCi0gdGV4dAotIGVtYWlsCi0gbnVtYmVyCi0gdGV4dGFyZWEKLSBkcm9wZG93bgotIGRhdGUvdGltZS9kYXRldGltZQotIHJhdGluZwotIHJhZGlvCi0gY2hlY2tib3gKCiMjIEMpIFN1Ym1pdCBGb3JtCgoxLiBTY3JvbGwgdG8gc3VibWl0IGFjdGlvbi4KMi4gQ2xpY2sgU3VibWl0LgozLiBXYWl0IGZvciBzdWNjZXNzIHRvYXN0Lgo0LiBDb25maXJtIGZvcm0gc3RhdGUgdXBkYXRlcy4KCiMjIEQpIFJlYWQtT25seSBGb3JtIFN0YXRlCgpJZiBhIHJlc3BvbnNlIGFscmVhZHkgZXhpc3RzIGFuZCBlZGl0IGlzIGRpc2FibGVkOgoKLSBGb3JtIGRpc3BsYXlzIHByaW9yIGFuc3dlcnMuCi0gSW5wdXRzIGFyZSBub24tZWRpdGFibGUuCi0gUGFyZW50IGNhbiByZXZpZXcgYnV0IG5vdCBjaGFuZ2UuCgojIyBDb21tb24gUGFyZW50IFF1ZXN0aW9ucwoKUTogRm9ybSBkaWQgbm90IGxvYWQuCkE6IExpbmsgbWF5IGJlIGludmFsaWQvZXhwaXJlZCBvciByZXNwb25zZSBJRCBtYXkgYmUgaW5jb3JyZWN0LgoKUTogU3VibWl0IGZhaWxlZC4KQTogUmVjaGVjayByZXF1aXJlZCBmaWVsZHMgYW5kIHJldHJ5LgoKUTogV2h5IGNhbm5vdCBJIGVkaXQgcHJldmlvdXMgYW5zd2VyPwpBOiBGb3JtIGlzIGNvbmZpZ3VyZWQgYXMgbm9uLWVkaXRhYmxlIGFmdGVyIHN1Ym1pdC4KCiFbUGFyZW50IEZvcm0gUGxhY2Vob2xkZXJdKC9pbWFnZXMvdXNlci1tYW51YWwvcGFyZW50LXBhbmVsL3BhcmVudC1mb3JtLXJlc3BvbnNlLnBuZykKCkltYWdlIHBsYWNlaG9sZGVyOiBQYXJlbnQgZm9ybSB3aXRoIG1peGVkIHF1ZXN0aW9uIHR5cGVzIGFuZCBzdWJtaXQgYWN0aW9uLgo=</script>
+
+
+<script id="llm-raw-md" type="text/plain" style="display:none">CkFkdmlzb3JzIGFuZCBhZG1pbmlzdHJhdG9ycyBjYW4gYXNzaWduIGZvcm1zIHRvIHBhcmVudHMgZm9yIGNvbGxlY3RpbmcgY29uc2VudCwgc3VwcGxlbWVudGFyeSBpbmZvcm1hdGlvbiwgb3IgcHJvZ3Jlc3MgZmVlZGJhY2suIFRoaXMgZ3VpZGUgd2Fsa3MgeW91IHRocm91Z2ggb3BlbmluZywgY29tcGxldGluZywgYW5kIHN1Ym1pdHRpbmcgYSBmb3JtIGZyb20gdGhlIHBhcmVudCBwYW5lbC4KCi0tLQoKIyMgMS4gRmluZGluZyBhIEZvcm0gdG8gQ29tcGxldGUKCkZvcm1zIGFzc2lnbmVkIHRvIHlvdSBhcHBlYXIgaW4gdHdvIHBsYWNlczoKCi0gKipEYXNoYm9hcmQgbm90aWZpY2F0aW9uIGJhbm5lcioqIOKAlCBBIGhpZ2hsaWdodGVkIGNhcmQgYXBwZWFycyB3aGVuIHlvdSBoYXZlIGEgcGVuZGluZyBmb3JtIHJlcXVpcmluZyBhIHJlc3BvbnNlLgotICoqTm90aWZpY2F0aW9ucyBwYW5lbCoqIOKAlCBDbGljayB0aGUgYmVsbCBpY29uIGluIHRoZSB0b3AgbWVudSBhbmQgbG9vayBmb3IgYSBub3RpZmljYXRpb24gbGFiZWxsZWQgKkZvcm0gQXNzaWduZWQqLgoKMS4gQ2xpY2sgdGhlIG5vdGlmaWNhdGlvbiBvciB0aGUgZGFzaGJvYXJkIGJhbm5lciB0byBvcGVuIHRoZSBmb3JtIGRpcmVjdGx5LgoyLiBBbHRlcm5hdGl2ZWx5LCBuYXZpZ2F0ZSB0byAqKkZvcm1zKiogaW4gdGhlIHNpZGViYXIgdG8gc2VlIGFsbCBmb3JtcyBhc3NpZ25lZCB0byB5b3VyIGFjY291bnQuCjMuIEZvcm1zIHdpdGggYSAqKlBlbmRpbmcqKiBzdGF0dXMgYmFkZ2Ugc3RpbGwgcmVxdWlyZSB5b3VyIHJlc3BvbnNlLiBGb3JtcyBtYXJrZWQgKipTdWJtaXR0ZWQqKiBhcmUgcmVhZC1vbmx5LgoKIVtQYXJlbnQgZm9ybXMgbGlzdCBzaG93aW5nIGZvcm0gbmFtZXMsIHN1Ym1pc3Npb24gc3RhdHVzIGJhZGdlcywgYW5kIGR1ZSBkYXRlc10oL2ltYWdlcy91c2VyLW1hbnVhbC9wYXJlbnQtcGFuZWwvcGFyZW50LWZvcm1zLWxpc3QucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgcGFyZW50IGZvcm1zIGxpc3Qgd2l0aCBmb3JtIG5hbWVzLCBQZW5kaW5nL1N1Ym1pdHRlZCBzdGF0dXMgYmFkZ2VzLCBhbmQgYW55IGR1ZSBkYXRlIGxhYmVscy4qCgotLS0KCiMjIDIuIFJlYWRpbmcgdGhlIEZvcm0gQ29udGV4dAoKQmVmb3JlIGZpbGxpbmcgYW55dGhpbmcgaW46CgoxLiBSZWFkIHRoZSAqKkZvcm0gVGl0bGUqKiBhbmQgdGhlICoqRGVzY3JpcHRpb24qKiBhdCB0aGUgdG9wIG9mIHRoZSBwYWdlIOKAlCB0aGUgZGVzY3JpcHRpb24gZXhwbGFpbnMgd2h5IHRoZSBmb3JtIGlzIGJlaW5nIGNvbGxlY3RlZCBhbmQgd2hhdCB5b3UgbmVlZCB0byBwcm92aWRlLgoyLiBJZiB0aGUgZm9ybSBiZWxvbmdzIHRvIGEgc3BlY2lmaWMgcHJvZ3JhbW1lIG9yIGFwcGxpY2F0aW9uLCBhbiAqKk9yZ2FuaXNhdGlvbiBCYW5uZXIqKiBtYXkgYXBwZWFyIGF0IHRoZSB0b3Agd2l0aCBjb250ZXh0dWFsIGluZm9ybWF0aW9uLgozLiBOb3RlIGFueSAqKkR1ZSBEYXRlKiogc2hvd24gbmVhciB0aGUgdGl0bGUg4oCUIGZvcm1zIHdpdGggZGVhZGxpbmVzIHdpbGwgd2FybiB5b3UgaWYgeW91IGFyZSBhcHByb2FjaGluZyB0aGVtLgoKLS0tCgojIyAzLiBDb21wbGV0aW5nIEVhY2ggRmllbGQKCldvcmsgdGhyb3VnaCB0aGUgZm9ybSBvbmUgcXVlc3Rpb24gYXQgYSB0aW1lOgoKfCBGaWVsZCB0eXBlIHwgSG93IHRvIGZpbGwgaXQgaW4gfAp8LS0tfC0tLXwKfCAqKlRleHQgLyBFbWFpbCoqIHwgQ2xpY2sgdGhlIGlucHV0IGJveCBhbmQgdHlwZSB5b3VyIGFuc3dlciB8CnwgKipOdW1iZXIqKiB8IFR5cGUgYSBudW1lcmljYWwgdmFsdWU7IHRoZSBmaWVsZCByZWplY3RzIGxldHRlcnMgfAp8ICoqTG9uZyBUZXh0KiogfCBDbGljayB0aGUgdGV4dGFyZWEgYW5kIHdyaXRlIHlvdXIgZnVsbCByZXNwb25zZTsgc3VwcG9ydHMgbXVsdGlwbGUgbGluZXMgfAp8ICoqRHJvcGRvd24qKiB8IENsaWNrIHRoZSBkcm9wZG93biBhcnJvdyBhbmQgc2VsZWN0IG9uZSBvcHRpb24gZnJvbSB0aGUgbGlzdCB8CnwgKipSYWRpbyoqIHwgQ2xpY2sgdGhlIGNpcmNsZSBuZXh0IHRvIHlvdXIgY2hvc2VuIHNpbmdsZSBvcHRpb24gfAp8ICoqQ2hlY2tib3gqKiB8IENsaWNrIGVhY2ggYm94IHRoYXQgYXBwbGllczsgeW91IG1heSBzZWxlY3QgbXVsdGlwbGUgfAp8ICoqRGF0ZSAvIFRpbWUqKiB8IENsaWNrIHRoZSBjYWxlbmRhciBvciBjbG9jayBpY29uIGFuZCBwaWNrIGZyb20gdGhlIHBpY2tlciB8CnwgKipSYXRpbmcqKiB8IENsaWNrIHRoZSBzdGFyIG9yIG51bWJlciB0aGF0IHJlcHJlc2VudHMgeW91ciByYXRpbmcgfAoKRmllbGRzIG1hcmtlZCB3aXRoIGEgcmVkIGFzdGVyaXNrIGAqYCBhcmUgKipyZXF1aXJlZCoqIOKAlCB5b3UgY2Fubm90IHN1Ym1pdCB0aGUgZm9ybSB1bnRpbCB0aGV5IGFyZSBjb21wbGV0ZWQuCgo&#43;ICoqVGlwOioqIFVzZSAqKlRhYioqIHRvIG1vdmUgYmV0d2VlbiBmaWVsZHMgcXVpY2tseS4gVGhlIGZvcm0gc2F2ZXMgeW91ciBkcmFmdCBhdXRvbWF0aWNhbGx5IGFzIHlvdSBmaWxsIGl0IGluLCBzbyB5b3UgY2FuIGxlYXZlIGFuZCByZXR1cm4gd2l0aG91dCBsb3NpbmcgcHJvZ3Jlc3MuCgohW1BhcmVudCBmb3JtIG1pZC1maWxsIHNob3dpbmcgdGV4dCBmaWVsZHMsIGEgZHJvcGRvd24sIGEgcmF0aW5nIHdpZGdldCwgYW5kIHJlcXVpcmVkIGZpZWxkIG1hcmtlcnNdKC9pbWFnZXMvdXNlci1tYW51YWwvcGFyZW50LXBhbmVsL3BhcmVudC1mb3JtLWZpbGxpbmcucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiBhIHBhcmVudCBmb3JtIHBhcnRpYWxseSBmaWxsZWQgaW4gc2hvd2luZyBhdCBsZWFzdCB0aHJlZSBkaWZmZXJlbnQgZmllbGQgdHlwZXMgYWxvbmdzaWRlIHJlcXVpcmVkIG1hcmtlcnMuKgoKLS0tCgojIyA0LiBSZXZpZXdpbmcgQmVmb3JlIFN1Ym1pdHRpbmcKCkJlZm9yZSBjbGlja2luZyAqKlN1Ym1pdCoqOgoKMS4gU2Nyb2xsIGJhY2sgdGhyb3VnaCB0aGUgZm9ybSB0byByZWFkIHlvdXIgYW5zd2Vycy4KMi4gTWFrZSBzdXJlIGV2ZXJ5IHJlcXVpcmVkIGZpZWxkIChgKmApIGhhcyBhIHZhbHVlLgozLiBMb29rIGZvciBhbnkgKipWYWxpZGF0aW9uIEVycm9yKiogbWVzc2FnZXMgaGlnaGxpZ2h0ZWQgaW4gcmVkIOKAlCB0aGVzZSBhcHBlYXIgaWYgYSBmaWVsZCByZWNlaXZlZCBpbnB1dCBpbiB0aGUgd3JvbmcgZm9ybWF0IChlLmcuLCBsZXR0ZXJzIGluIGEgbnVtYmVyIGZpZWxkKS4KCi0tLQoKIyMgNS4gU3VibWl0dGluZyB0aGUgRm9ybQoKMS4gQ2xpY2sgdGhlICoqU3VibWl0KiogYnV0dG9uIGF0IHRoZSBib3R0b20gb2YgdGhlIGZvcm0uCjIuIFdhaXQgZm9yIHRoZSBncmVlbiBzdWNjZXNzIG5vdGlmaWNhdGlvbiB0byBhcHBlYXI6ICoiWW91ciByZXNwb25zZSBoYXMgYmVlbiBzdWJtaXR0ZWQuIioKMy4gVGhlIGZvcm0gc3RhdHVzIGluIHlvdXIgKipGb3JtcyoqIGxpc3QgY2hhbmdlcyBmcm9tICpQZW5kaW5nKiB0byAqU3VibWl0dGVkKi4KCiFbU3VjY2VzcyBub3RpZmljYXRpb24gYWZ0ZXIgZm9ybSBzdWJtaXNzaW9uIGFuZCB0aGUgZm9ybSB0aXRsZSBub3cgc2hvd2luZyBTdWJtaXR0ZWQgc3RhdHVzXSgvaW1hZ2VzL3VzZXItbWFudWFsL3BhcmVudC1wYW5lbC9wYXJlbnQtZm9ybS1zdWJtaXR0ZWQucG5nKQoKKkltYWdlIHBsYWNlaG9sZGVyOiBBZGQgc2NyZWVuc2hvdCBvZiB0aGUgc3VjY2VzcyB0b2FzdCBub3RpZmljYXRpb24gYWZ0ZXIgc3VibWl0dGluZywgYW5kIHRoZSB1cGRhdGVkIHN0YXR1cyBiYWRnZSBvbiB0aGUgZm9ybS4qCgotLS0KCiMjIDYuIFZpZXdpbmcgYSBTdWJtaXR0ZWQgRm9ybQoKQWZ0ZXIgc3VibWlzc2lvbiwgeW91IGNhbiBzdGlsbCByZXZpZXcgeW91ciBhbnN3ZXJzOgoKMS4gR28gdG8gKipGb3JtcyoqIGluIHRoZSBzaWRlYmFyLgoyLiBDbGljayBhbnkgZm9ybSB3aXRoIGEgKlN1Ym1pdHRlZCogYmFkZ2UuCjMuIFRoZSBmb3JtIG9wZW5zIGluICoqcmVhZC1vbmx5IG1vZGUqKiDigJQgYWxsIHlvdXIgYW5zd2VycyBhcmUgdmlzaWJsZSBidXQgdGhlIGZpZWxkcyBhcmUgZGlzYWJsZWQuIFlvdSBjYW5ub3QgY2hhbmdlIGEgc3VibWl0dGVkIHJlc3BvbnNlIHVubGVzcyB0aGUgYWR2aXNvciBvciBhZG1pbiByZW9wZW5zIHRoZSBmb3JtIGZvciB5b3UuCgotLS0KCiMjIENvbW1vbiBRdWVzdGlvbnMKCnwgU2l0dWF0aW9uIHwgV2hhdCB0byBkbyB8CnwtLS18LS0tfAp8IFRoZSBmb3JtIGRpZCBub3QgbG9hZCB8IFRoZSBsaW5rIG1heSBiZSBleHBpcmVkIG9yIHRoZSBmb3JtIG1heSBoYXZlIGJlZW4gcmV0cmFjdGVkLiBDb250YWN0IHlvdXIgYWR2aXNvciB0byBjb25maXJtIHRoZSBmb3JtIGlzIHN0aWxsIGFjdGl2ZSB8CnwgU3VibWl0IGZhaWxlZCB3aXRoIGEgdmFsaWRhdGlvbiBlcnJvciB8IFNjcm9sbCB1cCDigJQgYSByZWQgZXJyb3IgbWVzc2FnZSB3aWxsIGJlIHZpc2libGUgbmV4dCB0byB0aGUgZmllbGQocykgdGhhdCBoYXZlIGEgcHJvYmxlbS4gRml4IGVhY2ggb25lIGFuZCB0cnkgc3VibWl0dGluZyBhZ2FpbiB8CnwgSSBjYW5ub3QgZWRpdCBteSBhbnN3ZXJzIGFmdGVyIHN1Ym1pdHRpbmcgfCBGb3JtcyBsb2NrIGFmdGVyIHN1Ym1pc3Npb24gYnkgZGVzaWduLiBBc2sgeW91ciBhZHZpc29yIHRvIHJlb3BlbiB0aGUgZm9ybSBpZiB5b3UgbmVlZCB0byBtYWtlIGEgY29ycmVjdGlvbiB8CnwgSSBkbyBub3Qgc2VlIHRoZSBmb3JtIGluIG15IGRhc2hib2FyZCB8IENoZWNrIHRoZSAqKk5vdGlmaWNhdGlvbnMqKiBwYW5lbCBmaXJzdC4gSWYgaXQgaXMgbm90IHRoZXJlLCBhc2sgeW91ciBhZHZpc29yIHRvIGNvbmZpcm0gdGhlIGZvcm0gd2FzIGFzc2lnbmVkIHRvIHlvdXIgYWNjb3VudCB8Cg==</script>
 
 <style>
  

@@ -39,6 +39,6 @@ The Parent Panel allows guardians to link student accounts, monitor progress, re
 7. Advisor chat and unread indicators
 8. Parent form response page
 
-![Parent Panel Placeholder](/images/user-manual/parent-panel/parent-overview.png)
+![Parent Panel Placeholder](/docs-idpicker/images/user-manual/parent-panel/parent-overview.png)
 
 Image placeholder: Parent dashboard with linked student summary cards and overview stats.

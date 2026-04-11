@@ -27,6 +27,6 @@ This manual explains exactly how to use the IDPicker platform from login to adva
 6. Admin Panel Complete Guide
 7. Help and Troubleshooting
 
-![IDPicker Platform Overview Placeholder](/images/user-manual/product/platform-overview.png)
+![IDPicker Platform Overview Placeholder](/docs-idpicker/images/user-manual/product/platform-overview.png)
 
 Image placeholder: Add a high-level platform diagram showing Student, Advisor, Parent, and Admin panels and navigation paths.

@@ -18,9 +18,7 @@ The University Search module is your comprehensive database for discovering high
 5. Pause briefly — the search runs automatically as you type to prevent unnecessary reloading.
 6. Review your refined results.
 
-![University search bar with keyword input and auto-filtered results grid](/images/user-manual/student-panel/university-search-keyword.png)
-
-Image placeholder: Add screenshot of the university search bar with a keyword typed in and the auto-filtered results grid below it.
+![University search bar with keyword input and auto-filtered results grid](/docs-idpicker/images/user-manual/student-panel/university-search-keyword.png)
 
 ---
 
@@ -39,9 +37,7 @@ If you want to study entirely in English in a non-English speaking country, this
 
 > **Warning:** Mixing too many strict filters at once (e.g., *Aerospace Engineering*, *PhD*, *Turkish language*, *in Germany*) will likely return zero results. If you get an empty page, clear your filters one by one until results reappear.
 
-![University search filter panel showing category, degree type, and language of instruction dropdowns](/images/user-manual/student-panel/university-search-filters.png)
-
-Image placeholder: Add screenshot of the filter panel with the Category, Degree Type, and Language of Instruction dropdowns visible.
+![University search filter panel showing category, degree type, and language of instruction dropdowns](/docs-idpicker/images/user-manual/student-panel/university-search-filters.png)
 
 ---
 
@@ -55,9 +51,7 @@ When reviewing results:
 
 *Note: Any time you apply a new filter or type a new keyword, you are automatically bumped back to Page 1 so you do not miss top results.*
 
-![Pagination controls with page numbers and page size selector at the bottom of university results](/images/user-manual/student-panel/university-search-pagination.png)
-
-Image placeholder: Add screenshot of the pagination bar at the bottom of the results — show page numbers, the active page highlighted, and the page size selector.
+![Pagination controls with page numbers and page size selector at the bottom of university results](/docs-idpicker/images/user-manual/student-panel/university-search-pagination.png)
 
 ---
 

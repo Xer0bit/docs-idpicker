@@ -21,7 +21,7 @@ IDPicker guides students through a structured self-discovery and decision-making
 
 The platform is used by individual students, school-based advisors managing hundreds of students, parents tracking their child's progress, and organizational super-admins governing the entire deployment.
 
-![IDPicker platform workflow overview — from assessment to recommendation](/images/user-manual/getting-started/platform-overview.png)
+![IDPicker platform workflow overview — from assessment to recommendation](/docs-idpicker/images/user-manual/getting-started/platform-overview.png)
 
 Image placeholder: Add a simple workflow diagram showing the student journey: Register → Assessment → Personality → Recommendations → AI Mentor.
 
@@ -67,7 +67,7 @@ IDPicker is designed as a **supervised platform**. Relationships between roles a
 - **Advisor → Sub-Advisor:** The primary advisor creates sub-advisor accounts, assigns specific student groups to them, and controls which modules they can access.
 - **Admin → All:** Platform admins have global visibility across all organizations for support and governance.
 
-![Diagram showing the relationship between advisor, student, and parent accounts](/images/user-manual/getting-started/role-relationships.png)
+![Diagram showing the relationship between advisor, student, and parent accounts](/docs-idpicker/images/user-manual/getting-started/role-relationships.png)
 
 Image placeholder: Add a simple diagram showing how advisor, student, and parent accounts link together with arrows indicating who initiates each connection.
 

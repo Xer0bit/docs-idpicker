@@ -22,10 +22,7 @@ Know exactly what you are looking for?
 2. Type a matching keyword from the file's title, description, or original file name.
 3. The list will instantly filter to matching documents.
 
-![Resource library grid showing file cards with assigned and globally visible documents](/images/user-manual/student-panel/resources-library.png)
-
-Image placeholder: Add screenshot of the resource library in grid view — show several file cards with file type icons, names, and visibility labels.
-
+![Resource library grid showing file cards with assigned and globally visible documents](/docs-idpicker/images/user-manual/student-panel/resources-library.png)
 ---
 
 ## 2. Filtering and Sorting Files
@@ -38,9 +35,7 @@ If your organization has shared hundreds of files, use these controls to narrow 
 - **Sort By:** Change the ordering from Date Added, Alphabetical Name, or File Size.
 - **View Mode:** Toggle between the spacious Grid view or the compact List view depending on your preference.
 
-![Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls](/images/user-manual/student-panel/resources-filters.png)
-
-Image placeholder: Add screenshot of the filter bar at the top of the resource library — file type, size, visibility dropdowns and the sort-by and view-mode controls.
+![Resource filter bar showing file type, size, visibility filters and sort-by and view mode controls](/docs-idpicker/images/user-manual/student-panel/resources-filters.png)
 
 ---
 
@@ -52,9 +47,7 @@ Image placeholder: Add screenshot of the filter bar at the top of the resource l
 
 > **If a download fails:** Check your internet connection first. If it still fails, refresh the entire page to ensure your login session has not quietly expired, then try downloading again.
 
-![Resource file card with Download button highlighted and browser download prompt](/images/user-manual/student-panel/resources-download.png)
-
-Image placeholder: Add screenshot of a file card with the Download button highlighted, and optionally the browser’s download bar appearing at the bottom.
+![Resource file card with Download button highlighted and browser download prompt](/docs-idpicker/images/user-manual/student-panel/resources-download.png)
 
 ---
 

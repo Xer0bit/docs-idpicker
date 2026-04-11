@@ -30,7 +30,7 @@ Every form moves through a specific lifecycle:
 ### Preview Before Publishing
 Always click the **Preview** action before publishing! This lets you see the form exactly as a student will see it, ensuring that your required fields and visual layout behave as expected.
 
-![Form builder interface showing the title field, question editor panel, and a preview of the first question](/images/user-manual/advisor-panel/forms-builder.png)
+![Form builder interface showing the title field, question editor panel, and a preview of the first question](/docs-idpicker/images/user-manual/advisor-panel/forms-builder.png)
 
 Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.
 
@@ -55,7 +55,7 @@ Once your form is published and students begin filling it out, you need to revie
 3. A table will load showing a list of every student who submitted the form and the timestamp.
 4. Click on an individual response row to drill down and read the specific answers provided by that student.
 
-![Form responses table listing student names, submission timestamps, and a row-click drill-down panel](/images/user-manual/advisor-panel/forms-responses.png)
+![Form responses table listing student names, submission timestamps, and a row-click drill-down panel](/docs-idpicker/images/user-manual/advisor-panel/forms-responses.png)
 
 Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student's answers.
 

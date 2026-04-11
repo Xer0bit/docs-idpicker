@@ -16,10 +16,7 @@ IDPicker keeps you informed through a built-in notification system. Whenever you
 3. Click the bell to open the **Notification Dropdown** — this shows your five most recent messages.
 4. Click **View All Notifications** at the bottom of the dropdown to open the full inbox page.
 
-![Notification bell icon with a red unread badge and the dropdown panel showing recent notifications](/images/user-manual/student-panel/notifications-dropdown.png)
-
-Image placeholder: Add screenshot of the notification bell in the navbar with the dropdown open, showing recent notification items and the View All link.
-
+![Notification bell icon with a red unread badge and the dropdown panel showing recent notifications](/docs-idpicker/images/user-manual/student-panel/notifications-dropdown.png)
 ---
 
 ## 2. Reading a Notification
@@ -45,9 +42,7 @@ If you have many unread notifications and want to clear the badge quickly:
 
 > **Note:** Marking notifications as read does not delete them. They remain in your list for reference.
 
-![Notifications inbox showing unread rows highlighted and the Mark All as Read button at the top](/images/user-manual/student-panel/notifications-inbox.png)
-
-Image placeholder: Add screenshot of the full notifications inbox page with several unread rows and the Mark All as Read button visible.
+![Notifications inbox showing unread rows highlighted and the Mark All as Read button at the top](/docs-idpicker/images/user-manual/student-panel/notifications-inbox.png)
 
 ---
 

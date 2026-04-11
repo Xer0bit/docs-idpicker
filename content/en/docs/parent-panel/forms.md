@@ -20,7 +20,7 @@ Forms assigned to you appear in two places:
 2. Alternatively, navigate to **Forms** in the sidebar to see all forms assigned to your account.
 3. Forms with a **Pending** status badge still require your response. Forms marked **Submitted** are read-only.
 
-![Parent forms list showing form names, submission status badges, and due dates](/images/user-manual/parent-panel/parent-forms-list.png)
+![Parent forms list showing form names, submission status badges, and due dates](/docs-idpicker/images/user-manual/parent-panel/parent-forms-list.png)
 
 Image placeholder: Add screenshot of the parent forms list with form names, Pending/Submitted status badges, and any due date labels.
 
@@ -55,7 +55,7 @@ Fields marked with a red asterisk `*` are **required** — you cannot submit the
 
 > **Tip:** Use **Tab** to move between fields quickly. The form saves your draft automatically as you fill it in, so you can leave and return without losing progress.
 
-![Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers](/images/user-manual/parent-panel/parent-form-filling.png)
+![Parent form mid-fill showing text fields, a dropdown, a rating widget, and required field markers](/docs-idpicker/images/user-manual/parent-panel/parent-form-filling.png)
 
 Image placeholder: Add screenshot of a parent form partially filled in showing at least three different field types alongside required markers.
 
@@ -77,7 +77,7 @@ Before clicking **Submit**:
 2. Wait for the green success notification to appear: *"Your response has been submitted."*
 3. The form status in your **Forms** list changes from *Pending* to *Submitted*.
 
-![Success notification after form submission and the form title now showing Submitted status](/images/user-manual/parent-panel/parent-form-submitted.png)
+![Success notification after form submission and the form title now showing Submitted status](/docs-idpicker/images/user-manual/parent-panel/parent-form-submitted.png)
 
 Image placeholder: Add screenshot of the success toast notification after submitting, and the updated status badge on the form.
 

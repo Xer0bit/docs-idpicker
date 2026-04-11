@@ -21,9 +21,7 @@ Not all administrators need full access to every setting. This module allows you
 5. Select their foundational Role (e.g., *Super Admin* vs *Content Admin*).
 6. Click **Save**.
 
-![Add admin form showing email, username, name fields, role dropdown, and Save button](/images/user-manual/admin-panel/admin-create.png)
-
-Image placeholder: Add screenshot of the Add Admin form with all required fields filled in and the role selector visible.
+![Add admin form showing email, username, name fields, role dropdown, and Save button](/docs-idpicker/images/user-manual/admin-panel/admin-create.png)
 
 ---
 
@@ -41,9 +39,7 @@ The true power of IDPicker's internal security is the Permission Matrix, which c
 
 *Important: If the subadmin is currently logged in, you must instruct them to refresh their page or log out/in for the new permissions to apply to their session token immediately.*
 
-![Permission matrix editor showing module list with Write, Read, and None radio buttons for each module](/images/user-manual/admin-panel/admin-permissions-matrix.png)
-
-Image placeholder: Add screenshot of the permission matrix with some modules set to Write, some to Read, and some to None.
+![Permission matrix editor showing module list with Write, Read, and None radio buttons for each module](/docs-idpicker/images/user-manual/admin-panel/admin-permissions-matrix.png)
 
 ---
 

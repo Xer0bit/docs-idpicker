@@ -97,7 +97,7 @@ Parents have a deliberately limited view to protect student privacy:
 - Parents can view progress, recommendations, and Journey Maps, but they cannot edit anything.
 - In schools where Parent Chat is enabled, parents can message the advisor through a secure thread that is separate from the student-advisor channel.
 
-![Diagram showing the relationship between Admin, Advisor, Sub-Advisor, Student, and Parent roles with arrows indicating who can see or manage whom](/images/user-manual/getting-started/roles-diagram.png)
+![Diagram showing the relationship between Admin, Advisor, Sub-Advisor, Student, and Parent roles with arrows indicating who can see or manage whom](/docs-idpicker/images/user-manual/getting-started/roles-diagram.png)
 
 Image placeholder: Add a diagram showing the five roles and the directional relationships between them \u2014 e.g., Admin oversees all, Advisor manages Sub-Advisor and Students, Parent links to Student.
 

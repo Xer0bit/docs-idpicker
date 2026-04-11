@@ -44,6 +44,4 @@ A: You confirmed language change while progress-reset warning was active.
 Q: Some labels stayed old language.
 A: Refresh page once and verify language persisted.
 
-![Language Switch Placeholder](/images/user-manual/student-panel/language-switch.png)
-
-Image placeholder: Sidebar language dropdown and in-progress confirmation dialog.
+![Language Switch](/docs-idpicker/images/user-manual/student-panel/language-switch.png)

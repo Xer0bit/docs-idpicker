@@ -68,6 +68,4 @@ Use this list while adding images:
 14. Application documents step upload workflow
 15. Assigned form response page
 
-![Student Panel Dashboard Placeholder](/images/user-manual/student-panel/dashboard-main.png)
-
-Image placeholder: Add the primary dashboard screenshot with core modules labeled.
+![Student Panel Dashboard](/docs-idpicker/images/user-manual/student-panel/dashboard-main.png)

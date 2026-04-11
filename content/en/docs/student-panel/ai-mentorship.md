@@ -20,11 +20,9 @@ IDPicker provides multiple AI personalities, each tuned for specific types of ad
 5. Click the **Send** icon.
 6. The AI will respond in real-time, contextually aware of your personality and recommendation profile!
 
-> **Quota Warning:** Depending on your subscription, you may have a monthly chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!
+> **Quota Warning:** Depending on your subscription, you may have a chat quota. A progress bar usually indicates how many messages you have left. Use your prompts wisely!
 
-![AI Mentor hub showing personality cards grid and open chat interface with message input box](/images/user-manual/student-panel/ai-mentorship-mentor-chat.png)
-
-Image placeholder: Add screenshot of the AI Mentor hub — show the personality mentor cards grid on the left and the open chat window with a message input box.
+![AI Mentor hub showing personality cards grid and open chat interface](/docs-idpicker/images/user-manual/student-panel/ai-mentorship-mentor-chat.png)
 
 ---
 
@@ -36,9 +34,7 @@ You do not have to start over every time.
 2. Click on a recent thread.
 3. The chat history will load, and you can pick up the conversation exactly where you left off.
 
-![Recent chats list in Mentor Hub showing previous conversation threads](/images/user-manual/student-panel/ai-mentorship-recent-chats.png)
-
-Image placeholder: Add screenshot of the Recent Chats list showing 2-3 previous conversation threads with timestamps.
+![Recent chats list in Mentor Hub showing previous conversation threads](/docs-idpicker/images/user-manual/student-panel/ai-mentorship-recent-chats.png)
 
 ---
 
@@ -53,9 +49,7 @@ If your account is linked to an organization or school, your human advisor manag
 
 *Note: If the advisor section says "No advisor linked," your account operates independently and this feature is disabled.*
 
-![Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button](/images/user-manual/student-panel/ai-mentorship-advisor-chat.png)
-
-Image placeholder: Add screenshot of the Advisor section — show advisor name, last activity timestamp, the red unread badge, and the Chat with Advisor button.
+![Advisor section showing advisor name, last activity, unread badge, and Chat with Advisor button](/docs-idpicker/images/user-manual/student-panel/ai-mentorship-advisor-chat.png)
 
 ---
 

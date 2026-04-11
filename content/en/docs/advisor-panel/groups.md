@@ -24,7 +24,7 @@ Groups are an essential organizational tool. By grouping students—whether by g
 - **Be Specific:** "Group A" becomes impossible to manage after a few months.
 - **Review Often:** Clean up and delete groups when a cohort graduates or finishes a campaign.
 
-![Create group dialog showing group name field, description field, and student selector checkboxes](/images/user-manual/advisor-panel/groups-create.png)
+![Create group dialog showing group name field, description field, and student selector checkboxes](/docs-idpicker/images/user-manual/advisor-panel/groups-create.png)
 
 Image placeholder: Add screenshot of the create group dialog with the name field filled in and several students selected in the member selector.
 
@@ -54,7 +54,7 @@ When a group is no longer needed:
 
 > **Warning:** Deleting a group **does not** delete the student accounts inside it. It only removes the organizational tag grouping them together.
 
-![Groups list showing group cards with member counts, edit buttons, and action menus](/images/user-manual/advisor-panel/groups-list.png)
+![Groups list showing group cards with member counts, edit buttons, and action menus](/docs-idpicker/images/user-manual/advisor-panel/groups-list.png)
 
 Image placeholder: Add screenshot of the groups list showing several group cards or rows with member count badges and action menus.
 

@@ -16,7 +16,7 @@ For technical administrators, this section acts as your infrastructure dashboard
 3. If any component is flagged yellow (Degraded) or red (Offline), immediately cross-reference your infrastructure alerts.
 4. The status page helps isolate whether a reported bug is a local user error or a widespread server outage.
 
-![Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded](/images/user-manual/admin-panel/status-page.png)
+![Status page showing service health blocks for Database, API, AI Services, and Storage — one flagged as Degraded](/docs-idpicker/images/user-manual/admin-panel/status-page.png)
 
 Image placeholder: Add screenshot of the status page showing all service health blocks, with any current degraded or offline indicators visible.
 
@@ -33,7 +33,7 @@ When a user reports a persistent crash, the Realtime Logs are your best diagnost
    - Set the source filter if you are tracing a specific module (e.g., `stripe-webhook` or `ai-generation`).
 4. Look for sudden bursts or cascading error statements. These can be exported and sent to your engineering team.
 
-![Realtime logs stream showing live error and fatal level log entries with source filter set to ai-generation](/images/user-manual/admin-panel/realtime-logs.png)
+![Realtime logs stream showing live error and fatal level log entries with source filter set to ai-generation](/docs-idpicker/images/user-manual/admin-panel/realtime-logs.png)
 
 Image placeholder: Add screenshot of the realtime logs stream with the ERROR filter active and several log entries visible.
 

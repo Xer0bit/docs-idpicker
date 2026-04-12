@@ -73,10 +73,6 @@ A: Requirement levels vary by step and policy.
 Q: My file was rejected.
 A: Review invalid reason and upload corrected document.
 
-![Certificates Placeholder](/images/user-manual/student-panel/certificates.png)
+![Certificates Placeholder](/docs-idpicker/images/user-manual/student-panel/certificates.png)
 
-Image placeholder: Certificate list, filter tabs, and detail dialog.
-
-![Application Documents Placeholder](/images/user-manual/student-panel/application-documents.png)
-
-Image placeholder: Step tab + upload card + document status indicators.
+![Application Documents Placeholder](/docs-idpicker/images/user-manual/student-panel/application-documents.png)

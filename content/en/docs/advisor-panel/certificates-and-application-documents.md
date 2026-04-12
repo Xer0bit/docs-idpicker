@@ -25,7 +25,7 @@ Certificates are formal, advisor-generated recognitions that appear in the stude
 
 > **Note:** Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.
 
-![Certificate builder dialog showing student selector, type dropdown, and issue date field](/images/user-manual/advisor-panel/certificates-issue.png)
+![Certificate builder dialog showing student selector, type dropdown, and issue date field](/docs-idpicker/images/user-manual/advisor-panel/certificates-issue.png)
 
 Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.
 
@@ -63,7 +63,7 @@ Students upload supporting documents (transcripts, passports, language certifica
 2. The list shows all students who have active document collections, each with a completion progress bar.
 3. Click a student row to open their **Document Collection**.
 
-![Application documents list with student rows, completion progress bars, and a review button](/images/user-manual/advisor-panel/application-documents-list.png)
+![Application documents list with student rows, completion progress bars, and a review button](/docs-idpicker/images/user-manual/advisor-panel/application-documents-list.png)
 
 Image placeholder: Add screenshot of the application documents list showing several student rows with their progress bars.
 
@@ -81,7 +81,7 @@ Image placeholder: Add screenshot of the application documents list showing seve
 5. If you mark the file **Invalid**, fill in the **Reason** field with a clear explanation so the student knows exactly what to fix.
 6. Click **Save Review**.
 
-![Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field](/images/user-manual/advisor-panel/document-review-panel.png)
+![Document review panel showing file preview, status dropdown (Verified/Pending/Invalid), and the reason field](/docs-idpicker/images/user-manual/advisor-panel/document-review-panel.png)
 
 Image placeholder: Add screenshot of the document review panel for a single document step — show the file preview area, status dropdown, and reason text field.
 

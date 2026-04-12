@@ -53,6 +53,6 @@ Use this section as the primary operational manual for advisor and sub-advisor w
 13. Assessment management workflow
 14. Profile, prompts, and interests pages
 
-![Advisor Panel Placeholder](/images/user-manual/advisor-panel/advisor-overview.png)
+![Advisor Panel Placeholder](/docs-idpicker/images/user-manual/advisor-panel/advisor-overview.png)
 
 Image placeholder: Add main advisor dashboard with primary modules highlighted.

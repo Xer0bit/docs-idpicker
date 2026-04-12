@@ -22,7 +22,7 @@ Depending on the platform settings, you will experience one of two outcomes:
 - **Instant Link:** The student appears immediately on your dashboard.
 - **Pending Link:** The request is sent to your child. They must log in to their student dashboard and click "Approve" before you can see any of their data.
 
-![Link student form showing an email input field and Send Link Request button, with a Pending confirmation message below](/images/user-manual/parent-panel/link-student-form.png)
+![Link student form showing an email input field and Send Link Request button, with a Pending confirmation message below](/docs-idpicker/images/user-manual/parent-panel/link-student-form.png)
 
 Image placeholder: Add screenshot of the Link Student form with an email address entered and the pending confirmation state visible.
 
@@ -67,7 +67,7 @@ The Parent Panel is designed for **monitoring and support**, not authoring.
 - Modify their profile data (like email or password)
 - See private, restricted journal entries or private notes intended only for the advisor
 
-![Linked student profile view showing assessment progress, recommendation summary, and journey map section](/images/user-manual/parent-panel/linked-student-profile.png)
+![Linked student profile view showing assessment progress, recommendation summary, and journey map section](/docs-idpicker/images/user-manual/parent-panel/linked-student-profile.png)
 
 Image placeholder: Add screenshot of the linked student profile page showing the progress, recommendations, and journey map sections available to the parent.
 

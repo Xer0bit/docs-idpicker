@@ -24,7 +24,7 @@ Your profile information appears inside student and parent-facing chat windows w
 4. Click **Save Profile**.
 5. Verify the preview panel on the right shows the updated name and avatar correctly.
 
-![Advisor profile editor showing name, title, bio, and avatar upload fields](/images/user-manual/advisor-panel/profile-editor.png)
+![Advisor profile editor showing name, title, bio, and avatar upload fields](/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png)
 
 Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.
 
@@ -46,7 +46,7 @@ If your organisation has been granted permission to configure regional AI prompt
 7. Click **Save**. The updated prompt is live immediately for your students.
 8. Re-open the prompt to confirm the saved version reflects your edit.
 
-![Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted](/images/user-manual/advisor-panel/prompts-editor.png)
+![Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted](/docs-idpicker/images/user-manual/advisor-panel/prompts-editor.png)
 
 Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.
 
@@ -65,7 +65,7 @@ The Interests module shows the career domains and fields of study each student h
 
 > **Note:** Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.
 
-![Interests table showing student names, interest domain labels, and status badges](/images/user-manual/advisor-panel/interests-table.png)
+![Interests table showing student names, interest domain labels, and status badges](/docs-idpicker/images/user-manual/advisor-panel/interests-table.png)
 
 Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.
 

@@ -20,7 +20,7 @@ Organizations are the containers that hold Advisors, Students, and Parents. Befo
 5. Click **Save**. The organization is now active and its admin can begin inviting students.
 6. *To edit or delete an organization, use the action menu next to its name in the list view.*
 
-![Organization list showing school names, primary admin, location, and action menus, with Create Organization button](/images/user-manual/admin-panel/organization-list.png)
+![Organization list showing school names, primary admin, location, and action menus, with Create Organization button](/docs-idpicker/images/user-manual/admin-panel/organization-list.png)
 
 Image placeholder: Add screenshot of the organization management list with several school rows and the Create Organization button.
 
@@ -38,7 +38,7 @@ While Advisors manage their own rosters, Super Admins have global visibility ove
    - Total login/activity counters
 4. **Global Deletion:** If requested for GDPR/CCPA compliance, you can hard-delete a student from this menu. *Use extreme caution and always confirm before executing.*
 
-![Student management search showing name/email search results with expanded row displaying verification and activity details](/images/user-manual/admin-panel/student-management.png)
+![Student management search showing name/email search results with expanded row displaying verification and activity details](/docs-idpicker/images/user-manual/admin-panel/student-management.png)
 
 Image placeholder: Add screenshot of the student management global search results with an expanded row showing account verification status and activity data.
 

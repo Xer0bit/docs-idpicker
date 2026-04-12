@@ -27,6 +27,6 @@ This section defines how IDPicker is structured across user roles and panel resp
 | Parent | Progress visibility and support | Access linked student insights and support tools |
 | Admin | Platform governance and operations | Manage users/orgs, permissions, prompts/translations, monitoring |
 
-![Role and Panel Architecture Placeholder](/images/user-manual/product/role-panel-architecture.png)
+![Role and Panel Architecture Placeholder](/docs-idpicker/images/user-manual/product/role-panel-architecture.png)
 
 Image placeholder: Add architecture diagram showing role boundaries, panel entry points, and shared modules, including admin governance flows.

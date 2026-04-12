@@ -49,6 +49,4 @@ A: Use in-module upgrade actions until dedicated route is enabled in your deploy
 Q: How do I check remaining usage?
 A: Check quota indicators shown in quota-controlled features.
 
-![Subscription Placeholder](/images/user-manual/student-panel/subscription-plans.png)
-
-Image placeholder: Quota indicator + upgrade CTA from a blocked feature action.
+![Subscription Placeholder](/docs-idpicker/images/user-manual/student-panel/subscription-plans.png)

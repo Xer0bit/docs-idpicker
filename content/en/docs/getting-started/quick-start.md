@@ -19,7 +19,7 @@ IDPicker has separate login portals for each role. Before anything else, make su
 
 > **Tip:** Bookmark your login page the first time you use it. There are multiple portal addresses and going to the wrong one will prevent sign-in.
 
-![Student login page URL in browser bar and the sign-in form](/images/user-manual/getting-started/login-page.png)
+![Student login page URL in browser bar and the sign-in form](/docs-idpicker/images/user-manual/getting-started/login-page.png)
 
 Image placeholder: Add screenshot of the login page with the browser address bar visible showing the correct URL.
 
@@ -47,7 +47,7 @@ Image placeholder: Add screenshot of the login page with the browser address bar
 3. Set a strong password and confirm it.
 4. You are automatically signed in and placed in the correct panel.
 
-![Sign-in form with email/password fields and Continue with Google button](/images/user-manual/getting-started/sign-in-form.png)
+![Sign-in form with email/password fields and Continue with Google button](/docs-idpicker/images/user-manual/getting-started/sign-in-form.png)
 
 Image placeholder: Add screenshot of the completed sign-in form with both email login and Google login options visible.
 
@@ -65,7 +65,7 @@ Image placeholder: Add screenshot of the completed sign-in form with both email 
 
 > **Tip:** The assessment takes 15–30 minutes. Find a quiet moment to complete it — your first instinct answers are always the most accurate.
 
-![Student dashboard with the Self Assessment card highlighted and a Start button](/images/user-manual/getting-started/student-first-assessment.png)
+![Student dashboard with the Self Assessment card highlighted and a Start button](/docs-idpicker/images/user-manual/getting-started/student-first-assessment.png)
 
 Image placeholder: Add screenshot of the student dashboard with the assessment card highlighted and Start button visible.
 
@@ -86,7 +86,7 @@ Image placeholder: Add screenshot of the student dashboard with the assessment c
 4. Fill in your data and click **Apply All Filters**.
 5. Review the ranked list of universities and programmes that match your profile.
 
-![Recommendations page showing ranked university cards after applying filters](/images/user-manual/getting-started/student-first-recommendations.png)
+![Recommendations page showing ranked university cards after applying filters](/docs-idpicker/images/user-manual/getting-started/student-first-recommendations.png)
 
 Image placeholder: Add screenshot of the recommendations results page with at least 3 ranked university cards visible after a filter has been applied.
 
@@ -113,7 +113,7 @@ Image placeholder: Add screenshot of the recommendations results page with at le
 3. Write a welcome message and set the target to **All Students**.
 4. Click **Send**.
 
-![Advisor dashboard with KPI widgets and sidebar navigation highlighted](/images/user-manual/getting-started/advisor-first-run.png)
+![Advisor dashboard with KPI widgets and sidebar navigation highlighted](/docs-idpicker/images/user-manual/getting-started/advisor-first-run.png)
 
 Image placeholder: Add screenshot of the advisor dashboard first-load state highlighting the KPI widgets and sidebar.
 
@@ -135,7 +135,7 @@ Image placeholder: Add screenshot of the advisor dashboard first-load state high
 2. Click **View Student** to open their full detail page.
 3. Review their assessment progress, recommendations summary, and advisor activity.
 
-![Parent dashboard showing a linked student card with View Student button](/images/user-manual/getting-started/parent-first-run.png)
+![Parent dashboard showing a linked student card with View Student button](/docs-idpicker/images/user-manual/getting-started/parent-first-run.png)
 
 Image placeholder: Add screenshot of the parent dashboard with a linked student card and the View Student button visible.
 

@@ -21,7 +21,7 @@ Assessments are the core of IDPicker. Completing them unlocks your personalized 
 
 > **Tip:** Do not overthink your answers, especially for personality tests. Your first instinct is usually the most accurate!
 
-![Assessment card list showing available assessments with Start button](/images/user-manual/student-panel/assessment-card-list.png)
+![Assessment card list showing available assessments with Start button](/docs-idpicker/images/user-manual/student-panel/assessment-card-list.png)
 
 Image placeholder: Add screenshot of the Self Assessment page showing the list of assessment cards with a Start button on each.
 
@@ -37,7 +37,7 @@ Life happens. If you close your browser or navigate away, your progress is safel
 4. You will pick up exactly where you left off. 
 5. Complete the remaining questions and submit.
 
-![Assessment card showing Continue button for a session that was left incomplete](/images/user-manual/student-panel/assessment-resume.png)
+![Assessment card showing Continue button for a session that was left incomplete](/docs-idpicker/images/user-manual/student-panel/assessment-resume.png)
 
 Image placeholder: Add screenshot of an assessment card in the resumed state — showing the Continue button instead of Start.
 
@@ -52,7 +52,7 @@ Some assessments allow you to retake them if you feel your situation has changed
 3. A confirmation prompt will ask if you are sure you want to overwrite your previous results. Confirm to proceed.
 4. Complete the new run and submit.
 
-![Retake confirmation dialog warning that previous results will be overwritten](/images/user-manual/student-panel/assessment-retake-confirm.png)
+![Retake confirmation dialog warning that previous results will be overwritten](/docs-idpicker/images/user-manual/student-panel/assessment-retake-confirm.png)
 
 Image placeholder: Add screenshot of the retake confirmation dialog — show the warning message and the Confirm/Cancel buttons.
 
@@ -66,7 +66,7 @@ Once you submit an assessment, the platform instantly generates your results.
 2. Review the summary and breakdown of your traits or aptitudes.
 3. Armed with this new data, head over to the **Recommendations** or **Personality** modules to see what the AI has unlocked for you!
 
-![Assessment results summary showing trait scores and breakdown after submission](/images/user-manual/student-panel/assessment-results.png)
+![Assessment results summary showing trait scores and breakdown after submission](/docs-idpicker/images/user-manual/student-panel/assessment-results.png)
 
 Image placeholder: Add screenshot of the results summary page — show trait scores, the breakdown chart, and the View Results button on the completed card.
 

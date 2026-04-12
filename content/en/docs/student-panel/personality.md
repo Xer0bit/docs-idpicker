@@ -23,9 +23,7 @@ The Personality page is locked until you finish the assessment. If you see a loc
 
 > **Note:** Once you submit, results are generated instantly. You do not need to wait or refresh.
 
-![Personality page in locked state with Complete Assessment prompt and link to the assessment module](/images/user-manual/student-panel/personality-locked.png)
-
-Image placeholder: Add screenshot of the Personality page in locked/pre-assessment state showing the Complete Assessment prompt and the link pointing to the Self Assessment module.
+![Personality page in locked state with Complete Assessment prompt and link to the assessment module](/docs-idpicker/images/user-manual/student-panel/personality-locked.png)
 
 ---
 
@@ -37,9 +35,7 @@ At the top of the page you will see a **Personality Insights** badge and the hea
 
 Below the heading is the **Export** button — this lets you download your full report at any time. See [section 7](#7-exporting-your-personality-report) for full export steps.
 
-![Personality Insights header with Export button at the top of the analysis page](/images/user-manual/student-panel/personality-header.png)
-
-Image placeholder: Add screenshot of the Personality Insights page header — show the badge, the "Your Personality Analysis" heading, and the Export button.
+![Personality Insights header with Export button at the top of the analysis page](/docs-idpicker/images/user-manual/student-panel/personality-header.png)
 
 ---
 
@@ -67,9 +63,7 @@ The radar chart is the first visual you see after the header. It plots all eight
 3. **Identify the innermost points** — these are your Growth Areas (scores 1–5), which represent the biggest opportunities for self-improvement.
 4. **Hover over any axis point** to see the exact numeric score for that trait.
 
-![Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip](/images/user-manual/student-panel/personality-radar-chart.png)
-
-Image placeholder: Add screenshot of the radar chart with all 8 trait axes labelled and a tooltip visible on one axis showing the numeric score.
+![Interactive radar chart with all 8 trait axes labelled and one axis hovered showing a numeric score tooltip](/docs-idpicker/images/user-manual/student-panel/personality-header.png)
 
 ---
 
@@ -85,9 +79,7 @@ Directly below the radar chart, the **Personality Overview** panel gives a writt
 
 The overview card opens with a paragraph describing the unique pattern of your results and how your traits shape your approach to learning, relationships, and personal growth.
 
-![Personality Overview card showing three tier labels and an introductory paragraph about the student's unique trait pattern](/images/user-manual/student-panel/personality-overview-panel.png)
-
-Image placeholder: Add screenshot of the Personality Overview card — show all three tier labels (Strong Traits, Balanced Traits, Growth Areas) and the introductory paragraph.
+![Personality Overview card showing three tier labels and an introductory paragraph about the student's unique trait pattern](/docs-idpicker/images/user-manual/student-panel/personality-overview-panel.png)
 
 ---
 
@@ -100,9 +92,7 @@ To the right of the Personality Overview is the **Quick Stats** panel. It lists 
 - Use the **Top Strengths** list to identify which traits to emphasise in application essays, interviews, and conversations with your advisor.
 - Use the **Growth Areas** list to prioritise which Action Steps (from the trait cards below) to work on first.
 
-![Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange](/images/user-manual/student-panel/personality-quick-stats.png)
-
-Image placeholder: Add screenshot of the Quick Stats panel — show the Top Strengths list with green scores and the Growth Areas list with orange scores side by side.
+![Quick Stats panel showing Top Strengths list with scores in green and Growth Areas list with scores in orange](/docs-idpicker/images/user-manual/student-panel/personality-quick-stats.png)
 
 ---
 
@@ -122,9 +112,7 @@ Below the overview section, every one of the eight traits has its own card. Each
 | **Detailed Analysis** | A paragraph-length explanation of how this trait manifests in your daily life, study habits, and decision-making |
 | **Action Steps** | One or two concrete, practical things you can do right now to build on a strength or develop a growth area |
 
-![Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section](/images/user-manual/student-panel/personality-trait-card.png)
-
-Image placeholder: Add screenshot of a single expanded trait card — show the score bar, level label (e.g., Strong), one-liner, Detailed Analysis paragraph, and Action Steps list.
+![Full trait card showing score bar, level label, one-liner, Detailed Analysis section, and Action Steps section](/docs-idpicker/images/user-manual/student-panel/personality-trait-card.png)
 
 ### The Eight Trait Cards in Detail
 
@@ -198,7 +186,7 @@ How clearly you understand your own traits, habits, emotional triggers, and impa
 
 **What to do with a low score:** After any significant interaction or decision, take five minutes to ask yourself: *What did I do well? What would I change?* Small reflection habits compound over time.
 
-![Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps](/images/user-manual/student-panel/personality-growth-area-cards.png)
+![Two trait cards side by side — Mental Agility (Moderate) and Self-Awareness (Moderate) — showing score bars, detailed analysis, and action steps](/docs-idpicker/images/user-manual/student-panel/personality-trait-card.png)
 
 Image placeholder: Add screenshot showing two Growth Area trait cards side by side (e.g., Mental Agility and Self-Awareness) each with score bars and action steps visible.
 
@@ -214,7 +202,7 @@ Your full personality analysis can be exported as a PDF to share with parents, a
 
 > **Note:** If the **Export** button is missing or disabled, report export may not be enabled for your current subscription plan or organisation policy. Check **Settings → Subscription** or contact your advisor.
 
-![Export button at the top of the Personality page and the resulting PDF open in a new browser tab](/images/user-manual/student-panel/personality-report-download.png)
+![Export button at the top of the Personality page and the resulting PDF open in a new browser tab](/docs-idpicker/images/user-manual/student-panel/personality-header.png)
 
 Image placeholder: Add screenshot showing the Export button at the top of the page and the resulting PDF open in a new browser tab.
 

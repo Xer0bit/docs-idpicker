@@ -30,6 +30,6 @@ Use this page as the single source of truth for platform URLs.
 2. Role-based panel redirects are correct.
 3. Unauthorized role access is blocked.
 
-![URL Registry Placeholder](/images/user-manual/getting-started/url-registry.png)
+![URL Registry Placeholder](/docs-idpicker/images/user-manual/getting-started/url-registry.png)
 
 Image placeholder: Add screenshot of browser tabs showing each panel URL after login.

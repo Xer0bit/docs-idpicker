@@ -81,6 +81,4 @@ A: Re-open Recommendations or refresh once.
 Q: Delete button did not proceed.
 A: Confirmation word is strict; type exactly as shown.
 
-![Settings Placeholder](/images/user-manual/student-panel/settings-page.png)
-
-Image placeholder: Settings sections for track switch, parent link, and delete account.
+![Settings](/docs-idpicker/images/user-manual/student-panel/settings-page.png)

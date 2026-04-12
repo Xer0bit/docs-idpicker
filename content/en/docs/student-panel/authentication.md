@@ -38,9 +38,7 @@ This is the fastest path for returning students.
 - If you see a message about email verification, follow the [Verify Your Email](#verify-your-email) section below.
 - If you have forgotten your password, use [Forgot Password](#forgot-password).
 
-![Student login page showing email and password fields with Sign In button](/images/user-manual/student-panel/authentication-login.png)
-
-Image placeholder: Add screenshot of the student login page — email field, password field, and Sign In button visible. Mask any real credentials.
+![Student login page showing email and password fields with Sign In button](/docs-idpicker/images/user-manual/student-panel/authentication-login.png)
 
 ---
 
@@ -58,9 +56,7 @@ Faster sign-in without a separate password.
 - Your browser may be blocking popups. Allow popups for this site and try again.
 - Make sure you are not using a private/incognito window with strict tracking prevention.
 
-![Continue with Google button and Google account picker dialog](/images/user-manual/student-panel/authentication-google-signin.png)
-
-Image placeholder: Add screenshot showing the Continue with Google button and the Google account picker popup.
+![Continue with Google button and Google account picker dialog](/docs-idpicker/images/user-manual/student-panel/authentication-google-signin.png)
 
 ---
 
@@ -85,9 +81,7 @@ New students follow a multi-step wizard. The exact steps depend on whether you r
 - Consent checkbox not checked → scroll down and tick the box.
 - Weak password → make sure it meets all strength requirements shown on screen.
 
-![Multi-step registration wizard showing name, email, password, interests, and profile fields](/images/user-manual/student-panel/authentication-register.png)
-
-Image placeholder: Add screenshot of the multi-step registration wizard — show at least two steps side by side or the first step with all fields. Mask any personal data.
+![Multi-step registration wizard showing name, email, password, interests, and profile fields](/docs-idpicker/images/user-manual/student-panel/authentication-register.png)
 
 ---
 
@@ -107,9 +101,7 @@ After registration, IDPicker sends a verification email.
 2. Enter your email and click **Resend Verification Email**.
 3. Open the new email and click the fresh link.
 
-![Email verification page confirming the link was clicked successfully](/images/user-manual/student-panel/authentication-verify-email.png)
-
-Image placeholder: Add screenshot of the email verification success page shown after clicking the link from the email.
+![Email verification page confirming the link was clicked successfully](/docs-idpicker/images/user-manual/student-panel/authentication-verify-email.png)
 
 ---
 
@@ -122,9 +114,7 @@ Use this if you cannot remember your current password.
 3. Click **Send Reset Link**.
 4. Check your inbox and spam folder for the reset email.
 
-![Forgot password form with registered email input and Send Reset Link button](/images/user-manual/student-panel/authentication-forgot-password.png)
-
-Image placeholder: Add screenshot of the Forgot Password form with the email input field and Send Reset Link button.
+![Forgot password form with registered email input and Send Reset Link button](/docs-idpicker/images/user-manual/student-panel/authentication-forgot-password.png)
 
 ---
 
@@ -143,9 +133,7 @@ After requesting a reset, you will receive a link by email.
 **If the link says the token is invalid or expired:**
 - Request a new reset link from the [Forgot Password](#forgot-password) step above.
 
-![Reset password form with new password field, confirm password field, and strength indicator](/images/user-manual/student-panel/authentication-reset-password.png)
-
-Image placeholder: Add screenshot of the reset password form — new password, confirm password fields, and the password strength bar visible.
+![Reset password form with new password field, confirm password field, and strength indicator](/docs-idpicker/images/user-manual/student-panel/authentication-reset-password.png)
 
 ---
 

@@ -21,7 +21,7 @@ Depending on your organization's setup, you will access the platform either via 
 > **Why is my dashboard missing certain modules?**
 > If you are a "Sub-Advisor," your access is strictly limited to the permissions your primary Advisor delegated to you. If you cannot see a module, you do not have permission for it.
 
-![Advisor login page showing the email, password fields, and Sign In button](/images/user-manual/advisor-panel/login.png)
+![Advisor login page showing the email, password fields, and Sign In button](/docs-idpicker/images/user-manual/advisor-panel/login.png)
 
 Image placeholder: Add screenshot of the advisor login page with email and password fields visible.
 
@@ -59,7 +59,7 @@ The Advisor Dashboard serves as your daily command center.
 
 *Tip: If your platform supports multiple languages, use the language toggle in the header to switch your interface language instantly.*
 
-![Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation](/images/user-manual/advisor-panel/dashboard.png)
+![Advisor dashboard showing KPI widgets, assigned forms block, and sidebar navigation](/docs-idpicker/images/user-manual/advisor-panel/dashboard.png)
 
 Image placeholder: Add screenshot of the full advisor dashboard with KPI widgets at the top and the sidebar modules listed on the left.
 

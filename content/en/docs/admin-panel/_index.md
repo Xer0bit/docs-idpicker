@@ -33,26 +33,4 @@ The Admin Panel is the central control surface for platform operations, governan
 - Maintain content quality for assessments/prompts/translations
 - Monitor usage and infrastructure signals
 
-## Screenshot Checklist
-
-1. Admin login page and successful redirect
-2. Dashboard KPI cards and charts
-3. Student management table with filters
-4. Parent management link/unlink flow
-5. Organization creation and admin assignment
-6. Admin management permissions UI
-7. Assessments creation/editing page
-8. Forms list and responses view
-9. Prompts editor with validation feedback
-10. Translations page (search and edit)
-11. Mentor personality edit with locale fields
-12. Support ticket status resolution flow
-13. Notifications target selection modal
-14. Demo approvals and admission criteria queue
-15. Status/realtime logs monitoring screens
-16. Certificates/application-documents review screen
-17. Free-use management limits view
-
-![Admin Panel Placeholder](/images/user-manual/admin-panel/admin-overview.png)
-
-Image placeholder: Main admin dashboard with module navigation highlighted.
+![Admin Panel](/docs-idpicker/images/user-manual/admin-panel/admin-overview.png)

@@ -59,6 +59,4 @@ A: Fill all required fields marked with required indicator.
 Q: I cannot see one field my friend has.
 A: Field set depends on assigned form configuration.
 
-![Assigned Forms Placeholder](/images/user-manual/student-panel/assigned-forms.png)
-
-Image placeholder: Assigned form with mixed field types and final submit button.
+![Assigned Forms Placeholder](/docs-idpicker/images/user-manual/student-panel/assigned-forms.png)

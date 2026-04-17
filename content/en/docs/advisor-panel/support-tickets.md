@@ -19,8 +19,6 @@ The Support Tickets module is your direct line to students who are having troubl
 
 ![Support ticket queue showing status summary cards and a filtered list sorted by priority](/docs-idpicker/images/user-manual/advisor-panel/support-tickets-queue.png)
 
-Image placeholder: Add screenshot of the support ticket queue showing the status summary cards at top and the filtered ticket list below.
-
 ---
 
 ## 2. Filtering and Prioritising Tickets
@@ -64,7 +62,7 @@ Image placeholder: Add screenshot of an open ticket detail view with the student
 
 Resolution messages are crucial — they are the student-facing reply that appears in their Help Center.
 
-1. In the ticket detail, find the **Resolution Message** text area.
+1. In the ticket detail, find the **Resolution Message**(Or Resolve) text area.
 2. Write a clear, actionable response:
    - Acknowledge the issue.
    - Explain what you found or did.
@@ -75,8 +73,6 @@ Resolution messages are crucial — they are the student-facing reply that appea
 > **Warning:** Some platforms require the Resolution Message to be filled before the status can be changed to *Resolved*. If saving the status fails silently, check that the resolution field is not blank.
 
 ![Resolution message text area filled in with a clear response and the Resolved status selected](/docs-idpicker/images/user-manual/advisor-panel/support-ticket-resolution.png)
-
-Image placeholder: Add screenshot of the resolution message field filled in alongside the status dropdown set to Resolved.
 
 ---
 

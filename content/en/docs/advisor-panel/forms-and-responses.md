@@ -32,7 +32,6 @@ Always click the **Preview** action before publishing! This lets you see the for
 
 ![Form builder interface showing the title field, question editor panel, and a preview of the first question](/docs-idpicker/images/user-manual/advisor-panel/forms-builder.png)
 
-Image placeholder: Add screenshot of the form builder with the title, a couple of question fields, and the Publish button visible.
 
 ---
 
@@ -56,8 +55,6 @@ Once your form is published and students begin filling it out, you need to revie
 4. Click on an individual response row to drill down and read the specific answers provided by that student.
 
 ![Form responses table listing student names, submission timestamps, and a row-click drill-down panel](/docs-idpicker/images/user-manual/advisor-panel/forms-responses.png)
-
-Image placeholder: Add screenshot of the form responses table showing student names, timestamps, and the drill-down view of one student's answers.
 
 ---
 

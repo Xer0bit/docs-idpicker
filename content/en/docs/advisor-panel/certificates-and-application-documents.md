@@ -25,9 +25,9 @@ Certificates are formal, advisor-generated recognitions that appear in the stude
 
 > **Note:** Once a certificate is issued, it cannot be edited. If you made an error, you must revoke the certificate and reissue a corrected one.
 
-![Certificate builder dialog showing student selector, type dropdown, and issue date field](/docs-idpicker/images/user-manual/advisor-panel/certificates-issue.png)
+![Certificate builder dialog showing student selector, type dropdown, and issue date field](/docs-idpicker/images/user-manual/advisor-panel/issue-certificate.png)
 
-Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.
+Image placeholder: Add screenshot of the certificate builder dialog with all fields filled in before clicking Issue.(Verify)
 
 ---
 

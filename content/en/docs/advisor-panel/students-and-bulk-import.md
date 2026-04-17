@@ -26,7 +26,7 @@ Click on any student row or card to open their detailed profile. Here you get fu
 
 ![Student roster list showing search bar, filter dropdowns, and student rows with name and email columns](/docs-idpicker/images/user-manual/advisor-panel/students-roster.png)
 
-Image placeholder: Add screenshot of the students module showing the search bar, filter controls, and several student rows.
+
 
 ---
 
@@ -64,8 +64,6 @@ If you have a large cohort starting simultaneously, do not add them one by one. 
 - **Group Assignment:** Imported students are *not* automatically placed in a group upon import. You must assign them afterward.
 
 ![Bulk import dialog showing the file upload area, preview table with rows and checkboxes, and Confirm Import button](/docs-idpicker/images/user-manual/advisor-panel/students-bulk-import.png)
-
-Image placeholder: Add screenshot of the bulk import flow — show the file upload step or the preview table with student rows ready to be confirmed.
 
 ---
 

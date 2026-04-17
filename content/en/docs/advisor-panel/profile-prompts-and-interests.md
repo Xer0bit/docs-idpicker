@@ -26,8 +26,6 @@ Your profile information appears inside student and parent-facing chat windows w
 
 ![Advisor profile editor showing name, title, bio, and avatar upload fields](/docs-idpicker/images/user-manual/advisor-panel/profile-editor.png)
 
-Image placeholder: Add screenshot of the profile editor with name, bio, and avatar upload fields in an edited state.
-
 ---
 
 ## 2. Editing AI Prompt Templates
@@ -48,8 +46,6 @@ If your organisation has been granted permission to configure regional AI prompt
 
 ![Prompt editor showing category filter, prompt text area, and dynamic variable placeholders highlighted](/docs-idpicker/images/user-manual/advisor-panel/prompts-editor.png)
 
-Image placeholder: Add screenshot of the prompt editor showing a filled prompt with highlighted dynamic variables and the Save button.
-
 ---
 
 ## 3. Managing Student Interest Records
@@ -66,8 +62,6 @@ The Interests module shows the career domains and fields of study each student h
 > **Note:** Interests set directly by students on their own profiles take priority in the recommendation engine. Changes you make here may be overridden if the student re-sets their preferences from their own account.
 
 ![Interests table showing student names, interest domain labels, and status badges](/docs-idpicker/images/user-manual/advisor-panel/interests-table.png)
-
-Image placeholder: Add screenshot of the interests table with student names, interest domains, and any status/action buttons visible.
 
 ---
 

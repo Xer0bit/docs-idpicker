@@ -23,8 +23,6 @@ Depending on your organization's setup, you will access the platform either via 
 
 ![Advisor login page showing the email, password fields, and Sign In button](/docs-idpicker/images/user-manual/advisor-panel/login.png)
 
-Image placeholder: Add screenshot of the advisor login page with email and password fields visible.
-
 ---
 
 ## 2. Setting Up Your Account (First Time)

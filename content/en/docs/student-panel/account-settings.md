@@ -11,6 +11,7 @@ This guide explains how students edit profile, manage parent links, switch guida
 
 1. In sidebar, click Profile.
 2. Click Edit Profile.
+![EditProfile](/docs-idpicker/images/user-manual/student-panel/edit-profile.png)
 3. Update fields as needed:
    - First name
    - Last name
@@ -22,7 +23,7 @@ This guide explains how students edit profile, manage parent links, switch guida
    - X URL
 4. Click Save.
 5. Wait for success confirmation.
-
+![SaveProfile](/docs-idpicker/images/user-manual/student-panel/save-profile.png)
 If save fails:
 
 - Recheck required fields and URL formats.
@@ -35,7 +36,7 @@ If save fails:
 3. Click switch action (Career/University).
 4. Wait for saved confirmation.
 5. Open Recommendations and confirm new mode.
-
+![SaveProfile](/docs-idpicker/images/user-manual/student-panel/guidance-track1.png)
 ## 3. Link Parent Account
 
 1. Stay on Settings page.
@@ -44,7 +45,7 @@ If save fails:
 4. Enter parent email.
 5. Click Send/Request Link.
 6. Wait for confirmation.
-
+![ParentLink](/docs-idpicker/images/user-manual/student-panel/parent-link.png)
 Possible outcomes:
 
 - Linked immediately
@@ -56,7 +57,7 @@ Possible outcomes:
 2. Click Unlink.
 3. Confirm action.
 4. Verify parent is removed from linked list.
-
+![ParentUnlink](/docs-idpicker/images/user-manual/student-panel/parent-unlink.png)
 ## 5. Delete Student Account (High Risk)
 
 1. In Settings, open Delete Account area.
@@ -65,7 +66,7 @@ Possible outcomes:
 4. Enter required confirmation word exactly.
 5. Click final delete confirmation.
 6. Wait for logout/redirect.
-
+![AccountDelete](/docs-idpicker/images/user-manual/student-panel/account-delete.png)
 Best practice:
 
 - Export/save anything needed before deletion.

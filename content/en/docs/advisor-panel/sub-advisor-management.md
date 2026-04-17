@@ -25,8 +25,6 @@ If you are a primary Advisor managing a large organization, you can invite sub-a
 
 ![Sub-advisor creation form showing name, email, scope selector, and permission checkboxes](/docs-idpicker/images/user-manual/advisor-panel/sub-advisor-create.png)
 
-Image placeholder: Add screenshot of the sub-advisor creation form with name, email, and permission matrix visible.
-
 ---
 
 ## 2. Editing Sub-Advisor Permissions

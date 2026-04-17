@@ -73,7 +73,7 @@ Forms are created by your advisor and require your response.
 
 ![Organization invitation card showing organization name with Accept and Decline buttons](/docs-idpicker/images/user-manual/student-panel/dashboard-invitations.png)
 
-Image placeholder: Add screenshot of an organization invitation card showing the organization name and both Accept and Decline buttons.
+
 
 ---
 
@@ -95,8 +95,6 @@ If you started an assessment and did not finish it:
 3. You are taken back to exactly where you left off.
 4. Complete all remaining questions and click **Submit**.
 ![Dashboard showing Resume Assessment prompt card with Continue button](/docs-idpicker/images/user-manual/student-panel/dashboard-resume-assessment.png)
-
-Image placeholder: Add screenshot of the dashboard Resume Assessment prompt card with the Continue button highlighted.
 
 ---
 

@@ -32,4 +32,4 @@ Use this page as the single source of truth for platform URLs.
 
 ![URL Registry Placeholder](/docs-idpicker/images/user-manual/getting-started/url-registry.png)
 
-Image placeholder: Add screenshot of browser tabs showing each panel URL after login.
+Image Placeholder : Add screenshot of browser tabs showing each panel URL after login.

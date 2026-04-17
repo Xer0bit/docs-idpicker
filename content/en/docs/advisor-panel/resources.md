@@ -54,8 +54,6 @@ As your library grows, use the built-in filters to find what you need quickly:
 
 ![Resources library in grid view showing file cards with title, type badge, visibility label, and action menu](/docs-idpicker/images/user-manual/advisor-panel/resources-library.png)
 
-Image placeholder: Add screenshot of the resources library grid or list view with several file cards visible, showing their titles and visibility labels.
-
 ---
 
 ## 4. Deleting an Outdated Resource
